@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "souvenir_compass": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 496,
+      "colors": [
+        "#241C32",
+        "#A56A3D",
+        "#DE7356",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "brass_shadow": 2,
+        "brass": 3,
+        "dial_and_glint": 4,
+        "needle_north": 5
+      },
+      "source_sha256": "218daa896cc6f5dbfd1c69047ea36a8ff707c7d2beb054636fd1dcefcb336cce",
+      "native_pixel_sha256": "28e8ba96c18d4d1f50a1989acd1b7199da3b782b73b7425b3c078349c063099a"
+    },
+    "souvenir_bookmark": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 451,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "cloth_shadow": 2,
+        "cloth": 3,
+        "cloth_light_and_sparkle": 4,
+        "star_and_tassel": 5
+      },
+      "source_sha256": "d240b1a3101bba787604d99858b9e7426760202c06d1607d0e0890c98a9e7709",
+      "native_pixel_sha256": "e1b80d29b1aca97629399f38b1315a9f2113691fda7756ebc9a3263e1250a120"
+    },
+    "souvenir_leaf_brooch": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 381,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#B5C77D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "leaf_shadow": 2,
+        "leaf": 3,
+        "leaf_light": 4,
+        "gold_filigree": 5
+      },
+      "source_sha256": "25b3e8b63bd567061e01e97fb3800a7aa988689badd3d2721d38fee57a048ee8",
+      "native_pixel_sha256": "f08d24482117bc8a49354d8cde3cc5278bd7dcc7511788339d3806570335a1c3"
+    },
+    "souvenir_silver_bell": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 514,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#DE7356",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "silver_shadow": 2,
+        "silver": 3,
+        "metal_glint": 4,
+        "ribbon": 5
+      },
+      "source_sha256": "29529b25490e5319937ad81cabba0bfbcdbce6996f594ae16160eae79c0628d3",
+      "native_pixel_sha256": "df74febaf1cc72c611a6898707d75642d6c44a5745589fa34f39c329a4e8fafa"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

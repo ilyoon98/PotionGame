@@ -1,0 +1,71 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F22 단골 기념품 후보</title><style>
+@font-face{font-family:Pretendard;src:url('../../../assets/fonts/pretendard/Pretendard-Regular.otf')}
+:root{--bg:#241c32;--panel:#30263f;--line:#827589;--text:#fff0bc;--muted:#c38eb5;--accent:#e9b95f;--ok:#b5c77d;--bad:#de7356}
+*{box-sizing:border-box}html,body{background:var(--bg)}body{margin:0;color:var(--text);font:15px/1.55 Pretendard,system-ui,sans-serif}
+main{max-width:1000px;margin:auto;padding:18px 16px 40px}h1{font-size:23px;margin:0 0 6px}h2{font-size:17px;margin:26px 0 8px}
+p{margin:6px 0 10px}.muted{color:var(--muted)}code{font-size:13px;color:var(--muted)}
+.note{border-left:3px solid #718c59;padding:8px 12px;background:var(--panel);margin:10px 0}
+.check{background-color:#4a3c52;background-image:linear-gradient(45deg,#3f3347 25%,transparent 25%),linear-gradient(-45deg,#3f3347 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#3f3347 75%),linear-gradient(-45deg,transparent 75%,#3f3347 75%);background-size:12px 12px;background-position:0 0,0 6px,6px -6px,-6px 0}
+img{image-rendering:pixelated;image-rendering:crisp-edges;max-width:none;display:block}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid #4a3c52;border-radius:6px;padding:12px}
+.card h3{margin:0;font-size:16px}.card .who{color:var(--muted);font-size:13px}
+.sizes{display:flex;align-items:flex-end;gap:10px;margin:10px 0 6px;flex-wrap:wrap}
+.sizes figure{margin:0;text-align:center}.sizes .check{display:flex;align-items:center;justify-content:center;padding:4px}
+figcaption{font-size:11px;color:var(--muted);margin-top:3px}
+.desc{font-size:13px;margin:6px 0}.sw{display:flex;flex-wrap:wrap;gap:6px;font-size:11px;color:var(--muted)}.sw span{display:flex;align-items:center;gap:3px}
+.sw i{width:12px;height:12px;display:inline-block;border:1px solid #000;background:var(--c)}
+.panel{background:#30263f;border:2px solid #50315f;border-radius:6px;padding:6px;max-width:420px}
+.row{display:flex;align-items:center;gap:8px;padding:5px 6px;border-bottom:1px solid #4a3c52}.row:last-child{border:0}
+.row .ic{width:32px;height:32px;flex:none}.row .ic.s24{width:24px;height:24px}.row b{font-weight:normal}.row small{color:var(--muted);display:block;font-size:12px}
+.row .tag{margin-left:auto;font-size:12px;color:#241c32;background:var(--accent);border-radius:3px;padding:1px 6px}
+.strip{display:flex;gap:6px;flex-wrap:wrap;padding:8px}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #4a3c52;padding:5px 6px;text-align:left;vertical-align:top}th{color:var(--muted);font-weight:normal}
+.ok{color:var(--ok)}.bad{color:var(--bad)}.table-wrap{overflow-x:auto}
+</style></head><body><main>
+<h1>F22 단골 기념품 후보 v1</h1>
+<p class="muted">후보 단계입니다. <code>assets/</code>·<code>scripts/</code>·저장은 바꾸지 않았습니다. 승인 전에는 게임에 연결하지 않습니다.</p>
+<p id="overall"></p>
+<div class="note">원본 32×32 · 승인 24색과 재질 램프만 사용 · 공통 외곽선 #241C32 1픽셀 · 물체당 최대 5색 · 반투명 0 · 좌측 상단 조명 · 디더링 없음 · 공통 3배 최근접 확대. 체크무늬는 페이지 CSS이고 PNG는 투명 배경입니다.</div>
+
+<h2>기념품 4종</h2>
+<div class="cards" id="cards"></div>
+
+<h2>관리 패널 크기 미리보기</h2>
+<p class="muted">관리 패널의 작은 아이콘 칸(24px)과 주 아이콘 칸(32px = 원본 1배)에 놓은 모습입니다. 24px은 원본 32px의 0.75배 축소라 픽셀이 고르지 않게 보일 수 있습니다. 실제 적용 칸 크기는 승인 후 정합니다.</p>
+<div class="panel" id="panel"></div>
+<h2>같은 크기로 나란히 · 32px / 3배 96px</h2>
+<div class="check strip" id="strip32"></div>
+<div class="check strip" id="strip96" style="margin-top:8px"></div>
+
+<h2>검사 결과</h2>
+<div class="table-wrap"><table id="table"></table></div>
+<p class="muted">재현: <code>python tools/build_f22_souvenirs_v1.py</code> → 원본 지도(<code>source/*.txt</code>) → 등록 PNG → <code>tools/process_pixel_art.py</code>(<code>manifest.json</code>) → 추가 검사(<code>validation.json</code>) → 이 페이지. 수치 검사는 디자인 승인을 대신하지 않습니다.</p>
+
+<h2>정해 주실 것</h2>
+<div class="note">1. 네 기념품의 모양과 색을 이대로 쓸지, 고칠 곳(예: 책갈피 끈, 은방울 리본 색).<br>2. 관리 패널 기념품 칸에 쓸 표시 크기(32px 원본 1배 권장, 24px 칸이면 축소 표시).</div>
+</main><script>
+const S={"passed": true, "items": [{"id": "souvenir_compass", "customer_name": "여행자", "name": "낡은 나침반", "description": "둥근 놋쇠 케이스와 위쪽 고리, 크림색 문자판, 북쪽(빨강)·남쪽(어둠) 바늘. 놋쇠는 금빛 중간·그림자 위주로 칠해 낡은 느낌을 내고 좌측 상단 테에만 크림 반짝임을 둔다.", "native": "sprites/souvenir_compass.png", "x3": "sprites/souvenir_compass-3x.png", "materials": [{"name": "outline", "color": "#241C32"}, {"name": "brass_shadow", "color": "#A56A3D"}, {"name": "brass", "color": "#E9B95F"}, {"name": "dial_and_glint", "color": "#FFF0BC"}, {"name": "needle_north", "color": "#DE7356"}], "color_count": 5, "off_palette": 0, "partial_alpha": 0, "outline_violations": 0, "dither": 0, "coverage": [0.75, 0.969], "lit": true, "passed": true}, {"id": "souvenir_bookmark", "customer_name": "여마법사", "name": "별무늬 책갈피", "description": "제비꼬리 끝의 보라 천 책갈피, 가운데 큰 금빛 별과 라일락 작은 별 3개, 위 구멍에서 나온 끈과 오른쪽 금빛 술. 왼쪽 가장자리 밝게, 오른쪽 가장자리 어둡게.", "native": "sprites/souvenir_bookmark.png", "x3": "sprites/souvenir_bookmark-3x.png", "materials": [{"name": "outline", "color": "#241C32"}, {"name": "cloth_shadow", "color": "#50315F"}, {"name": "cloth", "color": "#86548E"}, {"name": "cloth_light_and_sparkle", "color": "#C38EB5"}, {"name": "star_and_tassel", "color": "#E9B95F"}], "color_count": 5, "off_palette": 0, "partial_alpha": 0, "outline_violations": 0, "dither": 0, "coverage": [0.656, 0.906], "lit": true, "passed": true}, {"id": "souvenir_leaf_brooch", "customer_name": "엘프", "name": "잎사귀 브로치", "description": "45도로 기운 큰 잎사귀와 금빛 잎맥 세공(가운데 줄기 + 위·오른쪽으로 곧게 뻗는 곁맥 3쌍), 왼쪽 아래 둥근 금 받침과 핀 머리. 잎은 좌상단 반쪽이 밝고 우하단 반쪽이 어둡다.", "native": "sprites/souvenir_leaf_brooch.png", "x3": "sprites/souvenir_leaf_brooch-3x.png", "materials": [{"name": "outline", "color": "#241C32"}, {"name": "leaf_shadow", "color": "#3D544D"}, {"name": "leaf", "color": "#718C59"}, {"name": "leaf_light", "color": "#B5C77D"}, {"name": "gold_filigree", "color": "#E9B95F"}], "color_count": 5, "off_palette": 0, "partial_alpha": 0, "outline_violations": 0, "dither": 0, "coverage": [0.812, 0.781], "lit": true, "passed": true}, {"id": "souvenir_silver_bell", "customer_name": "고양이 도적", "name": "작은 은방울", "description": "고양이 목걸이형 둥근 은방울: 가운데 테, 아래쪽 양끝이 둥근 가로 홈과 세로 홈, 위에 고양이 도적의 붉은 목도리와 같은 산호색 리본. 은은 돌·금속 램프 2단, 좌측 상단 크림 반짝임.", "native": "sprites/souvenir_silver_bell.png", "x3": "sprites/souvenir_silver_bell-3x.png", "materials": [{"name": "outline", "color": "#241C32"}, {"name": "silver_shadow", "color": "#4A3C52"}, {"name": "silver", "color": "#827589"}, {"name": "metal_glint", "color": "#FFF0BC"}, {"name": "ribbon", "color": "#DE7356"}], "color_count": 5, "off_palette": 0, "partial_alpha": 0, "outline_violations": 0, "dither": 0, "coverage": [0.688, 0.906], "lit": true, "passed": true}]};
+const el=(t,a={},h='')=>{const e=document.createElement(t);for(const k in a)e.setAttribute(k,a[k]);e.innerHTML=h;return e};
+document.getElementById('overall').innerHTML=S.passed?'<span class="ok">모든 검사 통과</span> (물체별 색 수·팔레트 밖 0·반투명 0·외곽선 위반 0·디더링 0)':'<span class="bad">검사 실패 항목이 있습니다</span>';
+const cards=document.getElementById('cards'),panel=document.getElementById('panel'),s32=document.getElementById('strip32'),s96=document.getElementById('strip96');
+for(const it of S.items){
+ const c=el('div',{class:'card'});
+ c.append(el('div',{class:'who'},it.customer_name+' 단골 기념품'),el('h3',{},it.name));
+ const sz=el('div',{class:'sizes'});
+ for(const [w,lab,src] of [[24,'24px',it.native],[32,'32px · 1배',it.native],[96,'96px · 3배',it.x3]]){
+  const f=el('figure');const b=el('div',{class:'check'});b.append(el('img',{src,width:w,height:w,alt:it.name+' '+lab}));f.append(b,el('figcaption',{},lab));sz.append(f)}
+ c.append(sz,el('p',{class:'desc'},it.description));
+ const sw=el('div',{class:'sw'});for(const m of it.materials)sw.append(el('span',{},`<i style="--c:${m.color}"></i>${m.color} ${m.name}`));c.append(sw);
+ c.append(el('p',{class:'desc muted'},`<code>${it.id}</code> · ${it.color_count}색`));cards.append(c);
+ for(const [cls,w] of [['ic s24',24],['ic',32]]){
+  const r=el('div',{class:'row'});const box=el('div',{class:'check '+cls});box.append(el('img',{src:it.native,width:w,height:w,alt:''}));
+  r.append(box,el('div',{},`<b>${it.name}</b><small>${it.customer_name} · ${w}px 칸</small>`),el('span',{class:'tag'},'장착'));panel.append(r)}
+ s32.append(el('img',{src:it.native,width:32,height:32,alt:it.name,title:it.customer_name+' · '+it.name}));
+ s96.append(el('img',{src:it.x3,width:96,height:96,alt:it.name,title:it.customer_name+' · '+it.name}));
+}
+const t=document.getElementById('table');
+t.append(el('tr',{},'<th>손님 · 기념품</th><th>색 수(외곽선 포함)</th><th>팔레트 밖</th><th>반투명</th><th>외곽선 위반</th><th>디더링</th><th>캔버스 사용(가로×세로)</th><th>조명 좌상단</th><th>판정</th>'));
+for(const it of S.items){const k=(v,good)=>`<span class="${good?'ok':'bad'}">${v}</span>`;
+ t.append(el('tr',{},`<td>${it.customer_name} · ${it.name}</td><td>${k(it.color_count+' / 5',it.color_count<=5)}</td><td>${k(it.off_palette,it.off_palette===0)}</td><td>${k(it.partial_alpha,it.partial_alpha===0)}</td><td>${k(it.outline_violations,it.outline_violations===0)}</td><td>${k(it.dither,it.dither===0)}</td><td>${k(Math.round(it.coverage[0]*100)+'% × '+Math.round(it.coverage[1]*100)+'%',Math.min(...it.coverage)>=0.6)}</td><td>${k(it.lit?'예':'아니오',it.lit)}</td><td>${k(it.passed?'통과':'실패',it.passed)}</td>`))}
+</script></body></html>
