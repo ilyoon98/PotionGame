@@ -51,7 +51,7 @@ var rows := {}
 var selected := 0
 var statistics_values := {}
 var regular_cards := {} # F22 customer id -> card controls on the statistics page
-var regular_new := {} # customers whose stage was unread when the statistics page opened
+var regular_viewed := {} # customer id -> stage last shown on the statistics page (this window only)
 var regular_dot: ColorRect
 var result_button: Button
 var close_button: Button
@@ -615,7 +615,7 @@ func _refresh_regulars(state: RefCounted) -> void:
 		var card: Dictionary = regular_cards[id]
 		var data: Dictionary = state.regulars.view(id)
 		_text(card.title, "%s · %s" % [data.name, data.stage_name])
-		card.badge.visible = regular_new.has(id)
+		card.badge.visible = data.new
 		card.bar.value = data.fraction * card.bar.max_value
 		_text(card.progress, data.progress)
 		_text(card.habits, Regulars.habits(id, state.progression))
@@ -1051,12 +1051,6 @@ func select_page(index: int) -> void:
 		tabs[i].set_pressed_no_signal(TAB_PAGES[i] == index)
 		_text_button_style(tabs[i], TAB_PAGES[i] == index)
 	if index == SETTINGS: _refresh_startup_setting()
-	if index == REPORT:
-		# Remember what was new for this visit, then mark it read; points never change.
-		regular_new.clear()
-		for id in Regulars.ids():
-			if host.state.regulars.unread(id): regular_new[id] = true
-		host.state.regulars.mark_seen()
 	snap_gauges = true
 	refresh()
 	snap_gauges = false
@@ -1817,12 +1811,9 @@ func refresh(visible_only: bool = false) -> void:
 		for key in ["brewed", "sold", "expeditions", "reputation_gain"]:
 			_text(statistics_values[key], host._number(lifetime[key]) + ("회" if key == "expeditions" else "개" if key in ["brewed", "sold"] else ""))
 		_refresh_regulars(state)
-		# Stages reached while the page is open are shown at once and count as read.
-		if state.regulars.any_unread():
-			for id in Regulars.ids():
-				if state.regulars.unread(id): regular_new[id] = true
-			state.regulars.mark_seen()
-	regular_dot.visible = state.regulars.any_unread()
+		# Viewing is remembered by the window, never by the model.
+		for id in Regulars.ids(): regular_viewed[id] = state.regulars.stage(id)
+	regular_dot.visible = Regulars.ids().any(func(id): return state.regulars.is_new(id) and state.regulars.stage(id) > int(regular_viewed.get(id, 0)))
 	_sort_completed(visible_only)
 
 func _sort_completed(visible_only: bool = false) -> void:

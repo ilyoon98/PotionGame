@@ -44,11 +44,10 @@ func run() -> void:
 	check(r.lines("rogue").size() == 4 and r.next_threshold("rogue") == 0 and r.view("rogue").fraction == 1.0, "Stage 4 is the last stage")
 	r.points["rogue"] = Regulars.MAX_POINTS; r.record("rogue", true)
 	check(r.points_of("rogue") == Regulars.MAX_POINTS, "Points are capped")
-	# Unread flags never touch points.
-	check(r.any_unread() and r.unread("elf"), "New stages are unread")
-	var points_before: Dictionary = r.points.duplicate()
-	r.mark_seen()
-	check(not r.any_unread() and r.points == points_before, "Reading marks seen without changing points")
+	# "New" means reached during the current report period.
+	check(r.is_new("elf") and r.view("elf").new, "Stages above the period baseline are new")
+	r.start_report()
+	check(not r.is_new("elf") and not r.is_new("traveler"), "A new period clears the new marks")
 	# Actual sales through the economy.
 	var live := State.new(); live.gold = 100000
 	var before_sold: int = live.progression.totals.sold
@@ -83,9 +82,9 @@ func run() -> void:
 	check(not report.report_text().contains("단골 ·"), "A new period starts from the current stages")
 	# Saves.
 	var saved := State.new()
-	saved.regulars.points = {"traveler": 61, "mage": 3}; saved.regulars.seen = {"traveler": 2}; saved.regulars.report_stages = {"mage": 1}
+	saved.regulars.points = {"traveler": 61, "mage": 3}; saved.regulars.report_stages = {"mage": 1}
 	var restored := State.new()
-	check(restored.load_data(M.data(saved)) and Compare.equivalent(M.data(saved), M.data(restored)), "Roundtrip keeps points, seen and report stages")
+	check(restored.load_data(M.data(saved)) and Compare.equivalent(M.data(saved), M.data(restored)), "Roundtrip keeps points and report stages")
 	check(M.data(saved).version == State.SAVE_VERSION and State.SAVE_VERSION == 16, "Saves as v16")
 	var base: Dictionary = M.data(saved)
 	var bad_cases := [
@@ -93,7 +92,7 @@ func run() -> void:
 		func(d): d.regulars.points.traveler = 1.5,
 		func(d): d.regulars.points["knight"] = 3,
 		func(d): d.regulars.points["traveler"] = Regulars.MAX_POINTS + 1,
-		func(d): d.regulars.seen.traveler = 4,
+		func(d): d.regulars.report_stages.traveler = 4,
 		func(d): d.regulars.report_stages["elf"] = 1,
 		func(d): d.regulars.version = 2,
 		func(d): d.regulars = [],
@@ -116,9 +115,8 @@ func run() -> void:
 	shop.state.regulars.points = {"traveler": 60, "mage": 15, "elf": 1}
 	panel.select_page(panel.OPERATION); panel.refresh()
 	await process_frame
-	check(panel.regular_dot.visible, "Statistics button shows a dot for unread stages")
-	var state_before: Dictionary = without_regulars(shop.state)
-	var points_snapshot: Dictionary = shop.state.regulars.points.duplicate()
+	check(panel.regular_dot.visible, "Statistics button shows a dot for new stages")
+	var state_before: Dictionary = M.data(shop.state)
 	panel.select_page(panel.REPORT); panel.refresh()
 	for i in 3: await process_frame
 	check(panel.regular_cards.size() == 4, "Four regular cards")
@@ -131,11 +129,14 @@ func run() -> void:
 	check(panel.regular_cards.elf.habits.text == "방문 7회 · 선호 정화 물약", "Owned recipe appears in elf habits")
 	shop.state.progression.owned.erase("purify"); shop.state.progression.by_customer.erase("elf")
 	check(not panel.regular_cards.rogue.badge.visible and panel.regular_cards.rogue.story.text == "아직 거래 기록이 없어요.", "Rogue without sales has no badge")
-	check(not shop.state.regulars.any_unread(), "Opening the page marks stages read")
 	panel.select_page(panel.OPERATION); panel.refresh()
 	await process_frame
 	check(not panel.regular_dot.visible, "Dot clears after reading")
-	check(Compare.equivalent(state_before, without_regulars(shop.state)) and shop.state.regulars.points == points_snapshot, "Viewing changes only read flags")
+	check(Compare.equivalent(state_before, M.data(shop.state)), "Viewing statistics never changes the model")
+	shop.state.regulars.record("rogue", false)
+	panel.refresh()
+	await process_frame
+	check(panel.regular_dot.visible, "A stage reached after viewing shows the dot again")
 	for id in panel.regular_cards:
 		var portrait := (panel.regular_cards[id].panel.get_child(0) as HBoxContainer).get_child(0) as TextureRect
 		check(portrait.texture != null and portrait.texture.get_size() == Vector2(32, 48), "%s portrait is the approved 32x48 idle frame" % id)
@@ -143,7 +144,7 @@ func run() -> void:
 	var captured := false
 	if DisplayServer.get_name() != "headless":
 		shop.state.regulars.points = {"traveler": 160, "mage": 61, "elf": 16, "rogue": 0}
-		shop.state.regulars.seen = {"traveler": 3}
+		shop.state.regulars.report_stages = {"traveler": 3}
 		panel.select_page(panel.REPORT); panel.refresh()
 		for i in 3: await process_frame
 		panel.scroll.scroll_vertical = int(panel.scroll.get_v_scroll_bar().max_value)

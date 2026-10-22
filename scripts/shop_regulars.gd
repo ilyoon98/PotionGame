@@ -45,8 +45,9 @@ const STORIES := {
 }
 
 var points := {} # customer id -> record points
-var seen := {} # customer id -> highest stage already read in management
-var report_stages := {} # customer id -> stage when the report period started
+## Stage when the report period started. A higher stage is "new" until the next
+## period; viewing never writes here, so opening statistics stays side-effect free.
+var report_stages := {}
 
 
 ## Customers in the current roster, in content order.
@@ -117,19 +118,8 @@ func lines(id: String) -> PackedStringArray:
 	return result
 
 
-func unread(id: String) -> bool:
-	return stage(id) > int(seen.get(id, 0))
-
-
-func any_unread() -> bool:
-	for id in ids():
-		if unread(id): return true
-	return false
-
-
-## Reading the record never touches points or the economy.
-func mark_seen() -> void:
-	for id in ids(): seen[id] = stage(id)
+func is_new(id: String) -> bool:
+	return stage(id) > int(report_stages.get(id, 0))
 
 
 func view(id: String) -> Dictionary:
@@ -144,7 +134,7 @@ func view(id: String) -> Dictionary:
 		"progress": "기록 %d · 최고 단계" % value if next == 0 else "기록 %d / %d · 다음 %s" % [value, next, STAGE_NAMES[current + 1]],
 		"souvenir": STORIES[id].souvenir if current >= SOUVENIR_STAGE else "",
 		"souvenir_name": STORIES[id].souvenir_name,
-		"lines": lines(id), "unread": unread(id),
+		"lines": lines(id), "new": is_new(id),
 	}
 
 
@@ -182,14 +172,14 @@ func report_lines() -> PackedStringArray:
 
 
 func to_data() -> Dictionary:
-	return {"version": VERSION, "points": points.duplicate(), "seen": seen.duplicate(), "report_stages": report_stages.duplicate()}
+	return {"version": VERSION, "points": points.duplicate(), "report_stages": report_stages.duplicate()}
 
 
 ## Validate everything before assigning; a malformed record rejects the save.
 func load_data(data: Variant) -> bool:
 	if not data is Dictionary or data.get("version") != VERSION: return false
 	var parsed := {}
-	for key in ["points", "seen", "report_stages"]:
+	for key in ["points", "report_stages"]:
 		var table: Variant = data.get(key)
 		if not table is Dictionary: return false
 		var clean := {}
@@ -201,10 +191,8 @@ func load_data(data: Variant) -> bool:
 			if key != "points" and value > THRESHOLDS.size(): return false
 			clean[id] = int(value)
 		parsed[key] = clean
-	for key in ["seen", "report_stages"]:
-		for id in parsed[key]:
-			if parsed[key][id] > stage_for(int(parsed.points.get(id, 0))): return false
+	for id in parsed.report_stages:
+		if parsed.report_stages[id] > stage_for(int(parsed.points.get(id, 0))): return false
 	points = parsed.points
-	seen = parsed.seen
 	report_stages = parsed.report_stages
 	return true
