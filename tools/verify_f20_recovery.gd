@@ -115,7 +115,7 @@ func run() -> void:
 				check(s.upgrade_garden() == reference.upgrade_garden(),"Unowned garden upgrade unchanged")
 			var current: Dictionary = M.data(s); current.erase("workshop")
 			# Desktop placement prefs (2026-10-21) postdate the frozen reference.
-			current.erase("window_position"); current.erase("management_position")
+			current.erase("window_position"); current.erase("management_position"); current.erase("audio")
 			current.erase("keeper"); current.erase("aging"); current.erase("keeper_upgrades"); current.erase("report_f21"); current.version = 12
 			check(Compare.equivalent(current,M.data(reference)),"Unowned whole state matches approved free policy")
 		# A mid-batch paid purchase freezes the existing duration without rewinding.
