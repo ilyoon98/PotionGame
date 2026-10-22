@@ -13,6 +13,7 @@ const IngredientIcons = preload("res://scripts/ingredient_icons.gd")
 const Rare = preload("res://scripts/rare_recipes.gd")
 const Palette = preload("res://scripts/management_palette.gd")
 const ContractsScreen = preload("res://scripts/management_contracts.gd")
+const Regulars = preload("res://scripts/shop_regulars.gd")
 const INK := Palette.TEXT
 const MUTED := Palette.MUTED
 const OPERATION := 0
@@ -49,6 +50,9 @@ var pages: Array[VBoxContainer] = []
 var rows := {}
 var selected := 0
 var statistics_values := {}
+var regular_cards := {} # F22 customer id -> card controls on the statistics page
+var regular_new := {} # customers whose stage was unread when the statistics page opened
+var regular_dot: ColorRect
 var result_button: Button
 var close_button: Button
 var title_drag_handle: Control
@@ -122,6 +126,14 @@ func _ready() -> void:
 	result_button.name = "StatisticsButton"
 	result_button.tooltip_text = "플레이 시간 · 누적 수입과 운영 기록"
 	_header_button_icon(result_button, preload("res://assets/icons/statistics.svg"))
+	regular_dot = ColorRect.new()
+	regular_dot.name = "RegularNewDot"
+	regular_dot.color = Palette.ACTION
+	regular_dot.size = Vector2(8, 8)
+	regular_dot.position = Vector2(68, 4)
+	regular_dot.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	regular_dot.hide()
+	result_button.add_child(regular_dot)
 	header_stats = HBoxContainer.new()
 	header_stats.name = "HeaderStats"
 	header_stats.position = Vector2(20, 54)
@@ -335,6 +347,8 @@ func _ready() -> void:
 	_statistic("fatigue_failed", "피로로 인한 실패", TITLE_SIZE, INK, "피로 페널티가 없었다면 성공했을 실패 물약 수예요.")
 	_statistic("aged_sold", "숙성품 판매")
 	_statistic("aged_revenue", "숙성 수입")
+	_section(REPORT, "단골 손님")
+	for id in Regulars.ids(): _regular_card(id)
 	contracts_view = ContractsScreen.new()
 	contracts_view.panel = self
 	contracts_view.hide()
@@ -540,6 +554,75 @@ func _text_button_style(button: Button, selected: bool = false) -> void:
 		button.add_theme_color_override(part, Palette.ACCENT if selected else INK)
 	button.add_theme_color_override("font_hover_color", Palette.ACCENT if selected else INK)
 	button.set_meta("selected_underline", selected)
+
+## F22: one record card per customer. Points come from completed sales only.
+func _regular_card(id: String) -> void:
+	var panel := PanelContainer.new()
+	panel.name = "Regular_" + id
+	panel.add_theme_stylebox_override("panel", _divider_style(Palette.LINE))
+	panel.tooltip_text = "실제로 물약을 산 거래만 기록돼요. 일반 거래 1점, 선호 거래 3점이며 기록은 줄지 않아요."
+	pages[REPORT].add_child(panel)
+	var line := HBoxContainer.new()
+	line.add_theme_constant_override("separation", 12)
+	panel.add_child(line)
+	var portrait := TextureRect.new()
+	portrait.texture = ManagementArt.icon("regular_" + id)
+	portrait.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	portrait.custom_minimum_size = Vector2(32, 48)
+	portrait.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
+	portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	line.add_child(portrait)
+	var body := VBoxContainer.new()
+	body.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	body.add_theme_constant_override("separation", 4)
+	line.add_child(body)
+	var top := HBoxContainer.new()
+	body.add_child(top)
+	var title := Label.new()
+	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	title.add_theme_font_size_override("font_size", BODY_SIZE)
+	title.add_theme_color_override("font_color", INK)
+	top.add_child(title)
+	var badge := Label.new()
+	badge.text = "새 이야기"
+	badge.add_theme_font_size_override("font_size", AUX_SIZE)
+	badge.add_theme_color_override("font_color", Palette.ACTION)
+	top.add_child(badge)
+	var bar := _bar(body, Palette.ACCENT)
+	var progress := Label.new()
+	progress.add_theme_font_size_override("font_size", AUX_SIZE)
+	progress.add_theme_color_override("font_color", MUTED)
+	body.add_child(progress)
+	var habits := Label.new()
+	habits.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	habits.custom_minimum_size.x = CONTENT_WIDTH - 64
+	habits.add_theme_font_size_override("font_size", AUX_SIZE)
+	habits.add_theme_color_override("font_color", MUTED)
+	body.add_child(habits)
+	var story := Label.new()
+	story.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	story.custom_minimum_size.x = CONTENT_WIDTH - 64
+	story.add_theme_font_size_override("font_size", AUX_SIZE)
+	story.add_theme_color_override("font_color", INK)
+	body.add_child(story)
+	regular_cards[id] = {"panel": panel, "title": title, "badge": badge, "bar": bar, "progress": progress, "habits": habits, "story": story}
+
+
+func _refresh_regulars(state: RefCounted) -> void:
+	for id in regular_cards:
+		var card: Dictionary = regular_cards[id]
+		var data: Dictionary = state.regulars.view(id)
+		_text(card.title, "%s · %s" % [data.name, data.stage_name])
+		card.badge.visible = regular_new.has(id)
+		card.bar.value = data.fraction * card.bar.max_value
+		_text(card.progress, data.progress)
+		_text(card.habits, Regulars.habits(id, state.progression))
+		var lines: PackedStringArray = data.lines
+		_text(card.story, "아직 거래 기록이 없어요." if lines.is_empty() else "
+".join(lines))
+
 
 func _section(page: int, text: String) -> Label:
 	if page == OPERATION:
@@ -968,6 +1051,12 @@ func select_page(index: int) -> void:
 		tabs[i].set_pressed_no_signal(TAB_PAGES[i] == index)
 		_text_button_style(tabs[i], TAB_PAGES[i] == index)
 	if index == SETTINGS: _refresh_startup_setting()
+	if index == REPORT:
+		# Remember what was new for this visit, then mark it read; points never change.
+		regular_new.clear()
+		for id in Regulars.ids():
+			if host.state.regulars.unread(id): regular_new[id] = true
+		host.state.regulars.mark_seen()
 	snap_gauges = true
 	refresh()
 	snap_gauges = false
@@ -1727,6 +1816,13 @@ func refresh(visible_only: bool = false) -> void:
 		_text(statistics_values.aged_revenue, host._number(lifetime.aged_revenue) + " G")
 		for key in ["brewed", "sold", "expeditions", "reputation_gain"]:
 			_text(statistics_values[key], host._number(lifetime[key]) + ("회" if key == "expeditions" else "개" if key in ["brewed", "sold"] else ""))
+		_refresh_regulars(state)
+		# Stages reached while the page is open are shown at once and count as read.
+		if state.regulars.any_unread():
+			for id in Regulars.ids():
+				if state.regulars.unread(id): regular_new[id] = true
+			state.regulars.mark_seen()
+	regular_dot.visible = state.regulars.any_unread()
 	_sort_completed(visible_only)
 
 func _sort_completed(visible_only: bool = false) -> void:

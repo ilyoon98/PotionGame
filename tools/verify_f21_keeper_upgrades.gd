@@ -188,13 +188,13 @@ func run() -> void:
 	var aged := F.completed_store(73129, "final", "both3", "normal"); aged.gold = 1000000; aged.progression.reputation = Aging.UNLOCK_REPUTATION
 	check(aged.aging.purchase(aged, "open", 1).ok, "Aged fixture opens aging")
 	aged.aging.totals = {"sold": 7, "revenue": 700}
-	var v14: Dictionary = M.data(aged); v14.version = 14; v14.erase("keeper_upgrades"); v14.erase("report_f21")
+	var v14: Dictionary = M.data(aged); v14.version = 14; v14.erase("keeper_upgrades"); v14.erase("report_f21"); v14.erase("regulars")
 	v14.keeper.erase("totals"); v14.keeper.version = 1
 	var migrated := State.new()
 	check(migrated.load_data(v14) and migrated.keeper.upgrades.levels == {"bed": 0, "tea": 0} and migrated.keeper.totals == {"sleeps": 0, "faints": 0, "fatigue_failed": 0}, "v14 migrates with no upgrades and zero counters")
 	check(migrated.report_f21.aged_sold == 7 and migrated.report_f21_counts().values().all(func(value): return value == 0), "v14 period begins at the saved aged totals")
-	check(migrated.to_data().version == State.SAVE_VERSION and State.SAVE_VERSION == 15, "Migrated state saves as v15")
-	var v13: Dictionary = M.data(State.new()); v13.version = 13; v13.erase("aging"); v13.erase("keeper_upgrades"); v13.erase("report_f21"); v13.keeper.erase("totals"); v13.keeper.version = 1
+	check(migrated.to_data().version == State.SAVE_VERSION and State.SAVE_VERSION >= 15, "Migrated state saves as the current version")
+	var v13: Dictionary = M.data(State.new()); v13.version = 13; v13.erase("aging"); v13.erase("keeper_upgrades"); v13.erase("report_f21"); v13.erase("regulars"); v13.keeper.erase("totals"); v13.keeper.version = 1
 	check(State.new().load_data(v13), "v13 still migrates")
 	var v14_new_keeper: Dictionary = v14.duplicate(true); v14_new_keeper.keeper = M.data(aged).keeper
 	check(not State.new().load_data(v14_new_keeper), "v14 save must carry the v14 keeper shape")

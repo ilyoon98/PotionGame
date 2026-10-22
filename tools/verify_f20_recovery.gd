@@ -24,7 +24,7 @@ class Reference extends "res://.verification/f20-20261020/A/source/scripts/shop_
 	## F21 keeper postdates this reference: compare a keeper-disabled shop as a v12 save.
 	static func legacy(shop: RefCounted) -> Dictionary:
 		var data: Dictionary = JSON.parse_string(JSON.stringify(shop.to_data()))
-		data.erase("keeper"); data.erase("aging"); data.erase("keeper_upgrades"); data.erase("report_f21"); data.version = 12
+		data.erase("keeper"); data.erase("aging"); data.erase("keeper_upgrades"); data.erase("report_f21"); data.erase("regulars"); data.version = 12
 		return data
 	func load_data(data: Variant) -> bool:
 		if not super.load_data(data): return false
@@ -116,7 +116,7 @@ func run() -> void:
 			var current: Dictionary = M.data(s); current.erase("workshop")
 			# Desktop placement prefs (2026-10-21) postdate the frozen reference.
 			current.erase("window_position"); current.erase("management_position")
-			current.erase("keeper"); current.erase("aging"); current.erase("keeper_upgrades"); current.erase("report_f21"); current.version = 12
+			current.erase("keeper"); current.erase("aging"); current.erase("keeper_upgrades"); current.erase("report_f21"); current.erase("regulars"); current.version = 12
 			check(Compare.equivalent(current,M.data(reference)),"Unowned whole state matches approved free policy")
 		# A mid-batch paid purchase freezes the existing duration without rewinding.
 		s = F.completed_store(seed_value,"final","both3","normal"); s.advance(0.25); s.gold = 10000000

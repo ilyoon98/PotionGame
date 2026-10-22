@@ -120,7 +120,7 @@ func run() -> void:
 		check(not target.load_data(broken) and Compare.equivalent(before, M.data(target)), "Reject invalid aging case %d atomically" % i)
 	var legacy: Dictionary = M.data(State.new()); legacy.version = 13; legacy.erase("aging")
 	# v15 keeper fields postdate v13: write the v13 keeper shape (no counters, no bed/tea).
-	legacy.erase("keeper_upgrades"); legacy.erase("report_f21"); legacy.keeper.erase("totals"); legacy.keeper.version = 1
+	legacy.erase("keeper_upgrades"); legacy.erase("report_f21"); legacy.erase("regulars"); legacy.keeper.erase("totals"); legacy.keeper.version = 1
 	var migrated := State.new()
 	check(migrated.load_data(legacy) and not migrated.aging.opened() and migrated.aging.barrels.is_empty(), "v13 save starts without aging")
 	var result := {"checks": checks, "failures": failures, "passed": failures.is_empty(), "hour_aged_sold": coarse.aging.totals.sold, "hour_aged_revenue": coarse.aging.totals.revenue}

@@ -36,9 +36,15 @@ const DESCRIPTIONS := {
 	"keeper": "주인공 · 대기",
 	"keeper_sleep": "주인공 · 수면",
 	"keeper_faint": "주인공 · 기절",
+	"regular_traveler": "단골 · 여행자",
+	"regular_mage": "단골 · 여마법사",
+	"regular_elf": "단골 · 엘프",
+	"regular_rogue": "단골 · 고양이 도적",
 }
 ## First frame (32×48) of each approved keeper pose sheet (16×4 grid).
 const KEEPER_POSES := {"keeper": "idle", "keeper_sleep": "sleep", "keeper_faint": "faint"}
+## F22 regulars rows reuse the first idle frame of each approved customer sheet.
+const CUSTOMER_SHEETS := {"regular_traveler": "traveler", "regular_mage": "mage", "regular_elf": "elf", "regular_rogue": "rogue"}
 static var keeper_icons := {}
 
 
@@ -57,10 +63,11 @@ static func icon(id: String) -> Texture2D:
 	if id == "sales_counter": return load("res://assets/content_expansion_v1/equipment/sales_counter_basic.png")
 	if id == "cauldron": return load("res://assets/cauldron_48.png")
 	if id == "aging_cask": return load("res://assets/pixel_v1/props/aging_cask.png")
-	if KEEPER_POSES.has(id):
+	if KEEPER_POSES.has(id) or CUSTOMER_SHEETS.has(id):
 		if not keeper_icons.has(id):
 			var frame := AtlasTexture.new()
-			frame.atlas = load("res://assets/pixel_v1/characters/keeper/%s-native.png" % KEEPER_POSES[id])
+			var sheet: String = "keeper/%s" % KEEPER_POSES[id] if KEEPER_POSES.has(id) else "%s/idle" % CUSTOMER_SHEETS[id]
+			frame.atlas = load("res://assets/pixel_v1/characters/%s-native.png" % sheet)
 			frame.region = Rect2(0, 0, 32, 48)
 			frame.filter_clip = true
 			keeper_icons[id] = frame

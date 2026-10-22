@@ -5,11 +5,12 @@ const CAPACITY := 12
 const SALE_PRICE := 6
 const CUSTOMER_INTERVAL := 3.2
 const MAX_LEVEL := 15
-const SAVE_VERSION := 15
+const SAVE_VERSION := 16
 const StockProtection = preload("res://scripts/shop_stock_protection.gd")
 const WorkshopOperations = preload("res://scripts/shop_workshop_operations.gd")
 const Keeper = preload("res://scripts/shop_keeper.gd")
 const Aging = preload("res://scripts/shop_aging.gd")
+const Regulars = preload("res://scripts/shop_regulars.gd")
 const Content = preload("res://scripts/shop_content.gd")
 const Rare = preload("res://scripts/rare_recipes.gd")
 const Contracts = preload("res://scripts/shop_contracts.gd")
@@ -48,6 +49,7 @@ var stock_protection := StockProtection.new()
 var workshop := WorkshopOperations.new()
 var keeper := Keeper.new()
 var aging := Aging.new()
+var regulars := Regulars.new()
 var report_supply := {}
 ## Period baseline for the F21 return-report lines (keeper counters, aged sales).
 var report_f21 := {}
@@ -589,6 +591,7 @@ func report_text() -> String:
 	lines.append("주인공 수면 %d회 · 기절 %d회" % [f21.sleeps, f21.faints])
 	lines.append("피로로 인한 제조 실패  %d" % f21.fatigue_failed)
 	if aging.opened() or f21.aged_sold > 0: lines.append("숙성품 판매 %d병 · +%d G" % [f21.aged_sold, f21.aged_revenue])
+	lines.append_array(regulars.report_lines())
 	lines.append("\n모든 수익·재료는 이미 반영됐어요.")
 	return "\n".join(lines)
 
@@ -608,6 +611,7 @@ func start_report_period() -> void:
 	contracts.report_paid = int(contracts.totals.paid)
 	report_supply = late_investments.totals.duplicate()
 	report_f21 = _f21_totals()
+	regulars.start_report()
 	progression.last_report_clock = progression.clock
 	progression.report_started = Time.get_datetime_string_from_system()
 	progression.report_baseline = progression.totals.duplicate()
@@ -621,6 +625,7 @@ func start_report_period() -> void:
 func advance(seconds: float) -> Dictionary:
 	inventory_order()
 	var potion_events: Array[Dictionary] = []
+	var regular_events: Array[Dictionary] = []
 	var contract_events: Array[Dictionary] = []
 	var supply_events: Array[Dictionary] = []
 	var supplied := 0
@@ -747,6 +752,7 @@ func advance(seconds: float) -> Dictionary:
 				aging.totals.sold += 1
 				aging.totals.revenue += aged_price
 				progression.record_sale(aged_kind)
+				_record_regular(aged_preferred, regular_events)
 				potion_events.append({"kind": "aged_sale", "mana": aged_kind, "gold": aged_price, "stage": int(aged.stage), "customer": progression.customer, "preferred": aged_preferred})
 				progression.customer_selected = false
 				customer_waiting = false
@@ -766,6 +772,7 @@ func advance(seconds: float) -> Dictionary:
 				total_sold += 1
 				sold += 1
 				progression.record_sale(kind)
+				_record_regular(preferred, regular_events)
 				if kind is String and not progression.expansion.first_sold.has(kind): progression.expansion.first_sold.append(kind)
 				potion_events.append({"kind": "sale", "mana": kind, "gold": price, "index": index, "customer": progression.customer, "preferred": preferred})
 				progression.customer_selected = false
@@ -788,7 +795,7 @@ func advance(seconds: float) -> Dictionary:
 	bought += _fulfill_ready_delivery()
 	var batch_events: Array = _pending_batch_events.duplicate(true)
 	_pending_batch_events.clear()
-	return {"brewed": brewed, "sold": sold, "harvested": harvested, "earned": earned, "contract_earned": contract_earned, "contract_events": contract_events, "supply_events": supply_events, "supplied": supplied, "batch_events": batch_events, "bought": bought, "last_sold_mana": last_sold_mana, "last_brewed_mana": last_brewed_mana, "potion_events": potion_events, "full_seconds": full_seconds, "customer_wait_seconds": customer_wait_seconds, "material_wait_seconds": material_wait_seconds, "inventory_seconds": inventory_seconds, "inventory_ratio_seconds": inventory_ratio_seconds, "empty_sale_attempts": empty_sale_attempts, "zero_stock_seconds": zero_stock_seconds, "main_activity_seconds": main_activity_seconds, "aux_activity_seconds": aux_activity_seconds, "aux_material_wait_seconds": aux_material_wait_seconds, "protection_seconds": protection_seconds}
+	return {"brewed": brewed, "sold": sold, "harvested": harvested, "earned": earned, "contract_earned": contract_earned, "contract_events": contract_events, "supply_events": supply_events, "supplied": supplied, "batch_events": batch_events, "bought": bought, "last_sold_mana": last_sold_mana, "last_brewed_mana": last_brewed_mana, "potion_events": potion_events, "regular_events": regular_events, "full_seconds": full_seconds, "customer_wait_seconds": customer_wait_seconds, "material_wait_seconds": material_wait_seconds, "inventory_seconds": inventory_seconds, "inventory_ratio_seconds": inventory_ratio_seconds, "empty_sale_attempts": empty_sale_attempts, "zero_stock_seconds": zero_stock_seconds, "main_activity_seconds": main_activity_seconds, "aux_activity_seconds": aux_activity_seconds, "aux_material_wait_seconds": aux_material_wait_seconds, "protection_seconds": protection_seconds}
 
 
 func _retail_price(kind: Variant, preferred: bool) -> int:
@@ -800,6 +807,12 @@ func _retail_price(kind: Variant, preferred: bool) -> int:
 	price = int(round(price * (1.0 + quality) * (1.0 + family_bonus)))
 	if preferred: price += int(progression.expansion.effect("sales_assistant", "preferred_sale_flat", 2 if progression.employee else 0))
 	return price
+
+
+## F22: the record belongs to the customer who completed this sale.
+func _record_regular(preferred: bool, events: Array[Dictionary]) -> void:
+	var event := regulars.record(str(Content.CUSTOMERS[progression.customer]["id"]), preferred)
+	if not event.is_empty(): events.append(event)
 
 
 func _fulfill_supply(events: Array[Dictionary]) -> int:
@@ -817,6 +830,7 @@ func to_data() -> Dictionary:
 		"workshop": workshop.to_data(),
 		"keeper": keeper.to_data(),
 		"aging": aging.to_data(),
+		"regulars": regulars.to_data(),
 		"keeper_upgrades": keeper.upgrades.to_data(),
 		"report_f21": report_f21.duplicate(),
 		"level": level, "total_sold": total_sold,
@@ -847,7 +861,7 @@ func load_data(data: Variant) -> bool:
 			return false
 		if not is_finite(float(data[key])):
 			return false
-	if float(data["version"]) != int(data["version"]) or int(data["version"]) not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, SAVE_VERSION]:
+	if float(data["version"]) != int(data["version"]) or int(data["version"]) not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, SAVE_VERSION]:
 		return false
 	var saved_fees: Variant = data.get("total_spent_expeditions", 0)
 	if not (saved_fees is int or saved_fees is float) or not is_finite(float(saved_fees)) or saved_fees < 0 or saved_fees > 1000000000000 or float(saved_fees) != int(saved_fees): return false
@@ -989,12 +1003,16 @@ func load_data(data: Variant) -> bool:
 			if not (count is int or count is float) or not is_finite(float(count)) or float(count) != int(count) or count < 0 or count > actual_f21[key]: return false
 		saved_report_f21 = {} if data.report_f21.is_empty() else data.report_f21.duplicate()
 		for key in saved_report_f21: saved_report_f21[key] = int(saved_report_f21[key])
+	# v15 and older start the regulars record at zero; visits are never treated as sales.
+	var saved_regulars := Regulars.new()
+	if data.version >= 16 and not saved_regulars.load_data(data.get("regulars")): return false
 	# is assigned. Versions1..9 keep their existing paid batch as retail.
 	contracts = saved_contracts
 	stock_protection = saved_protection
 	workshop = saved_workshop
 	keeper = saved_keeper
 	aging = saved_aging
+	regulars = saved_regulars
 	late_investments = saved_late
 	report_supply = saved_report_supply
 	report_f21 = saved_report_f21
