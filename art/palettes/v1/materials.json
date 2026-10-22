@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "master_palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "basis": "art/mockups/full-ingame-v6",
+  "new_colors_added": 0,
+  "scope": "art production; runtime unchanged",
+  "materials": [
+    {
+      "id": "shelf_counter_floor",
+      "name": "선반·카운터·공통 발판",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "brass": [
+          "#E9B95F"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "wood": "wood",
+        "brass": "gold"
+      }
+    },
+    {
+      "id": "herb_station",
+      "name": "약초·화분",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "pot": [
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "accent": [
+          "#FFF0BC"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "leaf": "leaf",
+        "pot": "purple",
+        "wood": "wood",
+        "accent": "gold"
+      }
+    },
+    {
+      "id": "fire",
+      "name": "솥 밑 불꽃",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "fire": [
+          "#9D4359",
+          "#DE7356",
+          "#F4AC68"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "fire": "fire"
+      }
+    },
+    {
+      "id": "hearth",
+      "name": "돌 화덕",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52",
+          "#827589"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "stone": "stone"
+      }
+    }
+  ]
+}

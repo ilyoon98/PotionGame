@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "approved_by_user": true,
+  "date": "2026-10-14",
+  "user_reply": "그래 이정도면 뭐 진행하자",
+  "reference": "art/characters/elf-redesign-v2/elf-native.png",
+  "sha256": "918cae25980341dbdd34f8f886ce4f719ea06109689048b4e80249d74dee7158",
+  "scope": [
+    "elf whole-body identity and costume",
+    "approved five-color palette",
+    "32x48 native proportions"
+  ],
+  "excluded": [
+    "unseen new keyframes",
+    "completed action animations",
+    "runtime integration"
+  ]
+}

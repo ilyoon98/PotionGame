@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "status": "approved_palette_assignments",
+  "approved_by_user": true,
+  "approved_on": "2026-10-13",
+  "approval_quote": "좋아 이제 손님 한명씩 만들자고 팔레트 잘쓰고 우리 크기 부위별 크기 잘 지키고 키프레임을 만들자고",
+  "scope": "팔레트 v1의 공통24색, 캐릭터별 색 역할과 물약별 색 매핑을 후속 키프레임 제작에 사용한다.",
+  "note": "이 승인은 아직 만들지 않았거나 보여주지 않은 새 키프레임·행동별 애니메이션 디자인까지 승인한 것은 아니다."
+}

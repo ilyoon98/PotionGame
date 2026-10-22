@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "source": "visible Godot Shop RGBA captures",
+  "cases": [
+    {
+      "customer": "traveler",
+      "potion": "health",
+      "liquid_color": "#DE9B88",
+      "visible_bottle_liquid_pixels": 72,
+      "visible_pot_liquid_pixels": 549,
+      "stages": 9,
+      "inventory": [
+        8,
+        7,
+        8
+      ],
+      "empty_alpha": 0
+    },
+    {
+      "customer": "mage",
+      "potion": "moon",
+      "liquid_color": "#C38EB5",
+      "visible_bottle_liquid_pixels": 90,
+      "visible_pot_liquid_pixels": 549,
+      "stages": 9,
+      "inventory": [
+        8,
+        7,
+        8
+      ],
+      "empty_alpha": 0
+    },
+    {
+      "customer": "elf",
+      "potion": "purify",
+      "liquid_color": "#9BE2CF",
+      "visible_bottle_liquid_pixels": 99,
+      "visible_pot_liquid_pixels": 549,
+      "stages": 9,
+      "inventory": [
+        8,
+        7,
+        8
+      ],
+      "empty_alpha": 0
+    },
+    {
+      "customer": "rogue",
+      "potion": "agility",
+      "liquid_color": "#FFF0BC",
+      "visible_bottle_liquid_pixels": 90,
+      "visible_pot_liquid_pixels": 549,
+      "stages": 9,
+      "inventory": [
+        8,
+        7,
+        8
+      ],
+      "empty_alpha": 0
+    }
+  ]
+}

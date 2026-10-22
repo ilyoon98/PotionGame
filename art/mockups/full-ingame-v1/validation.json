@@ -1,0 +1,1167 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "window": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 359,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3
+      },
+      "source_sha256": "5cf40af4a991eb5550ea7f7339463a4e942f0f2db9c36e2a2d9754ac59779279",
+      "native_pixel_sha256": "5f063d5b7220d29a9bf8d8f27ac75ec278ce9a0a9e149ed1cb88c91965aff74c"
+    },
+    "shelf_frame": {
+      "passed": true,
+      "size": [
+        48,
+        48
+      ],
+      "opaque_pixels": 520,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3
+      },
+      "source_sha256": "677e6ee32c834700bbf342b59c11b9bc927f1fb000d24713db57e4bb7694891b",
+      "native_pixel_sha256": "762d7783dae5dbe8eaf4e009c3374e8f8212bfccaa3d45c4605c501ca5cee469"
+    },
+    "counter": {
+      "passed": true,
+      "size": [
+        48,
+        16
+      ],
+      "opaque_pixels": 448,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3
+      },
+      "source_sha256": "26fcb9ee9d9602f6bcde574529c59daa1a51b1e8e88a3d4f2a342c06ecca6c66",
+      "native_pixel_sha256": "25885e1e62b4c85a7095124d44825daa9d79a5c0dcee88b80b032c625bf2b6c6"
+    },
+    "poster": {
+      "passed": true,
+      "size": [
+        24,
+        32
+      ],
+      "opaque_pixels": 429,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "purple": 4
+      },
+      "source_sha256": "0c892e5de996fc1941e5097c8ae0008940ef0ee0deab15bbb6c16e3cac68f5ab",
+      "native_pixel_sha256": "b5c77a84c744063765d0e160c87bd8f237d4919513ec3d464b42371002bffe66"
+    },
+    "herb_station": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 448,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "leaf": 3,
+        "wood": 4,
+        "gold": 5
+      },
+      "source_sha256": "bc5b29e52b380a53a7199d296f8a4742f62c818b42e52c6d771cb1405b67f1e7",
+      "native_pixel_sha256": "e2dd8ccd2e912fddf7e838534e4807018d4bd0f775a39c2f4fecc8aa700f441d"
+    },
+    "elf": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 861,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "skin": 3,
+        "leaf": 4
+      },
+      "source_sha256": "f37bc20f621afc86a905675c85fac64fb632f36780df4f8a8dee958425a516a1",
+      "native_pixel_sha256": "2f3aeedbcd7a2c0f4118a3ca6da71d2c61f0972e9e4aef205b075d3ae53887b7"
+    },
+    "cauldron_moon": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 585,
+      "colors": [
+        "#241C32",
+        "#827589",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "liquid": 3,
+        "gold": 4,
+        "stone": 5
+      },
+      "source_sha256": "4270f2f9f38f2660fec89812f5596d31068e0daa5e565de92d2d1eec71ddf657",
+      "native_pixel_sha256": "59a0c9b1fc0ffb289e605439f08635ead023130160193f8960e6f3648f265208"
+    },
+    "potion_health": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 53,
+      "colors": [
+        "#916047",
+        "#A65D64",
+        "#DE9B88",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "fc74fa913d3fd03165b888bc9d62dd82ce9e77edc60f8e7051f7bf330c911fde",
+      "native_pixel_sha256": "50539b0ba631655f97cf9b83a9014e39215c6a40e86787b0c6ebd8e531d8e966"
+    },
+    "potion_mana": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#24566A",
+        "#3BA8A3",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "7f01057054a7f94707d8fe498553b2a2380286bee31fd33603fd149a259d56cc",
+      "native_pixel_sha256": "05714d3d643c8352d2581acabdc56522e88ffff54c2fdf0b46bd122449c0f83d"
+    },
+    "potion_moon": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "15af40c0f70476b92071030c85b942db7e40953220aa1d7b6f4987b6945e483c",
+      "native_pixel_sha256": "02e3b1ac9a11d97b059f8099172adea155d7c238679e4558cc9377674ef7d5e6"
+    },
+    "potion_purify": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 68,
+      "colors": [
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "8aff74b844cb9098b8a7dc3b4733e6130292c748f8f0f0530ce9c1f952a5f4ce",
+      "native_pixel_sha256": "c7b2c2f8da8f890349e1b952e78b4a9273f4bd2f561de5d4a2f049a8c68c60ed"
+    },
+    "potion_agility": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 38,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "d3bf37a963e93763888525f142ff66f2b0634aa1f6397174f09daf1495eff3c5",
+      "native_pixel_sha256": "a32d98f219c9f904527387b43c4899521cae1d1495f8532ea46dba9ae9a49fe1"
+    },
+    "potion_vigor": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 72,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#9D4359",
+        "#DE7356",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "64f1fdb1e96e934d3eb9b9eb6cebf6f5785a895b5b02f1aaee08e376f97049b3",
+      "native_pixel_sha256": "f2e3bf521067434554e2e3df86010a6352ea5540ac732cbf8eafa0e2bafe01eb"
+    },
+    "potion_antidote": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 44,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "b9dcf5fc5f046c8e2d63477ffee26d848529112660f6d1a2da01d30b26c1ee8a",
+      "native_pixel_sha256": "a1df12c532f2556e600412f49340420cc5d6cd9778b5a25ee4fe2746ed9d0420"
+    },
+    "potion_fortune": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "d157c0cd022d81cdf9e9b48f353894097764f7a037495820c89a409e99e8441c",
+      "native_pixel_sha256": "5b6cf6c2b08f0aaa01f2339c5177d6c3f0df560419c9e35a11664ee93b21489f"
+    },
+    "potion_focus": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 48,
+      "colors": [
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "9bc52b38a638aeb7543650ad3fb0e6916afd6e5683483c77c9079c62ea2a21e9",
+      "native_pixel_sha256": "7a2ce3fdc9045ffc7c3b3dcf1a456dd610859fc19bba09a637b503d248f27a04"
+    },
+    "potion_restoration": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 52,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#DE9B88",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "d7115f3a99a319b2b594fe977f6883f8506ea04234e300e4dbd54e61f168581d",
+      "native_pixel_sha256": "b7607c72e5c31f939ba8ec731f670b8ba8d4dbe7ab9b4df80f97e69660f19ce6"
+    },
+    "potion_growth": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 56,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "5691e768071440ca04527c3f314bc8e57a468ff3dd4c313b5103c2d7c95ede8e",
+      "native_pixel_sha256": "040da0f0d677268438dbdfc66115af37d76ba840c54f82ab77aa0c87c3253c0b"
+    },
+    "potion_clarity": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 52,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "bb2ebc09e5ef27286830cfb1cbe136da40ab76ab9a2bdc4921729583c07a5747",
+      "native_pixel_sha256": "3bf0c127e3f903d6eaec116ce6660387a0e1245fd11c3a2efadab66196c47808"
+    },
+    "potion_ward": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "cc5d185ac3250b5e48209233e5a5bd5fda4208f3104e47d8c673893e74d79403",
+      "native_pixel_sha256": "de6b805fa568c6ad85549e4d3867d0d381db32a90d051ca27e122ef19cd11f62"
+    },
+    "potion_spirit": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "f3006460084ab397439df59096ca39fec8d3120d4161e19c31e58e4c1b2dfc97",
+      "native_pixel_sha256": "37282a904724af59391f0b57a42758bf83a786df38c36d2bb861954eaf8a1c26"
+    },
+    "potion_arcane_amplification": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "afa8b8d805e0c42737749141b4ef9b63fb6061a476ba3913180ba0930db0bc96",
+      "native_pixel_sha256": "5f21105499f5616c097603ff1771ec5868ca388a1cfcf9f7951433ebc7938298"
+    },
+    "potion_iron_skin": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 68,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "bcfe0b2ec73bacb5dda2fe8feb29e463ede92e2374fbc4027ffc52807ec81425",
+      "native_pixel_sha256": "013b3e6117d2a16f27cffa4e3ed65b3e704ca02cae4d18d6802c10f7ba71bb88"
+    },
+    "potion_stealth": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 74,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "5ce652f67a3f78e822ee8465b580bac6d40896f84f262671f64aaf9254a09443",
+      "native_pixel_sha256": "2564f104f80c32bed5ba8ac4066f4a70ed313ea9e79f8eb647c0ed2607ab4258"
+    },
+    "potion_poison_resistance": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 46,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "b1f2d5a859b84164c77304c1897eaabe53669d58470029ebecf5f4f07c07613f",
+      "native_pixel_sha256": "78d76f51d4cf1102289b6f772c605f02ec4fca51e348d82d73ff9573ea5c4f47"
+    },
+    "potion_illusion": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 44,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "6c62000036f3886ed28590197777171503c48eb6c3780ed3973779436264ee89",
+      "native_pixel_sha256": "a3ee3fd1dab163f03853ddec01bf2014d48a1faa802b67e8b73013913a444f7d"
+    },
+    "potion_soul_purification": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 46,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "ef1f2889982e10ca68877cfdfccd44def49040e7e986a21c19b5c8468d1d3b2b",
+      "native_pixel_sha256": "70a53aafbde6a99a59df67feef9003d86a88d407644280cc5673022ea9d65aaa"
+    },
+    "potion_wisdom": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "8928235efc3935970d078b2ec0135c13291f92a8a3568a7cfb65c126b325d867",
+      "native_pixel_sha256": "75b898e1d714d68e3b1169bc656b8fdece0d600d1fb1c7dc512d1f8506573428"
+    },
+    "potion_reflection": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 42,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "40e3fd4a179f20a64e748b5b700b8774fd2c620ab848f3de08deee35354c0bb3",
+      "native_pixel_sha256": "513ff7321088fc71ceffdec1e766ad68809c0ec47b1f5f8ad152555238fed5f7"
+    },
+    "potion_haste": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "4cdcc7cb6dec25a6685b252951ce9862bb3a18bc74ad890d22255b82044db1ab",
+      "native_pixel_sha256": "fe4af0628e3291bce1949d055c55a3c9744430c96560dce9b8b1f06a7a87b591"
+    },
+    "potion_nightwalk": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "29b8bf2cb57c0a9fe103346e43d4a4753337cf59b7a33e40fa41dcc48750d840",
+      "native_pixel_sha256": "70bd323d96723a9a2038905b0c4cd5860493cde2787b3ceed9d8ecd31c509d0b"
+    },
+    "potion_moonradiance": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 46,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "e22ce90a51136113fe494d40b317d478d76e904392ab80b31c80fb1c66fac83e",
+      "native_pixel_sha256": "29d449acd4789e56dc057d6c86f906a53b945456b8a5204f0fd334b6badba647"
+    },
+    "potion_regeneration": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 66,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "0f84ada4f2b5b4646b27a0ae06b6ff15d46d1621f81e8970c6977031bff52609",
+      "native_pixel_sha256": "41da304e68a83b5423bb1347e04ebdbd941558f41b2d3540aa173a5f892a7a61"
+    },
+    "potion_starlight": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 40,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "10e9134ff5dcd03124f721ff80eb698ce4116d16a05495be2489aeb3fa9f9472",
+      "native_pixel_sha256": "5fcdc7ffb880176d945f7f21efba9b14a6f87a323f1bb35d4d28717f2c2704e1"
+    },
+    "potion_wish": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 52,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "90c68a6a1bd2338fad523b7dbd865215e7639087e4c61076062bf08c664d2c71",
+      "native_pixel_sha256": "f2440abc3c8c4fb3ffe3f18fa8b5c0fb21de0846bb2cba7bebccdb1b62b2dd4d"
+    },
+    "potion_eternity": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 56,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "9b960f7a3bd2fd60eab799a68aacc2c7bf336e520166d8311f0b86644d0c34cf",
+      "native_pixel_sha256": "6485284811173d3ead680138f1c377cca93bbdbe616d78c80dfaca83d7442c1a"
+    },
+    "potion_sage_elixir": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 64,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "73400ead1b9ad83da22154da2d1b72b94050367949ea777e31e6f3a409f9ea33",
+      "native_pixel_sha256": "02770c26ec57b426f93ea754eec4945f29277fa726b4d61ed07410ecd09b0b53"
+    },
+    "potion_worldtree_elixir": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "19bbd997d6e17897b6404ba37d2ac3e1833cf7292f5c12fe21d8ece3662d97c6",
+      "native_pixel_sha256": "96bad119e9416f255a96c1c0850729e3e2e8780d4417da558e5eb97f896bb418"
+    },
+    "potion_shadow_elixir": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 44,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "6b25dc076230030ea7e7133abe754f42b158932b43905b901041f015fb6b856a",
+      "native_pixel_sha256": "04e8543fc6444b2afd7918cbe5c643466b94377ea4a6e525b15dcd396321e4c8"
+    },
+    "potion_rare_forest_breath": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 36,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "c671e7bc19190aaf6914d4ca3d412a1d72d237864e692ca8c9af4fb2d375ff88",
+      "native_pixel_sha256": "281d7434b1af6a1202b61c1df92957ecbad0678cd5ccfee84a58efa5bed6066d"
+    },
+    "potion_rare_mist_veil": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "16342c9d53471c2514d4ed90d266a37cb9a9779fbe1cb707d50cc9d3d4b354ff",
+      "native_pixel_sha256": "d10ed51164205fb9a2be029685b1f5920d146ccaa96715e035bc341bfacd1fb3"
+    },
+    "potion_rare_lunar_seal": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "dedb7b5bb0803c2fa039ebec96b7b394e0928231549b71c4dc90f7420ebea6a6",
+      "native_pixel_sha256": "992108ece4bf15b28e53bbb697adf1d0c783e6bcee3840d8aa82dc5c75d47b18"
+    },
+    "potion_rare_nebula_distillate": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 48,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glass": 2,
+        "wood": 3,
+        "liquid": 4
+      },
+      "source_sha256": "2fe6dc2580f237b2af7fe7215092754a10614d23aa440b6fa46a5fbd91a1536a",
+      "native_pixel_sha256": "b9552c5ba58a1eef8882fd4223016090d5b8d25e67fc0b23fee7f59a49905235"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

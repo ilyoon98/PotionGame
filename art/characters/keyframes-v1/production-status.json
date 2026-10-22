@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "current_stage": "rogue_action_animation_review",
+  "current_customer": "rogue",
+  "customer_order": [
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "completed_keyframe_candidates": [
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "traveler": {
+    "status": "review_deferred",
+    "user_feedback": "여행자 여자처럼 안보이긴 하지만 일단 넘어가고 그다음 캐릭터를 해보자",
+    "remaining_feedback": "여성 인상이 약함. 사용자의 지시대로 수정은 보류하고 다음 손님을 제작한다.",
+    "approved_by_user": false,
+    "frame_count": 8,
+    "review": "art/characters/keyframes-v1/traveler/review.html",
+    "validation": "art/characters/keyframes-v1/traveler/validation.json",
+    "face_revision": "rounded_v1_candidate",
+    "actions": "art/characters/actions-v1/traveler/actions.json",
+    "motion_review": "art/characters/actions-v1/traveler/review.html",
+    "actions_status": "runtime_integrated",
+    "carry_pose_count": 4,
+    "actions_followup_authorized_by": "좋아 다음 여마법사도 진행해. 팔레트랑32×48규격 지키고 모자 안 뜨게, 두 눈이랑 외곽선도 확인해서 입장·대기·물약 받기·병 들고 퇴장까지 연결해줘",
+    "actions_acceptance_scope": "Action cycle accepted for followup; deferred feminine appearance feedback remains deferred."
+  },
+  "mage": {
+    "status": "face_revision_candidate",
+    "approved_by_user": false,
+    "frame_count": 8,
+    "review": "art/characters/keyframes-v1/mage/review.html",
+    "validation": "art/characters/keyframes-v1/mage/validation.json",
+    "latest_correction": "Rounded cheek/chin candidate; old rectangular face superseded by latest user feedback.",
+    "approval_note": "User accepted the hat correction and requested the next elf keyframes.",
+    "retained_approved_components": [
+      "costume",
+      "body_proportions",
+      "hat_placement[0,4]"
+    ],
+    "actions": "art/characters/actions-v1/mage/actions.json",
+    "motion_review": "art/characters/actions-v1/mage/review.html",
+    "actions_status": "runtime_integrated",
+    "carry_pose_count": 4,
+    "actions_acceptance_scope": "User accepted mage action preview and requested next elf actions on2026-10-15. Existing unrelated face approval flags are unchanged."
+  },
+  "next_customer": null,
+  "remaining_customers": [],
+  "action_animations": "keeper_and_all_four_customer_candidates_ready_for_scene_review",
+  "runtime_integrated": true,
+  "elf": {
+    "status": "keyframes_v2_candidate",
+    "approved_by_user": false,
+    "design_approved_by_user": true,
+    "design_approval": "art/characters/elf-redesign-v2/approval.json",
+    "frame_count": 8,
+    "review": "art/characters/keyframes-v2/elf/review.html",
+    "validation": "art/characters/keyframes-v2/elf/validation.json",
+    "previous_keyframes_review": "art/characters/keyframes-v1/elf/review.html",
+    "previous_design_status": "superseded_by_user_feedback",
+    "latest_user_feedback": "다음 진행해",
+    "design_review": "art/characters/elf-redesign-v2/review.html",
+    "design_validation": "art/characters/elf-redesign-v2/validation.json",
+    "keyframes_match_latest_design": true,
+    "next_step": "Rogue keyposes produced; next keeper brewing and handover keyposes, then actions.",
+    "user_authorized_next_customer": true,
+    "continuation_date": "2026-10-14",
+    "actions": "art/characters/actions-v1/elf/actions.json",
+    "motion_review": "art/characters/actions-v1/elf/review.html",
+    "actions_status": "runtime_integrated",
+    "carry_pose_count": 4,
+    "actions_acceptance_scope": "User accepted elf action preview and requested cat rogue actions on2026-10-15."
+  },
+  "face_refinement": {
+    "status": "candidate",
+    "review": "art/characters/face-refinement-v1/review.html",
+    "mockup": "art/mockups/full-ingame-v7/animated-preview.html",
+    "characters": [
+      "keeper",
+      "elf",
+      "mage",
+      "traveler"
+    ],
+    "customer_keyframes_updated": 24,
+    "idle_frames_tested": 256,
+    "approved_by_user": false
+  },
+  "elf_redesign": {
+    "status": "approved_design",
+    "approval": "art/characters/elf-redesign-v2/approval.json",
+    "user_reply": "그래 이정도면 뭐 진행하자",
+    "date": "2026-10-14",
+    "review": "art/characters/elf-redesign-v2/review.html",
+    "design_identity": [
+      "side braid and leaf clip retained",
+      "one-shoulder fitted leaf top",
+      "leather belt and wrist cuffs",
+      "fitted shorts with angular leaf hip panel"
+    ],
+    "native_canvas": [
+      32,
+      48
+    ],
+    "palette_colors": 5,
+    "generated_keyframes": 8,
+    "keyframes_review": "art/characters/keyframes-v2/elf/review.html",
+    "approved_by_user": true,
+    "previous_costume_review": "art/characters/elf-redesign-v1/review.html"
+  },
+  "next_character": null,
+  "remaining_keyframe_characters": [],
+  "rogue": {
+    "status": "approved_keyposes_for_followup",
+    "approved_by_user": true,
+    "frame_count": 8,
+    "review": "art/characters/keyframes-v2/rogue/review.html",
+    "validation": "art/characters/keyframes-v2/rogue/validation.json",
+    "native_canvas": [
+      32,
+      48
+    ],
+    "palette_colors": 5,
+    "identity": "Current game v4 orange cat hair/ears/tail, red scarf, flat black cropped top, shorts/gloves/boots",
+    "generation_mode": "builtin",
+    "bottle_pose_recipe_pairs_tested": 72,
+    "actions_status": "runtime_integrated",
+    "next_step": "Whole-scene stock/counter/magical catch review, then Godot integration.",
+    "approval": "art/characters/keyframes-v2/rogue/approval.json",
+    "latest_user_feedback": "좋아 모든 캐릭터들이 팔레트와 동일한지 등 검사하고 다음작업을 해보자고",
+    "actions": "art/characters/actions-v1/rogue/actions.json",
+    "motion_review": "art/characters/actions-v1/rogue/review.html",
+    "carry_pose_count": 4
+  },
+  "current_character": null,
+  "next_stage": "runtime_visual_feedback",
+  "completed_character_keyframe_candidates": [
+    "keeper",
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "all_character_audit": "art/characters/audit-v1/validation.json",
+  "keeper": {
+    "status": "corrected_keyframes_and_combined_motion_candidate",
+    "approved_by_user": false,
+    "frame_count": 6,
+    "review": "art/characters/keyframes-v4/keeper/review.html",
+    "validation": "art/characters/keyframes-v4/keeper/validation.json",
+    "contacts": "art/characters/keyframes-v4/keeper/contact-validation.json",
+    "native_canvas": [
+      32,
+      48
+    ],
+    "palette_colors": 5,
+    "current_head_hat_preserved": false,
+    "brew_contact_pairs": 108,
+    "handover_contact_pairs": 72,
+    "actions_status": "IDLE/brew/handover combined candidate motion",
+    "brew_redrawn_facing": "left",
+    "visible_hands_per_brew_pose": 2,
+    "minimum_tested_sleeve_width": 4,
+    "old_head_overlay_used": false,
+    "keyframes": "art/characters/keyframes-v4/keeper/keyframes.json",
+    "motion": "art/characters/keyframes-v4/keeper/motion/validation.json",
+    "user_feedback_resolved": [
+      "Whole facing includes hat/body",
+      "Nonworking arm hangs down",
+      "Brown hair materials",
+      "Stationary handover waist and feet",
+      "Combined IDLE/hat/cape/hair preview"
+    ]
+  },
+  "latest_keeper": "art/characters/keyframes-v4/keeper/review.html",
+  "keeper_action_animations": "combined_motion_candidate",
+  "completed_customer_action_candidates": [
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "remaining_customer_actions": [],
+  "whole_scene": {
+    "review": "art/mockups/full-ingame-v9/animated-preview.html",
+    "validation": "art/mockups/full-ingame-v9/validation.json",
+    "verification": "art/mockups/full-ingame-v9/verification.json",
+    "status": "runtime_integrated_pending_visual_feedback",
+    "runtime_integrated": true,
+    "flow": [
+      "cauldron",
+      "shelf_stock",
+      "sales_counter",
+      "magical_flight",
+      "customer_catch",
+      "carry_exit"
+    ],
+    "direct_hand_contact_required": false,
+    "supersedes": "art/mockups/full-ingame-v8/animated-preview.html",
+    "runtime_review": "art/runtime-reviews/pixel-v1/review.html",
+    "runtime_verification": ".verification/pixel-runtime-v1/runtime-tests.json",
+    "full_width_floor": true
+  },
+  "runtime_review": "art/runtime-reviews/pixel-v1/review.html"
+}

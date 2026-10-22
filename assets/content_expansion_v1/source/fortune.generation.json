@@ -1,0 +1,15 @@
+{
+  "id": "fortune",
+  "category": "potions",
+  "name": "행운",
+  "family": "craft",
+  "region": "forest_edge",
+  "shape": "squat clover-lobed flask",
+  "symbol": "four-leaf clover",
+  "color": "emerald",
+  "prompt": "Use case: stylized-concept. Asset type: a production inventory potion sprite for Moonshadow Potion Shop, a tiny cozy witch-shop pixel-art game. ONE complete isolated bottle, front orthographic view, centered with generous TRANSPARENT padding. Actual transparent alpha background. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm amber cork and antique gold details, ivory glass highlights, 4 flat clustered shade bands. Simple readable silhouette and ONE bold central emblem taking one third of the bottle body. Think logical 12x16 pixels for shelf bottles and 32x40 for inventory, uniformly enlarge pixels for output. Bottle entire silhouette fully visible. No text, letters, digits, watermark, blur, soft glow, gradients, floor, cast shadows, particles outside bottle, scene or border. Subject: FORTUNE potion. Squat glass flask with clover-like rounded lobes and short neck, rich emerald green liquid, a bold gold FOUR-LEAF CLOVER emblem centered on the body. Emblem very simple and large, no tiny charms.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-98673bb4-977a-4246-8b96-651d20655be6.png",
+  "generator": "built-in image_gen",
+  "project_source": "res://assets/content_expansion_v1/source/fortune.png",
+  "date": "2026-10-08"
+}

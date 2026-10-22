@@ -1,0 +1,11 @@
+{
+  "id": "blue_reed",
+  "name": "푸른 갈대",
+  "category": "materials",
+  "region": "mist_valley",
+  "prompt": "Use case: stylized-concept. Asset type: ONE botanical ingredient and its growth sprite sheet for a tiny cozy witch-shop pixel-art game. True transparent background. EXACT 3 columns x 2 rows of equal-sized cells, no grid lines, no text. Top-left cell: one loose harvested specimen of the botanical subject, no pot. Top-middle: seedling in pot. Top-right: young plant in same pot. Bottom-left: mature plant in same pot. Bottom-middle: EXACT same mature plant and pot plus two small gold diamond harvest sparkles. Bottom-right completely EMPTY transparency. Every planted frame has identical plum ceramic pot, gold rim, same scale, bottom center of cell, same pot-base y in cell. Front orthographic view, full silhouettes, generous transparent gaps so no cell crosses its edge. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, 4 flat shade clusters, warm gold and ivory highlights, no blur, glow, smooth paint, text, scene, cast shadow. Each planted frame designed for 32x40 logical pixels, loose specimen for 32x40 icon. Botanical subject: a bundle of three curved azure reed stems with thick blue seed heads and pale silver-blue blade leaves. Pot marked with one blue reed symbol. Loose specimen and every growth frame must visibly depict the same species.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-8321086c-cc48-47ea-8c43-571ac7ec8c3d.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/blue_reed.png"
+}

@@ -1,0 +1,58 @@
+{
+  "head_center": 15.5,
+  "head_reference": [
+    22,
+    16
+  ],
+  "foot_target_row": 46,
+  "frames": [
+    {
+      "id": "carry_contact_a",
+      "source": "source/generated-carry-a-01.png",
+      "cell": 0,
+      "uniform_source_sheet_scale": 0.45627376425855515,
+      "offset": [
+        46,
+        111
+      ],
+      "whole_body": true,
+      "cross_pose_limb_or_head_splicing": false
+    },
+    {
+      "id": "carry_pass_a",
+      "source": "source/generated-carry-a-01.png",
+      "cell": 1,
+      "uniform_source_sheet_scale": 0.45627376425855515,
+      "offset": [
+        46,
+        110
+      ],
+      "whole_body": true,
+      "cross_pose_limb_or_head_splicing": false
+    },
+    {
+      "id": "carry_contact_b",
+      "source": "source/generated-carry-b-01.png",
+      "cell": 0,
+      "uniform_source_sheet_scale": 0.44136191677175285,
+      "offset": [
+        50,
+        120
+      ],
+      "whole_body": true,
+      "cross_pose_limb_or_head_splicing": false
+    },
+    {
+      "id": "carry_pass_b",
+      "source": "source/generated-carry-b-01.png",
+      "cell": 1,
+      "uniform_source_sheet_scale": 0.44136191677175285,
+      "offset": [
+        45,
+        120
+      ],
+      "whole_body": true,
+      "cross_pose_limb_or_head_splicing": false
+    }
+  ]
+}

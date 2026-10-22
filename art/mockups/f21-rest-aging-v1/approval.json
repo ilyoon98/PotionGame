@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "approved_by_user": true,
+  "approved_on": "2026-10-21",
+  "user_reply": "진행해 A안으로",
+  "review": "art/mockups/f21-rest-aging-v1/review.html",
+  "scope": {
+    "sleep": "A안: 제자리에 앉아 졸기 (keeper sleep_sit + sleep_sit_breath, 3초 호흡, Z 효과)",
+    "faint": "검토 페이지의 기절 포즈 + 모자 위를 도는 별 (명시적 반대 없이 A안 진행에 포함된 추천안)",
+    "aging_cask": "추천안: 벽 선반에 눕힌 숙성통, 표시 위치 (219,0)",
+    "aged_seal": "기존 병 36종 위 5x5 금색 인장 덧그리기, 병 그림 변경 없음"
+  },
+  "not_selected": ["B안 깔개·이불 (bedroll_mat, bedroll_blanket)", "바닥형 숙성통 (aging_cask_floor)"],
+  "runtime": "assets/pixel_v1/catalog.json via tools/publish_f21_rest_aging_v1.py"
+}

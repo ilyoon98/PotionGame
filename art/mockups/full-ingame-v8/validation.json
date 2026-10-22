@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "native_size": [
+    180,
+    83
+  ],
+  "display_size": [
+    540,
+    249
+  ],
+  "character_native_size": [
+    32,
+    48
+  ],
+  "scale": 3,
+  "master_colors": 24,
+  "palette_outside_colors": 0,
+  "partial_alpha_pixels": 0,
+  "composed_frames_checked": 4608,
+  "joined_actor_motion_states": 18432,
+  "customer_count": 4,
+  "recipe_count": 36,
+  "paired_handovers": 144,
+  "actual_customer_pose_direction_contacts": 1440,
+  "normal_DOM_text_excluded_from_art_palette": true,
+  "source_characters_unchanged": [
+    {
+      "character": "keeper",
+      "motion_status": "passed",
+      "unchanged_source_frames": 6,
+      "source": "art/characters/keyframes-v4/keeper/motion/validation.json"
+    },
+    {
+      "character": "traveler",
+      "motion_status": "passed",
+      "unchanged_source_frames": 11,
+      "source": "art/characters/actions-v1/traveler/motion/validation.json"
+    },
+    {
+      "character": "mage",
+      "motion_status": "passed",
+      "unchanged_source_frames": 11,
+      "source": "art/characters/actions-v1/mage/motion/validation.json"
+    },
+    {
+      "character": "elf",
+      "motion_status": "passed",
+      "unchanged_source_frames": 11,
+      "source": "art/characters/actions-v1/elf/motion/validation.json"
+    },
+    {
+      "character": "rogue",
+      "motion_status": "passed",
+      "unchanged_source_frames": 11,
+      "source": "art/characters/actions-v1/rogue/motion/validation.json"
+    }
+  ],
+  "runtime_integrated": false
+}

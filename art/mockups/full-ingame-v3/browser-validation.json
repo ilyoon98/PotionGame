@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "preview": "animated-preview.html",
+  "checks": {
+    "pause_frame": 56,
+    "weather_change_while_paused": {"weather": "day_clear", "frame": 56},
+    "resume": {"weather": "night_rain", "first_frame": 58, "later_frame": 119},
+    "console_warnings_or_errors": 0,
+    "normal_dom_labels_visible": true,
+    "corrected_male_keeper_and_smaller_elf_head_visible": true
+  },
+  "screenshot": "browser-preview.png"
+}

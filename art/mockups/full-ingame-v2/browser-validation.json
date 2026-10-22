@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "preview": "animated-preview.html",
+  "checks": {
+    "pause": {"frame_before_weather_change": 351, "frame_after_weather_change": 351, "status": "멈춰 있음"},
+    "weather_change_while_paused": {"from": "night_rain", "to": "day_clear", "visible_label": "낮 · 맑음"},
+    "resume": {"first_frame": 353, "later_frame": 385, "weather": "night_rain", "status": "재생 중"},
+    "console_warnings_or_errors": 0,
+    "labels_are_dom_text": true
+  },
+  "screenshot": "browser-preview.png",
+  "scope": "Mockup browser controls; no Godot runtime integration."
+}

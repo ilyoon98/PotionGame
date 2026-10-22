@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/elf-redesign-v2/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "elf",
+      "source": "art/characters/elf-redesign-v2/source/registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "preserve_native_frame": true,
+      "dark_value": 0.27,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              13,
+              35
+            ],
+            [
+              14,
+              35
+            ],
+            [
+              15,
+              35
+            ],
+            [
+              16,
+              35
+            ],
+            [
+              17,
+              35
+            ],
+            [
+              18,
+              35
+            ]
+          ]
+        }
+      ],
+      "background_alpha_rectangles": [
+        {
+          "rect": [
+            10,
+            35,
+            11,
+            36
+          ],
+          "reason": "Remove one outer wrist pixel at the10-pixel standing waist."
+        },
+        {
+          "rect": [
+            21,
+            35,
+            22,
+            36
+          ],
+          "reason": "Remove one outer wrist pixel at the10-pixel standing waist."
+        },
+        {
+          "rect": [
+            16,
+            44,
+            17,
+            47
+          ],
+          "reason": "Restore the one-pixel transparent gap between the generated boots after native downsampling."
+        }
+      ]
+    }
+  ]
+}

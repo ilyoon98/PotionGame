@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "character": "keeper",
+  "status": "superseded_brewing_anatomy_rejected",
+  "approved_by_user": false,
+  "frames": [
+    {
+      "id": "idle",
+      "name": "대기",
+      "path": "frames/idle.png",
+      "grip": null,
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        0,
+        0,
+        32,
+        48
+      ]
+    },
+    {
+      "id": "brew_reach",
+      "name": "제조 · 손 뻗기",
+      "path": "frames/brew_reach.png",
+      "grip": [
+        2,
+        17
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        32,
+        0,
+        32,
+        48
+      ]
+    },
+    {
+      "id": "brew_stir_left",
+      "name": "제조 · 젓기A",
+      "path": "frames/brew_stir_left.png",
+      "grip": [
+        2,
+        21
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        64,
+        0,
+        32,
+        48
+      ]
+    },
+    {
+      "id": "brew_stir_right",
+      "name": "제조 · 젓기B",
+      "path": "frames/brew_stir_right.png",
+      "grip": [
+        3,
+        17
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        0,
+        48,
+        32,
+        48
+      ]
+    },
+    {
+      "id": "handover_extend",
+      "name": "전달 · 손 내밀기",
+      "path": "frames/handover_extend.png",
+      "grip": [
+        28,
+        30
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        32,
+        48,
+        32,
+        48
+      ]
+    },
+    {
+      "id": "handover_return",
+      "name": "전달 · 손 회수",
+      "path": "frames/handover_return.png",
+      "grip": [
+        22,
+        34
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        64,
+        48,
+        32,
+        48
+      ]
+    }
+  ],
+  "palette": "art/palettes/v1/characters/keeper.hex",
+  "scale": 3,
+  "native_sheet": "keeper-keyframes-native.png",
+  "identity_reference": "art/mockups/full-ingame-v7/characters/witch-native.png",
+  "head_hat_current_reference_retained": true,
+  "head_attachment": "Raised forearm is outside the approved head silhouette.",
+  "contacts": "contact-validation.json",
+  "animations_status": "keypose flipbooks only; finished action animations remain",
+  "runtime_integrated": false,
+  "user_feedback": "손3개와 겨드랑이의 가는 팔 지적. 왼쪽 전신으로 재제작.",
+  "replacement": "art/characters/keyframes-v3/keeper/review.html"
+}

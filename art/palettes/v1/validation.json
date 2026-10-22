@@ -1,0 +1,1954 @@
+{
+  "status": "passed",
+  "master_colors": 24,
+  "new_colors_added": 0,
+  "character_count": 5,
+  "enabled_customers": [
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "potion_count": 36,
+  "common_material_count": 4,
+  "characters": {
+    "keeper": {
+      "unique_colors": 5,
+      "off_palette": 0,
+      "reference": {
+        "passed": true,
+        "size": [
+          32,
+          48
+        ],
+        "opaque_pixels": 725,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      }
+    },
+    "traveler": {
+      "unique_colors": 5,
+      "off_palette": 0,
+      "reference": {
+        "passed": true,
+        "size": [
+          32,
+          48
+        ],
+        "opaque_pixels": 588,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#C99463",
+          "#F6D1AC",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      }
+    },
+    "mage": {
+      "unique_colors": 5,
+      "off_palette": 0,
+      "reference": {
+        "passed": true,
+        "size": [
+          32,
+          48
+        ],
+        "opaque_pixels": 820,
+        "colors": [
+          "#241C32",
+          "#50315F",
+          "#86548E",
+          "#916047",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      }
+    },
+    "elf": {
+      "unique_colors": 5,
+      "off_palette": 0,
+      "reference": {
+        "passed": true,
+        "size": [
+          32,
+          48
+        ],
+        "opaque_pixels": 444,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#916047",
+          "#B5C77D",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      }
+    },
+    "rogue": {
+      "unique_colors": 5,
+      "off_palette": 0,
+      "reference": {
+        "passed": true,
+        "size": [
+          32,
+          48
+        ],
+        "opaque_pixels": 468,
+        "colors": [
+          "#241C32",
+          "#9D4359",
+          "#DE7356",
+          "#F4AC68",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      }
+    }
+  },
+  "potions": {
+    "health": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#A65D64",
+            "#DE9B88",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#DE9B88",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "mana": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 58,
+          "colors": [
+            "#241C32",
+            "#24566A",
+            "#3BA8A3",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#3BA8A3",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "moon": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#86548E",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "purify": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 68,
+          "colors": [
+            "#241C32",
+            "#3BA8A3",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "agility": {
+      "bottle": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            16
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "vigor": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 70,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#9D4359",
+            "#DE7356",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#DE7356",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "antidote": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 52,
+          "colors": [
+            "#241C32",
+            "#3D544D",
+            "#718C59",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#718C59",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "fortune": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 58,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#A56A3D",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "focus": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            16
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#24566A",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "restoration": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 58,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#DE9B88",
+            "#F6D1AC",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#F6D1AC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "growth": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#718C59",
+            "#916047",
+            "#B5C77D",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#B5C77D",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "clarity": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 56,
+          "colors": [
+            "#241C32",
+            "#3BA8A3",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "ward": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#4A3C52",
+            "#827589",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "spirit": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 58,
+          "colors": [
+            "#241C32",
+            "#24566A",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "arcane_amplification": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 54,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#86548E",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "iron_skin": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 70,
+          "colors": [
+            "#241C32",
+            "#4A3C52",
+            "#827589",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "stealth": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 72,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#86548E",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "poison_resistance": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 50,
+          "colors": [
+            "#241C32",
+            "#3D544D",
+            "#718C59",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#718C59",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "illusion": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 48,
+          "colors": [
+            "#241C32",
+            "#86548E",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "soul_purification": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 48,
+          "colors": [
+            "#241C32",
+            "#3BA8A3",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "wisdom": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 58,
+          "colors": [
+            "#241C32",
+            "#86548E",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "reflection": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 48,
+          "colors": [
+            "#241C32",
+            "#24566A",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "haste": {
+      "bottle": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            16
+          ],
+          "opaque_pixels": 71,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "nightwalk": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 62,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#86548E",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "moonradiance": {
+      "bottle": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 51,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "regeneration": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 64,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#A65D64",
+            "#F6D1AC",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#F6D1AC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "starlight": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 50,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "wish": {
+      "bottle": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            16
+          ],
+          "opaque_pixels": 61,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 3,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "eternity": {
+      "bottle": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 58,
+          "colors": [
+            "#241C32",
+            "#916047",
+            "#A56A3D",
+            "#FFF0BC"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "sage_elixir": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 63,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "worldtree_elixir": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#718C59",
+            "#916047",
+            "#B5C77D",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#B5C77D",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "shadow_elixir": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 48,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#86548E",
+            "#916047",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 4,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#E9B95F"
+          ],
+          "color_count": 4,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "rare_forest_breath": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 54,
+          "colors": [
+            "#241C32",
+            "#718C59",
+            "#916047",
+            "#B5C77D",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#B5C77D",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "rare_mist_veil": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            16
+          ],
+          "opaque_pixels": 70,
+          "colors": [
+            "#241C32",
+            "#24566A",
+            "#916047",
+            "#9BE2CF",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#9BE2CF",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "rare_lunar_seal": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 60,
+          "colors": [
+            "#241C32",
+            "#86548E",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    },
+    "rare_nebula_distillate": {
+      "bottle": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            8,
+            12
+          ],
+          "opaque_pixels": 54,
+          "colors": [
+            "#241C32",
+            "#50315F",
+            "#916047",
+            "#C38EB5",
+            "#FFF0BC"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      },
+      "cauldron": {
+        "unique_colors": 5,
+        "off_palette": 0,
+        "reference": {
+          "passed": true,
+          "size": [
+            32,
+            32
+          ],
+          "opaque_pixels": 549,
+          "colors": [
+            "#241C32",
+            "#827589",
+            "#86548E",
+            "#C38EB5",
+            "#E9B95F"
+          ],
+          "color_count": 5,
+          "off_palette_colors": 0,
+          "partial_alpha_pixels": 0,
+          "problems": []
+        }
+      }
+    }
+  },
+  "materials": {
+    "shelf_counter_floor": {
+      "unique_colors": 4,
+      "off_palette": 0
+    },
+    "herb_station": {
+      "unique_colors": 5,
+      "off_palette": 0
+    },
+    "fire": {
+      "unique_colors": 4,
+      "off_palette": 0
+    },
+    "hearth": {
+      "unique_colors": 3,
+      "off_palette": 0
+    }
+  },
+  "reference_sha256": {
+    "art/characters/keyframes-v4/keeper/frames/idle.png": "ff035e4640d2b1085b12946b74ec79c357a47c73714ce2707ccf3d3cd98d27f9",
+    "art/characters/face-refinement-v1/faces/traveler.png": "7b5f8c4dd4b3c07de725286944a3ab22dccc87330c5aad27aee1fde8e7ab5f76",
+    "art/characters/face-refinement-v1/faces/mage.png": "723b4027aec7e7a1ca6969208f27fefc777229990d2994f2bd06bf36f46d433f",
+    "art/characters/keyframes-v2/elf/frames/idle.png": "918cae25980341dbdd34f8f886ce4f719ea06109689048b4e80249d74dee7158",
+    "art/characters/keyframes-v2/rogue/frames/idle.png": "ccfcf8d2cc63b4bf202393c962e04e844c9771728f2a138d7983ff50811dfc31",
+    "art/mockups/full-ingame-v6/potions/bottles/health.png": "e221e15fc59a53f30c98576f7ea109400e1ab70838f0ecca164a78bc909f269c",
+    "art/mockups/full-ingame-v6/potions/pot/health/frame-00.png": "0ed4ca4b134ffbfd7fdd48b60aee75c9104056d159e3c4004371e1a4e5e81efe",
+    "art/mockups/full-ingame-v6/potions/bottles/mana.png": "6d45c21e4467a6db133ede22e809ae57a5d57dbe117347d70db4023d92901344",
+    "art/mockups/full-ingame-v6/potions/pot/mana/frame-00.png": "8d0189da48e0858f1f1c489ef0b871b695b3eb44b2ae907d0a57c14ddbd5b335",
+    "art/mockups/full-ingame-v6/potions/bottles/moon.png": "2554a8f6aee49c520e7024d3900de8944d6ff04620995b35c4f92dfb4285bf51",
+    "art/mockups/full-ingame-v6/potions/pot/moon/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4",
+    "art/mockups/full-ingame-v6/potions/bottles/purify.png": "4e687daeaab465c951cef76365e6f8d6029ee4c47d4df629ca42c6306e226d8f",
+    "art/mockups/full-ingame-v6/potions/pot/purify/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/agility.png": "dc4d27b8ee21c52431f37e4c8e546c7cb4b3f4ba8bb413b527b6f6b27a34a9cb",
+    "art/mockups/full-ingame-v6/potions/pot/agility/frame-00.png": "c9c5671bf56705cc5677c686c3b69b0267ccf78c010aff37acb0b0c212c11d99",
+    "art/mockups/full-ingame-v6/potions/bottles/vigor.png": "dfc9c22ff2584d8cc7274e170d3daf1225eaf3796ab84f00aa14b33dd8b29830",
+    "art/mockups/full-ingame-v6/potions/pot/vigor/frame-00.png": "c32ebf4b30507a68c89721f8c142462c8ac58a38e9f57162b9f055467f86ab44",
+    "art/mockups/full-ingame-v6/potions/bottles/antidote.png": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+    "art/mockups/full-ingame-v6/potions/pot/antidote/frame-00.png": "4ed71d2ef3c53b9bc20573c18f738d9d0eabae3cfa9e6546fc76cad2868ace0a",
+    "art/mockups/full-ingame-v6/potions/bottles/fortune.png": "6eadb787bb1fa3a8994988d1f5348cf08ed5bb35b6ff9422397d270e510e138a",
+    "art/mockups/full-ingame-v6/potions/pot/fortune/frame-00.png": "24b5404b934d99d7f9d822e05efbeab1491d882b2884780f6217bc579f958b5c",
+    "art/mockups/full-ingame-v6/potions/bottles/focus.png": "8375728c350e08afb542557fe2aa9bc564fecdadac3f95e48adf826baea32dd7",
+    "art/mockups/full-ingame-v6/potions/pot/focus/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/restoration.png": "aec968f34692e014cf3db09e188843da436e3c3b4cca36feb3bcb0512eec821c",
+    "art/mockups/full-ingame-v6/potions/pot/restoration/frame-00.png": "be4e84148bb97d963057541daa4626162e028803270627d28149c585811adbb1",
+    "art/mockups/full-ingame-v6/potions/bottles/growth.png": "3a69059253b42589185e91cd3e5a43d35175ce507041ea94b62b8b875331ffa8",
+    "art/mockups/full-ingame-v6/potions/pot/growth/frame-00.png": "812b73e9d56c97fbfe5ef7b4b2edef14ebc3e856d5464d36fe79408c52536f2c",
+    "art/mockups/full-ingame-v6/potions/bottles/clarity.png": "0b94c6b8cb38b14711d1527ce12b7c551c18255568ebc1549aa1a419a9acd487",
+    "art/mockups/full-ingame-v6/potions/pot/clarity/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/ward.png": "7b2d296e3cbdebb2a912c32a99fc8014ddb1b31097debe08f529a6e37c26925a",
+    "art/mockups/full-ingame-v6/potions/pot/ward/frame-00.png": "7ec189b8298b94cc6f025d74c7736050f709704f3a9d876db9c293e049e9e174",
+    "art/mockups/full-ingame-v6/potions/bottles/spirit.png": "c8eb4abf523c15e2c0fa01b051ce86ad0b8702f5516be8129c18e6ebe2df1ad8",
+    "art/mockups/full-ingame-v6/potions/pot/spirit/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/arcane_amplification.png": "888c27affc96959707fa400602c6e179d66452ba667deada29b414ac1faee6fa",
+    "art/mockups/full-ingame-v6/potions/pot/arcane_amplification/frame-00.png": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a",
+    "art/mockups/full-ingame-v6/potions/bottles/iron_skin.png": "64a4d8d4cfae260fa0f16e18dc33840101d8317fbf8c577dc52bcd6a598f8f64",
+    "art/mockups/full-ingame-v6/potions/pot/iron_skin/frame-00.png": "7ec189b8298b94cc6f025d74c7736050f709704f3a9d876db9c293e049e9e174",
+    "art/mockups/full-ingame-v6/potions/bottles/stealth.png": "0bd9449837731b24ce5af4b1c3dee40ad4870459974ed9e871f8e43f4047d9d1",
+    "art/mockups/full-ingame-v6/potions/pot/stealth/frame-00.png": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a",
+    "art/mockups/full-ingame-v6/potions/bottles/poison_resistance.png": "59241c83aa77b4c0f87e2ba788210a25be0c7497ee3e12d21d2905101124e67e",
+    "art/mockups/full-ingame-v6/potions/pot/poison_resistance/frame-00.png": "4ed71d2ef3c53b9bc20573c18f738d9d0eabae3cfa9e6546fc76cad2868ace0a",
+    "art/mockups/full-ingame-v6/potions/bottles/illusion.png": "897eadaacb2ee656de20ff6ef8ab1bd90779a5a38c9ccf4ea5fc2ec1fcf3c012",
+    "art/mockups/full-ingame-v6/potions/pot/illusion/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4",
+    "art/mockups/full-ingame-v6/potions/bottles/soul_purification.png": "6008507c6be373fe8c15a2309bab8330ee543017b2c7d7771af153fc2cc16075",
+    "art/mockups/full-ingame-v6/potions/pot/soul_purification/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/wisdom.png": "8f9a7f99afbf893b53f8e01b01e39799690bc3307e1d782e61c6c7d9dfa712c4",
+    "art/mockups/full-ingame-v6/potions/pot/wisdom/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4",
+    "art/mockups/full-ingame-v6/potions/bottles/reflection.png": "31e64e9bf82933e4b4a4aa9490c2fb069cad629029ddab8181c18dd6851794db",
+    "art/mockups/full-ingame-v6/potions/pot/reflection/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/haste.png": "51361fbc45606e1def93a9de8f85233aca40e400d5d1c5058368d8b4681b1fc1",
+    "art/mockups/full-ingame-v6/potions/pot/haste/frame-00.png": "c9c5671bf56705cc5677c686c3b69b0267ccf78c010aff37acb0b0c212c11d99",
+    "art/mockups/full-ingame-v6/potions/bottles/nightwalk.png": "b30e4353b3a4de92842af752b2ef40fbddc8e84cb2bd72045a9e94617981b19c",
+    "art/mockups/full-ingame-v6/potions/pot/nightwalk/frame-00.png": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a",
+    "art/mockups/full-ingame-v6/potions/bottles/moonradiance.png": "70b6fcbd6b62f2752a294b207bab100c9c6bdb7b1fed233f980f07ea1e9e27d0",
+    "art/mockups/full-ingame-v6/potions/pot/moonradiance/frame-00.png": "c9c5671bf56705cc5677c686c3b69b0267ccf78c010aff37acb0b0c212c11d99",
+    "art/mockups/full-ingame-v6/potions/bottles/regeneration.png": "a2c6d371d3a2f3122f69b94d682c8bd94703d199e885f56a00f0466502cb6c51",
+    "art/mockups/full-ingame-v6/potions/pot/regeneration/frame-00.png": "be4e84148bb97d963057541daa4626162e028803270627d28149c585811adbb1",
+    "art/mockups/full-ingame-v6/potions/bottles/starlight.png": "59b8985e1fe123b9b1914e90f1c80cc98576b5ac6c5fe9c938717b5affb6b0d1",
+    "art/mockups/full-ingame-v6/potions/pot/starlight/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4",
+    "art/mockups/full-ingame-v6/potions/bottles/wish.png": "059948accedd8ed6b38237876bf7f813e567914ad971933d524a3b38bc8e5946",
+    "art/mockups/full-ingame-v6/potions/pot/wish/frame-00.png": "c9c5671bf56705cc5677c686c3b69b0267ccf78c010aff37acb0b0c212c11d99",
+    "art/mockups/full-ingame-v6/potions/bottles/eternity.png": "b9e449f9a364901a2a81d6762c113218d914ada6ce215175c9286dce8dea6a5a",
+    "art/mockups/full-ingame-v6/potions/pot/eternity/frame-00.png": "c9c5671bf56705cc5677c686c3b69b0267ccf78c010aff37acb0b0c212c11d99",
+    "art/mockups/full-ingame-v6/potions/bottles/sage_elixir.png": "221b93956446c4e6acfb7d938810d253aff3707172056ea4d48ac2f54e30bb3b",
+    "art/mockups/full-ingame-v6/potions/pot/sage_elixir/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4",
+    "art/mockups/full-ingame-v6/potions/bottles/worldtree_elixir.png": "3a69059253b42589185e91cd3e5a43d35175ce507041ea94b62b8b875331ffa8",
+    "art/mockups/full-ingame-v6/potions/pot/worldtree_elixir/frame-00.png": "812b73e9d56c97fbfe5ef7b4b2edef14ebc3e856d5464d36fe79408c52536f2c",
+    "art/mockups/full-ingame-v6/potions/bottles/shadow_elixir.png": "323b17fcff848b80c08145ff36ff0f5e3da7f306550c2e5a27d00a943c00a8ad",
+    "art/mockups/full-ingame-v6/potions/pot/shadow_elixir/frame-00.png": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a",
+    "art/mockups/full-ingame-v6/potions/bottles/rare_forest_breath.png": "237fc83d42d17af80d1c79fc4d8f1219fccd4f2f5036d61a2ee03112aaedeeff",
+    "art/mockups/full-ingame-v6/potions/pot/rare_forest_breath/frame-00.png": "812b73e9d56c97fbfe5ef7b4b2edef14ebc3e856d5464d36fe79408c52536f2c",
+    "art/mockups/full-ingame-v6/potions/bottles/rare_mist_veil.png": "848e4363e6ee63ef2848c95c339d501d933bdd8e058edfbb8586a8d3ae673b43",
+    "art/mockups/full-ingame-v6/potions/pot/rare_mist_veil/frame-00.png": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb",
+    "art/mockups/full-ingame-v6/potions/bottles/rare_lunar_seal.png": "2554a8f6aee49c520e7024d3900de8944d6ff04620995b35c4f92dfb4285bf51",
+    "art/mockups/full-ingame-v6/potions/pot/rare_lunar_seal/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4",
+    "art/mockups/full-ingame-v6/potions/bottles/rare_nebula_distillate.png": "f9a43748d994a22ffceae73599ba2371c7e7c11dff58e5ec1196e11f42ba238f",
+    "art/mockups/full-ingame-v6/potions/pot/rare_nebula_distillate/frame-00.png": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4"
+  },
+  "runtime_changed": false,
+  "keyframes_generated_by_palette_builder": false,
+  "action_animations_generated_by_palette_builder": false,
+  "keyframe_reference_characters": [
+    "keeper",
+    "elf",
+    "rogue"
+  ],
+  "reference_files_unchanged": true
+}

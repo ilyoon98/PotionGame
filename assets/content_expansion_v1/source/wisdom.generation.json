@@ -1,0 +1,15 @@
+{
+  "id": "wisdom",
+  "name": "지혜",
+  "category": "potions",
+  "family": "arcane",
+  "region": "forgotten_tower",
+  "shape": "wide octagonal flask with short neck",
+  "symbol": "simple open ivory book",
+  "color": "sapphire blue",
+  "prompt": "Use case: stylized-concept. Asset type: a production inventory potion sprite for Moonshadow Potion Shop, a tiny cozy witch-shop pixel-art game. ONE complete isolated bottle, front orthographic view, centered with generous TRANSPARENT padding. Actual transparent alpha background. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm amber cork and antique gold details, ivory glass highlights, 4 flat clustered shade bands. Simple readable silhouette and ONE bold central emblem taking one third of the bottle body. Think logical 12x16 pixels for shelf bottles and 32x40 for inventory, uniformly enlarge pixels for output. Bottle entire silhouette fully visible. No text, letters, digits, watermark, blur, soft glow, gradients, floor, cast shadows, particles outside bottle, scene or border. Subject: 지혜 fantasy potion. Bottle silhouette: wide octagonal flask with short neck. Liquid: sapphire blue. Large readable emblem: simple open ivory book. The central emblem is one bold graphic, not lettering. Keep the body readable at 12x16 logical pixels; use few wide shape clusters.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-a4e0e51c-d7a0-4d8c-b57d-4b892af21071.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/wisdom.png"
+}

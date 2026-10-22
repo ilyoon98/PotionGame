@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-21",
+  "feature": "F21 keeper sleep/faint",
+  "mode": "hand-authored native pixel map (no image generator was available in this session)",
+  "sources": {
+    "sleep_sit": "source/sleep_sit.txt",
+    "faint": "source/faint.txt",
+    "sleep_sit_breath": "derived by tools/build_f21_rest_aging_v1.py: rows 14..41 rise one native row, waist row 41 repeats, rows 41..47 unchanged"
+  },
+  "references": [
+    "art/characters/keyframes-v4/keeper/frames/idle.png",
+    "art/characters/current-art.json (keeper entry)"
+  ],
+  "identity": "Hat/hair/face pixels are the approved v4 idle head translated as a block (sleep +1,+12; faint -2,+10). Only changes: open 1x2 eyes -> closed 1x1 (lower pixel kept) and, for the tucked sleep head, one chin-edge pixel becomes outline. Checked in validation.json (approved_head_reuse).",
+  "palette": "art/palettes/v1/characters/keeper.hex (5 colors, no new colors)",
+  "legend": {"#": "#241C32", "s": "#F6D1AC", "w": "#916047", "p": "#86548E", "g": "#E9B95F", ".": "transparent"},
+  "postprocess": ["background_cleanup", "native_grid", "material_ramp_remap", "validation"],
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json (preserve_native_frame, v4 keeper material rules)",
+  "review": "art/mockups/f21-rest-aging-v1/review.html"
+}

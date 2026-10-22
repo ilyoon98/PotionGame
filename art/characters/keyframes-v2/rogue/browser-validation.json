@@ -1,0 +1,208 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:41239/art/characters/keyframes-v2/rogue/review.html",
+  "walking_flipbook": {
+    "first": {
+      "playing": true,
+      "src": "frames/walk_pass_a.png"
+    },
+    "second": {
+      "playing": true,
+      "src": "frames/walk_contact_b.png"
+    },
+    "changed": true
+  },
+  "receiving_extend": {
+    "bottle": {
+      "height": 48,
+      "left": "0px",
+      "src": "../../../mockups/full-ingame-v6/potions/bottles/agility.png",
+      "top": "78px",
+      "visible": true,
+      "width": 24
+    },
+    "pose": "frames/receive_extend.png",
+    "walking": false
+  },
+  "receiving_hold": {
+    "bottle": {
+      "height": 48,
+      "left": "24px",
+      "top": "90px",
+      "visible": true,
+      "width": 24
+    },
+    "pose": "frames/receive_hold.png"
+  },
+  "assets": [
+    {
+      "display": [
+        384,
+        288
+      ],
+      "loaded": true,
+      "native": [
+        128,
+        96
+      ],
+      "src": "rogue-keyframes-native.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_contact_a.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_pass_a.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_contact_b.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_pass_b.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/receive_extend.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/receive_hold.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/blink_idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/receive_hold.png"
+    },
+    {
+      "display": [
+        24,
+        48
+      ],
+      "loaded": true,
+      "native": [
+        8,
+        16
+      ],
+      "src": "../../../mockups/full-ingame-v6/potions/bottles/agility.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../../mockups/full-ingame-v7/characters/witch-native.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../elf/frames/idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/idle.png"
+    }
+  ],
+  "console_warnings_or_errors": []
+}

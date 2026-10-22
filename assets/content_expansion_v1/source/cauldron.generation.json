@@ -1,0 +1,12 @@
+{
+  "id": "cauldron",
+  "name": "솥",
+  "category": "equipment",
+  "sheet": "equipment_2x1",
+  "base_source": "res://assets/cauldron_48.png",
+  "prompt": "Use case: stylized-concept. Asset type: a staged equipment sprite sheet for a tiny cozy witch-shop game. True transparent alpha background. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, antique gold metalwork #efc77c, ivory highlights, muted violet wood and sage accents, 4 flat shade clusters. Every object fully visible, front view, same scale and base y within each cell, generous empty margins, no overlaps, no text, lettering, digits, floor, cast shadow, glow, blur or background scene. Objects should remain readable in 32x40 logical pixels per cell. EXACT 2 columns and ONE row of equal-sized cells. Subject is a round plum witch cauldron with two handles, a gold crescent insignia, visible coral liquid and tiny orange fire feet. Left cell: IMPROVED version with gold reinforced rim and two gold handle brackets. Right cell: PREMIUM version with thicker gold rim, lavender gemstone at neck and decorative crescent stand. These are new upgraded variants; original basic design stays in a separate asset. All variants retain the same core function and silhouette family, with clearly stronger gold framing at each stage. Do not use extra floating badges or place text anywhere.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-35621ada-5cf7-4cc3-b448-a9e44a14e128.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/cauldron.png"
+}

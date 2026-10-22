@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "window-visitor": {
+      "passed": true,
+      "size": [
+        20,
+        16
+      ],
+      "opaque_pixels": 320,
+      "colors": [
+        "#241C32",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "skin_shadow": 3,
+        "cloth": 4,
+        "background": 5
+      },
+      "source_sha256": "cb2e097bf8d11eb67eb0cba6f10e6c96f76bf76ba47402f49267ed61547783fd",
+      "native_pixel_sha256": "7c0310eef8c5d59b2ce5bbb29ff5de77c03203a1077d4fe3dce844e8309b76b5"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

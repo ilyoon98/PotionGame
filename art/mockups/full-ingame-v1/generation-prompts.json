@@ -1,0 +1,75 @@
+{
+  "mode": "built-in imagegen",
+  "status": "candidate",
+  "approved_style_reference": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png",
+  "jobs": [
+    {
+      "id": "window",
+      "size": [
+        32,
+        32
+      ],
+      "prompt": "Use case: stylized-concept. Create one standalone transparent sprite for a full in-game mockup of the tiny idle game 달그늘 물약상점. Input image 1 is the USER-APPROVED art-style reference: match its simple cute chunky pixel silhouettes, dark plum outline, restrained flat material colors and top-left light. Do not add detail. Each outline is ONE logical pixel, uniform square grid, no antialiasing, gradients, glow, grain, dithering, realistic texture or tiny decoration. Enlarged pixel art must represent the actual requested small native canvas. Transparent background, entire isolated sprite with 1 native pixel of margin. No text, no labels, no numbers, no watermark, no shadows outside the sprite. No other objects. Strictly use only specified palette colors. One small rectangular wooden window frame with two vertical panes and a horizontal base sill. Openings fully transparent; no glass tint, sky, moon, clouds or scenery, these are composed later. Actual 32x32 canvas, frame visible silhouette about30x26 pixels. Match the simple wood used by the approved shelf. Colors: #241C32 outline, #916047 walnut wood, #C99463 honey wood, #E9B95F little brass corner, #FFF0BC tiny corner glint.",
+      "refs": [
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png"
+      ]
+    },
+    {
+      "id": "herb_station",
+      "size": [
+        32,
+        32
+      ],
+      "prompt": "Use case: stylized-concept. Create one standalone transparent sprite for a full in-game mockup of the tiny idle game 달그늘 물약상점. Input image 1 is the USER-APPROVED art-style reference: match its simple cute chunky pixel silhouettes, dark plum outline, restrained flat material colors and top-left light. Do not add detail. Each outline is ONE logical pixel, uniform square grid, no antialiasing, gradients, glow, grain, dithering, realistic texture or tiny decoration. Enlarged pixel art must represent the actual requested small native canvas. Transparent background, entire isolated sprite with 1 native pixel of margin. No text, no labels, no numbers, no watermark, no shadows outside the sprite. No other objects. Strictly use only specified palette colors. One compact herb-growing station: a round plum-purple pot holding three chunky sage-green leaves, sitting firmly on a low simple walnut wooden table with two short grounded legs. A tiny cream star marking on the pot. Actual32x32 native canvas. Pot occupies upper-middle, tabletop around y24, short feet ending at y30. Exactly five colors: #241C32 outline/shadows, #86548E pot, #718C59 leaves, #916047 table, #FFF0BC tiny star. No wood texture, no extra plant veins.",
+      "refs": [
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png"
+      ]
+    },
+    {
+      "id": "shelf_frame",
+      "size": [
+        48,
+        48
+      ],
+      "prompt": "Use case: stylized-concept. Create one standalone transparent sprite for a full in-game mockup of the tiny idle game 달그늘 물약상점. Input image 1 is the USER-APPROVED art-style reference: match its simple cute chunky pixel silhouettes, dark plum outline, restrained flat material colors and top-left light. Do not add detail. Each outline is ONE logical pixel, uniform square grid, no antialiasing, gradients, glow, grain, dithering, realistic texture or tiny decoration. Enlarged pixel art must represent the actual requested small native canvas. Transparent background, entire isolated sprite with 1 native pixel of margin. No text, no labels, no numbers, no watermark, no shadows outside the sprite. No other objects. Strictly use only specified palette colors. One EMPTY simple wooden potion display shelf, TWO horizontal boards, four tiny bottles can later fit on each board but DO NOT draw any bottles. Actual48x48 native canvas, sideposts about3 logical pixels thick, horizontal board thickness2 logical pixels. Clear open transparent space over each board of at least12 native pixels; top board approximately y19 and lower board y39; two bottom feet on same line y46. Small plain brass caps. Exactly five colors #241C32 outline, #916047 walnut wood, #C99463 honey wood, #E9B95F brass, #FFF0BC tiny brass glint. Match the user-approved shelf reference but simplify to48 pixels. No ornate finials or grain.",
+      "refs": [
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png"
+      ]
+    },
+    {
+      "id": "counter",
+      "size": [
+        48,
+        16
+      ],
+      "prompt": "Use case: stylized-concept. Create one standalone transparent sprite for a full in-game mockup of the tiny idle game 달그늘 물약상점. Input image 1 is the USER-APPROVED art-style reference: match its simple cute chunky pixel silhouettes, dark plum outline, restrained flat material colors and top-left light. Do not add detail. Each outline is ONE logical pixel, uniform square grid, no antialiasing, gradients, glow, grain, dithering, realistic texture or tiny decoration. Enlarged pixel art must represent the actual requested small native canvas. Transparent background, entire isolated sprite with 1 native pixel of margin. No text, no labels, no numbers, no watermark, no shadows outside the sprite. No other objects. Strictly use only specified palette colors. One low wide wooden sales counter, front view with a narrow visible top plane, small crescent moon emblem centered on front, two tiny grounded feet. Actual48x16 native canvas, wide squat rectangle with rounded pixel corners. Exactly five colors: #241C32 outline, #916047 walnut wood, #C99463 honey wood, #E9B95F gold crescent, #FFF0BC tiny gold glint. Completely empty countertop, no potions, coins or other objects. Large flat wood blocks, no grain.",
+      "refs": [
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png"
+      ]
+    },
+    {
+      "id": "poster",
+      "size": [
+        24,
+        32
+      ],
+      "prompt": "Use case: stylized-concept. Create one standalone transparent sprite for a full in-game mockup of the tiny idle game 달그늘 물약상점. Input image 1 is the USER-APPROVED art-style reference: match its simple cute chunky pixel silhouettes, dark plum outline, restrained flat material colors and top-left light. Do not add detail. Each outline is ONE logical pixel, uniform square grid, no antialiasing, gradients, glow, grain, dithering, realistic texture or tiny decoration. Enlarged pixel art must represent the actual requested small native canvas. Transparent background, entire isolated sprite with 1 native pixel of margin. No text, no labels, no numbers, no watermark, no shadows outside the sprite. No other objects. Strictly use only specified palette colors. One small hanging expedition poster/signboard with a simple wooden frame, small gold hanging hook, DARK aubergine-purple blank paper panel. The central paper must be empty and solid dark purple, reserved for separately rendered readable Korean status text. Actual24x32 native canvas. Exactly five colors: #241C32 outline, #916047 wood, #E9B95F brass, #50315F dark purple paper, #FFF0BC small brass glint. No text, map, icons or horizontal ruled lines.",
+      "refs": [
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png"
+      ]
+    },
+    {
+      "id": "elf",
+      "size": [
+        32,
+        48
+      ],
+      "extra_ref": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\characters\\customer_redesign_v4\\elf_idle_48x64.png",
+      "prompt": "Use case: stylized-concept. Create one standalone transparent sprite for a full in-game mockup of the tiny idle game 달그늘 물약상점. Input image 1 is the USER-APPROVED art-style reference: match its simple cute chunky pixel silhouettes, dark plum outline, restrained flat material colors and top-left light. Do not add detail. Each outline is ONE logical pixel, uniform square grid, no antialiasing, gradients, glow, grain, dithering, realistic texture or tiny decoration. Enlarged pixel art must represent the actual requested small native canvas. Transparent background, entire isolated sprite with 1 native pixel of margin. No text, no labels, no numbers, no watermark, no shadows outside the sprite. No other objects. Strictly use only specified palette colors. Input image2 is the existing elf customer identity only; transform it into the approved witch's equally simple chibi proportions. One friendly tiny female ELF CUSTOMER facing slightly left toward the shop counter, pale skin, honey-brown bob hair, one visible pointed ear, short sage-green dress and darker outlined boots. Actual32x48 native canvas, maximum silhouette26 pixels wide, about2.5 heads tall. Two tiny one-pixel eyes, no eyelashes, fingers, hair strands or embroidery. Exactly five colors #241C32 outline/boots, #916047 brown hair, #F6D1AC skin, #718C59 green dress, #B5C77D small green highlight. Hands relaxed and clearly visible to receive a potion, no held objects.",
+      "refs": [
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\art\\mockups\\cozy-witch-v1\\mockup-3x.png",
+        "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\characters\\customer_redesign_v4\\elf_idle_48x64.png"
+      ]
+    }
+  ]
+}

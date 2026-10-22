@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": {
+    "valid_sprite_passes": true,
+    "off_palette_rejected": true,
+    "partial_alpha_rejected": true,
+    "wrong_size_rejected": true,
+    "six_colors_rejected": true,
+    "wood_to_teal_rejected": true,
+    "outside_project_path_rejected": true,
+    "full_scene_exact_3x": true
+  }
+}

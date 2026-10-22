@@ -1,0 +1,17 @@
+{
+	"current_clock": 44809.3729961888,
+	"current_total_sold": 24738,
+	"displayed_time": "12시간 26분 49초",
+	"execution": "normal saved player game",
+	"instance_owner": true,
+	"loaded_clock": 44804.9429038555,
+	"loaded_total_sold": 24735,
+	"navigation_cycles": 3,
+	"periodic_reset": false,
+	"same_state_instance": true,
+	"save_write_succeeded": true,
+	"saved_clock": 44817.3929038555,
+	"saved_total_sold": 24743,
+	"status": "passed",
+	"test_mode": false
+}

@@ -1,0 +1,1421 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/keyframes-v4/keeper/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "idle",
+      "source": "art/characters/keyframes-v4/keeper/source/idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              17,
+              19
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              16,
+              20
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              18,
+              20
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              19,
+              18
+            ],
+            [
+              20,
+              18
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              20,
+              19
+            ],
+            [
+              18,
+              20
+            ],
+            [
+              19,
+              20
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              19,
+              21
+            ],
+            [
+              20,
+              21
+            ]
+          ],
+          "reason": "Both eyes have a full one-pixel skin halo without changing silhouette."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "reason": "Two equal 1x2 pupils on one row; no hair-connected third eye pixel."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              10,
+              39
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              17,
+              39
+            ],
+            [
+              18,
+              39
+            ],
+            [
+              19,
+              39
+            ]
+          ],
+          "reason": "Shorts cover upper thighs in rows38/39; knees begin in row40."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              19,
+              17
+            ]
+          ],
+          "reason": "Brown bangs cannot acquire skin-coloured highlights; purple belongs to hat and cloak."
+        }
+      ]
+    },
+    {
+      "id": "brew_reach",
+      "source": "art/characters/keyframes-v4/keeper/source/brew_reach-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              18
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              10,
+              20
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              20
+            ],
+            [
+              14,
+              20
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "reason": "Both eyes have a full one-pixel skin halo without changing silhouette."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              13,
+              20
+            ]
+          ],
+          "reason": "Two equal 1x2 pupils on one row; no hair-connected third eye pixel."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              20,
+              39
+            ],
+            [
+              21,
+              39
+            ]
+          ],
+          "reason": "Shorts cover upper thighs in rows38/39; knees begin in row40."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              17
+            ]
+          ],
+          "reason": "Brown bangs cannot acquire skin-coloured highlights; purple belongs to hat and cloak."
+        }
+      ]
+    },
+    {
+      "id": "brew_stir_left",
+      "source": "art/characters/keyframes-v4/keeper/source/brew_stir_left-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              18
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              10,
+              20
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              20
+            ],
+            [
+              14,
+              20
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "reason": "Both eyes have a full one-pixel skin halo without changing silhouette."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              13,
+              20
+            ]
+          ],
+          "reason": "Two equal 1x2 pupils on one row; no hair-connected third eye pixel."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              18,
+              38
+            ],
+            [
+              19,
+              38
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              18,
+              39
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              20,
+              39
+            ]
+          ],
+          "reason": "Shorts cover upper thighs in rows38/39; knees begin in row40."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              11,
+              17
+            ]
+          ],
+          "reason": "Brown bangs cannot acquire skin-coloured highlights; purple belongs to hat and cloak."
+        }
+      ]
+    },
+    {
+      "id": "brew_stir_right",
+      "source": "art/characters/keyframes-v4/keeper/source/brew_stir_right-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              18
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              10,
+              19
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              10,
+              20
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              20
+            ],
+            [
+              14,
+              20
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ]
+          ],
+          "reason": "Both eyes have a full one-pixel skin halo without changing silhouette."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              13,
+              20
+            ]
+          ],
+          "reason": "Two equal 1x2 pupils on one row; no hair-connected third eye pixel."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              19,
+              38
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              18,
+              39
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              20,
+              39
+            ]
+          ],
+          "reason": "Shorts cover upper thighs in rows38/39; knees begin in row40."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              10,
+              17
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "reason": "Brown bangs cannot acquire skin-coloured highlights; purple belongs to hat and cloak."
+        }
+      ]
+    },
+    {
+      "id": "handover_extend",
+      "source": "art/characters/keyframes-v4/keeper/source/handover_extend-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              17,
+              19
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              16,
+              20
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              18,
+              20
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              19,
+              18
+            ],
+            [
+              20,
+              18
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              20,
+              19
+            ],
+            [
+              18,
+              20
+            ],
+            [
+              19,
+              20
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              19,
+              21
+            ],
+            [
+              20,
+              21
+            ]
+          ],
+          "reason": "Both eyes have a full one-pixel skin halo without changing silhouette."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "reason": "Two equal 1x2 pupils on one row; no hair-connected third eye pixel."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              10,
+              39
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              17,
+              39
+            ],
+            [
+              18,
+              39
+            ],
+            [
+              19,
+              39
+            ]
+          ],
+          "reason": "Shorts cover upper thighs in rows38/39; knees begin in row40."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              19,
+              17
+            ]
+          ],
+          "reason": "Brown bangs cannot acquire skin-coloured highlights; purple belongs to hat and cloak."
+        }
+      ]
+    },
+    {
+      "id": "handover_return",
+      "source": "art/characters/keyframes-v4/keeper/source/handover_return-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              16,
+              18
+            ],
+            [
+              17,
+              18
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              17,
+              19
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              16,
+              20
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              18,
+              20
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              19,
+              18
+            ],
+            [
+              20,
+              18
+            ],
+            [
+              18,
+              19
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              20,
+              19
+            ],
+            [
+              18,
+              20
+            ],
+            [
+              19,
+              20
+            ],
+            [
+              20,
+              20
+            ],
+            [
+              18,
+              21
+            ],
+            [
+              19,
+              21
+            ],
+            [
+              20,
+              21
+            ]
+          ],
+          "reason": "Both eyes have a full one-pixel skin halo without changing silhouette."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              20
+            ],
+            [
+              19,
+              19
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "reason": "Two equal 1x2 pupils on one row; no hair-connected third eye pixel."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              10,
+              39
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              17,
+              39
+            ],
+            [
+              18,
+              39
+            ],
+            [
+              19,
+              39
+            ]
+          ],
+          "reason": "Shorts cover upper thighs in rows38/39; knees begin in row40."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              19,
+              17
+            ]
+          ],
+          "reason": "Brown bangs cannot acquire skin-coloured highlights; purple belongs to hat and cloak."
+        }
+      ]
+    }
+  ]
+}

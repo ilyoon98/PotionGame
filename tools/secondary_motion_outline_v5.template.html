@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>달그늘 물약상점 · 작업실 목업 v5</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --outline: #241c32;
+      --paper: #f6d1ac;
+      --purple: #50315f;
+      --lilac: #c38eb5;
+      --honey: #e9b95f;
+      --gold: #e9b95f;
+      --stone: #827589;
+      --cream: #fff0bc;
+      --mint: #3ba8a3;
+      --pale-mint: #9be2cf;
+      --mat: #4b3e55;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      background: var(--outline);
+      color: var(--paper);
+      font-family: PreviewPretendard, Pretendard, system-ui, sans-serif;
+    }
+    .preview { width: 540px; max-width: 100%; margin: 0 auto; }
+    .preview-title { margin: 0 0 16px; font-size: 18px; font-weight: 500; }
+    .viewport { max-width: 100%; overflow-x: auto; }
+    .stage {
+      position: relative;
+      width: 540px;
+      height: 300px;
+      overflow: hidden;
+      background: var(--mat);
+      isolation: isolate;
+    }
+    .stage canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 540px;
+      height: 249px;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+    .stage .text-layer {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      font-synthesis: none;
+    }
+    .game-label { position: absolute; white-space: nowrap; }
+    .status-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid var(--stone);
+      background: var(--outline);
+      color: var(--cream);
+    }
+    .status-box .search-mark {
+      font-size: 13px;
+      color: var(--gold);
+      margin-left: 1px;
+    }
+    .grow-status { left: 6px; top: 114px; width: 106px; height: 26px; }
+    .brew-status { left: 120px; top: 85px; width: 96px; height: 30px; }
+    .brew-mark { display: block; width: 7px; height: 7px; background: var(--gold); }
+    .expedition-status {
+      left: 471px;
+      top: 42px;
+      width: 48px;
+      height: 49px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      font-size: 14px;
+      color: var(--cream);
+    }
+    .inventory-status { left: 323px; top: 158px; color: var(--cream); }
+    .sale-status { left: 337px; top: 176px; color: var(--gold); font-size: 14px; }
+    .sale-spark { left: 324px; top: 176px; color: var(--gold); font-size: 12px; }
+    .bottom-bar {
+      position: absolute;
+      left: 0;
+      top: 249px;
+      width: 540px;
+      height: 51px;
+      background: var(--outline);
+    }
+    .drag-grip { left: 12px; top: 266px; color: var(--cream); font-size: 16px; }
+    .gold-mark { left: 45px; top: 270px; width: 9px; height: 9px; background: var(--gold); }
+    .gold-status { left: 68px; top: 264px; height: 22px; display: flex; align-items: center; color: var(--gold); font-size: 17px; }
+    .moon-mark { left: 185px; top: 260px; font-size: 23px; color: var(--gold); }
+    .weather-mark { left: 226px; top: 268px; width: 12px; height: 8px; background: var(--stone); }
+    .weather-status { left: 253px; top: 266px; color: var(--cream); }
+    .toolbar-control {
+      top: 258px;
+      height: 32px;
+      border: 1px solid var(--stone);
+      background: var(--paper);
+      color: var(--cream);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+    .manage-control { left: 398px; width: 42px; font-size: 16px; }
+    .min-control { left: 444px; width: 28px; font-size: 18px; }
+    .expand-control { left: 476px; width: 28px; font-size: 18px; }
+    .close-control { left: 508px; width: 28px; font-size: 20px; }
+    .preview-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 16px; }
+    .preview-controls label { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+    .preview-controls select, .preview-controls button {
+      border: 1px solid var(--lilac);
+      border-radius: 6px;
+      padding: 8px 12px;
+      background: var(--purple);
+      color: var(--cream);
+      font: inherit;
+      font-size: 14px;
+    }
+    .preview-controls select { min-width: 115px; }
+    .preview-controls button { min-width: 76px; }
+    .preview-controls select:focus-visible, .preview-controls button:focus-visible {
+      outline: 2px solid var(--cream);
+      outline-offset: 3px;
+    }
+    .motion-status { font-size: 13px; color: var(--lilac); }
+    .preview-note { margin: 12px 0 0; font-size: 13px; color: var(--lilac); }
+    .load-error { margin-top: 12px; color: var(--cream); font-size: 14px; }
+    [hidden] { display: none !important; }
+    @media (pointer: coarse) {
+      .preview-controls button, .preview-controls select { min-height: 44px; }
+    }
+    @media (max-width: 580px) {
+      body { padding: 20px 12px; }
+      .preview { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main class="preview" id="animated-workshop-preview">
+    <h1 class="preview-title">달그늘 물약상점 · 작업실 목업 v5</h1>
+    <div class="viewport">
+      <div class="stage" id="workshop-stage">
+        <canvas id="workshop-canvas" width="540" height="249" role="img" aria-label="창밖 날씨, 물약 솥, 불꽃이 움직이고 남성 상점 주인과 엘프의 윤곽은 고정한 채 망토·머리카락·모자의 안쪽 주름이 조금씩 움직이는 픽셀 작업실">픽셀 작업실 애니메이션 미리보기</canvas>
+        <div class="text-layer">
+          <div class="bottom-bar" aria-hidden="true"></div>
+          <span class="game-label status-box grow-status"><span id="grow-label">9종 재배 중</span><span class="search-mark" aria-hidden="true">⌕</span></span>
+          <span class="game-label status-box brew-status"><span class="brew-mark" aria-hidden="true"></span><span id="brew-label">제작 중</span><span class="search-mark" aria-hidden="true">⌕</span></span>
+          <span class="game-label expedition-status"><span id="expedition-count">2곳</span><span id="expedition-label">탐사 중</span></span>
+          <span class="game-label inventory-status" id="inventory-label">재고 8 / 12</span>
+          <span class="game-label sale-spark" aria-hidden="true">✦</span>
+          <span class="game-label sale-status" id="sale-label">+24 G · 선호</span>
+          <span class="game-label drag-grip" aria-hidden="true">⠿</span>
+          <span class="game-label gold-mark" aria-hidden="true"></span>
+          <span class="game-label gold-status" id="gold-label">1,284 G</span>
+          <span class="game-label moon-mark" id="day-mark" aria-hidden="true">☾</span>
+          <span class="game-label weather-mark" aria-hidden="true"></span>
+          <span class="game-label weather-status" id="weather-label">밤 · 비</span>
+          <span class="game-label toolbar-control manage-control">관리</span>
+          <span class="game-label toolbar-control min-control" aria-hidden="true">−</span>
+          <span class="game-label toolbar-control expand-control" aria-hidden="true">□</span>
+          <span class="game-label toolbar-control close-control" aria-hidden="true">×</span>
+        </div>
+      </div>
+    </div>
+    <div class="preview-controls" aria-label="목업 미리보기 조작">
+      <label for="weather-select">창밖 날씨
+        <select id="weather-select">
+          <option value="night_rain">밤 · 비</option>
+          <option value="night_clear">밤 · 맑음</option>
+          <option value="day_rain">낮 · 비</option>
+          <option value="day_clear">낮 · 맑음</option>
+        </select>
+      </label>
+      <label for="character-motion-select">캐릭터 움직임
+        <select id="character-motion-select" aria-describedby="character-motion-note">
+          <option value="grid">원본 격자 움직임</option>
+          <option value="fine">안쪽 1/3픽셀 움직임</option>
+        </select>
+      </label>
+      <label for="brew-recipe-select">제조 물약
+        <select id="brew-recipe-select" aria-describedby="brew-recipe-note">
+          <option value="moon">현재 물약</option>
+        </select>
+      </label>
+      <button type="button" id="motion-toggle" aria-pressed="true">멈춤</button>
+      <span class="motion-status" id="motion-status" aria-live="polite">재생 중</span>
+    </div>
+    <p class="preview-note" id="character-motion-note">캐릭터의 바깥 윤곽과 실루엣은 고정합니다. 망토·머리카락·모자 안쪽 색과 주름만 원본 격자 1칸 단위로 움직입니다. 글씨는 일반 텍스트입니다.</p>
+    <p class="preview-note" id="brew-recipe-note">제조 물약을 바꾸면 솥의 액체색도 바뀝니다. 목업에서 물약별 색을 확인하는 조작입니다.</p>
+    <p class="preview-note">화면 수치는 목업 예시입니다.</p>
+    <p class="load-error" id="load-error" role="alert" hidden></p>
+  </main>
+  <script id="animation-data" type="application/json">__ANIMATION_DATA__</script>
+  <script>
+    (() => {
+      'use strict';
+      const root = document.getElementById('animated-workshop-preview');
+      const canvas = root.querySelector('#workshop-canvas');
+      const ctx = canvas.getContext('2d', { alpha: false });
+      const weatherSelect = root.querySelector('#weather-select');
+      const characterMotionSelect = root.querySelector('#character-motion-select');
+      const characterMotionNote = root.querySelector('#character-motion-note');
+      const brewRecipeSelect = root.querySelector('#brew-recipe-select');
+      const brewRecipeNote = root.querySelector('#brew-recipe-note');
+      const toggle = root.querySelector('#motion-toggle');
+      const motionStatus = root.querySelector('#motion-status');
+      const error = root.querySelector('#load-error');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      let playing = !reduceMotion.matches;
+      let elapsed = 0;
+      let previousTime = null;
+      let weatherKey = 'night_rain';
+      let motionKey = 'grid';
+      let brewKey = 'moon';
+      let renderFrame = () => {};
+      let images = null;
+      let animationReady = false;
+
+      function reflectPlayback() {
+        toggle.textContent = playing ? '멈춤' : '재생';
+        toggle.setAttribute('aria-pressed', String(playing));
+        motionStatus.textContent = playing ? '재생 중' : '멈춰 있음';
+      }
+      reflectPlayback();
+      toggle.disabled = true;
+      weatherSelect.disabled = true;
+      characterMotionSelect.disabled = true;
+      brewRecipeSelect.disabled = true;
+
+      function fail(message) {
+        error.hidden = false;
+        error.textContent = message;
+        playing = false;
+        reflectPlayback();
+      }
+
+      function loadImage(source) {
+        return new Promise((resolve, reject) => {
+          const image = new Image();
+          image.onload = () => resolve(image);
+          image.onerror = () => reject(new Error('목업 이미지 한 장을 읽지 못했습니다.'));
+          image.src = source;
+        });
+      }
+
+      async function loadFrames(frames, label) {
+        if (!Array.isArray(frames) || frames.length === 0) {
+          throw new Error(label + ' 애니메이션 프레임이 없습니다.');
+        }
+        return Promise.all(frames.map(loadImage));
+      }
+
+      async function loadMotionModes(modes) {
+        if (!modes || typeof modes !== 'object') return {};
+        const entries = Object.entries(modes).filter(([key]) => key === 'fine' || key === 'grid');
+        return Object.fromEntries(await Promise.all(entries.map(async ([key, mode]) => {
+          const nativeScale = Number(mode.nativeScale) || 1;
+          if (!Number.isInteger(nativeScale) || nativeScale < 1) {
+            throw new Error('캐릭터 프레임 확대 배율이 올바르지 않습니다.');
+          }
+          const [witch, elf] = await Promise.all([
+            loadFrames(mode.witch, '남성 상점 주인'), loadFrames(mode.elf, '엘프')
+          ]);
+          return [key, { witch, elf, nativeScale }];
+        })));
+      }
+
+      async function loadPotionRecipes(recipes) {
+        if (!Array.isArray(recipes)) return {};
+        return Object.fromEntries(await Promise.all(recipes.map(async (recipe) => {
+          if (typeof recipe.id !== 'string' || !recipe.id) {
+            throw new Error('제조 물약 ID가 올바르지 않습니다.');
+          }
+          const frames = await loadFrames(recipe.frames, recipe.name || recipe.id);
+          return [recipe.id, { name: recipe.name || recipe.id, frames, liquidColor: recipe.liquidColor }];
+        })));
+      }
+
+      function frameAt(frames, seconds, fps) {
+        return frames[Math.floor(seconds * fps) % frames.length];
+      }
+
+      function idleFrame(frames, seconds, phase) {
+        const time = seconds + phase;
+        const blinkTime = time % 4.5;
+        const blink = blinkTime >= 3.6 && blinkTime < 3.85;
+        const breathing = Math.floor((time % 3) / 1.5) % Math.min(2, frames.length);
+        if (blink && frames.length > 2) return frames[Math.min(2 + breathing, frames.length - 1)];
+        return frames[breathing];
+      }
+
+      function secondaryPoseIndex(seconds, phase, timing) {
+        const time = seconds + phase;
+        const pose = Math.floor(time * timing.fps) % timing.poses;
+        const blinkTime = time % timing.blinkSeconds;
+        const blinking = blinkTime >= timing.blinkSpan[0] && blinkTime < timing.blinkSpan[1];
+        return pose + (blinking ? timing.poses : 0);
+      }
+
+      function drawSprite(image, position, scale, sourceScale = 1) {
+        ctx.drawImage(image, position[0] * scale, position[1] * scale,
+          image.naturalWidth * scale / sourceScale, image.naturalHeight * scale / sourceScale);
+      }
+
+      function setText(selector, value) {
+        if (value !== undefined && value !== null) root.querySelector(selector).textContent = String(value);
+      }
+
+      function updateWeatherLabel() {
+        const labels = {
+          night_rain: '밤 · 비', night_clear: '밤 · 맑음',
+          day_rain: '낮 · 비', day_clear: '낮 · 맑음'
+        };
+        setText('#weather-label', labels[weatherKey]);
+        setText('#day-mark', weatherKey.startsWith('day_') ? '☀' : '☾');
+      }
+
+      function updateMotionNote() {
+        if (motionKey === 'fine') {
+          characterMotionNote.textContent = '캐릭터의 바깥 윤곽과 실루엣은 고정합니다. 망토·머리카락·모자 안쪽 색과 주름만 표시 픽셀 1칸(원본 1/3픽셀) 단위로 움직입니다. 흐림 없이 그리며 글씨는 일반 텍스트입니다.';
+        } else if (motionKey === 'grid') {
+          characterMotionNote.textContent = '캐릭터의 바깥 윤곽과 실루엣은 고정합니다. 망토·머리카락·모자 안쪽 색과 주름만 원본 격자 1칸 단위로 움직입니다. 글씨는 일반 텍스트입니다.';
+        } else {
+          characterMotionNote.textContent = '기존 캐릭터 IDLE을 재생합니다. 글씨는 그림과 분리한 일반 텍스트입니다.';
+        }
+      }
+
+      function animate(timestamp) {
+        if (previousTime !== null && playing && animationReady) {
+          // Cap long background-tab gaps so returning to the preview resumes gently.
+          elapsed += Math.min((timestamp - previousTime) / 1000, 0.1);
+        }
+        previousTime = timestamp;
+        if (animationReady && playing) renderFrame(elapsed);
+        requestAnimationFrame(animate);
+      }
+
+      toggle.addEventListener('click', () => {
+        playing = !playing;
+        previousTime = null;
+        reflectPlayback();
+        renderFrame(elapsed);
+      });
+
+      weatherSelect.addEventListener('change', () => {
+        weatherKey = weatherSelect.value;
+        updateWeatherLabel();
+        renderFrame(elapsed);
+      });
+
+      characterMotionSelect.addEventListener('change', () => {
+        motionKey = characterMotionSelect.value;
+        updateMotionNote();
+        renderFrame(elapsed);
+      });
+
+      brewRecipeSelect.addEventListener('change', () => {
+        brewKey = brewRecipeSelect.value;
+        renderFrame(elapsed);
+      });
+
+      reduceMotion.addEventListener('change', (event) => {
+        if (event.matches) {
+          playing = false;
+          reflectPlayback();
+        }
+      });
+
+      async function initialize() {
+        const data = JSON.parse(document.getElementById('animation-data').textContent);
+        const palette = data.palette || {};
+        for (const [name, value] of Object.entries(palette)) {
+          root.style.setProperty('--' + name.replaceAll('_', '-'), value);
+        }
+        const localFontPath = /^(?:\.\.\/)+assets\/fonts\/[a-zA-Z0-9_.\/-]+\.(?:otf|ttf|woff2?)$/i;
+        if (typeof data.font === 'string' && (data.font.startsWith('data:') || localFontPath.test(data.font))) {
+          const font = new FontFace('PreviewPretendard', 'url(' + data.font + ')');
+          try {
+            await font.load();
+            document.fonts.add(font);
+          } catch (_) {
+            // A system font keeps all DOM labels readable if the optional font fails.
+          }
+        }
+        const snapshot = data.snapshot || {};
+        const labels = data.controls || {};
+        setText('#grow-label', labels.grow || (snapshot.active_growing_species != null ? snapshot.active_growing_species + '종 재배 중' : null));
+        setText('#brew-label', labels.brew);
+        setText('#expedition-count', snapshot.active_expeditions != null ? snapshot.active_expeditions + '곳' : null);
+        setText('#expedition-label', labels.expedition);
+        if (snapshot.inventory_count != null && snapshot.capacity != null) {
+          setText('#inventory-label', '재고 ' + snapshot.inventory_count + ' / ' + snapshot.capacity);
+        }
+        if (snapshot.sale_gold != null) setText('#sale-label', '+' + snapshot.sale_gold + ' G · 선호');
+        if (snapshot.gold != null) setText('#gold-label', Number(snapshot.gold).toLocaleString('ko-KR') + ' G');
+        if (Array.isArray(snapshot.environment)) {
+          const selected = snapshot.environment.join('_');
+          if (Object.hasOwn(data.sprites.weather, selected)) weatherKey = selected;
+        }
+        weatherSelect.value = weatherKey;
+        updateWeatherLabel();
+
+        const weatherEntries = Object.entries(data.sprites.weather);
+        const results = await Promise.all([
+          loadImage(data.staticArt),
+          Array.isArray(data.sprites.witch) && data.sprites.witch.length
+            ? loadFrames(data.sprites.witch, '남성 상점 주인') : Promise.resolve([]),
+          Array.isArray(data.sprites.elf) && data.sprites.elf.length
+            ? loadFrames(data.sprites.elf, '엘프') : Promise.resolve([]),
+          loadFrames(data.sprites.pot, '솥'),
+          loadFrames(data.sprites.fire, '불꽃'),
+          Promise.all(weatherEntries.map(async ([key, frames]) => [key, await loadFrames(frames, '날씨')])),
+          Array.isArray(data.sprites.heldBottle) && data.sprites.heldBottle.length
+            ? loadFrames(data.sprites.heldBottle, '손님 물약') : Promise.resolve([]),
+          loadMotionModes(data.motionModes),
+          loadPotionRecipes(data.potionRecipes)
+        ]);
+        images = {
+          staticArt: results[0], witch: results[1], elf: results[2],
+          pot: results[3], fire: results[4], weather: Object.fromEntries(results[5]),
+          heldBottle: results[6], motionModes: results[7], potionRecipes: results[8]
+        };
+        const recipeEntries = Object.entries(images.potionRecipes);
+        if (recipeEntries.length) {
+          const preferredRecipe = typeof data.currentBrew === 'string' ? data.currentBrew : 'moon';
+          brewKey = Object.hasOwn(images.potionRecipes, preferredRecipe) ? preferredRecipe : recipeEntries[0][0];
+          brewRecipeSelect.replaceChildren(...recipeEntries.map(([id, recipe]) => new Option(recipe.name, id)));
+          brewRecipeSelect.value = brewKey;
+          brewRecipeSelect.disabled = false;
+        } else {
+          brewKey = typeof data.currentBrew === 'string' ? data.currentBrew : 'moon';
+          brewRecipeSelect.replaceChildren(new Option('현재 물약', brewKey));
+          brewRecipeSelect.value = brewKey;
+          brewRecipeNote.textContent = '현재 물약을 제조하는 솥의 움직임입니다.';
+        }
+        const timingData = data.timing || {};
+        const motionTiming = {
+          fps: Number(timingData.motion_fps) || 8,
+          poses: Number(timingData.motion_poses) || 16,
+          blinkSeconds: Number(timingData.blink_seconds) || 4.5,
+          blinkSpan: Array.isArray(timingData.blink_span) ? timingData.blink_span : [3.6, 3.85]
+        };
+        for (const mode of Object.values(images.motionModes)) {
+          if (mode.witch.length !== motionTiming.poses * 2 || mode.elf.length !== motionTiming.poses * 2) {
+            throw new Error('캐릭터 포즈와 깜빡임 프레임 수가 맞지 않습니다.');
+          }
+        }
+        const availableModes = Object.keys(images.motionModes);
+        if (availableModes.length) {
+          motionKey = Object.hasOwn(images.motionModes, 'grid') ? 'grid' : availableModes[0];
+          for (const option of Array.from(characterMotionSelect.options)) {
+            if (!Object.hasOwn(images.motionModes, option.value)) option.remove();
+          }
+          characterMotionSelect.value = motionKey;
+          characterMotionSelect.disabled = false;
+        } else {
+          if (!images.witch.length || !images.elf.length) {
+            throw new Error('캐릭터 움직임 프레임이 없습니다.');
+          }
+          motionKey = 'legacy';
+          characterMotionSelect.replaceChildren(new Option('기본 IDLE', 'legacy'));
+        }
+        updateMotionNote();
+        const positions = data.positions;
+        const scale = data.scale || 3;
+        ctx.imageSmoothingEnabled = false;
+        renderFrame = (seconds) => {
+          ctx.fillStyle = palette.mat || '#4b3e55';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          drawSprite(frameAt(images.weather[weatherKey], seconds, 8), positions.window, scale);
+          // The transparent art layer puts the window frame in front of its weather.
+          ctx.drawImage(images.staticArt, 0, 0);
+          drawSprite(frameAt(images.fire, seconds, 8), positions.fire, scale);
+          // Fire is visible only through the hearth's transparent opening.
+          const potFrames = images.potionRecipes[brewKey]?.frames || images.pot;
+          drawSprite(frameAt(potFrames, seconds, 6), positions.pot, scale);
+          const mode = images.motionModes[motionKey];
+          if (mode) {
+            const witchPose = secondaryPoseIndex(seconds, 0, motionTiming);
+            const elfPose = secondaryPoseIndex(seconds, 0.625, motionTiming);
+            // Pre-expanded secondary-motion frames use integer display pixels;
+            // the common character size and placement remain unchanged.
+            drawSprite(mode.witch[witchPose], positions.witch, scale, mode.nativeScale);
+            drawSprite(mode.elf[elfPose], positions.elf, scale, mode.nativeScale);
+            canvas.dataset.posewitch = String(witchPose);
+            canvas.dataset.poseelf = String(elfPose);
+          } else {
+            const witchFrame = idleFrame(images.witch, seconds, 0);
+            const elfFrame = idleFrame(images.elf, seconds, 1.5);
+            drawSprite(witchFrame, positions.witch, scale);
+            drawSprite(elfFrame, positions.elf, scale);
+            canvas.dataset.posewitch = String(images.witch.indexOf(witchFrame));
+            canvas.dataset.poseelf = String(images.elf.indexOf(elfFrame));
+          }
+          if (images.heldBottle.length && Array.isArray(positions.heldBottle)) {
+            drawSprite(images.heldBottle[0], positions.heldBottle, scale);
+          }
+          canvas.dataset.frame = String(Math.floor(seconds * 8));
+          canvas.dataset.weather = weatherKey;
+          canvas.dataset.mode = motionKey;
+          canvas.dataset.recipe = brewKey;
+        };
+        animationReady = true;
+        toggle.disabled = false;
+        weatherSelect.disabled = false;
+        renderFrame(0);
+        requestAnimationFrame(animate);
+
+        // Small inspection hook for offline visual QA; it adds no game behavior.
+        window.workshopPreview = {
+          get state() { return { ready: animationReady, playing, elapsed, weather: weatherKey, motion: motionKey, recipe: brewKey }; },
+          renderAt(seconds) {
+            elapsed = Math.max(0, Number(seconds) || 0);
+            renderFrame(elapsed);
+          },
+          frameCounts: {
+            witch: images.witch.length, elf: images.elf.length, pot: images.pot.length,
+            fire: images.fire.length, heldBottle: images.heldBottle.length,
+            motionModes: Object.fromEntries(Object.entries(images.motionModes).map(([key, mode]) => [key, {
+              witch: mode.witch.length, elf: mode.elf.length, nativeScale: mode.nativeScale
+            }])),
+            potionRecipes: Object.fromEntries(Object.entries(images.potionRecipes).map(([id, recipe]) => [id, recipe.frames.length])),
+            weather: Object.fromEntries(Object.entries(images.weather).map(([key, frames]) => [key, frames.length]))
+          }
+        };
+      }
+
+      initialize().catch((issue) => fail('목업을 열지 못했습니다: ' + issue.message));
+    })();
+  </script>
+</body>
+</html>

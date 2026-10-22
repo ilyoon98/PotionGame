@@ -1,0 +1,17 @@
+{
+	"characters": 5,
+	"common_scale": 3,
+	"counter_catch_continuity": true,
+	"customer_recipe_cases": 144,
+	"economy_unchanged_by_rendering": true,
+	"full_width_floor": true,
+	"inventory_order_preserved": true,
+	"native_character": [
+		32,
+		48
+	],
+	"queued_sales_preserved": true,
+	"recipes": 36,
+	"rendered_state_cases": 1440,
+	"status": "passed"
+}

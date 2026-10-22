@@ -1,0 +1,2425 @@
+{
+  "status": "passed",
+  "recipe_count": 36,
+  "brew_contact_pairs": 108,
+  "handover_contact_pairs": 72,
+  "grips": {
+    "brew_reach": [
+      5,
+      16
+    ],
+    "brew_stir_left": [
+      3,
+      24
+    ],
+    "brew_stir_right": [
+      3,
+      19
+    ],
+    "handover_extend": [
+      28,
+      30
+    ],
+    "handover_return": [
+      22,
+      34
+    ]
+  },
+  "spoon_local_grip": [
+    15,
+    0
+  ],
+  "bottle_local_grip": "[width/2,4]",
+  "scene_native_size": [
+    128,
+    68
+  ],
+  "keeper_origin": [
+    52,
+    12
+  ],
+  "cauldron_origin": [
+    30,
+    28
+  ],
+  "checks": [
+    {
+      "pose": "brew_reach",
+      "recipe": "health",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "mana",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "moon",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "purify",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "agility",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "vigor",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "antidote",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "fortune",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "focus",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "restoration",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "growth",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "clarity",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "ward",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "spirit",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "arcane_amplification",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 13,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "iron_skin",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "stealth",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 13,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "poison_resistance",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "illusion",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "soul_purification",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "wisdom",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "reflection",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "haste",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "nightwalk",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 13,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "moonradiance",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "regeneration",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "starlight",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "wish",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "eternity",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "sage_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "worldtree_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "shadow_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 13,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "rare_forest_breath",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "rare_mist_veil",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "rare_lunar_seal",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_reach",
+      "recipe": "rare_nebula_distillate",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        42,
+        28
+      ],
+      "liquid_surface_intersection_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "health",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "mana",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "moon",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "purify",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "agility",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "vigor",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "antidote",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "fortune",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "focus",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "restoration",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "growth",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "clarity",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "ward",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "spirit",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "arcane_amplification",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 23,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "iron_skin",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "stealth",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 23,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "poison_resistance",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "illusion",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "soul_purification",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "wisdom",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "reflection",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "haste",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "nightwalk",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 23,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "moonradiance",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "regeneration",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "starlight",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "wish",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "eternity",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "sage_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "worldtree_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "shadow_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 23,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "rare_forest_breath",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "rare_mist_veil",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "rare_lunar_seal",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_left",
+      "recipe": "rare_nebula_distillate",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        36
+      ],
+      "liquid_surface_intersection_pixels": 2,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "health",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "mana",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "moon",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "purify",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "agility",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "vigor",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "antidote",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "fortune",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "focus",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "restoration",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "growth",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "clarity",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "ward",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "spirit",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "arcane_amplification",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 20,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "iron_skin",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "stealth",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 20,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "poison_resistance",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "illusion",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "soul_purification",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "wisdom",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "reflection",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "haste",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "nightwalk",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 20,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "moonradiance",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "regeneration",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "starlight",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "wish",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "eternity",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "sage_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "worldtree_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "shadow_elixir",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 20,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "rare_forest_breath",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "rare_mist_veil",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "rare_lunar_seal",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "brew_stir_right",
+      "recipe": "rare_nebula_distillate",
+      "grip_on_skin": true,
+      "spoon_grip_opaque": true,
+      "tool_origin": [
+        40,
+        31
+      ],
+      "liquid_surface_intersection_pixels": 12,
+      "passed": true
+    }
+  ],
+  "bottle_checks": [
+    {
+      "pose": "handover_extend",
+      "recipe": "health",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "mana",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "moon",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "purify",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 50,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "agility",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "vigor",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 52,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "antidote",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 37,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "fortune",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 41,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "focus",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "restoration",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 41,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "growth",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "clarity",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 38,
+      "visible_contents_pixels": 5,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "ward",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 42,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "spirit",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 41,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "arcane_amplification",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 37,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "iron_skin",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 52,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "stealth",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 54,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "poison_resistance",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 33,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "illusion",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 31,
+      "visible_contents_pixels": 6,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "soul_purification",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 30,
+      "visible_contents_pixels": 4,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "wisdom",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 41,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "reflection",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 31,
+      "visible_contents_pixels": 5,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "haste",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 54,
+      "visible_contents_pixels": 16,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "nightwalk",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 45,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "moonradiance",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 35,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "regeneration",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 46,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "starlight",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 33,
+      "visible_contents_pixels": 6,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "wish",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 45,
+      "visible_contents_pixels": 16,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "eternity",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 40,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "sage_elixir",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 45,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "worldtree_elixir",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "shadow_elixir",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 31,
+      "visible_contents_pixels": 6,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "rare_forest_breath",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 39,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "rare_mist_veil",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 53,
+      "visible_contents_pixels": 16,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "rare_lunar_seal",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_extend",
+      "recipe": "rare_nebula_distillate",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        24,
+        26
+      ],
+      "visible_bottle_pixels": 37,
+      "visible_contents_pixels": 6,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "health",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 44,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "mana",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 44,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "moon",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 44,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "purify",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 51,
+      "visible_contents_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "agility",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 45,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "vigor",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 53,
+      "visible_contents_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "antidote",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 38,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "fortune",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "focus",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 45,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "restoration",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 42,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "growth",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 44,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "clarity",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 39,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "ward",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "spirit",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 42,
+      "visible_contents_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "arcane_amplification",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 38,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "iron_skin",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 53,
+      "visible_contents_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "stealth",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 55,
+      "visible_contents_pixels": 12,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "poison_resistance",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 34,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "illusion",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 33,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "soul_purification",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 31,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "wisdom",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 43,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "reflection",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 32,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "haste",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 56,
+      "visible_contents_pixels": 19,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "nightwalk",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 46,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "moonradiance",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 37,
+      "visible_contents_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "regeneration",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 47,
+      "visible_contents_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "starlight",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 35,
+      "visible_contents_pixels": 7,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "wish",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 47,
+      "visible_contents_pixels": 19,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "eternity",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 41,
+      "visible_contents_pixels": 13,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "sage_elixir",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 46,
+      "visible_contents_pixels": 11,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "worldtree_elixir",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 44,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "shadow_elixir",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 32,
+      "visible_contents_pixels": 8,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "rare_forest_breath",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 40,
+      "visible_contents_pixels": 9,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "rare_mist_veil",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 55,
+      "visible_contents_pixels": 19,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "rare_lunar_seal",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 44,
+      "visible_contents_pixels": 10,
+      "passed": true
+    },
+    {
+      "pose": "handover_return",
+      "recipe": "rare_nebula_distillate",
+      "grip_on_skin": true,
+      "inside32x48": true,
+      "local_grip_opaque": true,
+      "head_and_eyes_clear": true,
+      "origin": [
+        18,
+        30
+      ],
+      "visible_bottle_pixels": 38,
+      "visible_contents_pixels": 8,
+      "passed": true
+    }
+  ]
+}

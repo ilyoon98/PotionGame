@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "existing_customer_materials": {
+    "traveler": {
+      "assets_tested": 8,
+      "unchanged": 8
+    },
+    "mage": {
+      "assets_tested": 9,
+      "unchanged": 9
+    }
+  }
+}

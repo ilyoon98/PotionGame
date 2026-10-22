@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "existing_art_files_checked": 166,
+  "changed_existing_art": [],
+  "retained_right_facing_frames_identical": {
+    "idle": true,
+    "handover_extend": true,
+    "handover_return": true
+  }
+}

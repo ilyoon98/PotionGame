@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "character_native_size": [
+    32,
+    48
+  ],
+  "native_scene": [
+    180,
+    83
+  ],
+  "display_scene": [
+    540,
+    249
+  ],
+  "scale": 3,
+  "palette_outside_colors": 0,
+  "partial_alpha_pixels": 0,
+  "composed_frames_checked": 4608,
+  "source_characters": [
+    {
+      "character": "keeper",
+      "unchanged_native_frames": 6,
+      "motion_report": "art/characters/keyframes-v4/keeper/motion/validation.json",
+      "motion_status": "passed"
+    },
+    {
+      "character": "traveler",
+      "unchanged_native_frames": 11,
+      "motion_report": "art/characters/actions-v1/traveler/motion/validation.json",
+      "motion_status": "passed"
+    },
+    {
+      "character": "mage",
+      "unchanged_native_frames": 11,
+      "motion_report": "art/characters/actions-v1/mage/motion/validation.json",
+      "motion_status": "passed"
+    },
+    {
+      "character": "elf",
+      "unchanged_native_frames": 11,
+      "motion_report": "art/characters/actions-v1/elf/motion/validation.json",
+      "motion_status": "passed"
+    },
+    {
+      "character": "rogue",
+      "unchanged_native_frames": 11,
+      "motion_report": "art/characters/actions-v1/rogue/motion/validation.json",
+      "motion_status": "passed"
+    }
+  ],
+  "runtime_integrated": false
+}

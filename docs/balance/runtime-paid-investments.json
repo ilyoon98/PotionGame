@@ -1,0 +1,44 @@
+{
+	"cases": [
+		{
+			"after": {
+				"brewed": 99,
+				"full_percent": 0.0,
+				"sold": 99,
+				"waiting_percent": 53.6666666666667
+			},
+			"before": {
+				"brewed": 87,
+				"full_percent": 0.0,
+				"sold": 87,
+				"waiting_percent": 59.2666666666667
+			},
+			"paid": 47,
+			"purchase": "cauldron"
+		},
+		{
+			"after": {
+				"brewed": 249,
+				"full_percent": 55.8862313906892,
+				"sold": 250,
+				"waiting_percent": 0.0
+			},
+			"before": {
+				"brewed": 213,
+				"full_percent": 60.2714791940275,
+				"sold": 214,
+				"waiting_percent": 0.0
+			},
+			"paid": 800,
+			"purchase": "sales_counter"
+		},
+		{
+			"first_10_potions_seconds_after": 20.6500000000002,
+			"first_10_potions_seconds_before": 20.8500000000002,
+			"paid": 1760,
+			"purchase": "brewing_assistant_training",
+			"reserved_state": "vigor"
+		}
+	],
+	"revision": "candidate-d actual paid isolated comparisons"
+}

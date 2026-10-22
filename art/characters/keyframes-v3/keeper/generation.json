@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "mode": "builtin",
+  "tool": "image_gen.imagegen",
+  "status": "candidate",
+  "approved_by_user": false,
+  "selected_source": "source/generated-02.png",
+  "scope": "Three whole-body LEFT-facing brewing poses; idle and two right-facing handover poses retained separately.",
+  "generations": [
+    {
+      "source": "source/generated-01.png",
+      "prompt_file": "source/prompt-01.txt",
+      "reference": "art/characters/keyframes-v2/keeper/source/identity-reference-10x.png"
+    },
+    {
+      "source": "source/generated-02.png",
+      "prompt_file": "source/prompt-02.txt",
+      "references": [
+        "source/generated-01.png",
+        "art/characters/keyframes-v2/elf/keyframes-review.png"
+      ],
+      "change": "Head faces LEFT; retain newly drawn two-handed solid sleeve anatomy."
+    }
+  ],
+  "old_face_hook_used": false,
+  "old_head_overlay_used": false,
+  "cross_pose_limb_splicing": false,
+  "actual_brewing_eye_points": [
+    [
+      12,
+      18
+    ],
+    [
+      15,
+      18
+    ]
+  ],
+  "anatomy_masks": "anatomy-masks.json",
+  "material_masks": "semantic-masks.json",
+  "props_reused_from": "art/characters/keyframes-v2/keeper/props/",
+  "validation": "validation.json",
+  "contacts": "contact-validation.json",
+  "native_outputs": "frames/"
+}

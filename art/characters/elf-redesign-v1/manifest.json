@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/elf-redesign-v1/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "elf",
+      "source": "art/characters/elf-redesign-v1/source/registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "preserve_native_frame": true,
+      "dark_value": 0.27,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ]
+          ]
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              22
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              16,
+              23
+            ]
+          ]
+        }
+      ],
+      "background_alpha_rectangles": [
+        {
+          "rect": [
+            10,
+            35,
+            11,
+            36
+          ],
+          "reason": "Remove one downsampled hand-edge excess at the standing waist."
+        },
+        {
+          "rect": [
+            22,
+            35,
+            24,
+            36
+          ],
+          "reason": "End the braid above the waist rather than widening the waist."
+        },
+        {
+          "rect": [
+            9,
+            37,
+            10,
+            38
+          ],
+          "reason": "Trim one hand-edge excess to the shared12-pixel lower silhouette."
+        }
+      ]
+    }
+  ]
+}

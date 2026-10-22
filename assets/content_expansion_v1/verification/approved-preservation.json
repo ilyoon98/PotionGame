@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "checked": 20,
+  "files": [
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\health_icon.png",
+      "before": "B5C0A70506622B2B4226843A31BDA6EF195477BFE25847204AB70E4931F3F487",
+      "after": "B5C0A70506622B2B4226843A31BDA6EF195477BFE25847204AB70E4931F3F487",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\potion_12x16.png",
+      "before": "FC74FA913D3FD03165B888BC9D62DD82CE9E77EDC60F8E7051F7BF330C911FDE",
+      "after": "FC74FA913D3FD03165B888BC9D62DD82CE9E77EDC60F8E7051F7BF330C911FDE",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\mana_icon.png",
+      "before": "1A4B13FBE1F0349C1679EBDD5964A7F872F22E5B502439BF40C2955F1464131B",
+      "after": "1A4B13FBE1F0349C1679EBDD5964A7F872F22E5B502439BF40C2955F1464131B",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\mana_12x16.png",
+      "before": "7F01057054A7F94707D8FE498553B2A2380286BEE31FD33603FD149A259D56CC",
+      "after": "7F01057054A7F94707D8FE498553B2A2380286BEE31FD33603FD149A259D56CC",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\moon_icon.png",
+      "before": "9193A36C8F4B8ADF5849395AC9EE3C53BBC6DC26C405605E3A53444E58F6C2A8",
+      "after": "9193A36C8F4B8ADF5849395AC9EE3C53BBC6DC26C405605E3A53444E58F6C2A8",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\moon_12x16.png",
+      "before": "15AF40C0F70476B92071030C85B942DB7E40953220AA1D7B6F4987B6945E483C",
+      "after": "15AF40C0F70476B92071030C85B942DB7E40953220AA1D7B6F4987B6945E483C",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\purify_icon.png",
+      "before": "6BD2648B328FDE4C4B57E480796C10C9128193F1BEA1813E4BFC9BCEA2223EF5",
+      "after": "6BD2648B328FDE4C4B57E480796C10C9128193F1BEA1813E4BFC9BCEA2223EF5",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\purify_12x16.png",
+      "before": "8AFF74B844CB9098B8A7DC3B4733E6130292C748F8F0F0530CE9C1F952A5F4CE",
+      "after": "8AFF74B844CB9098B8A7DC3B4733E6130292C748F8F0F0530CE9C1F952A5F4CE",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\agility_icon.png",
+      "before": "D3271675294A24929A442290B155677C53C3C56C7EE23722DA1CFAA24788744C",
+      "after": "D3271675294A24929A442290B155677C53C3C56C7EE23722DA1CFAA24788744C",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\agility_12x16.png",
+      "before": "D3BF37A963E93763888525F142FF66F2B0634AA1F6397174F09DAF1495EFF3C5",
+      "after": "D3BF37A963E93763888525F142FF66F2B0634AA1F6397174F09DAF1495EFF3C5",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\herb_icon.png",
+      "before": "CAB03DC597B392A5539F6F341F3503953A5E36AF89AE3CA0BB801D22C19C53A2",
+      "after": "CAB03DC597B392A5539F6F341F3503953A5E36AF89AE3CA0BB801D22C19C53A2",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\herb_growth.png",
+      "before": "7BF8C8BB72B8D5E6871CB083D059DC2F27CAB31930FBE9FB8076E6CCDC83B7C3",
+      "after": "7BF8C8BB72B8D5E6871CB083D059DC2F27CAB31930FBE9FB8076E6CCDC83B7C3",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\mushroom_24.png",
+      "before": "2CEEA238257B135C0F823F11BF162B0DC9DA144916A82C3B7294132FC41733FB",
+      "after": "2CEEA238257B135C0F823F11BF162B0DC9DA144916A82C3B7294132FC41733FB",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\starleaf_icon.png",
+      "before": "C789AECAAA24333F62BC5776D696BE9FD2CD7DAED1EFD47001C21C6DC54E0AED",
+      "after": "C789AECAAA24333F62BC5776D696BE9FD2CD7DAED1EFD47001C21C6DC54E0AED",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\starleaf_growth.png",
+      "before": "3CF10F8196878246C8780AB60DC766508648D5406DCD59F31D149660C3A52C1C",
+      "after": "3CF10F8196878246C8780AB60DC766508648D5406DCD59F31D149660C3A52C1C",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\management_v1\\expedition_icon.png",
+      "before": "6403AF3F7724A543CD3B78B67BD1E37C503E5ABC47EFD98D4B01B627F7A1E9E8",
+      "after": "6403AF3F7724A543CD3B78B67BD1E37C503E5ABC47EFD98D4B01B627F7A1E9E8",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\management_v1\\employee_icon.png",
+      "before": "B8B8A18F2A6232E93C40C58A07C83096431A8BEAC62A7C48985AEDD2FCC542AA",
+      "after": "B8B8A18F2A6232E93C40C58A07C83096431A8BEAC62A7C48985AEDD2FCC542AA",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\cauldron_48.png",
+      "before": "04B2EFFDDF95E8E22DD1B42BDBECFF4CC5533D7968392214C6C4C7E4A0A573A3",
+      "after": "04B2EFFDDF95E8E22DD1B42BDBECFF4CC5533D7968392214C6C4C7E4A0A573A3",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\workshop_v1\\potion-counter.png",
+      "before": "EF367207EA386576894B193B3C3BB8D475F6E50D4B8C99DC8186B345B6E65964",
+      "after": "EF367207EA386576894B193B3C3BB8D475F6E50D4B8C99DC8186B345B6E65964",
+      "preserved": true
+    },
+    {
+      "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\management_v1\\filter_icon.png",
+      "before": "8BBE889C194E0CA49D7F40069CF200365D66697CF00A2558A77C9812DAB1E240",
+      "after": "8BBE889C194E0CA49D7F40069CF200365D66697CF00A2558A77C9812DAB1E240",
+      "preserved": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "hand_grip_anchors": {
+    "brew_reach": [
+      4,
+      21
+    ],
+    "brew_stir_left": [
+      5,
+      23
+    ],
+    "brew_stir_right": [
+      4,
+      24
+    ],
+    "handover_extend": [
+      27,
+      27
+    ],
+    "handover_return": [
+      27,
+      28
+    ]
+  },
+  "spoon_local_grip": [
+    15,
+    0
+  ],
+  "bottle_local_grip": "[width/2,4]"
+}

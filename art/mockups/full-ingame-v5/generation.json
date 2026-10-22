@@ -1,0 +1,10 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "status": "candidate",
+  "source": "characters/source/elf-head.png",
+  "references": ["../full-ingame-v3/characters/elf-head-3x.png", "../full-ingame-v3/characters/elf-3x.png"],
+  "prompt": "Precise pixelart HEAD revision. Image1 is the current elfHEAD edit target, Image2 is the same customer's wholebody reference. The current head is TOO SMALL comparedwith the torso. Make an INTERMEDIATE larger cute RPG head, preserving brown short hair, tiny sageleaf, pointedears, peachskin, two simpleeyes, looking slightlyLEFT. Output ONE HEAD ONLY on genuinelytransparentbackground; no body or clothing, no labels. Genuine logical22x16 pixelbox INCLUDINGear outlines. The centralFACE must be broadly readable and approximately12pixels wide x9pixels high; hairbodyapprox18pixelswide x15pixelshigh, small pointed ears add2pixelsat eachside. Haironlytop4rows pluschunkyshortfringe, small cheeks nottiny narrow face. This should be cute adult gamecustomer proportions, not giant chibi head and notrealistic small head. EXACT4flatcolors: darkplumoutline #241C32, warmbrown hair #916047, peachcream skin #F6D1AC, sageleaf #718C59. CRITICAL complete continuous ONE logicalPIXEL darkoutline around ENTIREhead andears; no breaks, no softenededge, no purpleblur, no missingoutlineatcorners. Outeroutline remainsconstant; two darkeyes eachonepixelwide andtwohigh withskin toitsright. Onlylargecleanblocks, no texture, shading, gradients, hairstrands, aliasing, cheekblush, extraearjewelry. Enlarge the22x16logicalgrid with square nearest-neighborpixels and spacious transparentpadding. Do not addneckextension or torso. Preserve the exact same character identity and modestleft-facing angle, change onlyhead proportions and line clarity.",
+  "processing": "prepare_character_outline_v5.py -> build_secondary_motion_v5.py -> build_outline_workshop_v5.py",
+  "postprocessing": "Shared background/grid/material-ramp pipeline, explicit inner alpha-boundary outline repair, explicit face-only eye masks."
+}

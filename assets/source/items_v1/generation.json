@@ -1,0 +1,72 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-07",
+  "background": "transparent; generated alpha preserved",
+  "generated_assets": [
+    {
+      "id": "moon",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art sprite for a tiny cozy witch potion-shop Godot game. Single isolated inventory object, orthographic front view, centered with generous transparent padding. TRUE transparent background. Strict deliberately chunky pixel art with hard square pixels, dark plum stepped 1-pixel silhouette outline, 4-5 flat clustered shade bands, small ivory upper-left pixel highlight. Palette: muted plum outlines #432039, warm amber cork/gold, ivory glass highlights. No smooth illustration, no gradients, no blur, no soft glow, no 3D, no text, no watermark, no scene, no cast shadow or floor. Designed to remain legible at 16x24 logical pixels, enlarge pixels uniformly for the output. Subject: ONE moonlight potion. Wide squat circular glass flask, short narrow neck, warm amber cork, violet and lavender liquid (#c6aeed), pale lavender glass rim, a small cream label carrying a simple gold crescent moon pixel symbol. The moon symbol should be bold and simple and the liquid clearly purple. The entire bottle fully visible.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-5398b75f-d79e-418a-839d-b274d7cb5669.png",
+      "project_source": "res://assets/source/items_v1/moon.png"
+    },
+    {
+      "id": "purify",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art sprite for a tiny cozy witch potion-shop Godot game. Single isolated inventory object, orthographic front view, centered with generous transparent padding. TRUE transparent background. Strict deliberately chunky pixel art with hard square pixels, dark plum stepped 1-pixel silhouette outline, 4-5 flat clustered shade bands, small ivory upper-left pixel highlight. Palette: muted plum outlines #432039, warm amber cork/gold, ivory glass highlights. No smooth illustration, no gradients, no blur, no soft glow, no 3D, no text, no watermark, no scene, no cast shadow or floor. Designed to remain legible at 16x24 logical pixels, enlarge pixels uniformly for the output. Subject: ONE purification potion. Broad shouldered compact square glass bottle with bevelled corners, short neck and amber cork, bright mint and jade liquid (#9addba), pale seafoam glass rim, a small cream label carrying a simple dark-green leaf or clean droplet pixel symbol. Clearly rectangular body, not a round flask. The entire bottle fully visible.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-41e4da93-27d8-4c67-a47e-36ea57b37ac0.png",
+      "project_source": "res://assets/source/items_v1/purify.png"
+    },
+    {
+      "id": "agility",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art sprite for a tiny cozy witch potion-shop Godot game. Single isolated inventory object, orthographic front view, centered with generous transparent padding. TRUE transparent background. Strict deliberately chunky pixel art with hard square pixels, dark plum stepped 1-pixel silhouette outline, 4-5 flat clustered shade bands, small ivory upper-left pixel highlight. Palette: muted plum outlines #432039, warm amber cork/gold, ivory glass highlights. No smooth illustration, no gradients, no blur, no soft glow, no 3D, no text, no watermark, no scene, no cast shadow or floor. Designed to remain legible at 16x24 logical pixels, enlarge pixels uniformly for the output. Subject: ONE agility potion. Slim tall tapered glass vial with a narrow neck, faceted long body and amber cork, honey gold and lemon liquid (#e9c573), pale cream glass rim, a small cream label carrying a simple amber lightning-bolt pixel symbol. Clearly tall and slim rather than broad. The entire bottle fully visible.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-9bc187d6-0950-4187-af81-05b164a8050e.png",
+      "project_source": "res://assets/source/items_v1/agility.png"
+    },
+    {
+      "id": "herb",
+      "prompt": "Use case: stylized-concept. Asset type: production pixel-art sprite for a tiny cozy witch potion-shop Godot game. Single isolated inventory object, orthographic front view, centered with generous transparent padding. TRUE transparent background. Strict deliberately chunky pixel art with hard square pixels, dark plum stepped 1-pixel silhouette outline, 4-5 flat clustered shade bands, small ivory upper-left pixel highlight. Palette: muted plum outlines #432039, warm amber cork/gold, ivory glass highlights. No smooth illustration, no gradients, no blur, no soft glow, no 3D, no text, no watermark, no scene, no cast shadow or floor. Designed to remain legible at 16x24 logical pixels, enlarge pixels uniformly for the output. Subject: ONE harvested basic medicinal herb sprig, no pot, no bottle. Five broad pointed sage-green leaves (#b7cca0) on a short branching dark green stem, brighter yellow-green central leaf veins. Compact bushy leafy silhouette. Tied at its lower stems with a single tiny warm brown string. Readable at 24x24 logical pixels. The entire sprig fully visible.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-6acfb336-0fde-45b5-9c5d-206bd1e40d88.png",
+      "project_source": "res://assets/source/items_v1/herb.png"
+    },
+    {
+      "id": "starleaf_growth",
+      "prompt": "Use case: stylized-concept. Asset type: production four-frame pixel-art plant-growth sprite sheet for cozy witch potion shop. TRUE transparent background. EXACT 2x2 grid, equal cells, no borders or labels, one plant per cell, generous empty padding around each silhouette. Front orthographic view. Every cell has the exact same small plum ceramic pot with warm gold rim and a simple gold five-point star symbol, exact identical pot size and position at the bottom center of its cell. Top-left: small seedling with two tiny lilac leaves. Top-right: young plant with four silver-lilac pointed leaves. Bottom-left: mature STARLEAF herb, five-to-seven distinct broad five-point star-shaped lavender leaves, pale silver-blue highlights with dark violet stems, one tiny gold star bud at the top. Bottom-right: exact same mature plant and pot as bottom-left, plus two tiny detached gold diamond harvest sparkles above the leaves. Leaves clearly star-shaped, unlike ordinary green leaves. Style: strict chunky pixel art, hard square pixel edges, dark plum stepped 1-pixel logical outline #432039, simple flat color clusters, 4-5 shade bands, no gradients/blur/soft glow/3D/smooth illustration. Whole mature plant fits logical 32x40 pixels. Identical scale and baseline in every cell, align pot bases to exactly same relative y. No floor, no cast shadows, no text, no watermark, no background.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-9de4af4c-9c0b-40aa-83bc-c5ff54d95b5c.png",
+      "project_source": "res://assets/source/items_v1/starleaf_growth.png"
+    }
+  ],
+  "retained_assets": [
+    "res://assets/source/potion_v2.png",
+    "res://assets/source/mana.png",
+    "res://assets/mushroom_24.png"
+  ],
+  "exports": {
+    "special_bottles": [
+      12,
+      16
+    ],
+    "potion_icons": [
+      32,
+      40
+    ],
+    "herb_icon": [
+      32,
+      32
+    ],
+    "starleaf_growth": {
+      "sheet": [
+        64,
+        80
+      ],
+      "cell": [
+        32,
+        40
+      ],
+      "order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ]
+    }
+  }
+}

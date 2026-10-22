@@ -1,0 +1,45 @@
+{
+  "witch": {
+    "eyes": [
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        22
+      ],
+      [
+        18,
+        21
+      ],
+      [
+        18,
+        22
+      ]
+    ],
+    "cut": 30
+  },
+  "elf": {
+    "eyes": [
+      [
+        10,
+        21
+      ],
+      [
+        10,
+        22
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        22
+      ]
+    ],
+    "cut": 27
+  },
+  "notes": "Rounded authored cheek/chin contours; keeper fringe restored above isolated eyes."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "spoon": {
+      "passed": true,
+      "size": [
+        18,
+        12
+      ],
+      "opaque_pixels": 28,
+      "colors": [
+        "#241C32",
+        "#916047"
+      ],
+      "color_count": 2,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2
+      },
+      "source_sha256": "57bca6b985b1cec7190ae6bcab19ac017c9375adbac511d1b4b2934e3d8bbd66",
+      "native_pixel_sha256": "183924d5afd8e6cdccc59ef7d99af07f2f4e8e75c2daff00c912eed45779ce5f"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

@@ -1,0 +1,3085 @@
+{
+  "schema_version": 1,
+  "status": "implementation_initial_values_not_runtime",
+  "date": "2026-10-08",
+  "revision": "candidate-d-multi-expedition",
+  "rules": {
+    "day_seconds": 240,
+    "weather_seconds": 90,
+    "brew_floor": 0.8,
+    "trip_reduction_cap": 0.3,
+    "base_brew_seconds": 5,
+    "base_harvest_seconds": 4,
+    "base_herb_capacity": 24,
+    "base_potion_capacity": 12,
+    "base_customer_seconds": 3.2,
+    "first_material_grant_quantity": 2,
+    "grant_existing_starleaf": false,
+    "sale_formula": "round(base*(1+cauldron_quality+new_recipe_quality)*(1+preferred_family_bonus))+preferred_employee_flat",
+    "family_order": [
+      "vitality",
+      "arcane",
+      "nature",
+      "craft"
+    ],
+    "supplier": {
+      "interval": 12,
+      "quantity": 2,
+      "cost": 4,
+      "reserve": 30,
+      "capacity": 6
+    },
+    "expedition_mode": "parallel_one_trip_per_region",
+    "expedition_reserve_gold": 30,
+    "completed_region_refill_fraction": 0.5
+  },
+  "materials": [
+    {
+      "id": "herb",
+      "name": "기본 약초",
+      "source": "base_garden",
+      "capacity": 24,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/herb_icon.png"
+    },
+    {
+      "id": "moon_mushroom",
+      "name": "달빛 버섯",
+      "source": "supplier",
+      "capacity": 6,
+      "cost": 4,
+      "delivery_seconds": 12,
+      "delivery_quantity": 2,
+      "reserve_gold": 30,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/moon_mushroom_icon.png"
+    },
+    {
+      "id": "starleaf",
+      "name": "별잎",
+      "source": "recipe_granted_garden",
+      "capacity": 12,
+      "growth_seconds": 12,
+      "environment": "legacy_night_rain",
+      "icon_candidate": "res://assets/content_expansion_v1/materials/starleaf_icon.png"
+    },
+    {
+      "id": "dewgrass",
+      "name": "이슬풀",
+      "source": "recipe_granted_garden",
+      "region": "forest_edge",
+      "growth_seconds": 12,
+      "capacity": 12,
+      "environment": "rain",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/dewgrass_icon.png"
+    },
+    {
+      "id": "silver_moss",
+      "name": "은빛 이끼",
+      "source": "recipe_granted_garden",
+      "region": "abandoned_greenhouse",
+      "growth_seconds": 14,
+      "capacity": 12,
+      "environment": "cloudy",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/silver_moss_icon.png"
+    },
+    {
+      "id": "blue_reed",
+      "name": "푸른 갈대",
+      "source": "recipe_granted_garden",
+      "region": "mist_valley",
+      "growth_seconds": 16,
+      "capacity": 12,
+      "environment": "rain",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/blue_reed_icon.png"
+    },
+    {
+      "id": "crystal_herb",
+      "name": "수정초",
+      "source": "recipe_granted_garden",
+      "region": "crystal_mine",
+      "growth_seconds": 18,
+      "capacity": 12,
+      "environment": "clear",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/crystal_herb_icon.png"
+    },
+    {
+      "id": "mist_mushroom",
+      "name": "안개버섯",
+      "source": "recipe_granted_garden",
+      "region": "fog_marsh",
+      "growth_seconds": 20,
+      "capacity": 12,
+      "environment": "cloudy",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/mist_mushroom_icon.png"
+    },
+    {
+      "id": "ash_sage",
+      "name": "잿빛 세이지",
+      "source": "recipe_granted_garden",
+      "region": "forgotten_tower",
+      "growth_seconds": 20,
+      "capacity": 12,
+      "environment": "day",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/ash_sage_icon.png"
+    },
+    {
+      "id": "moonflower",
+      "name": "달꽃",
+      "source": "recipe_granted_garden",
+      "region": "moon_ruins",
+      "growth_seconds": 22,
+      "capacity": 12,
+      "environment": "night",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/moonflower_icon.png"
+    },
+    {
+      "id": "star_seed",
+      "name": "별씨",
+      "source": "recipe_granted_garden",
+      "region": "star_garden",
+      "growth_seconds": 24,
+      "capacity": 12,
+      "environment": "night_clear",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/star_seed_icon.png"
+    }
+  ],
+  "potions": [
+    {
+      "id": "health",
+      "name": "체력",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 0,
+      "existing": true,
+      "owned_at_start": true,
+      "unlock": {
+        "reputation": 0
+      },
+      "cost": 0,
+      "sale_price": 6,
+      "ingredients": {
+        "herb": 2
+      },
+      "duration_multiplier": 1,
+      "success": 1,
+      "environment": "none",
+      "environment_bonus": null,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/health_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/health_12x16.png",
+      "grant_sources": []
+    },
+    {
+      "id": "mana",
+      "name": "마나",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 1,
+      "existing": true,
+      "owned_at_start": true,
+      "unlock": {
+        "reputation": 0
+      },
+      "cost": 0,
+      "sale_price": 18,
+      "ingredients": {
+        "herb": 2,
+        "moon_mushroom": 1
+      },
+      "duration_multiplier": 1.25,
+      "success": 1,
+      "environment": "none",
+      "environment_bonus": null,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/mana_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/mana_12x16.png",
+      "grant_sources": []
+    },
+    {
+      "id": "moon",
+      "name": "달빛",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 2,
+      "existing": true,
+      "owned_at_start": false,
+      "unlock": {
+        "reputation": 0
+      },
+      "cost": 120,
+      "sale_price": 26,
+      "ingredients": {
+        "herb": 2,
+        "starleaf": 1
+      },
+      "duration_multiplier": 1.5,
+      "success": 0.86,
+      "environment": "legacy_night_rain",
+      "environment_bonus": null,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/moon_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/moon_12x16.png",
+      "grant_sources": []
+    },
+    {
+      "id": "purify",
+      "name": "정화",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 3,
+      "existing": true,
+      "owned_at_start": false,
+      "unlock": {
+        "reputation": 10
+      },
+      "cost": 180,
+      "sale_price": 24,
+      "ingredients": {
+        "herb": 2,
+        "starleaf": 1
+      },
+      "duration_multiplier": 1.4,
+      "success": 0.88,
+      "environment": "legacy_night_rain",
+      "environment_bonus": null,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/purify_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/purify_12x16.png",
+      "grant_sources": []
+    },
+    {
+      "id": "agility",
+      "name": "민첩",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 4,
+      "existing": true,
+      "owned_at_start": false,
+      "unlock": {
+        "reputation": 20
+      },
+      "cost": 240,
+      "sale_price": 28,
+      "ingredients": {
+        "herb": 2,
+        "starleaf": 1
+      },
+      "duration_multiplier": 1.6,
+      "success": 0.84,
+      "environment": "legacy_night_rain",
+      "environment_bonus": null,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/agility_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/agility_12x16.png",
+      "grant_sources": []
+    },
+    {
+      "id": "vigor",
+      "name": "활력",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 5,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "forest_edge",
+          "returns": 3
+        }
+      },
+      "cost": 360,
+      "sale_price": 30,
+      "ingredients": {
+        "herb": 2,
+        "dewgrass": 1
+      },
+      "duration_multiplier": 1.4,
+      "success": 0.92,
+      "environment": "rain",
+      "environment_bonus": 0.08,
+      "grant_material": "dewgrass",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/vigor_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/vigor_12x16.png",
+      "grant_sources": [
+        "dewgrass"
+      ]
+    },
+    {
+      "id": "antidote",
+      "name": "해독",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 6,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "forest_edge",
+          "returns": 6
+        }
+      },
+      "cost": 480,
+      "sale_price": 32,
+      "ingredients": {
+        "herb": 2,
+        "dewgrass": 1
+      },
+      "duration_multiplier": 1.5,
+      "success": 0.92,
+      "environment": "rain",
+      "environment_bonus": 0.08,
+      "grant_material": "dewgrass",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/antidote_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/antidote_12x16.png",
+      "grant_sources": [
+        "dewgrass"
+      ]
+    },
+    {
+      "id": "fortune",
+      "name": "행운",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 7,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "forest_edge",
+          "returns": 10
+        }
+      },
+      "cost": 640,
+      "sale_price": 34,
+      "ingredients": {
+        "herb": 2,
+        "dewgrass": 1
+      },
+      "duration_multiplier": 1.6,
+      "success": 0.92,
+      "environment": "rain",
+      "environment_bonus": 0.08,
+      "grant_material": "dewgrass",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/fortune_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/fortune_12x16.png",
+      "grant_sources": [
+        "dewgrass"
+      ]
+    },
+    {
+      "id": "focus",
+      "name": "집중",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 8,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "abandoned_greenhouse",
+          "returns": 2
+        }
+      },
+      "cost": 750,
+      "sale_price": 38,
+      "ingredients": {
+        "herb": 2,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 1.6,
+      "success": 0.9,
+      "environment": "cloudy",
+      "environment_bonus": 0.08,
+      "grant_material": "silver_moss",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/focus_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/focus_12x16.png",
+      "grant_sources": [
+        "silver_moss"
+      ]
+    },
+    {
+      "id": "restoration",
+      "name": "회복",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 9,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "abandoned_greenhouse",
+          "returns": 4
+        }
+      },
+      "cost": 950,
+      "sale_price": 40,
+      "ingredients": {
+        "herb": 2,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 1.7,
+      "success": 0.9,
+      "environment": "cloudy",
+      "environment_bonus": 0.08,
+      "grant_material": "silver_moss",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/restoration_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/restoration_12x16.png",
+      "grant_sources": [
+        "silver_moss"
+      ]
+    },
+    {
+      "id": "growth",
+      "name": "생장",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 10,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "abandoned_greenhouse",
+          "returns": 6
+        }
+      },
+      "cost": 1200,
+      "sale_price": 42,
+      "ingredients": {
+        "herb": 2,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 1.8,
+      "success": 0.9,
+      "environment": "cloudy",
+      "environment_bonus": 0.08,
+      "grant_material": "silver_moss",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/growth_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/growth_12x16.png",
+      "grant_sources": [
+        "silver_moss"
+      ]
+    },
+    {
+      "id": "clarity",
+      "name": "선명",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 11,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "mist_valley",
+          "returns": 2
+        }
+      },
+      "cost": 1400,
+      "sale_price": 46,
+      "ingredients": {
+        "herb": 2,
+        "blue_reed": 1
+      },
+      "duration_multiplier": 1.8,
+      "success": 0.88,
+      "environment": "rain",
+      "environment_bonus": 0.08,
+      "grant_material": "blue_reed",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/clarity_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/clarity_12x16.png",
+      "grant_sources": [
+        "blue_reed"
+      ]
+    },
+    {
+      "id": "ward",
+      "name": "수호",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 12,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "mist_valley",
+          "returns": 4
+        }
+      },
+      "cost": 1700,
+      "sale_price": 48,
+      "ingredients": {
+        "herb": 2,
+        "blue_reed": 1
+      },
+      "duration_multiplier": 1.9,
+      "success": 0.88,
+      "environment": "rain",
+      "environment_bonus": 0.08,
+      "grant_material": "blue_reed",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/ward_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/ward_12x16.png",
+      "grant_sources": [
+        "blue_reed"
+      ]
+    },
+    {
+      "id": "spirit",
+      "name": "정령",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 13,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "mist_valley",
+          "returns": 6
+        }
+      },
+      "cost": 2100,
+      "sale_price": 52,
+      "ingredients": {
+        "herb": 2,
+        "blue_reed": 1,
+        "dewgrass": 1
+      },
+      "duration_multiplier": 2.0,
+      "success": 0.88,
+      "environment": "rain",
+      "environment_bonus": 0.08,
+      "grant_material": "blue_reed",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/spirit_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/spirit_12x16.png",
+      "grant_sources": [
+        "blue_reed",
+        "dewgrass"
+      ]
+    },
+    {
+      "id": "arcane_amplification",
+      "name": "마력 증폭",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 14,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "crystal_mine",
+          "returns": 1
+        }
+      },
+      "cost": 2040,
+      "sale_price": 58,
+      "ingredients": {
+        "herb": 2,
+        "crystal_herb": 1
+      },
+      "duration_multiplier": 2.0,
+      "success": 0.86,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "crystal_herb",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/arcane_amplification_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/arcane_amplification_12x16.png",
+      "grant_sources": [
+        "crystal_herb"
+      ]
+    },
+    {
+      "id": "iron_skin",
+      "name": "강철 피부",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 15,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "crystal_mine",
+          "returns": 3
+        }
+      },
+      "cost": 2470,
+      "sale_price": 62,
+      "ingredients": {
+        "herb": 2,
+        "crystal_herb": 1
+      },
+      "duration_multiplier": 2.1,
+      "success": 0.86,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "crystal_herb",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/iron_skin_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/iron_skin_12x16.png",
+      "grant_sources": [
+        "crystal_herb"
+      ]
+    },
+    {
+      "id": "stealth",
+      "name": "은신",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 16,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "crystal_mine",
+          "returns": 5
+        }
+      },
+      "cost": 2890,
+      "sale_price": 66,
+      "ingredients": {
+        "herb": 2,
+        "crystal_herb": 1,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 2.2,
+      "success": 0.86,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "crystal_herb",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/stealth_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/stealth_12x16.png",
+      "grant_sources": [
+        "crystal_herb",
+        "silver_moss"
+      ]
+    },
+    {
+      "id": "poison_resistance",
+      "name": "독 저항",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 17,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "fog_marsh",
+          "returns": 1
+        }
+      },
+      "cost": 3230,
+      "sale_price": 72,
+      "ingredients": {
+        "herb": 2,
+        "mist_mushroom": 1
+      },
+      "duration_multiplier": 2.2,
+      "success": 0.84,
+      "environment": "cloudy",
+      "environment_bonus": 0.08,
+      "grant_material": "mist_mushroom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/poison_resistance_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/poison_resistance_12x16.png",
+      "grant_sources": [
+        "mist_mushroom"
+      ]
+    },
+    {
+      "id": "illusion",
+      "name": "환영",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 18,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "fog_marsh",
+          "returns": 3
+        }
+      },
+      "cost": 3830,
+      "sale_price": 76,
+      "ingredients": {
+        "herb": 2,
+        "mist_mushroom": 1
+      },
+      "duration_multiplier": 2.3,
+      "success": 0.84,
+      "environment": "cloudy",
+      "environment_bonus": 0.08,
+      "grant_material": "mist_mushroom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/illusion_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/illusion_12x16.png",
+      "grant_sources": [
+        "mist_mushroom"
+      ]
+    },
+    {
+      "id": "soul_purification",
+      "name": "영혼 정화",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 19,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "fog_marsh",
+          "returns": 5
+        }
+      },
+      "cost": 4420,
+      "sale_price": 80,
+      "ingredients": {
+        "herb": 2,
+        "mist_mushroom": 1,
+        "starleaf": 1
+      },
+      "duration_multiplier": 2.4,
+      "success": 0.84,
+      "environment": "cloudy",
+      "environment_bonus": 0.08,
+      "grant_material": "mist_mushroom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/soul_purification_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/soul_purification_12x16.png",
+      "grant_sources": [
+        "mist_mushroom",
+        "starleaf"
+      ]
+    },
+    {
+      "id": "wisdom",
+      "name": "지혜",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 20,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "forgotten_tower",
+          "returns": 1
+        }
+      },
+      "cost": 5100,
+      "sale_price": 88,
+      "ingredients": {
+        "herb": 2,
+        "ash_sage": 1
+      },
+      "duration_multiplier": 2.4,
+      "success": 0.84,
+      "environment": "day",
+      "environment_bonus": 0.08,
+      "grant_material": "ash_sage",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/wisdom_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/wisdom_12x16.png",
+      "grant_sources": [
+        "ash_sage"
+      ]
+    },
+    {
+      "id": "reflection",
+      "name": "반사",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 21,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "forgotten_tower",
+          "returns": 3
+        }
+      },
+      "cost": 5780,
+      "sale_price": 92,
+      "ingredients": {
+        "herb": 2,
+        "ash_sage": 1,
+        "blue_reed": 1
+      },
+      "duration_multiplier": 2.5,
+      "success": 0.84,
+      "environment": "day",
+      "environment_bonus": 0.08,
+      "grant_material": "ash_sage",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/reflection_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/reflection_12x16.png",
+      "grant_sources": [
+        "ash_sage",
+        "blue_reed"
+      ]
+    },
+    {
+      "id": "haste",
+      "name": "신속",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 22,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "forgotten_tower",
+          "returns": 5
+        }
+      },
+      "cost": 6460,
+      "sale_price": 96,
+      "ingredients": {
+        "herb": 2,
+        "ash_sage": 1
+      },
+      "duration_multiplier": 2.6,
+      "success": 0.84,
+      "environment": "day",
+      "environment_bonus": 0.08,
+      "grant_material": "ash_sage",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/haste_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/haste_12x16.png",
+      "grant_sources": [
+        "ash_sage"
+      ]
+    },
+    {
+      "id": "nightwalk",
+      "name": "야행",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 23,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "moon_ruins",
+          "returns": 1
+        }
+      },
+      "cost": 7230,
+      "sale_price": 106,
+      "ingredients": {
+        "herb": 2,
+        "moonflower": 1
+      },
+      "duration_multiplier": 2.6,
+      "success": 0.82,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "moonflower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/nightwalk_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/nightwalk_12x16.png",
+      "grant_sources": [
+        "moonflower"
+      ]
+    },
+    {
+      "id": "moonradiance",
+      "name": "월광",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 24,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "moon_ruins",
+          "returns": 3
+        }
+      },
+      "cost": 8080,
+      "sale_price": 112,
+      "ingredients": {
+        "herb": 2,
+        "moonflower": 1,
+        "crystal_herb": 1
+      },
+      "duration_multiplier": 2.7,
+      "success": 0.82,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "moonflower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/moonradiance_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/moonradiance_12x16.png",
+      "grant_sources": [
+        "moonflower",
+        "crystal_herb"
+      ]
+    },
+    {
+      "id": "regeneration",
+      "name": "재생",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 25,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "moon_ruins",
+          "returns": 5
+        }
+      },
+      "cost": 8930,
+      "sale_price": 118,
+      "ingredients": {
+        "herb": 2,
+        "moonflower": 1,
+        "dewgrass": 1
+      },
+      "duration_multiplier": 2.8,
+      "success": 0.82,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "moonflower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/regeneration_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/regeneration_12x16.png",
+      "grant_sources": [
+        "moonflower",
+        "dewgrass"
+      ]
+    },
+    {
+      "id": "starlight",
+      "name": "별빛",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 26,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "star_garden",
+          "returns": 2
+        }
+      },
+      "cost": 10200,
+      "sale_price": 132,
+      "ingredients": {
+        "herb": 2,
+        "star_seed": 1,
+        "starleaf": 1
+      },
+      "duration_multiplier": 2.8,
+      "success": 0.82,
+      "environment": "night_clear",
+      "environment_bonus": 0.08,
+      "grant_material": "star_seed",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/starlight_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/starlight_12x16.png",
+      "grant_sources": [
+        "star_seed",
+        "starleaf"
+      ]
+    },
+    {
+      "id": "wish",
+      "name": "소원",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 27,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "star_garden",
+          "returns": 4
+        }
+      },
+      "cost": 11900,
+      "sale_price": 142,
+      "ingredients": {
+        "herb": 2,
+        "star_seed": 1,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 2.9,
+      "success": 0.82,
+      "environment": "night_clear",
+      "environment_bonus": 0.08,
+      "grant_material": "star_seed",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/wish_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/wish_12x16.png",
+      "grant_sources": [
+        "star_seed",
+        "silver_moss"
+      ]
+    },
+    {
+      "id": "eternity",
+      "name": "영원",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 28,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "star_garden",
+          "returns": 6
+        }
+      },
+      "cost": 13600,
+      "sale_price": 152,
+      "ingredients": {
+        "herb": 2,
+        "star_seed": 1,
+        "moonflower": 1
+      },
+      "duration_multiplier": 3.0,
+      "success": 0.82,
+      "environment": "night_clear",
+      "environment_bonus": 0.08,
+      "grant_material": "star_seed",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/eternity_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/eternity_12x16.png",
+      "grant_sources": [
+        "star_seed",
+        "moonflower"
+      ]
+    },
+    {
+      "id": "sage_elixir",
+      "name": "현자의 물약",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 29,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "star_garden",
+          "returns": 6
+        },
+        "recipes": [
+          "wisdom",
+          "moonradiance"
+        ]
+      },
+      "cost": 19800,
+      "sale_price": 180,
+      "ingredients": {
+        "herb": 2,
+        "star_seed": 1,
+        "ash_sage": 1,
+        "crystal_herb": 1
+      },
+      "duration_multiplier": 3.2,
+      "success": 0.8,
+      "environment": "night_clear",
+      "environment_bonus": 0.08,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/sage_elixir_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/sage_elixir_12x16.png",
+      "grant_sources": [
+        "star_seed",
+        "ash_sage",
+        "crystal_herb"
+      ]
+    },
+    {
+      "id": "worldtree_elixir",
+      "name": "세계수의 물약",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 30,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "star_garden",
+          "returns": 6
+        },
+        "recipes": [
+          "spirit",
+          "growth"
+        ]
+      },
+      "cost": 19800,
+      "sale_price": 180,
+      "ingredients": {
+        "herb": 2,
+        "star_seed": 1,
+        "blue_reed": 1,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 3.2,
+      "success": 0.8,
+      "environment": "night_clear",
+      "environment_bonus": 0.08,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/worldtree_elixir_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/worldtree_elixir_12x16.png",
+      "grant_sources": [
+        "star_seed",
+        "blue_reed",
+        "silver_moss"
+      ]
+    },
+    {
+      "id": "shadow_elixir",
+      "name": "그림자의 물약",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 31,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "star_garden",
+          "returns": 6
+        },
+        "recipes": [
+          "stealth",
+          "nightwalk"
+        ]
+      },
+      "cost": 19800,
+      "sale_price": 180,
+      "ingredients": {
+        "herb": 2,
+        "star_seed": 1,
+        "mist_mushroom": 1,
+        "moonflower": 1
+      },
+      "duration_multiplier": 3.2,
+      "success": 0.8,
+      "environment": "night_clear",
+      "environment_bonus": 0.08,
+      "grant_material": null,
+      "icon_candidate": "res://assets/content_expansion_v1/potions/shadow_elixir_icon.png",
+      "bottle_candidate": "res://assets/content_expansion_v1/potions/shadow_elixir_12x16.png",
+      "grant_sources": [
+        "star_seed",
+        "mist_mushroom",
+        "moonflower"
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "id": "forest_edge",
+      "name": "숲 가장자리",
+      "cost": 400,
+      "explore_seconds": 60,
+      "return_seconds": 10,
+      "complete_returns": 10,
+      "previous_region": null,
+      "reputation": 10,
+      "material": "dewgrass",
+      "repeat_material_quantity": 2,
+      "legacy_starleaf_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/forest_edge_icon.png",
+      "departure_cost": 8,
+      "rewards": {
+        "dewgrass": 2,
+        "starleaf": 2
+      }
+    },
+    {
+      "id": "abandoned_greenhouse",
+      "name": "버려진 온실",
+      "cost": 1200,
+      "explore_seconds": 120,
+      "return_seconds": 30,
+      "complete_returns": 6,
+      "previous_region": "forest_edge",
+      "reputation": 0,
+      "material": "silver_moss",
+      "repeat_material_quantity": 2,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/abandoned_greenhouse_icon.png",
+      "departure_cost": 12,
+      "rewards": {
+        "silver_moss": 2
+      }
+    },
+    {
+      "id": "mist_valley",
+      "name": "물안개 계곡",
+      "cost": 2400,
+      "explore_seconds": 150,
+      "return_seconds": 30,
+      "complete_returns": 6,
+      "previous_region": "abandoned_greenhouse",
+      "reputation": 0,
+      "material": "blue_reed",
+      "repeat_material_quantity": 3,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/mist_valley_icon.png",
+      "departure_cost": 20,
+      "rewards": {
+        "blue_reed": 3
+      }
+    },
+    {
+      "id": "crystal_mine",
+      "name": "수정 광산",
+      "cost": 3830,
+      "explore_seconds": 200,
+      "return_seconds": 40,
+      "complete_returns": 5,
+      "previous_region": "mist_valley",
+      "reputation": 0,
+      "material": "crystal_herb",
+      "repeat_material_quantity": 3,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/crystal_mine_icon.png",
+      "departure_cost": 30,
+      "rewards": {
+        "crystal_herb": 3
+      }
+    },
+    {
+      "id": "fog_marsh",
+      "name": "안개 늪",
+      "cost": 6380,
+      "explore_seconds": 250,
+      "return_seconds": 50,
+      "complete_returns": 5,
+      "previous_region": "crystal_mine",
+      "reputation": 0,
+      "material": "mist_mushroom",
+      "repeat_material_quantity": 4,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/fog_marsh_icon.png",
+      "departure_cost": 45,
+      "rewards": {
+        "mist_mushroom": 4
+      }
+    },
+    {
+      "id": "forgotten_tower",
+      "name": "잊힌 탑",
+      "cost": 10200,
+      "explore_seconds": 300,
+      "return_seconds": 60,
+      "complete_returns": 5,
+      "previous_region": "fog_marsh",
+      "reputation": 0,
+      "material": "ash_sage",
+      "repeat_material_quantity": 4,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/forgotten_tower_icon.png",
+      "departure_cost": 60,
+      "rewards": {
+        "ash_sage": 4
+      }
+    },
+    {
+      "id": "moon_ruins",
+      "name": "달빛 유적",
+      "cost": 15300,
+      "explore_seconds": 350,
+      "return_seconds": 70,
+      "complete_returns": 5,
+      "previous_region": "forgotten_tower",
+      "reputation": 0,
+      "material": "moonflower",
+      "repeat_material_quantity": 5,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/moon_ruins_icon.png",
+      "departure_cost": 80,
+      "rewards": {
+        "moonflower": 5
+      }
+    },
+    {
+      "id": "star_garden",
+      "name": "별의 정원",
+      "cost": 23800,
+      "explore_seconds": 400,
+      "return_seconds": 80,
+      "complete_returns": 6,
+      "previous_region": "moon_ruins",
+      "reputation": 0,
+      "material": "star_seed",
+      "repeat_material_quantity": 6,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/star_garden_icon.png",
+      "departure_cost": 100,
+      "rewards": {
+        "star_seed": 6
+      }
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "cauldron_01",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 30,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 4.4
+      }
+    },
+    {
+      "id": "cauldron_02",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 47,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 3.872
+      }
+    },
+    {
+      "id": "cauldron_03",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 72,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 3.4073599999999997
+      }
+    },
+    {
+      "id": "cauldron_04",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 112,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 2.9984768
+      }
+    },
+    {
+      "id": "cauldron_05",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 173,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 2.638659584
+      }
+    },
+    {
+      "id": "cauldron_06",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 268,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 2.32202043392
+      }
+    },
+    {
+      "id": "cauldron_07",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 416,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 2.0433779818496003
+      }
+    },
+    {
+      "id": "cauldron_08",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 645,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 1.7981726240276479
+      }
+    },
+    {
+      "id": "cauldron_09",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 9,
+      "cost": 999,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 1.5823919091443304
+      }
+    },
+    {
+      "id": "cauldron_10",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 10,
+      "cost": 1549,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 1.3925048800470108
+      }
+    },
+    {
+      "id": "cauldron_11",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 11,
+      "cost": 2401,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 1.2254042944413694
+      }
+    },
+    {
+      "id": "cauldron_12",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 12,
+      "cost": 3722,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 1.078355779108405
+      }
+    },
+    {
+      "id": "cauldron_13",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 13,
+      "cost": 5769,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 0.9489530856153965
+      }
+    },
+    {
+      "id": "cauldron_14",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 14,
+      "cost": 8942,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "base_brew_seconds": 0.8350787153415489
+      }
+    },
+    {
+      "id": "cauldron_15",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 15,
+      "cost": 6400,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "quality_sale_bonus": 0.02
+      }
+    },
+    {
+      "id": "cauldron_16",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 16,
+      "cost": 8800,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "quality_sale_bonus": 0.04
+      }
+    },
+    {
+      "id": "cauldron_17",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 17,
+      "cost": 12000,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "quality_sale_bonus": 0.06
+      }
+    },
+    {
+      "id": "cauldron_18",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 18,
+      "cost": 16000,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "quality_sale_bonus": 0.08
+      }
+    },
+    {
+      "id": "cauldron_19",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 19,
+      "cost": 20800,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "quality_sale_bonus": 0.1
+      }
+    },
+    {
+      "id": "cauldron_20",
+      "track": "cauldron",
+      "name": "솥",
+      "kind": "equipment",
+      "stage": 20,
+      "cost": 27200,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "quality_sale_bonus": 0.12
+      }
+    },
+    {
+      "id": "herb_pot_01",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 24,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 3.44,
+        "herb_capacity": 32,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_02",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 37,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 2.9583999999999997,
+        "herb_capacity": 40,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_03",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 58,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 2.544224,
+        "herb_capacity": 48,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_04",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 89,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 2.18803264,
+        "herb_capacity": 56,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_05",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 139,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 1.8817080703999998,
+        "herb_capacity": 64,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_06",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 215,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 1.6182689405439998,
+        "herb_capacity": 72,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_07",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 333,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 1.3917112888678398,
+        "herb_capacity": 80,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_08",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 516,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 1.1968717084263423,
+        "herb_capacity": 88,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_09",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 9,
+      "cost": 800,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 1.0293096692466543,
+        "herb_capacity": 96,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_10",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 10,
+      "cost": 1239,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 0.8852063155521227,
+        "herb_capacity": 104,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_11",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 11,
+      "cost": 1921,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 0.8,
+        "herb_capacity": 112,
+        "harvest_quantity": 2
+      }
+    },
+    {
+      "id": "herb_pot_12",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 12,
+      "cost": 3200,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 0.8,
+        "herb_capacity": 128,
+        "harvest_quantity": 3
+      }
+    },
+    {
+      "id": "herb_pot_13",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 13,
+      "cost": 5600,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 0.8,
+        "herb_capacity": 144,
+        "harvest_quantity": 4
+      }
+    },
+    {
+      "id": "herb_pot_14",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 14,
+      "cost": 8800,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 0.8,
+        "herb_capacity": 160,
+        "harvest_quantity": 5
+      }
+    },
+    {
+      "id": "herb_pot_15",
+      "track": "herb_pot",
+      "name": "기본 화분",
+      "kind": "equipment",
+      "stage": 15,
+      "cost": 12800,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "harvest_seconds": 0.8,
+        "herb_capacity": 176,
+        "harvest_quantity": 6
+      }
+    },
+    {
+      "id": "sales_counter_01",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 240,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 3.05
+      }
+    },
+    {
+      "id": "sales_counter_02",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 480,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 2.8
+      }
+    },
+    {
+      "id": "sales_counter_03",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 800,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 2.4
+      }
+    },
+    {
+      "id": "sales_counter_04",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 1280,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 2.1
+      }
+    },
+    {
+      "id": "sales_counter_05",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 1920,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 1.9
+      }
+    },
+    {
+      "id": "sales_counter_06",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 2880,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 1.7
+      }
+    },
+    {
+      "id": "sales_counter_07",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 4320,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 1.65
+      }
+    },
+    {
+      "id": "sales_counter_08",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 6400,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 1.6
+      }
+    },
+    {
+      "id": "sales_counter_09",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 9,
+      "cost": 9600,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 1.55
+      }
+    },
+    {
+      "id": "sales_counter_10",
+      "track": "sales_counter",
+      "name": "판매대",
+      "kind": "equipment",
+      "stage": 10,
+      "cost": 14400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "customer_seconds": 1.5
+      }
+    },
+    {
+      "id": "precision_filter_01",
+      "track": "precision_filter",
+      "name": "정밀 여과기",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 300,
+      "completed_regions": 0,
+      "reputation": 0,
+      "effect": {
+        "success_bonus": 0.05
+      }
+    },
+    {
+      "id": "precision_filter_02",
+      "track": "precision_filter",
+      "name": "정밀 여과기",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 720,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "success_bonus": 0.06
+      }
+    },
+    {
+      "id": "precision_filter_03",
+      "track": "precision_filter",
+      "name": "정밀 여과기",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 1680,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "success_bonus": 0.07
+      }
+    },
+    {
+      "id": "precision_filter_04",
+      "track": "precision_filter",
+      "name": "정밀 여과기",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 3600,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "success_bonus": 0.08
+      }
+    },
+    {
+      "id": "precision_filter_05",
+      "track": "precision_filter",
+      "name": "정밀 여과기",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 7200,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "success_bonus": 0.09
+      }
+    },
+    {
+      "id": "precision_filter_06",
+      "track": "precision_filter",
+      "name": "정밀 여과기",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 14400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "success_bonus": 0.1
+      }
+    },
+    {
+      "id": "herb_storage_01",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 160,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 15
+      }
+    },
+    {
+      "id": "herb_storage_02",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 280,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 18
+      }
+    },
+    {
+      "id": "herb_storage_03",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 480,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 21
+      }
+    },
+    {
+      "id": "herb_storage_04",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 800,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 24
+      }
+    },
+    {
+      "id": "herb_storage_05",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 1360,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 27
+      }
+    },
+    {
+      "id": "herb_storage_06",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 2240,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 30
+      }
+    },
+    {
+      "id": "herb_storage_07",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 3680,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 33
+      }
+    },
+    {
+      "id": "herb_storage_08",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 6080,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 36
+      }
+    },
+    {
+      "id": "herb_storage_09",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 9,
+      "cost": 9600,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 39
+      }
+    },
+    {
+      "id": "herb_storage_10",
+      "track": "herb_storage",
+      "name": "약초 보관 선반",
+      "kind": "equipment",
+      "stage": 10,
+      "cost": 16000,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "special_capacity": 42
+      }
+    },
+    {
+      "id": "potion_cabinet_01",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 320,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 18,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_02",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 560,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 24,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_03",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 960,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 30,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_04",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 1760,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 36,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_05",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 3200,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 42,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_06",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 5600,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 48,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_07",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 9600,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 54,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "potion_cabinet_08",
+      "track": "potion_cabinet",
+      "name": "물약 보관장",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 16000,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "total_potion_capacity": 60,
+        "visible_capacity": 12
+      }
+    },
+    {
+      "id": "drying_rack_01",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 400,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.05
+      }
+    },
+    {
+      "id": "drying_rack_02",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 720,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.1
+      }
+    },
+    {
+      "id": "drying_rack_03",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 1280,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.15
+      }
+    },
+    {
+      "id": "drying_rack_04",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 2240,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.2
+      }
+    },
+    {
+      "id": "drying_rack_05",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 4000,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.25
+      }
+    },
+    {
+      "id": "drying_rack_06",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 7200,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.3
+      }
+    },
+    {
+      "id": "drying_rack_07",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 12800,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.35
+      }
+    },
+    {
+      "id": "drying_rack_08",
+      "track": "drying_rack",
+      "name": "건조대",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 22400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.4
+      }
+    },
+    {
+      "id": "expedition_path_01",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 1,
+      "cost": 480,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.02
+      }
+    },
+    {
+      "id": "expedition_path_02",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 2,
+      "cost": 880,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.04
+      }
+    },
+    {
+      "id": "expedition_path_03",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 3,
+      "cost": 1600,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.06
+      }
+    },
+    {
+      "id": "expedition_path_04",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 4,
+      "cost": 2880,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.08
+      }
+    },
+    {
+      "id": "expedition_path_05",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 5,
+      "cost": 5200,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.1
+      }
+    },
+    {
+      "id": "expedition_path_06",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 6,
+      "cost": 9600,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.12
+      }
+    },
+    {
+      "id": "expedition_path_07",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 7,
+      "cost": 17600,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.14
+      }
+    },
+    {
+      "id": "expedition_path_08",
+      "track": "expedition_path",
+      "name": "원정 길 정비",
+      "kind": "equipment",
+      "stage": 8,
+      "cost": 32000,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.16
+      }
+    },
+    {
+      "id": "family_vitality_01",
+      "track": "family_vitality",
+      "name": "활력 계열",
+      "kind": "family",
+      "stage": 1,
+      "cost": 360,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.03
+      }
+    },
+    {
+      "id": "family_vitality_02",
+      "track": "family_vitality",
+      "name": "활력 계열",
+      "kind": "family",
+      "stage": 2,
+      "cost": 1040,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.06
+      }
+    },
+    {
+      "id": "family_vitality_03",
+      "track": "family_vitality",
+      "name": "활력 계열",
+      "kind": "family",
+      "stage": 3,
+      "cost": 2800,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.09
+      }
+    },
+    {
+      "id": "family_vitality_04",
+      "track": "family_vitality",
+      "name": "활력 계열",
+      "kind": "family",
+      "stage": 4,
+      "cost": 6400,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.12
+      }
+    },
+    {
+      "id": "family_vitality_05",
+      "track": "family_vitality",
+      "name": "활력 계열",
+      "kind": "family",
+      "stage": 5,
+      "cost": 14400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.15
+      }
+    },
+    {
+      "id": "family_arcane_01",
+      "track": "family_arcane",
+      "name": "비술 계열",
+      "kind": "family",
+      "stage": 1,
+      "cost": 360,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.03
+      }
+    },
+    {
+      "id": "family_arcane_02",
+      "track": "family_arcane",
+      "name": "비술 계열",
+      "kind": "family",
+      "stage": 2,
+      "cost": 1040,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.06
+      }
+    },
+    {
+      "id": "family_arcane_03",
+      "track": "family_arcane",
+      "name": "비술 계열",
+      "kind": "family",
+      "stage": 3,
+      "cost": 2800,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.09
+      }
+    },
+    {
+      "id": "family_arcane_04",
+      "track": "family_arcane",
+      "name": "비술 계열",
+      "kind": "family",
+      "stage": 4,
+      "cost": 6400,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.12
+      }
+    },
+    {
+      "id": "family_arcane_05",
+      "track": "family_arcane",
+      "name": "비술 계열",
+      "kind": "family",
+      "stage": 5,
+      "cost": 14400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.15
+      }
+    },
+    {
+      "id": "family_nature_01",
+      "track": "family_nature",
+      "name": "자연 계열",
+      "kind": "family",
+      "stage": 1,
+      "cost": 360,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.03
+      }
+    },
+    {
+      "id": "family_nature_02",
+      "track": "family_nature",
+      "name": "자연 계열",
+      "kind": "family",
+      "stage": 2,
+      "cost": 1040,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.06
+      }
+    },
+    {
+      "id": "family_nature_03",
+      "track": "family_nature",
+      "name": "자연 계열",
+      "kind": "family",
+      "stage": 3,
+      "cost": 2800,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.09
+      }
+    },
+    {
+      "id": "family_nature_04",
+      "track": "family_nature",
+      "name": "자연 계열",
+      "kind": "family",
+      "stage": 4,
+      "cost": 6400,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.12
+      }
+    },
+    {
+      "id": "family_nature_05",
+      "track": "family_nature",
+      "name": "자연 계열",
+      "kind": "family",
+      "stage": 5,
+      "cost": 14400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.15
+      }
+    },
+    {
+      "id": "family_craft_01",
+      "track": "family_craft",
+      "name": "기교 계열",
+      "kind": "family",
+      "stage": 1,
+      "cost": 360,
+      "completed_regions": 1,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.03
+      }
+    },
+    {
+      "id": "family_craft_02",
+      "track": "family_craft",
+      "name": "기교 계열",
+      "kind": "family",
+      "stage": 2,
+      "cost": 1040,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.06
+      }
+    },
+    {
+      "id": "family_craft_03",
+      "track": "family_craft",
+      "name": "기교 계열",
+      "kind": "family",
+      "stage": 3,
+      "cost": 2800,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.09
+      }
+    },
+    {
+      "id": "family_craft_04",
+      "track": "family_craft",
+      "name": "기교 계열",
+      "kind": "family",
+      "stage": 4,
+      "cost": 6400,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.12
+      }
+    },
+    {
+      "id": "family_craft_05",
+      "track": "family_craft",
+      "name": "기교 계열",
+      "kind": "family",
+      "stage": 5,
+      "cost": 14400,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "preferred_sale_bonus": 0.15
+      }
+    },
+    {
+      "id": "sales_assistant_01",
+      "track": "sales_assistant",
+      "name": "판매 보조 훈련",
+      "kind": "training",
+      "stage": 1,
+      "cost": 240,
+      "completed_regions": 0,
+      "reputation": 20,
+      "effect": {
+        "preferred_sale_flat": 3
+      }
+    },
+    {
+      "id": "sales_assistant_02",
+      "track": "sales_assistant",
+      "name": "판매 보조 훈련",
+      "kind": "training",
+      "stage": 2,
+      "cost": 480,
+      "completed_regions": 1,
+      "reputation": 20,
+      "effect": {
+        "preferred_sale_flat": 4
+      }
+    },
+    {
+      "id": "sales_assistant_03",
+      "track": "sales_assistant",
+      "name": "판매 보조 훈련",
+      "kind": "training",
+      "stage": 3,
+      "cost": 1360,
+      "completed_regions": 3,
+      "reputation": 20,
+      "effect": {
+        "preferred_sale_flat": 5
+      }
+    },
+    {
+      "id": "sales_assistant_04",
+      "track": "sales_assistant",
+      "name": "판매 보조 훈련",
+      "kind": "training",
+      "stage": 4,
+      "cost": 3200,
+      "completed_regions": 5,
+      "reputation": 20,
+      "effect": {
+        "preferred_sale_flat": 6
+      }
+    },
+    {
+      "id": "sales_assistant_05",
+      "track": "sales_assistant",
+      "name": "판매 보조 훈련",
+      "kind": "training",
+      "stage": 5,
+      "cost": 7200,
+      "completed_regions": 7,
+      "reputation": 20,
+      "effect": {
+        "preferred_sale_flat": 7
+      }
+    },
+    {
+      "id": "cultivation_assistant_01",
+      "track": "cultivation_assistant",
+      "name": "재배 보조 훈련",
+      "kind": "training",
+      "stage": 1,
+      "cost": 720,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.13
+      }
+    },
+    {
+      "id": "cultivation_assistant_02",
+      "track": "cultivation_assistant",
+      "name": "재배 보조 훈련",
+      "kind": "training",
+      "stage": 2,
+      "cost": 1440,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.16
+      }
+    },
+    {
+      "id": "cultivation_assistant_03",
+      "track": "cultivation_assistant",
+      "name": "재배 보조 훈련",
+      "kind": "training",
+      "stage": 3,
+      "cost": 2880,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.19
+      }
+    },
+    {
+      "id": "cultivation_assistant_04",
+      "track": "cultivation_assistant",
+      "name": "재배 보조 훈련",
+      "kind": "training",
+      "stage": 4,
+      "cost": 5760,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.22
+      }
+    },
+    {
+      "id": "cultivation_assistant_05",
+      "track": "cultivation_assistant",
+      "name": "재배 보조 훈련",
+      "kind": "training",
+      "stage": 5,
+      "cost": 11520,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.25
+      }
+    },
+    {
+      "id": "brewing_assistant_01",
+      "track": "brewing_assistant",
+      "name": "조제 보조 훈련",
+      "kind": "training",
+      "stage": 1,
+      "cost": 1760,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "new_recipe_time_multiplier": 0.94,
+        "new_recipe_quality_bonus": 0.03
+      }
+    },
+    {
+      "id": "brewing_assistant_02",
+      "track": "brewing_assistant",
+      "name": "조제 보조 훈련",
+      "kind": "training",
+      "stage": 2,
+      "cost": 3520,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "new_recipe_time_multiplier": 0.93,
+        "new_recipe_quality_bonus": 0.04
+      }
+    },
+    {
+      "id": "brewing_assistant_03",
+      "track": "brewing_assistant",
+      "name": "조제 보조 훈련",
+      "kind": "training",
+      "stage": 3,
+      "cost": 7040,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "new_recipe_time_multiplier": 0.92,
+        "new_recipe_quality_bonus": 0.05
+      }
+    },
+    {
+      "id": "brewing_assistant_04",
+      "track": "brewing_assistant",
+      "name": "조제 보조 훈련",
+      "kind": "training",
+      "stage": 4,
+      "cost": 14080,
+      "completed_regions": 7,
+      "reputation": 0,
+      "effect": {
+        "new_recipe_time_multiplier": 0.82,
+        "new_recipe_quality_bonus": 0.06
+      }
+    },
+    {
+      "id": "brewing_assistant_05",
+      "track": "brewing_assistant",
+      "name": "조제 보조 훈련",
+      "kind": "training",
+      "stage": 5,
+      "cost": 28160,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "new_recipe_time_multiplier": 0.72,
+        "new_recipe_quality_bonus": 0.07
+      }
+    },
+    {
+      "id": "expedition_guide_01",
+      "track": "expedition_guide",
+      "name": "원정 길잡이 훈련",
+      "kind": "training",
+      "stage": 1,
+      "cost": 960,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.06
+      }
+    },
+    {
+      "id": "expedition_guide_02",
+      "track": "expedition_guide",
+      "name": "원정 길잡이 훈련",
+      "kind": "training",
+      "stage": 2,
+      "cost": 1920,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.08
+      }
+    },
+    {
+      "id": "expedition_guide_03",
+      "track": "expedition_guide",
+      "name": "원정 길잡이 훈련",
+      "kind": "training",
+      "stage": 3,
+      "cost": 3840,
+      "completed_regions": 5,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.1
+      }
+    },
+    {
+      "id": "expedition_guide_04",
+      "track": "expedition_guide",
+      "name": "원정 길잡이 훈련",
+      "kind": "training",
+      "stage": 4,
+      "cost": 7680,
+      "completed_regions": 6,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.12
+      }
+    },
+    {
+      "id": "expedition_guide_05",
+      "track": "expedition_guide",
+      "name": "원정 길잡이 훈련",
+      "kind": "training",
+      "stage": 5,
+      "cost": 15360,
+      "completed_regions": 8,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.14
+      }
+    }
+  ],
+  "employees": [
+    {
+      "id": "sales_assistant",
+      "name": "판매 보조",
+      "cost": 360,
+      "completed_regions": 0,
+      "reputation": 20,
+      "effect": {
+        "preferred_sale_flat": 2
+      },
+      "icon_candidate": "res://assets/content_expansion_v1/employees/sales_assistant_icon.png"
+    },
+    {
+      "id": "cultivation_assistant",
+      "name": "재배 보조",
+      "cost": 1530,
+      "completed_regions": 2,
+      "reputation": 0,
+      "effect": {
+        "new_material_growth_multiplier": 1.1
+      },
+      "icon_candidate": "res://assets/content_expansion_v1/employees/cultivation_assistant_icon.png"
+    },
+    {
+      "id": "brewing_assistant",
+      "name": "조제 보조",
+      "cost": 3830,
+      "completed_regions": 4,
+      "reputation": 0,
+      "effect": {
+        "new_recipe_time_multiplier": 0.95,
+        "new_recipe_quality_bonus": 0.02
+      },
+      "icon_candidate": "res://assets/content_expansion_v1/employees/brewing_assistant_icon.png"
+    },
+    {
+      "id": "expedition_guide",
+      "name": "원정 길잡이",
+      "cost": 2040,
+      "completed_regions": 3,
+      "reputation": 0,
+      "effect": {
+        "trip_time_reduction": 0.04
+      },
+      "icon_candidate": "res://assets/content_expansion_v1/employees/expedition_guide_icon.png"
+    }
+  ],
+  "families": [
+    {
+      "id": "vitality",
+      "name": "활력",
+      "customer": "traveler",
+      "icon_candidate": "res://assets/content_expansion_v1/families/vitality_icon.png"
+    },
+    {
+      "id": "arcane",
+      "name": "비술",
+      "customer": "mage",
+      "icon_candidate": "res://assets/content_expansion_v1/families/arcane_icon.png"
+    },
+    {
+      "id": "nature",
+      "name": "자연",
+      "customer": "elf",
+      "icon_candidate": "res://assets/content_expansion_v1/families/nature_icon.png"
+    },
+    {
+      "id": "craft",
+      "name": "기교",
+      "customer": "rogue",
+      "icon_candidate": "res://assets/content_expansion_v1/families/craft_icon.png"
+    }
+  ],
+  "changes_from_b": {
+    "sales_counter_customer_seconds": [
+      3.05,
+      2.8,
+      2.4,
+      2.1,
+      1.9,
+      1.7,
+      1.65,
+      1.6,
+      1.55,
+      1.5
+    ],
+    "brewing_training_new_recipe_time_multiplier": [
+      0.94,
+      0.93,
+      0.92,
+      0.82,
+      0.72
+    ],
+    "costs_changed": false,
+    "storage_changed": false,
+    "environment_demand_changed": false
+  }
+}

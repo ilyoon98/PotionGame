@@ -1,0 +1,536 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/keyframes-v2/elf/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "idle",
+      "source": "art/characters/keyframes-v2/elf/source/idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf"
+    },
+    {
+      "id": "walk_contact_a",
+      "source": "art/characters/keyframes-v2/elf/source/walk_contact_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf"
+    },
+    {
+      "id": "walk_pass_a",
+      "source": "art/characters/keyframes-v2/elf/source/walk_pass_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ],
+        "shorts": [
+          "#718C59"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood",
+        "shorts": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "shorts",
+          "pixels": [
+            [
+              12,
+              37
+            ],
+            [
+              12,
+              38
+            ],
+            [
+              13,
+              38
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ]
+          ],
+          "reason": "The bent upper thigh/cuff stays clothed above row40. Preserve the original pale leaf panel."
+        }
+      ]
+    },
+    {
+      "id": "walk_contact_b",
+      "source": "art/characters/keyframes-v2/elf/source/walk_contact_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf"
+    },
+    {
+      "id": "walk_pass_b",
+      "source": "art/characters/keyframes-v2/elf/source/walk_pass_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ],
+        "shorts": [
+          "#718C59"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood",
+        "shorts": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "shorts",
+          "pixels": [
+            [
+              19,
+              37
+            ],
+            [
+              18,
+              38
+            ],
+            [
+              19,
+              38
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              18,
+              39
+            ]
+          ],
+          "reason": "The bent upper thigh/cuff stays clothed above row40. Preserve the original pale leaf panel."
+        }
+      ]
+    },
+    {
+      "id": "receive_extend",
+      "source": "art/characters/keyframes-v2/elf/source/receive_extend-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf"
+    },
+    {
+      "id": "receive_hold",
+      "source": "art/characters/keyframes-v2/elf/source/receive_hold-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "background_alpha_rectangles": [
+        {
+          "rect": [
+            9,
+            35,
+            10,
+            36
+          ],
+          "reason": "Trim one wrist-outline excess so the standing waist is10pixels, retaining the arm and palm."
+        }
+      ]
+    },
+    {
+      "id": "blink_idle",
+      "source": "art/characters/keyframes-v2/elf/source/blink_idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf"
+    }
+  ]
+}

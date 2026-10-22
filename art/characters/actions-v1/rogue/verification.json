@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "date": "2026-10-15",
+  "checks": {
+    "event_boundaries": [
+      {
+        "action": "receive",
+        "pose": "receive_extend",
+        "x": 48,
+        "y": 12,
+        "facing": "left",
+        "held": false,
+        "index": 19,
+        "elapsed": 8.4
+      },
+      {
+        "action": "receive",
+        "pose": "receive_extend",
+        "x": 48,
+        "y": 12,
+        "facing": "left",
+        "held": true,
+        "index": 19,
+        "elapsed": 8.45
+      },
+      {
+        "action": "depart",
+        "pose": "carry_pass_a",
+        "x": 48,
+        "y": 12,
+        "facing": "right",
+        "held": true,
+        "index": 17,
+        "elapsed": 10.2
+      },
+      {
+        "action": "depart",
+        "pose": "carry_contact_a",
+        "x": 131,
+        "y": 12,
+        "facing": "right",
+        "held": true,
+        "index": 10,
+        "elapsed": 13.35
+      },
+      {
+        "action": "arrive",
+        "pose": "walk_pass_a",
+        "x": 132,
+        "y": 12,
+        "facing": "left",
+        "held": false,
+        "index": 17,
+        "elapsed": 14.2
+      }
+    ],
+    "held_through_exit": true,
+    "old7poses_unchanged": [
+      {
+        "id": "idle",
+        "unchanged": true,
+        "sha256": "ccfcf8d2cc63b4bf202393c962e04e844c9771728f2a138d7983ff50811dfc31"
+      },
+      {
+        "id": "walk_contact_a",
+        "unchanged": true,
+        "sha256": "0b0ea354a42a8c038fb7f384e8512f59c246ebaf9749c258acaa3bf1b75961e5"
+      },
+      {
+        "id": "walk_pass_a",
+        "unchanged": true,
+        "sha256": "7820ca63caeb432135a41eec60b63b85a1a7ba09541582c7d50a5e5817d6afc5"
+      },
+      {
+        "id": "walk_contact_b",
+        "unchanged": true,
+        "sha256": "1c5a6266d1ccfbc395e3c694ca1f512e0bde75249ac87294045511872ac8a5ea"
+      },
+      {
+        "id": "walk_pass_b",
+        "unchanged": true,
+        "sha256": "697482261b359cdf2496dd10393185dcde2600545ccdceb7186ef61d819385ec"
+      },
+      {
+        "id": "receive_extend",
+        "unchanged": true,
+        "sha256": "6ffa708c91891d53588e7293653a6e015ff36c34fa8294de6c7109a15b756885"
+      },
+      {
+        "id": "receive_hold",
+        "unchanged": true,
+        "sha256": "77e7e12cccad84f232e5d0b9aee2940be11bb10e6dbe0316feefbb5b6278b338"
+      }
+    ],
+    "opposite_passing_support": true,
+    "both_contact_feet_ground": true,
+    "left_ear_right_ear_tail_hair_move_both_modes": true,
+    "head_breathes_with_fixed_hips_feet_tail_root": true,
+    "native_poses": 11,
+    "motion_frames": 1408,
+    "recipe_facing_contacts": 432,
+    "palette_colors": 5,
+    "actual_skin_grips": true
+  }
+}

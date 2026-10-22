@@ -1,0 +1,15 @@
+{
+  "id": "focus",
+  "category": "potions",
+  "name": "집중",
+  "family": "arcane",
+  "region": "abandoned_greenhouse",
+  "shape": "tall rectangular vial",
+  "symbol": "eye",
+  "color": "deep cyan",
+  "prompt": "Use case: stylized-concept. Asset type: a production inventory potion sprite for Moonshadow Potion Shop, a tiny cozy witch-shop pixel-art game. ONE complete isolated bottle, front orthographic view, centered with generous TRANSPARENT padding. Actual transparent alpha background. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm amber cork and antique gold details, ivory glass highlights, 4 flat clustered shade bands. Simple readable silhouette and ONE bold central emblem taking one third of the bottle body. Think logical 12x16 pixels for shelf bottles and 32x40 for inventory, uniformly enlarge pixels for output. Bottle entire silhouette fully visible. No text, letters, digits, watermark, blur, soft glow, gradients, floor, cast shadows, particles outside bottle, scene or border. Subject: FOCUS potion. Tall narrow RECTANGULAR glass vial with parallel straight sides, short neck, deep cyan blue liquid, one large simple gold EYE emblem with a dark center on an ivory label. Entire bottle visible, modest cork.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-bea96b35-dd23-42cd-bd97-f6a0fc63a4be.png",
+  "generator": "built-in image_gen",
+  "project_source": "res://assets/content_expansion_v1/source/focus.png",
+  "date": "2026-10-08"
+}

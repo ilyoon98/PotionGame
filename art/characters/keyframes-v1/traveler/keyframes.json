@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "character": "traveler",
+  "status": "candidate_keyframes",
+  "palette": "art/palettes/v1/characters/traveler.hex",
+  "frames": [
+    {
+      "id": "idle",
+      "name": "대기",
+      "index": 0,
+      "path": "frames/idle.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "hand_grip_anchor": null,
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "walk_contact_a",
+      "name": "걷기 · 접지 A",
+      "index": 1,
+      "path": "frames/walk_contact_a.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        32,
+        0,
+        32,
+        48
+      ],
+      "hand_grip_anchor": null,
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "walk_pass_a",
+      "name": "걷기 · 통과 A",
+      "index": 2,
+      "path": "frames/walk_pass_a.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        64,
+        0,
+        32,
+        48
+      ],
+      "hand_grip_anchor": null,
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "walk_contact_b",
+      "name": "걷기 · 접지 B",
+      "index": 3,
+      "path": "frames/walk_contact_b.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        96,
+        0,
+        32,
+        48
+      ],
+      "hand_grip_anchor": null,
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "walk_pass_b",
+      "name": "걷기 · 통과 B",
+      "index": 4,
+      "path": "frames/walk_pass_b.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        0,
+        48,
+        32,
+        48
+      ],
+      "hand_grip_anchor": null,
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "receive_extend",
+      "name": "받기 · 손 내밀기",
+      "index": 5,
+      "path": "frames/receive_extend.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        32,
+        48,
+        32,
+        48
+      ],
+      "hand_grip_anchor": [
+        5,
+        31
+      ],
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "receive_hold",
+      "name": "받기 · 손 모으기",
+      "index": 6,
+      "path": "frames/receive_hold.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        64,
+        48,
+        32,
+        48
+      ],
+      "hand_grip_anchor": [
+        12,
+        35
+      ],
+      "status": "candidate_keyframe"
+    },
+    {
+      "id": "blink_idle",
+      "name": "대기 · 깜빡임",
+      "index": 7,
+      "path": "frames/blink_idle.png",
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        96,
+        48,
+        32,
+        48
+      ],
+      "hand_grip_anchor": null,
+      "status": "candidate_keyframe"
+    }
+  ],
+  "source": "generation.json",
+  "native_sheet": "traveler-keyframes-native.png",
+  "scale": 3,
+  "anatomy": {
+    "head_frame": [
+      3,
+      11,
+      25,
+      27
+    ],
+    "torso_rows": [
+      27,
+      39
+    ],
+    "legs_and_boots_rows": [
+      40,
+      46
+    ],
+    "foot_row": 46
+  },
+  "eye_state": "blink_idle is idle with only four pupil pixels changed",
+  "animations_status": "not_produced; these are key poses, not finished action animations",
+  "runtime_integrated": false,
+  "face_refinement": "art/characters/face-refinement-v1/generation.json",
+  "face_revision": "rounded_v1"
+}

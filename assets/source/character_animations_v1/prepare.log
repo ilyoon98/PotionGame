@@ -1,0 +1,9 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS keeper: 4 distinct action frames, 48x64 RGBA, 96x128 sheet, registered baseline
+PASS traveler: 4 distinct action frames, 48x64 RGBA, 96x128 sheet, registered baseline
+PASS mage: 4 distinct action frames, 48x64 RGBA, 96x128 sheet, registered baseline
+PASS elf: 4 distinct action frames, 48x64 RGBA, 96x128 sheet, registered baseline
+PASS rogue: 4 distinct action frames, 48x64 RGBA, 96x128 sheet, registered baseline

@@ -1,0 +1,27 @@
+{
+  "status": "design_assets_complete",
+  "newly_generated_originals": 57,
+  "generation_failures": 0,
+  "fully_reused_entries": 10,
+  "reused_equipment_bases": 4,
+  "connected_to_game": false,
+  "catalog": "res://assets/content_expansion_v1/catalog.json",
+  "validation": "res://assets/content_expansion_v1/verification/art-validation.json",
+  "preservation": "res://assets/content_expansion_v1/verification/approved-preservation.json",
+  "summary": {
+    "asset_entries": 67,
+    "bottles": 32,
+    "connected_to_game": false,
+    "employee_roles": 4,
+    "equipment_basic_reused": 4,
+    "equipment_families": 8,
+    "equipment_tier_images": 24,
+    "fully_reused_entries": 10,
+    "growth_sheets": 10,
+    "materials": 11,
+    "new_source_sheets": 57,
+    "potion_families": 4,
+    "potions": 32,
+    "regions": 8
+  }
+}

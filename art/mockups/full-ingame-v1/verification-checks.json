@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": {
+    "36_real_ids": true,
+    "8_distinct_visible_ids": true,
+    "full_size": true,
+    "art_exact_3x": true,
+    "only_transparent_trimmed": true,
+    "screen_palette": true,
+    "screen_alpha": true,
+    "candidate_not_approved": true,
+    "all_43_assets_pass": true,
+    "8_visible_silhouettes_differ": true,
+    "wrong_material_color_rejected": true
+  }
+}

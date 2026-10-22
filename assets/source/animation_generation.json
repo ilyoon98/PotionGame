@@ -1,0 +1,35 @@
+{
+  "method": "Built-in imagegen edit using characters.png as reference",
+  "assets": [
+    {
+      "key": "keeper",
+      "prompt": "Create an animation sprite sheet EDIT derived from the LEFT witch shopkeeper in the reference. Preserve exactly her purple bent pointed hat with gold buckle, brown long hair, purple dress, cream apron, warm complexion and cute chibi identity. DO NOT include the green customer. Exactly FOUR frames in a strict 2 by 2 grid on transparent background. Each equal cell has portrait aspect 3:4, overall sheet also 3:4. Same character scale, facing slightly right, same camera, same feet baseline within each cell, generous transparent separation, all four full bodies visible, NO grid lines or labels. Frame order left-to-right top-to-bottom: 0 neutral relaxed idle with eyes OPEN and small pink potion in right hand; 1 same idle pose with eyes CLOSED in a natural blink; 2 serving pose extending the right arm and pink potion to the right, eyes open, slight forward lean; 3 working pose turned slightly toward the left and stirring with a short wooden spoon held out left at waist height, eyes open. Make distinct hand poses and readable closed eyelids, but preserve clothing silhouette and all proportions across cells. Authentic clean low-resolution pixel art intended for 48x64 pixels PER FRAME, flat limited palette, crisp stepped outlines and large deliberate pixel clusters, no gradients, no anti-aliasing, no shadow on ground, no backdrop, no text, no extra props except bottle or spoon described. This is a practical sprite atlas, not a collage or character concept board. True transparent background."
+    },
+    {
+      "key": "customer",
+      "prompt": "Create an animation sprite sheet EDIT derived from the RIGHT green-hooded adventurer customer in the reference. Preserve exactly sage green hood and cape, brown hair, beige tunic, brown boots, leather satchel and cute chibi identity. DO NOT include the purple witch. Exactly FOUR frames in a strict 2 by 2 grid on transparent background. Each equal cell has portrait aspect 3:4, overall sheet also 3:4. Same character size, facing slightly LEFT, same camera, same feet baseline within each cell, generous transparent separation, all four full bodies visible, NO grid lines or labels. Frame order left-to-right top-to-bottom: 0 neutral standing waiting pose eyes open, feet together; 1 walking pose left boot forward right boot back with opposing arm swing; 2 walking pose right boot forward left boot back, opposite arm swing, cape swaying subtly; 3 happy purchase pose standing with a small pink potion held visibly in front of chest, happy eyes. Walking poses must visibly differ in legs and boots, avoid duplicate frames. Preserve clothing and character proportions across cells. Authentic clean low-resolution pixel art intended for 48x64 pixels PER FRAME, flat limited palette, crisp stepped outlines and large deliberate pixel clusters, no gradients, no anti-aliasing, no ground shadow, no backdrop, no text, no extra props except bottle described. Practical sprite atlas, not a collage. True transparent background."
+    }
+  ],
+  "frame_size": [
+    48,
+    64
+  ],
+  "atlas_size": [
+    96,
+    128
+  ],
+  "frame_order": {
+    "keeper": [
+      "idle",
+      "blink",
+      "serve",
+      "work"
+    ],
+    "customer": [
+      "wait",
+      "walk_left_foot",
+      "walk_right_foot",
+      "purchased"
+    ]
+  }
+}

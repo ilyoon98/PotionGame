@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "previous_placement": [
+    0,
+    0
+  ],
+  "corrected_placement": [
+    0,
+    4
+  ],
+  "head_anchor": [
+    14,
+    14
+  ],
+  "hat_local_seat_anchor": [
+    14,
+    10
+  ],
+  "frames_tested": 8,
+  "all_seat_anchors_touch_crown": true,
+  "crown_overlap_pixels": {
+    "idle": 59,
+    "walk_contact_a": 59,
+    "walk_pass_a": 59,
+    "walk_contact_b": 59,
+    "walk_pass_b": 59,
+    "receive_extend": 59,
+    "receive_hold": 59,
+    "blink_idle": 59
+  },
+  "all_eyes_unchanged_by_hat": true,
+  "all_feet_on_row46": true,
+  "outline_boundary_violations": 0,
+  "idle_pixels_below_hat_area_unchanged": true,
+  "idle_changed_pixels": 329,
+  "visual_review": "Verified hat seated over crown on3x pose board and browser with guides hidden; art remains a review candidate."
+}

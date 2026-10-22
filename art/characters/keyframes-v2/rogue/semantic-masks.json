@@ -1,0 +1,1131 @@
+{
+  "idle": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ]
+  },
+  "walk_contact_a": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ],
+    "background_alpha_rectangles": [
+      {
+        "rect": [
+          0,
+          47,
+          32,
+          48
+        ],
+        "reason": "Align this generated whole-body phase to the shared head/torso bands, then trim only the excess lowest boot row at the fixed ground. Rebuild the ground outline."
+      }
+    ]
+  },
+  "walk_pass_a": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ]
+  },
+  "walk_contact_b": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ],
+    "background_alpha_rectangles": [
+      {
+        "rect": [
+          0,
+          47,
+          32,
+          48
+        ],
+        "reason": "Align this generated whole-body phase to the shared head/torso bands, then trim only the excess lowest boot row at the fixed ground. Rebuild the ground outline."
+      }
+    ]
+  },
+  "walk_pass_b": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ],
+    "background_alpha_rectangles": [
+      {
+        "rect": [
+          0,
+          47,
+          32,
+          48
+        ],
+        "reason": "Align this generated whole-body phase to the shared head/torso bands, then trim only the excess lowest boot row at the fixed ground. Rebuild the ground outline."
+      }
+    ]
+  },
+  "receive_extend": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ]
+  },
+  "receive_hold": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            23
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            14,
+            23
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Both pupils have the same1x2shape and height."
+      }
+    ]
+  },
+  "blink_idle": {
+    "material_rectangles": [
+      {
+        "rect": [
+          0,
+          42,
+          32,
+          47
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Black boots share outline color; hair palette must not recolor leather boots."
+      },
+      {
+        "rect": [
+          10,
+          37,
+          19,
+          40
+        ],
+        "material": "outline",
+        "include_interior_outline": true,
+        "reason": "Fitted black shorts cover the upper thighs until the leg band."
+      }
+    ],
+    "material_pixels": [
+      {
+        "material": "skin",
+        "pixels": [
+          [
+            9,
+            22
+          ],
+          [
+            10,
+            22
+          ],
+          [
+            11,
+            22
+          ],
+          [
+            9,
+            23
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            9,
+            25
+          ],
+          [
+            10,
+            25
+          ],
+          [
+            11,
+            25
+          ],
+          [
+            13,
+            22
+          ],
+          [
+            14,
+            22
+          ],
+          [
+            15,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            15,
+            23
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            15,
+            24
+          ],
+          [
+            13,
+            25
+          ],
+          [
+            14,
+            25
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            10,
+            23
+          ],
+          [
+            14,
+            23
+          ]
+        ],
+        "reason": "Skin halo around actual two native pupils, including diagonals; preserves the rest of the face/hair."
+      },
+      {
+        "material": "outline",
+        "pixels": [
+          [
+            10,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            13,
+            24
+          ],
+          [
+            14,
+            24
+          ]
+        ],
+        "reason": "Same idle body, two equally sized2x1closed eyelids; only four color pixels differ."
+      }
+    ]
+  }
+}

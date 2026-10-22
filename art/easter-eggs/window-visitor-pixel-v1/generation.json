@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "source": "assets/easter_eggs/window-visitor.png",
+  "generated_source": "source/generated.png",
+  "runtime_asset": "assets/easter_eggs/window-visitor-pixel-v1.png",
+  "prompt": "Edit target: the supplied photograph. Convert this SAME man into extremely low-resolution cozy game PIXEL ART, maintaining recognizable dark side-parted short hair, thin round eyeglasses, mostly closed eyes, slightly open mouth, tilted head and dark shirt. Do not change identity, gender or expression. Output one close-up head-and-shoulders portrait, full-bleed rectangular 5:4 composition, centered and occupying most of canvas; pale cream solid background. It will appear as a funny easter egg BEHIND a tiny game window. This is a logical 20 by 16 pixel sprite: use only BIG uniformly sized square color clusters on that exact 20-column /16-row logical grid, enlarged cleanly. Keep features readable as about 2-pixel eyeglass lenses and a small open mouth. NO anti-aliasing, NO gradients, NO dithering, NO fine detail, NO outlined grid, NO text, NO window frame, NO UI. Palette only FIVE colors: dark plum-black #241C32 for hair/glasses/line; warm terracotta #A65D64 for skin shadows; pale peach #F6D1AC for face; muted gray-plum #827589 for shirt; light cream #FFF0BC for backdrop/highlight. Flat solid colors, not photorealism, not detailed illustration. The recognizable expression and glasses are more important than detail. Entire image is the pixel portrait, no border or inset, no margin.",
+  "postprocess": "tools/build_window_visitor_pixel.py then shared tools/process_pixel_art.py; retained source, single crop registration,20x16 grid, material ramps,4 final colors, nearest3x display",
+  "status": "requested pixel conversion; design candidate, not a new approved character design"
+}

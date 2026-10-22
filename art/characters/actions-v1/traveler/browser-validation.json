@@ -1,0 +1,61 @@
+{
+  "loaded": true,
+  "before_receive": {
+    "action": "receive",
+    "actorX": "48",
+    "elapsed": "8.4",
+    "facing": "left",
+    "held": "false",
+    "mode": "fine",
+    "motionIndex": "19",
+    "playing": "false",
+    "pose": "receive_extend",
+    "recipe": "agility"
+  },
+  "at_receive": {
+    "action": "receive",
+    "actorX": "48",
+    "elapsed": "8.45",
+    "facing": "left",
+    "held": "true",
+    "mode": "fine",
+    "motionIndex": "19",
+    "playing": "false",
+    "pose": "receive_extend",
+    "recipe": "agility"
+  },
+  "departure_start": {
+    "action": "depart",
+    "actorX": "48",
+    "elapsed": "0",
+    "facing": "right",
+    "held": "true",
+    "mode": "fine",
+    "motionIndex": "0",
+    "playing": "true",
+    "pose": "carry_contact_a",
+    "recipe": "agility"
+  },
+  "idle_blink_grid": {
+    "action": "wait",
+    "actorX": "48",
+    "elapsed": "3.7",
+    "facing": "left",
+    "held": "false",
+    "mode": "grid",
+    "motionIndex": "45",
+    "playing": "false",
+    "pose": "idle",
+    "recipe": "agility"
+  },
+  "departure_position_and_pose_changed": true,
+  "checked_recipes": [
+    "moon",
+    "agility"
+  ],
+  "screenshots": [
+    "browser-receive-preview.png",
+    "browser-depart-preview.png"
+  ],
+  "console_errors": []
+}

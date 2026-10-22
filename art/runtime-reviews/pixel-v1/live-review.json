@@ -1,0 +1,100 @@
+{
+	"cases": [
+		{
+			"actual_customer": "traveler",
+			"case_passed": true,
+			"customer": "traveler",
+			"earned": 6,
+			"expected_potion": "health",
+			"sold_potion": "health",
+			"stages": [
+				"stock",
+				"enter",
+				"wait",
+				"counter",
+				"flight",
+				"catch",
+				"exit",
+				"restocked",
+				"departed"
+			],
+			"stock_after_brew": 8,
+			"stock_after_sale": 7,
+			"stock_before": 8,
+			"stock_before_sale": 8
+		},
+		{
+			"actual_customer": "mage",
+			"case_passed": true,
+			"customer": "mage",
+			"earned": 26,
+			"expected_potion": "moon",
+			"sold_potion": "moon",
+			"stages": [
+				"stock",
+				"enter",
+				"wait",
+				"counter",
+				"flight",
+				"catch",
+				"exit",
+				"departed",
+				"restocked"
+			],
+			"stock_after_brew": 8,
+			"stock_after_sale": 7,
+			"stock_before": 8,
+			"stock_before_sale": 8
+		},
+		{
+			"actual_customer": "elf",
+			"case_passed": true,
+			"customer": "elf",
+			"earned": 24,
+			"expected_potion": "purify",
+			"sold_potion": "purify",
+			"stages": [
+				"stock",
+				"enter",
+				"wait",
+				"counter",
+				"flight",
+				"catch",
+				"exit",
+				"departed",
+				"restocked"
+			],
+			"stock_after_brew": 8,
+			"stock_after_sale": 7,
+			"stock_before": 8,
+			"stock_before_sale": 8
+		},
+		{
+			"actual_customer": "rogue",
+			"case_passed": true,
+			"customer": "rogue",
+			"earned": 28,
+			"expected_potion": "agility",
+			"sold_potion": "agility",
+			"stages": [
+				"stock",
+				"enter",
+				"wait",
+				"counter",
+				"flight",
+				"catch",
+				"exit",
+				"departed",
+				"restocked"
+			],
+			"stock_after_brew": 8,
+			"stock_after_sale": 7,
+			"stock_before": 8,
+			"stock_before_sale": 8
+		}
+	],
+	"completed_visits": 12,
+	"player_save_accessed": false,
+	"renderer": "Actual Godot Shop; guided examples, live economy",
+	"status": "passed"
+}

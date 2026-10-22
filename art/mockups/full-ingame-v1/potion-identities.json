@@ -1,0 +1,1250 @@
+[
+  {
+    "id": "health",
+    "name": "체력",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 0,
+    "existing": true,
+    "owned_at_start": true,
+    "unlock": {
+      "reputation": 0
+    },
+    "cost": 0,
+    "sale_price": 6,
+    "ingredients": {
+      "herb": 2
+    },
+    "duration_multiplier": 1,
+    "success": 1,
+    "environment": "none",
+    "environment_bonus": null,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/health_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/health_12x16.png",
+    "grant_sources": [],
+    "runtime_source": "assets/potion_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "mana",
+    "name": "마나",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 1,
+    "existing": true,
+    "owned_at_start": true,
+    "unlock": {
+      "reputation": 0
+    },
+    "cost": 0,
+    "sale_price": 18,
+    "ingredients": {
+      "herb": 2,
+      "moon_mushroom": 1
+    },
+    "duration_multiplier": 1.25,
+    "success": 1,
+    "environment": "none",
+    "environment_bonus": null,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/mana_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/mana_12x16.png",
+    "grant_sources": [],
+    "runtime_source": "assets/mana_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "moon",
+    "name": "달빛",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 2,
+    "existing": true,
+    "owned_at_start": false,
+    "unlock": {
+      "reputation": 0
+    },
+    "cost": 120,
+    "sale_price": 26,
+    "ingredients": {
+      "herb": 2,
+      "starleaf": 1
+    },
+    "duration_multiplier": 1.5,
+    "success": 0.86,
+    "environment": "legacy_night_rain",
+    "environment_bonus": null,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/moon_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/moon_12x16.png",
+    "grant_sources": [],
+    "runtime_source": "assets/items_v1/moon_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "purify",
+    "name": "정화",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 3,
+    "existing": true,
+    "owned_at_start": false,
+    "unlock": {
+      "reputation": 10
+    },
+    "cost": 180,
+    "sale_price": 24,
+    "ingredients": {
+      "herb": 2,
+      "starleaf": 1
+    },
+    "duration_multiplier": 1.4,
+    "success": 0.88,
+    "environment": "legacy_night_rain",
+    "environment_bonus": null,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/purify_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/purify_12x16.png",
+    "grant_sources": [],
+    "runtime_source": "assets/items_v1/purify_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "agility",
+    "name": "민첩",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 4,
+    "existing": true,
+    "owned_at_start": false,
+    "unlock": {
+      "reputation": 20
+    },
+    "cost": 240,
+    "sale_price": 28,
+    "ingredients": {
+      "herb": 2,
+      "starleaf": 1
+    },
+    "duration_multiplier": 1.6,
+    "success": 0.84,
+    "environment": "legacy_night_rain",
+    "environment_bonus": null,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/agility_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/agility_12x16.png",
+    "grant_sources": [],
+    "runtime_source": "assets/items_v1/agility_12x16.png",
+    "preserve_slim_native": true,
+    "mock_native_size": [
+      8,
+      16
+    ]
+  },
+  {
+    "id": "vigor",
+    "name": "활력",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 5,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "forest_edge",
+        "returns": 3
+      }
+    },
+    "cost": 360,
+    "sale_price": 30,
+    "ingredients": {
+      "herb": 2,
+      "dewgrass": 1
+    },
+    "duration_multiplier": 1.4,
+    "success": 0.92,
+    "environment": "rain",
+    "environment_bonus": 0.08,
+    "grant_material": "dewgrass",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/vigor_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/vigor_12x16.png",
+    "grant_sources": [
+      "dewgrass"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/vigor_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "antidote",
+    "name": "해독",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 6,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "forest_edge",
+        "returns": 6
+      }
+    },
+    "cost": 480,
+    "sale_price": 32,
+    "ingredients": {
+      "herb": 2,
+      "dewgrass": 1
+    },
+    "duration_multiplier": 1.5,
+    "success": 0.92,
+    "environment": "rain",
+    "environment_bonus": 0.08,
+    "grant_material": "dewgrass",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/antidote_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/antidote_12x16.png",
+    "grant_sources": [
+      "dewgrass"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/antidote_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "fortune",
+    "name": "행운",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 7,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "forest_edge",
+        "returns": 10
+      }
+    },
+    "cost": 640,
+    "sale_price": 34,
+    "ingredients": {
+      "herb": 2,
+      "dewgrass": 1
+    },
+    "duration_multiplier": 1.6,
+    "success": 0.92,
+    "environment": "rain",
+    "environment_bonus": 0.08,
+    "grant_material": "dewgrass",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/fortune_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/fortune_12x16.png",
+    "grant_sources": [
+      "dewgrass"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/fortune_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "focus",
+    "name": "집중",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 8,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "abandoned_greenhouse",
+        "returns": 2
+      }
+    },
+    "cost": 750,
+    "sale_price": 38,
+    "ingredients": {
+      "herb": 2,
+      "silver_moss": 1
+    },
+    "duration_multiplier": 1.6,
+    "success": 0.9,
+    "environment": "cloudy",
+    "environment_bonus": 0.08,
+    "grant_material": "silver_moss",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/focus_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/focus_12x16.png",
+    "grant_sources": [
+      "silver_moss"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/focus_12x16.png",
+    "preserve_slim_native": true,
+    "mock_native_size": [
+      8,
+      16
+    ]
+  },
+  {
+    "id": "restoration",
+    "name": "회복",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 9,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "abandoned_greenhouse",
+        "returns": 4
+      }
+    },
+    "cost": 950,
+    "sale_price": 40,
+    "ingredients": {
+      "herb": 2,
+      "silver_moss": 1
+    },
+    "duration_multiplier": 1.7,
+    "success": 0.9,
+    "environment": "cloudy",
+    "environment_bonus": 0.08,
+    "grant_material": "silver_moss",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/restoration_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/restoration_12x16.png",
+    "grant_sources": [
+      "silver_moss"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/restoration_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "growth",
+    "name": "생장",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 10,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "abandoned_greenhouse",
+        "returns": 6
+      }
+    },
+    "cost": 1200,
+    "sale_price": 42,
+    "ingredients": {
+      "herb": 2,
+      "silver_moss": 1
+    },
+    "duration_multiplier": 1.8,
+    "success": 0.9,
+    "environment": "cloudy",
+    "environment_bonus": 0.08,
+    "grant_material": "silver_moss",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/growth_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/growth_12x16.png",
+    "grant_sources": [
+      "silver_moss"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/growth_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "clarity",
+    "name": "선명",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 11,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "mist_valley",
+        "returns": 2
+      }
+    },
+    "cost": 1400,
+    "sale_price": 46,
+    "ingredients": {
+      "herb": 2,
+      "blue_reed": 1
+    },
+    "duration_multiplier": 1.8,
+    "success": 0.88,
+    "environment": "rain",
+    "environment_bonus": 0.08,
+    "grant_material": "blue_reed",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/clarity_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/clarity_12x16.png",
+    "grant_sources": [
+      "blue_reed"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/clarity_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "ward",
+    "name": "수호",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 12,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "mist_valley",
+        "returns": 4
+      }
+    },
+    "cost": 1700,
+    "sale_price": 48,
+    "ingredients": {
+      "herb": 2,
+      "blue_reed": 1
+    },
+    "duration_multiplier": 1.9,
+    "success": 0.88,
+    "environment": "rain",
+    "environment_bonus": 0.08,
+    "grant_material": "blue_reed",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/ward_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/ward_12x16.png",
+    "grant_sources": [
+      "blue_reed"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/ward_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "spirit",
+    "name": "정령",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 13,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "mist_valley",
+        "returns": 6
+      }
+    },
+    "cost": 2100,
+    "sale_price": 52,
+    "ingredients": {
+      "herb": 2,
+      "blue_reed": 1,
+      "dewgrass": 1
+    },
+    "duration_multiplier": 2.0,
+    "success": 0.88,
+    "environment": "rain",
+    "environment_bonus": 0.08,
+    "grant_material": "blue_reed",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/spirit_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/spirit_12x16.png",
+    "grant_sources": [
+      "blue_reed",
+      "dewgrass"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/spirit_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "arcane_amplification",
+    "name": "마력 증폭",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 14,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "crystal_mine",
+        "returns": 1
+      }
+    },
+    "cost": 2040,
+    "sale_price": 58,
+    "ingredients": {
+      "herb": 2,
+      "crystal_herb": 1
+    },
+    "duration_multiplier": 2.0,
+    "success": 0.86,
+    "environment": "clear",
+    "environment_bonus": 0.08,
+    "grant_material": "crystal_herb",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/arcane_amplification_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/arcane_amplification_12x16.png",
+    "grant_sources": [
+      "crystal_herb"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/arcane_amplification_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "iron_skin",
+    "name": "강철 피부",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 15,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "crystal_mine",
+        "returns": 3
+      }
+    },
+    "cost": 2470,
+    "sale_price": 62,
+    "ingredients": {
+      "herb": 2,
+      "crystal_herb": 1
+    },
+    "duration_multiplier": 2.1,
+    "success": 0.86,
+    "environment": "clear",
+    "environment_bonus": 0.08,
+    "grant_material": "crystal_herb",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/iron_skin_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/iron_skin_12x16.png",
+    "grant_sources": [
+      "crystal_herb"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/iron_skin_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "stealth",
+    "name": "은신",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 16,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "crystal_mine",
+        "returns": 5
+      }
+    },
+    "cost": 2890,
+    "sale_price": 66,
+    "ingredients": {
+      "herb": 2,
+      "crystal_herb": 1,
+      "silver_moss": 1
+    },
+    "duration_multiplier": 2.2,
+    "success": 0.86,
+    "environment": "clear",
+    "environment_bonus": 0.08,
+    "grant_material": "crystal_herb",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/stealth_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/stealth_12x16.png",
+    "grant_sources": [
+      "crystal_herb",
+      "silver_moss"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/stealth_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "poison_resistance",
+    "name": "독 저항",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 17,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "fog_marsh",
+        "returns": 1
+      }
+    },
+    "cost": 3230,
+    "sale_price": 72,
+    "ingredients": {
+      "herb": 2,
+      "mist_mushroom": 1
+    },
+    "duration_multiplier": 2.2,
+    "success": 0.84,
+    "environment": "cloudy",
+    "environment_bonus": 0.08,
+    "grant_material": "mist_mushroom",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/poison_resistance_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/poison_resistance_12x16.png",
+    "grant_sources": [
+      "mist_mushroom"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/poison_resistance_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "illusion",
+    "name": "환영",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 18,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "fog_marsh",
+        "returns": 3
+      }
+    },
+    "cost": 3830,
+    "sale_price": 76,
+    "ingredients": {
+      "herb": 2,
+      "mist_mushroom": 1
+    },
+    "duration_multiplier": 2.3,
+    "success": 0.84,
+    "environment": "cloudy",
+    "environment_bonus": 0.08,
+    "grant_material": "mist_mushroom",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/illusion_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/illusion_12x16.png",
+    "grant_sources": [
+      "mist_mushroom"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/illusion_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "soul_purification",
+    "name": "영혼 정화",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 19,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "fog_marsh",
+        "returns": 5
+      }
+    },
+    "cost": 4420,
+    "sale_price": 80,
+    "ingredients": {
+      "herb": 2,
+      "mist_mushroom": 1,
+      "starleaf": 1
+    },
+    "duration_multiplier": 2.4,
+    "success": 0.84,
+    "environment": "cloudy",
+    "environment_bonus": 0.08,
+    "grant_material": "mist_mushroom",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/soul_purification_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/soul_purification_12x16.png",
+    "grant_sources": [
+      "mist_mushroom",
+      "starleaf"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/soul_purification_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "wisdom",
+    "name": "지혜",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 20,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "forgotten_tower",
+        "returns": 1
+      }
+    },
+    "cost": 5100,
+    "sale_price": 88,
+    "ingredients": {
+      "herb": 2,
+      "ash_sage": 1
+    },
+    "duration_multiplier": 2.4,
+    "success": 0.84,
+    "environment": "day",
+    "environment_bonus": 0.08,
+    "grant_material": "ash_sage",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/wisdom_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/wisdom_12x16.png",
+    "grant_sources": [
+      "ash_sage"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/wisdom_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "reflection",
+    "name": "반사",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 21,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "forgotten_tower",
+        "returns": 3
+      }
+    },
+    "cost": 5780,
+    "sale_price": 92,
+    "ingredients": {
+      "herb": 2,
+      "ash_sage": 1,
+      "blue_reed": 1
+    },
+    "duration_multiplier": 2.5,
+    "success": 0.84,
+    "environment": "day",
+    "environment_bonus": 0.08,
+    "grant_material": "ash_sage",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/reflection_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/reflection_12x16.png",
+    "grant_sources": [
+      "ash_sage",
+      "blue_reed"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/reflection_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "haste",
+    "name": "신속",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 22,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "forgotten_tower",
+        "returns": 5
+      }
+    },
+    "cost": 6460,
+    "sale_price": 96,
+    "ingredients": {
+      "herb": 2,
+      "ash_sage": 1
+    },
+    "duration_multiplier": 2.6,
+    "success": 0.84,
+    "environment": "day",
+    "environment_bonus": 0.08,
+    "grant_material": "ash_sage",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/haste_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/haste_12x16.png",
+    "grant_sources": [
+      "ash_sage"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/haste_12x16.png",
+    "preserve_slim_native": true,
+    "mock_native_size": [
+      8,
+      16
+    ]
+  },
+  {
+    "id": "nightwalk",
+    "name": "야행",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 23,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "moon_ruins",
+        "returns": 1
+      }
+    },
+    "cost": 7230,
+    "sale_price": 106,
+    "ingredients": {
+      "herb": 2,
+      "moonflower": 1
+    },
+    "duration_multiplier": 2.6,
+    "success": 0.82,
+    "environment": "night",
+    "environment_bonus": 0.08,
+    "grant_material": "moonflower",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/nightwalk_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/nightwalk_12x16.png",
+    "grant_sources": [
+      "moonflower"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/nightwalk_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "moonradiance",
+    "name": "월광",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 24,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "moon_ruins",
+        "returns": 3
+      }
+    },
+    "cost": 8080,
+    "sale_price": 112,
+    "ingredients": {
+      "herb": 2,
+      "moonflower": 1,
+      "crystal_herb": 1
+    },
+    "duration_multiplier": 2.7,
+    "success": 0.82,
+    "environment": "night",
+    "environment_bonus": 0.08,
+    "grant_material": "moonflower",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/moonradiance_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/moonradiance_12x16.png",
+    "grant_sources": [
+      "moonflower",
+      "crystal_herb"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/moonradiance_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "regeneration",
+    "name": "재생",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 25,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "moon_ruins",
+        "returns": 5
+      }
+    },
+    "cost": 8930,
+    "sale_price": 118,
+    "ingredients": {
+      "herb": 2,
+      "moonflower": 1,
+      "dewgrass": 1
+    },
+    "duration_multiplier": 2.8,
+    "success": 0.82,
+    "environment": "night",
+    "environment_bonus": 0.08,
+    "grant_material": "moonflower",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/regeneration_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/regeneration_12x16.png",
+    "grant_sources": [
+      "moonflower",
+      "dewgrass"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/regeneration_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "starlight",
+    "name": "별빛",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 26,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "star_garden",
+        "returns": 2
+      }
+    },
+    "cost": 10200,
+    "sale_price": 132,
+    "ingredients": {
+      "herb": 2,
+      "star_seed": 1,
+      "starleaf": 1
+    },
+    "duration_multiplier": 2.8,
+    "success": 0.82,
+    "environment": "night_clear",
+    "environment_bonus": 0.08,
+    "grant_material": "star_seed",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/starlight_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/starlight_12x16.png",
+    "grant_sources": [
+      "star_seed",
+      "starleaf"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/starlight_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "wish",
+    "name": "소원",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 27,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "star_garden",
+        "returns": 4
+      }
+    },
+    "cost": 11900,
+    "sale_price": 142,
+    "ingredients": {
+      "herb": 2,
+      "star_seed": 1,
+      "silver_moss": 1
+    },
+    "duration_multiplier": 2.9,
+    "success": 0.82,
+    "environment": "night_clear",
+    "environment_bonus": 0.08,
+    "grant_material": "star_seed",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/wish_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/wish_12x16.png",
+    "grant_sources": [
+      "star_seed",
+      "silver_moss"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/wish_12x16.png",
+    "preserve_slim_native": true,
+    "mock_native_size": [
+      8,
+      16
+    ]
+  },
+  {
+    "id": "eternity",
+    "name": "영원",
+    "family": "vitality",
+    "preferred_customer": "traveler",
+    "order": 28,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "star_garden",
+        "returns": 6
+      }
+    },
+    "cost": 13600,
+    "sale_price": 152,
+    "ingredients": {
+      "herb": 2,
+      "star_seed": 1,
+      "moonflower": 1
+    },
+    "duration_multiplier": 3.0,
+    "success": 0.82,
+    "environment": "night_clear",
+    "environment_bonus": 0.08,
+    "grant_material": "star_seed",
+    "icon_candidate": "res://assets/content_expansion_v1/potions/eternity_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/eternity_12x16.png",
+    "grant_sources": [
+      "star_seed",
+      "moonflower"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/eternity_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "sage_elixir",
+    "name": "현자의 물약",
+    "family": "arcane",
+    "preferred_customer": "mage",
+    "order": 29,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "star_garden",
+        "returns": 6
+      },
+      "recipes": [
+        "wisdom",
+        "moonradiance"
+      ]
+    },
+    "cost": 19800,
+    "sale_price": 180,
+    "ingredients": {
+      "herb": 2,
+      "star_seed": 1,
+      "ash_sage": 1,
+      "crystal_herb": 1
+    },
+    "duration_multiplier": 3.2,
+    "success": 0.8,
+    "environment": "night_clear",
+    "environment_bonus": 0.08,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/sage_elixir_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/sage_elixir_12x16.png",
+    "grant_sources": [
+      "star_seed",
+      "ash_sage",
+      "crystal_herb"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/sage_elixir_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "worldtree_elixir",
+    "name": "세계수의 물약",
+    "family": "nature",
+    "preferred_customer": "elf",
+    "order": 30,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "star_garden",
+        "returns": 6
+      },
+      "recipes": [
+        "spirit",
+        "growth"
+      ]
+    },
+    "cost": 19800,
+    "sale_price": 180,
+    "ingredients": {
+      "herb": 2,
+      "star_seed": 1,
+      "blue_reed": 1,
+      "silver_moss": 1
+    },
+    "duration_multiplier": 3.2,
+    "success": 0.8,
+    "environment": "night_clear",
+    "environment_bonus": 0.08,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/worldtree_elixir_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/worldtree_elixir_12x16.png",
+    "grant_sources": [
+      "star_seed",
+      "blue_reed",
+      "silver_moss"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/worldtree_elixir_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "shadow_elixir",
+    "name": "그림자의 물약",
+    "family": "craft",
+    "preferred_customer": "rogue",
+    "order": 31,
+    "existing": false,
+    "owned_at_start": false,
+    "unlock": {
+      "discovery": {
+        "region": "star_garden",
+        "returns": 6
+      },
+      "recipes": [
+        "stealth",
+        "nightwalk"
+      ]
+    },
+    "cost": 19800,
+    "sale_price": 180,
+    "ingredients": {
+      "herb": 2,
+      "star_seed": 1,
+      "mist_mushroom": 1,
+      "moonflower": 1
+    },
+    "duration_multiplier": 3.2,
+    "success": 0.8,
+    "environment": "night_clear",
+    "environment_bonus": 0.08,
+    "grant_material": null,
+    "icon_candidate": "res://assets/content_expansion_v1/potions/shadow_elixir_icon.png",
+    "bottle_candidate": "res://assets/content_expansion_v1/potions/shadow_elixir_12x16.png",
+    "grant_sources": [
+      "star_seed",
+      "mist_mushroom",
+      "moonflower"
+    ],
+    "runtime_source": "assets/content_expansion_v1/potions/shadow_elixir_12x16.png",
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "rare_forest_breath",
+    "name": "숲숨결 물약",
+    "family": "nature",
+    "runtime_source": "assets/rare_recipes_v1/potions/rare_forest_breath_12x16.png",
+    "rare": true,
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "rare_mist_veil",
+    "name": "물안개 물약",
+    "family": "craft",
+    "runtime_source": "assets/rare_recipes_v1/potions/rare_mist_veil_12x16.png",
+    "rare": true,
+    "preserve_slim_native": true,
+    "mock_native_size": [
+      8,
+      16
+    ]
+  },
+  {
+    "id": "rare_lunar_seal",
+    "name": "월광봉인 물약",
+    "family": "arcane",
+    "runtime_source": "assets/rare_recipes_v1/potions/rare_lunar_seal_12x16.png",
+    "rare": true,
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "rare_nebula_distillate",
+    "name": "성운 증류액",
+    "family": "arcane",
+    "runtime_source": "assets/rare_recipes_v1/potions/rare_nebula_distillate_12x16.png",
+    "rare": true,
+    "preserve_slim_native": false,
+    "mock_native_size": [
+      8,
+      12
+    ]
+  }
+]

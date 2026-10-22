@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "sequence": [
+    "palettes",
+    "character_keyframes",
+    "action_animations"
+  ],
+  "current_stage": "rogue_action_animation_review",
+  "completed_keyframe_candidates": [
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "reference": "art/mockups/full-ingame-v6/approval.json",
+  "character_ids": [
+    "keeper",
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "anatomy": {
+    "native_canvas": [
+      32,
+      48
+    ],
+    "head_rows": [
+      11,
+      26
+    ],
+    "torso_rows": [
+      27,
+      39
+    ],
+    "legs_and_boots_rows": [
+      40,
+      46
+    ],
+    "foot_row": 46,
+    "notes": "모자는 머리 크기 기준에 포함하지 않는다. 행동에 필요한 관절 변화는 허용하며 머리 크기·의상·성별을 유지한다."
+  },
+  "keyframes": {
+    "keeper": [
+      "idle",
+      "brew_reach",
+      "brew_stir_left",
+      "brew_stir_right",
+      "handover_extend",
+      "handover_return"
+    ],
+    "customers": [
+      "idle",
+      "walk_contact_a",
+      "walk_pass_a",
+      "walk_contact_b",
+      "walk_pass_b",
+      "receive_extend",
+      "receive_hold"
+    ]
+  },
+  "actions": {
+    "keeper": [
+      {
+        "id": "idle",
+        "loop": true
+      },
+      {
+        "id": "brew",
+        "loop": true
+      },
+      {
+        "id": "handover",
+        "loop": false
+      }
+    ],
+    "customers": [
+      {
+        "id": "arrive",
+        "uses": "walk",
+        "loop": true
+      },
+      {
+        "id": "wait",
+        "uses": "idle",
+        "loop": true
+      },
+      {
+        "id": "receive",
+        "loop": false
+      },
+      {
+        "id": "depart",
+        "uses": "walk_carry",
+        "loop": true
+      }
+    ]
+  },
+  "carry_bottle": "별도 레시피 병 에셋을 손 앵커에 합성한다. 캐릭터 PNG에 물약색을 칠하지 않는다.",
+  "idle": "v6 상하 호흡·깜빡임·모자/망토/머리 부분 움직임을 유지한다.",
+  "walk": "반대쪽 다리의 접지·통과 포즈와 팔의 반대 스윙을 전신으로 검토한다. 걷는 방향을 바꿀 때 인물 정체성을 바꾸지 않는다.",
+  "review_order": [
+    "5명 중립 전신",
+    "주인공 제조/전달",
+    "손님 걷기/받기",
+    "행동별 보간과 부분 움직임",
+    "전체 목업 합성",
+    "Godot 적용"
+  ],
+  "checks": [
+    "팔레트 밖0",
+    "캐릭터별 최대5색",
+    "반투명0",
+    "외곽선 경계 위반0",
+    "머리 크기 유지",
+    "발 접지",
+    "손-물약 앵커",
+    "이벤트 시점 일치"
+  ],
+  "keyframes_status": "customer_candidates_in_progress",
+  "current_customer": "rogue",
+  "remaining_customers": [],
+  "animations_status": "keeper_and_all_four_customer_candidates_ready_for_scene_review",
+  "next_stage": "whole_scene_handover_mockup",
+  "latest_keeper_keyframes": "art/characters/keyframes-v4/keeper/keyframes.json",
+  "latest_keeper_motion": "art/characters/keyframes-v4/keeper/motion/validation.json",
+  "completed_customer_action_candidates": [
+    "traveler",
+    "mage",
+    "elf",
+    "rogue"
+  ],
+  "remaining_customer_actions": [],
+  "customer_action_reviews": {
+    "traveler": "art/characters/actions-v1/traveler/review.html",
+    "mage": "art/characters/actions-v1/mage/review.html",
+    "elf": "art/characters/actions-v1/elf/review.html",
+    "rogue": "art/characters/actions-v1/rogue/review.html"
+  }
+}

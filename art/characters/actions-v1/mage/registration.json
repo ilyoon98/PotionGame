@@ -1,0 +1,78 @@
+{
+  "source_grid": [
+    4,
+    1
+  ],
+  "head_top_row": 11,
+  "sole_target_row": 46,
+  "hat_origin": [
+    0,
+    4
+  ],
+  "hat_head_anchor": [
+    14,
+    14
+  ],
+  "hat_local_seat": [
+    14,
+    10
+  ],
+  "frames": [
+    {
+      "id": "carry_contact_a",
+      "whole_body": true,
+      "uniform_scale": 0.6521739130434783,
+      "offset": [
+        29,
+        110
+      ],
+      "crop_size": [
+        392,
+        552
+      ],
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_pass_a",
+      "whole_body": true,
+      "uniform_scale": 0.6521739130434783,
+      "offset": [
+        30,
+        110
+      ],
+      "crop_size": [
+        389,
+        552
+      ],
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_contact_b",
+      "whole_body": true,
+      "uniform_scale": 0.6521739130434783,
+      "offset": [
+        29,
+        110
+      ],
+      "crop_size": [
+        391,
+        552
+      ],
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_pass_b",
+      "whole_body": true,
+      "uniform_scale": 0.6521739130434783,
+      "offset": [
+        29,
+        110
+      ],
+      "crop_size": [
+        391,
+        552
+      ],
+      "cross_pose_body_splicing": false
+    }
+  ]
+}

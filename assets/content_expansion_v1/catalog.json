@@ -1,0 +1,1094 @@
+{
+  "additional_planned": [
+    {
+      "category": "souvenirs",
+      "count": 8.0,
+      "note": "기획안의 지역 기념품 8종은 이번 요청의 명시 제작 범위에 없어 후속 디자인 후보로 남김",
+      "status": "outside_this_delegated_scope"
+    }
+  ],
+  "assets": [
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/health_12x16.png",
+      "bottle_source": "res://assets/potion_12x16.png",
+      "category": "potions",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/health_icon.png",
+      "id": "health",
+      "name": "체력",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/health_icon.png",
+      "reused": true,
+      "source_path": "res://assets/items_v1/health_icon.png",
+      "status": "reused"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/mana_12x16.png",
+      "bottle_source": "res://assets/mana_12x16.png",
+      "category": "potions",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/mana_icon.png",
+      "id": "mana",
+      "name": "마나",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/mana_icon.png",
+      "reused": true,
+      "source_path": "res://assets/items_v1/mana_icon.png",
+      "status": "reused"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/moon_12x16.png",
+      "bottle_source": "res://assets/items_v1/moon_12x16.png",
+      "category": "potions",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/moon_icon.png",
+      "id": "moon",
+      "name": "달빛",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/moon_icon.png",
+      "reused": true,
+      "source_path": "res://assets/items_v1/moon_icon.png",
+      "status": "reused"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/purify_12x16.png",
+      "bottle_source": "res://assets/items_v1/purify_12x16.png",
+      "category": "potions",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/purify_icon.png",
+      "id": "purify",
+      "name": "정화",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/purify_icon.png",
+      "reused": true,
+      "source_path": "res://assets/items_v1/purify_icon.png",
+      "status": "reused"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/agility_12x16.png",
+      "bottle_source": "res://assets/items_v1/agility_12x16.png",
+      "category": "potions",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/agility_icon.png",
+      "id": "agility",
+      "name": "민첩",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/agility_icon.png",
+      "reused": true,
+      "source_path": "res://assets/items_v1/agility_icon.png",
+      "status": "reused"
+    },
+    {
+      "category": "materials",
+      "growth_path": "res://assets/content_expansion_v1/materials/herb_growth.png",
+      "growth_source": "res://assets/herb_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/herb_icon.png",
+      "id": "herb",
+      "name": "기본 약초",
+      "reused": true,
+      "source_path": "res://assets/items_v1/herb_icon.png",
+      "status": "reused"
+    },
+    {
+      "category": "materials",
+      "icon_path": "res://assets/content_expansion_v1/materials/moon_mushroom_icon.png",
+      "id": "moon_mushroom",
+      "name": "달빛 버섯",
+      "reused": true,
+      "source_path": "res://assets/mushroom_24.png",
+      "status": "reused"
+    },
+    {
+      "category": "materials",
+      "growth_path": "res://assets/content_expansion_v1/materials/starleaf_growth.png",
+      "growth_source": "res://assets/items_v1/starleaf_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/starleaf_icon.png",
+      "id": "starleaf",
+      "name": "별잎",
+      "reused": true,
+      "source_path": "res://assets/items_v1/starleaf_icon.png",
+      "status": "reused"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/forest_edge_icon.png",
+      "id": "forest_edge",
+      "name": "숲 가장자리",
+      "reused": true,
+      "source_path": "res://assets/management_v1/expedition_icon.png",
+      "status": "reused"
+    },
+    {
+      "category": "employees",
+      "icon_path": "res://assets/content_expansion_v1/employees/sales_assistant_icon.png",
+      "id": "sales_assistant",
+      "name": "판매 보조",
+      "reused": true,
+      "source_path": "res://assets/management_v1/employee_icon.png",
+      "status": "reused"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/vigor_12x16.png",
+      "category": "potions",
+      "color": "warm vermilion orange",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/vigor_icon.png",
+      "id": "vigor",
+      "name": "활력",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/vigor_icon.png",
+      "region": "forest_edge",
+      "reused": false,
+      "shape": "broad barrel-shaped body",
+      "source_path": "res://assets/content_expansion_v1/source/vigor.png",
+      "status": "completed",
+      "symbol": "upward chevron"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/antidote_12x16.png",
+      "category": "potions",
+      "color": "lime green",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/antidote_icon.png",
+      "id": "antidote",
+      "name": "해독",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/antidote_icon.png",
+      "region": "forest_edge",
+      "reused": false,
+      "shape": "triangular flask",
+      "source_path": "res://assets/content_expansion_v1/source/antidote.png",
+      "status": "completed",
+      "symbol": "cross"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/fortune_12x16.png",
+      "category": "potions",
+      "color": "emerald",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/fortune_icon.png",
+      "id": "fortune",
+      "name": "행운",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/fortune_icon.png",
+      "region": "forest_edge",
+      "reused": false,
+      "shape": "squat clover-lobed flask",
+      "source_path": "res://assets/content_expansion_v1/source/fortune.png",
+      "status": "completed",
+      "symbol": "four-leaf clover"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/focus_12x16.png",
+      "category": "potions",
+      "color": "deep cyan",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/focus_icon.png",
+      "id": "focus",
+      "name": "집중",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/focus_icon.png",
+      "region": "abandoned_greenhouse",
+      "reused": false,
+      "shape": "tall rectangular vial",
+      "source_path": "res://assets/content_expansion_v1/source/focus.png",
+      "status": "completed",
+      "symbol": "eye"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/restoration_12x16.png",
+      "category": "potions",
+      "color": "warm coral",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/restoration_icon.png",
+      "id": "restoration",
+      "name": "회복",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/restoration_icon.png",
+      "region": "abandoned_greenhouse",
+      "reused": false,
+      "shape": "teardrop flask",
+      "source_path": "res://assets/content_expansion_v1/source/restoration.png",
+      "status": "completed",
+      "symbol": "paired heart"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/growth_12x16.png",
+      "category": "potions",
+      "color": "moss green",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/growth_icon.png",
+      "id": "growth",
+      "name": "생장",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/growth_icon.png",
+      "region": "abandoned_greenhouse",
+      "reused": false,
+      "shape": "bulbous flask with leaf shoulders",
+      "source_path": "res://assets/content_expansion_v1/source/growth.png",
+      "status": "completed",
+      "symbol": "sprout"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/dewgrass_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/dewgrass_icon.png",
+      "id": "dewgrass",
+      "name": "이슬풀",
+      "region": "forest_edge",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/dewgrass.png",
+      "status": "completed"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/silver_moss_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/silver_moss_icon.png",
+      "id": "silver_moss",
+      "name": "은빛 이끼",
+      "region": "abandoned_greenhouse",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/silver_moss.png",
+      "status": "completed"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/clarity_12x16.png",
+      "category": "potions",
+      "color": "pale sky blue",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/clarity_icon.png",
+      "id": "clarity",
+      "name": "선명",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/clarity_icon.png",
+      "region": "mist_valley",
+      "reused": false,
+      "shape": "short diamond-cut flask",
+      "source_path": "res://assets/content_expansion_v1/source/clarity.png",
+      "status": "completed",
+      "symbol": "wide gold sun-disc"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/ward_12x16.png",
+      "category": "potions",
+      "color": "ruby red",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/ward_icon.png",
+      "id": "ward",
+      "name": "수호",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/ward_icon.png",
+      "region": "mist_valley",
+      "reused": false,
+      "shape": "broad shield-shaped flask",
+      "source_path": "res://assets/content_expansion_v1/source/ward.png",
+      "status": "completed",
+      "symbol": "ivory shield with gold central dot"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/spirit_12x16.png",
+      "category": "potions",
+      "color": "turquoise",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/spirit_icon.png",
+      "id": "spirit",
+      "name": "정령",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/spirit_icon.png",
+      "region": "mist_valley",
+      "reused": false,
+      "shape": "bell-shaped flask with narrow neck and flared base",
+      "source_path": "res://assets/content_expansion_v1/source/spirit.png",
+      "status": "completed",
+      "symbol": "simple gold butterfly"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/arcane_amplification_12x16.png",
+      "category": "potions",
+      "color": "rich royal indigo",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/arcane_amplification_icon.png",
+      "id": "arcane_amplification",
+      "name": "마력 증폭",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/arcane_amplification_icon.png",
+      "region": "crystal_mine",
+      "reused": false,
+      "shape": "angular hexagonal flask with broad shoulders",
+      "source_path": "res://assets/content_expansion_v1/source/arcane_amplification.png",
+      "status": "completed",
+      "symbol": "gold eight-ray burst"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/iron_skin_12x16.png",
+      "category": "potions",
+      "color": "steel silver gray",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/iron_skin_icon.png",
+      "id": "iron_skin",
+      "name": "강철 피부",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/iron_skin_icon.png",
+      "region": "crystal_mine",
+      "reused": false,
+      "shape": "square broad flask with iron corner fittings",
+      "source_path": "res://assets/content_expansion_v1/source/iron_skin.png",
+      "status": "completed",
+      "symbol": "simple steel plate with four gold rivets"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/stealth_12x16.png",
+      "category": "potions",
+      "color": "smoky dark lilac",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/stealth_icon.png",
+      "id": "stealth",
+      "name": "은신",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/stealth_icon.png",
+      "region": "crystal_mine",
+      "reused": false,
+      "shape": "flat hip flask with sloped shoulder",
+      "source_path": "res://assets/content_expansion_v1/source/stealth.png",
+      "status": "completed",
+      "symbol": "ivory hood silhouette with dark eye slit"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/poison_resistance_12x16.png",
+      "category": "potions",
+      "color": "acid yellow-green",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/poison_resistance_icon.png",
+      "id": "poison_resistance",
+      "name": "독 저항",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/poison_resistance_icon.png",
+      "region": "fog_marsh",
+      "reused": false,
+      "shape": "long oval flask with rounded base",
+      "source_path": "res://assets/content_expansion_v1/source/poison_resistance.png",
+      "status": "completed",
+      "symbol": "gold shield enclosing a green drop"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/illusion_12x16.png",
+      "category": "potions",
+      "color": "bright magenta",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/illusion_icon.png",
+      "id": "illusion",
+      "name": "환영",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/illusion_icon.png",
+      "region": "fog_marsh",
+      "reused": false,
+      "shape": "twin-lobed hourglass flask with short neck",
+      "source_path": "res://assets/content_expansion_v1/source/illusion.png",
+      "status": "completed",
+      "symbol": "bold gold spiral"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/soul_purification_12x16.png",
+      "category": "potions",
+      "color": "pale lavender-white",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/soul_purification_icon.png",
+      "id": "soul_purification",
+      "name": "영혼 정화",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/soul_purification_icon.png",
+      "region": "fog_marsh",
+      "reused": false,
+      "shape": "tall urn-shaped flask with wide shoulder and tapering base",
+      "source_path": "res://assets/content_expansion_v1/source/soul_purification.png",
+      "status": "completed",
+      "symbol": "one ivory wing with gold root"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/wisdom_12x16.png",
+      "category": "potions",
+      "color": "sapphire blue",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/wisdom_icon.png",
+      "id": "wisdom",
+      "name": "지혜",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/wisdom_icon.png",
+      "region": "forgotten_tower",
+      "reused": false,
+      "shape": "wide octagonal flask with short neck",
+      "source_path": "res://assets/content_expansion_v1/source/wisdom.png",
+      "status": "completed",
+      "symbol": "simple open ivory book"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/reflection_12x16.png",
+      "category": "potions",
+      "color": "ice cyan",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/reflection_icon.png",
+      "id": "reflection",
+      "name": "반사",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/reflection_icon.png",
+      "region": "forgotten_tower",
+      "reused": false,
+      "shape": "flat diamond-shaped flask with metal rim",
+      "source_path": "res://assets/content_expansion_v1/source/reflection.png",
+      "status": "completed",
+      "symbol": "silver diamond outline around dark center"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/haste_12x16.png",
+      "category": "potions",
+      "color": "bright orange",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/haste_icon.png",
+      "id": "haste",
+      "name": "신속",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/haste_icon.png",
+      "region": "forgotten_tower",
+      "reused": false,
+      "shape": "narrow long rectangular flask with slanted shoulder",
+      "source_path": "res://assets/content_expansion_v1/source/haste.png",
+      "status": "completed",
+      "symbol": "two bold gold forward chevrons"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/nightwalk_12x16.png",
+      "category": "potions",
+      "color": "deep midnight blue",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/nightwalk_icon.png",
+      "id": "nightwalk",
+      "name": "야행",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/nightwalk_icon.png",
+      "region": "moon_ruins",
+      "reused": false,
+      "shape": "short wide oblong flask with domed shoulder",
+      "source_path": "res://assets/content_expansion_v1/source/nightwalk.png",
+      "status": "completed",
+      "symbol": "simple ivory bat-wing silhouette"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/moonradiance_12x16.png",
+      "category": "potions",
+      "color": "pale silver blue",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/moonradiance_icon.png",
+      "id": "moonradiance",
+      "name": "월광",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/moonradiance_icon.png",
+      "region": "moon_ruins",
+      "reused": false,
+      "shape": "faceted pear flask with gold neck collar",
+      "source_path": "res://assets/content_expansion_v1/source/moonradiance.png",
+      "status": "completed",
+      "symbol": "gold crescent surrounding ivory full-moon dot"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/regeneration_12x16.png",
+      "category": "potions",
+      "color": "deep crimson",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/regeneration_icon.png",
+      "id": "regeneration",
+      "name": "재생",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/regeneration_icon.png",
+      "region": "moon_ruins",
+      "reused": false,
+      "shape": "wide round flask with two leaf-shaped gold shoulder fins",
+      "source_path": "res://assets/content_expansion_v1/source/regeneration.png",
+      "status": "completed",
+      "symbol": "gold circular arrow around coral heart"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/starlight_12x16.png",
+      "category": "potions",
+      "color": "cobalt with lilac highlight",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/starlight_icon.png",
+      "id": "starlight",
+      "name": "별빛",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/starlight_icon.png",
+      "region": "star_garden",
+      "reused": false,
+      "shape": "five-point-star-shaped glass body with short neck",
+      "source_path": "res://assets/content_expansion_v1/source/starlight.png",
+      "status": "completed",
+      "symbol": "one bold ivory four-point star"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/wish_12x16.png",
+      "category": "potions",
+      "color": "pale mint",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/wish_icon.png",
+      "id": "wish",
+      "name": "소원",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/wish_icon.png",
+      "region": "star_garden",
+      "reused": false,
+      "shape": "capsule-shaped long flask with thin gold neck ribbon",
+      "source_path": "res://assets/content_expansion_v1/source/wish.png",
+      "status": "completed",
+      "symbol": "single gold shooting star with two-pixel trail"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/eternity_12x16.png",
+      "category": "potions",
+      "color": "warm amber",
+      "family": "vitality",
+      "icon_path": "res://assets/content_expansion_v1/potions/eternity_icon.png",
+      "id": "eternity",
+      "name": "영원",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/eternity_icon.png",
+      "region": "star_garden",
+      "reused": false,
+      "shape": "wide glass hourglass flask with thick gold base",
+      "source_path": "res://assets/content_expansion_v1/source/eternity.png",
+      "status": "completed",
+      "symbol": "simple ivory infinity loop"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/sage_elixir_12x16.png",
+      "category": "potions",
+      "color": "royal violet",
+      "family": "arcane",
+      "icon_path": "res://assets/content_expansion_v1/potions/sage_elixir_icon.png",
+      "id": "sage_elixir",
+      "name": "현자의 물약",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/sage_elixir_icon.png",
+      "region": "final",
+      "reused": false,
+      "shape": "large faceted rectangular flask with double gold collar",
+      "source_path": "res://assets/content_expansion_v1/source/sage_elixir.png",
+      "status": "completed",
+      "symbol": "gold owl mask above a tiny ivory book as one large simple emblem"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/worldtree_elixir_12x16.png",
+      "category": "potions",
+      "color": "deep forest jade",
+      "family": "nature",
+      "icon_path": "res://assets/content_expansion_v1/potions/worldtree_elixir_icon.png",
+      "id": "worldtree_elixir",
+      "name": "세계수의 물약",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/worldtree_elixir_icon.png",
+      "region": "final",
+      "reused": false,
+      "shape": "broad root-shaped flask with branching shoulders and gold base",
+      "source_path": "res://assets/content_expansion_v1/source/worldtree_elixir.png",
+      "status": "completed",
+      "symbol": "one large ivory tree with three green leaf clusters"
+    },
+    {
+      "bottle_path": "res://assets/content_expansion_v1/potions/shadow_elixir_12x16.png",
+      "category": "potions",
+      "color": "near-black plum with visible purple edge",
+      "family": "craft",
+      "icon_path": "res://assets/content_expansion_v1/potions/shadow_elixir_icon.png",
+      "id": "shadow_elixir",
+      "name": "그림자의 물약",
+      "recipe_icon_path": "res://assets/content_expansion_v1/potions/shadow_elixir_icon.png",
+      "region": "final",
+      "reused": false,
+      "shape": "slim black-plum oblong flask with pointed shoulders and silver collar",
+      "source_path": "res://assets/content_expansion_v1/source/shadow_elixir.png",
+      "status": "completed",
+      "symbol": "silver eclipsed moon with two broad plum wing shapes"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/blue_reed_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/blue_reed_icon.png",
+      "id": "blue_reed",
+      "name": "푸른 갈대",
+      "region": "mist_valley",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/blue_reed.png",
+      "status": "completed"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/crystal_herb_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/crystal_herb_icon.png",
+      "id": "crystal_herb",
+      "name": "수정초",
+      "region": "crystal_mine",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/crystal_herb.png",
+      "status": "completed"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/mist_mushroom_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/mist_mushroom_icon.png",
+      "id": "mist_mushroom",
+      "name": "안개버섯",
+      "region": "fog_marsh",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/mist_mushroom.png",
+      "status": "completed"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/ash_sage_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/ash_sage_icon.png",
+      "id": "ash_sage",
+      "name": "잿빛 세이지",
+      "region": "forgotten_tower",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/ash_sage.png",
+      "status": "completed"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/moonflower_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/moonflower_icon.png",
+      "id": "moonflower",
+      "name": "달꽃",
+      "region": "moon_ruins",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/moonflower.png",
+      "status": "completed"
+    },
+    {
+      "category": "materials",
+      "growth_order": [
+        "seedling",
+        "young",
+        "mature",
+        "harvest"
+      ],
+      "growth_path": "res://assets/content_expansion_v1/materials/star_seed_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/star_seed_icon.png",
+      "id": "star_seed",
+      "name": "별씨",
+      "region": "star_garden",
+      "reused": false,
+      "sheet": "botanical_3x2",
+      "source_path": "res://assets/content_expansion_v1/source/star_seed.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/abandoned_greenhouse_icon.png",
+      "id": "abandoned_greenhouse",
+      "name": "버려진 온실",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/abandoned_greenhouse.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/mist_valley_icon.png",
+      "id": "mist_valley",
+      "name": "물안개 계곡",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/mist_valley.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/crystal_mine_icon.png",
+      "id": "crystal_mine",
+      "name": "수정 광산",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/crystal_mine.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/fog_marsh_icon.png",
+      "id": "fog_marsh",
+      "name": "안개 늪",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/fog_marsh.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/forgotten_tower_icon.png",
+      "id": "forgotten_tower",
+      "name": "잊힌 탑",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/forgotten_tower.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/moon_ruins_icon.png",
+      "id": "moon_ruins",
+      "name": "달빛 유적",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/moon_ruins.png",
+      "status": "completed"
+    },
+    {
+      "category": "regions",
+      "icon_path": "res://assets/content_expansion_v1/regions/star_garden_icon.png",
+      "id": "star_garden",
+      "name": "별의 정원",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/star_garden.png",
+      "status": "completed"
+    },
+    {
+      "category": "employees",
+      "icon_path": "res://assets/content_expansion_v1/employees/cultivation_assistant_icon.png",
+      "id": "cultivation_assistant",
+      "name": "재배 보조",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/cultivation_assistant.png",
+      "status": "completed"
+    },
+    {
+      "category": "employees",
+      "icon_path": "res://assets/content_expansion_v1/employees/brewing_assistant_icon.png",
+      "id": "brewing_assistant",
+      "name": "조제 보조",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/brewing_assistant.png",
+      "status": "completed"
+    },
+    {
+      "category": "employees",
+      "icon_path": "res://assets/content_expansion_v1/employees/expedition_guide_icon.png",
+      "id": "expedition_guide",
+      "name": "원정 길잡이",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/expedition_guide.png",
+      "status": "completed"
+    },
+    {
+      "category": "families",
+      "icon_path": "res://assets/content_expansion_v1/families/vitality_icon.png",
+      "id": "vitality",
+      "name": "활력",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/vitality.png",
+      "status": "completed"
+    },
+    {
+      "category": "families",
+      "icon_path": "res://assets/content_expansion_v1/families/arcane_icon.png",
+      "id": "arcane",
+      "name": "비술",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/arcane.png",
+      "status": "completed"
+    },
+    {
+      "category": "families",
+      "icon_path": "res://assets/content_expansion_v1/families/nature_icon.png",
+      "id": "nature",
+      "name": "자연",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/nature.png",
+      "status": "completed"
+    },
+    {
+      "category": "families",
+      "icon_path": "res://assets/content_expansion_v1/families/craft_icon.png",
+      "id": "craft",
+      "name": "기교",
+      "reused": false,
+      "source_path": "res://assets/content_expansion_v1/source/craft.png",
+      "status": "completed"
+    },
+    {
+      "base_reused": true,
+      "base_source": "res://assets/cauldron_48.png",
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/cauldron_basic.png",
+      "id": "cauldron",
+      "name": "솥",
+      "reused": false,
+      "sheet": "equipment_2x1",
+      "source_path": "res://assets/content_expansion_v1/source/cauldron.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/cauldron_basic.png",
+        "res://assets/content_expansion_v1/equipment/cauldron_improved.png",
+        "res://assets/content_expansion_v1/equipment/cauldron_premium.png"
+      ]
+    },
+    {
+      "base_region": [
+        0.0,
+        40.0,
+        32.0,
+        40.0
+      ],
+      "base_reused": true,
+      "base_source": "res://assets/herb_growth.png",
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/herb_pot_basic.png",
+      "id": "herb_pot",
+      "name": "기본 화분",
+      "reused": false,
+      "sheet": "equipment_2x1",
+      "source_path": "res://assets/content_expansion_v1/source/herb_pot.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/herb_pot_basic.png",
+        "res://assets/content_expansion_v1/equipment/herb_pot_improved.png",
+        "res://assets/content_expansion_v1/equipment/herb_pot_premium.png"
+      ]
+    },
+    {
+      "base_reused": true,
+      "base_source": "res://assets/workshop_v1/potion-counter.png",
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/sales_counter_basic.png",
+      "id": "sales_counter",
+      "name": "판매대",
+      "reused": false,
+      "sheet": "equipment_2x1",
+      "source_path": "res://assets/content_expansion_v1/source/sales_counter.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/sales_counter_basic.png",
+        "res://assets/content_expansion_v1/equipment/sales_counter_improved.png",
+        "res://assets/content_expansion_v1/equipment/sales_counter_premium.png"
+      ]
+    },
+    {
+      "base_reused": true,
+      "base_source": "res://assets/management_v1/filter_icon.png",
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/precision_filter_basic.png",
+      "id": "precision_filter",
+      "name": "정밀 여과기",
+      "reused": false,
+      "sheet": "equipment_2x1",
+      "source_path": "res://assets/content_expansion_v1/source/precision_filter.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/precision_filter_basic.png",
+        "res://assets/content_expansion_v1/equipment/precision_filter_improved.png",
+        "res://assets/content_expansion_v1/equipment/precision_filter_premium.png"
+      ]
+    },
+    {
+      "base_reused": false,
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/herb_storage_basic.png",
+      "id": "herb_storage",
+      "name": "약초 보관 선반",
+      "reused": false,
+      "sheet": "equipment_3x1",
+      "source_path": "res://assets/content_expansion_v1/source/herb_storage.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/herb_storage_basic.png",
+        "res://assets/content_expansion_v1/equipment/herb_storage_improved.png",
+        "res://assets/content_expansion_v1/equipment/herb_storage_premium.png"
+      ]
+    },
+    {
+      "base_reused": false,
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/potion_cabinet_basic.png",
+      "id": "potion_cabinet",
+      "name": "물약 보관장",
+      "reused": false,
+      "sheet": "equipment_3x1",
+      "source_path": "res://assets/content_expansion_v1/source/potion_cabinet.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/potion_cabinet_basic.png",
+        "res://assets/content_expansion_v1/equipment/potion_cabinet_improved.png",
+        "res://assets/content_expansion_v1/equipment/potion_cabinet_premium.png"
+      ]
+    },
+    {
+      "base_reused": false,
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/drying_rack_basic.png",
+      "id": "drying_rack",
+      "name": "건조대",
+      "reused": false,
+      "sheet": "equipment_3x1",
+      "source_path": "res://assets/content_expansion_v1/source/drying_rack.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/drying_rack_basic.png",
+        "res://assets/content_expansion_v1/equipment/drying_rack_improved.png",
+        "res://assets/content_expansion_v1/equipment/drying_rack_premium.png"
+      ]
+    },
+    {
+      "base_reused": false,
+      "category": "equipment",
+      "icon_path": "res://assets/content_expansion_v1/equipment/expedition_path_basic.png",
+      "id": "expedition_path",
+      "name": "원정 길 정비",
+      "reused": false,
+      "sheet": "equipment_3x1",
+      "source_path": "res://assets/content_expansion_v1/source/expedition_path.png",
+      "stage_assignment": "visual candidate; independent from gameplay level counts",
+      "status": "completed",
+      "tier_names": [
+        "기본",
+        "개량",
+        "고급"
+      ],
+      "tier_paths": [
+        "res://assets/content_expansion_v1/equipment/expedition_path_basic.png",
+        "res://assets/content_expansion_v1/equipment/expedition_path_improved.png",
+        "res://assets/content_expansion_v1/equipment/expedition_path_premium.png"
+      ]
+    }
+  ],
+  "candidate_designs": true,
+  "connected_to_game": false,
+  "content_basis": "res://docs/장기-콘텐츠-확장-기획안.md",
+  "design_date": "2026-10-08",
+  "edition": "expansion_v1",
+  "formats": {
+    "bottle": [
+      12.0,
+      16.0
+    ],
+    "growth_cell": [
+      32.0,
+      40.0
+    ],
+    "growth_sheet": [
+      64.0,
+      80.0
+    ],
+    "icon": [
+      32.0,
+      40.0
+    ]
+  },
+  "gameplay_values_included": false,
+  "legacy_preparation_artifacts": [
+    {
+      "path": "res://assets/expansion_v1/catalog.json",
+      "status": "initial_scaffold_superseded"
+    },
+    {
+      "path": "res://assets/expansion_v1/build_art.gd",
+      "status": "initial_export_tool_superseded"
+    },
+    {
+      "path": "res://assets/expansion_v1/production-status.json",
+      "status": "initial_scaffold_superseded"
+    },
+    {
+      "path": "res://assets/expansion_v1/scripts-before.json",
+      "status": "baseline_snapshot_preserved"
+    },
+    {
+      "path": "res://assets/source/expansion_v1/",
+      "status": "initial_empty_source_directory_preserved"
+    }
+  ],
+  "schema": 1.0,
+  "status": "design_assets_complete",
+  "summary": {
+    "asset_entries": 67,
+    "bottles": 32,
+    "connected_to_game": false,
+    "employee_roles": 4,
+    "equipment_basic_reused": 4,
+    "equipment_families": 8,
+    "equipment_tier_images": 24,
+    "fully_reused_entries": 10,
+    "growth_sheets": 10,
+    "materials": 11,
+    "new_source_sheets": 57,
+    "potion_families": 4,
+    "potions": 32,
+    "regions": 8
+  },
+  "support_assets": {
+    "equipment_tier_badges": [
+      "res://assets/content_expansion_v1/tiers/basic.svg",
+      "res://assets/content_expansion_v1/tiers/improved.svg",
+      "res://assets/content_expansion_v1/tiers/premium.svg"
+    ],
+    "training_rank_badges": [
+      "res://assets/content_expansion_v1/tiers/rank_1.svg",
+      "res://assets/content_expansion_v1/tiers/rank_2.svg",
+      "res://assets/content_expansion_v1/tiers/rank_3.svg",
+      "res://assets/content_expansion_v1/tiers/rank_4.svg",
+      "res://assets/content_expansion_v1/tiers/rank_5.svg"
+    ],
+    "status": "completed",
+    "note": "Shared stage markers; no economic levels assigned"
+  }
+}

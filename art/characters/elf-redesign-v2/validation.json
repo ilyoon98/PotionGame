@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "character": "elf",
+  "native_canvas": [
+    32,
+    48
+  ],
+  "body_rows": [
+    27,
+    39
+  ],
+  "legs_and_boots_rows": [
+    40,
+    46
+  ],
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "checks": {
+    "passed": true,
+    "size": [
+      32,
+      48
+    ],
+    "opaque_pixels": 444,
+    "colors": [
+      "#241C32",
+      "#718C59",
+      "#916047",
+      "#B5C77D",
+      "#F6D1AC"
+    ],
+    "color_count": 5,
+    "off_palette_colors": 0,
+    "partial_alpha_pixels": 0,
+    "problems": [],
+    "outline_boundary_violations": 0,
+    "top11_rows_clear": true,
+    "foot_row46": true,
+    "head_bounds": [
+      5,
+      11,
+      26,
+      27
+    ],
+    "head_fits22x16": true,
+    "waist_and_hem_widths": {
+      "35": 10,
+      "37": 12,
+      "38": 12,
+      "39": 10
+    },
+    "waist10_hem10to12": true,
+    "eyes": [
+      {
+        "pixels": [
+          [
+            11,
+            22
+          ],
+          [
+            11,
+            23
+          ]
+        ],
+        "isolated2_pixels": true,
+        "full1_pixel_skin_halo": true
+      },
+      {
+        "pixels": [
+          [
+            16,
+            22
+          ],
+          [
+            16,
+            23
+          ]
+        ],
+        "isolated2_pixels": true,
+        "full1_pixel_skin_halo": true
+      }
+    ],
+    "exact3x": true,
+    "protected_head_unchanged": true,
+    "opaque_components": 1,
+    "neck_enclosed_empty_pixels": 0
+  },
+  "existing_keyframes_replaced": false,
+  "runtime_integrated": false,
+  "costume_changed_pixels_rows27_to46": 143
+}

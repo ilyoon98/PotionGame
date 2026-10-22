@@ -1,0 +1,767 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/actions-v1/elf/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "carry_contact_a",
+      "source": "art/characters/actions-v1/elf/source/carry_contact_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              12,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              17,
+              22
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              16,
+              23
+            ],
+            [
+              17,
+              23
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              16,
+              24
+            ],
+            [
+              17,
+              24
+            ]
+          ],
+          "reason": "Preserve two equal eyes and1px skin halo at approved elf landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              22
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              16,
+              23
+            ]
+          ],
+          "reason": "Two isolated1x2 pupils on the same row."
+        }
+      ]
+    },
+    {
+      "id": "carry_pass_a",
+      "source": "art/characters/actions-v1/elf/source/carry_pass_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              12,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              17,
+              22
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              16,
+              23
+            ],
+            [
+              17,
+              23
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              16,
+              24
+            ],
+            [
+              17,
+              24
+            ]
+          ],
+          "reason": "Preserve two equal eyes and1px skin halo at approved elf landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              22
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              16,
+              23
+            ]
+          ],
+          "reason": "Two isolated1x2 pupils on the same row."
+        }
+      ],
+      "background_alpha_rectangles": [
+        {
+          "rect": [
+            23,
+            37,
+            24,
+            38
+          ],
+          "reason": "Trim one hanging-wrist boundary excess at shorts height; preserve the actual palm and rebuild its one-pixel outline in the material pipeline."
+        }
+      ]
+    },
+    {
+      "id": "carry_contact_b",
+      "source": "art/characters/actions-v1/elf/source/carry_contact_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              12,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              17,
+              22
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              16,
+              23
+            ],
+            [
+              17,
+              23
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              16,
+              24
+            ],
+            [
+              17,
+              24
+            ]
+          ],
+          "reason": "Preserve two equal eyes and1px skin halo at approved elf landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              22
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              16,
+              23
+            ]
+          ],
+          "reason": "Two isolated1x2 pupils on the same row."
+        }
+      ],
+      "background_alpha_rectangles": [
+        {
+          "rect": [
+            23,
+            37,
+            24,
+            38
+          ],
+          "reason": "Trim one hanging-wrist boundary excess at shorts height; preserve the actual palm and rebuild its one-pixel outline in the material pipeline."
+        }
+      ]
+    },
+    {
+      "id": "carry_pass_b",
+      "source": "art/characters/actions-v1/elf/source/carry_pass_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.27,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "hair_leather": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.73
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              12,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              12,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              12,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              12,
+              24
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              16,
+              21
+            ],
+            [
+              17,
+              21
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              17,
+              22
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              16,
+              23
+            ],
+            [
+              17,
+              23
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              16,
+              24
+            ],
+            [
+              17,
+              24
+            ]
+          ],
+          "reason": "Preserve two equal eyes and1px skin halo at approved elf landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              11,
+              22
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              16,
+              22
+            ],
+            [
+              16,
+              23
+            ]
+          ],
+          "reason": "Two isolated1x2 pupils on the same row."
+        }
+      ]
+    }
+  ]
+}

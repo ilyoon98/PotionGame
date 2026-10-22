@@ -1,0 +1,16 @@
+{
+  "method": "Built-in imagegen",
+  "assets": [
+    {
+      "source": "mana.png",
+      "runtime": "../mana_12x16.png",
+      "prompt": "Edit the reference pixel-art health potion into its matching MANA potion sibling for the same game. Preserve the same round squat glass bottle silhouette, chunky pixel grid, warm brown cork, dark plum outline, cream paper square label, generous transparent margin and front-facing camera. Change the pink liquid into rich cobalt blue with pale aqua highlights. Replace the heart on the paper label with a simple cyan four-point magic star. No other changes. Intended to be imported as a tiny 12x16 sprite; use simple readable pixel blocks, no tiny details, no text, no ground shadow, true transparent background. One bottle only."
+    },
+    {
+      "source": "mushroom.png",
+      "runtime": "../mushroom_24.png",
+      "prompt": "One inventory item icon for a cozy witch potion-shop pixel-art game: a small cluster of TWO moonlight mushrooms joined at the base. One larger cap and one smaller cap, blue-violet caps with three pale cyan glowing square dots, pale cream stems, dark plum outline. Simple chunky low-resolution pixel art intended for a 24x24 game sprite, large readable pixel clusters, front view, limited palette, clean silhouette. The mushrooms are a paid ingredient used to brew blue mana potions. Entire item centered with generous transparent margins, true transparent background, no environment, no ground shadow, no text, no label, no frame, no extra items, no gradients."
+    }
+  ],
+  "importer": "tools/prepare_mana.gd"
+}

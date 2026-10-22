@@ -1,0 +1,10 @@
+{
+  "id": "rare_mist_veil",
+  "variant": "potion",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Production pixel-art inventory icon for the cozy witch shop game. ONE isolated whole potion bottle centered on genuine transparent alpha, generous margin. Hard chunky square pixel clusters, dark plum #432039 stepped outline, antique gold #efc77c stopper, ivory glints, 4 flat shade clusters. Logical design must fit 32x40 pixels with a bold simple emblem; enlarge the pixel art cleanly for generation. Front orthographic view. No words, labels, lettering, watermark, outside particles, glow, soft shadow, background, ground, frame, gradients or blur. This is a rare potion but rarity is conveyed by silhouette and emblem only. Subject: TALL NARROW hexagonal bottle with straight sides and beveled corners, elongated angular body (never curvy hourglass). Liquid is muted deep teal turquoise. Emblem: three stacked pale aqua wave crests. The emblem is a simple large inlaid marking on the bottle body, no decorative clutter. Full bottle and cap visible.",
+  "date": "2026-10-08",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-ea717023-a647-41f1-be71-93cfb75f1bda.png",
+  "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_potion.png",
+  "transparent_background": true
+}

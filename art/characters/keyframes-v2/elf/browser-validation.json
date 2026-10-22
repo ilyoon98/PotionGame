@@ -1,0 +1,236 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:41239/art/characters/keyframes-v2/elf/review.html",
+  "images": [
+    {
+      "display": [
+        384,
+        288
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        128,
+        96
+      ],
+      "src": "elf-keyframes-native.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_contact_a.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_pass_a.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_contact_b.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/walk_pass_b.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/receive_extend.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/receive_hold.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/blink_idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/idle.png"
+    },
+    {
+      "display": [
+        24,
+        36
+      ],
+      "hasLayout": false,
+      "loaded": true,
+      "native": [
+        8,
+        12
+      ],
+      "src": "../../../mockups/full-ingame-v6/potions/bottles/health.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../../mockups/full-ingame-v7/characters/witch-native.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../elf-redesign-v2/elf-native.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "hasLayout": true,
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/idle.png"
+    }
+  ],
+  "visible_images_exact3x": true,
+  "walk_preview": {
+    "first": {
+      "playing": true,
+      "selected": "frames/walk_pass_a.png"
+    },
+    "second": {
+      "playing": true,
+      "selected": "frames/walk_pass_b.png"
+    },
+    "frame_changed": true
+  },
+  "receiving_extend_long_bottle": {
+    "bottle": {
+      "display": [
+        24,
+        48
+      ],
+      "left": "6px",
+      "loaded": true,
+      "native": [
+        8,
+        16
+      ],
+      "top": "75px",
+      "visible": true
+    },
+    "note": "민첩 · 긴 병 · 원본8×16 / 공통3배 · 손과 얼굴 가림을 확인하세요.",
+    "playing": false,
+    "selected": "frames/receive_extend.png"
+  },
+  "receiving_hold_long_bottle": {
+    "alt": "민첩 · 긴 병",
+    "display": [
+      24,
+      48
+    ],
+    "left": "36px",
+    "native": [
+      8,
+      16
+    ],
+    "selected": "frames/receive_hold.png",
+    "top": "90px",
+    "visible": true
+  },
+  "console_errors": [],
+  "screenshot": "browser-preview.png"
+}

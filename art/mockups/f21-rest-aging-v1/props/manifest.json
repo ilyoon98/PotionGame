@@ -1,0 +1,496 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f21-rest-aging-v1/props/pipeline",
+  "scene": {
+    "size": [
+      32,
+      32
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "aged_seal",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/aged_seal-registered.png",
+      "size": [
+        5,
+        5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold_shadow": [
+          "#A56A3D"
+        ],
+        "gold_mid": [
+          "#E9B95F"
+        ],
+        "gold_light": [
+          "#FFF0BC"
+        ]
+      },
+      "material_ramps": {
+        "gold_shadow": "gold",
+        "gold_mid": "gold",
+        "gold_light": "gold"
+      },
+      "rules": [
+        {
+          "material": "gold_shadow",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "gold_mid",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "gold_light",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        }
+      ],
+      "fallback_material": "gold_shadow"
+    },
+    {
+      "id": "aging_cask_floor",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/aging_cask_floor-registered.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood_shadow": [
+          "#50333B"
+        ],
+        "iron": [
+          "#827589"
+        ],
+        "wood_mid": [
+          "#916047"
+        ],
+        "wood_light": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "wood_shadow": "wood",
+        "iron": "stone",
+        "wood_mid": "wood",
+        "wood_light": "wood"
+      },
+      "rules": [
+        {
+          "material": "wood_shadow",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        },
+        {
+          "material": "iron",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "wood_mid",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "wood_light",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        }
+      ],
+      "fallback_material": "wood_shadow"
+    },
+    {
+      "id": "aging_cask_wall",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/aging_cask_wall-registered.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood_shadow": [
+          "#50333B"
+        ],
+        "iron": [
+          "#827589"
+        ],
+        "wood_mid": [
+          "#916047"
+        ],
+        "wood_light": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "wood_shadow": "wood",
+        "iron": "stone",
+        "wood_mid": "wood",
+        "wood_light": "wood"
+      },
+      "rules": [
+        {
+          "material": "wood_shadow",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        },
+        {
+          "material": "iron",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "wood_mid",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "wood_light",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        }
+      ],
+      "fallback_material": "wood_shadow"
+    },
+    {
+      "id": "bedroll_blanket",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/bedroll_blanket-registered.png",
+      "size": [
+        32,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "teal_shadow": [
+          "#24566A"
+        ],
+        "teal_mid": [
+          "#3BA8A3"
+        ],
+        "teal_light": [
+          "#9BE2CF"
+        ]
+      },
+      "material_ramps": {
+        "teal_shadow": "teal",
+        "teal_mid": "teal",
+        "teal_light": "teal"
+      },
+      "rules": [
+        {
+          "material": "teal_shadow",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        },
+        {
+          "material": "teal_mid",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        },
+        {
+          "material": "teal_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        }
+      ],
+      "fallback_material": "teal_shadow"
+    },
+    {
+      "id": "bedroll_mat",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/bedroll_mat-registered.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "teal_shadow": [
+          "#24566A"
+        ],
+        "teal_mid": [
+          "#3BA8A3"
+        ],
+        "teal_light": [
+          "#9BE2CF"
+        ]
+      },
+      "material_ramps": {
+        "teal_shadow": "teal",
+        "teal_mid": "teal",
+        "teal_light": "teal"
+      },
+      "rules": [
+        {
+          "material": "teal_shadow",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        },
+        {
+          "material": "teal_mid",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        },
+        {
+          "material": "teal_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        }
+      ],
+      "fallback_material": "teal_shadow"
+    },
+    {
+      "id": "dizzy_star",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/dizzy_star-registered.png",
+      "size": [
+        5,
+        5
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold_mid": [
+          "#E9B95F"
+        ],
+        "gold_light": [
+          "#FFF0BC"
+        ]
+      },
+      "material_ramps": {
+        "gold_mid": "gold",
+        "gold_light": "gold"
+      },
+      "rules": [
+        {
+          "material": "gold_mid",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "gold_light",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        }
+      ],
+      "fallback_material": "gold_mid"
+    },
+    {
+      "id": "sleep_z",
+      "source": "art/mockups/f21-rest-aging-v1/props/source/sleep_z-registered.png",
+      "size": [
+        6,
+        7
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold_light": [
+          "#FFF0BC"
+        ]
+      },
+      "material_ramps": {
+        "gold_light": "gold"
+      },
+      "rules": [
+        {
+          "material": "gold_light",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        }
+      ],
+      "fallback_material": "gold_light"
+    }
+  ]
+}

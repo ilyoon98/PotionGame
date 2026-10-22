@@ -1,0 +1,164 @@
+{
+  "id": "unknown_recipe_map",
+  "name": "특별 레시피 · 미발견 지도",
+  "date": "2026-10-13",
+  "category": "shared_discovery_ui",
+  "status": "design_complete",
+  "connection_status": "awaiting_game_integration",
+  "connected_to_game": false,
+  "planning_review": {
+    "status": "approved",
+    "date": "2026-10-13",
+    "source_thread_id": "01a114c8-5351-7b43-bfe2-5a0b92e37ee6",
+    "checks": [
+      "32x40 RGBA transparency",
+      "map and question mark readability",
+      "no recipe identity clues",
+      "manifest preservation report"
+    ],
+    "development_handoff": "asset_path_and_sha256_delivered_by_planning",
+    "additional_art_revision_required": false
+  },
+  "asset_path": "res://assets/rare_discovery_ui_v1/unknown_recipe_map.png",
+  "preview_path": "res://assets/rare_discovery_ui_v1/preview.png",
+  "format": "PNG RGBA",
+  "size": [
+    32,
+    40
+  ],
+  "shared_across_special_recipes": true,
+  "identity_markers": "none",
+  "usage": "미발견 특별 레시피의 공용 표시. 발견 뒤 전용 레시피 아이콘으로 전환하는 런타임 연결은 개발 담당.",
+  "visual_review": {
+    "passed": true,
+    "reviewed_at_native_and_4x": true,
+    "map_readable": true,
+    "question_mark_readable": true,
+    "no_specific_potion_color_emblem_or_name": true
+  },
+  "validation": {
+    "width": 32,
+    "height": 40,
+    "transparent_pixels": 747,
+    "opaque_pixels": 3,
+    "partial_alpha_pixels": 530,
+    "transparent_corners": true,
+    "passed": true,
+    "preview_size": [
+      280,
+      224
+    ]
+  },
+  "preservation": {
+    "passed": true,
+    "checked": 14,
+    "files": [
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\catalog.json",
+        "before": "67C9207B56E6FA5F040783AB0B6D4426125B89E1ED154C56C4CF6DF181FF60FA",
+        "after": "67C9207B56E6FA5F040783AB0B6D4426125B89E1ED154C56C4CF6DF181FF60FA",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\content_expansion_v1\\regions\\forest_edge_icon.png",
+        "before": "6403AF3F7724A543CD3B78B67BD1E37C503E5ABC47EFD98D4B01B627F7A1E9E8",
+        "after": "6403AF3F7724A543CD3B78B67BD1E37C503E5ABC47EFD98D4B01B627F7A1E9E8",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_forest_breath_icon.png",
+        "before": "A51A4F4A87FBF8DB51D3FEB55804C6B779AA79BF077DE32FDF3D555F08B61E44",
+        "after": "A51A4F4A87FBF8DB51D3FEB55804C6B779AA79BF077DE32FDF3D555F08B61E44",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_forest_breath_12x16.png",
+        "before": "C671E7BC19190AAF6914D4CA3D412A1D72D237864E692CA8C9AF4FB2D375FF88",
+        "after": "C671E7BC19190AAF6914D4CA3D412A1D72D237864E692CA8C9AF4FB2D375FF88",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\recipes\\rare_forest_breath_recipe.png",
+        "before": "D5646DC81516EA42ECF2A24F7E26153CF76AA5EEF8649C34FF5C3FC900D065BB",
+        "after": "D5646DC81516EA42ECF2A24F7E26153CF76AA5EEF8649C34FF5C3FC900D065BB",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_mist_veil_icon.png",
+        "before": "A8986CD78C56BFD3EA2AE20F16089169D898AC036D262A3B294559C070E82DDC",
+        "after": "A8986CD78C56BFD3EA2AE20F16089169D898AC036D262A3B294559C070E82DDC",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_mist_veil_12x16.png",
+        "before": "16342C9D53471C2514D4ED90D266A37CB9A9779FBE1CB707D50CC9D3D4B354FF",
+        "after": "16342C9D53471C2514D4ED90D266A37CB9A9779FBE1CB707D50CC9D3D4B354FF",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\recipes\\rare_mist_veil_recipe.png",
+        "before": "F1332FDD6EF95FC7FCC9880FF7267066BB7316D541B78B8766B11484BFFEF7E1",
+        "after": "F1332FDD6EF95FC7FCC9880FF7267066BB7316D541B78B8766B11484BFFEF7E1",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_lunar_seal_icon.png",
+        "before": "A9920CA141A096208B79F941A3033CFB307435B5942DAFC7B4EDE868CED2D07A",
+        "after": "A9920CA141A096208B79F941A3033CFB307435B5942DAFC7B4EDE868CED2D07A",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_lunar_seal_12x16.png",
+        "before": "DEDB7B5BB0803C2FA039EBEC96B7B394E0928231549B71C4DC90F7420EBEA6A6",
+        "after": "DEDB7B5BB0803C2FA039EBEC96B7B394E0928231549B71C4DC90F7420EBEA6A6",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\recipes\\rare_lunar_seal_recipe.png",
+        "before": "2EA336265B897A139247BF697E7A2BC5680A053DBEB98D48B1D3698950C76A26",
+        "after": "2EA336265B897A139247BF697E7A2BC5680A053DBEB98D48B1D3698950C76A26",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_nebula_distillate_icon.png",
+        "before": "3BD14645DD8B13E837919D0A160EEF3720113212117B0957B18A4C47A4699A98",
+        "after": "3BD14645DD8B13E837919D0A160EEF3720113212117B0957B18A4C47A4699A98",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\potions\\rare_nebula_distillate_12x16.png",
+        "before": "2FE6DC2580F237B2AF7FE7215092754A10614D23AA440B6FA46A5FBD91A1536A",
+        "after": "2FE6DC2580F237B2AF7FE7215092754A10614D23AA440B6FA46A5FBD91A1536A",
+        "preserved": true
+      },
+      {
+        "path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\rare_recipes_v1\\recipes\\rare_nebula_distillate_recipe.png",
+        "before": "E28E8316F7F4895539F64CE93546E80AF8E8B34613B61D00499A00E51CD7EA2C",
+        "after": "E28E8316F7F4895539F64CE93546E80AF8E8B34613B61D00499A00E51CD7EA2C",
+        "preserved": true
+      }
+    ]
+  },
+  "sha256": {
+    "icon": "A5DEA5B46B7D38203099A9BA4AF26CBA86E2474FCC31EDB63512C613B5A98628",
+    "preview": "69C90E491D05D3753100198FD322A78221D943B2421A99E0D5F864AC45DFDEF6"
+  },
+  "generation": {
+    "mode": "built-in image_gen",
+    "transparent_background": true,
+    "prompt": "Use case: stylized-concept. Asset type: exactly one UI inventory icon for an undiscovered special recipe, logical32x40 pixel art. Primary request: a small unfolded accordion parchment MAP with one large clearly readable '?' question mark centered on the paper. It must communicate unknown discovery with no identity clues. Front orthographic, whole object visible, generous truly transparent alpha margins. Medium: strict chunky square-pixel clusters, dark plum #432039 stepped outline, warm ivory parchment #f0dfc4, ochre/gold folded edges #efc77c, muted brown creases, maximum4 flat shade clusters per surface. Map should look like an unfolded three-panel folded map with slightly uneven pointed paper corners, not a rolled recipe scroll or a rectangular UI card. Include only two very faint generic map route strokes away from the center; no identifiable geography or landmarks. The central question mark is dark plum, bold, a solid chunky hooked upper stroke and a clearly separated square dot, roughly10 logical pixels wide and16 pixels high, strong ivory negative space around it; it must remain legible at native32x40. Text verbatim: '?', exactly one symbol, no other text. No bottle, potion color patch, colored seal, leaf, waves, moon, star, rune, letter, numeral, X mark, compass, legend, terrain scene, sparkle, particles, glow, shadow, gradients, blur, watermark or external frame. Clean transparent background, no floor. This is a generic shared hidden-identity icon, neutral parchment palette only.",
+    "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-576d57fc-1353-4c24-bf0a-af8fd62ad4ca.png",
+    "original_retained": true,
+    "normalization": "Opaque subject bounds fit inside 30x38 with nearest-neighbor scaling into a 32x40 transparent canvas; generated alpha preserved."
+  },
+  "scope": {
+    "new_project_files": [
+      "unknown_recipe_map.png",
+      "manifest.json",
+      "preview.png"
+    ],
+    "existing_art_catalog_code_scenes_economy_and_saves_modified": false,
+    "computer_use_or_gui_used": false,
+    "preview_render": "In-memory System.Drawing file render, no window or input"
+  }
+}

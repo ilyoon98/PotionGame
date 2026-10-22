@@ -1,0 +1,56 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "jobs": [
+    {
+      "name": "sun",
+      "size": [
+        24,
+        24
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE isolated weather game sprite asset on a truly TRANSPARENT background, for a cozy tiny fantasy potion shop that floats over a desktop with no rectangular game background. Genuine coarse low-resolution PIXEL ART consistent with 48x64 character sprites, 1 logical pixel dark muted plum outline, clean chunky square pixel clusters, limited 3-4 tone palette per material, nearest-neighbor appearance, no antialiasing, no gradients, no glow haze. Warm gentle storybook fantasy feeling. The object must read clearly over BOTH dark and light desktop windows: restrained dark-plum outline on bright shapes, a lighter visible upper edge on dark shapes. Complete uncropped object centered with transparent margin. NO ground, NO sky backdrop, NO scenery, NO label/text/UI, NO character face, NO emoji expression, NO watermark, NO other weather symbols unless specifically requested. This is an individual importable sprite, NOT a sheet or contact board. DAY / CLEAR SKY SUN ONLY. A small round warm pale-gold sun disk with 8 short chunky golden sun rays, cozy buttery yellow center, amber lower edge. Very simple and readable at 24x24 logical pixels. No cloud, no moon, no stars, no face, no halo. All eight rays discrete bold pixel shapes, no long thin spiky rays."
+    },
+    {
+      "name": "moon",
+      "size": [
+        24,
+        32
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE isolated weather game sprite asset on a truly TRANSPARENT background, for a cozy tiny fantasy potion shop that floats over a desktop with no rectangular game background. Genuine coarse low-resolution PIXEL ART consistent with 48x64 character sprites, 1 logical pixel dark muted plum outline, clean chunky square pixel clusters, limited 3-4 tone palette per material, nearest-neighbor appearance, no antialiasing, no gradients, no glow haze. Warm gentle storybook fantasy feeling. The object must read clearly over BOTH dark and light desktop windows: restrained dark-plum outline on bright shapes, a lighter visible upper edge on dark shapes. Complete uncropped object centered with transparent margin. NO ground, NO sky backdrop, NO scenery, NO label/text/UI, NO character face, NO emoji expression, NO watermark, NO other weather symbols unless specifically requested. This is an individual importable sprite, NOT a sheet or contact board. NIGHT CRESCENT MOON ONLY. Elegant pale ivory crescent with softly cool lilac lower shadow, dark plum edge. Clear open hollow on right is genuinely transparent, NOT filled with a sky-colored disk. Sprite target 24x32 logical pixels, simple beautiful moon silhouette, no dangling ornaments, no stars, no cloud, no halo glow."
+    },
+    {
+      "name": "star",
+      "size": [
+        8,
+        8
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE isolated weather game sprite asset on a truly TRANSPARENT background, for a cozy tiny fantasy potion shop that floats over a desktop with no rectangular game background. Genuine coarse low-resolution PIXEL ART consistent with 48x64 character sprites, 1 logical pixel dark muted plum outline, clean chunky square pixel clusters, limited 3-4 tone palette per material, nearest-neighbor appearance, no antialiasing, no gradients, no glow haze. Warm gentle storybook fantasy feeling. The object must read clearly over BOTH dark and light desktop windows: restrained dark-plum outline on bright shapes, a lighter visible upper edge on dark shapes. Complete uncropped object centered with transparent margin. NO ground, NO sky backdrop, NO scenery, NO label/text/UI, NO character face, NO emoji expression, NO watermark, NO other weather symbols unless specifically requested. This is an individual importable sprite, NOT a sheet or contact board. ONE SINGLE FOUR-POINT TWINKLING STAR ONLY. Target 8x8 logical pixels! Very tiny and simple, pale ivory/gold plus subdued dark lilac outline. Diamond-like short vertical and horizontal rays, only a handful of large square pixels, no glow, no particle field, no other stars. Can be instanced multiple times for night sky."
+    },
+    {
+      "name": "cloud_clear",
+      "size": [
+        64,
+        24
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE isolated weather game sprite asset on a truly TRANSPARENT background, for a cozy tiny fantasy potion shop that floats over a desktop with no rectangular game background. Genuine coarse low-resolution PIXEL ART consistent with 48x64 character sprites, 1 logical pixel dark muted plum outline, clean chunky square pixel clusters, limited 3-4 tone palette per material, nearest-neighbor appearance, no antialiasing, no gradients, no glow haze. Warm gentle storybook fantasy feeling. The object must read clearly over BOTH dark and light desktop windows: restrained dark-plum outline on bright shapes, a lighter visible upper edge on dark shapes. Complete uncropped object centered with transparent margin. NO ground, NO sky backdrop, NO scenery, NO label/text/UI, NO character face, NO emoji expression, NO watermark, NO other weather symbols unless specifically requested. This is an individual importable sprite, NOT a sheet or contact board. ONE SMALL FAIR-WEATHER CLOUD ONLY. Target 64x24 logical pixels, a low wide gently scalloped cumulus silhouette about 3:1 width to height, three rounded chunky lobes on top and a simple flatter underside. Warm ivory white sunlit top and muted lavender-grey bottom shadow. Light and cozy, simplified pixel clusters. No rain whatsoever, no sun or moon inside or behind it, no mist, no scattered disconnected clouds."
+    },
+    {
+      "name": "cloud_rain",
+      "size": [
+        96,
+        32
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE isolated weather game sprite asset on a truly TRANSPARENT background, for a cozy tiny fantasy potion shop that floats over a desktop with no rectangular game background. Genuine coarse low-resolution PIXEL ART consistent with 48x64 character sprites, 1 logical pixel dark muted plum outline, clean chunky square pixel clusters, limited 3-4 tone palette per material, nearest-neighbor appearance, no antialiasing, no gradients, no glow haze. Warm gentle storybook fantasy feeling. The object must read clearly over BOTH dark and light desktop windows: restrained dark-plum outline on bright shapes, a lighter visible upper edge on dark shapes. Complete uncropped object centered with transparent margin. NO ground, NO sky backdrop, NO scenery, NO label/text/UI, NO character face, NO emoji expression, NO watermark, NO other weather symbols unless specifically requested. This is an individual importable sprite, NOT a sheet or contact board. ONE BROAD RAIN CLOUD ONLY, absolutely ZERO raindrops. Target 96x32 logical pixels, low horizontally wide 3:1 storm cloud canopy to float above a tiny shop. Soft plump scalloped lobes forming ONE CONNECTED cloud with gently flattened underside. Muted slate-blue / lavender-grey upper lobes, dark desaturated plum-blue underside, fine pale lavender highlight along upper edges so visible on dark desktop. Moody but cozy and gentle, NOT a violent thunderstorm. No lightning, no rain streaks, no falling drops, no sun, no moon, no fog, no rectangular background."
+    },
+    {
+      "name": "rain",
+      "size": [
+        96,
+        96
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE isolated weather game sprite asset on a truly TRANSPARENT background, for a cozy tiny fantasy potion shop that floats over a desktop with no rectangular game background. Genuine coarse low-resolution PIXEL ART consistent with 48x64 character sprites, 1 logical pixel dark muted plum outline, clean chunky square pixel clusters, limited 3-4 tone palette per material, nearest-neighbor appearance, no antialiasing, no gradients, no glow haze. Warm gentle storybook fantasy feeling. The object must read clearly over BOTH dark and light desktop windows: restrained dark-plum outline on bright shapes, a lighter visible upper edge on dark shapes. Complete uncropped object centered with transparent margin. NO ground, NO sky backdrop, NO scenery, NO label/text/UI, NO character face, NO emoji expression, NO watermark, NO other weather symbols unless specifically requested. This is an individual importable sprite, NOT a sheet or contact board. ONLY FALLING RAIN PARTICLES as a separate transparent layer. Target canvas 96x96 logical pixels. A sparse irregular distribution of exactly 18 small pale blue-silver pixel rain STREAKS, all tilted slightly diagonally from upper right to lower left, each just 1 or 2 logical pixels wide and 5 to 9 logical pixels long, spaced far apart. At least 90% of canvas completely transparent. Each streak has a dark muted slate-blue shadow edge and a pale icy-blue highlight to remain visible on a desktop. Use several lengths and staggered heights, no exact rows, no central focal point. Spread evenly through a square area leaving small transparent margins. NO CLOUDS AT ALL, no sun/moon, no water surface, no splashes, no fog, no background wash, no large cartoon teardrop symbols. No semiopaque rectangle; only the sparse discrete streaks should have any alpha."
+    }
+  ],
+  "cloud_clear_refinement": "Edit this single pixel cloud asset. Preserve the exact cloud silhouette, warm ivory fill, lavender lower shading and chunky pixel art. REMOVE ALL the purple glow/halo/mist around the cloud completely. There must be precisely ZERO alpha outside the hard stepped dark-plum pixel outline. Truly transparent empty background right up to the clean hard edge. No shadow, no glow, no haze, no feathering, no blurred pixels, no sky rectangle. ONE isolated fair-weather cloud only, same wide proportions. No other modifications.",
+  "processing": "tools/prepare_weather_art.gd; nearest neighbor, alpha threshold to remove generation fringes"
+}

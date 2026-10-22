@@ -1,0 +1,282 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "native_canvas": [
+    32,
+    48
+  ],
+  "scale": 3,
+  "source": "art/mockups/full-ingame-v5/characters/",
+  "face_masks": {
+    "witch": [
+      [
+        13,
+        20,
+        16,
+        23
+      ],
+      [
+        14,
+        19,
+        17,
+        23
+      ],
+      [
+        17,
+        19,
+        20,
+        23
+      ]
+    ],
+    "elf": [
+      [
+        9,
+        20,
+        12,
+        24
+      ],
+      [
+        14,
+        20,
+        17,
+        24
+      ]
+    ]
+  },
+  "eye_coordinates": {
+    "witch": [
+      [
+        15,
+        20
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        18,
+        20
+      ],
+      [
+        18,
+        21
+      ]
+    ],
+    "elf": [
+      [
+        10,
+        21
+      ],
+      [
+        10,
+        22
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        22
+      ]
+    ]
+  },
+  "checks": {
+    "witch": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              15,
+              20
+            ],
+            [
+              15,
+              21
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "dark_component_pixels": 2,
+          "dark_component_8_pixels": 2,
+          "skin_margin_one_pixel": true,
+          "separate_from_hair": true
+        },
+        {
+          "pixels": [
+            [
+              18,
+              20
+            ],
+            [
+              18,
+              21
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "dark_component_pixels": 2,
+          "dark_component_8_pixels": 2,
+          "skin_margin_one_pixel": true,
+          "separate_from_hair": true
+        }
+      ],
+      "outline_boundary_violations": 0
+    },
+    "elf": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 487,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "dark_component_pixels": 2,
+          "dark_component_8_pixels": 2,
+          "skin_margin_one_pixel": true,
+          "separate_from_hair": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "dark_component_pixels": 2,
+          "dark_component_8_pixels": 2,
+          "skin_margin_one_pixel": true,
+          "separate_from_hair": true
+        }
+      ],
+      "outline_boundary_violations": 0
+    }
+  },
+  "elf_head_size_preserved": true,
+  "elf_upper_head_pixels_preserved": true,
+  "elf_hands_and_sleeves_preserved": true,
+  "elf_legs_and_feet_from_row_40_preserved": true,
+  "male_clothes_and_body_preserved": true,
+  "feet_native_row": 46,
+  "elf_fabric_rows": {
+    "34": [
+      11,
+      20
+    ],
+    "35": [
+      11,
+      20
+    ],
+    "36": [
+      11,
+      20
+    ],
+    "37": [
+      10,
+      21
+    ],
+    "38": [
+      10,
+      21
+    ],
+    "39": [
+      10,
+      21
+    ]
+  },
+  "elf_waist_width": 10,
+  "elf_hem_width": 12,
+  "elf_neck_joint_repair": {
+    "pixels": [
+      [
+        18,
+        26
+      ],
+      [
+        19,
+        26
+      ]
+    ],
+    "pixel_count": 2,
+    "color": "#241C32"
+  },
+  "repaired_boundary_pixels": {
+    "witch": 0,
+    "elf": 12
+  },
+  "face_core": {
+    "witch": {
+      "bounds": [
+        12,
+        17,
+        21,
+        24
+      ],
+      "width": 9,
+      "height": 7,
+      "skin_pixels": 34,
+      "measurement": "largest 4-connected skin component, ears excluded"
+    },
+    "elf": {
+      "bounds": [
+        9,
+        18,
+        19,
+        26
+      ],
+      "width": 10,
+      "height": 8,
+      "skin_pixels": 55,
+      "measurement": "largest 4-connected skin component, ears excluded"
+    }
+  },
+  "text_rendering": "Normal font, excluded from sprite color inspection"
+}

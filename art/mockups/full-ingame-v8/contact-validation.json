@@ -1,0 +1,3324 @@
+{
+  "status": "passed",
+  "customer_count": 4,
+  "recipe_count": 36,
+  "paired_handovers": 144,
+  "customer_pose_direction_contacts": 1440,
+  "world_shared_floor_row": 78,
+  "transfer_position_jump_pixels": 0,
+  "same_customer_bottle_local_grip_until_exit": true,
+  "checks": [
+    {
+      "customer": "traveler",
+      "recipe": "health",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "mana",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        4,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "moon",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "purify",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "agility",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "vigor",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        7,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "antidote",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        4,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "fortune",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "focus",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "restoration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "growth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "clarity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "ward",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "spirit",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "arcane_amplification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "iron_skin",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "stealth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        7,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "poison_resistance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "illusion",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "soul_purification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "wisdom",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "reflection",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "haste",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "nightwalk",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "moonradiance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        4,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "regeneration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "starlight",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "wish",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "eternity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "sage_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "worldtree_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "shadow_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_forest_breath",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        4,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_mist_veil",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_lunar_seal",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_nebula_distillate",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        2
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "health",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "mana",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        4
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "moon",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "purify",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "agility",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "vigor",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        7,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "antidote",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        4
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "fortune",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "focus",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "restoration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "growth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "clarity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "ward",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "spirit",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "arcane_amplification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "iron_skin",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "stealth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        7,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "poison_resistance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "illusion",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "soul_purification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "wisdom",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "reflection",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "haste",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "nightwalk",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "moonradiance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        4
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "regeneration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "starlight",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "wish",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "eternity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "sage_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        6,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "worldtree_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "shadow_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_forest_breath",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        4
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_mist_veil",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_lunar_seal",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_nebula_distillate",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        3,
+        28
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        5
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "health",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "mana",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "moon",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "purify",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "agility",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "vigor",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "antidote",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "fortune",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "focus",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "restoration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "growth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "clarity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "ward",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "spirit",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "arcane_amplification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "iron_skin",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "stealth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "poison_resistance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "illusion",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "soul_purification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "wisdom",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "reflection",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "haste",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "nightwalk",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "moonradiance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "regeneration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "starlight",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "wish",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        4,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "eternity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "sage_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "worldtree_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "shadow_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_forest_breath",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_mist_veil",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_lunar_seal",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_nebula_distillate",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        6,
+        29
+      ],
+      "keeper_local_grip": [
+        2,
+        4
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "health",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "mana",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "moon",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "purify",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "agility",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "vigor",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "antidote",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "fortune",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "focus",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "restoration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "growth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "clarity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "ward",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "spirit",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "arcane_amplification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "iron_skin",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "stealth",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "poison_resistance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "illusion",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "soul_purification",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "wisdom",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "reflection",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "haste",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "nightwalk",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "moonradiance",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "regeneration",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "starlight",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "wish",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        4,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "eternity",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        7,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "sage_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "worldtree_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "shadow_elixir",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_forest_breath",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_mist_veil",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        5,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_lunar_seal",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_nebula_distillate",
+      "head_overlap": 0,
+      "shared_keeper_palm": [
+        28,
+        27
+      ],
+      "shared_customer_palm": [
+        4,
+        30
+      ],
+      "keeper_local_grip": [
+        2,
+        3
+      ],
+      "customer_local_grip": [
+        6,
+        6
+      ],
+      "customer_pose_direction_checks": 10,
+      "passed": true
+    }
+  ]
+}

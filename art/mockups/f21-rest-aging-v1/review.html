@@ -1,0 +1,108 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F21 수면·기절·숙성 후보</title><style>
+@font-face{font-family:Pretendard;src:url('../../../assets/fonts/pretendard/Pretendard-Regular.otf')}
+:root{--bg:#241c32;--panel:#30263f;--line:#827589;--text:#fff0bc;--muted:#c38eb5;--accent:#e9b95f;--ok:#b5c77d;--bad:#de7356}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Pretendard,system-ui,sans-serif}
+main{max-width:1000px;margin:auto;padding:18px 16px 40px}h1{font-size:23px;margin:0 0 6px}h2{font-size:17px;margin:26px 0 8px}h3{font-size:15px;margin:14px 0 6px}
+p{margin:6px 0 10px}.muted{color:var(--muted)}a{color:var(--accent)}code{font-size:13px;color:var(--muted)}
+.note{border-left:3px solid #718c59;padding:8px 12px;background:var(--panel);margin:10px 0}.warn{border-left-color:var(--accent)}
+.check{background-color:#4a3c52;background-image:linear-gradient(45deg,#3f3347 25%,transparent 25%),linear-gradient(-45deg,#3f3347 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#3f3347 75%),linear-gradient(-45deg,transparent 75%,#3f3347 75%);background-size:24px 24px;background-position:0 0,0 12px,12px -12px,-12px 0}
+img{image-rendering:pixelated;max-width:none}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+button{font:inherit;color:var(--text);background:#4a3c52;border:1px solid var(--line);padding:6px 10px;cursor:pointer;border-radius:4px}button[aria-pressed=true]{border-color:var(--accent);background:#50315f}
+.stage-wrap{overflow-x:auto;border:1px solid var(--line)}.stage{position:relative;width:540px;height:249px}.stage img{position:absolute;inset:0;width:540px;height:249px}
+.status{position:absolute;left:111px;top:66px;width:108px;height:24px;display:flex;align-items:center;justify-content:center;background:#241c32;border:1px solid #e9b95f;color:#fff0bc;font-size:13px;border-radius:3px}
+.grid{display:flex;flex-wrap:wrap;gap:12px}figure{margin:0;text-align:center}figure .check{display:flex;align-items:flex-end;justify-content:center;padding:6px}figcaption{font-size:12px;color:var(--muted);margin-top:4px;max-width:170px}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border-bottom:1px solid #4a3c52;padding:5px 6px;text-align:left;vertical-align:top}th{color:var(--muted);font-weight:normal}
+.ok{color:var(--ok)}.bad{color:var(--bad)}.table-wrap{overflow-x:auto}
+.decide{display:grid;gap:8px}.decide div{background:var(--panel);padding:8px 12px;border-radius:4px}
+.swatches{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}.swatches span{display:flex;gap:4px;align-items:center}.swatches i{width:14px;height:14px;background:var(--c);display:inline-block;border:1px solid #000}
+</style></head><body><main>
+<h1>F21 수면·기절·숙성 아트 후보 v1</h1>
+<p class="muted">후보 단계입니다. 게임(<code>scripts/</code>, <code>assets/</code>, 저장)은 바꾸지 않았습니다. 승인 전까지 런타임에 연결하지 않습니다.</p>
+<p id="overall"></p>
+
+<h2>정해 주실 것</h2>
+<div class="decide">
+<div><b>1. 수면 위치</b>: <b>A 제자리에 앉아 졸기 (추천)</b> 또는 <b>B 깔개 위에서 이불 덮기</b>. 둘 다 주인공 자리(216,96) 안에 들어가고 다른 가구를 옮기지 않습니다.</div>
+<div><b>2. 기절 포즈</b>: 머리를 뒤로 젖히고 손은 바닥에 떨군 채 앉아 있는 자세 + 머리 위를 도는 별. 받아들일지, 다른 방향(예: 완전히 쓰러진 포즈, 아래 메모 참고)을 원하는지.</div>
+<div><b>3. 숙성통 위치</b>: <b>벽 선반에 눕힌 숙성통 (추천, 표시 위치 219,0)</b> 또는 <b>판매대 왼쪽 끝 앞에 세운 통 (대안)</b>.</div>
+<div><b>4. 숙성 표식</b>: 기존 병 36종 위에 덧그리는 5×5 금색 인장. 병 그림은 바꾸지 않습니다.</div>
+</div>
+
+<h2>작업실 미리보기 · 540×249 · 공통 3배</h2>
+<div class="controls" id="variants"></div>
+<div class="controls"><button id="play" aria-pressed="true">일시정지</button><span class="muted" id="frame-label"></span></div>
+<div class="stage-wrap check"><div class="stage" id="stage"><img id="scene" alt="작업실 미리보기"><div class="status" id="status"></div></div></div>
+<p class="muted" id="variant-note"></p>
+<p class="muted">8단계 반복, 단계당 375ms(호흡 3초 주기). 노란 테두리 상자는 기존 솥 상태 패널 위치에 런타임 글자(“수면 중”/“기절”)가 뜨는 곳을 보여주는 일반 DOM 글자입니다. 체크무늬는 CSS 배경이며 PNG에는 들어 있지 않습니다.</p>
+
+<h2>스프라이트 원본 · 3배</h2>
+<div class="swatches"><span><i style="--c:#241C32"></i>외곽선·눈</span><span><i style="--c:#F6D1AC"></i>피부·셔츠</span><span><i style="--c:#916047"></i>머리·반바지·부츠</span><span><i style="--c:#86548E"></i>모자·망토</span><span><i style="--c:#E9B95F"></i>장식</span><span class="muted">주인공 승인 5색만 사용, 새 색 0</span></div>
+<h3>주인공 32×48</h3>
+<div class="grid">
+<figure><div class="check"><img src="../../characters/keyframes-v4/keeper/pipeline/idle-3x.png" width="96" height="144" alt=""></div><figcaption>참고: 승인된 대기(기존)</figcaption></figure>
+<figure><div class="check"><img src="sprites/sleep_sit-3x.png" width="96" height="144" alt=""></div><figcaption>수면 · 숨 내쉼</figcaption></figure>
+<figure><div class="check"><img src="sprites/sleep_sit_breath-3x.png" width="96" height="144" alt=""></div><figcaption>수면 · 숨 들이쉼 (상체 1픽셀 위)</figcaption></figure>
+<figure><div class="check"><img src="sprites/faint-3x.png" width="96" height="144" alt=""></div><figcaption>기절</figcaption></figure>
+</div>
+<h3>소품</h3>
+<div class="grid">
+<figure><div class="check"><img src="sprites/aging_cask_wall-3x.png" width="96" height="96" alt=""></div><figcaption>숙성통 · 벽 선반형 32×32</figcaption></figure>
+<figure><div class="check"><img src="sprites/aging_cask_floor-3x.png" width="96" height="96" alt=""></div><figcaption>숙성통 · 바닥형 32×32</figcaption></figure>
+<figure><div class="check"><img src="sprites/bedroll_mat-3x.png" width="96" height="96" alt=""></div><figcaption>B안 깔개 32×32 (주인공 뒤)</figcaption></figure>
+<figure><div class="check"><img src="sprites/bedroll_blanket-3x.png" width="96" height="48" alt=""></div><figcaption>B안 이불 32×16 (주인공 앞)</figcaption></figure>
+<figure><div class="check"><img src="sprites/sleep_z-3x.png" width="18" height="21" alt=""></div><figcaption>수면 Z 6×7</figcaption></figure>
+<figure><div class="check"><img src="sprites/dizzy_star-3x.png" width="15" height="15" alt=""></div><figcaption>기절 별 5×5</figcaption></figure>
+<figure><div class="check"><img src="sprites/aged_seal-3x.png" width="15" height="15" alt=""></div><figcaption>숙성 인장 5×5</figcaption></figure>
+</div>
+
+<h2>숙성 인장 · 기존 물약 36종 위에 덧그리기</h2>
+<div class="stage-wrap check" style="display:inline-block;max-width:100%"><img src="aged-seal-36-3x.png" width="504" height="180" alt="36종 병과 숙성 인장"></div>
+<p class="muted">인장 왼쪽 위 = (병 너비−3, 병 높이−6). 병 오른쪽 아래 어깨에 붙고 오른쪽으로 2픽셀 걸쳐 나옵니다. 마개·목은 가리지 않습니다. 병 PNG는 읽기만 했고 SHA-256을 기록했습니다.</p>
+
+<h2>검사 결과</h2>
+<div class="table-wrap"><table id="checks"></table></div>
+
+<h2>제외한 위치 안</h2>
+<div class="note warn"><b>해먹</b>: 걸 자리가 없습니다. 솥(123~219)과 선반 기둥(315) 사이에 걸면 솥 상태 패널(111,66~219,90)과 솥 윗부분을 가립니다.<br><b>책상에 엎드리기</b>: 작업실에 책상이 없고, 판매대(315~459)는 손님 대기·병 전달 경로라 주인공이 옮겨 가면 판매 연출과 겹칩니다.<br><b>누워서 자기/완전히 쓰러진 기절</b>: 전신을 눕히면 32×48 칸에 들어가지 않습니다(모자 없이도 머리 14 + 몸 23행). 하려면 48×32 가로 칸 예외 승인이 필요합니다.</div>
+
+<h2>제작 방식</h2>
+<div class="note">이 세션에는 이미지 생성 도구가 없어 원본 격자 32×48에서 픽셀 지도(<code>source/*.txt</code>)를 직접 작성했습니다. 머리·모자는 승인된 v4 대기 그림의 픽셀을 그대로 옮기고, 바꾼 것은 감은 눈(열린 1×2 눈의 위 픽셀 제거)과 수면 자세 턱 끝 1픽셀뿐이며 검사로 확인합니다. 몸·다리·소품은 새로 그렸습니다. 모든 그림은 고정 후처리 <code>tools/process_pixel_art.py</code>(배경 정리 → 원본 격자 → 재질별 램프 → 검사)를 통과합니다. 재현: <code>tools/build_f21_rest_aging_v1.py</code>.</div>
+
+<h2>승인 후 런타임 연결 메모 (이번 작업에서 하지 않음)</h2>
+<ul>
+<li>주인공 포즈에 <code>sleep_sit</code>/<code>sleep_sit_breath</code>(3초 호흡), <code>faint</code>를 추가하고, 지금 수면/기절 중에도 대기 포즈를 쓰는 부분을 바꿉니다. 위치는 기존 주인공 원점 (216,96) 그대로입니다. B안이면 깔개 위로 원본 4행(표시 12px) 올립니다.</li>
+<li>Z(수면)와 별(기절)은 별도 효과 스프라이트로 주인공 위에 그립니다. 솥 상태 글자 “수면 중”/“기절”(<code>scripts/management_status.gd</code>)은 그대로 둡니다.</li>
+<li>숙성통은 작업실 그림 목록에 소품 하나로 추가(벽형: 표시 219,0). 관리 행 아이콘(현재 앞치마·흐름 아이콘)을 숙성통으로 바꿀지는 따로 정합니다.</li>
+<li>숙성 판매(<code>ShopArt.on_aged_sale</code>, 첫 선반 칸에서 출발)의 날아가는 병에 인장을 덧그립니다. 병 36종 그림은 바꾸지 않습니다.</li>
+</ul>
+<p class="muted">검사 원본: <a href="validation.json">validation.json</a> · 주인공 <a href="../../characters/rest-v1/keeper/validation.json">keeper/validation.json</a> · 후처리 보고 <a href="../../characters/rest-v1/keeper/pipeline/validation.json">keeper</a>, <a href="props/pipeline/validation.json">props</a></p>
+</main>
+<script>
+const SUMMARY={"passed": true, "variants": {"sleep_a_wall": ["frames/sleep_a_wall-0.png", "frames/sleep_a_wall-1.png", "frames/sleep_a_wall-2.png", "frames/sleep_a_wall-3.png", "frames/sleep_a_wall-4.png", "frames/sleep_a_wall-5.png", "frames/sleep_a_wall-6.png", "frames/sleep_a_wall-7.png"], "sleep_b_wall": ["frames/sleep_b_wall-0.png", "frames/sleep_b_wall-1.png", "frames/sleep_b_wall-2.png", "frames/sleep_b_wall-3.png", "frames/sleep_b_wall-4.png", "frames/sleep_b_wall-5.png", "frames/sleep_b_wall-6.png", "frames/sleep_b_wall-7.png"], "faint_wall": ["frames/faint_wall-0.png", "frames/faint_wall-1.png", "frames/faint_wall-2.png", "frames/faint_wall-3.png", "frames/faint_wall-4.png", "frames/faint_wall-5.png", "frames/faint_wall-6.png", "frames/faint_wall-7.png"], "idle_cask_floor": ["frames/idle_cask_floor-0.png", "frames/idle_cask_floor-1.png", "frames/idle_cask_floor-2.png", "frames/idle_cask_floor-3.png", "frames/idle_cask_floor-4.png", "frames/idle_cask_floor-5.png", "frames/idle_cask_floor-6.png", "frames/idle_cask_floor-7.png"]}, "keeper": {"sleep_sit": {"passed": true, "color_count": 5, "colors": ["#241C32", "#86548E", "#916047", "#E9B95F", "#F6D1AC"], "closed_eyes": [[18, 32], [20, 32]], "floor_row": 46, "outline_violations": 0, "head_identical": 679, "head_changed": 3}, "sleep_sit_breath": {"passed": true, "color_count": 5, "colors": ["#241C32", "#86548E", "#916047", "#E9B95F", "#F6D1AC"], "closed_eyes": [[18, 31], [20, 31]], "floor_row": 46, "outline_violations": 0, "head_identical": 679, "head_changed": 3}, "faint": {"passed": true, "color_count": 5, "colors": ["#241C32", "#86548E", "#916047", "#E9B95F", "#F6D1AC"], "closed_eyes": [[15, 30], [17, 30]], "floor_row": 46, "outline_violations": 0, "head_identical": 658, "head_changed": 2}}, "breathing": {"lower_body_rows_identical": true, "upper_body_shift_rows": 1, "upper_body_matches_shift": true, "changed_rows": [13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40], "passed": true}, "props": {"aged_seal": {"passed": true, "size": [5, 5], "colors": ["#241C32", "#A56A3D", "#E9B95F", "#FFF0BC"], "outline_violations": 0}, "aging_cask_floor": {"passed": true, "size": [32, 32], "colors": ["#241C32", "#50333B", "#827589", "#916047", "#C99463"], "outline_violations": 0}, "aging_cask_wall": {"passed": true, "size": [32, 32], "colors": ["#241C32", "#50333B", "#827589", "#916047", "#C99463"], "outline_violations": 0}, "bedroll_blanket": {"passed": true, "size": [32, 16], "colors": ["#241C32", "#24566A", "#3BA8A3", "#9BE2CF"], "outline_violations": 0}, "bedroll_mat": {"passed": true, "size": [32, 32], "colors": ["#241C32", "#24566A", "#3BA8A3", "#9BE2CF"], "outline_violations": 0}, "dizzy_star": {"passed": true, "size": [5, 5], "colors": ["#241C32", "#E9B95F", "#FFF0BC"], "outline_violations": 0}, "sleep_z": {"passed": true, "size": [6, 7], "colors": ["#241C32", "#FFF0BC"], "outline_violations": 0}}, "seal": {"passed": true, "count": 36, "min_visible": 0.81}, "placements": {"aging_cask_wall": {"passed": true, "display_origin": [219, 0], "ui_rect_overlaps": [], "keeper_frames": 9, "keeper_overlap": 0, "min_vertical_gap": 3}, "aging_cask_floor": {"passed": true, "display_origin": [294, 141], "ui_rect_overlaps": [], "keeper_frames": 9, "keeper_overlap": 0, "min_vertical_gap": -45}}};
+const VARIANTS=[
+ {id:"sleep_a_wall",label:"A 앉아 졸기 · 벽 숙성통 (추천)",status:"수면 중",note:"제자리에 앉아 고개를 숙이고 손은 무릎 위. 모자와 얼굴은 승인 그림 그대로, 눈만 감았습니다."},
+ {id:"sleep_b_wall",label:"B 깔개·이불 · 벽 숙성통",status:"수면 중",note:"A와 같은 자세를 청록 깔개 위로 올리고 이불을 다리에 덮었습니다. 부츠 끝이 이불 밖으로 나옵니다."},
+ {id:"faint_wall",label:"기절 · 벽 숙성통",status:"기절",note:"머리를 뒤로 젖히고 뒤쪽 손은 바닥에, 앞 부츠는 옆으로 넘어갔습니다. 별 두 개가 모자 위를 돕니다."},
+ {id:"idle_cask_floor",label:"대안: 바닥 숙성통 · 대기",status:"",note:"세운 숙성통을 판매대 왼쪽 끝 앞에 둔 대안입니다. 판매대 일부를 가립니다."}];
+let current=VARIANTS[0],step=0,playing=true,timer=null;
+const scene=document.getElementById('scene'),status=document.getElementById('status');
+const cache={};VARIANTS.forEach(v=>{cache[v.id]=(SUMMARY?SUMMARY.variants[v.id]:[]).map(p=>{const i=new Image();i.src=p;return i})});
+function draw(){const list=SUMMARY?SUMMARY.variants[current.id]:[];if(!list.length)return;scene.src=list[step%list.length];
+ document.getElementById('frame-label').textContent=`단계 ${step%8+1}/8`;status.textContent=current.status;status.style.display=current.status?'flex':'none';}
+function select(v){current=v;step=0;document.querySelectorAll('#variants button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.id===v.id));document.getElementById('variant-note').textContent=v.note;draw();}
+const bar=document.getElementById('variants');VARIANTS.forEach(v=>{const b=document.createElement('button');b.textContent=v.label;b.dataset.id=v.id;b.onclick=()=>select(v);bar.appendChild(b)});
+document.getElementById('play').onclick=e=>{playing=!playing;e.target.setAttribute('aria-pressed',playing);e.target.textContent=playing?'일시정지':'재생';};
+setInterval(()=>{if(playing){step=(step+1)%8;draw();}},375);select(VARIANTS[0]);
+function cell(ok){return `<span class="${ok?'ok':'bad'}">${ok?'통과':'실패'}</span>`}
+if(SUMMARY){
+ document.getElementById('overall').innerHTML=`전체 수치 검사: ${cell(SUMMARY.passed)} · 수치 검사는 디자인 승인이 아니며 그림과 함께 봐 주세요.`;
+ const rows=[['항목','결과','세부']];
+ for(const [n,c] of Object.entries(SUMMARY.keeper))rows.push([`주인공 ${n}`,cell(c.passed),`${c.color_count}색 ${c.colors.join(' ')} · 외곽선 위반 ${c.outline_violations} · 감은 눈 ${JSON.stringify(c.closed_eyes)} · 바닥행 ${c.floor_row} · 승인 머리 픽셀 동일 ${c.head_identical}, 변경 ${c.head_changed}(눈/턱)`]);
+ const br=SUMMARY.breathing;rows.push(['호흡',cell(br.passed),`하체(41행 아래) 동일 ${br.lower_body_rows_identical} · 상체 1행 이동 일치 ${br.upper_body_matches_shift}`]);
+ for(const [n,c] of Object.entries(SUMMARY.props))rows.push([`소품 ${n}`,cell(c.passed),`${c.size.join('×')} · ${c.colors.length}색 ${c.colors.join(' ')} · 외곽선 위반 ${c.outline_violations}`]);
+ rows.push(['숙성 인장 × 병',cell(SUMMARY.seal.passed),`${SUMMARY.seal.count}종 · 병 내부 최소 ${Math.round(SUMMARY.seal.min_visible*100)}% 보임 · 마개/목 가림 0 · 병 수정 0`]);
+ for(const [n,p] of Object.entries(SUMMARY.placements))rows.push([`배치 ${n}`,cell(p.passed),`표시 위치 ${p.display_origin.join(',')} · UI 영역 겹침 ${p.ui_rect_overlaps.length?p.ui_rect_overlaps.join(','):'없음'} · 주인공 ${p.keeper_frames}프레임과 겹친 픽셀 ${p.keeper_overlap} · 머리 위 여유 ${p.min_vertical_gap>=0?p.min_vertical_gap+'원본 px':'해당 없음(옆에 놓임)'}`]);
+ document.getElementById('checks').innerHTML=rows.map((r,i)=>`<tr>${r.map(c=>i?`<td>${c}</td>`:`<th>${c}</th>`).join('')}</tr>`).join('');
+}
+</script></body></html>

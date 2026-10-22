@@ -1,0 +1,10 @@
+{
+  "id": "moon_ruins",
+  "name": "달빛 유적",
+  "category": "regions",
+  "prompt": "Use case: stylized-concept. Asset type: one production UI icon for a tiny cozy witch potion-shop game. ONE isolated complete object/emblem centered on REAL transparent alpha background, generous padding. Front orthographic or gentle front three-quarter view. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm antique gold #efc77c, ivory highlights, muted violet/sage accents, 4 flat clustered shades, readable at logical 32x40 pixels. No text, letters, digits, watermark, glow, blur, gradients, cast shadow, floor or background scene. Subject: two broken ivory stone pillars holding a cracked lavender arch, large antique gold crescent over arch, one small violet crystal at base; one unified ruins icon.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-3c69c742-79c4-4fd8-a1c8-13a27dae3a89.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/moon_ruins.png"
+}

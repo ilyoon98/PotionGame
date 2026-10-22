@@ -1,0 +1,70 @@
+[
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\desktop_input.gd",
+    "Hash": "2D8978C4ED67F9E866BD68F73D8B345678004438785D8F7885A4BC25A09430D2"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\herb_plant.gd",
+    "Hash": "67F9B13CDB361B2E1F98EEF1052C9197C7B5BE37640C704FED430A570B15A26A"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\item_art.gd",
+    "Hash": "C8361E84608D149376587CA52655BAF5C5D2489F13AA0677B7D3D8E3EF3B7B32"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\management_art.gd",
+    "Hash": "A30D999FAAAB09FEEC5C66AA38560CC54706898650A2E638A5360D9DF110184C"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\management_panel.gd",
+    "Hash": "14A130C86E394952AF649163FF8736A237D400D76BEA8ED4AAB1D6312D9E19E9"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\operation_card.gd",
+    "Hash": "4BC73EECD8C1E6569D51076C6E52E87E44DA21E7C1A7D1FDD6E2BE99C7A856DC"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\potion_display.gd",
+    "Hash": "D14CA5F125617A2591D865F17958CEBD80CF3D341B5DDB67C2CBE45DEA3C1355"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\recent_income.gd",
+    "Hash": "3C327C62E6F7263F5E5E4C7DC53F7E026B2F0E8784FC451459F0D82CADF78E9C"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\save_store.gd",
+    "Hash": "4876A48CFEB6556A8DE290BB72C9486B061F7135308C057F478925E3F7B4FFD5"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop_art.gd",
+    "Hash": "F9F418B340D777BE39144D3D99C0AB3AAD823166A7F0F26E07F9F9E61B43EC98"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop_content.gd",
+    "Hash": "A9B65F4FC4EC88EFFF6B05151E92E99513436AD0274DC339AC3DFEBF02932A92"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop_motion.gd",
+    "Hash": "2B0AA8C959F7D5CAADFA4353922F2B4F0D64DA0EB89ADC4D449BF233C08B679A"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop_progression.gd",
+    "Hash": "780C284BAD2C4BB88A084D4C46F25DDDDB2A14128B28521A66614470938D1DA6"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop_sky.gd",
+    "Hash": "6AC5F6E17BA6C902856A1377875BB9518D82C9B8584C1B9FD2AD4FF58899C2B8"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop_state.gd",
+    "Hash": "3C61DA677778E75F9365FAC14F2C2ACEDF13FC8BE5607B442BBCE9844C185115"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\shop.gd",
+    "Hash": "817FA1CDFFAD1A0B9439D7B4A802C2DD7FAB8F31A54BA8441AC2D794294355C4"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\scripts\\workshop_assets.gd",
+    "Hash": "DA68FE827AB47B735BB681EFC513630198533DE921D5E1530BB27AAE40423283"
+  }
+]

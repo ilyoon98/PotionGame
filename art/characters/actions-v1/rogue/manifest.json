@@ -1,0 +1,737 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/actions-v1/rogue/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "carry_contact_a",
+      "source": "art/characters/actions-v1/rogue/source/carry_contact_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.4,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_tail": [
+          "#DE7356",
+          "#F4AC68"
+        ],
+        "scarf": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "hair_tail": "fire",
+        "scarf": "fire"
+      },
+      "rules": [
+        {
+          "material": "scarf",
+          "hue": [
+            0.94,
+            1.0
+          ]
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_max": 0.51,
+          "value_min": 0.64
+        }
+      ],
+      "fallback_material": "hair_tail",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              9,
+              25
+            ],
+            [
+              10,
+              25
+            ],
+            [
+              11,
+              25
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              13,
+              25
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "reason": "Same two eyes and diagonal1px peach halo at approved rogue landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              14,
+              24
+            ]
+          ],
+          "reason": "Same-height isolated1x2 pupils."
+        }
+      ]
+    },
+    {
+      "id": "carry_pass_a",
+      "source": "art/characters/actions-v1/rogue/source/carry_pass_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.4,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_tail": [
+          "#DE7356",
+          "#F4AC68"
+        ],
+        "scarf": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "hair_tail": "fire",
+        "scarf": "fire"
+      },
+      "rules": [
+        {
+          "material": "scarf",
+          "hue": [
+            0.94,
+            1.0
+          ]
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_max": 0.51,
+          "value_min": 0.64
+        }
+      ],
+      "fallback_material": "hair_tail",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              9,
+              25
+            ],
+            [
+              10,
+              25
+            ],
+            [
+              11,
+              25
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              13,
+              25
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "reason": "Same two eyes and diagonal1px peach halo at approved rogue landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              14,
+              24
+            ]
+          ],
+          "reason": "Same-height isolated1x2 pupils."
+        }
+      ]
+    },
+    {
+      "id": "carry_contact_b",
+      "source": "art/characters/actions-v1/rogue/source/carry_contact_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.4,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_tail": [
+          "#DE7356",
+          "#F4AC68"
+        ],
+        "scarf": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "hair_tail": "fire",
+        "scarf": "fire"
+      },
+      "rules": [
+        {
+          "material": "scarf",
+          "hue": [
+            0.94,
+            1.0
+          ]
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_max": 0.51,
+          "value_min": 0.64
+        }
+      ],
+      "fallback_material": "hair_tail",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              9,
+              25
+            ],
+            [
+              10,
+              25
+            ],
+            [
+              11,
+              25
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              13,
+              25
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "reason": "Same two eyes and diagonal1px peach halo at approved rogue landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              14,
+              24
+            ]
+          ],
+          "reason": "Same-height isolated1x2 pupils."
+        }
+      ]
+    },
+    {
+      "id": "carry_pass_b",
+      "source": "art/characters/actions-v1/rogue/source/carry_pass_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.4,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_tail": [
+          "#DE7356",
+          "#F4AC68"
+        ],
+        "scarf": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "hair_tail": "fire",
+        "scarf": "fire"
+      },
+      "rules": [
+        {
+          "material": "scarf",
+          "hue": [
+            0.94,
+            1.0
+          ]
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_max": 0.51,
+          "value_min": 0.64
+        }
+      ],
+      "fallback_material": "hair_tail",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              9,
+              25
+            ],
+            [
+              10,
+              25
+            ],
+            [
+              11,
+              25
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ],
+            [
+              13,
+              25
+            ],
+            [
+              14,
+              25
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "reason": "Same two eyes and diagonal1px peach halo at approved rogue landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              23
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              14,
+              24
+            ]
+          ],
+          "reason": "Same-height isolated1x2 pupils."
+        }
+      ]
+    }
+  ]
+}

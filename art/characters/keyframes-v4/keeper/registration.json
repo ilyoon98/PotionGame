@@ -1,0 +1,93 @@
+{
+  "source_grid": [
+    3,
+    2
+  ],
+  "uniform_source_scale": 0.9240246406570842,
+  "frames": [
+    {
+      "id": "brew_reach",
+      "uniform_scale": 0.9240246406570842,
+      "crop_size": [
+        299,
+        487
+      ],
+      "offset": [
+        17,
+        20
+      ],
+      "old_head_overlay": false,
+      "whole_body_source": true
+    },
+    {
+      "id": "brew_stir_left",
+      "uniform_scale": 0.9240246406570842,
+      "crop_size": [
+        277,
+        487
+      ],
+      "offset": [
+        27,
+        20
+      ],
+      "old_head_overlay": false,
+      "whole_body_source": true
+    },
+    {
+      "id": "brew_stir_right",
+      "uniform_scale": 0.9240246406570842,
+      "crop_size": [
+        283,
+        487
+      ],
+      "offset": [
+        21,
+        20
+      ],
+      "old_head_overlay": false,
+      "whole_body_source": true
+    },
+    {
+      "id": "idle",
+      "uniform_scale": 0.9240246406570842,
+      "crop_size": [
+        287,
+        484
+      ],
+      "offset": [
+        22,
+        23
+      ],
+      "old_head_overlay": false,
+      "whole_body_source": true
+    },
+    {
+      "id": "handover_extend",
+      "uniform_scale": 0.9240246406570842,
+      "crop_size": [
+        296,
+        484
+      ],
+      "offset": [
+        25,
+        23
+      ],
+      "old_head_overlay": false,
+      "whole_body_source": true
+    },
+    {
+      "id": "handover_return",
+      "uniform_scale": 0.9240246406570842,
+      "crop_size": [
+        295,
+        484
+      ],
+      "offset": [
+        24,
+        23
+      ],
+      "old_head_overlay": false,
+      "whole_body_source": true
+    }
+  ]
+}

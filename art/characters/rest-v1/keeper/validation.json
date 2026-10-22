@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "checks": {
+    "sleep_sit": {
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "size": [
+        32,
+        48
+      ],
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "within_keeper_5": true,
+      "partial_alpha": 0,
+      "outline_violations": [],
+      "closed_eyes": [
+        [
+          18,
+          32
+        ],
+        [
+          20,
+          32
+        ]
+      ],
+      "closed_eyes_expected": [
+        [
+          18,
+          32
+        ],
+        [
+          20,
+          32
+        ]
+      ],
+      "closed_eyes_ok": true,
+      "floor_row": 46,
+      "floor_row_ok": true,
+      "approved_head_reuse": {
+        "idle_rows": [
+          2,
+          24
+        ],
+        "offset": [
+          1,
+          12
+        ],
+        "identical_pixels": 679,
+        "changed_pixels": [
+          [
+            18,
+            31
+          ],
+          [
+            20,
+            31
+          ],
+          [
+            19,
+            35
+          ]
+        ]
+      },
+      "head_changes_only_eyes_or_chin": true,
+      "passed": true
+    },
+    "sleep_sit_breath": {
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "size": [
+        32,
+        48
+      ],
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "within_keeper_5": true,
+      "partial_alpha": 0,
+      "outline_violations": [],
+      "closed_eyes": [
+        [
+          18,
+          31
+        ],
+        [
+          20,
+          31
+        ]
+      ],
+      "closed_eyes_expected": [
+        [
+          18,
+          31
+        ],
+        [
+          20,
+          31
+        ]
+      ],
+      "closed_eyes_ok": true,
+      "floor_row": 46,
+      "floor_row_ok": true,
+      "approved_head_reuse": {
+        "idle_rows": [
+          2,
+          24
+        ],
+        "offset": [
+          1,
+          11
+        ],
+        "identical_pixels": 679,
+        "changed_pixels": [
+          [
+            18,
+            30
+          ],
+          [
+            20,
+            30
+          ],
+          [
+            19,
+            34
+          ]
+        ]
+      },
+      "head_changes_only_eyes_or_chin": true,
+      "passed": true
+    },
+    "faint": {
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "size": [
+        32,
+        48
+      ],
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "within_keeper_5": true,
+      "partial_alpha": 0,
+      "outline_violations": [],
+      "closed_eyes": [
+        [
+          15,
+          30
+        ],
+        [
+          17,
+          30
+        ]
+      ],
+      "closed_eyes_expected": [
+        [
+          15,
+          30
+        ],
+        [
+          17,
+          30
+        ]
+      ],
+      "closed_eyes_ok": true,
+      "floor_row": 46,
+      "floor_row_ok": true,
+      "approved_head_reuse": {
+        "idle_rows": [
+          2,
+          24
+        ],
+        "offset": [
+          -2,
+          10
+        ],
+        "identical_pixels": 658,
+        "changed_pixels": [
+          [
+            15,
+            29
+          ],
+          [
+            17,
+            29
+          ]
+        ]
+      },
+      "head_changes_only_eyes_or_chin": true,
+      "passed": true
+    }
+  },
+  "breathing": {
+    "lower_body_rows_identical": true,
+    "upper_body_shift_rows": 1,
+    "upper_body_matches_shift": true,
+    "changed_rows": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "passed": true
+  }
+}

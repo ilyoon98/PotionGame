@@ -1,0 +1,82 @@
+extends SceneTree
+const Display = preload("res://scripts/potion_display.gd")
+const State = preload("res://scripts/shop_state.gd")
+
+
+func _initialize() -> void:
+	var bottles := Display.new()
+	bottles.restore(11, 2)
+	bottles.add(true)
+	assert(bottles.matches(12, 3))
+	assert(bottles.position(11) == Display.BREW_ORIGIN)
+	bottles.tick(Display.TRAVEL_SECONDS / 2.0)
+	assert(bottles.position(11) != bottles.slot_center(11))
+	var previous_second := bottles.position(1)
+	var previous_lower := bottles.position(6)
+	var previous_arrival := bottles.position(11)
+	assert(bottles.take() == bottles.slot_center(0))
+	assert(bottles.position(0) == previous_second and bottles.position(5) == previous_lower)
+	assert(bottles.position(10) == previous_arrival and bottles.slots[11].is_empty())
+	bottles.tick(Display.SHIFT_DELAY + Display.SHIFT_SECONDS / 2.0)
+	assert(bottles.position(0).x < previous_second.x and bottles.position(0).x > bottles.slot_center(0).x)
+	assert(bottles.position(5).y <= previous_lower.y and bottles.position(5).y >= bottles.slot_center(5).y)
+	bottles.tick(Display.TRAVEL_SECONDS)
+	assert(bottles.position(0) == bottles.slot_center(0) and bottles.position(5) == bottles.slot_center(5))
+	assert(bottles.position(10) == bottles.slot_center(10))
+	bottles.add(false)
+	assert(not bottles.slots[11]["mana"] and bottles.matches(12, 2))
+	assert(bottles.take() == bottles.slot_center(0))
+	assert(not bottles.slots[10]["mana"], "New bottle must stay last after shifting")
+	var moving_second := bottles.position(1)
+	bottles.take()
+	assert(bottles.position(0) == moving_second, "Repeated sales retarget sliding bottles without teleporting")
+	print("PASS: smooth compaction, straight row crossing, moving arrivals retargeted, new stock appends at the back")
+	bottles.restore(0, 0)
+	bottles.add(true)
+	bottles.tick(0.2)
+	var moving_origin := bottles.position(0)
+	assert(bottles.take() == moving_origin and bottles.matches(0, 0))
+	print("PASS: selling an arriving bottle transfers the same bottle without a duplicate")
+	var workshop := Display.new()
+	workshop.set_workshop_layout(true)
+	workshop.restore(12, 4)
+	var before := workshop.inventory_order()
+	assert(workshop.visible_capacity() == 8 and before.size() == 12)
+	assert(workshop.slot_center(3).y < workshop.slot_center(4).y)
+	workshop.take()
+	assert(workshop.position(7) == workshop.reserve_position(), "Reserve bottle enters the newly freed display slot")
+	workshop.tick(1.0)
+	assert(workshop.position(7) == workshop.slot_center(7))
+	assert(workshop.inventory_order() == before.slice(1))
+	assert(workshop.take(9) == workshop.reserve_position(), "A preferred reserve sale starts at storage")
+	var remaining := workshop.inventory_order()
+	workshop.set_workshop_layout(false)
+	assert(workshop.inventory_order() == remaining and workshop.visible_capacity() == 12)
+	print("PASS: eight visible bottles, reserve refill, preferred reserve sale and mode switch preserve inventory")
+	var state := State.new()
+	state.auto_purchase = false
+	state.brew_active = true
+	state.brew_elapsed = 4.9
+	state.customer_elapsed = 3.1
+	var events: Dictionary = state.advance(0.1)
+	assert(events["potion_events"].size() == 2)
+	assert(events["potion_events"][0]["kind"] == "brew" and events["potion_events"][1]["kind"] == "sale")
+	for event in events["potion_events"]:
+		if event["kind"] == "brew":
+			bottles.add(event["mana"])
+		else:
+			bottles.take(event.get("index", 0))
+	assert(bottles.matches(state.stock, state.mana_stock))
+	print("PASS: simultaneous completion and sale retain economic event order")
+	for frame in range(18000):
+		bottles.tick(0.1)
+		events = state.advance(0.1)
+		for event in events["potion_events"]:
+			if event["kind"] == "brew":
+				bottles.add(event["mana"])
+			else:
+				bottles.take(event.get("index", 0))
+		assert(bottles.matches(state.stock, state.mana_stock))
+		assert(bottles.inventory_order() == state.inventory_order())
+	print("POTION DISPLAY PASS: thirty-minute inventory stays consistent every frame")
+	quit()

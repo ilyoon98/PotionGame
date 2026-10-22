@@ -1,0 +1,51 @@
+{
+  "mode": "built-in image_gen",
+  "selected_sources": [
+    {
+      "path": "source/generated-carry-a-01.png",
+      "sha256": "f18300f5cec406936ce6f066521ac471b79c2edff034bb262e6d29c3cc423c16"
+    },
+    {
+      "path": "source/generated-carry-b-01.png",
+      "sha256": "4bc7cc19b8e4c9740dc5481ba453ede84cd142366c0ce58e411b9e02e0e0196b"
+    }
+  ],
+  "original_generated_paths": [
+    "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-28469d2c-6ab2-4e58-8094-fff59a8fa428.png",
+    "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-42763a10-b381-490a-a486-89990dd102b3.png"
+  ],
+  "prompts": [
+    "source/prompt-carry-a.txt",
+    "source/prompt-carry-b.txt"
+  ],
+  "references": {
+    "a": [
+      "source/gait-a-reference-10x.png",
+      "source/identity-reference-10x.png"
+    ],
+    "b": [
+      "source/gait-b-reference-10x.png",
+      "source/identity-reference-10x.png"
+    ]
+  },
+  "whole_body_sources": true,
+  "cross_pose_head_or_limb_splicing": false,
+  "new_palette_colors": 0,
+  "registration": "registration.json",
+  "old_keypose_sha256": {
+    "idle": "ccfcf8d2cc63b4bf202393c962e04e844c9771728f2a138d7983ff50811dfc31",
+    "walk_contact_a": "0b0ea354a42a8c038fb7f384e8512f59c246ebaf9749c258acaa3bf1b75961e5",
+    "walk_pass_a": "7820ca63caeb432135a41eec60b63b85a1a7ba09541582c7d50a5e5817d6afc5",
+    "walk_contact_b": "1c5a6266d1ccfbc395e3c694ca1f512e0bde75249ac87294045511872ac8a5ea",
+    "walk_pass_b": "697482261b359cdf2496dd10393185dcde2600545ccdceb7186ef61d819385ec",
+    "receive_extend": "6ffa708c91891d53588e7293653a6e015ff36c34fa8294de6c7109a15b756885",
+    "receive_hold": "77e7e12cccad84f232e5d0b9aee2940be11bb10e6dbe0316feefbb5b6278b338",
+    "blink_idle": "7b254084fc851f54f5d6ea8d71bd24f523a187d3c094321b174304899dbe00aa"
+  },
+  "processing_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ]
+}

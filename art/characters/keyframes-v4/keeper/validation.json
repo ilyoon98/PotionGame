@@ -1,0 +1,750 @@
+{
+  "status": "passed",
+  "version": 4,
+  "frame_count": 6,
+  "runtime_integrated": false,
+  "frames": {
+    "idle": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 725,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              19,
+              19
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "right",
+      "purple_hair_pixels": 0,
+      "skin_parts": {
+        "hand_active": {
+          "region": [
+            18,
+            32,
+            24,
+            36
+          ],
+          "skin_pixels": 7
+        },
+        "hand_rest": {
+          "region": [
+            6,
+            32,
+            12,
+            36
+          ],
+          "skin_pixels": 6
+        },
+        "head": {
+          "region": [
+            8,
+            14,
+            23,
+            25
+          ],
+          "skin_pixels": 39
+        },
+        "shirt": {
+          "region": [
+            11,
+            25,
+            20,
+            33
+          ],
+          "skin_pixels": 26
+        },
+        "knees": {
+          "region": [
+            7,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 14
+        }
+      },
+      "unassigned_skin_pixels": 0,
+      "two_hands": true,
+      "sleeve_sections": [],
+      "sleeves_filled": true
+    },
+    "brew_reach": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 736,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              13,
+              19
+            ],
+            [
+              13,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "left",
+      "purple_hair_pixels": 0,
+      "skin_parts": {
+        "hand_active": {
+          "region": [
+            2,
+            19,
+            8,
+            29
+          ],
+          "skin_pixels": 8
+        },
+        "hand_rest": {
+          "region": [
+            19,
+            32,
+            24,
+            36
+          ],
+          "skin_pixels": 9
+        },
+        "head": {
+          "region": [
+            8,
+            14,
+            23,
+            25
+          ],
+          "skin_pixels": 32
+        },
+        "shirt": {
+          "region": [
+            13,
+            25,
+            20,
+            33
+          ],
+          "skin_pixels": 25
+        },
+        "knees": {
+          "region": [
+            7,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 11
+        }
+      },
+      "unassigned_skin_pixels": 0,
+      "two_hands": true,
+      "sleeve_sections": [
+        {
+          "column": 8,
+          "rows": [
+            23,
+            28
+          ],
+          "opaque_width": 4,
+          "purple_interior": 2,
+          "passed": true
+        },
+        {
+          "column": 10,
+          "rows": [
+            24,
+            29
+          ],
+          "opaque_width": 4,
+          "purple_interior": 2,
+          "passed": true
+        }
+      ],
+      "sleeves_filled": true,
+      "body_outside_working_arm_fixed": true
+    },
+    "brew_stir_left": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 737,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              13,
+              19
+            ],
+            [
+              13,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "left",
+      "purple_hair_pixels": 0,
+      "skin_parts": {
+        "hand_active": {
+          "region": [
+            2,
+            19,
+            8,
+            29
+          ],
+          "skin_pixels": 8
+        },
+        "hand_rest": {
+          "region": [
+            19,
+            32,
+            24,
+            36
+          ],
+          "skin_pixels": 9
+        },
+        "head": {
+          "region": [
+            8,
+            14,
+            23,
+            25
+          ],
+          "skin_pixels": 32
+        },
+        "shirt": {
+          "region": [
+            13,
+            25,
+            20,
+            33
+          ],
+          "skin_pixels": 25
+        },
+        "knees": {
+          "region": [
+            7,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 11
+        }
+      },
+      "unassigned_skin_pixels": 0,
+      "two_hands": true,
+      "sleeve_sections": [
+        {
+          "column": 8,
+          "rows": [
+            24,
+            29
+          ],
+          "opaque_width": 5,
+          "purple_interior": 4,
+          "passed": true
+        },
+        {
+          "column": 10,
+          "rows": [
+            24,
+            29
+          ],
+          "opaque_width": 5,
+          "purple_interior": 3,
+          "passed": true
+        }
+      ],
+      "sleeves_filled": true,
+      "body_outside_working_arm_fixed": true
+    },
+    "brew_stir_right": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 740,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              11,
+              19
+            ],
+            [
+              11,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              13,
+              19
+            ],
+            [
+              13,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "left",
+      "purple_hair_pixels": 0,
+      "skin_parts": {
+        "hand_active": {
+          "region": [
+            2,
+            19,
+            8,
+            29
+          ],
+          "skin_pixels": 10
+        },
+        "hand_rest": {
+          "region": [
+            19,
+            32,
+            24,
+            36
+          ],
+          "skin_pixels": 9
+        },
+        "head": {
+          "region": [
+            8,
+            14,
+            23,
+            25
+          ],
+          "skin_pixels": 32
+        },
+        "shirt": {
+          "region": [
+            13,
+            25,
+            20,
+            33
+          ],
+          "skin_pixels": 25
+        },
+        "knees": {
+          "region": [
+            7,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 11
+        }
+      },
+      "unassigned_skin_pixels": 0,
+      "two_hands": true,
+      "sleeve_sections": [
+        {
+          "column": 8,
+          "rows": [
+            26,
+            31
+          ],
+          "opaque_width": 5,
+          "purple_interior": 4,
+          "passed": true
+        },
+        {
+          "column": 10,
+          "rows": [
+            26,
+            31
+          ],
+          "opaque_width": 5,
+          "purple_interior": 3,
+          "passed": true
+        }
+      ],
+      "sleeves_filled": true,
+      "body_outside_working_arm_fixed": true
+    },
+    "handover_extend": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 755,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              19,
+              19
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "right",
+      "purple_hair_pixels": 0,
+      "skin_parts": {
+        "hand_active": {
+          "region": [
+            24,
+            25,
+            30,
+            31
+          ],
+          "skin_pixels": 8
+        },
+        "hand_rest": {
+          "region": [
+            6,
+            32,
+            12,
+            36
+          ],
+          "skin_pixels": 8
+        },
+        "head": {
+          "region": [
+            8,
+            14,
+            23,
+            25
+          ],
+          "skin_pixels": 39
+        },
+        "shirt": {
+          "region": [
+            11,
+            25,
+            20,
+            33
+          ],
+          "skin_pixels": 26
+        },
+        "knees": {
+          "region": [
+            7,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 14
+        }
+      },
+      "unassigned_skin_pixels": 0,
+      "two_hands": true,
+      "sleeve_sections": [
+        {
+          "column": 22,
+          "rows": [
+            26,
+            31
+          ],
+          "opaque_width": 5,
+          "purple_interior": 3,
+          "passed": true
+        },
+        {
+          "column": 23,
+          "rows": [
+            26,
+            31
+          ],
+          "opaque_width": 5,
+          "purple_interior": 3,
+          "passed": true
+        }
+      ],
+      "sleeves_filled": true,
+      "waist_hips_legs_fixed": true,
+      "head_hat_fixed_between_keyposes": true
+    },
+    "handover_return": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 758,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              17,
+              19
+            ],
+            [
+              17,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              19,
+              19
+            ],
+            [
+              19,
+              20
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "right",
+      "purple_hair_pixels": 0,
+      "skin_parts": {
+        "hand_active": {
+          "region": [
+            24,
+            25,
+            30,
+            31
+          ],
+          "skin_pixels": 9
+        },
+        "hand_rest": {
+          "region": [
+            6,
+            32,
+            12,
+            36
+          ],
+          "skin_pixels": 8
+        },
+        "head": {
+          "region": [
+            8,
+            14,
+            23,
+            25
+          ],
+          "skin_pixels": 39
+        },
+        "shirt": {
+          "region": [
+            11,
+            25,
+            20,
+            33
+          ],
+          "skin_pixels": 26
+        },
+        "knees": {
+          "region": [
+            7,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 14
+        }
+      },
+      "unassigned_skin_pixels": 0,
+      "two_hands": true,
+      "sleeve_sections": [
+        {
+          "column": 22,
+          "rows": [
+            26,
+            31
+          ],
+          "opaque_width": 5,
+          "purple_interior": 4,
+          "passed": true
+        },
+        {
+          "column": 23,
+          "rows": [
+            26,
+            31
+          ],
+          "opaque_width": 5,
+          "purple_interior": 4,
+          "passed": true
+        }
+      ],
+      "sleeves_filled": true,
+      "waist_hips_legs_fixed": true,
+      "head_hat_fixed_between_keyposes": true
+    }
+  }
+}

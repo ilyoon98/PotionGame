@@ -1,0 +1,604 @@
+{
+  "status": "passed",
+  "character": "keeper",
+  "version": 3,
+  "frame_count": 6,
+  "old_head_overlay_used": false,
+  "old_face_hook_used": false,
+  "frames": {
+    "idle": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 734,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "right"
+    },
+    "brew_reach": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 733,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              19
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              18
+            ],
+            [
+              15,
+              19
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "left",
+      "skin_parts": [
+        {
+          "part": "hand_active",
+          "region": [
+            3,
+            14,
+            8,
+            19
+          ],
+          "skin_pixels": 8,
+          "components8": 1
+        },
+        {
+          "part": "hand_rest",
+          "region": [
+            20,
+            32,
+            25,
+            35
+          ],
+          "skin_pixels": 8,
+          "components8": 1
+        },
+        {
+          "part": "head_face_ear",
+          "region": [
+            10,
+            16,
+            23,
+            25
+          ],
+          "skin_pixels": 37,
+          "components8": 2
+        },
+        {
+          "part": "shirt",
+          "region": [
+            14,
+            25,
+            21,
+            33
+          ],
+          "skin_pixels": 22,
+          "components8": 1
+        },
+        {
+          "part": "knees",
+          "region": [
+            10,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 11,
+          "components8": 2
+        }
+      ],
+      "unassigned_skin_pixels": 0,
+      "two_hand_groups": true,
+      "filled_sleeve_sections": [
+        {
+          "row": 20,
+          "columns": [
+            6,
+            10
+          ],
+          "opaque_width": 4,
+          "purple_interior_pixels": 3,
+          "passed": true
+        },
+        {
+          "row": 22,
+          "columns": [
+            7,
+            12
+          ],
+          "opaque_width": 5,
+          "purple_interior_pixels": 4,
+          "passed": true
+        },
+        {
+          "row": 30,
+          "columns": [
+            22,
+            27
+          ],
+          "opaque_width": 5,
+          "purple_interior_pixels": 3,
+          "passed": true
+        }
+      ],
+      "sleeves_not_needlethin": true
+    },
+    "brew_stir_left": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 729,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              19
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              18
+            ],
+            [
+              15,
+              19
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "left",
+      "skin_parts": [
+        {
+          "part": "hand_active",
+          "region": [
+            1,
+            22,
+            7,
+            27
+          ],
+          "skin_pixels": 10,
+          "components8": 1
+        },
+        {
+          "part": "hand_rest",
+          "region": [
+            20,
+            32,
+            25,
+            35
+          ],
+          "skin_pixels": 5,
+          "components8": 1
+        },
+        {
+          "part": "head_face_ear",
+          "region": [
+            10,
+            16,
+            23,
+            25
+          ],
+          "skin_pixels": 35,
+          "components8": 2
+        },
+        {
+          "part": "shirt",
+          "region": [
+            13,
+            25,
+            21,
+            33
+          ],
+          "skin_pixels": 29,
+          "components8": 1
+        },
+        {
+          "part": "knees",
+          "region": [
+            10,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 9,
+          "components8": 2
+        }
+      ],
+      "unassigned_skin_pixels": 0,
+      "two_hand_groups": true,
+      "filled_sleeve_sections": [
+        {
+          "row": 26,
+          "columns": [
+            6,
+            11
+          ],
+          "opaque_width": 5,
+          "purple_interior_pixels": 5,
+          "passed": true
+        },
+        {
+          "row": 27,
+          "columns": [
+            6,
+            12
+          ],
+          "opaque_width": 6,
+          "purple_interior_pixels": 6,
+          "passed": true
+        },
+        {
+          "row": 28,
+          "columns": [
+            21,
+            25
+          ],
+          "opaque_width": 4,
+          "purple_interior_pixels": 3,
+          "passed": true
+        }
+      ],
+      "sleeves_not_needlethin": true
+    },
+    "brew_stir_right": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              19
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              18
+            ],
+            [
+              15,
+              19
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "left",
+      "skin_parts": [
+        {
+          "part": "hand_active",
+          "region": [
+            1,
+            17,
+            6,
+            22
+          ],
+          "skin_pixels": 8,
+          "components8": 1
+        },
+        {
+          "part": "hand_rest",
+          "region": [
+            20,
+            32,
+            25,
+            35
+          ],
+          "skin_pixels": 5,
+          "components8": 1
+        },
+        {
+          "part": "head_face_ear",
+          "region": [
+            10,
+            16,
+            23,
+            25
+          ],
+          "skin_pixels": 34,
+          "components8": 2
+        },
+        {
+          "part": "shirt",
+          "region": [
+            13,
+            25,
+            21,
+            33
+          ],
+          "skin_pixels": 28,
+          "components8": 1
+        },
+        {
+          "part": "knees",
+          "region": [
+            10,
+            40,
+            24,
+            43
+          ],
+          "skin_pixels": 8,
+          "components8": 2
+        }
+      ],
+      "unassigned_skin_pixels": 0,
+      "two_hand_groups": true,
+      "filled_sleeve_sections": [
+        {
+          "row": 22,
+          "columns": [
+            5,
+            10
+          ],
+          "opaque_width": 5,
+          "purple_interior_pixels": 4,
+          "passed": true
+        },
+        {
+          "row": 24,
+          "columns": [
+            7,
+            13
+          ],
+          "opaque_width": 6,
+          "purple_interior_pixels": 6,
+          "passed": true
+        },
+        {
+          "row": 28,
+          "columns": [
+            21,
+            25
+          ],
+          "opaque_width": 4,
+          "purple_interior_pixels": 4,
+          "passed": true
+        }
+      ],
+      "sleeves_not_needlethin": true
+    },
+    "handover_extend": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 788,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "right"
+    },
+    "handover_return": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 717,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        },
+        {
+          "pixels": [
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "isolated2": true,
+          "full_skin_halo1": true
+        }
+      ],
+      "outline_boundary_violations": 0,
+      "foot_row46": true,
+      "opaque_components": 1,
+      "facing": "right"
+    }
+  }
+}

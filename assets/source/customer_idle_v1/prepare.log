@@ -1,0 +1,13 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/customer_animations.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2766)
+   GDScript backtrace (most recent call first):
+       [0] _initialize (res://tools/prepare_customer_idle.gd:9)
+traveler: verified 48x64 RGBA, visible body (40, 60), feet baseline y=61
+knight: verified 48x64 RGBA, visible body (33, 60), feet baseline y=61
+mage: verified 48x64 RGBA, visible body (42, 60), feet baseline y=61
+elf: verified 48x64 RGBA, visible body (33, 60), feet baseline y=61
+rogue: verified 48x64 RGBA, visible body (35, 60), feet baseline y=61

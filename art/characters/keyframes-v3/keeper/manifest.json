@@ -1,0 +1,893 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/keyframes-v3/keeper/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "idle",
+      "source": "art/characters/keyframes-v3/keeper/source/idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.45,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "brew_reach",
+      "source": "art/characters/keyframes-v3/keeper/source/brew_reach-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.45,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              20
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              14,
+              20
+            ],
+            [
+              15,
+              20
+            ],
+            [
+              16,
+              20
+            ]
+          ],
+          "reason": "Two equal left-facing pupils at18/19with a complete skin margin, without changing the generated full-body contour."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              15,
+              18
+            ],
+            [
+              15,
+              19
+            ]
+          ],
+          "reason": "Both visible pupils are1x2and isolated."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              13,
+              38
+            ],
+            [
+              14,
+              38
+            ],
+            [
+              15,
+              38
+            ],
+            [
+              19,
+              38
+            ],
+            [
+              20,
+              38
+            ],
+            [
+              21,
+              38
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              15,
+              39
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              20,
+              39
+            ],
+            [
+              21,
+              39
+            ],
+            [
+              22,
+              39
+            ]
+          ],
+          "reason": "The upper thigh38/39remains covered by brown shorts; knees begin in the shared leg band40."
+        }
+      ]
+    },
+    {
+      "id": "brew_stir_left",
+      "source": "art/characters/keyframes-v3/keeper/source/brew_stir_left-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.45,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              20
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              14,
+              20
+            ],
+            [
+              15,
+              20
+            ],
+            [
+              16,
+              20
+            ]
+          ],
+          "reason": "Two equal left-facing pupils at18/19with a complete skin margin, without changing the generated full-body contour."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              15,
+              18
+            ],
+            [
+              15,
+              19
+            ]
+          ],
+          "reason": "Both visible pupils are1x2and isolated."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              12,
+              38
+            ],
+            [
+              13,
+              38
+            ],
+            [
+              14,
+              38
+            ],
+            [
+              19,
+              38
+            ],
+            [
+              20,
+              38
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              20,
+              39
+            ],
+            [
+              21,
+              39
+            ]
+          ],
+          "reason": "The upper thigh38/39remains covered by brown shorts; knees begin in the shared leg band40."
+        }
+      ]
+    },
+    {
+      "id": "brew_stir_right",
+      "source": "art/characters/keyframes-v3/keeper/source/brew_stir_right-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.45,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              11,
+              17
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              13,
+              17
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              13,
+              18
+            ],
+            [
+              11,
+              19
+            ],
+            [
+              13,
+              19
+            ],
+            [
+              11,
+              20
+            ],
+            [
+              12,
+              20
+            ],
+            [
+              13,
+              20
+            ],
+            [
+              14,
+              17
+            ],
+            [
+              15,
+              17
+            ],
+            [
+              16,
+              17
+            ],
+            [
+              14,
+              18
+            ],
+            [
+              16,
+              18
+            ],
+            [
+              14,
+              19
+            ],
+            [
+              16,
+              19
+            ],
+            [
+              14,
+              20
+            ],
+            [
+              15,
+              20
+            ],
+            [
+              16,
+              20
+            ]
+          ],
+          "reason": "Two equal left-facing pupils at18/19with a complete skin margin, without changing the generated full-body contour."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              12,
+              18
+            ],
+            [
+              12,
+              19
+            ],
+            [
+              15,
+              18
+            ],
+            [
+              15,
+              19
+            ]
+          ],
+          "reason": "Both visible pupils are1x2and isolated."
+        },
+        {
+          "material": "wood",
+          "pixels": [
+            [
+              12,
+              38
+            ],
+            [
+              13,
+              38
+            ],
+            [
+              14,
+              38
+            ],
+            [
+              19,
+              38
+            ],
+            [
+              20,
+              38
+            ],
+            [
+              11,
+              39
+            ],
+            [
+              12,
+              39
+            ],
+            [
+              13,
+              39
+            ],
+            [
+              14,
+              39
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              20,
+              39
+            ],
+            [
+              21,
+              39
+            ]
+          ],
+          "reason": "The upper thigh38/39remains covered by brown shorts; knees begin in the shared leg band40."
+        }
+      ]
+    },
+    {
+      "id": "handover_extend",
+      "source": "art/characters/keyframes-v3/keeper/source/handover_extend-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.45,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "handover_return",
+      "source": "art/characters/keyframes-v3/keeper/source/handover_return-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.45,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "beforeEvent": {
+    "action": "receive",
+    "actorX": "48",
+    "elapsed": "8.4",
+    "facing": "left",
+    "held": "false",
+    "mode": "fine",
+    "motionIndex": "19",
+    "playing": "false",
+    "pose": "receive_extend",
+    "recipe": "moon"
+  },
+  "atEvent": {
+    "action": "receive",
+    "actorX": "48",
+    "elapsed": "8.45",
+    "facing": "left",
+    "held": "true",
+    "mode": "fine",
+    "motionIndex": "19",
+    "playing": "false",
+    "pose": "receive_extend",
+    "recipe": "moon"
+  },
+  "departure": {
+    "action": "depart",
+    "actorX": "50",
+    "elapsed": "0.07",
+    "facing": "right",
+    "held": "true",
+    "mode": "fine",
+    "motionIndex": "0",
+    "playing": "false",
+    "pose": "carry_contact_a",
+    "recipe": "agility"
+  },
+  "blink": {
+    "action": "wait",
+    "actorX": "48",
+    "elapsed": "3.7",
+    "facing": "left",
+    "held": "false",
+    "mode": "grid",
+    "motionIndex": "45",
+    "playing": "false",
+    "pose": "idle",
+    "recipe": "agility"
+  },
+  "consoleErrors": [],
+  "scope": "Rendered local UI controls, 8.45s event boundary, whole actor right-facing carry and blink/grid mode."
+}

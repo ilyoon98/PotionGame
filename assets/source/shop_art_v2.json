@@ -1,0 +1,23 @@
+{
+  "method": "Built-in imagegen; source images preserved and normalized for the runtime pixel grid",
+  "assets": [
+    {
+      "key": "room",
+      "transparent_background": false,
+      "prompt": "Game asset, a cozy witch's potion shop interior BACKGROUND for a tiny desktop idle game. Landscape canvas about 1.65:1. Authentic restrained low-resolution pixel art designed on a 204 by 124 logical pixel grid, large clean square pixel clusters, no anti-aliasing or painterly texture. Straight-on side-view dollhouse stage, not isometric. Muted plum timber walls, amber wood, sage herb bundles, moonlit indigo arched window on the left, small warm lantern, exposed ceiling beam, wooden floor. One empty display shelf in the upper right from 65% to 94% width at 43% image height. A low wooden shop counter occupies the rightmost third at the bottom, its top at 74% image height. Leave the lower left quarter EMPTY for a separate cauldron sprite; leave the lower center EMPTY for a separate shopkeeper sprite; leave the lower right foreground EMPTY for a customer sprite. A few small jars and rolled parchment on the upper-left shelf, otherwise simple readable objects. Match cozy chibi witch and sage-cloaked adventurer sprites with dark plum outlines and warm highlights. Rich charming handcrafted pixel art, readable at 408x248 screen pixels. All edges filled by the room, no outside border or canvas margin. No cauldron, no characters, no potion bottles, no letters, no words, no numbers, no signs, no labels, no UI.",
+      "source": "room_v2.png"
+    },
+    {
+      "key": "cauldron",
+      "transparent_background": true,
+      "prompt": "One isolated game sprite: a charming squat dark plum cast-iron witch cauldron full of bright rose-pink health potion, two small side handles, three short feet, a small brass crescent on the front, and 3 tiny amber flames underneath. Three-quarter front view from slightly above, consistent with a cozy 2D side-view apothecary game. True LOW DETAIL low-resolution pixel art, designed to fit a 48x48 logical pixel sprite, enlarged by nearest neighbor: bold large square clusters, clean stepped dark outline, very limited palette of 12 flat colors, no gradients, no antialias, no dithering, no texture noise. The elliptical opening and glowing pink liquid must be clearly visible. Full cauldron including handles and flames entirely inside frame with a narrow transparent margin. Centered single asset, actual transparent background. No steam or smoke (animated separately), no backdrop, no floor, no scene, no characters, no text, no words, no labels, no extra objects.",
+      "source": "cauldron_v2.png"
+    },
+    {
+      "key": "potion",
+      "transparent_background": true,
+      "prompt": "One isolated HEALTH POTION bottle game sprite. Simple rounded squat glass flask with a short narrow neck and a cork stopper, filled with rose pink liquid, one bright cream square glass highlight, a tiny cream label with a simple heart symbol, dark plum one-pixel stepped outline. Authentic VERY SIMPLE low-resolution pixel art designed for a 12x16 logical pixel sprite, enlarged with nearest neighbor. At most 8 flat colors, large purposeful square pixel clusters, no tiny detail, no gradients, no anti-aliasing, no dithering, no shadows outside sprite. Cute cozy apothecary aesthetic. Single bottle centered and fully visible with minimal transparent margin, portrait composition 3:4, actual transparent background. No text, no letters, no numbers, no scene, no pedestal, no other objects.",
+      "source": "potion_v2.png"
+    }
+  ]
+}

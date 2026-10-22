@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "comparison_url": "http://127.0.0.1:41239/art/characters/face-refinement-v1/review.html",
+  "all_images_loaded": true,
+  "native_character_sizes": [
+    32,
+    48
+  ],
+  "common_zoom_checked": [
+    3,
+    6
+  ],
+  "blink_preview_checked": true,
+  "final_blink_state": false,
+  "console": [],
+  "proof": "browser-comparison-6x.png"
+}

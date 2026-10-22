@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "mode": "builtin",
+  "tool": "image_gen.imagegen",
+  "status": "candidate",
+  "approved_by_user": false,
+  "selected_source": "source/generated-02.png",
+  "references": [
+    {
+      "path": "assets/source/customer_redesign_v4/rogue.png",
+      "role": "latest game identity; orange cat ears/hair/tail, scarf, flat top"
+    },
+    {
+      "path": "art/characters/keyframes-v2/elf/keyframes-review.png",
+      "role": "native style and proportion reference"
+    }
+  ],
+  "generations": [
+    {
+      "source": "source/generated-01.png",
+      "prompt": "Create ONE transparent sprite sheet for a cozy potion shop game: eight coherent whole-body key poses of the SAME adult female orange-haired CAT ROGUE, in a 4 columns x 2 rows sheet, no text, no grid, no background, true alpha. Each cell corresponds to a native32x48 frame, displayed as chunky integer-scaled pixel art. Composition1280x960 overall, equal320x480 cells. Reference1 is IDENTITY ONLY: orange short tousled bob, two triangular orange cat ears, upward curling orange tail, wine-red scarf, completely flat straight black tube crop top, short bare midriff, black shorts, short gloves, chunky boots, small sheathed dagger at hip. Reference2 is STRICT COARSENESS/PROPORTION style: modest chunky pixel clusters, same head/body size as the elf. Do not copy elf clothing or brown/green colors. No high-resolution illustration, thin lines, AA, gradients, shine, breasts, breast contours, cleavage, photorealism or extra details. This is an adult character in compact chibi proportions.\nUse ONLY5 color roles: deep plum-black ink#241C32 for1nativepixeloutline/pupils/gloves/top/shorts/boots/sheath; peach cream skin#F6D1AC; coral-orange hair/ears/tail#DE7356; apricot-orange restrained hair/tail highlights#F4AC68; berry wine scarf#9D4359. Flat fills.\nNative anatomy in every cell: top11rows blank, head including cat ears occupies rows11..26, head width at most22pixels, gently stepped cheeks tapering toward chin, not a rectangular skin panel. Torso/waist/shorts rows27..39 (13rows), legs/boots40..46 (7rows), foot contact row46, row47blank. Same scale all poses. Left-facing three-quarter, BOTH eyes clearly visible and separate from hair. Both pupils vertically1x2pixels, x11 and16, rows22,23, same height, peach skin ring one full pixel all around including corners. Small calm mischievous expression. Face stays identical all poses. Ears connected to hair, tail connected to hip, scarf connected at neck, no floating accessories.\nOrder left to right:\ntoprow1 idle: feet planted, arms relaxed, tail curl behind on viewer right.\ntoprow2 walk contact A: moderate opposing leg stride, viewer-left leg forward, viewer-right leg back, opposite arm swing.\ntoprow3 walk pass A: viewer-right foot planted at row46, viewer-left knee slightly bent and foot lifted to row44; shorts still cover upper thigh through row39.\ntoprow4 walk contact B: opposite limb phase, NOT duplicate pose2.\nbottomrow1 walk pass B: viewer-left foot planted row46, viewer-right knee bent and foot lifted row44; opposite phase from pose3.\nbottomrow2 receive extend: same standing feet, short leftward elbow reach, actual peach palm centered x6,y29, glove below palm; no bottle drawn. Avoid covering face.\nbottomrow3 receive hold: same planted feet, bent forearms holding near low chest/waist, visible peach palm centered x16,y34, no bottle. Don't merge hand into black top.\nbottomrow4 blink idle: identical to idle except two closed eyes, body and tail unchanged.\nLeave generous transparent margins in each cell. Tail can widen lower body but head stays22x16. Real coherent whole body for every pose, not pasted unrelated body parts. All silhouettes closed with1pixel dark outline. Square pixels, simple readable tiny game sprite, no labels, shadows or ground platform."
+    },
+    {
+      "source": "source/generated-02.png",
+      "prompt_file": "source/prompt-02.txt",
+      "reason": "Coarser eye and color blocks; coherent full bodies"
+    },
+    {
+      "source": "source/generated-03-walk-b.png",
+      "prompt_file": "source/prompt-03.txt",
+      "reference": "source/standing-style-reference.png",
+      "reason": "Regenerated two coherent whole-body B phases; passing B plants the opposite image-side foot"
+    }
+  ],
+  "old_face_hook_used": false,
+  "cross_pose_limb_splicing": false,
+  "source_row_cut": 524,
+  "walk_b_source": "source/generated-03-walk-b.png",
+  "selected_source_status": "postprocessed_candidate",
+  "native_outputs": "frames/",
+  "validation": "validation.json",
+  "pipeline_manifest": "manifest.json",
+  "actual_eyes": {
+    "open": [
+      [
+        10,
+        23,
+        1,
+        2
+      ],
+      [
+        14,
+        23,
+        1,
+        2
+      ]
+    ],
+    "closed": [
+      [
+        10,
+        24,
+        2,
+        1
+      ],
+      [
+        13,
+        24,
+        2,
+        1
+      ]
+    ]
+  },
+  "native_corrections": "semantic-masks.json"
+}

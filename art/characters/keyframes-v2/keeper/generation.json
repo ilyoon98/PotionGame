@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "mode": "builtin",
+  "tool": "image_gen.imagegen",
+  "status": "candidate",
+  "approved_by_user": false,
+  "selected_source": "source/generated-01.png",
+  "references": [
+    {
+      "path": "source/identity-reference-10x.png",
+      "native_source": "art/mockups/full-ingame-v7/characters/witch-native.png",
+      "role": "Male keeper identity, strict palette and pixel density"
+    }
+  ],
+  "generations": [
+    {
+      "source": "source/generated-01.png",
+      "prompt": "Create a transparent game sprite sheet of SIX coherent full-body key poses of EXACT SAME MALE potion shop keeper from reference. Three columns by two rows, equal32x48nativecells displayed as coarse square pixels. Six figures equal scale and same feet ground. Keep reference EXACT identity: MALE youngadult, short chestnut brown hair, broad floppy crooked purple witch hat with golden buckle on band, cream high-neck shirt, FRONT-OPEN purple cloak, brown shorts with bare peach knees and brown boots. No feminine dress/skirt, no long hair, no breasts. Same compact chibi proportions and head shape. Reference is strict coarseness AND identity, no extra details.\nNative32x48 design: hat occupies available0..17rows and connected snugly to head, never floats; actual head reference22x16within11..26rows, body27..39(13rows), legs/boots40..46(7rows), feetrow46androw47empty. Same head position, hat and feet in EVERY pose. BOTH tiny1x2plainblackeyes at x15 and18,y21/22, skin margin1pixel allaround incldiagonal, face lookingRIGHT in gentle3quarter. Don't move forehead/hairline or cover eyes. Skin cheek stepped and tapered, not rectangle. Shortbrownfringe covers upper-rightforehead above eye row20. Extremely coarse pixel blocks matching reference.\nONLY5 flatcolor roles: deep plum-black#241C32outline/eyes; peach cream#F6D1ACskin AND cream shirt; chestnut#916047hair/shorts/boots; plum purple#86548Ehat/cloak; warmgold#E9B95Fhatbuckle/smallclasp. No shading ramp beyond these5, no gradients, anti-aliasing, texture/noise, polished illustration or fine lines.\nPoseorder:\nTOPLEFT idle: reference standing pose, same wholebody and cloak.\nTOPMIDDLE brew_reach: feet planted, left arm reaches toward imageLEFT at x6,y31 to grasp an invisible stirring handle. Elbow modestly extended, peach palm visible, no spoon drawn. Otherarmresting. Cloak folds follow arm coherently.\nTOPRIGHT brew_stir_left: left arm low diagonal reach with visiblepeachhandx5,y33, elbow bent down, gentle lean of torso towardLEFT, feet fixed. Hand would stir at LEFTcauldron. NO tool or object.\nBOTTOMLEFT brew_stir_right: different left arm bend with visiblepeachhandx8,y31, elbow drawn closer, wrist modestly lifted. Same fixedfeet. Pairwith previous shows clear2pose stirring hand movement, not duplicate.\nBOTTOMMIDDLE handover_extend: right-facingfigure reaches RIGHT, visiblepeachpalmx27,y31, short bent elbow with cream sleeve. No bottle or object. Leftarmresting. Keep enoughtransparentroom right side for later separate8pixelbottle.\nBOTTOMRIGHT handover_return: right hand returns to waist, visiblepeachpalmx21,y34. Feet fixed, same body and cloak, no object.\nFull-body coherent poses, torsoandlegs from SAME generated pose, no pasted limbs. Hat/head position staysfixed inall6. Clothing remains same, frontopening revealscreamshirt and brown shorts inallposes. Purplecloak does not swallowbareknees. Cleanclosed1nativepixeloutline on every boundary, no detached hands/hat/feet. Purealpha, no checkerboard/background/text/grid/labels/ground/shadows/cauldron/bottles/spoon. Simple readable32x48cozy sprites."
+    },
+    {
+      "source": "source/generated-02-brew.png",
+      "prompt_file": "source/prompt-02.txt",
+      "references": [
+        "source/identity-reference-10x.png",
+        "source/cauldron-reference-10x.png"
+      ],
+      "reason": "Hands raised to match actual32x32cauldron rim height at shared ground"
+    }
+  ],
+  "head_and_hat": "Current head/hat/collar retained; raised forearms add pixels only outside the original silhouette in [0,14,10,28]. Moving torso/arms/legs come from one coherent whole-body source for each pose.",
+  "cross_pose_limb_splicing": false,
+  "old_face_hook_used": false,
+  "source_column_cuts": [
+    0,
+    426,
+    860,
+    1239
+  ],
+  "brew_source": "source/generated-02-brew.png",
+  "final_native_outputs": "frames/",
+  "validation": "validation.json",
+  "contacts": "contact-validation.json",
+  "props": {
+    "spoon_source": "source/generated-spoon.png",
+    "prompt_file": "source/prompt-spoon.txt",
+    "manifest": "props-manifest.json",
+    "native": "props/spoon-native.png"
+  }
+}

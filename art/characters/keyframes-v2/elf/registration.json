@@ -1,0 +1,124 @@
+{
+  "sheet_size": [
+    1448,
+    1086
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "uniform_scale_all_generated_poses": 0.8845208845208845,
+  "whole_body_registration": true,
+  "old_face_hook_used": false,
+  "no_cross_pose_limb_splicing": true,
+  "frames": [
+    {
+      "id": "idle",
+      "source": "approved_idle",
+      "whole_body_reused": true,
+      "native_size": [
+        32,
+        48
+      ]
+    },
+    {
+      "id": "walk_contact_a",
+      "source_crop_size": [
+        238,
+        407
+      ],
+      "uniform_source_scale": 0.8845208845208845,
+      "registered_offset": [
+        50,
+        110
+      ],
+      "head_center_anchor": 15.5,
+      "foot_target_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_pass_a",
+      "source_crop_size": [
+        238,
+        407
+      ],
+      "uniform_source_scale": 0.8845208845208845,
+      "registered_offset": [
+        50,
+        110
+      ],
+      "head_center_anchor": 15.5,
+      "foot_target_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_contact_b",
+      "source_crop_size": [
+        238,
+        407
+      ],
+      "uniform_source_scale": 0.8845208845208845,
+      "registered_offset": [
+        50,
+        110
+      ],
+      "head_center_anchor": 15.5,
+      "foot_target_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_pass_b",
+      "source_crop_size": [
+        238,
+        407
+      ],
+      "uniform_source_scale": 0.8845208845208845,
+      "registered_offset": [
+        50,
+        110
+      ],
+      "head_center_anchor": 15.5,
+      "foot_target_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "receive_extend",
+      "source_crop_size": [
+        239,
+        407
+      ],
+      "uniform_source_scale": 0.8845208845208845,
+      "registered_offset": [
+        49,
+        110
+      ],
+      "head_center_anchor": 15.5,
+      "foot_target_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "receive_hold",
+      "source_crop_size": [
+        238,
+        407
+      ],
+      "uniform_source_scale": 0.8845208845208845,
+      "registered_offset": [
+        50,
+        110
+      ],
+      "head_center_anchor": 15.5,
+      "foot_target_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "blink_idle",
+      "source": "approved_idle_pupil_state",
+      "whole_body_reused": true,
+      "native_size": [
+        32,
+        48
+      ]
+    }
+  ]
+}

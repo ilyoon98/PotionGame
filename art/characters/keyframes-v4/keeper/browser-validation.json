@@ -1,0 +1,35 @@
+{
+  "page": "http://127.0.0.1:41239/art/characters/keyframes-v4/keeper/review.html",
+  "loaded": true,
+  "actions_observed": [
+    "idle",
+    "brew_reach",
+    "brew_stir_left",
+    "brew_stir_right",
+    "handover_return",
+    "handover_extend"
+  ],
+  "motion_index_changed": true,
+  "checked_modes": [
+    "fine",
+    "grid"
+  ],
+  "recipe": "moon",
+  "console_warnings_and_errors": [],
+  "screenshots": [
+    "browser-idle-preview.png",
+    "browser-brew-preview.png",
+    "browser-handover-preview.png",
+    "browser-controls-preview.png"
+  ],
+  "final_state": {
+    "action": "brew",
+    "blink": "false",
+    "breath": "false",
+    "mode": "fine",
+    "motionIndex": "4",
+    "playing": "true",
+    "pose": "brew_reach",
+    "recipe": "moon"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "rare_forest_breath",
+  "variant": "potion",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Production pixel-art inventory icon for the cozy witch shop game. ONE isolated whole potion bottle centered on genuine transparent alpha, generous margin. Hard chunky square pixel clusters, dark plum #432039 stepped outline, antique gold #efc77c stopper, ivory glints, 4 flat shade clusters. Logical design must fit 32x40 pixels with a bold simple emblem; enlarge the pixel art cleanly for generation. Front orthographic view. No words, labels, lettering, watermark, outside particles, glow, soft shadow, background, ground, frame, gradients or blur. This is a rare potion but rarity is conveyed by silhouette and emblem only. Subject: LOW AND WIDE teardrop bottle, squat broad shoulders and a short neck (never round orb or tall pear). Liquid is fresh light lime-green. Emblem: two opposed sage-green leaves with one pale curling breath line between them. The emblem is a simple large inlaid marking on the bottle body, no decorative clutter. Full bottle and cap visible.",
+  "date": "2026-10-08",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-778ea69b-661b-48d6-9178-57fb92535894.png",
+  "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_forest_breath_potion.png",
+  "transparent_background": true
+}

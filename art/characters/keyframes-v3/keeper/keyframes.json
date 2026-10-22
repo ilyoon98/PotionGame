@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "character": "keeper",
+  "status": "superseded_whole_orientation_material_and_motion_rejected",
+  "approved_by_user": false,
+  "frames": [
+    {
+      "id": "idle",
+      "name": "대기",
+      "path": "frames/idle.png",
+      "grip": null,
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "facing": "right",
+      "eye_points": [
+        [
+          15,
+          21
+        ],
+        [
+          18,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "brew_reach",
+      "name": "제조 · 손 뻗기",
+      "path": "frames/brew_reach.png",
+      "grip": [
+        5,
+        16
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        32,
+        0,
+        32,
+        48
+      ],
+      "facing": "left",
+      "eye_points": [
+        [
+          12,
+          18
+        ],
+        [
+          15,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "brew_stir_left",
+      "name": "제조 · 젓기A",
+      "path": "frames/brew_stir_left.png",
+      "grip": [
+        3,
+        24
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        64,
+        0,
+        32,
+        48
+      ],
+      "facing": "left",
+      "eye_points": [
+        [
+          12,
+          18
+        ],
+        [
+          15,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "brew_stir_right",
+      "name": "제조 · 젓기B",
+      "path": "frames/brew_stir_right.png",
+      "grip": [
+        3,
+        19
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        0,
+        48,
+        32,
+        48
+      ],
+      "facing": "left",
+      "eye_points": [
+        [
+          12,
+          18
+        ],
+        [
+          15,
+          18
+        ]
+      ]
+    },
+    {
+      "id": "handover_extend",
+      "name": "전달 · 손 내밀기",
+      "path": "frames/handover_extend.png",
+      "grip": [
+        28,
+        30
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        32,
+        48,
+        32,
+        48
+      ],
+      "facing": "right",
+      "eye_points": [
+        [
+          15,
+          21
+        ],
+        [
+          18,
+          21
+        ]
+      ]
+    },
+    {
+      "id": "handover_return",
+      "name": "전달 · 손 회수",
+      "path": "frames/handover_return.png",
+      "grip": [
+        22,
+        34
+      ],
+      "native_size": [
+        32,
+        48
+      ],
+      "sheet_rect": [
+        64,
+        48,
+        32,
+        48
+      ],
+      "facing": "right",
+      "eye_points": [
+        [
+          15,
+          21
+        ],
+        [
+          18,
+          21
+        ]
+      ]
+    }
+  ],
+  "palette": "art/palettes/v1/characters/keeper.hex",
+  "scale": 3,
+  "native_sheet": "keeper-keyframes-native.png",
+  "identity_reference": "art/characters/keyframes-v2/keeper/frames/idle.png",
+  "head_hat_current_reference_retained": false,
+  "head_attachment": "Brewing uses a new coherent whole body; no old head layer. Hat width is excluded from head size.",
+  "contacts": "contact-validation.json",
+  "animations_status": "keypose flipbooks only; finished action animations remain",
+  "runtime_integrated": false,
+  "version": 3,
+  "old_head_overlay_used": false,
+  "body_redrawn_for_brewing": true,
+  "anatomy_validation": "validation.json",
+  "replacement": "art/characters/keyframes-v4/keeper/review.html"
+}

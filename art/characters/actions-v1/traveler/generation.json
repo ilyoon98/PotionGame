@@ -1,0 +1,29 @@
+{
+  "mode": "built-in image_gen",
+  "source": "source/generated-carry-01.png",
+  "original_generated_path": "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-7a38e2c4-1830-410c-8c2c-ba0fe278b431.png",
+  "source_sha256": "8becde4166496ef592d0f51af4c1a6001a0afc657fe61f51873bb27ac59c2687",
+  "prompt": "source/prompt-carry.txt",
+  "references": [
+    "source/walk-edit-reference-10x.png",
+    "source/carry-reference-10x.png"
+  ],
+  "whole_bodies": true,
+  "new_palette_colors": 0,
+  "old_keypose_sha256": {
+    "idle": "7b5f8c4dd4b3c07de725286944a3ab22dccc87330c5aad27aee1fde8e7ab5f76",
+    "walk_contact_a": "0e2cd5ae9578c8534b73014b3a679009ff98cb341ced145723729256573e0e8f",
+    "walk_pass_a": "7832ff1230f61a86475e35ca1b6fc81a0b281adfad1e2c9ad2540e4bfe890e05",
+    "walk_contact_b": "a893209e9423f317163b0d720c945345548061dd392420e07a84b18307825d7f",
+    "walk_pass_b": "0ce092f14664e2b2fbfbfbe6ed8a7f52a9b2202a58b81f3c83f7f91ef9604393",
+    "receive_extend": "d8214b76af588e2d3e192b4311187c39aada4b66c1bc98273edbbb9c11a6885f",
+    "receive_hold": "3531a8ccb31423a0e3f26a7482801d8643bf693c268d2b676f7684696603ee19",
+    "blink_idle": "683a9b19bb0d2b768a5b8f727e32d8180fdf1e609fefb25f5b3eaf34a520638f"
+  },
+  "processing_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "status": "candidate",
+  "validation_status": "passed",
+  "approved_by_user": false,
+  "image_size": [
+    540,
+    300
+  ],
+  "art_native_size": [
+    180,
+    83
+  ],
+  "art_scale": 3,
+  "art_height": 248,
+  "toolbar_height": 52,
+  "matte_is_preview_only": true,
+  "placements": {
+    "window": [
+      4,
+      5
+    ],
+    "herb_station": [
+      4,
+      40
+    ],
+    "shelf_frame": [
+      105,
+      1
+    ],
+    "poster": [
+      153,
+      1
+    ],
+    "counter": [
+      105,
+      64
+    ],
+    "witch": [
+      72,
+      32
+    ],
+    "cauldron_moon": [
+      41,
+      47
+    ],
+    "elf": [
+      148,
+      33
+    ]
+  },
+  "shelf_board_rows": [
+    23,
+    38
+  ],
+  "visible_owned_stock": [
+    {
+      "id": "health",
+      "position": [
+        110,
+        12
+      ]
+    },
+    {
+      "id": "mana",
+      "position": [
+        120,
+        12
+      ]
+    },
+    {
+      "id": "moon",
+      "position": [
+        130,
+        12
+      ]
+    },
+    {
+      "id": "purify",
+      "position": [
+        140,
+        12
+      ]
+    },
+    {
+      "id": "agility",
+      "position": [
+        110,
+        23
+      ]
+    },
+    {
+      "id": "vigor",
+      "position": [
+        120,
+        27
+      ]
+    },
+    {
+      "id": "nightwalk",
+      "position": [
+        130,
+        27
+      ]
+    },
+    {
+      "id": "rare_forest_breath",
+      "position": [
+        140,
+        27
+      ]
+    }
+  ],
+  "inventory_count": 8,
+  "capacity": 12,
+  "current_brew": "moon",
+  "sold_customer_potion": "purify",
+  "customer": "elf",
+  "sold_bottle_not_in_owned_stock": true,
+  "gold": 1284,
+  "sale_gold": 24,
+  "active_growing_species": 9,
+  "active_expeditions": 2,
+  "environment": [
+    "night",
+    "rain"
+  ],
+  "values_are_mock_state_not_player_save": true,
+  "runtime_content_count": 36,
+  "screen_validation": {
+    "passed": true,
+    "size": [
+      540,
+      300
+    ],
+    "opaque_pixels": 81219,
+    "colors": [
+      "#241C32",
+      "#24566A",
+      "#3BA8A3",
+      "#50315F",
+      "#718C59",
+      "#827589",
+      "#86548E",
+      "#916047",
+      "#9BE2CF",
+      "#9D4359",
+      "#A65D64",
+      "#B5C77D",
+      "#C38EB5",
+      "#C99463",
+      "#DE7356",
+      "#DE9B88",
+      "#E9B95F",
+      "#F6D1AC",
+      "#FFF0BC"
+    ],
+    "color_count": 19,
+    "off_palette_colors": 0,
+    "partial_alpha_pixels": 0,
+    "problems": []
+  },
+  "art_validation": {
+    "passed": true,
+    "size": [
+      180,
+      83
+    ],
+    "opaque_pixels": 5237,
+    "colors": [
+      "#241C32",
+      "#24566A",
+      "#3BA8A3",
+      "#50315F",
+      "#718C59",
+      "#827589",
+      "#86548E",
+      "#916047",
+      "#9BE2CF",
+      "#9D4359",
+      "#A65D64",
+      "#B5C77D",
+      "#C38EB5",
+      "#C99463",
+      "#DE7356",
+      "#DE9B88",
+      "#E9B95F",
+      "#F6D1AC",
+      "#FFF0BC"
+    ],
+    "color_count": 19,
+    "off_palette_colors": 0,
+    "partial_alpha_pixels": 0,
+    "problems": []
+  },
+  "integer_art_scale_verified": true,
+  "trimmed_row_was_transparent": true,
+  "source_code": [
+    "scripts/workshop_layout.gd",
+    "scripts/item_art.gd",
+    "scripts/potion_display.gd",
+    "scripts/shop_content.gd",
+    "scripts/rare_recipes.gd",
+    "data/content_expansion.json"
+  ],
+  "scope_note": "Main workshop candidate at current window size; new art placements differ from current runtime coordinates. No game changes."
+}

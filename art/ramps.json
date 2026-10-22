@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "name": "Cozy Witch 24",
+  "status": "approved",
+  "approved_by_user": true,
+  "approved_on": "2026-10-13",
+  "approval_note": "솥·마녀·선반 목업과 검사 결과를 제시한 뒤 사용자가 '좋아'라고 답해 24색과 목업을 아트 기준으로 승인했다.",
+  "palette_file": "art/palette.hex",
+  "shared_outline": "#241C32",
+  "ramps": {
+    "outline": {"name": "공통 외곽선", "colors": ["#241C32"]},
+    "stone": {"name": "돌·금속", "colors": ["#241C32", "#4A3C52", "#827589"]},
+    "purple": {"name": "가지 보라 → 자두 보라 → 라일락 빛", "colors": ["#50315F", "#86548E", "#C38EB5"]},
+    "teal": {"name": "깊은 청록 → 민트 물약 → 물약 반짝임", "colors": ["#24566A", "#3BA8A3", "#9BE2CF"]},
+    "wood": {"name": "나무 그림자 → 밤색 나무 → 꿀빛 나무", "colors": ["#50333B", "#916047", "#C99463"]},
+    "skin": {"name": "장밋빛 그림자 → 복숭아 피부 → 살구 크림", "colors": ["#A65D64", "#DE9B88", "#F6D1AC"]},
+    "gold": {"name": "금빛 그림자 → 버터 골드 → 크림 반짝임", "colors": ["#A56A3D", "#E9B95F", "#FFF0BC"]},
+    "leaf": {"name": "그늘 잎 → 세이지 잎 → 새싹 빛", "colors": ["#3D544D", "#718C59", "#B5C77D"]},
+    "fire": {"name": "불씨 자주 → 산호 불꽃 → 귤빛 불꽃", "colors": ["#9D4359", "#DE7356", "#F4AC68"]}
+  }
+}

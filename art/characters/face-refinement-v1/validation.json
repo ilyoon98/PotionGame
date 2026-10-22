@@ -1,0 +1,549 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "native_canvas": [
+    32,
+    48
+  ],
+  "scale": 3,
+  "face_source": "generation.json",
+  "checks": {
+    "keeper": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 734,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              18,
+              21
+            ],
+            [
+              18,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        }
+      ],
+      "closed_eyes": [
+        {
+          "pixels": [
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              18,
+              22
+            ],
+            [
+              19,
+              22
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        }
+      ],
+      "body_from_row27_unchanged": true,
+      "before_lower_face_skin_widths": {
+        "23": 4,
+        "24": 3,
+        "25": 1,
+        "26": 0
+      },
+      "after_lower_face_skin_widths": {
+        "23": 9,
+        "24": 5,
+        "25": 1,
+        "26": 0
+      },
+      "native_sha256": "d3a97f86b77e4b80a4055d9fccb11fa36a1431429b62a07bc53bfa84c45f279f",
+      "upper_right_fringe_filled": true
+    },
+    "elf": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 490,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        }
+      ],
+      "closed_eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        }
+      ],
+      "body_from_row27_unchanged": true,
+      "before_lower_face_skin_widths": {
+        "23": 11,
+        "24": 10,
+        "25": 9,
+        "26": 0
+      },
+      "after_lower_face_skin_widths": {
+        "23": 9,
+        "24": 10,
+        "25": 9,
+        "26": 4
+      },
+      "native_sha256": "bb9220daf0c757f728bb1488dbd729358cb9866a20116dfbac82a417cd4c38a0"
+    },
+    "mage": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 820,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              23
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              14,
+              22
+            ],
+            [
+              14,
+              23
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        }
+      ],
+      "closed_eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        }
+      ],
+      "body_from_row27_unchanged": true,
+      "before_lower_face_skin_widths": {
+        "23": 10,
+        "24": 9,
+        "25": 0,
+        "26": 0
+      },
+      "after_lower_face_skin_widths": {
+        "23": 9,
+        "24": 9,
+        "25": 7,
+        "26": 1
+      },
+      "native_sha256": "7ca6ba572e5fa72f09c26c4d1c42bf60a4fd249ee063619f8544b91e2d1459b6"
+    },
+    "traveler": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 588,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              23
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              14,
+              22
+            ],
+            [
+              14,
+              23
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "skin_gap": 1
+        }
+      ],
+      "closed_eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        },
+        {
+          "pixels": [
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "skin_gap": 1
+        }
+      ],
+      "body_from_row27_unchanged": true,
+      "before_lower_face_skin_widths": {
+        "23": 8,
+        "24": 8,
+        "25": 8,
+        "26": 6
+      },
+      "after_lower_face_skin_widths": {
+        "23": 11,
+        "24": 11,
+        "25": 9,
+        "26": 5
+      },
+      "native_sha256": "de677845372c831390f42fce247e86ef21d95c94d4b1b81d87ada3a69d5d1321"
+    }
+  },
+  "keyframe_checks": {
+    "elf": {
+      "frame_count": 8,
+      "checks": [
+        {
+          "pose": "idle",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_contact_a",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_pass_a",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_contact_b",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_pass_b",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "receive_extend",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "receive_hold",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "blink_idle",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        }
+      ],
+      "numeric_validation": "art/characters/keyframes-v1/elf/validation.json"
+    },
+    "mage": {
+      "frame_count": 8,
+      "checks": [
+        {
+          "pose": "idle",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_contact_a",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_pass_a",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_contact_b",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_pass_b",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "receive_extend",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "receive_hold",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "blink_idle",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        }
+      ],
+      "numeric_validation": "art/characters/keyframes-v1/mage/validation.json"
+    },
+    "traveler": {
+      "frame_count": 8,
+      "checks": [
+        {
+          "pose": "idle",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_contact_a",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_pass_a",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_contact_b",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "walk_pass_b",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "receive_extend",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "receive_hold",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        },
+        {
+          "pose": "blink_idle",
+          "eyes_passed": true,
+          "body_from_row27_unchanged": true
+        }
+      ],
+      "numeric_validation": "art/characters/keyframes-v1/traveler/validation.json"
+    }
+  },
+  "game_assets_integrated": false,
+  "animated_mockup": {
+    "path": "art/mockups/full-ingame-v7/animated-preview.html",
+    "idle_frames_tested": 256,
+    "passed": true,
+    "eyes_and_fringe_frames_tested": 256
+  }
+}

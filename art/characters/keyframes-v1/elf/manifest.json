@@ -1,0 +1,856 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/keyframes-v1/elf/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "idle",
+      "source": "art/characters/keyframes-v1/elf/source/idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk_contact_a",
+      "source": "art/characters/keyframes-v1/elf/source/walk_contact_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ],
+      "background_alpha_rectangles": [
+        {
+          "rect": [
+            9,
+            38,
+            10,
+            40
+          ],
+          "reason": "Two outline pixels widen the generated tunic to13. Keep the hem at12 without touching legs from row40."
+        }
+      ]
+    },
+    {
+      "id": "walk_pass_a",
+      "source": "art/characters/keyframes-v1/elf/source/walk_pass_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk_contact_b",
+      "source": "art/characters/keyframes-v1/elf/source/walk_contact_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walk_pass_b",
+      "source": "art/characters/keyframes-v1/elf/source/walk_pass_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "receive_extend",
+      "source": "art/characters/keyframes-v1/elf/source/receive_extend-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "receive_hold",
+      "source": "art/characters/keyframes-v1/elf/source/receive_hold-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blink_idle",
+      "source": "art/characters/keyframes-v1/elf/source/blink_idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.52,
+          "value_min": 0.78
+        },
+        {
+          "material": "hair_leather",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.2,
+          "value_max": 0.8
+        }
+      ],
+      "fallback_material": "leaf",
+      "material_rectangles": [
+        {
+          "rect": [
+            9,
+            20,
+            12,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        },
+        {
+          "rect": [
+            14,
+            20,
+            18,
+            24
+          ],
+          "material": "skin",
+          "include_interior_outline": true
+        }
+      ],
+      "material_pixels": [
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

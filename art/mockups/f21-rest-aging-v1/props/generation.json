@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-21",
+  "mode": "hand-authored native pixel maps (filled shapes with an automatic 1px #241C32 silhouette outline, then hand-tuned); no image generator",
+  "assets": {
+    "aging_cask_wall": "32x32 lying cask on a wall shelf with brackets; wood ramp x3 + iron #827589",
+    "aging_cask_floor": "32x32 upright cask with lid and tap; same 5 colors (alternative placement)",
+    "bedroll_mat": "32x32 teal mat drawn behind the keeper (sleep option B)",
+    "bedroll_blanket": "32x16 teal blanket drawn in front of the keeper's legs (sleep option B)",
+    "aged_seal": "5x5 gold seal overlaid on existing bottles at (bottle_w-3, bottle_h-6); bottles are not redrawn",
+    "sleep_z": "6x7 Z effect for sleeping",
+    "dizzy_star": "5x5 orbiting star effect for fainting"
+  },
+  "ramps_used": ["outline", "wood", "stone (#827589 only)", "gold", "teal"],
+  "new_palette_colors": 0,
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json (one material per exact approved color, mapped to its ramp)"
+}

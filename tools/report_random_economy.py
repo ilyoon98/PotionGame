@@ -1,0 +1,62 @@
+"""Summarize measured runtime data; never simulate or edit the live economy."""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+BALANCE = ROOT / "docs" / "balance"
+base = json.loads((BALANCE / "runtime-random-expedition-8h.json").read_text(encoding="utf-8"))["runs"]
+candidate = json.loads((BALANCE / "runtime-random-counter-candidate-8h.json").read_text(encoding="utf-8"))["runs"]
+labels = {"recipe_first": "레시피 우선", "equipment_first": "설비 우선", "return_15m": "15분 확인"}
+assert len(base) == len(candidate) == 9
+assert all(r["ledger_verified"] for r in base + candidate)
+
+def span(rows, fn, digits=1):
+    vals = [fn(row) for row in rows]
+    lo, hi = min(vals), max(vals)
+    return f"{lo:,.{digits}f}" if lo == hi else f"{lo:,.{digits}f}~{hi:,.{digits}f}"
+
+lines = [
+    "# 랜덤 원정 보상 8시간 경제 검토", "",
+    "2026-10-08 · **실제 랜덤 보상 엔진 측정 완료 / 장부 검사 통과 / 판매 속도 후보 미채택 / 실제 화면 조작 미실시**.", "",
+    "현재 게임의 재료 풀·출발비·가격·제조·판매·환경·독립 원정 회차로 신규 상태를 8시간씩 진행했다. 시드 73129·19337·9973마다 레시피 우선/설비 우선은 30초, 15분 확인은 900초 간격으로 정식 구매 경로를 사용하는 수동 선택을 모사했다. 자동 강화 기능을 추가한 것이 아니다. 9회와 후보 9회를 별도로 측정했다. 특별 레시피 실제 획득·오프라인 보상·플레이어 저장은 사용하지 않았다.", "",
+    "[기본 측정 원본](balance/runtime-random-expedition-8h.json) · [후보 측정 원본](balance/runtime-random-counter-candidate-8h.json). 측정기는 `tools/measure_random_expansion.gd`, 후보는 `tools/measure_random_counter_candidate.gd`다. 이전 고정 보상 장기 검사나 1시간 검사로 대체하지 않았다.", "",
+    "## 실제 성장 도달", "",
+    "기본 포함 물약 32종, 지역 조사 완료 8곳, 강화 125단계, 직원 4명의 전체 도달 시간을 기록했다. 지역 전체 열림과 조사 완료는 구분한다. 아래 지역 도달은 **8곳 조사 완료**다.", "",
+    "| 정책 / 시드 | 물약 전체(분) | 지역 조사 전체(분) | 강화 전체(분) | 직원 전체(분) | 연속 높은 재고(분) |",
+    "| --- | ---: | ---: | ---: | ---: | ---: |",
+]
+for r in base:
+    c = r["completion_minutes"]
+    lines.append(f"| {labels[r['policy']]} / {r['label'].rsplit('_', 1)[1]} | {c['recipes']:g} | {c['regions']:g} | {c['investments']:g} | {c['employees']:g} | {r['longest_backlog_minutes']} |")
+lines += ["", "## 30·60·120분과 8시간", "",
+          "각 칸은 동일 정책의 세 시드 범위다. 초반 잔고가 작은 이유에는 수동 투자가 포함된다. 순영업수입은 매출−재료비−원정 출발비로, 수동 투자를 빼지 않는다.", "",
+          "| 정책 | 시간(분) | 보유 골드 | 물약 종류 | 조사 완료 지역 | 강화 단계 합 | 부족 재료가 있는 구매 레시피 수 | 실제 제조 재료 대기(%) | 재고 가득(%) | 손님 대기(%) | 원정 출발비 누적 |",
+          "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
+for policy in labels:
+    runs = [r for r in base if r["policy"] == policy]
+    for minute in [30, 60, 120, 480]:
+        rows = [r["final"] if minute == 480 else next(c for c in r["checkpoints"] if c["minutes"] == minute) for r in runs]
+        keys = [("gold", 0), ("recipes", 0), ("completed_regions", 0), ("investments", 0), ("shortfall_recipe_count", 0), ("material_wait_percent", 2), ("full_percent", 2), ("waiting_percent", 2), ("expedition_spent_total", 0)]
+        lines.append(f"| {labels[policy]} | {minute} | " + " | ".join(span(rows, lambda r, k=k: r[k], d) for k, d in keys) + " |")
+lines += ["", "## 지표의 의미와 장부", "",
+          "- 제조 재료 대기는 실제 `waiting_for_herbs()` 상태 구간의 정확한 시간 합이다. 이번 검사에서는 기본 약초 제조 대기가 0%였지만, 모든 신규 레시피 재료가 항상 충분했다는 뜻은 아니다. 부족 레시피 수와 `owned_recipe_shortfalls`는 해당 시점 다음 배치의 재료별 부족 수량이다. 이미 재료를 예약한 현재 배치는 제외했고 이 순간값을 대기 시간으로 환산하지 않았다.",
+          "- 재고 가득은 실제 제조가 창고 한도로 멈춘 시간이다. 연속 높은 재고는 평균 재고율 90% 이상·손님 대기 0인 5분 구간의 연속 길이다. 155분 높은 재고를 155분 생산 정지로 해석하지 않는다.",
+          "- 원본은 각 시점의 품종별 보유량, 미보관 pending, 원정 공급 누적, 지역별 완료 횟수, 설비별 단계와 구매 내역도 포함한다. 전체 재고만으로 재료 공급을 판정하지 않는다.",
+          "- 모든 실행에서 5분마다 `초기 골드 + 매출 − 재료비 − 출발비 − 수동 투자 = 보유 골드`가 일치하고 음수가 없었다. 기본 9회는 종료 상태의 JSON 저장·복원도 일치했다. 결과 확인으로 보상이나 RNG를 다시 처리하지 않는다.", "",
+          "## 판매 속도 후보 전후 비교", "",
+          "후보는 판매대 3~10단계의 손님 간격만 기존 값의 **0.8배**로 한 테스트 전용 상태다. 가격·재료 풀·강화 비용·구매 정책은 같다. 실제 게임의 효과나 수치를 바꾸지 않았다.", "",
+          "| 정책 | 기본 물약 전체(분) | 후보 물약 전체(분) | 기본 연속 높은 재고(분) | 후보 연속 높은 재고(분) | 기본 가득(%) | 후보 가득(%) | 기본 손님 대기(%) | 후보 손님 대기(%) |",
+          "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
+for policy in labels:
+    a = [r for r in base if r["policy"] == policy]
+    b = [r for r in candidate if r["policy"] == policy]
+    fields = [(a, lambda r: r["completion_minutes"]["recipes"], 1), (b, lambda r: r["completion_minutes"]["recipes"], 1),
+              (a, lambda r: r["longest_backlog_minutes"], 0), (b, lambda r: r["longest_backlog_minutes"], 0),
+              (a, lambda r: r["final"]["full_percent"], 2), (b, lambda r: r["final"]["full_percent"], 2),
+              (a, lambda r: r["final"]["waiting_percent"], 2), (b, lambda r: r["final"]["waiting_percent"], 2)]
+    lines.append(f"| {labels[policy]} | " + " | ".join(span(*f) for f in fields) + " |")
+lines += ["", "레시피/설비 우선의 일부 기본 실행은 물약 전체 해금이 5시간을 넘어 기존 3~5시간 성장 목표를 충족하지 못한다. 15분 확인은 255~270분으로 범위 안이다. 판매 후보는 높은 재고를 크게 줄였지만 전체 해금 시간을 전반적으로 앞당기지 못했고 일부는 더 늦어졌다. 따라서 **후보를 채택하지 않고 현재 경제를 유지한다**. 다음 균형 검토에서는 마지막 레시피의 조사·명성 조건과 수동 투자 우선순위를 함께 비교해야 한다. 이 항목은 장기 검사의 완료와 별개로 성장 목표 조정이 남아 있는 상태다.", "",
+          "장부·저장·실제 상태 경로 검사는 통과했다. 이 기록은 화면 가독성이나 사람의 조작을 검증한 자료가 아니며 실제 게임/에디터를 띄우거나 입력하지 않았다.", ""]
+target = ROOT / "docs" / "랜덤-원정-8시간-경제-검토.md"
+target.write_text("\n".join(lines), encoding="utf-8")
+print(target)

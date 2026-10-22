@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "preview": "animated-preview.html",
+  "checks": {
+    "pause": {"frame": 46, "breathwitch": 1, "breathelf": 0},
+    "mode_recipe_switch_while_paused": {"frame": 46, "mode": "fine", "recipe": "health", "posewitch": 30, "poseelf": 3},
+    "resume": {"frame": 74, "mode": "grid", "recipe": "moon", "breathwitch": 0, "breathelf": 0},
+    "breathing_and_detail_pose_both_active": true,
+    "health_liquid_color_visibly_changed": true,
+    "console_warnings_or_errors": 0
+  },
+  "screenshots": ["browser-preview.png", "recipe-health-preview.png"],
+  "frame_validation": "motion/frames.json",
+  "character_validation": "characters/validation.json"
+}

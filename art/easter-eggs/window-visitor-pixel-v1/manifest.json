@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/easter-eggs/window-visitor-pixel-v1",
+  "compose": false,
+  "scene": {"size": [20,16], "background": "#FFF0BC", "baseline": 16},
+  "assets": [{
+    "id": "window-visitor",
+    "source": "art/easter-eggs/window-visitor-pixel-v1/source/registered.png",
+    "size": [20,16], "position": [0,0], "margin": 0,
+    "dark_value": 0.24,
+    "preserve_source_outline": true,
+    "materials": {
+      "outline": ["#241C32"], "skin": ["#F6D1AC"],
+      "skin_shadow": ["#A65D64"], "cloth": ["#827589"], "background": ["#FFF0BC"]
+    },
+    "material_ramps": {"skin_shadow":"skin", "cloth":"stone", "background":"gold"},
+    "rules": [
+      {"material":"cloth", "saturation_max":0.26, "value_max":0.75},
+      {"material":"background", "hue":[0.105,0.2], "value_min":0.8},
+      {"material":"skin_shadow", "hue":[0.9,1.0]},
+      {"material":"cloth", "hue":[0.6,0.9]}
+    ],
+    "fallback_material": "skin"
+  }]
+}

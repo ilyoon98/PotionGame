@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:41239/art/characters/keyframes-v1/elf/review.html",
+  "pose_count": 8,
+  "all_image_assets_loaded": true,
+  "all_native_character_images_32x48": true,
+  "all_character_images_displayed_3x": true,
+  "selected_pose": "receive_hold",
+  "bottle_preview": "separate health bottle visible at CSS[33,78]",
+  "guides_enabled": true,
+  "console": [],
+  "proof_files": [
+    "browser-preview.png",
+    "browser-contact-preview.png"
+  ]
+}

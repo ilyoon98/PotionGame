@@ -1,0 +1,57 @@
+{
+  "common_scale": 0.8391608391608392,
+  "native_canvas": [
+    32,
+    48
+  ],
+  "frames": [
+    {
+      "id": "keeper",
+      "source_size": [
+        323,
+        541
+      ],
+      "common_scale": 0.8391608391608392,
+      "offset": [
+        24,
+        16
+      ]
+    },
+    {
+      "id": "elf",
+      "source_size": [
+        260,
+        429
+      ],
+      "common_scale": 0.8391608391608392,
+      "offset": [
+        51,
+        110
+      ]
+    },
+    {
+      "id": "mage",
+      "source_size": [
+        356,
+        504
+      ],
+      "common_scale": 0.8391608391608392,
+      "offset": [
+        10,
+        47
+      ]
+    },
+    {
+      "id": "traveler",
+      "source_size": [
+        286,
+        429
+      ],
+      "common_scale": 0.8391608391608392,
+      "offset": [
+        40,
+        110
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-07",
+  "format": "transparent PNG; alpha preserved; 32x40 icons",
+  "generated_assets": [
+    {
+      "id": "flow",
+      "prompt": "Use case: stylized-concept. Asset type: one production pixel-art icon for a tiny cozy witch potion-shop management UI. ONE isolated object or tightly unified emblem, centered, complete silhouette, front view, generous transparent margin. TRUE transparent alpha background. Strict chunky pixel art, dark plum stepped outlines (#432039), warm antique gold #efc77c, muted aubergine-purple body colors, ivory highlight pixels, small mint/lavender accents. Logical resolution approximately 32x40 pixels, with consistent enlarged square pixels, only flat clustered shades and hard edges. Clear large simple silhouette readable at 40 pixels wide. No lettering, numbers, border, panel, cast shadow, floor, glow, blur, gradients, photorealism or smooth vector graphics. Subject: a compact antique brass gear with eight broad teeth, embracing a small lavender glass potion flask at its center. The gear and flask form ONE unified icon for automatic shop operation. Simple readable design, few details.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-6e891b79-3b0c-4208-aedb-60cbf8db39cc.png",
+      "project_source": "res://assets/source/management_v1/flow.png"
+    },
+    {
+      "id": "filter",
+      "prompt": "Use case: stylized-concept. Asset type: one production pixel-art icon for a tiny cozy witch potion-shop management UI. ONE isolated object or tightly unified emblem, centered, complete silhouette, front view, generous transparent margin. TRUE transparent alpha background. Strict chunky pixel art, dark plum stepped outlines (#432039), warm antique gold #efc77c, muted aubergine-purple body colors, ivory highlight pixels, small mint/lavender accents. Logical resolution approximately 32x40 pixels, with consistent enlarged square pixels, only flat clustered shades and hard edges. Clear large simple silhouette readable at 40 pixels wide. No lettering, numbers, border, panel, cast shadow, floor, glow, blur, gradients, photorealism or smooth vector graphics. Subject: a compact magical precision filter apparatus: a wide golden funnel containing a pale cream filter paper insert, on a small dark plum stand above a squat mint-green glass collection flask. ONE unified laboratory object. A single clean mint droplet between funnel tip and flask. Recognizable funnel-and-bottle silhouette, not a coffee machine or a cauldron.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-79a4ed08-680e-4c6e-8256-0a2af11493f2.png",
+      "project_source": "res://assets/source/management_v1/filter.png"
+    },
+    {
+      "id": "employee",
+      "prompt": "Use case: stylized-concept. Asset type: one production pixel-art icon for a tiny cozy witch potion-shop management UI. ONE isolated object or tightly unified emblem, centered, complete silhouette, front view, generous transparent margin. TRUE transparent alpha background. Strict chunky pixel art, dark plum stepped outlines (#432039), warm antique gold #efc77c, muted aubergine-purple body colors, ivory highlight pixels, small mint/lavender accents. Logical resolution approximately 32x40 pixels, with consistent enlarged square pixels, only flat clustered shades and hard edges. Clear large simple silhouette readable at 40 pixels wide. No lettering, numbers, border, panel, cast shadow, floor, glow, blur, gradients, photorealism or smooth vector graphics. Subject: a folded plum shop-assistant apron, broad cloth body with two simple shoulder straps and tiny ivory front pocket, one warm golden round coin peeking out of the pocket. ONE apron icon for hiring a sales assistant. No head or human body; an easily readable apron silhouette.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-6efa5831-181b-41a9-90e1-f823e6bf744d.png",
+      "project_source": "res://assets/source/management_v1/employee.png"
+    },
+    {
+      "id": "visitors",
+      "prompt": "Use case: stylized-concept. Asset type: one production pixel-art icon for a tiny cozy witch potion-shop management UI. ONE isolated object or tightly unified emblem, centered, complete silhouette, front view, generous transparent margin. TRUE transparent alpha background. Strict chunky pixel art, dark plum stepped outlines (#432039), warm antique gold #efc77c, muted aubergine-purple body colors, ivory highlight pixels, small mint/lavender accents. Logical resolution approximately 32x40 pixels, with consistent enlarged square pixels, only flat clustered shades and hard edges. Clear large simple silhouette readable at 40 pixels wide. No lettering, numbers, border, panel, cast shadow, floor, glow, blur, gradients, photorealism or smooth vector graphics. Subject: ONE customer reputation emblem: two friendly simplified head-and-shoulder silhouettes side by side, one wears a small dark plum witch hat and the other a sage-green traveler hood; a single large golden five-point reputation star overlaps their lower center. Compact badge without circle or border, faces reduced to 2 pixel eyes.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-3833f06a-b4b9-4b80-9d0a-38d05fd28155.png",
+      "project_source": "res://assets/source/management_v1/visitors.png"
+    },
+    {
+      "id": "basic",
+      "prompt": "Use case: stylized-concept. Asset type: one production pixel-art icon for a tiny cozy witch potion-shop management UI. ONE isolated object or tightly unified emblem, centered, complete silhouette, front view, generous transparent margin. TRUE transparent alpha background. Strict chunky pixel art, dark plum stepped outlines (#432039), warm antique gold #efc77c, muted aubergine-purple body colors, ivory highlight pixels, small mint/lavender accents. Logical resolution approximately 32x40 pixels, with consistent enlarged square pixels, only flat clustered shades and hard edges. Clear large simple silhouette readable at 40 pixels wide. No lettering, numbers, border, panel, cast shadow, floor, glow, blur, gradients, photorealism or smooth vector graphics. Subject: ONE open magical potion recipe book. Thick dark plum leather cover, two broad warm ivory pages, a small pink heart-shaped potion symbol on left page and blue four-point mana star symbol on right page, short golden ribbon bookmark at bottom center. Very simple pages with symbolic marks only, absolutely no text or letter-like scribbles.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-d32786b9-eb86-4702-9148-dfd9db05046b.png",
+      "project_source": "res://assets/source/management_v1/basic.png"
+    },
+    {
+      "id": "expedition",
+      "prompt": "Use case: stylized-concept. Asset type: one production pixel-art icon for a tiny cozy witch potion-shop management UI. ONE isolated object or tightly unified emblem, centered, complete silhouette, front view, generous transparent margin. TRUE transparent alpha background. Strict chunky pixel art, dark plum stepped outlines (#432039), warm antique gold #efc77c, muted aubergine-purple body colors, ivory highlight pixels, small mint/lavender accents. Logical resolution approximately 32x40 pixels, with consistent enlarged square pixels, only flat clustered shades and hard edges. Clear large simple silhouette readable at 40 pixels wide. No lettering, numbers, border, panel, cast shadow, floor, glow, blur, gradients, photorealism or smooth vector graphics. Subject: ONE folded parchment forest expedition map. Warm ivory parchment with dark plum edges and rolled lower corner, three tiny sage-green triangular forest trees clustered on upper-left, one large brass compass rose overlay on lower-right with a lavender center. No labels, route lettering or numbers. Compact unified map-and-compass silhouette.",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-ee9482e7-3c0d-4ca7-8f45-9868c543f7c8.png",
+      "project_source": "res://assets/source/management_v1/expedition.png"
+    }
+  ],
+  "reused_assets": {
+    "cauldron": "res://assets/cauldron_48.png",
+    "garden": "res://assets/herb_growth.png / Rect2(0,40,32,40)",
+    "journey": "res://assets/management_v1/expedition_icon.png"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:41239/art/characters/elf-redesign-v2/review.html",
+  "observed": {
+    "guides": false,
+    "images": [
+      {
+        "display": [
+          192,
+          288
+        ],
+        "loaded": true,
+        "native": [
+          32,
+          48
+        ],
+        "src": "source/before-elf.png"
+      },
+      {
+        "display": [
+          192,
+          288
+        ],
+        "loaded": true,
+        "native": [
+          32,
+          48
+        ],
+        "src": "elf-native.png"
+      },
+      {
+        "display": [
+          588,
+          224
+        ],
+        "loaded": true,
+        "native": [
+          588,
+          224
+        ],
+        "src": "common-scale-3x.png"
+      },
+      {
+        "display": [
+          540,
+          249
+        ],
+        "loaded": true,
+        "native": [
+          540,
+          249
+        ],
+        "src": "workshop-preview-3x.png"
+      }
+    ],
+    "zoom": "6"
+  },
+  "console_errors": [],
+  "screenshot": "browser-preview.png"
+}

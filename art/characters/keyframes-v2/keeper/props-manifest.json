@@ -1,0 +1,7 @@
+{
+  "schema_version":1,"status":"candidate","approved_by_user":false,"compose":false,"scale":3,"alpha_threshold":224,"max_colors":2,
+  "palette":"art/palette.hex","ramps":"art/ramps.json","output":"art/characters/keyframes-v2/keeper/props",
+  "scene":{"size":[18,12],"background":"#4A3C52"},
+  "assets":[{"id":"spoon","source":"art/characters/keyframes-v2/keeper/source/generated-spoon.png","size":[18,12],"margin":0,"position":[0,0],"dark_value":0.28,
+  "materials":{"outline":["#241C32"],"wood":["#916047"]},"rules":[],"fallback_material":"wood"}]
+}

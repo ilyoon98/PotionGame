@@ -1,0 +1,76 @@
+extends RefCounted
+## Management actions share the shop's plum, brass and ivory pixel palette.
+const ROOT := "res://assets/management_v1/"
+const GENERATED := ["flow", "filter", "employee", "visitors", "basic", "expedition"]
+static var reputation_texture: AtlasTexture
+static var readable_icons := {}
+
+static func readable_icon(texture: Texture2D) -> Texture2D:
+	# Trim display-only padding; source art and other game views keep their regions.
+	if texture == null or texture is AtlasTexture: return texture
+	var key := texture.get_instance_id()
+	if not readable_icons.has(key):
+		var image := texture.get_image()
+		var used := image.get_used_rect() if image != null else Rect2i()
+		if used.has_area():
+			var framed := AtlasTexture.new()
+			framed.atlas = texture
+			framed.region = Rect2(used)
+			framed.filter_clip = true
+			readable_icons[key] = framed
+		else: readable_icons[key] = texture
+	return readable_icons[key]
+const DESCRIPTIONS := {
+	"flow": "자동 운영 · 톱니바퀴와 물약",
+	"cauldron": "솥 강화 · 제조 시간 단축",
+	"garden": "약초 화분 강화 · 수확과 보관량 증가",
+	"sales_counter": "판매대 강화 · 손님 거래 간격 단축",
+	"filter": "정밀 여과기 · 깔때기와 수집 병",
+	"employee": "판매 보조 고용 · 상점 앞치마",
+	"visitors": "손님과 명성 · 손님과 금빛 별",
+	"basic": "기본 레시피 · 물약 제조서",
+	"expedition": "숲 가장자리 원정 · 숲 지도와 나침반",
+	"journey": "원정 진행 · 숲 지도와 나침반",
+	"reputation": "명성 · 금빛 별과 보라색 월계수",
+	"aging_cask": "숙성 · 벽 선반 숙성통",
+	"keeper": "주인공 · 대기",
+	"keeper_sleep": "주인공 · 수면",
+	"keeper_faint": "주인공 · 기절",
+}
+## First frame (32×48) of each approved keeper pose sheet (16×4 grid).
+const KEEPER_POSES := {"keeper": "idle", "keeper_sleep": "sleep", "keeper_faint": "faint"}
+static var keeper_icons := {}
+
+
+static func has_icon(id: String) -> bool:
+	return DESCRIPTIONS.has(id)
+
+
+static func icon(id: String) -> Texture2D:
+	if id == "reputation":
+		if reputation_texture == null:
+			reputation_texture = AtlasTexture.new()
+			reputation_texture.atlas = load(ROOT + "reputation_icon.png")
+			reputation_texture.region = Rect2(43, 75, 1181, 1179)
+			reputation_texture.filter_clip = true
+		return reputation_texture
+	if id == "sales_counter": return load("res://assets/content_expansion_v1/equipment/sales_counter_basic.png")
+	if id == "cauldron": return load("res://assets/cauldron_48.png")
+	if id == "aging_cask": return load("res://assets/pixel_v1/props/aging_cask.png")
+	if KEEPER_POSES.has(id):
+		if not keeper_icons.has(id):
+			var frame := AtlasTexture.new()
+			frame.atlas = load("res://assets/pixel_v1/characters/keeper/%s-native.png" % KEEPER_POSES[id])
+			frame.region = Rect2(0, 0, 32, 48)
+			frame.filter_clip = true
+			keeper_icons[id] = frame
+		return keeper_icons[id]
+	if id == "garden":
+		var texture := AtlasTexture.new()
+		texture.atlas = load("res://assets/herb_growth.png")
+		texture.region = Rect2(0, 40, 32, 40)
+		return texture
+	if id == "journey": id = "expedition"
+	var path := ROOT + id + "_icon.png"
+	# Newly supplied management art may still be awaiting import.
+	return load(path) if id in GENERATED and ResourceLoader.exists(path) else null

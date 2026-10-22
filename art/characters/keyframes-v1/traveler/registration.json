@@ -1,0 +1,158 @@
+{
+  "sheet_size": [
+    1448,
+    1086
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "whole_body_registration": true,
+  "uniform_scale_all_poses": 0.9498680738786279,
+  "frames": [
+    {
+      "id": "idle",
+      "source_crop_size": [
+        253,
+        379
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        42,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "walk_contact_a",
+      "source_crop_size": [
+        252,
+        379
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        43,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "walk_pass_a",
+      "source_crop_size": [
+        253,
+        379
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        42,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "walk_contact_b",
+      "source_crop_size": [
+        252,
+        379
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        42,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "walk_pass_b",
+      "source_crop_size": [
+        253,
+        377
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        42,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "receive_extend",
+      "source_crop_size": [
+        274,
+        377
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        22,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "receive_hold",
+      "source_crop_size": [
+        253,
+        377
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        42,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    },
+    {
+      "id": "blink_idle",
+      "source_crop_size": [
+        252,
+        377
+      ],
+      "uniform_source_scale": 0.9498680738786279,
+      "source_offset": [
+        42,
+        110
+      ],
+      "native_canvas": [
+        32,
+        48
+      ],
+      "head_origin_row": 11,
+      "foot_target_row": 46
+    }
+  ]
+}

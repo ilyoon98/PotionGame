@@ -1,0 +1,3575 @@
+{
+  "schema_version": 1,
+  "master_palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "basis": "art/mockups/full-ingame-v6",
+  "new_colors_added": 0,
+  "scope": "art production; runtime unchanged",
+  "characters": [
+    {
+      "id": "keeper",
+      "name": "주인공 · 남자 상점 주인",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#86548E"
+        ],
+        "accent": [
+          "#E9B95F"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "skin",
+        "hair_leather": "wood",
+        "cloth": "purple",
+        "accent": "gold"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#916047",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "note": "v6 유지. 짧은 갈색 머리, 크림 셔츠, 보라 모자·망토, 반바지·부츠. 피부와 셔츠는 한 색을 공유한다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/keyframes-v4/keeper/frames/idle.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "reference_status": "candidate_keyframe",
+      "identity_reference_before_face_refinement": "art/mockups/full-ingame-v6/characters/witch-native.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "keyframe_review": "art/characters/keyframes-v4/keeper/review.html",
+      "keyframe_status": "candidate_keyframes"
+    },
+    {
+      "id": "traveler",
+      "name": "손님 · 여행자",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#FFF0BC",
+        "#916047",
+        "#C99463"
+      ],
+      "note": "현재 여행자의 갈색 머리·배낭·반바지와 밝은 셔츠를 유지하는5색이다. 키프레임은 별도 검토 단계이다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/face-refinement-v1/faces/traveler.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "keyframe_review": "art/characters/keyframes-v1/traveler/review.html",
+      "reference_status": "candidate_face_refinement",
+      "identity_reference_before_face_refinement": "art/characters/keyframes-v1/traveler/frames/idle.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "action_review": "art/characters/actions-v1/traveler/review.html"
+    },
+    {
+      "id": "mage",
+      "name": "손님 · 여마법사",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "robe_shadow": [
+          "#50315F"
+        ],
+        "robe": [
+          "#86548E"
+        ],
+        "leather": [
+          "#916047"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "robe_shadow": "purple",
+        "robe": "purple",
+        "leather": "wood"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#50315F",
+        "#86548E",
+        "#916047"
+      ],
+      "note": "여마법사 정체성과 긴 보라 로브·모자·보라 머리를 유지한다. 주인공과 옷 길이·색 덩어리 비율로 구분한다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/face-refinement-v1/faces/mage.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "keyframe_review": "art/characters/keyframes-v1/mage/review.html",
+      "reference_status": "candidate_face_refinement",
+      "identity_reference_before_face_refinement": "art/characters/keyframes-v1/mage/frames/idle.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "action_review": "art/characters/actions-v1/mage/review.html"
+    },
+    {
+      "id": "elf",
+      "name": "손님 · 엘프",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#718C59"
+        ],
+        "cloth_light": [
+          "#B5C77D"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "cloth": "leaf",
+        "cloth_light": "leaf"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#916047",
+        "#718C59",
+        "#B5C77D"
+      ],
+      "note": "승인한 v6의 갈색 머리·초록 의상·22×16 머리 기준·정리된 하의를 유지한다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/keyframes-v2/elf/frames/idle.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "keyframe_reference": "art/characters/keyframes-v1/elf/frames/idle.png",
+      "keyframe_review": "art/characters/keyframes-v2/elf/review.html",
+      "keyframe_status": "candidate_keyframes",
+      "reference_status": "candidate_keyframe",
+      "identity_reference_before_face_refinement": "art/mockups/full-ingame-v6/characters/elf-native.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "action_review": "art/characters/actions-v1/elf/review.html"
+    },
+    {
+      "id": "rogue",
+      "name": "손님 · 고양이 도적",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_tail": [
+          "#DE7356"
+        ],
+        "hair_tail_light": [
+          "#F4AC68"
+        ],
+        "scarf": [
+          "#9D4359"
+        ],
+        "dark_clothing": [
+          "#241C32"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_tail": "fire",
+        "hair_tail_light": "fire",
+        "scarf": "fire",
+        "dark_clothing": "outline"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#DE7356",
+        "#F4AC68",
+        "#9D4359"
+      ],
+      "note": "현재 게임 v4의 주황 머리·귀·꼬리와 붉은 목도리를 유지한다. 검은 상의·반바지·장갑·부츠는 테두리색을 공유한다.",
+      "reference": "art/characters/keyframes-v2/rogue/frames/idle.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "reference_status": "candidate_keyframe",
+      "action_review": "art/characters/actions-v1/rogue/review.html",
+      "keyframe_review": "art/characters/keyframes-v2/rogue/review.html",
+      "keyframe_status": "candidate_keyframes"
+    }
+  ],
+  "potions": [
+    {
+      "id": "health",
+      "name": "체력",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "skin",
+      "liquid_ramp_colors": [
+        "#A65D64",
+        "#DE9B88"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#A65D64",
+            "#DE9B88"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#A65D64",
+          "#DE9B88"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "skin"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/health.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#DE9B88"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#DE9B88"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "skin",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/health/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "mana",
+      "name": "마나",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#24566A",
+        "#3BA8A3"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#24566A",
+            "#3BA8A3"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#24566A",
+          "#3BA8A3"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/mana.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#3BA8A3"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#3BA8A3"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/mana/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "moon",
+      "name": "달빛",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#86548E",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#86548E",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#86548E",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/moon.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/moon/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "purify",
+      "name": "정화",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#3BA8A3",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#3BA8A3",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/purify.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/purify/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "agility",
+      "name": "민첩",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "gold",
+      "liquid_ramp_colors": [
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#E9B95F",
+            "#FFF0BC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#E9B95F"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "gold"
+        },
+        "native_size": [
+          8,
+          16
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/agility.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#FFF0BC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#FFF0BC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "gold",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/agility/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "vigor",
+      "name": "활력",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "fire",
+      "liquid_ramp_colors": [
+        "#9D4359",
+        "#DE7356"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#9D4359",
+            "#DE7356"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#9D4359",
+          "#DE7356"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "fire"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/vigor.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#DE7356"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#DE7356"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "fire",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/vigor/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "antidote",
+      "name": "해독",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "leaf",
+      "liquid_ramp_colors": [
+        "#3D544D",
+        "#718C59"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#3D544D",
+            "#718C59"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#3D544D",
+          "#718C59"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "leaf"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/antidote.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#718C59"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#718C59"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "leaf",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/antidote/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "fortune",
+      "name": "행운",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "gold",
+      "liquid_ramp_colors": [
+        "#A56A3D",
+        "#E9B95F"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#A56A3D",
+            "#E9B95F"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#A56A3D",
+          "#E9B95F"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "gold"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/fortune.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#E9B95F"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "gold",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/fortune/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "focus",
+      "name": "집중",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#24566A",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#24566A",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#24566A",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          16
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/focus.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/focus/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "restoration",
+      "name": "회복",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "skin",
+      "liquid_ramp_colors": [
+        "#DE9B88",
+        "#F6D1AC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#DE9B88",
+            "#F6D1AC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#DE9B88",
+          "#F6D1AC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "skin"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/restoration.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#F6D1AC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#F6D1AC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "skin",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/restoration/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "growth",
+      "name": "생장",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "leaf",
+      "liquid_ramp_colors": [
+        "#718C59",
+        "#B5C77D"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#718C59",
+            "#B5C77D"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#718C59",
+          "#B5C77D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "leaf"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/growth.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#B5C77D"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#B5C77D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "leaf",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/growth/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "clarity",
+      "name": "선명",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#3BA8A3",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#3BA8A3",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/clarity.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/clarity/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "ward",
+      "name": "수호",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "stone",
+      "liquid_ramp_colors": [
+        "#4A3C52",
+        "#827589"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#4A3C52",
+            "#827589"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#4A3C52",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "stone"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/ward.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#827589"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "stone",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/ward/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "spirit",
+      "name": "정령",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#24566A",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#24566A",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#24566A",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/spirit.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/spirit/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "arcane_amplification",
+      "name": "마력 증폭",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#86548E"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#86548E"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#86548E"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/arcane_amplification.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#86548E"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/arcane_amplification/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "iron_skin",
+      "name": "강철 피부",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "stone",
+      "liquid_ramp_colors": [
+        "#4A3C52",
+        "#827589"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#4A3C52",
+            "#827589"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#4A3C52",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "stone"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/iron_skin.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#827589"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "stone",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/iron_skin/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "stealth",
+      "name": "은신",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#86548E"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#86548E"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#86548E"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/stealth.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#86548E"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/stealth/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "poison_resistance",
+      "name": "독 저항",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "leaf",
+      "liquid_ramp_colors": [
+        "#3D544D",
+        "#718C59"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#3D544D",
+            "#718C59"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#3D544D",
+          "#718C59"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "leaf"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/poison_resistance.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#718C59"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#718C59"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "leaf",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/poison_resistance/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "illusion",
+      "name": "환영",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#86548E",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#86548E",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#86548E",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/illusion.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/illusion/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "soul_purification",
+      "name": "영혼 정화",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#3BA8A3",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#3BA8A3",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/soul_purification.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/soul_purification/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "wisdom",
+      "name": "지혜",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#86548E",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#86548E",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#86548E",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/wisdom.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/wisdom/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "reflection",
+      "name": "반사",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#24566A",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#24566A",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#24566A",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/reflection.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/reflection/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "haste",
+      "name": "신속",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "gold",
+      "liquid_ramp_colors": [
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#E9B95F",
+            "#FFF0BC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#E9B95F"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "gold"
+        },
+        "native_size": [
+          8,
+          16
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/haste.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#FFF0BC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#FFF0BC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "gold",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/haste/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "nightwalk",
+      "name": "야행",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#86548E"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#86548E"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#86548E"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/nightwalk.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#86548E"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/nightwalk/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "moonradiance",
+      "name": "월광",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "gold",
+      "liquid_ramp_colors": [
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#E9B95F",
+            "#FFF0BC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#E9B95F"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "gold"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/moonradiance.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#FFF0BC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#FFF0BC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "gold",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/moonradiance/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "regeneration",
+      "name": "재생",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "skin",
+      "liquid_ramp_colors": [
+        "#A65D64",
+        "#F6D1AC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#A65D64",
+            "#F6D1AC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#A65D64",
+          "#F6D1AC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "skin"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/regeneration.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#F6D1AC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#F6D1AC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "skin",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/regeneration/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "starlight",
+      "name": "별빛",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/starlight.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/starlight/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "wish",
+      "name": "소원",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "gold",
+      "liquid_ramp_colors": [
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#E9B95F",
+            "#FFF0BC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#E9B95F"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "gold"
+        },
+        "native_size": [
+          8,
+          16
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/wish.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#FFF0BC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#FFF0BC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "gold",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/wish/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "eternity",
+      "name": "영원",
+      "family": "vitality",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "gold",
+      "liquid_ramp_colors": [
+        "#A56A3D",
+        "#FFF0BC"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#A56A3D",
+            "#FFF0BC"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#A56A3D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "gold"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/eternity.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#FFF0BC"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#FFF0BC"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "gold",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/eternity/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "sage_elixir",
+      "name": "현자의 물약",
+      "family": "arcane",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/sage_elixir.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/sage_elixir/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "worldtree_elixir",
+      "name": "세계수의 물약",
+      "family": "nature",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "leaf",
+      "liquid_ramp_colors": [
+        "#718C59",
+        "#B5C77D"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#718C59",
+            "#B5C77D"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#718C59",
+          "#B5C77D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "leaf"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/worldtree_elixir.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#B5C77D"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#B5C77D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "leaf",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/worldtree_elixir/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "shadow_elixir",
+      "name": "그림자의 물약",
+      "family": "craft",
+      "rare": false,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#86548E"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#86548E"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#86548E"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/shadow_elixir.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#86548E"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/shadow_elixir/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "rare_forest_breath",
+      "name": "숲숨결 물약",
+      "family": "nature",
+      "rare": true,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "leaf",
+      "liquid_ramp_colors": [
+        "#718C59",
+        "#B5C77D"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#718C59",
+            "#B5C77D"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#718C59",
+          "#B5C77D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "leaf"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/rare_forest_breath.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#B5C77D"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#B5C77D"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "leaf",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/rare_forest_breath/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "rare_mist_veil",
+      "name": "물안개 물약",
+      "family": "craft",
+      "rare": true,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "teal",
+      "liquid_ramp_colors": [
+        "#24566A",
+        "#9BE2CF"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#24566A",
+            "#9BE2CF"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#24566A",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "teal"
+        },
+        "native_size": [
+          8,
+          16
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/rare_mist_veil.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#9BE2CF"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#9BE2CF"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "teal",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/rare_mist_veil/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "rare_lunar_seal",
+      "name": "월광봉인 물약",
+      "family": "arcane",
+      "rare": true,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#86548E",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#86548E",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#86548E",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/rare_lunar_seal.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/rare_lunar_seal/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    },
+    {
+      "id": "rare_nebula_distillate",
+      "name": "성운 증류액",
+      "family": "arcane",
+      "rare": true,
+      "status": "v6_mapping_retained",
+      "liquid_ramp": "purple",
+      "liquid_ramp_colors": [
+        "#50315F",
+        "#C38EB5"
+      ],
+      "bottle": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "cork": [
+            "#916047"
+          ],
+          "glass": [
+            "#FFF0BC"
+          ],
+          "liquid": [
+            "#50315F",
+            "#C38EB5"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC",
+          "#50315F",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "cork": "wood",
+          "glass": "gold",
+          "liquid": "purple"
+        },
+        "native_size": [
+          8,
+          12
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/bottles/rare_nebula_distillate.png"
+      },
+      "cauldron": {
+        "roles": {
+          "outline": [
+            "#241C32"
+          ],
+          "body": [
+            "#86548E"
+          ],
+          "emblem": [
+            "#E9B95F"
+          ],
+          "hearth": [
+            "#827589"
+          ],
+          "liquid": [
+            "#C38EB5"
+          ],
+          "bubbles": [
+            "#241C32"
+          ]
+        },
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#E9B95F",
+          "#827589",
+          "#C38EB5"
+        ],
+        "role_ramps": {
+          "outline": "outline",
+          "body": "purple",
+          "emblem": "gold",
+          "hearth": "stone",
+          "liquid": "purple",
+          "bubbles": "outline"
+        },
+        "native_size": [
+          32,
+          32
+        ],
+        "reference": "art/mockups/full-ingame-v6/potions/pot/rare_nebula_distillate/frame-00.png"
+      },
+      "note": "병과 솥은 같은 액체 램프를 사용한다. 솥 몸체·달 문양·화덕은 고정하며 노출 액체63픽셀만 레시피에 따라 바뀐다."
+    }
+  ],
+  "materials": [
+    {
+      "id": "shelf_counter_floor",
+      "name": "선반·카운터·공통 발판",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "brass": [
+          "#E9B95F"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "wood": "wood",
+        "brass": "gold"
+      }
+    },
+    {
+      "id": "herb_station",
+      "name": "약초·화분",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "pot": [
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "accent": [
+          "#FFF0BC"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "leaf": "leaf",
+        "pot": "purple",
+        "wood": "wood",
+        "accent": "gold"
+      }
+    },
+    {
+      "id": "fire",
+      "name": "솥 밑 불꽃",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "fire": [
+          "#9D4359",
+          "#DE7356",
+          "#F4AC68"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "fire": "fire"
+      }
+    },
+    {
+      "id": "hearth",
+      "name": "돌 화덕",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52",
+          "#827589"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "stone": "stone"
+      }
+    }
+  ]
+}

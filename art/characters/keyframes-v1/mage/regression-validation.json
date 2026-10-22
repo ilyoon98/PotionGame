@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "mage_frames_tested": 8,
+  "mage_native_sizes": [[32, 48]],
+  "mage_color_counts": [5],
+  "mage_outline_boundary_violations": 0,
+  "mage_eyes_have_skin_gap": true,
+  "mage_all_feet_on_row46": true,
+  "traveler_material_pipeline_frames_tested": 8,
+  "traveler_material_pipeline_frames_unchanged": 8,
+  "traveler_bottle_regression_pairs": 72,
+  "traveler_art_rewritten": false,
+  "runtime_assets_rewritten": false
+}

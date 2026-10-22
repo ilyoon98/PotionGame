@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "master_palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "basis": "art/mockups/full-ingame-v6",
+  "new_colors_added": 0,
+  "scope": "art production; runtime unchanged",
+  "characters": [
+    {
+      "id": "keeper",
+      "name": "주인공 · 남자 상점 주인",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#86548E"
+        ],
+        "accent": [
+          "#E9B95F"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "skin",
+        "hair_leather": "wood",
+        "cloth": "purple",
+        "accent": "gold"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#916047",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "note": "v6 유지. 짧은 갈색 머리, 크림 셔츠, 보라 모자·망토, 반바지·부츠. 피부와 셔츠는 한 색을 공유한다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/keyframes-v4/keeper/frames/idle.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "reference_status": "candidate_keyframe",
+      "identity_reference_before_face_refinement": "art/mockups/full-ingame-v6/characters/witch-native.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "keyframe_review": "art/characters/keyframes-v4/keeper/review.html",
+      "keyframe_status": "candidate_keyframes"
+    },
+    {
+      "id": "traveler",
+      "name": "손님 · 여행자",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#FFF0BC",
+        "#916047",
+        "#C99463"
+      ],
+      "note": "현재 여행자의 갈색 머리·배낭·반바지와 밝은 셔츠를 유지하는5색이다. 키프레임은 별도 검토 단계이다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/face-refinement-v1/faces/traveler.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "keyframe_review": "art/characters/keyframes-v1/traveler/review.html",
+      "reference_status": "candidate_face_refinement",
+      "identity_reference_before_face_refinement": "art/characters/keyframes-v1/traveler/frames/idle.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "action_review": "art/characters/actions-v1/traveler/review.html"
+    },
+    {
+      "id": "mage",
+      "name": "손님 · 여마법사",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "robe_shadow": [
+          "#50315F"
+        ],
+        "robe": [
+          "#86548E"
+        ],
+        "leather": [
+          "#916047"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "robe_shadow": "purple",
+        "robe": "purple",
+        "leather": "wood"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#50315F",
+        "#86548E",
+        "#916047"
+      ],
+      "note": "여마법사 정체성과 긴 보라 로브·모자·보라 머리를 유지한다. 주인공과 옷 길이·색 덩어리 비율로 구분한다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/face-refinement-v1/faces/mage.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "keyframe_review": "art/characters/keyframes-v1/mage/review.html",
+      "reference_status": "candidate_face_refinement",
+      "identity_reference_before_face_refinement": "art/characters/keyframes-v1/mage/frames/idle.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "action_review": "art/characters/actions-v1/mage/review.html"
+    },
+    {
+      "id": "elf",
+      "name": "손님 · 엘프",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#718C59"
+        ],
+        "cloth_light": [
+          "#B5C77D"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_leather": "wood",
+        "cloth": "leaf",
+        "cloth_light": "leaf"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#916047",
+        "#718C59",
+        "#B5C77D"
+      ],
+      "note": "승인한 v6의 갈색 머리·초록 의상·22×16 머리 기준·정리된 하의를 유지한다. 현재 얼굴 그림은 최신 윤곽 수정 후보이며 별도 검토 대상이다.",
+      "reference": "art/characters/keyframes-v2/elf/frames/idle.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "keyframe_reference": "art/characters/keyframes-v1/elf/frames/idle.png",
+      "keyframe_review": "art/characters/keyframes-v2/elf/review.html",
+      "keyframe_status": "candidate_keyframes",
+      "reference_status": "candidate_keyframe",
+      "identity_reference_before_face_refinement": "art/mockups/full-ingame-v6/characters/elf-native.png",
+      "face_review": "art/characters/face-refinement-v1/review.html",
+      "action_review": "art/characters/actions-v1/elf/review.html"
+    },
+    {
+      "id": "rogue",
+      "name": "손님 · 고양이 도적",
+      "status": "approved_palette",
+      "roles": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hair_tail": [
+          "#DE7356"
+        ],
+        "hair_tail_light": [
+          "#F4AC68"
+        ],
+        "scarf": [
+          "#9D4359"
+        ],
+        "dark_clothing": [
+          "#241C32"
+        ]
+      },
+      "role_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "hair_tail": "fire",
+        "hair_tail_light": "fire",
+        "scarf": "fire",
+        "dark_clothing": "outline"
+      },
+      "colors": [
+        "#241C32",
+        "#F6D1AC",
+        "#DE7356",
+        "#F4AC68",
+        "#9D4359"
+      ],
+      "note": "현재 게임 v4의 주황 머리·귀·꼬리와 붉은 목도리를 유지한다. 검은 상의·반바지·장갑·부츠는 테두리색을 공유한다.",
+      "reference": "art/characters/keyframes-v2/rogue/frames/idle.png",
+      "native_canvas": [
+        32,
+        48
+      ],
+      "eyes_color": "#241C32",
+      "reference_status": "candidate_keyframe",
+      "action_review": "art/characters/actions-v1/rogue/review.html",
+      "keyframe_review": "art/characters/keyframes-v2/rogue/review.html",
+      "keyframe_status": "candidate_keyframes"
+    }
+  ]
+}

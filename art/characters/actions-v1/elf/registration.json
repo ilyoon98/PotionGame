@@ -1,0 +1,56 @@
+{
+  "head_top_row": 11,
+  "sole_target_row": 46,
+  "head_center": 15.5,
+  "normalization": "Uniform whole-body scale per generated source sheet; no separate head/torso/leg scaling.",
+  "frames": [
+    {
+      "id": "carry_contact_a",
+      "source": "generated-carry-01.png",
+      "cell": 0,
+      "uniform_scale_for_source_sheet": 0.6533575317604355,
+      "offset": [
+        50,
+        110
+      ],
+      "whole_body": true,
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_pass_a",
+      "source": "generated-opposite-gait-01.png",
+      "cell": 1,
+      "uniform_scale_for_source_sheet": 0.45743329097839897,
+      "offset": [
+        48,
+        110
+      ],
+      "whole_body": true,
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_contact_b",
+      "source": "generated-opposite-gait-01.png",
+      "cell": 0,
+      "uniform_scale_for_source_sheet": 0.45743329097839897,
+      "offset": [
+        48,
+        110
+      ],
+      "whole_body": true,
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_pass_b",
+      "source": "generated-passing-b-01.png",
+      "cell": 0,
+      "uniform_scale_for_source_sheet": 0.3130434782608696,
+      "offset": [
+        53,
+        111
+      ],
+      "whole_body": true,
+      "cross_pose_body_splicing": false
+    }
+  ]
+}

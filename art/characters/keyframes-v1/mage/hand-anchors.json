@@ -1,0 +1,1097 @@
+{
+  "hand_grip_anchors": {
+    "receive_extend": [
+      5,
+      29
+    ],
+    "receive_hold": [
+      12,
+      32
+    ]
+  },
+  "bottle_local_grip": "[width/2,6]",
+  "tested_recipes": 36,
+  "tested_pose_recipe_pairs": 72,
+  "checks": [
+    {
+      "pose": "receive_extend",
+      "recipe": "health",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "mana",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "moon",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "purify",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "agility",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "vigor",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "antidote",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "fortune",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "focus",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "restoration",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "growth",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "clarity",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "ward",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "spirit",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "arcane_amplification",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "iron_skin",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "stealth",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "poison_resistance",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "illusion",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "soul_purification",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "wisdom",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "reflection",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "haste",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "nightwalk",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "moonradiance",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "regeneration",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "starlight",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "wish",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "eternity",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "sage_elixir",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "worldtree_elixir",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "shadow_elixir",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "rare_forest_breath",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "rare_mist_veil",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "rare_lunar_seal",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_extend",
+      "recipe": "rare_nebula_distillate",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        1,
+        23
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "health",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "mana",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "moon",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "purify",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "agility",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "vigor",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "antidote",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "fortune",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "focus",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "restoration",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "growth",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "clarity",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "ward",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "spirit",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "arcane_amplification",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "iron_skin",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "stealth",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "poison_resistance",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "illusion",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "soul_purification",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "wisdom",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "reflection",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "haste",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "nightwalk",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "moonradiance",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "regeneration",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "starlight",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "wish",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "eternity",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "sage_elixir",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "worldtree_elixir",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "shadow_elixir",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "rare_forest_breath",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "rare_mist_veil",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "rare_lunar_seal",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    },
+    {
+      "pose": "receive_hold",
+      "recipe": "rare_nebula_distillate",
+      "eyes_and_skin_margin_clear": true,
+      "inside_frame": true,
+      "bottle_origin": [
+        8,
+        26
+      ],
+      "local_grip": [
+        4,
+        6
+      ],
+      "grip_opaque": true
+    }
+  ]
+}

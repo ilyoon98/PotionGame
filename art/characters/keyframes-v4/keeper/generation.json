@@ -1,0 +1,27 @@
+{
+  "mode": "built-in image_gen",
+  "use_case": "identity-preserve",
+  "selected_source": "source/generated-01.png",
+  "original_generated_path": "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-ddb3360a-f800-4831-a771-1efa6fd76b0f.png",
+  "source_sha256": "a630c8bc188f1d9f6a8ddb374004e26b29e689a4f5097fa0570889a91fb9d9a2",
+  "prompt": "source/prompt-01.txt",
+  "references": [
+    "art/characters/keyframes-v2/keeper/source/identity-reference-10x.png",
+    "art/characters/keyframes-v3/keeper/source/generated-02.png"
+  ],
+  "corrections": [
+    "Whole left orientation includes hat and collar/torso",
+    "Twohands: nonworking arm hangs atside, no handonhip",
+    "Brown-only hair material",
+    "Shared fixed head/hip/boots per action, registered active-arm negative space",
+    "Combined breathing/blink and attached hat/cape/hair motions"
+  ],
+  "postprocess": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "new_palette_colors": 0,
+  "runtime_integrated": false
+}

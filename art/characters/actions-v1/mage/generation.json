@@ -1,0 +1,35 @@
+{
+  "mode": "built-in image_gen",
+  "source": "source/generated-carry-01.png",
+  "original_generated_path": "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-5aa781f2-ece0-4d3c-91f6-540f32d88d2b.png",
+  "source_sha256": "d646849a3d1e7ac6c062c905e6c4565961f863bef6d3c63ab3775977ef4bb7c9",
+  "prompt": "source/prompt-carry.txt",
+  "references": [
+    "source/body-walk-reference-10x.png",
+    "source/identity-reference-10x.png"
+  ],
+  "whole_body_carry_sources": true,
+  "hat_layer": "layers/hat.png",
+  "hat_sha256": "3a73d959a77b0ef757aa7fb9b1214eef21f8ec27f321e7204afaa715340ef8c5",
+  "hat_origin": [
+    0,
+    4
+  ],
+  "new_palette_colors": 0,
+  "old_keypose_sha256": {
+    "idle": "723b4027aec7e7a1ca6969208f27fefc777229990d2994f2bd06bf36f46d433f",
+    "walk_contact_a": "6d3cd2f694fdca436dcae26b679caeaab387b049eade251b104df48a29087521",
+    "walk_pass_a": "da4b89b05418453e491950d56bbd52da277fea264cf4ce52da86677255e98967",
+    "walk_contact_b": "b5ca111b3e2261ed4a03def2f565e27413346f372fb24d0433650d17d9516eb8",
+    "walk_pass_b": "24913bc8c39c342d33414e5b0b744cbac35f72826070ad8d9255c67e60de18fb",
+    "receive_extend": "04cbe3f996b95af2a65a8946a78c5628b1e9cf8f3deebf7eb14de978579b409e",
+    "receive_hold": "4aaced55be06d998c2c1ae12849979affd69596f70e73c7cd67ccc06f05a0059",
+    "blink_idle": "f6d690486faaabdc216a5adb6d1ad571ca201aa9d33f8ad71d803e81daffeabe"
+  },
+  "processing_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ]
+}

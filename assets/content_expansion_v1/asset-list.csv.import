@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ddxmsn1t8t37r"
+
+[deps]
+
+files=["res://assets/content_expansion_v1/asset-list.name.translation", "res://assets/content_expansion_v1/asset-list.category.translation", "res://assets/content_expansion_v1/asset-list.family.translation", "res://assets/content_expansion_v1/asset-list.region.translation", "res://assets/content_expansion_v1/asset-list.status.translation", "res://assets/content_expansion_v1/asset-list.reused.translation", "res://assets/content_expansion_v1/asset-list.icon.translation", "res://assets/content_expansion_v1/asset-list.bottle.translation", "res://assets/content_expansion_v1/asset-list.recipe.translation", "res://assets/content_expansion_v1/asset-list.growth.translation", "res://assets/content_expansion_v1/asset-list.basic.translation", "res://assets/content_expansion_v1/asset-list.improved.translation", "res://assets/content_expansion_v1/asset-list.premium.translation", "res://assets/content_expansion_v1/asset-list.source.translation"]
+
+source_file="res://assets/content_expansion_v1/asset-list.csv"
+dest_files=["res://assets/content_expansion_v1/asset-list.name.translation", "res://assets/content_expansion_v1/asset-list.category.translation", "res://assets/content_expansion_v1/asset-list.family.translation", "res://assets/content_expansion_v1/asset-list.region.translation", "res://assets/content_expansion_v1/asset-list.status.translation", "res://assets/content_expansion_v1/asset-list.reused.translation", "res://assets/content_expansion_v1/asset-list.icon.translation", "res://assets/content_expansion_v1/asset-list.bottle.translation", "res://assets/content_expansion_v1/asset-list.recipe.translation", "res://assets/content_expansion_v1/asset-list.growth.translation", "res://assets/content_expansion_v1/asset-list.basic.translation", "res://assets/content_expansion_v1/asset-list.improved.translation", "res://assets/content_expansion_v1/asset-list.premium.translation", "res://assets/content_expansion_v1/asset-list.source.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

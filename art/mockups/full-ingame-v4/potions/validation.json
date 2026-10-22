@@ -1,0 +1,2961 @@
+{
+  "status": "passed",
+  "bottles": {
+    "health": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A65D64",
+        "#DE9B88",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "mana": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "moon": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "purify": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 68,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "agility": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "vigor": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 70,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#9D4359",
+        "#DE7356",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "antidote": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 52,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "fortune": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "focus": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "restoration": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#DE9B88",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "growth": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "clarity": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 56,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "ward": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "spirit": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "arcane_amplification": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "iron_skin": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 70,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "stealth": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 72,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "poison_resistance": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 50,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "illusion": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 48,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "soul_purification": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 48,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "wisdom": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "reflection": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 48,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "haste": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 71,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "nightwalk": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 62,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "moonradiance": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 51,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "regeneration": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 64,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "starlight": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 50,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "wish": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 61,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 3,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "eternity": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "sage_elixir": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 63,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "worldtree_elixir": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "shadow_elixir": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 48,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "rare_forest_breath": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "rare_mist_veil": {
+      "passed": true,
+      "size": [
+        8,
+        16
+      ],
+      "opaque_pixels": 70,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "rare_lunar_seal": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 60,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    },
+    "rare_nebula_distillate": {
+      "passed": true,
+      "size": [
+        8,
+        12
+      ],
+      "opaque_pixels": 54,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    }
+  },
+  "shelf_frame": {
+    "passed": true,
+    "size": [
+      48,
+      48
+    ],
+    "opaque_pixels": 618,
+    "colors": [
+      "#241C32",
+      "#916047",
+      "#C99463",
+      "#E9B95F"
+    ],
+    "color_count": 4,
+    "off_palette_colors": 0,
+    "partial_alpha_pixels": 0,
+    "problems": []
+  },
+  "shelf_composite": {
+    "passed": true,
+    "size": [
+      48,
+      48
+    ],
+    "opaque_pixels": 1110,
+    "colors": [
+      "#241C32",
+      "#24566A",
+      "#3BA8A3",
+      "#50315F",
+      "#718C59",
+      "#86548E",
+      "#916047",
+      "#9BE2CF",
+      "#9D4359",
+      "#A65D64",
+      "#B5C77D",
+      "#C38EB5",
+      "#C99463",
+      "#DE7356",
+      "#DE9B88",
+      "#E9B95F",
+      "#FFF0BC"
+    ],
+    "color_count": 17,
+    "off_palette_colors": 0,
+    "partial_alpha_pixels": 0,
+    "problems": []
+  },
+  "pot_frames": {
+    "health": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#DE9B88",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#DE9B88",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#DE9B88",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "mana": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "moon": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "purify": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "agility": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "vigor": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#DE7356",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#DE7356",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#DE7356",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "antidote": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "fortune": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "focus": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "restoration": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "growth": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "clarity": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "ward": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "spirit": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "arcane_amplification": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "iron_skin": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "stealth": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "poison_resistance": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "illusion": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "soul_purification": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "wisdom": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "reflection": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "haste": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "nightwalk": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "moonradiance": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "regeneration": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "starlight": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "wish": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "eternity": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "sage_elixir": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "worldtree_elixir": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "shadow_elixir": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#E9B95F"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "rare_forest_breath": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "rare_mist_veil": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#9BE2CF",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "rare_lunar_seal": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ],
+    "rare_nebula_distillate": [
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      },
+      {
+        "passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "opaque_pixels": 549,
+        "colors": [
+          "#241C32",
+          "#827589",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": [],
+        "outside_liquid_mask_unchanged": true
+      }
+    ]
+  },
+  "liquid_mask": {
+    "pixels": 63,
+    "bounds": [
+      8,
+      8,
+      24,
+      13
+    ],
+    "reference": "art/mockups/full-ingame-v1/cauldron_moon-native.png",
+    "mask_path": "pot-liquid-mask.png"
+  },
+  "visible_stock_count": 8,
+  "distinct_stock_ids": 8,
+  "bottle_baselines_equal_board_top_minus_one": true,
+  "lower_row_tall_bottle_clears_upper_board": true,
+  "font_antialiasing_excluded_from_sprite_check": true
+}

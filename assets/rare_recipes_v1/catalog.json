@@ -1,0 +1,162 @@
+{
+  "assets": [
+    {
+      "bottle_path": "res://assets/rare_recipes_v1/potions/rare_forest_breath_12x16.png",
+      "bottle_size": [
+        12.0,
+        16.0
+      ],
+      "comparison_general": "growth",
+      "connection_status": "awaiting_game_integration",
+      "id": "rare_forest_breath",
+      "name_candidate": "숲숨결 물약",
+      "potion_path": "res://assets/rare_recipes_v1/potions/rare_forest_breath_icon.png",
+      "potion_size": [
+        32.0,
+        40.0
+      ],
+      "recipe_path": "res://assets/rare_recipes_v1/recipes/rare_forest_breath_recipe.png",
+      "recipe_size": [
+        32.0,
+        40.0
+      ],
+      "region": "forest_edge",
+      "region_name": "숲 가장자리",
+      "status": "design_complete",
+      "source_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_forest_breath_potion.png",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_forest_breath_bottle.png",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_forest_breath_recipe.png"
+      },
+      "generation_record_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_forest_breath_potion.generation.json",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_forest_breath_bottle.generation.json",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_forest_breath_recipe.generation.json"
+      }
+    },
+    {
+      "bottle_path": "res://assets/rare_recipes_v1/potions/rare_mist_veil_12x16.png",
+      "bottle_size": [
+        12.0,
+        16.0
+      ],
+      "comparison_general": "stealth",
+      "connection_status": "awaiting_game_integration",
+      "id": "rare_mist_veil",
+      "name_candidate": "물안개 물약",
+      "potion_path": "res://assets/rare_recipes_v1/potions/rare_mist_veil_icon.png",
+      "potion_size": [
+        32.0,
+        40.0
+      ],
+      "recipe_path": "res://assets/rare_recipes_v1/recipes/rare_mist_veil_recipe.png",
+      "recipe_size": [
+        32.0,
+        40.0
+      ],
+      "region": "mist_valley",
+      "region_name": "물안개 계곡",
+      "status": "design_complete",
+      "source_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_mist_veil_potion.png",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_mist_veil_bottle.png",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_mist_veil_recipe.png"
+      },
+      "generation_record_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_mist_veil_potion.generation.json",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_mist_veil_bottle.generation.json",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_mist_veil_recipe.generation.json"
+      }
+    },
+    {
+      "bottle_path": "res://assets/rare_recipes_v1/potions/rare_lunar_seal_12x16.png",
+      "bottle_size": [
+        12.0,
+        16.0
+      ],
+      "comparison_general": "moon",
+      "connection_status": "awaiting_game_integration",
+      "id": "rare_lunar_seal",
+      "name_candidate": "월광봉인 물약",
+      "potion_path": "res://assets/rare_recipes_v1/potions/rare_lunar_seal_icon.png",
+      "potion_size": [
+        32.0,
+        40.0
+      ],
+      "recipe_path": "res://assets/rare_recipes_v1/recipes/rare_lunar_seal_recipe.png",
+      "recipe_size": [
+        32.0,
+        40.0
+      ],
+      "region": "moon_ruins",
+      "region_name": "달빛 유적",
+      "status": "design_complete",
+      "source_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_lunar_seal_potion.png",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_lunar_seal_bottle.png",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_lunar_seal_recipe.png"
+      },
+      "generation_record_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_lunar_seal_potion.generation.json",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_lunar_seal_bottle.generation.json",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_lunar_seal_recipe.generation.json"
+      }
+    },
+    {
+      "bottle_path": "res://assets/rare_recipes_v1/potions/rare_nebula_distillate_12x16.png",
+      "bottle_size": [
+        12.0,
+        16.0
+      ],
+      "comparison_general": "starlight",
+      "connection_status": "awaiting_game_integration",
+      "id": "rare_nebula_distillate",
+      "name_candidate": "성운 증류액",
+      "potion_path": "res://assets/rare_recipes_v1/potions/rare_nebula_distillate_icon.png",
+      "potion_size": [
+        32.0,
+        40.0
+      ],
+      "recipe_path": "res://assets/rare_recipes_v1/recipes/rare_nebula_distillate_recipe.png",
+      "recipe_size": [
+        32.0,
+        40.0
+      ],
+      "region": "star_garden",
+      "region_name": "별의 정원",
+      "status": "design_complete",
+      "source_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_nebula_distillate_potion.png",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_nebula_distillate_bottle.png",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_nebula_distillate_recipe.png"
+      },
+      "generation_record_paths": {
+        "potion": "res://assets/rare_recipes_v1/source/rare_nebula_distillate_potion.generation.json",
+        "bottle": "res://assets/rare_recipes_v1/source/rare_nebula_distillate_bottle.generation.json",
+        "recipe": "res://assets/rare_recipes_v1/source/rare_nebula_distillate_recipe.generation.json"
+      }
+    }
+  ],
+  "connected_to_game": false,
+  "date": "2026-10-08",
+  "generator": "built-in image_gen",
+  "names_and_settings": "design_candidates",
+  "status": "design_complete",
+  "validation_path": "res://assets/rare_recipes_v1/verification/art-validation.json",
+  "version": 1.0,
+  "preview_paths": [
+    "res://assets/rare_recipes_v1/previews/pairs-and-general-comparison.png",
+    "res://assets/rare_recipes_v1/previews/small-bottles.png"
+  ],
+  "summary": {
+    "sets": 4,
+    "delivered_pngs": 12,
+    "potion_icons": 4,
+    "shelf_bottles": 4,
+    "dedicated_recipe_icons": 4,
+    "independent_generated_originals": 12,
+    "game_connected": false,
+    "visually_reviewed": true,
+    "approved_comparison_files_preserved": 8
+  }
+}

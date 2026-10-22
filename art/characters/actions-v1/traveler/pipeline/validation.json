@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "carry_contact_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "shirt": 3,
+        "hair_leather": 4,
+        "wood_light": 5
+      },
+      "source_sha256": "f74f7469c1767d55520915c6b9f3cf04a52468fbfa087381ae16326bec208423",
+      "native_pixel_sha256": "f18fc4ef9e679da8af5d276ee6de2a407f9f568ebf87873285f055ecbd4ed0de"
+    },
+    "carry_pass_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 556,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "shirt": 3,
+        "hair_leather": 4,
+        "wood_light": 5
+      },
+      "source_sha256": "0d6629fe3719ea91f4697e5c445c337be27434a1a10edcb5a300b7bd61cfb7b6",
+      "native_pixel_sha256": "aabd39f1ccbc8c2ce59a70856a417d53e2a3aa34f7dc1272ddeca2c6333998a3"
+    },
+    "carry_contact_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 571,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "shirt": 3,
+        "hair_leather": 4,
+        "wood_light": 5
+      },
+      "source_sha256": "c70c30a876457fda4ec983ef230f9d1653e7e991445f31f117e59084acdc78ac",
+      "native_pixel_sha256": "dc2bb064514607d4849fc87774ccee2e8070a31aba05fdbed61301470027fe84"
+    },
+    "carry_pass_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 559,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "shirt": 3,
+        "hair_leather": 4,
+        "wood_light": 5
+      },
+      "source_sha256": "64c06dccfeef337e7b109767f5fb426f1fcd4ba4a266e0687ab3e8d66b2e7cae",
+      "native_pixel_sha256": "b44e28c13893c8e1b025638e5efb323a6d7efe009d2fd047d56d480839294658"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

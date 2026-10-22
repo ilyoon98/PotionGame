@@ -1,0 +1,17 @@
+{
+  "status": "approved_keyposes_for_followup",
+  "approved_by_user": true,
+  "date": "2026-10-14",
+  "user_quote": "좋아 모든 캐릭터들이 팔레트와 동일한지 등 검사하고 다음작업을 해보자고",
+  "scope": "The eight reviewed rogue keyposes and identity; excludes unseen action animations and runtime integration.",
+  "frame_sha256": {
+    "blink_idle.png": "7b254084fc851f54f5d6ea8d71bd24f523a187d3c094321b174304899dbe00aa",
+    "idle.png": "ccfcf8d2cc63b4bf202393c962e04e844c9771728f2a138d7983ff50811dfc31",
+    "receive_extend.png": "6ffa708c91891d53588e7293653a6e015ff36c34fa8294de6c7109a15b756885",
+    "receive_hold.png": "77e7e12cccad84f232e5d0b9aee2940be11bb10e6dbe0316feefbb5b6278b338",
+    "walk_contact_a.png": "0b0ea354a42a8c038fb7f384e8512f59c246ebaf9749c258acaa3bf1b75961e5",
+    "walk_contact_b.png": "1c5a6266d1ccfbc395e3c694ca1f512e0bde75249ac87294045511872ac8a5ea",
+    "walk_pass_a.png": "7820ca63caeb432135a41eec60b63b85a1a7ba09541582c7d50a5e5817d6afc5",
+    "walk_pass_b.png": "697482261b359cdf2496dd10393185dcde2600545ccdceb7186ef61d819385ec"
+  }
+}

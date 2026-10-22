@@ -1,0 +1,12 @@
+{
+  "id": "rare_nebula_distillate",
+  "variant": "bottle",
+  "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: 8-pixel-wide pointed diamond body, short gold cap, deep indigo fill, central ivory star pixel and one gold diagonal. Keep its silhouette family matching the reference: ANGULAR DIAMOND body with four clean pointed corners and short gold neck (never a star-shaped bottle). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "reference_role": "paired_potion_palette_silhouette_emblem",
+  "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_potion.png",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-102819b8-4b86-4dbd-9a87-7f1f028f3c89.png",
+  "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_bottle.png",
+  "transparent_background": true
+}

@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "sleep_sit": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 572,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "wood": 3,
+        "purple": 4,
+        "gold": 5
+      },
+      "source_sha256": "d50da1e254135a3f78912e65ac6210082e307f5c125882531293288649f3d769",
+      "native_pixel_sha256": "8940e4dd3720a654937799d76a8a8f225a666ae7c42a63601894537b9a13b878"
+    },
+    "sleep_sit_breath": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 592,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "wood": 3,
+        "purple": 4,
+        "gold": 5
+      },
+      "source_sha256": "e0e9f323e54cb95e69736cebfcb9de44f42cf94f8c5be1d3ba98f268c69e9f86",
+      "native_pixel_sha256": "e2fe65be6269c10c361bea6a482757fd51f3c00d33da6b689ae83182f96fb8c0"
+    },
+    "faint": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 593,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "wood": 3,
+        "purple": 4,
+        "gold": 5
+      },
+      "source_sha256": "5a934eeb3022a11740eb09c64d7bb8581646b2690020ad3014b1b9ba680e3d7f",
+      "native_pixel_sha256": "ae479d032e26435b6780e6f2c87c4ab12955fd7abefeed8f8e2c0c0a7f3b90de"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

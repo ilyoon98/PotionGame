@@ -1,0 +1,5 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+RARE RECIPE EXPORT AND VALIDATION PASS: 4 sets, 12 PNGs, distinct 12x16 silhouettes, real alpha

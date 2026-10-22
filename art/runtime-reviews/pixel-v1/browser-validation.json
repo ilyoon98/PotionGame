@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "page": "review.html",
+  "actual_Godot_playback": "game-render.gif",
+  "playback_size": [
+    540,
+    300
+  ],
+  "selected_customer": "elf",
+  "selected_stage": "catch",
+  "images_loaded": true,
+  "console_warnings_errors": 0,
+  "narrow_panel_uses_horizontal_scroll_to_preserve_pixel_scale": true,
+  "screen": "browser-proof.png"
+}

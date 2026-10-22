@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "approved",
+  "approved_by_user": true,
+  "approved_on": "2026-10-13",
+  "approval_note": "완성 목업에 대한 사용자 답변: 좋아. 아트 기준 승인이다.",
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/cozy-witch-v1",
+  "scene": {"size": [192, 72], "background": "#4A3C52", "baseline": 64},
+  "assets": [
+    {
+      "id": "cauldron",
+      "source": "art/mockups/cozy-witch-v1/source/cauldron.png",
+      "size": [32, 32],
+      "position": [24, 32],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": ["#241C32"],
+        "purple": ["#86548E"],
+        "teal": ["#3BA8A3"],
+        "gold": ["#E9B95F"],
+        "stone": ["#827589"]
+      },
+      "rules": [
+        {"material": "gold", "hue": [0.04, 0.19], "saturation_min": 0.35},
+        {"material": "teal", "hue": [0.36, 0.62], "saturation_min": 0.22},
+        {"material": "stone", "y_min": 0.78, "saturation_max": 0.35}
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "witch",
+      "source": "art/mockups/cozy-witch-v1/source/witch.png",
+      "size": [32, 48],
+      "position": [68, 16],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": ["#241C32"],
+        "purple": ["#50315F", "#86548E"],
+        "skin": ["#F6D1AC"],
+        "gold": ["#E9B95F"]
+      },
+      "rules": [
+        {"material": "gold", "hue": [0.10, 0.19], "saturation_min": 0.30},
+        {"material": "skin", "hue": [0.0, 0.10], "value_min": 0.55}
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "shelf",
+      "source": "art/mockups/cozy-witch-v1/source/shelf.png",
+      "size": [64, 64],
+      "position": [112, 0],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": ["#241C32"],
+        "wood": ["#916047", "#C99463"],
+        "teal": ["#3BA8A3"],
+        "gold": ["#FFF0BC"]
+      },
+      "rules": [
+        {"material": "teal", "hue": [0.36, 0.62], "saturation_min": 0.22},
+        {"material": "gold", "hue": [0.10, 0.21], "value_min": 0.85}
+      ],
+      "fallback_material": "wood"
+    }
+  ]
+}

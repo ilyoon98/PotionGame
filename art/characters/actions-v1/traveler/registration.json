@@ -1,0 +1,66 @@
+{
+  "source_grid": [
+    4,
+    1
+  ],
+  "head_top_row": 11,
+  "sole_target_row": 46,
+  "frames": [
+    {
+      "id": "carry_contact_a",
+      "whole_body": true,
+      "uniform_scale": 0.627177700348432,
+      "offset": [
+        40,
+        110
+      ],
+      "crop_size": [
+        386,
+        574
+      ],
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_pass_a",
+      "whole_body": true,
+      "uniform_scale": 0.627177700348432,
+      "offset": [
+        40,
+        110
+      ],
+      "crop_size": [
+        385,
+        574
+      ],
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_contact_b",
+      "whole_body": true,
+      "uniform_scale": 0.627177700348432,
+      "offset": [
+        40,
+        110
+      ],
+      "crop_size": [
+        385,
+        574
+      ],
+      "cross_pose_body_splicing": false
+    },
+    {
+      "id": "carry_pass_b",
+      "whole_body": true,
+      "uniform_scale": 0.627177700348432,
+      "offset": [
+        40,
+        110
+      ],
+      "crop_size": [
+        385,
+        574
+      ],
+      "cross_pose_body_splicing": false
+    }
+  ]
+}

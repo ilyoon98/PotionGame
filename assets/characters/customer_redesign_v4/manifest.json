@@ -1,0 +1,74 @@
+{
+  "status": "integrated into game on 2026-10-07; mage, elf and rogue idle/walk/purchase poses",
+  "cell_size": [
+    48,
+    64
+  ],
+  "sheet_size": [
+    96,
+    128
+  ],
+  "poses": [
+    "idle",
+    "walk_1",
+    "walk_2",
+    "purchase_complete"
+  ],
+  "walk_frames": [
+    1,
+    2
+  ],
+  "walk_fps": 6,
+  "processing": "Whole-body crops with one uniform scale per character; no torso/leg compositing",
+  "version": "v4",
+  "characters": {
+    "mage": {
+      "source": "../../source/customer_redesign_v4/mage.png",
+      "source_grid": [
+        2,
+        2
+      ],
+      "source_cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sheet": "mage_animations_96x128.png",
+      "scale": 0.09443507588532883,
+      "maximum_visible_height": 56
+    },
+    "elf": {
+      "source": "../../source/customer_redesign_v4/elf.png",
+      "source_grid": [
+        2,
+        2
+      ],
+      "source_cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sheet": "elf_animations_96x128.png",
+      "scale": 0.0865561694290976,
+      "maximum_visible_height": 47
+    },
+    "rogue": {
+      "source": "../../source/customer_redesign_v4/rogue.png",
+      "source_grid": [
+        2,
+        2
+      ],
+      "source_cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sheet": "rogue_animations_96x128.png",
+      "scale": 0.08061749571183534,
+      "maximum_visible_height": 47
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "character": "rogue",
+  "status": "action_animation_candidate",
+  "approved_by_user": false,
+  "date": "2026-10-15",
+  "native_size": [
+    32,
+    48
+  ],
+  "scale": 3,
+  "palette": "art/palettes/v1/characters/rogue.hex",
+  "approved_identity": "art/characters/keyframes-v2/rogue/approval.json",
+  "source_keyframes": "art/characters/keyframes-v2/rogue/keyframes.json",
+  "new_carry_poses": [
+    "carry_contact_a",
+    "carry_pass_a",
+    "carry_contact_b",
+    "carry_pass_b"
+  ],
+  "frame_count": 11,
+  "timeline_seconds": 14.2,
+  "timeline": [
+    {
+      "id": "arrive",
+      "name": "입장",
+      "start": 0,
+      "end": 3.2
+    },
+    {
+      "id": "wait",
+      "name": "대기",
+      "start": 3.2,
+      "end": 7.2
+    },
+    {
+      "id": "receive",
+      "name": "물약 받기",
+      "start": 7.2,
+      "end": 10.2
+    },
+    {
+      "id": "depart",
+      "name": "병을 든 퇴장",
+      "start": 10.2,
+      "end": 13.4
+    },
+    {
+      "id": "reset",
+      "name": "다음 방문 준비",
+      "start": 13.4,
+      "end": 14.2
+    }
+  ],
+  "walk_pose_fps": 6,
+  "secondary_pose_fps": 8,
+  "receive_bottle_event_seconds": 8.45,
+  "full_actor_turn": "Whole head/hair/both ears/scarf/body/tail/legs mirror together; independent upright bottle re-anchors to mirrored actual palm.",
+  "body_parts_reassembled": false,
+  "motion": "motion/validation.json",
+  "contacts": "contact-validation.json",
+  "runtime_integrated": false,
+  "remaining_work": "Simultaneous keeper handover, whole-scene mockup and Godot integration."
+}

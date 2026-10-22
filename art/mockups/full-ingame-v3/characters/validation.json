@@ -1,0 +1,237 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "source_assets": {
+    "witch": {
+      "source": "art/mockups/full-ingame-v3/characters/source/keeper.png",
+      "size": [
+        32,
+        48
+      ],
+      "margin": 1,
+      "dark_value": 0.24,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0,
+            0.17
+          ],
+          "value_min": 0.7,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.1,
+            0.19
+          ],
+          "value_min": 0.65,
+          "saturation_min": 0.3
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0,
+            0.16
+          ],
+          "saturation_min": 0.15
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    "elf_head": {
+      "source": "art/mockups/full-ingame-v3/characters/source/elf-head.png",
+      "size": [
+        18,
+        13
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.2,
+            0.48
+          ],
+          "saturation_min": 0.15
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0,
+            0.18
+          ],
+          "value_min": 0.7
+        }
+      ],
+      "fallback_material": "wood",
+      "material_rectangles": [
+        {
+          "rect": [
+            4,
+            8,
+            5,
+            10
+          ],
+          "material": "outline"
+        },
+        {
+          "rect": [
+            8,
+            8,
+            9,
+            10
+          ],
+          "material": "outline"
+        }
+      ]
+    }
+  },
+  "keeper_identity": "Original adult male: short brown hair, cream shirt, open purple cape, brown shorts and boots.",
+  "keeper_identity_reference": "assets/source/character_idle_v2/keeper.png",
+  "elf_torso_from_row_27_unchanged": true,
+  "elf_head_bounds": [
+    7,
+    14,
+    25,
+    27
+  ],
+  "keeper_face": {
+    "bounds": [
+      11,
+      17,
+      21,
+      24
+    ],
+    "width": 10,
+    "height": 7,
+    "skin_pixels": 36
+  },
+  "elf_face": {
+    "bounds": [
+      10,
+      20,
+      18,
+      27
+    ],
+    "width": 8,
+    "height": 7,
+    "skin_pixels": 32
+  },
+  "checks": {
+    "witch": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "source_sha256": "62c55cdc344680565c19e299dbc71cc0b572a380f454406f39e48f86a710c86a",
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "wood": 3,
+        "skin": 4,
+        "gold": 5
+      }
+    },
+    "elf_head": {
+      "passed": true,
+      "size": [
+        18,
+        13
+      ],
+      "opaque_pixels": 163,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "source_sha256": "0009c8aad8894c20932c1c135755b0dadee58e6f68a723d37fd18d20ea7dcfa9",
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "skin": 3,
+        "leaf": 4
+      }
+    },
+    "elf": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 423,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": []
+    }
+  },
+  "notes": "Compare anatomy beneath hat; do not stretch the hatless elf to fill its 32x48 canvas."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "clarity",
+  "name": "선명",
+  "category": "potions",
+  "family": "craft",
+  "region": "mist_valley",
+  "shape": "short diamond-cut flask",
+  "symbol": "wide gold sun-disc",
+  "color": "pale sky blue",
+  "prompt": "Use case: stylized-concept. Asset type: a production inventory potion sprite for Moonshadow Potion Shop, a tiny cozy witch-shop pixel-art game. ONE complete isolated bottle, front orthographic view, centered with generous TRANSPARENT padding. Actual transparent alpha background. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm amber cork and antique gold details, ivory glass highlights, 4 flat clustered shade bands. Simple readable silhouette and ONE bold central emblem taking one third of the bottle body. Think logical 12x16 pixels for shelf bottles and 32x40 for inventory, uniformly enlarge pixels for output. Bottle entire silhouette fully visible. No text, letters, digits, watermark, blur, soft glow, gradients, floor, cast shadows, particles outside bottle, scene or border. Subject: 선명 fantasy potion. Bottle silhouette: short diamond-cut flask. Liquid: pale sky blue. Large readable emblem: wide gold sun-disc. The central emblem is one bold graphic, not lettering. Keep the body readable at 12x16 logical pixels; use few wide shape clusters.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-ba86053c-0ae1-4874-9b4b-a13055b4bfb3.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/clarity.png"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "crystal_mine",
+  "name": "수정 광산",
+  "category": "regions",
+  "prompt": "Use case: stylized-concept. Asset type: one production UI icon for a tiny cozy witch potion-shop game. ONE isolated complete object/emblem centered on REAL transparent alpha background, generous padding. Front orthographic or gentle front three-quarter view. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm antique gold #efc77c, ivory highlights, muted violet/sage accents, 4 flat clustered shades, readable at logical 32x40 pixels. No text, letters, digits, watermark, glow, blur, gradients, cast shadow, floor or background scene. Subject: a compact plum arched mine entrance with three pale cyan/lilac crystals around the opening and tiny antique gold pickaxe laid diagonally across lower edge; one unified icon.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-69a5b0f7-097e-4b57-86bf-d98ff8ccf92e.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/crystal_mine.png"
+}

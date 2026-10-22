@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64">
+  <title>달그늘 물약상점</title>
+  <desc>보라색 픽셀 물약병, 금빛 초승달과 별. 투명 배경의 앱 아이콘.</desc>
+  <!-- Editable pixel artwork on a 32 x 32 grid. -->
+  <!-- Fill more of the Windows icon slot: wider bottle, reduced top/bottom padding. -->
+  <g transform="translate(-8 -1.6) scale(1.25 1.1)">
+  <path fill="#30213f" d="M26 4h12v2h4v12h-4v8h2v2h4v2h4v4h2v4h2v12h-2v4h-2v2h-4v2H20v-2h-4v-2h-2v-4h-2V38h2v-4h2v-4h4v-2h4v-2h2v-8h-4V6h4z"/>
+  <!-- Cork: honey-gold top, warm shaded edge. -->
+  <path fill="#b77a46" d="M26 6h12v2h2v8H24V8h2z"/>
+  <path fill="#efc575" d="M26 6h12v2h2v4H24V8h2z"/>
+  <path fill="#ffe5ac" d="M26 6h10v2H26zM24 8h4v2h-4z"/>
+  <path fill="#885038" d="M36 12h4v4h-4zM26 14h10v2H26z"/>
+  <!-- Lavender glass and neck. -->
+  <path fill="#ddcef6" d="M24 16h16v2H24zM28 18h8v10h4v2h4v2h2v4h2v2h2v12h-2v4h-4v2H20v-2h-4v-4h-2V38h2v-2h2v-4h2v-2h4v-2h4z"/>
+  <path fill="#a584c8" d="M36 18h2v10h2v2h4v2h2v4h2v2h2v12h-2v4h-4v2H20v-2h24v-4h2V38h-2v-4h-4v-4h-4z"/>
+  <path fill="#faf0ff" d="M28 18h4v8h-4zM24 28h4v2h-4zM20 30h4v2h-4zM18 32h2v4h-2zM16 38h2v10h-2z"/>
+  <!-- Purple potion with a clear horizontal liquid surface. -->
+  <path fill="#9860cf" d="M20 36h24v2h2v12h-2v2H20v-2h-2V38h2z"/>
+  <path fill="#b587e9" d="M20 36h24v2H20zM18 38h2v6h-2z"/>
+  <path fill="#7741aa" d="M42 38h4v12h-2v2H20v-2h22z"/>
+  <path fill="#5b327e" d="M22 50h20v2H22z"/>
+  <!-- Dark-edged gold crescent, broad enough for small Windows icons. -->
+  <path fill="#583765" d="M30 36h8v2h-4v4h2v2h4v4h-4v2h-6v-2h-4v-2h-2v-6h2v-2h4z"/>
+  <path fill="#f2c66e" d="M30 36h6v2h-4v6h4v2h4v2h-4v2h-6v-2h-4v-2h-2v-6h2v-2h4z"/>
+  <path fill="#ffe8b1" d="M30 36h4v2h-4zM26 38h4v2h-4zM24 40h2v4h-2z"/>
+  <path fill="#cc924a" d="M30 48h6v2h-6zM26 46h4v2h-4z"/>
+  </g>
+  <!-- A single magical glint; no lettering or opaque background. -->
+  <g transform="translate(2 -2)">
+  <path fill="#f1c977" d="M54 8h2v4h4v2h-4v4h-2v-4h-4v-2h4z"/>
+  <path fill="#ffe8b1" d="M54 8h2v6h-6v-2h4z"/>
+  </g>
+</svg>

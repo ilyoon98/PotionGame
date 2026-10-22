@@ -1,0 +1,277 @@
+{
+  "revision": "candidate-c",
+  "dt_seconds": 0.05,
+  "method": "Same warmed state; compare two specified upgrade stages over 10 minutes, freeze all other purchases. Stage substitution isolates effects, not a paid live-game test. RNG initial state is shared; later event schedules can diverge.",
+  "cases": [
+    {
+      "seed": 73129,
+      "track": "cauldron",
+      "base_stage": 10,
+      "new_stage": 11,
+      "recipes": 16,
+      "regions_completed": 3,
+      "stock_start": 1,
+      "stock_capacity": 30,
+      "before": {
+        "start_minute": 90.0,
+        "end_minute": 100,
+        "sold": 234,
+        "gross": 11024,
+        "stock_end": 0,
+        "full_pct": 0.0,
+        "waiting_pct": 25.966666666666775,
+        "inventory_pct": 1.1950000000000471
+      },
+      "after": {
+        "start_minute": 90.0,
+        "end_minute": 100,
+        "sold": 267,
+        "gross": 11823,
+        "stock_end": 1,
+        "full_pct": 0.0,
+        "waiting_pct": 15.516666666666088,
+        "inventory_pct": 1.4688888888889733
+      }
+    },
+    {
+      "seed": 73129,
+      "track": "sales_counter",
+      "base_stage": 5,
+      "new_stage": 6,
+      "recipes": 20,
+      "regions_completed": 5,
+      "stock_start": 35,
+      "stock_capacity": 36,
+      "before": {
+        "start_minute": 150.0,
+        "end_minute": 160,
+        "sold": 315,
+        "gross": 17977,
+        "stock_end": 35,
+        "full_pct": 20.149999999999142,
+        "waiting_pct": 0.0,
+        "inventory_pct": 97.6962962962762
+      },
+      "after": {
+        "start_minute": 150.0,
+        "end_minute": 160,
+        "sold": 353,
+        "gross": 18928,
+        "stock_end": 34,
+        "full_pct": 12.883333333332915,
+        "waiting_pct": 0.0,
+        "inventory_pct": 97.39837962960786
+      }
+    },
+    {
+      "seed": 73129,
+      "track": "brewing_assistant",
+      "base_stage": 4,
+      "new_stage": 5,
+      "recipes": 32,
+      "regions_completed": 8,
+      "stock_start": 0,
+      "stock_capacity": 54,
+      "before": {
+        "start_minute": 300.0,
+        "end_minute": 310,
+        "sold": 365,
+        "gross": 35552,
+        "stock_end": 1,
+        "full_pct": 0.0,
+        "waiting_pct": 5.683333333333347,
+        "inventory_pct": 1.0408950617282924
+      },
+      "after": {
+        "start_minute": 300.0,
+        "end_minute": 310,
+        "sold": 387,
+        "gross": 39854,
+        "stock_end": 35,
+        "full_pct": 0.0,
+        "waiting_pct": 0.0,
+        "inventory_pct": 32.54243827160708
+      }
+    },
+    {
+      "seed": 19337,
+      "track": "cauldron",
+      "base_stage": 10,
+      "new_stage": 11,
+      "recipes": 16,
+      "regions_completed": 3,
+      "stock_start": 1,
+      "stock_capacity": 30,
+      "before": {
+        "start_minute": 90.0,
+        "end_minute": 100,
+        "sold": 230,
+        "gross": 10837,
+        "stock_end": 1,
+        "full_pct": 0.0,
+        "waiting_pct": 27.233333333333725,
+        "inventory_pct": 1.2080555555556047
+      },
+      "after": {
+        "start_minute": 90.0,
+        "end_minute": 100,
+        "sold": 264,
+        "gross": 11733,
+        "stock_end": 1,
+        "full_pct": 0.0,
+        "waiting_pct": 16.466666666666033,
+        "inventory_pct": 1.4375000000000826
+      }
+    },
+    {
+      "seed": 19337,
+      "track": "sales_counter",
+      "base_stage": 5,
+      "new_stage": 6,
+      "recipes": 20,
+      "regions_completed": 5,
+      "stock_start": 35,
+      "stock_capacity": 36,
+      "before": {
+        "start_minute": 150.0,
+        "end_minute": 160,
+        "sold": 316,
+        "gross": 18277,
+        "stock_end": 35,
+        "full_pct": 19.2749999999992,
+        "waiting_pct": 0.0,
+        "inventory_pct": 97.67916666664601
+      },
+      "after": {
+        "start_minute": 150.0,
+        "end_minute": 160,
+        "sold": 353,
+        "gross": 19070,
+        "stock_end": 35,
+        "full_pct": 12.474999999999605,
+        "waiting_pct": 0.0,
+        "inventory_pct": 97.32569444442382
+      }
+    },
+    {
+      "seed": 19337,
+      "track": "brewing_assistant",
+      "base_stage": 4,
+      "new_stage": 5,
+      "recipes": 32,
+      "regions_completed": 8,
+      "stock_start": 1,
+      "stock_capacity": 54,
+      "before": {
+        "start_minute": 300.0,
+        "end_minute": 310,
+        "sold": 359,
+        "gross": 35126,
+        "stock_end": 1,
+        "full_pct": 0.0,
+        "waiting_pct": 7.391666666666578,
+        "inventory_pct": 1.0867283950616127
+      },
+      "after": {
+        "start_minute": 300.0,
+        "end_minute": 310,
+        "sold": 387,
+        "gross": 39071,
+        "stock_end": 30,
+        "full_pct": 0.0,
+        "waiting_pct": 0.15833333333333285,
+        "inventory_pct": 27.573919753086862
+      }
+    },
+    {
+      "seed": 9973,
+      "track": "cauldron",
+      "base_stage": 10,
+      "new_stage": 11,
+      "recipes": 16,
+      "regions_completed": 3,
+      "stock_start": 1,
+      "stock_capacity": 30,
+      "before": {
+        "start_minute": 90.0,
+        "end_minute": 100,
+        "sold": 231,
+        "gross": 10900,
+        "stock_end": 0,
+        "full_pct": 0.0,
+        "waiting_pct": 19.249999999999197,
+        "inventory_pct": 1.4175000000000813
+      },
+      "after": {
+        "start_minute": 90.0,
+        "end_minute": 100,
+        "sold": 271,
+        "gross": 12006,
+        "stock_end": 0,
+        "full_pct": 0.0,
+        "waiting_pct": 5.250000000000035,
+        "inventory_pct": 1.8788888888890378
+      }
+    },
+    {
+      "seed": 9973,
+      "track": "sales_counter",
+      "base_stage": 5,
+      "new_stage": 6,
+      "recipes": 20,
+      "regions_completed": 5,
+      "stock_start": 35,
+      "stock_capacity": 36,
+      "before": {
+        "start_minute": 150.0,
+        "end_minute": 160,
+        "sold": 316,
+        "gross": 18057,
+        "stock_end": 34,
+        "full_pct": 19.916666666665826,
+        "waiting_pct": 0.0,
+        "inventory_pct": 97.71435185183194
+      },
+      "after": {
+        "start_minute": 150.0,
+        "end_minute": 160,
+        "sold": 353,
+        "gross": 19053,
+        "stock_end": 35,
+        "full_pct": 13.758333333332862,
+        "waiting_pct": 0.0,
+        "inventory_pct": 97.43935185183155
+      }
+    },
+    {
+      "seed": 9973,
+      "track": "brewing_assistant",
+      "base_stage": 4,
+      "new_stage": 5,
+      "recipes": 32,
+      "regions_completed": 8,
+      "stock_start": 1,
+      "stock_capacity": 54,
+      "before": {
+        "start_minute": 300.0,
+        "end_minute": 310,
+        "sold": 365,
+        "gross": 35204,
+        "stock_end": 0,
+        "full_pct": 0.0,
+        "waiting_pct": 8.924999999999818,
+        "inventory_pct": 1.051543209876435
+      },
+      "after": {
+        "start_minute": 300.0,
+        "end_minute": 310,
+        "sold": 400,
+        "gross": 40589,
+        "stock_end": 30,
+        "full_pct": 0.0,
+        "waiting_pct": 0.17499999999999946,
+        "inventory_pct": 28.527469135803493
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "uniform_scale_all_new_poses": 0.558252427184466,
+  "old_face_hook_used": false,
+  "old_head_overlay_used": false,
+  "cross_pose_limb_splicing": false,
+  "frames": [
+    {
+      "id": "brew_reach",
+      "source_crop_size": [
+        459,
+        823
+      ],
+      "uniform_scale": 0.558252427184466,
+      "offset": [
+        27,
+        11
+      ],
+      "entire_generated_body_used": true,
+      "head_overlay": false,
+      "facing": "left"
+    },
+    {
+      "id": "brew_stir_left",
+      "source_crop_size": [
+        468,
+        824
+      ],
+      "uniform_scale": 0.558252427184466,
+      "offset": [
+        15,
+        10
+      ],
+      "entire_generated_body_used": true,
+      "head_overlay": false,
+      "facing": "left"
+    },
+    {
+      "id": "brew_stir_right",
+      "source_crop_size": [
+        479,
+        823
+      ],
+      "uniform_scale": 0.558252427184466,
+      "offset": [
+        10,
+        11
+      ],
+      "entire_generated_body_used": true,
+      "head_overlay": false,
+      "facing": "left"
+    },
+    {
+      "id": "idle",
+      "source": "art/characters/keyframes-v2/keeper/frames/idle.png",
+      "entire_frame_retained": true,
+      "facing": "right"
+    },
+    {
+      "id": "handover_extend",
+      "source": "art/characters/keyframes-v2/keeper/frames/handover_extend.png",
+      "entire_frame_retained": true,
+      "facing": "right"
+    },
+    {
+      "id": "handover_return",
+      "source": "art/characters/keyframes-v2/keeper/frames/handover_return.png",
+      "entire_frame_retained": true,
+      "facing": "right"
+    }
+  ]
+}

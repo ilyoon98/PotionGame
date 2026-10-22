@@ -1,0 +1,2937 @@
+{
+  "policy": "expedition_first",
+  "seed_initial": 73129,
+  "checkpoints": [
+    {
+      "minute": 10.0,
+      "gold": 27,
+      "recipes": 5,
+      "completed_regions": 0,
+      "opened_regions": 1,
+      "destination": "forest_edge",
+      "investments": 11,
+      "employees": 0,
+      "sold": 148,
+      "gross": 2156,
+      "materials": 168,
+      "net": 1988,
+      "spent": 1961,
+      "loot": 0
+    },
+    {
+      "minute": 30.0,
+      "gold": 58,
+      "recipes": 9,
+      "completed_regions": 1,
+      "opened_regions": 2,
+      "destination": "abandoned_greenhouse",
+      "investments": 26,
+      "employees": 1,
+      "sold": 505,
+      "gross": 10977,
+      "materials": 316,
+      "net": 10661,
+      "spent": 10603,
+      "loot": 0
+    },
+    {
+      "minute": 60.0,
+      "gold": 594,
+      "recipes": 13,
+      "completed_regions": 2,
+      "opened_regions": 3,
+      "destination": "mist_valley",
+      "investments": 40,
+      "employees": 2,
+      "sold": 1094,
+      "gross": 30574,
+      "materials": 316,
+      "net": 30258,
+      "spent": 29664,
+      "loot": 0
+    },
+    {
+      "minute": 120.0,
+      "gold": 925,
+      "recipes": 18,
+      "completed_regions": 4,
+      "opened_regions": 5,
+      "destination": "fog_marsh",
+      "investments": 63,
+      "employees": 4,
+      "sold": 2556,
+      "gross": 96586,
+      "materials": 316,
+      "net": 96270,
+      "spent": 95345,
+      "loot": 0
+    },
+    {
+      "minute": 180.0,
+      "gold": 10474,
+      "recipes": 23,
+      "completed_regions": 6,
+      "opened_regions": 6,
+      "destination": "forgotten_tower",
+      "investments": 82,
+      "employees": 4,
+      "sold": 4356,
+      "gross": 210636,
+      "materials": 316,
+      "net": 210320,
+      "spent": 199846,
+      "loot": 0
+    },
+    {
+      "minute": 240.0,
+      "gold": 1844,
+      "recipes": 27,
+      "completed_regions": 7,
+      "opened_regions": 8,
+      "destination": "star_garden",
+      "investments": 98,
+      "employees": 4,
+      "sold": 6370,
+      "gross": 378506,
+      "materials": 316,
+      "net": 378190,
+      "spent": 376346,
+      "loot": 0
+    },
+    {
+      "minute": 300.0,
+      "gold": 13951,
+      "recipes": 32,
+      "completed_regions": 8,
+      "opened_regions": 8,
+      "destination": "star_garden",
+      "investments": 108,
+      "employees": 4,
+      "sold": 8403,
+      "gross": 580633,
+      "materials": 316,
+      "net": 580317,
+      "spent": 566366,
+      "loot": 0
+    },
+    {
+      "minute": 480.0,
+      "gold": 435539,
+      "recipes": 32,
+      "completed_regions": 8,
+      "opened_regions": 8,
+      "destination": "star_garden",
+      "investments": 125,
+      "employees": 4,
+      "sold": 14567,
+      "gross": 1314221,
+      "materials": 316,
+      "net": 1313905,
+      "spent": 878366,
+      "loot": 0
+    }
+  ],
+  "all_regions_min": 261.3833333333333,
+  "all_recipes_min": 281.5,
+  "all_investments_min": 376.5,
+  "final": {
+    "minute": 480.0,
+    "gold": 435539,
+    "recipes": 32,
+    "completed_regions": 8,
+    "opened_regions": 8,
+    "destination": "star_garden",
+    "investments": 125,
+    "employees": 4,
+    "sold": 14567,
+    "gross": 1314221,
+    "materials": 316,
+    "net": 1313905,
+    "spent": 878366,
+    "loot": 0
+  },
+  "events": [
+    {
+      "t": 30.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 1,
+      "cost": 24,
+      "gold": 6
+    },
+    {
+      "t": 60.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 1,
+      "cost": 30,
+      "gold": 4
+    },
+    {
+      "t": 90.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 2,
+      "cost": 37,
+      "gold": 31
+    },
+    {
+      "t": 120.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 2,
+      "cost": 47,
+      "gold": 40
+    },
+    {
+      "t": 150.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 3,
+      "cost": 72,
+      "gold": 22
+    },
+    {
+      "t": 210.0,
+      "event": "recipe",
+      "id": "moon",
+      "stage": null,
+      "cost": 120,
+      "gold": 34
+    },
+    {
+      "t": 240.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 4,
+      "cost": 112,
+      "gold": 12
+    },
+    {
+      "t": 300.0,
+      "event": "recipe",
+      "id": "purify",
+      "stage": null,
+      "cost": 180,
+      "gold": 102
+    },
+    {
+      "t": 360.0,
+      "event": "recipe",
+      "id": "agility",
+      "stage": null,
+      "cost": 240,
+      "gold": 102
+    },
+    {
+      "t": 450.0,
+      "event": "region",
+      "id": "forest_edge",
+      "stage": null,
+      "cost": 400,
+      "gold": 56
+    },
+    {
+      "t": 480.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 3,
+      "cost": 58,
+      "gold": 122
+    },
+    {
+      "t": 480.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 4,
+      "cost": 89,
+      "gold": 33
+    },
+    {
+      "t": 510.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 5,
+      "cost": 139,
+      "gold": 18
+    },
+    {
+      "t": 540.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 5,
+      "cost": 173,
+      "gold": 3
+    },
+    {
+      "t": 600.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 1,
+      "cost": 240,
+      "gold": 27
+    },
+    {
+      "t": 660.0,
+      "event": "discovery",
+      "id": "forest_edge",
+      "step": 1,
+      "gold": 311
+    },
+    {
+      "t": 690.0,
+      "event": "recipe",
+      "id": "vigor",
+      "stage": null,
+      "cost": 360,
+      "gold": 103
+    },
+    {
+      "t": 720.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 6,
+      "cost": 215,
+      "gold": 54
+    },
+    {
+      "t": 780.0,
+      "event": "employee",
+      "id": "sales_assistant",
+      "stage": null,
+      "cost": 360,
+      "gold": 90
+    },
+    {
+      "t": 810.0,
+      "event": "upgrade",
+      "id": "sales_assistant",
+      "stage": 1,
+      "cost": 240,
+      "gold": 78
+    },
+    {
+      "t": 870.0,
+      "event": "discovery",
+      "id": "forest_edge",
+      "step": 2,
+      "gold": 474
+    },
+    {
+      "t": 900.0,
+      "event": "recipe",
+      "id": "antidote",
+      "stage": null,
+      "cost": 480,
+      "gold": 165
+    },
+    {
+      "t": 930.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 6,
+      "cost": 268,
+      "gold": 43
+    },
+    {
+      "t": 990.0,
+      "event": "upgrade",
+      "id": "precision_filter",
+      "stage": 1,
+      "cost": 300,
+      "gold": 179
+    },
+    {
+      "t": 1020.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 7,
+      "cost": 333,
+      "gold": 79
+    },
+    {
+      "t": 1080.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 2,
+      "cost": 480,
+      "gold": 100
+    },
+    {
+      "t": 1140.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 7,
+      "cost": 416,
+      "gold": 180
+    },
+    {
+      "t": 1150.0,
+      "event": "discovery",
+      "id": "forest_edge",
+      "step": 3,
+      "gold": 266
+    },
+    {
+      "t": 1150.0,
+      "event": "region_complete",
+      "id": "forest_edge",
+      "gold": 266
+    },
+    {
+      "t": 1200.0,
+      "event": "recipe",
+      "id": "fortune",
+      "stage": null,
+      "cost": 640,
+      "gold": 8
+    },
+    {
+      "t": 1380.0,
+      "event": "region",
+      "id": "abandoned_greenhouse",
+      "stage": null,
+      "cost": 1200,
+      "gold": 273
+    },
+    {
+      "t": 1380.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 1,
+      "cost": 160,
+      "gold": 113
+    },
+    {
+      "t": 1410.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 2,
+      "cost": 280,
+      "gold": 72
+    },
+    {
+      "t": 1440.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 1,
+      "cost": 320,
+      "gold": 2
+    },
+    {
+      "t": 1500.0,
+      "event": "upgrade",
+      "id": "family_arcane",
+      "stage": 1,
+      "cost": 360,
+      "gold": 33
+    },
+    {
+      "t": 1560.0,
+      "event": "upgrade",
+      "id": "family_craft",
+      "stage": 1,
+      "cost": 360,
+      "gold": 117
+    },
+    {
+      "t": 1590.0,
+      "event": "upgrade",
+      "id": "family_nature",
+      "stage": 1,
+      "cost": 360,
+      "gold": 24
+    },
+    {
+      "t": 1650.0,
+      "event": "upgrade",
+      "id": "family_vitality",
+      "stage": 1,
+      "cost": 360,
+      "gold": 150
+    },
+    {
+      "t": 1710.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 1,
+      "cost": 400,
+      "gold": 141
+    },
+    {
+      "t": 1730.0,
+      "event": "discovery",
+      "id": "abandoned_greenhouse",
+      "step": 1,
+      "gold": 280
+    },
+    {
+      "t": 1800.0,
+      "event": "recipe",
+      "id": "focus",
+      "stage": null,
+      "cost": 750,
+      "gold": 58
+    },
+    {
+      "t": 1860.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 1,
+      "cost": 480,
+      "gold": 128
+    },
+    {
+      "t": 1920.0,
+      "event": "upgrade",
+      "id": "sales_assistant",
+      "stage": 2,
+      "cost": 480,
+      "gold": 152
+    },
+    {
+      "t": 1980.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 8,
+      "cost": 516,
+      "gold": 171
+    },
+    {
+      "t": 2027.0,
+      "event": "discovery",
+      "id": "abandoned_greenhouse",
+      "step": 2,
+      "gold": 585
+    },
+    {
+      "t": 2070.0,
+      "event": "recipe",
+      "id": "restoration",
+      "stage": null,
+      "cost": 950,
+      "gold": 5
+    },
+    {
+      "t": 2130.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 8,
+      "cost": 645,
+      "gold": 15
+    },
+    {
+      "t": 2220.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 3,
+      "cost": 800,
+      "gold": 215
+    },
+    {
+      "t": 2280.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 9,
+      "cost": 800,
+      "gold": 38
+    },
+    {
+      "t": 2321.0,
+      "event": "discovery",
+      "id": "abandoned_greenhouse",
+      "step": 3,
+      "gold": 515
+    },
+    {
+      "t": 2321.0,
+      "event": "region_complete",
+      "id": "abandoned_greenhouse",
+      "gold": 515
+    },
+    {
+      "t": 2400.0,
+      "event": "recipe",
+      "id": "growth",
+      "stage": null,
+      "cost": 1200,
+      "gold": 233
+    },
+    {
+      "t": 2550.0,
+      "event": "employee",
+      "id": "cultivation_assistant",
+      "stage": null,
+      "cost": 1530,
+      "gold": 253
+    },
+    {
+      "t": 2760.0,
+      "event": "region",
+      "id": "mist_valley",
+      "stage": null,
+      "cost": 2400,
+      "gold": 21
+    },
+    {
+      "t": 2820.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 3,
+      "cost": 480,
+      "gold": 244
+    },
+    {
+      "t": 2850.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 2,
+      "cost": 560,
+      "gold": 19
+    },
+    {
+      "t": 2940.0,
+      "event": "upgrade",
+      "id": "cultivation_assistant",
+      "stage": 1,
+      "cost": 720,
+      "gold": 309
+    },
+    {
+      "t": 3000.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 2,
+      "cost": 720,
+      "gold": 275
+    },
+    {
+      "t": 3060.0,
+      "event": "upgrade",
+      "id": "precision_filter",
+      "stage": 2,
+      "cost": 720,
+      "gold": 189
+    },
+    {
+      "t": 3115.0,
+      "event": "discovery",
+      "id": "mist_valley",
+      "step": 1,
+      "gold": 788
+    },
+    {
+      "t": 3180.0,
+      "event": "recipe",
+      "id": "clarity",
+      "stage": null,
+      "cost": 1400,
+      "gold": 76
+    },
+    {
+      "t": 3240.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 4,
+      "cost": 800,
+      "gold": 18
+    },
+    {
+      "t": 3330.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 2,
+      "cost": 880,
+      "gold": 206
+    },
+    {
+      "t": 3420.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 4,
+      "cost": 1280,
+      "gold": 60
+    },
+    {
+      "t": 3468.0,
+      "event": "discovery",
+      "id": "mist_valley",
+      "step": 2,
+      "gold": 661
+    },
+    {
+      "t": 3570.0,
+      "event": "recipe",
+      "id": "ward",
+      "stage": null,
+      "cost": 1700,
+      "gold": 200
+    },
+    {
+      "t": 3630.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 9,
+      "cost": 999,
+      "gold": 42
+    },
+    {
+      "t": 3720.0,
+      "event": "upgrade",
+      "id": "family_arcane",
+      "stage": 2,
+      "cost": 1040,
+      "gold": 257
+    },
+    {
+      "t": 3780.0,
+      "event": "upgrade",
+      "id": "family_craft",
+      "stage": 2,
+      "cost": 1040,
+      "gold": 66
+    },
+    {
+      "t": 3814.0,
+      "event": "discovery",
+      "id": "mist_valley",
+      "step": 3,
+      "gold": 527
+    },
+    {
+      "t": 3814.0,
+      "event": "region_complete",
+      "id": "mist_valley",
+      "gold": 527
+    },
+    {
+      "t": 3900.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 10,
+      "cost": 1549,
+      "gold": 195
+    },
+    {
+      "t": 4020.0,
+      "event": "employee",
+      "id": "expedition_guide",
+      "stage": null,
+      "cost": 2040,
+      "gold": 45
+    },
+    {
+      "t": 4170.0,
+      "event": "recipe",
+      "id": "spirit",
+      "stage": null,
+      "cost": 2100,
+      "gold": 141
+    },
+    {
+      "t": 4410.0,
+      "event": "region",
+      "id": "crystal_mine",
+      "stage": null,
+      "cost": 3830,
+      "gold": 85
+    },
+    {
+      "t": 4470.0,
+      "event": "upgrade",
+      "id": "expedition_guide",
+      "stage": 1,
+      "cost": 960,
+      "gold": 80
+    },
+    {
+      "t": 4560.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 3,
+      "cost": 960,
+      "gold": 471
+    },
+    {
+      "t": 4620.0,
+      "event": "upgrade",
+      "id": "family_nature",
+      "stage": 2,
+      "cost": 1040,
+      "gold": 277
+    },
+    {
+      "t": 4680.0,
+      "event": "upgrade",
+      "id": "family_vitality",
+      "stage": 2,
+      "cost": 1040,
+      "gold": 97
+    },
+    {
+      "t": 4707.5,
+      "event": "discovery",
+      "id": "crystal_mine",
+      "step": 1,
+      "gold": 471
+    },
+    {
+      "t": 4830.0,
+      "event": "recipe",
+      "id": "arcane_amplification",
+      "stage": null,
+      "cost": 2040,
+      "gold": 307
+    },
+    {
+      "t": 4890.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 10,
+      "cost": 1239,
+      "gold": 59
+    },
+    {
+      "t": 4980.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 3,
+      "cost": 1280,
+      "gold": 320
+    },
+    {
+      "t": 5070.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 5,
+      "cost": 1360,
+      "gold": 343
+    },
+    {
+      "t": 5130.0,
+      "event": "upgrade",
+      "id": "sales_assistant",
+      "stage": 3,
+      "cost": 1360,
+      "gold": 5
+    },
+    {
+      "t": 5139.5,
+      "event": "discovery",
+      "id": "crystal_mine",
+      "step": 2,
+      "gold": 162
+    },
+    {
+      "t": 5280.0,
+      "event": "recipe",
+      "id": "iron_skin",
+      "stage": null,
+      "cost": 2470,
+      "gold": 59
+    },
+    {
+      "t": 5370.0,
+      "event": "upgrade",
+      "id": "cultivation_assistant",
+      "stage": 2,
+      "cost": 1440,
+      "gold": 261
+    },
+    {
+      "t": 5460.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 3,
+      "cost": 1600,
+      "gold": 269
+    },
+    {
+      "t": 5550.0,
+      "event": "upgrade",
+      "id": "precision_filter",
+      "stage": 3,
+      "cost": 1680,
+      "gold": 79
+    },
+    {
+      "t": 5571.5,
+      "event": "discovery",
+      "id": "crystal_mine",
+      "step": 3,
+      "gold": 431
+    },
+    {
+      "t": 5571.5,
+      "event": "region_complete",
+      "id": "crystal_mine",
+      "gold": 431
+    },
+    {
+      "t": 5700.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 11,
+      "cost": 2401,
+      "gold": 300
+    },
+    {
+      "t": 5850.0,
+      "event": "recipe",
+      "id": "stealth",
+      "stage": null,
+      "cost": 2890,
+      "gold": 363
+    },
+    {
+      "t": 6030.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 12,
+      "cost": 3722,
+      "gold": 190
+    },
+    {
+      "t": 6210.0,
+      "event": "employee",
+      "id": "brewing_assistant",
+      "stage": null,
+      "cost": 3830,
+      "gold": 56
+    },
+    {
+      "t": 6510.0,
+      "event": "region",
+      "id": "fog_marsh",
+      "stage": null,
+      "cost": 6380,
+      "gold": 308
+    },
+    {
+      "t": 6600.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 5,
+      "cost": 1920,
+      "gold": 407
+    },
+    {
+      "t": 6690.0,
+      "event": "upgrade",
+      "id": "brewing_assistant",
+      "stage": 1,
+      "cost": 1760,
+      "gold": 578
+    },
+    {
+      "t": 6750.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 4,
+      "cost": 1760,
+      "gold": 176
+    },
+    {
+      "t": 6840.0,
+      "event": "upgrade",
+      "id": "expedition_guide",
+      "stage": 2,
+      "cost": 1920,
+      "gold": 239
+    },
+    {
+      "t": 6891.75,
+      "event": "discovery",
+      "id": "fog_marsh",
+      "step": 1,
+      "gold": 1449
+    },
+    {
+      "t": 6990.0,
+      "event": "recipe",
+      "id": "poison_resistance",
+      "stage": null,
+      "cost": 3230,
+      "gold": 361
+    },
+    {
+      "t": 7080.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 11,
+      "cost": 1921,
+      "gold": 761
+    },
+    {
+      "t": 7170.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 6,
+      "cost": 2880,
+      "gold": 89
+    },
+    {
+      "t": 7260.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 4,
+      "cost": 2240,
+      "gold": 438
+    },
+    {
+      "t": 7350.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 6,
+      "cost": 2240,
+      "gold": 462
+    },
+    {
+      "t": 7407.75,
+      "event": "discovery",
+      "id": "fog_marsh",
+      "step": 2,
+      "gold": 2169
+    },
+    {
+      "t": 7470.0,
+      "event": "recipe",
+      "id": "illusion",
+      "stage": null,
+      "cost": 3830,
+      "gold": 202
+    },
+    {
+      "t": 7590.0,
+      "event": "upgrade",
+      "id": "family_arcane",
+      "stage": 3,
+      "cost": 2800,
+      "gold": 693
+    },
+    {
+      "t": 7680.0,
+      "event": "upgrade",
+      "id": "family_craft",
+      "stage": 3,
+      "cost": 2800,
+      "gold": 518
+    },
+    {
+      "t": 7770.0,
+      "event": "upgrade",
+      "id": "family_nature",
+      "stage": 3,
+      "cost": 2800,
+      "gold": 216
+    },
+    {
+      "t": 7860.0,
+      "event": "upgrade",
+      "id": "family_vitality",
+      "stage": 3,
+      "cost": 2800,
+      "gold": 60
+    },
+    {
+      "t": 7923.75,
+      "event": "discovery",
+      "id": "fog_marsh",
+      "step": 3,
+      "gold": 1867
+    },
+    {
+      "t": 7923.75,
+      "event": "region_complete",
+      "id": "fog_marsh",
+      "gold": 1867
+    },
+    {
+      "t": 8010.0,
+      "event": "recipe",
+      "id": "soul_purification",
+      "stage": null,
+      "cost": 4420,
+      "gold": 33
+    },
+    {
+      "t": 8220.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 13,
+      "cost": 5769,
+      "gold": 157
+    },
+    {
+      "t": 8550.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 14,
+      "cost": 8942,
+      "gold": 885
+    },
+    {
+      "t": 8880.0,
+      "event": "region",
+      "id": "forgotten_tower",
+      "stage": null,
+      "cost": 10200,
+      "gold": 192
+    },
+    {
+      "t": 9000.0,
+      "event": "upgrade",
+      "id": "cultivation_assistant",
+      "stage": 3,
+      "cost": 2880,
+      "gold": 860
+    },
+    {
+      "t": 9090.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 4,
+      "cost": 2880,
+      "gold": 729
+    },
+    {
+      "t": 9210.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 12,
+      "cost": 3200,
+      "gold": 902
+    },
+    {
+      "t": 9265.5,
+      "event": "discovery",
+      "id": "forgotten_tower",
+      "step": 1,
+      "gold": 2462
+    },
+    {
+      "t": 9360.0,
+      "event": "recipe",
+      "id": "wisdom",
+      "stage": null,
+      "cost": 5100,
+      "gold": 317
+    },
+    {
+      "t": 9450.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 5,
+      "cost": 3200,
+      "gold": 85
+    },
+    {
+      "t": 9540.0,
+      "event": "upgrade",
+      "id": "sales_assistant",
+      "stage": 4,
+      "cost": 3200,
+      "gold": 16
+    },
+    {
+      "t": 9660.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 7,
+      "cost": 4320,
+      "gold": 20
+    },
+    {
+      "t": 9780.0,
+      "event": "upgrade",
+      "id": "brewing_assistant",
+      "stage": 2,
+      "cost": 3520,
+      "gold": 798
+    },
+    {
+      "t": 9870.0,
+      "event": "upgrade",
+      "id": "precision_filter",
+      "stage": 4,
+      "cost": 3600,
+      "gold": 309
+    },
+    {
+      "t": 9870.5,
+      "event": "discovery",
+      "id": "forgotten_tower",
+      "step": 2,
+      "gold": 309
+    },
+    {
+      "t": 10020.0,
+      "event": "recipe",
+      "id": "reflection",
+      "stage": null,
+      "cost": 5780,
+      "gold": 36
+    },
+    {
+      "t": 10140.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 7,
+      "cost": 3680,
+      "gold": 616
+    },
+    {
+      "t": 10230.0,
+      "event": "upgrade",
+      "id": "expedition_guide",
+      "stage": 3,
+      "cost": 3840,
+      "gold": 244
+    },
+    {
+      "t": 10350.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 5,
+      "cost": 4000,
+      "gold": 213
+    },
+    {
+      "t": 10475.5,
+      "event": "discovery",
+      "id": "forgotten_tower",
+      "step": 3,
+      "gold": 4860
+    },
+    {
+      "t": 10475.5,
+      "event": "region_complete",
+      "id": "forgotten_tower",
+      "gold": 4860
+    },
+    {
+      "t": 10530.0,
+      "event": "recipe",
+      "id": "haste",
+      "stage": null,
+      "cost": 6460,
+      "gold": 486
+    },
+    {
+      "t": 10950.0,
+      "event": "region",
+      "id": "moon_ruins",
+      "stage": null,
+      "cost": 15300,
+      "gold": 575
+    },
+    {
+      "t": 11100.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 5,
+      "cost": 5200,
+      "gold": 1038
+    },
+    {
+      "t": 11250.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 13,
+      "cost": 5600,
+      "gold": 686
+    },
+    {
+      "t": 11400.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 8,
+      "cost": 6400,
+      "gold": 258
+    },
+    {
+      "t": 11410.5,
+      "event": "discovery",
+      "id": "moon_ruins",
+      "step": 1,
+      "gold": 691
+    },
+    {
+      "t": 11610.0,
+      "event": "recipe",
+      "id": "nightwalk",
+      "stage": null,
+      "cost": 7230,
+      "gold": 1381
+    },
+    {
+      "t": 11730.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 6,
+      "cost": 5600,
+      "gold": 1342
+    },
+    {
+      "t": 11850.0,
+      "event": "upgrade",
+      "id": "cultivation_assistant",
+      "stage": 4,
+      "cost": 5760,
+      "gold": 1000
+    },
+    {
+      "t": 11970.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 8,
+      "cost": 6080,
+      "gold": 964
+    },
+    {
+      "t": 12082.5,
+      "event": "discovery",
+      "id": "moon_ruins",
+      "step": 2,
+      "gold": 5902
+    },
+    {
+      "t": 12150.0,
+      "event": "recipe",
+      "id": "moonradiance",
+      "stage": null,
+      "cost": 8080,
+      "gold": 803
+    },
+    {
+      "t": 12270.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 15,
+      "cost": 6400,
+      "gold": 434
+    },
+    {
+      "t": 12420.0,
+      "event": "upgrade",
+      "id": "family_arcane",
+      "stage": 4,
+      "cost": 6400,
+      "gold": 1101
+    },
+    {
+      "t": 12540.0,
+      "event": "upgrade",
+      "id": "family_craft",
+      "stage": 4,
+      "cost": 6400,
+      "gold": 622
+    },
+    {
+      "t": 12660.0,
+      "event": "upgrade",
+      "id": "family_nature",
+      "stage": 4,
+      "cost": 6400,
+      "gold": 300
+    },
+    {
+      "t": 12754.5,
+      "event": "discovery",
+      "id": "moon_ruins",
+      "step": 3,
+      "gold": 5052
+    },
+    {
+      "t": 12754.5,
+      "event": "region_complete",
+      "id": "moon_ruins",
+      "gold": 5052
+    },
+    {
+      "t": 12840.0,
+      "event": "recipe",
+      "id": "regeneration",
+      "stage": null,
+      "cost": 8930,
+      "gold": 17
+    },
+    {
+      "t": 13350.0,
+      "event": "region",
+      "id": "star_garden",
+      "stage": null,
+      "cost": 23800,
+      "gold": 1337
+    },
+    {
+      "t": 13470.0,
+      "event": "upgrade",
+      "id": "family_vitality",
+      "stage": 4,
+      "cost": 6400,
+      "gold": 577
+    },
+    {
+      "t": 13620.0,
+      "event": "upgrade",
+      "id": "brewing_assistant",
+      "stage": 3,
+      "cost": 7040,
+      "gold": 1341
+    },
+    {
+      "t": 13740.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 6,
+      "cost": 7200,
+      "gold": 8
+    },
+    {
+      "t": 13890.0,
+      "event": "upgrade",
+      "id": "precision_filter",
+      "stage": 5,
+      "cost": 7200,
+      "gold": 539
+    },
+    {
+      "t": 14040.0,
+      "event": "upgrade",
+      "id": "sales_assistant",
+      "stage": 5,
+      "cost": 7200,
+      "gold": 571
+    },
+    {
+      "t": 14190.0,
+      "event": "upgrade",
+      "id": "expedition_guide",
+      "stage": 4,
+      "cost": 7680,
+      "gold": 505
+    },
+    {
+      "t": 14194.5,
+      "event": "discovery",
+      "id": "star_garden",
+      "step": 1,
+      "gold": 605
+    },
+    {
+      "t": 14370.0,
+      "event": "recipe",
+      "id": "starlight",
+      "stage": null,
+      "cost": 10200,
+      "gold": 165
+    },
+    {
+      "t": 14550.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 9,
+      "cost": 9600,
+      "gold": 780
+    },
+    {
+      "t": 14700.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 16,
+      "cost": 8800,
+      "gold": 464
+    },
+    {
+      "t": 14850.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 14,
+      "cost": 8800,
+      "gold": 849
+    },
+    {
+      "t": 14943.5,
+      "event": "discovery",
+      "id": "star_garden",
+      "step": 2,
+      "gold": 6011
+    },
+    {
+      "t": 15060.0,
+      "event": "recipe",
+      "id": "wish",
+      "stage": null,
+      "cost": 11900,
+      "gold": 1394
+    },
+    {
+      "t": 15210.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 6,
+      "cost": 9600,
+      "gold": 819
+    },
+    {
+      "t": 15360.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 9,
+      "cost": 9600,
+      "gold": 228
+    },
+    {
+      "t": 15540.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 7,
+      "cost": 9600,
+      "gold": 1058
+    },
+    {
+      "t": 15683.0,
+      "event": "discovery",
+      "id": "star_garden",
+      "step": 3,
+      "gold": 8872
+    },
+    {
+      "t": 15683.0,
+      "event": "region_complete",
+      "id": "star_garden",
+      "gold": 8872
+    },
+    {
+      "t": 15780.0,
+      "event": "recipe",
+      "id": "eternity",
+      "stage": null,
+      "cost": 13600,
+      "gold": 1009
+    },
+    {
+      "t": 16170.0,
+      "event": "recipe",
+      "id": "shadow_elixir",
+      "stage": null,
+      "cost": 19800,
+      "gold": 1416
+    },
+    {
+      "t": 16530.0,
+      "event": "recipe",
+      "id": "worldtree_elixir",
+      "stage": null,
+      "cost": 19800,
+      "gold": 751
+    },
+    {
+      "t": 16890.0,
+      "event": "recipe",
+      "id": "sage_elixir",
+      "stage": null,
+      "cost": 19800,
+      "gold": 616
+    },
+    {
+      "t": 17100.0,
+      "event": "upgrade",
+      "id": "cultivation_assistant",
+      "stage": 5,
+      "cost": 11520,
+      "gold": 135
+    },
+    {
+      "t": 17340.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 17,
+      "cost": 12000,
+      "gold": 1500
+    },
+    {
+      "t": 17550.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 7,
+      "cost": 12800,
+      "gold": 1019
+    },
+    {
+      "t": 17760.0,
+      "event": "upgrade",
+      "id": "herb_pot",
+      "stage": 15,
+      "cost": 12800,
+      "gold": 172
+    },
+    {
+      "t": 18030.0,
+      "event": "upgrade",
+      "id": "sales_counter",
+      "stage": 10,
+      "cost": 14400,
+      "gold": 1156
+    },
+    {
+      "t": 18270.0,
+      "event": "upgrade",
+      "id": "brewing_assistant",
+      "stage": 4,
+      "cost": 14080,
+      "gold": 219
+    },
+    {
+      "t": 18510.0,
+      "event": "upgrade",
+      "id": "family_arcane",
+      "stage": 5,
+      "cost": 14400,
+      "gold": 328
+    },
+    {
+      "t": 18750.0,
+      "event": "upgrade",
+      "id": "family_craft",
+      "stage": 5,
+      "cost": 14400,
+      "gold": 1110
+    },
+    {
+      "t": 18990.0,
+      "event": "upgrade",
+      "id": "family_nature",
+      "stage": 5,
+      "cost": 14400,
+      "gold": 2075
+    },
+    {
+      "t": 19200.0,
+      "event": "upgrade",
+      "id": "family_vitality",
+      "stage": 5,
+      "cost": 14400,
+      "gold": 374
+    },
+    {
+      "t": 19440.0,
+      "event": "upgrade",
+      "id": "precision_filter",
+      "stage": 6,
+      "cost": 14400,
+      "gold": 1173
+    },
+    {
+      "t": 19680.0,
+      "event": "upgrade",
+      "id": "expedition_guide",
+      "stage": 5,
+      "cost": 15360,
+      "gold": 1196
+    },
+    {
+      "t": 19920.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 18,
+      "cost": 16000,
+      "gold": 844
+    },
+    {
+      "t": 20160.0,
+      "event": "upgrade",
+      "id": "herb_storage",
+      "stage": 10,
+      "cost": 16000,
+      "gold": 459
+    },
+    {
+      "t": 20400.0,
+      "event": "upgrade",
+      "id": "potion_cabinet",
+      "stage": 8,
+      "cost": 16000,
+      "gold": 625
+    },
+    {
+      "t": 20670.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 7,
+      "cost": 17600,
+      "gold": 905
+    },
+    {
+      "t": 21000.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 19,
+      "cost": 20800,
+      "gold": 1535
+    },
+    {
+      "t": 21330.0,
+      "event": "upgrade",
+      "id": "drying_rack",
+      "stage": 8,
+      "cost": 22400,
+      "gold": 1711
+    },
+    {
+      "t": 21720.0,
+      "event": "upgrade",
+      "id": "cauldron",
+      "stage": 20,
+      "cost": 27200,
+      "gold": 810
+    },
+    {
+      "t": 22110.0,
+      "event": "upgrade",
+      "id": "brewing_assistant",
+      "stage": 5,
+      "cost": 28160,
+      "gold": 227
+    },
+    {
+      "t": 22590.0,
+      "event": "upgrade",
+      "id": "expedition_path",
+      "stage": 8,
+      "cost": 32000,
+      "gold": 1304
+    }
+  ],
+  "sold_by": {
+    "health": 174,
+    "mana": 73,
+    "moon": 416,
+    "purify": 105,
+    "agility": 216,
+    "vigor": 178,
+    "antidote": 346,
+    "fortune": 483,
+    "focus": 867,
+    "restoration": 510,
+    "growth": 479,
+    "clarity": 436,
+    "ward": 521,
+    "spirit": 1150,
+    "arcane_amplification": 600,
+    "iron_skin": 1128,
+    "stealth": 509,
+    "poison_resistance": 819,
+    "illusion": 426,
+    "soul_purification": 708,
+    "wisdom": 959,
+    "reflection": 522,
+    "haste": 381,
+    "nightwalk": 1101,
+    "moonradiance": 69,
+    "regeneration": 292,
+    "starlight": 599,
+    "wish": 90,
+    "eternity": 72,
+    "shadow_elixir": 31,
+    "worldtree_elixir": 212,
+    "sage_elixir": 95
+  },
+  "pressure": {
+    "seconds": 28800.0,
+    "full_seconds": 888.25,
+    "waiting_seconds": 984.25,
+    "material_shortage_seconds": 0,
+    "inventory_ratio_seconds": 17331.146113943756
+  },
+  "pressure_windows": [
+    {
+      "end_minute": 5.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 78.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.56249999999997
+    },
+    {
+      "end_minute": 10.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 39.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 10.666666666666694
+    },
+    {
+      "end_minute": 15.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 68.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.312499999999963
+    },
+    {
+      "end_minute": 20.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 65.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.874999999999979
+    },
+    {
+      "end_minute": 25.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 30.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 12.124999999999925
+    },
+    {
+      "end_minute": 30.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 24.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 10.303571428571436
+    },
+    {
+      "end_minute": 35.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 46.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 9.375000000000034
+    },
+    {
+      "end_minute": 40.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 38.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.285714285714352
+    },
+    {
+      "end_minute": 45.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 47.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.33928571428578
+    },
+    {
+      "end_minute": 50.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 52.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 7.758928571428562
+    },
+    {
+      "end_minute": 55.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 52.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 7.375
+    },
+    {
+      "end_minute": 60.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 70.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 6.359375
+    },
+    {
+      "end_minute": 65.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 57.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 6.34375
+    },
+    {
+      "end_minute": 70.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 24.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 7.390625
+    },
+    {
+      "end_minute": 75.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 24.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.546875
+    },
+    {
+      "end_minute": 80.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 33.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 8.013888888888994
+    },
+    {
+      "end_minute": 85.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 56.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 5.986111111111155
+    },
+    {
+      "end_minute": 90.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 54.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 6.305555555555609
+    },
+    {
+      "end_minute": 95.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 54.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 5.930555555555598
+    },
+    {
+      "end_minute": 100.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 6.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 16.083333333333645
+    },
+    {
+      "end_minute": 105.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 4.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 118.36111111111093
+    },
+    {
+      "end_minute": 110.0,
+      "seconds": 300.0,
+      "full_seconds": 31.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 282.3750000000003
+    },
+    {
+      "end_minute": 115.0,
+      "seconds": 300.0,
+      "full_seconds": 37.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 282.83333333333854
+    },
+    {
+      "end_minute": 120.0,
+      "seconds": 300.0,
+      "full_seconds": 28.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 283.23750000000376
+    },
+    {
+      "end_minute": 125.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 244.66250000000144
+    },
+    {
+      "end_minute": 130.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 180.06249999999892
+    },
+    {
+      "end_minute": 135.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 103.56249999999818
+    },
+    {
+      "end_minute": 140.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 91.18749999999969
+    },
+    {
+      "end_minute": 145.0,
+      "seconds": 300.0,
+      "full_seconds": 44.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 283.4125000000045
+    },
+    {
+      "end_minute": 150.0,
+      "seconds": 300.0,
+      "full_seconds": 59.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 287.5000000000051
+    },
+    {
+      "end_minute": 155.0,
+      "seconds": 300.0,
+      "full_seconds": 60.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 287.5250000000049
+    },
+    {
+      "end_minute": 160.0,
+      "seconds": 300.0,
+      "full_seconds": 44.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 286.7011363636404
+    },
+    {
+      "end_minute": 165.0,
+      "seconds": 300.0,
+      "full_seconds": 44.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 287.5681818181874
+    },
+    {
+      "end_minute": 170.0,
+      "seconds": 300.0,
+      "full_seconds": 57.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 288.3522727272777
+    },
+    {
+      "end_minute": 175.0,
+      "seconds": 300.0,
+      "full_seconds": 55.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 288.30681818182296
+    },
+    {
+      "end_minute": 180.0,
+      "seconds": 300.0,
+      "full_seconds": 54.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 288.4772727272776
+    },
+    {
+      "end_minute": 185.0,
+      "seconds": 300.0,
+      "full_seconds": 53.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 287.9886363636417
+    },
+    {
+      "end_minute": 190.0,
+      "seconds": 300.0,
+      "full_seconds": 55.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 288.37500000000483
+    },
+    {
+      "end_minute": 195.0,
+      "seconds": 300.0,
+      "full_seconds": 20.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 284.8409090909135
+    },
+    {
+      "end_minute": 200.0,
+      "seconds": 300.0,
+      "full_seconds": 5.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 277.51136363636425
+    },
+    {
+      "end_minute": 205.0,
+      "seconds": 300.0,
+      "full_seconds": 1.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 249.55208333333235
+    },
+    {
+      "end_minute": 210.0,
+      "seconds": 300.0,
+      "full_seconds": 3.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 277.37499999999847
+    },
+    {
+      "end_minute": 215.0,
+      "seconds": 300.0,
+      "full_seconds": 7.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 279.8437499999987
+    },
+    {
+      "end_minute": 220.0,
+      "seconds": 300.0,
+      "full_seconds": 5.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 264.02083333333104
+    },
+    {
+      "end_minute": 225.0,
+      "seconds": 300.0,
+      "full_seconds": 0.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 263.0208333333338
+    },
+    {
+      "end_minute": 230.0,
+      "seconds": 300.0,
+      "full_seconds": 12.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 284.0729166666699
+    },
+    {
+      "end_minute": 235.0,
+      "seconds": 300.0,
+      "full_seconds": 12.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 281.5625000000029
+    },
+    {
+      "end_minute": 240.0,
+      "seconds": 300.0,
+      "full_seconds": 14.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 286.03125000000193
+    },
+    {
+      "end_minute": 245.0,
+      "seconds": 300.0,
+      "full_seconds": 0.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 266.1458333333343
+    },
+    {
+      "end_minute": 250.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 211.3541666666668
+    },
+    {
+      "end_minute": 255.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 169.81250000000105
+    },
+    {
+      "end_minute": 260.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 61.92307692307705
+    },
+    {
+      "end_minute": 265.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 5.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 14.26923076923104
+    },
+    {
+      "end_minute": 270.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 14.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 9.740384615384812
+    },
+    {
+      "end_minute": 275.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 7.0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 17.519230769230877
+    },
+    {
+      "end_minute": 280.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 3.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 12.288461538461835
+    },
+    {
+      "end_minute": 285.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 3.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 13.769230769230997
+    },
+    {
+      "end_minute": 290.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 3.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 16.182692307692687
+    },
+    {
+      "end_minute": 295.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 20.06730769230758
+    },
+    {
+      "end_minute": 300.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 5.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 7.3750000000001235
+    },
+    {
+      "end_minute": 305.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 12.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 6.625000000000088
+    },
+    {
+      "end_minute": 310.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 44.423076923077026
+    },
+    {
+      "end_minute": 315.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 91.35576923076874
+    },
+    {
+      "end_minute": 320.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 158.36538461538677
+    },
+    {
+      "end_minute": 325.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 184.18269230769653
+    },
+    {
+      "end_minute": 330.0,
+      "seconds": 300.0,
+      "full_seconds": 0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 242.26923076922728
+    },
+    {
+      "end_minute": 335.0,
+      "seconds": 300.0,
+      "full_seconds": 7.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 282.2596153846157
+    },
+    {
+      "end_minute": 340.0,
+      "seconds": 300.0,
+      "full_seconds": 6.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 282.17307692307554
+    },
+    {
+      "end_minute": 345.0,
+      "seconds": 300.0,
+      "full_seconds": 4.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 276.68749999999767
+    },
+    {
+      "end_minute": 350.0,
+      "seconds": 300.0,
+      "full_seconds": 7.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 283.4017857142821
+    },
+    {
+      "end_minute": 355.0,
+      "seconds": 300.0,
+      "full_seconds": 8.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.22321428571416
+    },
+    {
+      "end_minute": 360.0,
+      "seconds": 300.0,
+      "full_seconds": 4.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 270.70535714286075
+    },
+    {
+      "end_minute": 365.0,
+      "seconds": 300.0,
+      "full_seconds": 2.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 279.96428571428504
+    },
+    {
+      "end_minute": 370.0,
+      "seconds": 300.0,
+      "full_seconds": 4.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 278.2678571428571
+    },
+    {
+      "end_minute": 375.0,
+      "seconds": 300.0,
+      "full_seconds": 3.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 275.95535714285484
+    },
+    {
+      "end_minute": 380.0,
+      "seconds": 300.0,
+      "full_seconds": 12.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 288.0892857142823
+    },
+    {
+      "end_minute": 385.0,
+      "seconds": 300.0,
+      "full_seconds": 0.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 256.5714285714264
+    },
+    {
+      "end_minute": 390.0,
+      "seconds": 300.0,
+      "full_seconds": 11.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 287.3928571428549
+    },
+    {
+      "end_minute": 395.0,
+      "seconds": 300.0,
+      "full_seconds": 7.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 281.0714285714268
+    },
+    {
+      "end_minute": 400.0,
+      "seconds": 300.0,
+      "full_seconds": 4.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 282.5089285714285
+    },
+    {
+      "end_minute": 405.0,
+      "seconds": 300.0,
+      "full_seconds": 6.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.4553571428532
+    },
+    {
+      "end_minute": 410.0,
+      "seconds": 300.0,
+      "full_seconds": 8.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.1696428571424
+    },
+    {
+      "end_minute": 415.0,
+      "seconds": 300.0,
+      "full_seconds": 6.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 284.6517857142852
+    },
+    {
+      "end_minute": 420.0,
+      "seconds": 300.0,
+      "full_seconds": 8.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.9642857142826
+    },
+    {
+      "end_minute": 425.0,
+      "seconds": 300.0,
+      "full_seconds": 1.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 271.8303571428553
+    },
+    {
+      "end_minute": 430.0,
+      "seconds": 300.0,
+      "full_seconds": 11.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.9999999999972
+    },
+    {
+      "end_minute": 435.0,
+      "seconds": 300.0,
+      "full_seconds": 5.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 283.2857142857126
+    },
+    {
+      "end_minute": 440.0,
+      "seconds": 300.0,
+      "full_seconds": 4.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 273.14285714285666
+    },
+    {
+      "end_minute": 445.0,
+      "seconds": 300.0,
+      "full_seconds": 2.0,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 273.83035714285666
+    },
+    {
+      "end_minute": 450.0,
+      "seconds": 300.0,
+      "full_seconds": 2.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 275.06249999999955
+    },
+    {
+      "end_minute": 455.0,
+      "seconds": 300.0,
+      "full_seconds": 6.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 277.9464285714253
+    },
+    {
+      "end_minute": 460.0,
+      "seconds": 300.0,
+      "full_seconds": 10.25,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.13392857142645
+    },
+    {
+      "end_minute": 465.0,
+      "seconds": 300.0,
+      "full_seconds": 5.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 280.9553571428577
+    },
+    {
+      "end_minute": 470.0,
+      "seconds": 300.0,
+      "full_seconds": 6.5,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 276.08035714285467
+    },
+    {
+      "end_minute": 475.0,
+      "seconds": 300.0,
+      "full_seconds": 2.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 283.7410714285728
+    },
+    {
+      "end_minute": 480.0,
+      "seconds": 300.0,
+      "full_seconds": 7.75,
+      "waiting_seconds": 0,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 285.6964285714254
+    }
+  ],
+  "environment_pressure": {
+    "day_clear": {
+      "seconds": 4805.75,
+      "full_seconds": 142.25,
+      "waiting_seconds": 139.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 2940.262955447233
+    },
+    "night_clear": {
+      "seconds": 4824.0,
+      "full_seconds": 149.75,
+      "waiting_seconds": 202.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 2856.8813825063053
+    },
+    "night_cloudy": {
+      "seconds": 4884.0,
+      "full_seconds": 179.75,
+      "waiting_seconds": 144.25,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 3041.6892753080383
+    },
+    "night_rain": {
+      "seconds": 4692.0,
+      "full_seconds": 132.25,
+      "waiting_seconds": 157.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 2756.9954032077844
+    },
+    "day_rain": {
+      "seconds": 4848.25,
+      "full_seconds": 169.0,
+      "waiting_seconds": 156.75,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 2983.2296616578146
+    },
+    "day_cloudy": {
+      "seconds": 4746.0,
+      "full_seconds": 115.25,
+      "waiting_seconds": 183.5,
+      "material_shortage_seconds": 0,
+      "inventory_ratio_seconds": 2752.087435828087
+    }
+  },
+  "wait_durations": [
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.25,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    6.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    6.0,
+    3.0,
+    9.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    6.0,
+    6.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    5.5,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    2.75,
+    5.5,
+    2.75,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    5.0,
+    2.5,
+    2.5,
+    2.5,
+    5.0,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    5.0,
+    2.5,
+    5.0,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    5.0,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    5.0,
+    2.5,
+    2.5,
+    2.5,
+    5.0,
+    2.5,
+    2.5,
+    2.5,
+    2.5,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    4.5,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    2.25,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75,
+    1.75
+  ]
+}

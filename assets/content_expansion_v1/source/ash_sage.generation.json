@@ -1,0 +1,11 @@
+{
+  "id": "ash_sage",
+  "name": "잿빛 세이지",
+  "category": "materials",
+  "region": "forgotten_tower",
+  "prompt": "Use case: stylized-concept. Asset type: ONE botanical ingredient and its growth sprite sheet for a tiny cozy witch-shop pixel-art game. True transparent background. EXACT 3 columns x 2 rows of equal-sized cells, no grid lines, no text. Top-left cell: one loose harvested specimen of the botanical subject, no pot. Top-middle: seedling in pot. Top-right: young plant in same pot. Bottom-left: mature plant in same pot. Bottom-middle: EXACT same mature plant and pot plus two small gold diamond harvest sparkles. Bottom-right completely EMPTY transparency. Every planted frame has identical plum ceramic pot, gold rim, same scale, bottom center of cell, same pot-base y in cell. Front orthographic view, full silhouettes, generous transparent gaps so no cell crosses its edge. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, 4 flat shade clusters, warm gold and ivory highlights, no blur, glow, smooth paint, text, scene, cast shadow. Each planted frame designed for 32x40 logical pixels, loose specimen for 32x40 icon. Botanical subject: a branching silver-gray sage sprig with broad serrated leaves and pale lavender central veins; gray rather than green. Pot marked with one silver pointed leaf. Loose specimen and every growth frame must visibly depict the same species.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-e212af5e-cf71-475d-89db-a0f38475aeb3.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/ash_sage.png"
+}

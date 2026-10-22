@@ -1,0 +1,149 @@
+{
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "original_count": 12,
+  "separate_sources": [
+    "potion",
+    "recipe",
+    "bottle"
+  ],
+  "transparent_background": true,
+  "records": [
+    {
+      "id": "rare_forest_breath",
+      "variant": "bottle",
+      "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: wide pear-drop body 10 pixels wide and 7 pixels tall, short gold cap, lime fill, simple two-leaf pale notch. Keep its silhouette family matching the reference: LOW AND WIDE teardrop bottle, squat broad shoulders and a short neck (never round orb or tall pear). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_forest_breath_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-37c1f706-5b6d-46a7-8a51-bca232e381d5.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_forest_breath_bottle.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_forest_breath",
+      "variant": "potion",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Production pixel-art inventory icon for the cozy witch shop game. ONE isolated whole potion bottle centered on genuine transparent alpha, generous margin. Hard chunky square pixel clusters, dark plum #432039 stepped outline, antique gold #efc77c stopper, ivory glints, 4 flat shade clusters. Logical design must fit 32x40 pixels with a bold simple emblem; enlarge the pixel art cleanly for generation. Front orthographic view. No words, labels, lettering, watermark, outside particles, glow, soft shadow, background, ground, frame, gradients or blur. This is a rare potion but rarity is conveyed by silhouette and emblem only. Subject: LOW AND WIDE teardrop bottle, squat broad shoulders and a short neck (never round orb or tall pear). Liquid is fresh light lime-green. Emblem: two opposed sage-green leaves with one pale curling breath line between them. The emblem is a simple large inlaid marking on the bottle body, no decorative clutter. Full bottle and cap visible.",
+      "date": "2026-10-08",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-778ea69b-661b-48d6-9178-57fb92535894.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_forest_breath_potion.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_forest_breath",
+      "variant": "recipe",
+      "prompt": "Use case: stylized-concept. Reference image is ONLY the paired potion's palette, pixel style and emblem. Generate a brand new separate RECIPE SCROLL inventory icon, not another bottle. ONE small upright antique ivory parchment scroll with two curled ends, dark plum #432039 stepped square-pixel outline, antique gold accents, a broad central stamp in fresh light lime-green with two opposed sage-green leaves with one pale curling breath line between them. Repeat the exact meaning of the reference emblem in a large bold simple central colored seal. The scroll and its big stamp must read at logical32x40 pixels; use chunky hard square clusters, 4 flat shades, ample padding. True transparent alpha. No bottle illustration, actual bottle object, lettering, text, pseudo-writing, numerals, ingredient drawings, extra particles, glow, drop shadow, floor, gradients or background. All edges crisp. Full scroll visible.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_forest_breath_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-c7c6778a-f055-4fc0-9368-c21401ea657c.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_forest_breath_recipe.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_lunar_seal",
+      "variant": "bottle",
+      "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: wide 10-pixel circular disk body, short gold cap, dark purple fill, an ivory off-center crescent inside a gold rim. Keep its silhouette family matching the reference: FLAT WIDE CIRCULAR DISK bottle like a coin-shaped flask with a short gold neck, broad circle body (never faceted pear). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-fd467269-890c-458c-a692-b3bec6786637.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_bottle.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_lunar_seal",
+      "variant": "potion",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Production pixel-art inventory icon for the cozy witch shop game. ONE isolated whole potion bottle centered on genuine transparent alpha, generous margin. Hard chunky square pixel clusters, dark plum #432039 stepped outline, antique gold #efc77c stopper, ivory glints, 4 flat shade clusters. Logical design must fit 32x40 pixels with a bold simple emblem; enlarge the pixel art cleanly for generation. Front orthographic view. No words, labels, lettering, watermark, outside particles, glow, soft shadow, background, ground, frame, gradients or blur. This is a rare potion but rarity is conveyed by silhouette and emblem only. Subject: FLAT WIDE CIRCULAR DISK bottle like a coin-shaped flask with a short gold neck, broad circle body (never faceted pear). Liquid is dark saturated royal purple. Emblem: one gold circular sealing ring enclosing an ivory crescent moon. The emblem is a simple large inlaid marking on the bottle body, no decorative clutter. Full bottle and cap visible.",
+      "date": "2026-10-08",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-5f1c78ed-973d-473c-aaec-7051f88b5656.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_potion.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_lunar_seal",
+      "variant": "recipe",
+      "prompt": "Use case: stylized-concept. Reference image is ONLY the paired potion's palette, pixel style and emblem. Generate a brand new separate RECIPE SCROLL inventory icon, not another bottle. ONE small upright antique ivory parchment scroll with two curled ends, dark plum #432039 stepped square-pixel outline, antique gold accents, a broad central stamp in dark saturated royal purple with one gold circular sealing ring enclosing an ivory crescent moon. Repeat the exact meaning of the reference emblem in a large bold simple central colored seal. The scroll and its big stamp must read at logical32x40 pixels; use chunky hard square clusters, 4 flat shades, ample padding. True transparent alpha. No bottle illustration, actual bottle object, lettering, text, pseudo-writing, numerals, ingredient drawings, extra particles, glow, drop shadow, floor, gradients or background. All edges crisp. Full scroll visible.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-98919451-de3d-4e95-b06f-d2069535c839.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_recipe.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_mist_veil",
+      "variant": "bottle",
+      "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: narrow 6-pixel-wide elongated faceted body, short gold cap, deep teal fill, two pale horizontal wave dashes. Keep its silhouette family matching the reference: TALL NARROW hexagonal bottle with straight sides and beveled corners, elongated angular body (never curvy hourglass). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-1c654d57-3235-44a3-bd43-b100ed2e518a.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_bottle.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_mist_veil",
+      "variant": "potion",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Production pixel-art inventory icon for the cozy witch shop game. ONE isolated whole potion bottle centered on genuine transparent alpha, generous margin. Hard chunky square pixel clusters, dark plum #432039 stepped outline, antique gold #efc77c stopper, ivory glints, 4 flat shade clusters. Logical design must fit 32x40 pixels with a bold simple emblem; enlarge the pixel art cleanly for generation. Front orthographic view. No words, labels, lettering, watermark, outside particles, glow, soft shadow, background, ground, frame, gradients or blur. This is a rare potion but rarity is conveyed by silhouette and emblem only. Subject: TALL NARROW hexagonal bottle with straight sides and beveled corners, elongated angular body (never curvy hourglass). Liquid is muted deep teal turquoise. Emblem: three stacked pale aqua wave crests. The emblem is a simple large inlaid marking on the bottle body, no decorative clutter. Full bottle and cap visible.",
+      "date": "2026-10-08",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-ea717023-a647-41f1-be71-93cfb75f1bda.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_potion.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_mist_veil",
+      "variant": "recipe",
+      "prompt": "Use case: stylized-concept. Reference image is ONLY the paired potion's palette, pixel style and emblem. Generate a brand new separate RECIPE SCROLL inventory icon, not another bottle. ONE small upright antique ivory parchment scroll with two curled ends, dark plum #432039 stepped square-pixel outline, antique gold accents, a broad central stamp in muted deep teal turquoise with three stacked pale aqua wave crests. Repeat the exact meaning of the reference emblem in a large bold simple central colored seal. The scroll and its big stamp must read at logical32x40 pixels; use chunky hard square clusters, 4 flat shades, ample padding. True transparent alpha. No bottle illustration, actual bottle object, lettering, text, pseudo-writing, numerals, ingredient drawings, extra particles, glow, drop shadow, floor, gradients or background. All edges crisp. Full scroll visible.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-40fa6874-b0f5-480a-bd2b-faa3b6c83a52.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_recipe.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_nebula_distillate",
+      "variant": "bottle",
+      "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: 8-pixel-wide pointed diamond body, short gold cap, deep indigo fill, central ivory star pixel and one gold diagonal. Keep its silhouette family matching the reference: ANGULAR DIAMOND body with four clean pointed corners and short gold neck (never a star-shaped bottle). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-102819b8-4b86-4dbd-9a87-7f1f028f3c89.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_bottle.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_nebula_distillate",
+      "variant": "potion",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: stylized-concept. Production pixel-art inventory icon for the cozy witch shop game. ONE isolated whole potion bottle centered on genuine transparent alpha, generous margin. Hard chunky square pixel clusters, dark plum #432039 stepped outline, antique gold #efc77c stopper, ivory glints, 4 flat shade clusters. Logical design must fit 32x40 pixels with a bold simple emblem; enlarge the pixel art cleanly for generation. Front orthographic view. No words, labels, lettering, watermark, outside particles, glow, soft shadow, background, ground, frame, gradients or blur. This is a rare potion but rarity is conveyed by silhouette and emblem only. Subject: ANGULAR DIAMOND body with four clean pointed corners and short gold neck (never a star-shaped bottle). Liquid is deep indigo navy blue. Emblem: one ivory four-point star with a single gold spiral curling around it. The emblem is a simple large inlaid marking on the bottle body, no decorative clutter. Full bottle and cap visible.",
+      "date": "2026-10-08",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-6db8b5cc-8c85-460f-a0dd-a5920e9adbc5.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_potion.png",
+      "transparent_background": true
+    },
+    {
+      "id": "rare_nebula_distillate",
+      "variant": "recipe",
+      "prompt": "Use case: stylized-concept. Reference image is ONLY the paired potion's palette, pixel style and emblem. Generate a brand new separate RECIPE SCROLL inventory icon, not another bottle. ONE small upright antique ivory parchment scroll with two curled ends, dark plum #432039 stepped square-pixel outline, antique gold accents, a broad central stamp in deep indigo navy blue with one ivory four-point star with a single gold spiral curling around it. Repeat the exact meaning of the reference emblem in a large bold simple central colored seal. The scroll and its big stamp must read at logical32x40 pixels; use chunky hard square clusters, 4 flat shades, ample padding. True transparent alpha. No bottle illustration, actual bottle object, lettering, text, pseudo-writing, numerals, ingredient drawings, extra particles, glow, drop shadow, floor, gradients or background. All edges crisp. Full scroll visible.",
+      "generator": "built-in image_gen",
+      "date": "2026-10-08",
+      "reference_role": "paired_potion_palette_silhouette_emblem",
+      "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_potion.png",
+      "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-c09b9eb9-fb95-4dbe-b265-fc0c808353db.png",
+      "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_recipe.png",
+      "transparent_background": true
+    }
+  ]
+}

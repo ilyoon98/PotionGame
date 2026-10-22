@@ -1,0 +1,3152 @@
+{
+  "schema": 1,
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "pose_count": 16,
+  "fps": 8,
+  "loop_seconds": 2.0,
+  "size": [
+    96,
+    144
+  ],
+  "scale": 3,
+  "modes": {
+    "fine": {
+      "witch": [
+        "fine/witch/frame-00.png",
+        "fine/witch/frame-01.png",
+        "fine/witch/frame-02.png",
+        "fine/witch/frame-03.png",
+        "fine/witch/frame-04.png",
+        "fine/witch/frame-05.png",
+        "fine/witch/frame-06.png",
+        "fine/witch/frame-07.png",
+        "fine/witch/frame-08.png",
+        "fine/witch/frame-09.png",
+        "fine/witch/frame-10.png",
+        "fine/witch/frame-11.png",
+        "fine/witch/frame-12.png",
+        "fine/witch/frame-13.png",
+        "fine/witch/frame-14.png",
+        "fine/witch/frame-15.png",
+        "fine/witch/frame-16.png",
+        "fine/witch/frame-17.png",
+        "fine/witch/frame-18.png",
+        "fine/witch/frame-19.png",
+        "fine/witch/frame-20.png",
+        "fine/witch/frame-21.png",
+        "fine/witch/frame-22.png",
+        "fine/witch/frame-23.png",
+        "fine/witch/frame-24.png",
+        "fine/witch/frame-25.png",
+        "fine/witch/frame-26.png",
+        "fine/witch/frame-27.png",
+        "fine/witch/frame-28.png",
+        "fine/witch/frame-29.png",
+        "fine/witch/frame-30.png",
+        "fine/witch/frame-31.png"
+      ],
+      "elf": [
+        "fine/elf/frame-00.png",
+        "fine/elf/frame-01.png",
+        "fine/elf/frame-02.png",
+        "fine/elf/frame-03.png",
+        "fine/elf/frame-04.png",
+        "fine/elf/frame-05.png",
+        "fine/elf/frame-06.png",
+        "fine/elf/frame-07.png",
+        "fine/elf/frame-08.png",
+        "fine/elf/frame-09.png",
+        "fine/elf/frame-10.png",
+        "fine/elf/frame-11.png",
+        "fine/elf/frame-12.png",
+        "fine/elf/frame-13.png",
+        "fine/elf/frame-14.png",
+        "fine/elf/frame-15.png",
+        "fine/elf/frame-16.png",
+        "fine/elf/frame-17.png",
+        "fine/elf/frame-18.png",
+        "fine/elf/frame-19.png",
+        "fine/elf/frame-20.png",
+        "fine/elf/frame-21.png",
+        "fine/elf/frame-22.png",
+        "fine/elf/frame-23.png",
+        "fine/elf/frame-24.png",
+        "fine/elf/frame-25.png",
+        "fine/elf/frame-26.png",
+        "fine/elf/frame-27.png",
+        "fine/elf/frame-28.png",
+        "fine/elf/frame-29.png",
+        "fine/elf/frame-30.png",
+        "fine/elf/frame-31.png"
+      ]
+    },
+    "grid": {
+      "witch": [
+        "grid/witch/frame-00.png",
+        "grid/witch/frame-01.png",
+        "grid/witch/frame-02.png",
+        "grid/witch/frame-03.png",
+        "grid/witch/frame-04.png",
+        "grid/witch/frame-05.png",
+        "grid/witch/frame-06.png",
+        "grid/witch/frame-07.png",
+        "grid/witch/frame-08.png",
+        "grid/witch/frame-09.png",
+        "grid/witch/frame-10.png",
+        "grid/witch/frame-11.png",
+        "grid/witch/frame-12.png",
+        "grid/witch/frame-13.png",
+        "grid/witch/frame-14.png",
+        "grid/witch/frame-15.png",
+        "grid/witch/frame-16.png",
+        "grid/witch/frame-17.png",
+        "grid/witch/frame-18.png",
+        "grid/witch/frame-19.png",
+        "grid/witch/frame-20.png",
+        "grid/witch/frame-21.png",
+        "grid/witch/frame-22.png",
+        "grid/witch/frame-23.png",
+        "grid/witch/frame-24.png",
+        "grid/witch/frame-25.png",
+        "grid/witch/frame-26.png",
+        "grid/witch/frame-27.png",
+        "grid/witch/frame-28.png",
+        "grid/witch/frame-29.png",
+        "grid/witch/frame-30.png",
+        "grid/witch/frame-31.png"
+      ],
+      "elf": [
+        "grid/elf/frame-00.png",
+        "grid/elf/frame-01.png",
+        "grid/elf/frame-02.png",
+        "grid/elf/frame-03.png",
+        "grid/elf/frame-04.png",
+        "grid/elf/frame-05.png",
+        "grid/elf/frame-06.png",
+        "grid/elf/frame-07.png",
+        "grid/elf/frame-08.png",
+        "grid/elf/frame-09.png",
+        "grid/elf/frame-10.png",
+        "grid/elf/frame-11.png",
+        "grid/elf/frame-12.png",
+        "grid/elf/frame-13.png",
+        "grid/elf/frame-14.png",
+        "grid/elf/frame-15.png",
+        "grid/elf/frame-16.png",
+        "grid/elf/frame-17.png",
+        "grid/elf/frame-18.png",
+        "grid/elf/frame-19.png",
+        "grid/elf/frame-20.png",
+        "grid/elf/frame-21.png",
+        "grid/elf/frame-22.png",
+        "grid/elf/frame-23.png",
+        "grid/elf/frame-24.png",
+        "grid/elf/frame-25.png",
+        "grid/elf/frame-26.png",
+        "grid/elf/frame-27.png",
+        "grid/elf/frame-28.png",
+        "grid/elf/frame-29.png",
+        "grid/elf/frame-30.png",
+        "grid/elf/frame-31.png"
+      ]
+    }
+  },
+  "index_contract": "0..15 open-eye poses, 16..31 matching closed-eye poses",
+  "grid_method": "Native material/inner-contour substitutions; sparse native endpoint edits",
+  "fine_method": "Nearest-neighbor 3x source; free-edge bands displaced 0/+-1 display pixel",
+  "sources": {
+    "witch": {
+      "open": "art/mockups/full-ingame-v3/characters/witch-native.png",
+      "blink": "art/mockups/full-ingame-v3/frames/witch/frame-02.png"
+    },
+    "elf": {
+      "open": "art/mockups/full-ingame-v3/characters/elf-native.png",
+      "blink": "art/mockups/full-ingame-v3/frames/elf/frame-02.png"
+    }
+  },
+  "regions": {
+    "witch": {
+      "hat_tip": {
+        "native_pixels": 36,
+        "native_coordinates": [
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ]
+      },
+      "cape_left": {
+        "native_pixels": 25,
+        "native_coordinates": [
+          [
+            8,
+            31
+          ],
+          [
+            9,
+            31
+          ],
+          [
+            7,
+            32
+          ],
+          [
+            8,
+            32
+          ],
+          [
+            6,
+            33
+          ],
+          [
+            7,
+            33
+          ],
+          [
+            6,
+            34
+          ],
+          [
+            7,
+            34
+          ],
+          [
+            5,
+            35
+          ],
+          [
+            6,
+            35
+          ],
+          [
+            4,
+            36
+          ],
+          [
+            5,
+            36
+          ],
+          [
+            3,
+            37
+          ],
+          [
+            4,
+            37
+          ],
+          [
+            3,
+            38
+          ],
+          [
+            4,
+            38
+          ],
+          [
+            3,
+            39
+          ],
+          [
+            4,
+            39
+          ],
+          [
+            4,
+            40
+          ],
+          [
+            5,
+            40
+          ],
+          [
+            6,
+            41
+          ],
+          [
+            7,
+            41
+          ],
+          [
+            7,
+            42
+          ],
+          [
+            8,
+            42
+          ],
+          [
+            8,
+            43
+          ]
+        ]
+      },
+      "cape_right": {
+        "native_pixels": 12,
+        "native_coordinates": [
+          [
+            22,
+            37
+          ],
+          [
+            23,
+            37
+          ],
+          [
+            22,
+            38
+          ],
+          [
+            23,
+            38
+          ],
+          [
+            23,
+            39
+          ],
+          [
+            24,
+            39
+          ],
+          [
+            24,
+            40
+          ],
+          [
+            25,
+            40
+          ],
+          [
+            24,
+            41
+          ],
+          [
+            25,
+            41
+          ],
+          [
+            23,
+            42
+          ],
+          [
+            24,
+            42
+          ]
+        ]
+      },
+      "hair": {
+        "native_pixels": 4,
+        "native_coordinates": [
+          [
+            12,
+            16
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            10,
+            17
+          ],
+          [
+            11,
+            17
+          ]
+        ]
+      }
+    },
+    "elf": {
+      "hair": {
+        "native_pixels": 5,
+        "native_coordinates": [
+          [
+            20,
+            24
+          ],
+          [
+            21,
+            24
+          ],
+          [
+            22,
+            24
+          ],
+          [
+            20,
+            25
+          ],
+          [
+            21,
+            25
+          ]
+        ]
+      }
+    }
+  },
+  "region_native_bounds": {
+    "witch": {
+      "hat_tip": [
+        2,
+        0,
+        10,
+        10
+      ],
+      "hair": [
+        9,
+        15,
+        14,
+        19
+      ],
+      "cape_left": [
+        2,
+        31,
+        13,
+        44
+      ],
+      "cape_right": [
+        20,
+        37,
+        27,
+        43
+      ]
+    },
+    "elf": {
+      "hair": [
+        18,
+        23,
+        24,
+        26
+      ]
+    }
+  },
+  "checks": [
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 0,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 87,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 0,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 1,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 123,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 2,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 111,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 3,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 111,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 4,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 105,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 5,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 105,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 6,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 7,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 8,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 90,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 0,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 9,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 129,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 10,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 117,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 0,
+        "cape_left": 39,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 11,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 117,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 0,
+        "cape_left": 39,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 12,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 114,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 13,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 114,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 14,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 69,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 15,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 69,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 16,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 87,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 0,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 17,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 123,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 18,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 111,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 19,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 111,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 20,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 105,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 21,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 105,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 57,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 22,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 23,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 36,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 24,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 90,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 0,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 25,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 129,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 26,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 117,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 0,
+        "cape_left": 39,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 27,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 117,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 0,
+        "cape_left": 39,
+        "cape_right": 15
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 28,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 114,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 29,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 114,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 63,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 30,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 69,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 31,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 69,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 12,
+        "cape_left": 39,
+        "cape_right": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 0,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 1,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 2,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 3,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 4,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 5,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 6,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 7,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 8,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 9,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 10,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 11,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 12,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 13,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 14,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 15,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 16,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 17,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 18,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 19,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 20,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 21,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 22,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 23,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 24,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 25,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 26,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 27,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 28,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 29,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 30,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 31,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 0,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 1,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 2,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 3,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 4,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 5,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 6,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 45,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 7,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 8,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 45,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 0,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 9,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 10,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 54,
+        "hair": 0,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 11,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 54,
+        "hair": 0,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 12,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 13,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 14,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 18,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 15,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 16,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 17,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 18,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 19,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 0,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 20,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 21,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 22,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 45,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 23,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 24,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 45,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 0,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 25,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 26,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 54,
+        "hair": 0,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 27,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 54,
+        "hair": 0,
+        "cape_left": 18,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 28,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 29,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 54,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 18,
+        "cape_right": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 30,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 63,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 0,
+        "hair": 18,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 31,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 81,
+      "changed_display_pixels_by_region": {
+        "hat_tip": 18,
+        "hair": 18,
+        "cape_left": 36,
+        "cape_right": 9
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 0,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 1,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 2,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 3,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 4,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 5,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 6,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 7,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 8,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 9,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 10,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 11,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 12,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 13,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 14,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 36,
+      "changed_display_pixels_by_region": {
+        "hair": 36
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 15,
+      "blink": false,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 36,
+      "changed_display_pixels_by_region": {
+        "hair": 36
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 16,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 17,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 18,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 19,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 20,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 21,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 22,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 23,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 24,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 25,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 26,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 27,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 0,
+      "changed_display_pixels_by_region": {
+        "hair": 0
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 28,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 29,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 18,
+      "changed_display_pixels_by_region": {
+        "hair": 18
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 30,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 36,
+      "changed_display_pixels_by_region": {
+        "hair": 36
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 31,
+      "blink": true,
+      "palette_colors": 5,
+      "off_palette": 0,
+      "partial_alpha": 0,
+      "skin_pinned": true,
+      "body_and_ground_pinned": true,
+      "face_pinned": true,
+      "changed_display_pixels": 36,
+      "changed_display_pixels_by_region": {
+        "hair": 36
+      },
+      "changes_outside_motion_regions": 0,
+      "passed": true
+    }
+  ],
+  "loop_checks": {
+    "fine": {
+      "witch": {
+        "unique_open_frames": 10,
+        "last_to_first_changed_display_pixels": 96,
+        "open_closed_eye_mask_matches_v3": true
+      },
+      "elf": {
+        "unique_open_frames": 3,
+        "last_to_first_changed_display_pixels": 0,
+        "open_closed_eye_mask_matches_v3": true
+      }
+    },
+    "grid": {
+      "witch": {
+        "unique_open_frames": 12,
+        "last_to_first_changed_display_pixels": 18,
+        "open_closed_eye_mask_matches_v3": true
+      },
+      "elf": {
+        "unique_open_frames": 4,
+        "last_to_first_changed_display_pixels": 18,
+        "open_closed_eye_mask_matches_v3": true
+      }
+    }
+  },
+  "passed": true,
+  "region_statistics": {
+    "fine": {
+      "witch": {
+        "hat_tip": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 63,
+          "poses_with_movement": 12
+        },
+        "hair": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 12,
+          "poses_with_movement": 12
+        },
+        "cape_left": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 39,
+          "poses_with_movement": 14
+        },
+        "cape_right": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 18,
+          "poses_with_movement": 12
+        }
+      },
+      "elf": {
+        "hair": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 18,
+          "poses_with_movement": 12
+        }
+      }
+    },
+    "grid": {
+      "witch": {
+        "hat_tip": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 54,
+          "poses_with_movement": 14
+        },
+        "hair": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 18,
+          "poses_with_movement": 12
+        },
+        "cape_left": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 36,
+          "poses_with_movement": 15
+        },
+        "cape_right": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 9,
+          "poses_with_movement": 12
+        }
+      },
+      "elf": {
+        "hair": {
+          "min_changed_display_pixels": 0,
+          "max_changed_display_pixels": 36,
+          "poses_with_movement": 12
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+	"baseline_y": 61,
+	"bottle": "Rendered separately by the game; not baked into sprites",
+	"cell_size": [
+		48,
+		64
+	],
+	"characters": {
+		"elf": {
+			"frames": [
+				"elf_idle_48x64.png",
+				"elf_walk_1_48x64.png",
+				"elf_walk_2_48x64.png",
+				"elf_purchase_complete_48x64.png"
+			],
+			"loop": {
+				"fps": 6,
+				"frames": [
+					1,
+					2
+				]
+			},
+			"poses": [
+				"idle",
+				"walk_1",
+				"walk_2",
+				"purchase_complete"
+			],
+			"sheet": "elf_animations_96x128.png"
+		},
+		"keeper": {
+			"frames": [
+				"keeper_idle_48x64.png",
+				"keeper_brew_1_48x64.png",
+				"keeper_brew_2_48x64.png",
+				"keeper_sell_48x64.png"
+			],
+			"loop": {
+				"fps": 4,
+				"frames": [
+					1,
+					2
+				]
+			},
+			"poses": [
+				"idle",
+				"brew_1",
+				"brew_2",
+				"sell"
+			],
+			"sheet": "keeper_animations_96x128.png"
+		},
+		"mage": {
+			"frames": [
+				"mage_idle_48x64.png",
+				"mage_walk_1_48x64.png",
+				"mage_walk_2_48x64.png",
+				"mage_purchase_complete_48x64.png"
+			],
+			"loop": {
+				"fps": 6,
+				"frames": [
+					1,
+					2
+				]
+			},
+			"poses": [
+				"idle",
+				"walk_1",
+				"walk_2",
+				"purchase_complete"
+			],
+			"sheet": "mage_animations_96x128.png"
+		},
+		"rogue": {
+			"frames": [
+				"rogue_idle_48x64.png",
+				"rogue_walk_1_48x64.png",
+				"rogue_walk_2_48x64.png",
+				"rogue_purchase_complete_48x64.png"
+			],
+			"loop": {
+				"fps": 6,
+				"frames": [
+					1,
+					2
+				]
+			},
+			"poses": [
+				"idle",
+				"walk_1",
+				"walk_2",
+				"purchase_complete"
+			],
+			"sheet": "rogue_animations_96x128.png"
+		},
+		"traveler": {
+			"frames": [
+				"traveler_idle_48x64.png",
+				"traveler_walk_1_48x64.png",
+				"traveler_walk_2_48x64.png",
+				"traveler_purchase_complete_48x64.png"
+			],
+			"loop": {
+				"fps": 6,
+				"frames": [
+					1,
+					2
+				]
+			},
+			"poses": [
+				"idle",
+				"walk_1",
+				"walk_2",
+				"purchase_complete"
+			],
+			"sheet": "traveler_animations_96x128.png"
+		}
+	},
+	"game_scale": 2,
+	"sheet_order": "row-major 2x2",
+	"sheet_size": [
+		96,
+		128
+	]
+}

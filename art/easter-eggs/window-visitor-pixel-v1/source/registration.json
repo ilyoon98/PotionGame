@@ -1,0 +1,14 @@
+{
+  "source": "art\\easter-eggs\\window-visitor-pixel-v1\\source\\generated.png",
+  "crop": [
+    280,
+    55,
+    1120,
+    727
+  ],
+  "target": [
+    20,
+    16
+  ],
+  "purpose": "face-and-glasses framing for window viewport"
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "path": "potions/rare_forest_breath_12x16.png",
+    "sha256": "C671E7BC19190AAF6914D4CA3D412A1D72D237864E692CA8C9AF4FB2D375FF88",
+    "bytes": 371
+  },
+  {
+    "path": "potions/rare_forest_breath_icon.png",
+    "sha256": "A51A4F4A87FBF8DB51D3FEB55804C6B779AA79BF077DE32FDF3D555F08B61E44",
+    "bytes": 1844
+  },
+  {
+    "path": "potions/rare_lunar_seal_12x16.png",
+    "sha256": "DEDB7B5BB0803C2FA039EBEC96B7B394E0928231549B71C4DC90F7420EBEA6A6",
+    "bytes": 436
+  },
+  {
+    "path": "potions/rare_lunar_seal_icon.png",
+    "sha256": "A9920CA141A096208B79F941A3033CFB307435B5942DAFC7B4EDE868CED2D07A",
+    "bytes": 2498
+  },
+  {
+    "path": "potions/rare_mist_veil_12x16.png",
+    "sha256": "16342C9D53471C2514D4ED90D266A37CB9A9779FBE1CB707D50CC9D3D4B354FF",
+    "bytes": 369
+  },
+  {
+    "path": "potions/rare_mist_veil_icon.png",
+    "sha256": "A8986CD78C56BFD3EA2AE20F16089169D898AC036D262A3B294559C070E82DDC",
+    "bytes": 1327
+  },
+  {
+    "path": "potions/rare_nebula_distillate_12x16.png",
+    "sha256": "2FE6DC2580F237B2AF7FE7215092754A10614D23AA440B6FA46A5FBD91A1536A",
+    "bytes": 408
+  },
+  {
+    "path": "potions/rare_nebula_distillate_icon.png",
+    "sha256": "3BD14645DD8B13E837919D0A160EEF3720113212117B0957B18A4C47A4699A98",
+    "bytes": 1988
+  },
+  {
+    "path": "previews/pairs-and-general-comparison.png",
+    "sha256": "C8D9F58C10B31291FF4FBF7F37BA311269025011306EE74371D9CAD21D3DEB48",
+    "bytes": 82402
+  },
+  {
+    "path": "previews/small-bottles.png",
+    "sha256": "6BB429D5821A939E9E76E2120FC1EA8E9EF819478131F28F9F58B77CBC673AE8",
+    "bytes": 20128
+  },
+  {
+    "path": "recipes/rare_forest_breath_recipe.png",
+    "sha256": "D5646DC81516EA42ECF2A24F7E26153CF76AA5EEF8649C34FF5C3FC900D065BB",
+    "bytes": 2641
+  },
+  {
+    "path": "recipes/rare_lunar_seal_recipe.png",
+    "sha256": "2EA336265B897A139247BF697E7A2BC5680A053DBEB98D48B1D3698950C76A26",
+    "bytes": 2598
+  },
+  {
+    "path": "recipes/rare_mist_veil_recipe.png",
+    "sha256": "F1332FDD6EF95FC7FCC9880FF7267066BB7316D541B78B8766B11484BFFEF7E1",
+    "bytes": 2631
+  },
+  {
+    "path": "recipes/rare_nebula_distillate_recipe.png",
+    "sha256": "E28E8316F7F4895539F64CE93546E80AF8E8B34613B61D00499A00E51CD7EA2C",
+    "bytes": 2462
+  },
+  {
+    "path": "source/rare_forest_breath_bottle.png",
+    "sha256": "B544BE677BAF38F2246136CE5F56CB36A5EB295E42A029F60AE65E776D1EF805",
+    "bytes": 295927
+  },
+  {
+    "path": "source/rare_forest_breath_potion.png",
+    "sha256": "E6BA824860A1C0D47DAD95E29135505A0120504CF015EC0390474AD7FC662F27",
+    "bytes": 645462
+  },
+  {
+    "path": "source/rare_forest_breath_recipe.png",
+    "sha256": "53B9E5EAAB6E4D045495DF84E5868D6BEB2D331A5A85C2F9CC5E2DD6AF2357EB",
+    "bytes": 1013364
+  },
+  {
+    "path": "source/rare_lunar_seal_bottle.png",
+    "sha256": "3681D6C13367034237D2136A5A2C5F6125174E7DF01916AAD82204EA8EBD7C71",
+    "bytes": 453338
+  },
+  {
+    "path": "source/rare_lunar_seal_potion.png",
+    "sha256": "B80B1D87D71E9D508BE60DA76036AC00378C846F22EB02559F25952AEB13CBA9",
+    "bytes": 953048
+  },
+  {
+    "path": "source/rare_lunar_seal_recipe.png",
+    "sha256": "7033CEC714F579DE48D6F8A088D8078BD383A7D28DB292674A22B86A9510F120",
+    "bytes": 1085076
+  },
+  {
+    "path": "source/rare_mist_veil_bottle.png",
+    "sha256": "893C1A722AA3D75A0A08E52C6A4DE5A993CB73CCB42E64569F8DB339111351E1",
+    "bytes": 297263
+  },
+  {
+    "path": "source/rare_mist_veil_potion.png",
+    "sha256": "1F34673A6E0E8E082B405F9AAC958FF74CFA29C16770C4973EB5D3A3A6795EF7",
+    "bytes": 492705
+  },
+  {
+    "path": "source/rare_mist_veil_recipe.png",
+    "sha256": "AB7CD4C1748198E4F963F4DB5B8117FBA5DB2417EBDF115251C1897DC8A4C136",
+    "bytes": 1042008
+  },
+  {
+    "path": "source/rare_nebula_distillate_bottle.png",
+    "sha256": "1FA09CA63E327ECE80643942F64C28336508393B32A7FA31B122423D52A7A5D6",
+    "bytes": 394959
+  },
+  {
+    "path": "source/rare_nebula_distillate_potion.png",
+    "sha256": "816DF4CEDCA187AD53C80831151914309A0B71DF7C2618FE5578098794793094",
+    "bytes": 668105
+  },
+  {
+    "path": "source/rare_nebula_distillate_recipe.png",
+    "sha256": "B860CB90EB826DAFC6F7B1AAFD926E0660214FCA88F033F0F84455565BCDEDBC",
+    "bytes": 874218
+  }
+]

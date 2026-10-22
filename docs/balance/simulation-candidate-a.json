@@ -1,0 +1,4662 @@
+{
+  "revision": "candidate-a",
+  "model": "independent planning model, fixed 0.25s step; not Godot validation",
+  "minutes": 480,
+  "runs": [
+    {
+      "policy": "expedition_first",
+      "seed_initial": 73129,
+      "checkpoints": [
+        {
+          "minute": 10.0,
+          "gold": 52,
+          "recipes": 5,
+          "completed_regions": 0,
+          "opened_regions": 1,
+          "destination": "forest_edge",
+          "investments": 11,
+          "employees": 0,
+          "sold": 148,
+          "gross": 2156,
+          "materials": 168,
+          "net": 1988,
+          "spent": 1936,
+          "loot": 0
+        },
+        {
+          "minute": 30.0,
+          "gold": 155,
+          "recipes": 9,
+          "completed_regions": 1,
+          "opened_regions": 2,
+          "destination": "abandoned_greenhouse",
+          "investments": 24,
+          "employees": 1,
+          "sold": 509,
+          "gross": 11034,
+          "materials": 336,
+          "net": 10698,
+          "spent": 10543,
+          "loot": 0
+        },
+        {
+          "minute": 60.0,
+          "gold": 544,
+          "recipes": 13,
+          "completed_regions": 2,
+          "opened_regions": 3,
+          "destination": "mist_valley",
+          "investments": 38,
+          "employees": 2,
+          "sold": 1092,
+          "gross": 30983,
+          "materials": 336,
+          "net": 30647,
+          "spent": 30103,
+          "loot": 0
+        },
+        {
+          "minute": 120.0,
+          "gold": 1684,
+          "recipes": 17,
+          "completed_regions": 4,
+          "opened_regions": 5,
+          "destination": "fog_marsh",
+          "investments": 57,
+          "employees": 4,
+          "sold": 2364,
+          "gross": 92755,
+          "materials": 336,
+          "net": 92419,
+          "spent": 90735,
+          "loot": 0
+        },
+        {
+          "minute": 180.0,
+          "gold": 1204,
+          "recipes": 22,
+          "completed_regions": 5,
+          "opened_regions": 6,
+          "destination": "forgotten_tower",
+          "investments": 71,
+          "employees": 4,
+          "sold": 3709,
+          "gross": 179786,
+          "materials": 336,
+          "net": 179450,
+          "spent": 178246,
+          "loot": 0
+        },
+        {
+          "minute": 240.0,
+          "gold": 15236,
+          "recipes": 26,
+          "completed_regions": 7,
+          "opened_regions": 7,
+          "destination": "moon_ruins",
+          "investments": 83,
+          "employees": 4,
+          "sold": 5149,
+          "gross": 302318,
+          "materials": 336,
+          "net": 301982,
+          "spent": 286746,
+          "loot": 0
+        },
+        {
+          "minute": 300.0,
+          "gold": 6918,
+          "recipes": 30,
+          "completed_regions": 8,
+          "opened_regions": 8,
+          "destination": "star_garden",
+          "investments": 93,
+          "employees": 4,
+          "sold": 6716,
+          "gross": 462800,
+          "materials": 336,
+          "net": 462464,
+          "spent": 455546,
+          "loot": 0
+        },
+        {
+          "minute": 480.0,
+          "gold": 18647,
+          "recipes": 32,
+          "completed_regions": 8,
+          "opened_regions": 8,
+          "destination": "star_garden",
+          "investments": 125,
+          "employees": 4,
+          "sold": 11849,
+          "gross": 1085329,
+          "materials": 336,
+          "net": 1084993,
+          "spent": 1066346,
+          "loot": 0
+        }
+      ],
+      "all_regions_min": 286.32916666666665,
+      "all_recipes_min": 312.5,
+      "all_investments_min": 475.5,
+      "final": {
+        "minute": 480.0,
+        "gold": 18647,
+        "recipes": 32,
+        "completed_regions": 8,
+        "opened_regions": 8,
+        "destination": "star_garden",
+        "investments": 125,
+        "employees": 4,
+        "sold": 11849,
+        "gross": 1085329,
+        "materials": 336,
+        "net": 1084993,
+        "spent": 1066346,
+        "loot": 0
+      },
+      "events": [
+        {
+          "t": 30.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 1,
+          "cost": 24,
+          "gold": 6
+        },
+        {
+          "t": 60.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 1,
+          "cost": 30,
+          "gold": 4
+        },
+        {
+          "t": 90.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 2,
+          "cost": 37,
+          "gold": 31
+        },
+        {
+          "t": 120.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 2,
+          "cost": 47,
+          "gold": 40
+        },
+        {
+          "t": 150.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 3,
+          "cost": 72,
+          "gold": 22
+        },
+        {
+          "t": 210.0,
+          "event": "recipe",
+          "id": "moon",
+          "stage": null,
+          "cost": 120,
+          "gold": 34
+        },
+        {
+          "t": 240.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 4,
+          "cost": 112,
+          "gold": 12
+        },
+        {
+          "t": 300.0,
+          "event": "recipe",
+          "id": "purify",
+          "stage": null,
+          "cost": 180,
+          "gold": 102
+        },
+        {
+          "t": 360.0,
+          "event": "recipe",
+          "id": "agility",
+          "stage": null,
+          "cost": 240,
+          "gold": 102
+        },
+        {
+          "t": 450.0,
+          "event": "region",
+          "id": "forest_edge",
+          "stage": null,
+          "cost": 400,
+          "gold": 56
+        },
+        {
+          "t": 480.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 3,
+          "cost": 58,
+          "gold": 122
+        },
+        {
+          "t": 480.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 4,
+          "cost": 89,
+          "gold": 33
+        },
+        {
+          "t": 510.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 5,
+          "cost": 139,
+          "gold": 18
+        },
+        {
+          "t": 540.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 5,
+          "cost": 173,
+          "gold": 3
+        },
+        {
+          "t": 600.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 6,
+          "cost": 215,
+          "gold": 52
+        },
+        {
+          "t": 690.0,
+          "event": "recipe",
+          "id": "vigor",
+          "stage": null,
+          "cost": 360,
+          "gold": 128
+        },
+        {
+          "t": 720.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 6,
+          "cost": 268,
+          "gold": 26
+        },
+        {
+          "t": 780.0,
+          "event": "employee",
+          "id": "sales_assistant",
+          "stage": null,
+          "cost": 360,
+          "gold": 132
+        },
+        {
+          "t": 810.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 1,
+          "cost": 300,
+          "gold": 42
+        },
+        {
+          "t": 900.0,
+          "event": "recipe",
+          "id": "antidote",
+          "stage": null,
+          "cost": 480,
+          "gold": 140
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 1,
+          "cost": 300,
+          "gold": 100
+        },
+        {
+          "t": 990.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 1,
+          "cost": 300,
+          "gold": 192
+        },
+        {
+          "t": 1020.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 7,
+          "cost": 333,
+          "gold": 29
+        },
+        {
+          "t": 1080.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 7,
+          "cost": 416,
+          "gold": 112
+        },
+        {
+          "t": 1140.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 2,
+          "cost": 600,
+          "gold": 6
+        },
+        {
+          "t": 1150.0,
+          "event": "region_complete",
+          "id": "forest_edge",
+          "gold": 94
+        },
+        {
+          "t": 1230.0,
+          "event": "recipe",
+          "id": "fortune",
+          "stage": null,
+          "cost": 640,
+          "gold": 20
+        },
+        {
+          "t": 1380.0,
+          "event": "region",
+          "id": "abandoned_greenhouse",
+          "stage": null,
+          "cost": 1200,
+          "gold": 66
+        },
+        {
+          "t": 1410.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 1,
+          "cost": 200,
+          "gold": 122
+        },
+        {
+          "t": 1440.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 2,
+          "cost": 350,
+          "gold": 9
+        },
+        {
+          "t": 1500.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 1,
+          "cost": 400,
+          "gold": 19
+        },
+        {
+          "t": 1590.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 1,
+          "cost": 450,
+          "gold": 201
+        },
+        {
+          "t": 1620.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 1,
+          "cost": 450,
+          "gold": 27
+        },
+        {
+          "t": 1680.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 1,
+          "cost": 450,
+          "gold": 9
+        },
+        {
+          "t": 1800.0,
+          "event": "recipe",
+          "id": "focus",
+          "stage": null,
+          "cost": 750,
+          "gold": 155
+        },
+        {
+          "t": 1860.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 1,
+          "cost": 450,
+          "gold": 275
+        },
+        {
+          "t": 1890.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 1,
+          "cost": 500,
+          "gold": 58
+        },
+        {
+          "t": 1950.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 8,
+          "cost": 516,
+          "gold": 64
+        },
+        {
+          "t": 2070.0,
+          "event": "recipe",
+          "id": "restoration",
+          "stage": null,
+          "cost": 950,
+          "gold": 114
+        },
+        {
+          "t": 2130.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 1,
+          "cost": 600,
+          "gold": 94
+        },
+        {
+          "t": 2190.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 2,
+          "cost": 600,
+          "gold": 20
+        },
+        {
+          "t": 2280.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 8,
+          "cost": 645,
+          "gold": 209
+        },
+        {
+          "t": 2327.0,
+          "event": "region_complete",
+          "id": "abandoned_greenhouse",
+          "gold": 757
+        },
+        {
+          "t": 2370.0,
+          "event": "recipe",
+          "id": "growth",
+          "stage": null,
+          "cost": 1200,
+          "gold": 39
+        },
+        {
+          "t": 2550.0,
+          "event": "employee",
+          "id": "cultivation_assistant",
+          "stage": null,
+          "cost": 1800,
+          "gold": 218
+        },
+        {
+          "t": 2760.0,
+          "event": "region",
+          "id": "mist_valley",
+          "stage": null,
+          "cost": 2400,
+          "gold": 143
+        },
+        {
+          "t": 2820.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 3,
+          "cost": 600,
+          "gold": 244
+        },
+        {
+          "t": 2880.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 2,
+          "cost": 700,
+          "gold": 228
+        },
+        {
+          "t": 2940.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 9,
+          "cost": 800,
+          "gold": 111
+        },
+        {
+          "t": 3030.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 3,
+          "cost": 1000,
+          "gold": 132
+        },
+        {
+          "t": 3120.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 1,
+          "cost": 900,
+          "gold": 295
+        },
+        {
+          "t": 3240.0,
+          "event": "recipe",
+          "id": "clarity",
+          "stage": null,
+          "cost": 1400,
+          "gold": 282
+        },
+        {
+          "t": 3300.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 2,
+          "cost": 900,
+          "gold": 151
+        },
+        {
+          "t": 3360.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 2,
+          "cost": 900,
+          "gold": 16
+        },
+        {
+          "t": 3450.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 9,
+          "cost": 999,
+          "gold": 214
+        },
+        {
+          "t": 3570.0,
+          "event": "recipe",
+          "id": "ward",
+          "stage": null,
+          "cost": 1700,
+          "gold": 117
+        },
+        {
+          "t": 3660.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 4,
+          "cost": 1000,
+          "gold": 354
+        },
+        {
+          "t": 3720.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 2,
+          "cost": 1100,
+          "gold": 119
+        },
+        {
+          "t": 3810.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 10,
+          "cost": 1239,
+          "gold": 181
+        },
+        {
+          "t": 3827.0,
+          "event": "region_complete",
+          "id": "mist_valley",
+          "gold": 417
+        },
+        {
+          "t": 3930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 10,
+          "cost": 1549,
+          "gold": 229
+        },
+        {
+          "t": 4080.0,
+          "event": "recipe",
+          "id": "spirit",
+          "stage": null,
+          "cost": 2100,
+          "gold": 228
+        },
+        {
+          "t": 4260.0,
+          "event": "employee",
+          "id": "expedition_guide",
+          "stage": null,
+          "cost": 2400,
+          "gold": 399
+        },
+        {
+          "t": 4560.0,
+          "event": "region",
+          "id": "crystal_mine",
+          "stage": null,
+          "cost": 4500,
+          "gold": 272
+        },
+        {
+          "t": 4650.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 1,
+          "cost": 1200,
+          "gold": 372
+        },
+        {
+          "t": 4740.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 3,
+          "cost": 1200,
+          "gold": 388
+        },
+        {
+          "t": 4830.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 4,
+          "cost": 1600,
+          "gold": 152
+        },
+        {
+          "t": 4980.0,
+          "event": "recipe",
+          "id": "arcane_amplification",
+          "stage": null,
+          "cost": 2400,
+          "gold": 82
+        },
+        {
+          "t": 5070.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 326
+        },
+        {
+          "t": 5130.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 31
+        },
+        {
+          "t": 5220.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 311
+        },
+        {
+          "t": 5280.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 152
+        },
+        {
+          "t": 5460.0,
+          "event": "recipe",
+          "id": "iron_skin",
+          "stage": null,
+          "cost": 2900,
+          "gold": 501
+        },
+        {
+          "t": 5550.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 3,
+          "cost": 1600,
+          "gold": 477
+        },
+        {
+          "t": 5640.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 5,
+          "cost": 1700,
+          "gold": 460
+        },
+        {
+          "t": 5730.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 3,
+          "cost": 1700,
+          "gold": 428
+        },
+        {
+          "t": 5757.5,
+          "event": "region_complete",
+          "id": "crystal_mine",
+          "gold": 987
+        },
+        {
+          "t": 5850.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 11,
+          "cost": 2401,
+          "gold": 290
+        },
+        {
+          "t": 6030.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 12,
+          "cost": 3722,
+          "gold": 205
+        },
+        {
+          "t": 6210.0,
+          "event": "recipe",
+          "id": "stealth",
+          "stage": null,
+          "cost": 3400,
+          "gold": 120
+        },
+        {
+          "t": 6450.0,
+          "event": "employee",
+          "id": "brewing_assistant",
+          "stage": null,
+          "cost": 4500,
+          "gold": 300
+        },
+        {
+          "t": 6840.0,
+          "event": "region",
+          "id": "fog_marsh",
+          "stage": null,
+          "cost": 7500,
+          "gold": 376
+        },
+        {
+          "t": 6930.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 2,
+          "cost": 1800,
+          "gold": 312
+        },
+        {
+          "t": 7020.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 11,
+          "cost": 1921,
+          "gold": 238
+        },
+        {
+          "t": 7110.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 3,
+          "cost": 2000,
+          "gold": 56
+        },
+        {
+          "t": 7230.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 3,
+          "cost": 2100,
+          "gold": 217
+        },
+        {
+          "t": 7440.0,
+          "event": "recipe",
+          "id": "poison_resistance",
+          "stage": null,
+          "cost": 3800,
+          "gold": 329
+        },
+        {
+          "t": 7530.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 1,
+          "cost": 2200,
+          "gold": 15
+        },
+        {
+          "t": 7650.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 5,
+          "cost": 2400,
+          "gold": 444
+        },
+        {
+          "t": 7740.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 4,
+          "cost": 2200,
+          "gold": 233
+        },
+        {
+          "t": 7950.0,
+          "event": "recipe",
+          "id": "illusion",
+          "stage": null,
+          "cost": 4500,
+          "gold": 515
+        },
+        {
+          "t": 8040.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 2,
+          "cost": 2400,
+          "gold": 73
+        },
+        {
+          "t": 8160.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 4,
+          "cost": 2800,
+          "gold": 125
+        },
+        {
+          "t": 8280.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 6,
+          "cost": 2800,
+          "gold": 63
+        },
+        {
+          "t": 8373.5,
+          "event": "region_complete",
+          "id": "fog_marsh",
+          "gold": 2191
+        },
+        {
+          "t": 8520.0,
+          "event": "recipe",
+          "id": "soul_purification",
+          "stage": null,
+          "cost": 5200,
+          "gold": 392
+        },
+        {
+          "t": 8760.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 13,
+          "cost": 5769,
+          "gold": 78
+        },
+        {
+          "t": 9150.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 14,
+          "cost": 8942,
+          "gold": 310
+        },
+        {
+          "t": 9660.0,
+          "event": "region",
+          "id": "forgotten_tower",
+          "stage": null,
+          "cost": 12000,
+          "gold": 281
+        },
+        {
+          "t": 9810.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 6,
+          "cost": 3600,
+          "gold": 268
+        },
+        {
+          "t": 9960.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 529
+        },
+        {
+          "t": 10200.0,
+          "event": "recipe",
+          "id": "wisdom",
+          "stage": null,
+          "cost": 6000,
+          "gold": 526
+        },
+        {
+          "t": 10320.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 430
+        },
+        {
+          "t": 10440.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 522
+        },
+        {
+          "t": 10560.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 783
+        },
+        {
+          "t": 10770.0,
+          "event": "recipe",
+          "id": "reflection",
+          "stage": null,
+          "cost": 6800,
+          "gold": 369
+        },
+        {
+          "t": 10890.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 3,
+          "cost": 3600,
+          "gold": 462
+        },
+        {
+          "t": 11010.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 4,
+          "cost": 3600,
+          "gold": 550
+        },
+        {
+          "t": 11160.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 12,
+          "cost": 4000,
+          "gold": 1012
+        },
+        {
+          "t": 11212.25,
+          "event": "region_complete",
+          "id": "forgotten_tower",
+          "gold": 2728
+        },
+        {
+          "t": 11400.0,
+          "event": "recipe",
+          "id": "haste",
+          "stage": null,
+          "cost": 7600,
+          "gold": 877
+        },
+        {
+          "t": 11970.0,
+          "event": "region",
+          "id": "moon_ruins",
+          "stage": null,
+          "cost": 18000,
+          "gold": 394
+        },
+        {
+          "t": 12120.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 5,
+          "cost": 4000,
+          "gold": 1009
+        },
+        {
+          "t": 12240.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 4,
+          "cost": 4000,
+          "gold": 666
+        },
+        {
+          "t": 12360.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 2,
+          "cost": 4400,
+          "gold": 150
+        },
+        {
+          "t": 12660.0,
+          "event": "recipe",
+          "id": "nightwalk",
+          "stage": null,
+          "cost": 8500,
+          "gold": 851
+        },
+        {
+          "t": 12780.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 4,
+          "cost": 4500,
+          "gold": 543
+        },
+        {
+          "t": 12900.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 7,
+          "cost": 4600,
+          "gold": 351
+        },
+        {
+          "t": 13020.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 3,
+          "cost": 4800,
+          "gold": 154
+        },
+        {
+          "t": 13170.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 7,
+          "cost": 5400,
+          "gold": 322
+        },
+        {
+          "t": 13440.0,
+          "event": "recipe",
+          "id": "moonradiance",
+          "stage": null,
+          "cost": 9500,
+          "gold": 348
+        },
+        {
+          "t": 13560.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 5,
+          "cost": 5000,
+          "gold": 134
+        },
+        {
+          "t": 13740.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 5,
+          "cost": 6500,
+          "gold": 63
+        },
+        {
+          "t": 13867.75,
+          "event": "region_complete",
+          "id": "moon_ruins",
+          "gold": 5066
+        },
+        {
+          "t": 14010.0,
+          "event": "recipe",
+          "id": "regeneration",
+          "stage": null,
+          "cost": 10500,
+          "gold": 60
+        },
+        {
+          "t": 14760.0,
+          "event": "region",
+          "id": "star_garden",
+          "stage": null,
+          "cost": 28000,
+          "gold": 680
+        },
+        {
+          "t": 14940.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 13,
+          "cost": 7000,
+          "gold": 141
+        },
+        {
+          "t": 15150.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 8,
+          "cost": 8000,
+          "gold": 28
+        },
+        {
+          "t": 15330.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 6,
+          "cost": 7000,
+          "gold": 463
+        },
+        {
+          "t": 15510.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 4,
+          "cost": 7200,
+          "gold": 701
+        },
+        {
+          "t": 15810.0,
+          "event": "recipe",
+          "id": "starlight",
+          "stage": null,
+          "cost": 12000,
+          "gold": 1195
+        },
+        {
+          "t": 15990.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 8,
+          "cost": 7600,
+          "gold": 1380
+        },
+        {
+          "t": 16170.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 15,
+          "cost": 8000,
+          "gold": 1517
+        },
+        {
+          "t": 16320.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 908
+        },
+        {
+          "t": 16590.0,
+          "event": "recipe",
+          "id": "wish",
+          "stage": null,
+          "cost": 14000,
+          "gold": 441
+        },
+        {
+          "t": 16770.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 1043
+        },
+        {
+          "t": 16920.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 182
+        },
+        {
+          "t": 17100.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 851
+        },
+        {
+          "t": 17179.75,
+          "event": "region_complete",
+          "id": "star_garden",
+          "gold": 4703
+        },
+        {
+          "t": 17430.0,
+          "event": "recipe",
+          "id": "eternity",
+          "stage": null,
+          "cost": 16000,
+          "gold": 619
+        },
+        {
+          "t": 17880.0,
+          "event": "recipe",
+          "id": "shadow_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 1025
+        },
+        {
+          "t": 18330.0,
+          "event": "recipe",
+          "id": "worldtree_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 903
+        },
+        {
+          "t": 18750.0,
+          "event": "recipe",
+          "id": "sage_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 948
+        },
+        {
+          "t": 18930.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 3,
+          "cost": 8800,
+          "gold": 656
+        },
+        {
+          "t": 19110.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 6,
+          "cost": 9000,
+          "gold": 472
+        },
+        {
+          "t": 19290.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 5,
+          "cost": 9000,
+          "gold": 528
+        },
+        {
+          "t": 19500.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 5,
+          "cost": 9000,
+          "gold": 1878
+        },
+        {
+          "t": 19650.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 4,
+          "cost": 9600,
+          "gold": 85
+        },
+        {
+          "t": 19890.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 16,
+          "cost": 11000,
+          "gold": 951
+        },
+        {
+          "t": 20100.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 9,
+          "cost": 12000,
+          "gold": 62
+        },
+        {
+          "t": 20310.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 14,
+          "cost": 11000,
+          "gold": 744
+        },
+        {
+          "t": 20550.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 6,
+          "cost": 12000,
+          "gold": 1143
+        },
+        {
+          "t": 20790.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 9,
+          "cost": 12000,
+          "gold": 1221
+        },
+        {
+          "t": 21000.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 7,
+          "cost": 12000,
+          "gold": 493
+        },
+        {
+          "t": 21300.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 5,
+          "cost": 14400,
+          "gold": 1543
+        },
+        {
+          "t": 21570.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 17,
+          "cost": 15000,
+          "gold": 636
+        },
+        {
+          "t": 21870.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 7,
+          "cost": 16000,
+          "gold": 550
+        },
+        {
+          "t": 22170.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 15,
+          "cost": 16000,
+          "gold": 624
+        },
+        {
+          "t": 22470.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 4,
+          "cost": 17600,
+          "gold": 85
+        },
+        {
+          "t": 22800.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 10,
+          "cost": 18000,
+          "gold": 1051
+        },
+        {
+          "t": 23100.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 1470
+        },
+        {
+          "t": 23400.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 1383
+        },
+        {
+          "t": 23700.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 1202
+        },
+        {
+          "t": 24000.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 943
+        },
+        {
+          "t": 24300.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 6,
+          "cost": 18000,
+          "gold": 804
+        },
+        {
+          "t": 24600.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 5,
+          "cost": 19200,
+          "gold": 333
+        },
+        {
+          "t": 24930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 18,
+          "cost": 20000,
+          "gold": 632
+        },
+        {
+          "t": 25260.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 10,
+          "cost": 20000,
+          "gold": 261
+        },
+        {
+          "t": 25620.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 8,
+          "cost": 20000,
+          "gold": 1175
+        },
+        {
+          "t": 25980.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 7,
+          "cost": 22000,
+          "gold": 994
+        },
+        {
+          "t": 26400.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 19,
+          "cost": 26000,
+          "gold": 299
+        },
+        {
+          "t": 26850.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 8,
+          "cost": 28000,
+          "gold": 1563
+        },
+        {
+          "t": 27390.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 20,
+          "cost": 34000,
+          "gold": 1927
+        },
+        {
+          "t": 27930.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 5,
+          "cost": 35200,
+          "gold": 1591
+        },
+        {
+          "t": 28530.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 8,
+          "cost": 40000,
+          "gold": 758
+        }
+      ],
+      "sold_by": {
+        "health": 162,
+        "mana": 78,
+        "moon": 295,
+        "purify": 78,
+        "agility": 142,
+        "vigor": 126,
+        "antidote": 257,
+        "fortune": 312,
+        "focus": 542,
+        "restoration": 293,
+        "growth": 186,
+        "clarity": 326,
+        "ward": 363,
+        "spirit": 1005,
+        "arcane_amplification": 558,
+        "iron_skin": 939,
+        "stealth": 483,
+        "poison_resistance": 825,
+        "illusion": 405,
+        "soul_purification": 597,
+        "wisdom": 751,
+        "reflection": 570,
+        "haste": 306,
+        "nightwalk": 914,
+        "moonradiance": 149,
+        "regeneration": 250,
+        "starlight": 449,
+        "wish": 35,
+        "eternity": 81,
+        "shadow_elixir": 24,
+        "worldtree_elixir": 204,
+        "sage_elixir": 144
+      }
+    },
+    {
+      "policy": "equipment_first",
+      "seed_initial": 73129,
+      "checkpoints": [
+        {
+          "minute": 10.0,
+          "gold": 14,
+          "recipes": 5,
+          "completed_regions": 0,
+          "opened_regions": 0,
+          "destination": null,
+          "investments": 12,
+          "employees": 0,
+          "sold": 151,
+          "gross": 2038,
+          "materials": 220,
+          "net": 1818,
+          "spent": 1804,
+          "loot": 0
+        },
+        {
+          "minute": 30.0,
+          "gold": 151,
+          "recipes": 7,
+          "completed_regions": 1,
+          "opened_regions": 1,
+          "destination": "forest_edge",
+          "investments": 27,
+          "employees": 1,
+          "sold": 535,
+          "gross": 10605,
+          "materials": 540,
+          "net": 10065,
+          "spent": 9914,
+          "loot": 0
+        },
+        {
+          "minute": 60.0,
+          "gold": 182,
+          "recipes": 11,
+          "completed_regions": 2,
+          "opened_regions": 2,
+          "destination": "abandoned_greenhouse",
+          "investments": 41,
+          "employees": 1,
+          "sold": 1143,
+          "gross": 29050,
+          "materials": 656,
+          "net": 28394,
+          "spent": 28212,
+          "loot": 0
+        },
+        {
+          "minute": 120.0,
+          "gold": 2400,
+          "recipes": 14,
+          "completed_regions": 3,
+          "opened_regions": 4,
+          "destination": "crystal_mine",
+          "investments": 60,
+          "employees": 3,
+          "sold": 2452,
+          "gross": 81687,
+          "materials": 752,
+          "net": 80935,
+          "spent": 78535,
+          "loot": 0
+        },
+        {
+          "minute": 180.0,
+          "gold": 3771,
+          "recipes": 17,
+          "completed_regions": 4,
+          "opened_regions": 5,
+          "destination": "fog_marsh",
+          "investments": 74,
+          "employees": 4,
+          "sold": 3828,
+          "gross": 153727,
+          "materials": 752,
+          "net": 152975,
+          "spent": 149204,
+          "loot": 0
+        },
+        {
+          "minute": 240.0,
+          "gold": 2946,
+          "recipes": 20,
+          "completed_regions": 5,
+          "opened_regions": 5,
+          "destination": "fog_marsh",
+          "investments": 87,
+          "employees": 4,
+          "sold": 5268,
+          "gross": 248544,
+          "materials": 752,
+          "net": 247792,
+          "spent": 244846,
+          "loot": 0
+        },
+        {
+          "minute": 300.0,
+          "gold": 7017,
+          "recipes": 24,
+          "completed_regions": 6,
+          "opened_regions": 7,
+          "destination": "moon_ruins",
+          "investments": 95,
+          "employees": 4,
+          "sold": 6780,
+          "gross": 373315,
+          "materials": 752,
+          "net": 372563,
+          "spent": 365546,
+          "loot": 0
+        },
+        {
+          "minute": 480.0,
+          "gold": 25711,
+          "recipes": 32,
+          "completed_regions": 8,
+          "opened_regions": 8,
+          "destination": "star_garden",
+          "investments": 120,
+          "employees": 4,
+          "sold": 11755,
+          "gross": 929609,
+          "materials": 752,
+          "net": 928857,
+          "spent": 903146,
+          "loot": 0
+        }
+      ],
+      "all_regions_min": 427.1375,
+      "all_recipes_min": 432.5,
+      "all_investments_min": null,
+      "final": {
+        "minute": 480.0,
+        "gold": 25711,
+        "recipes": 32,
+        "completed_regions": 8,
+        "opened_regions": 8,
+        "destination": "star_garden",
+        "investments": 120,
+        "employees": 4,
+        "sold": 11755,
+        "gross": 929609,
+        "materials": 752,
+        "net": 928857,
+        "spent": 903146,
+        "loot": 0
+      },
+      "events": [
+        {
+          "t": 30.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 1,
+          "cost": 24,
+          "gold": 6
+        },
+        {
+          "t": 60.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 1,
+          "cost": 30,
+          "gold": 4
+        },
+        {
+          "t": 90.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 2,
+          "cost": 37,
+          "gold": 31
+        },
+        {
+          "t": 120.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 2,
+          "cost": 47,
+          "gold": 40
+        },
+        {
+          "t": 150.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 3,
+          "cost": 72,
+          "gold": 22
+        },
+        {
+          "t": 180.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 3,
+          "cost": 58,
+          "gold": 38
+        },
+        {
+          "t": 210.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 4,
+          "cost": 89,
+          "gold": 7
+        },
+        {
+          "t": 270.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 4,
+          "cost": 112,
+          "gold": 59
+        },
+        {
+          "t": 300.0,
+          "event": "recipe",
+          "id": "moon",
+          "stage": null,
+          "cost": 120,
+          "gold": 19
+        },
+        {
+          "t": 360.0,
+          "event": "recipe",
+          "id": "purify",
+          "stage": null,
+          "cost": 180,
+          "gold": 61
+        },
+        {
+          "t": 390.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 5,
+          "cost": 139,
+          "gold": 50
+        },
+        {
+          "t": 450.0,
+          "event": "recipe",
+          "id": "agility",
+          "stage": null,
+          "cost": 240,
+          "gold": 50
+        },
+        {
+          "t": 480.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 5,
+          "cost": 173,
+          "gold": 5
+        },
+        {
+          "t": 540.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 6,
+          "cost": 215,
+          "gold": 66
+        },
+        {
+          "t": 600.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 6,
+          "cost": 268,
+          "gold": 14
+        },
+        {
+          "t": 690.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 1,
+          "cost": 300,
+          "gold": 112
+        },
+        {
+          "t": 750.0,
+          "event": "employee",
+          "id": "sales_assistant",
+          "stage": null,
+          "cost": 360,
+          "gold": 2
+        },
+        {
+          "t": 840.0,
+          "event": "region",
+          "id": "forest_edge",
+          "stage": null,
+          "cost": 400,
+          "gold": 44
+        },
+        {
+          "t": 900.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 1,
+          "cost": 300,
+          "gold": 40
+        },
+        {
+          "t": 960.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 1,
+          "cost": 300,
+          "gold": 26
+        },
+        {
+          "t": 1020.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 7,
+          "cost": 333,
+          "gold": 17
+        },
+        {
+          "t": 1080.0,
+          "event": "recipe",
+          "id": "vigor",
+          "stage": null,
+          "cost": 360,
+          "gold": 13
+        },
+        {
+          "t": 1140.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 7,
+          "cost": 416,
+          "gold": 33
+        },
+        {
+          "t": 1230.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 2,
+          "cost": 600,
+          "gold": 160
+        },
+        {
+          "t": 1290.0,
+          "event": "recipe",
+          "id": "antidote",
+          "stage": null,
+          "cost": 480,
+          "gold": 180
+        },
+        {
+          "t": 1350.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 8,
+          "cost": 516,
+          "gold": 221
+        },
+        {
+          "t": 1410.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 8,
+          "cost": 645,
+          "gold": 120
+        },
+        {
+          "t": 1500.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 9,
+          "cost": 800,
+          "gold": 66
+        },
+        {
+          "t": 1540.0,
+          "event": "region_complete",
+          "id": "forest_edge",
+          "gold": 361
+        },
+        {
+          "t": 1560.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 1,
+          "cost": 200,
+          "gold": 326
+        },
+        {
+          "t": 1590.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 2,
+          "cost": 350,
+          "gold": 270
+        },
+        {
+          "t": 1620.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 1,
+          "cost": 400,
+          "gold": 155
+        },
+        {
+          "t": 1680.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 1,
+          "cost": 450,
+          "gold": 185
+        },
+        {
+          "t": 1740.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 1,
+          "cost": 450,
+          "gold": 182
+        },
+        {
+          "t": 1800.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 1,
+          "cost": 450,
+          "gold": 151
+        },
+        {
+          "t": 1830.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 1,
+          "cost": 450,
+          "gold": 18
+        },
+        {
+          "t": 1890.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 1,
+          "cost": 500,
+          "gold": 104
+        },
+        {
+          "t": 1950.0,
+          "event": "recipe",
+          "id": "fortune",
+          "stage": null,
+          "cost": 640,
+          "gold": 27
+        },
+        {
+          "t": 2040.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 1,
+          "cost": 600,
+          "gold": 244
+        },
+        {
+          "t": 2100.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 2,
+          "cost": 600,
+          "gold": 215
+        },
+        {
+          "t": 2190.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 3,
+          "cost": 1000,
+          "gold": 186
+        },
+        {
+          "t": 2310.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 9,
+          "cost": 999,
+          "gold": 143
+        },
+        {
+          "t": 2430.0,
+          "event": "region",
+          "id": "abandoned_greenhouse",
+          "stage": null,
+          "cost": 1200,
+          "gold": 73
+        },
+        {
+          "t": 2580.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 10,
+          "cost": 1239,
+          "gold": 169
+        },
+        {
+          "t": 2760.0,
+          "event": "recipe",
+          "id": "focus",
+          "stage": null,
+          "cost": 750,
+          "gold": 1010
+        },
+        {
+          "t": 2850.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 10,
+          "cost": 1549,
+          "gold": 274
+        },
+        {
+          "t": 3030.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 11,
+          "cost": 1921,
+          "gold": 189
+        },
+        {
+          "t": 3120.0,
+          "event": "recipe",
+          "id": "restoration",
+          "stage": null,
+          "cost": 950,
+          "gold": 106
+        },
+        {
+          "t": 3325.75,
+          "event": "region_complete",
+          "id": "abandoned_greenhouse",
+          "gold": 2631
+        },
+        {
+          "t": 3330.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 4,
+          "cost": 1600,
+          "gold": 1064
+        },
+        {
+          "t": 3330.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 3,
+          "cost": 600,
+          "gold": 464
+        },
+        {
+          "t": 3360.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 2,
+          "cost": 700,
+          "gold": 147
+        },
+        {
+          "t": 3420.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 2,
+          "cost": 900,
+          "gold": 42
+        },
+        {
+          "t": 3510.0,
+          "event": "recipe",
+          "id": "growth",
+          "stage": null,
+          "cost": 1200,
+          "gold": 36
+        },
+        {
+          "t": 3600.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 2,
+          "cost": 900,
+          "gold": 182
+        },
+        {
+          "t": 3690.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 4,
+          "cost": 1000,
+          "gold": 276
+        },
+        {
+          "t": 3780.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 2,
+          "cost": 1100,
+          "gold": 372
+        },
+        {
+          "t": 3870.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 52
+        },
+        {
+          "t": 3990.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 212
+        },
+        {
+          "t": 4080.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 64
+        },
+        {
+          "t": 4200.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 131
+        },
+        {
+          "t": 4350.0,
+          "event": "employee",
+          "id": "cultivation_assistant",
+          "stage": null,
+          "cost": 1800,
+          "gold": 339
+        },
+        {
+          "t": 4410.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 1,
+          "cost": 900,
+          "gold": 242
+        },
+        {
+          "t": 4590.0,
+          "event": "region",
+          "id": "mist_valley",
+          "stage": null,
+          "cost": 2400,
+          "gold": 192
+        },
+        {
+          "t": 4770.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 11,
+          "cost": 2401,
+          "gold": 160
+        },
+        {
+          "t": 4980.0,
+          "event": "recipe",
+          "id": "clarity",
+          "stage": null,
+          "cost": 1400,
+          "gold": 1402
+        },
+        {
+          "t": 5160.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 12,
+          "cost": 3722,
+          "gold": 243
+        },
+        {
+          "t": 5340.0,
+          "event": "recipe",
+          "id": "ward",
+          "stage": null,
+          "cost": 1700,
+          "gold": 1245
+        },
+        {
+          "t": 5520.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 12,
+          "cost": 4000,
+          "gold": 105
+        },
+        {
+          "t": 5671.75,
+          "event": "region_complete",
+          "id": "mist_valley",
+          "gold": 2561
+        },
+        {
+          "t": 5700.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 5,
+          "cost": 2400,
+          "gold": 597
+        },
+        {
+          "t": 5760.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 3,
+          "cost": 1200,
+          "gold": 335
+        },
+        {
+          "t": 5850.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 3,
+          "cost": 1600,
+          "gold": 36
+        },
+        {
+          "t": 5970.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 5,
+          "cost": 1700,
+          "gold": 327
+        },
+        {
+          "t": 6060.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 3,
+          "cost": 1700,
+          "gold": 39
+        },
+        {
+          "t": 6180.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 2,
+          "cost": 1800,
+          "gold": 122
+        },
+        {
+          "t": 6300.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 3,
+          "cost": 2000,
+          "gold": 47
+        },
+        {
+          "t": 6450.0,
+          "event": "recipe",
+          "id": "spirit",
+          "stage": null,
+          "cost": 2100,
+          "gold": 435
+        },
+        {
+          "t": 6570.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 3,
+          "cost": 2100,
+          "gold": 354
+        },
+        {
+          "t": 6720.0,
+          "event": "employee",
+          "id": "expedition_guide",
+          "stage": null,
+          "cost": 2400,
+          "gold": 456
+        },
+        {
+          "t": 6780.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 1,
+          "cost": 1200,
+          "gold": 196
+        },
+        {
+          "t": 7050.0,
+          "event": "region",
+          "id": "crystal_mine",
+          "stage": null,
+          "cost": 4500,
+          "gold": 151
+        },
+        {
+          "t": 7410.0,
+          "event": "recipe",
+          "id": "arcane_amplification",
+          "stage": null,
+          "cost": 2400,
+          "gold": 3533
+        },
+        {
+          "t": 7560.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 13,
+          "cost": 5769,
+          "gold": 317
+        },
+        {
+          "t": 7830.0,
+          "event": "recipe",
+          "id": "iron_skin",
+          "stage": null,
+          "cost": 2900,
+          "gold": 2507
+        },
+        {
+          "t": 8070.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 13,
+          "cost": 7000,
+          "gold": 86
+        },
+        {
+          "t": 8244.75,
+          "event": "region_complete",
+          "id": "crystal_mine",
+          "gold": 3488
+        },
+        {
+          "t": 8250.0,
+          "event": "recipe",
+          "id": "stealth",
+          "stage": null,
+          "cost": 3400,
+          "gold": 195
+        },
+        {
+          "t": 8370.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 4,
+          "cost": 2200,
+          "gold": 234
+        },
+        {
+          "t": 8490.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 2,
+          "cost": 2400,
+          "gold": 134
+        },
+        {
+          "t": 8640.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 4,
+          "cost": 2800,
+          "gold": 311
+        },
+        {
+          "t": 8790.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 6,
+          "cost": 2800,
+          "gold": 493
+        },
+        {
+          "t": 8970.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 6,
+          "cost": 3600,
+          "gold": 462
+        },
+        {
+          "t": 9150.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 392
+        },
+        {
+          "t": 9300.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 162
+        },
+        {
+          "t": 9480.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 303
+        },
+        {
+          "t": 9660.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 516
+        },
+        {
+          "t": 9810.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 3,
+          "cost": 3600,
+          "gold": 98
+        },
+        {
+          "t": 9990.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 4,
+          "cost": 3600,
+          "gold": 274
+        },
+        {
+          "t": 10200.0,
+          "event": "employee",
+          "id": "brewing_assistant",
+          "stage": null,
+          "cost": 4500,
+          "gold": 276
+        },
+        {
+          "t": 10290.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 1,
+          "cost": 2200,
+          "gold": 42
+        },
+        {
+          "t": 10650.0,
+          "event": "region",
+          "id": "fog_marsh",
+          "stage": null,
+          "cost": 7500,
+          "gold": 450
+        },
+        {
+          "t": 10980.0,
+          "event": "recipe",
+          "id": "poison_resistance",
+          "stage": null,
+          "cost": 3800,
+          "gold": 3658
+        },
+        {
+          "t": 11220.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 14,
+          "cost": 8942,
+          "gold": 634
+        },
+        {
+          "t": 11490.0,
+          "event": "recipe",
+          "id": "illusion",
+          "stage": null,
+          "cost": 4500,
+          "gold": 2925
+        },
+        {
+          "t": 11700.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 15,
+          "cost": 8000,
+          "gold": 149
+        },
+        {
+          "t": 11978.0,
+          "event": "region_complete",
+          "id": "fog_marsh",
+          "gold": 7324
+        },
+        {
+          "t": 12000.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 7,
+          "cost": 5400,
+          "gold": 2394
+        },
+        {
+          "t": 12090.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 5,
+          "cost": 4000,
+          "gold": 511
+        },
+        {
+          "t": 12240.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 4,
+          "cost": 4000,
+          "gold": 675
+        },
+        {
+          "t": 12390.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 2,
+          "cost": 4400,
+          "gold": 403
+        },
+        {
+          "t": 12540.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 4,
+          "cost": 4500,
+          "gold": 198
+        },
+        {
+          "t": 12720.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 7,
+          "cost": 4600,
+          "gold": 525
+        },
+        {
+          "t": 12900.0,
+          "event": "recipe",
+          "id": "soul_purification",
+          "stage": null,
+          "cost": 5200,
+          "gold": 272
+        },
+        {
+          "t": 13080.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 3,
+          "cost": 4800,
+          "gold": 193
+        },
+        {
+          "t": 13260.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 5,
+          "cost": 5000,
+          "gold": 100
+        },
+        {
+          "t": 13500.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 5,
+          "cost": 6500,
+          "gold": 51
+        },
+        {
+          "t": 13920.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 16,
+          "cost": 11000,
+          "gold": 485
+        },
+        {
+          "t": 14310.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 14,
+          "cost": 11000,
+          "gold": 567
+        },
+        {
+          "t": 14730.0,
+          "event": "region",
+          "id": "forgotten_tower",
+          "stage": null,
+          "cost": 12000,
+          "gold": 26
+        },
+        {
+          "t": 15240.0,
+          "event": "recipe",
+          "id": "wisdom",
+          "stage": null,
+          "cost": 6000,
+          "gold": 8424
+        },
+        {
+          "t": 15810.0,
+          "event": "recipe",
+          "id": "reflection",
+          "stage": null,
+          "cost": 6800,
+          "gold": 20260
+        },
+        {
+          "t": 16370.0,
+          "event": "region_complete",
+          "id": "forgotten_tower",
+          "gold": 38674
+        },
+        {
+          "t": 16380.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 8,
+          "cost": 8000,
+          "gold": 31030
+        },
+        {
+          "t": 16380.0,
+          "event": "recipe",
+          "id": "haste",
+          "stage": null,
+          "cost": 7600,
+          "gold": 23430
+        },
+        {
+          "t": 16380.0,
+          "event": "region",
+          "id": "moon_ruins",
+          "stage": null,
+          "cost": 18000,
+          "gold": 5430
+        },
+        {
+          "t": 16440.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 6,
+          "cost": 7000,
+          "gold": 644
+        },
+        {
+          "t": 16650.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 4,
+          "cost": 7200,
+          "gold": 737
+        },
+        {
+          "t": 16860.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 8,
+          "cost": 7600,
+          "gold": 809
+        },
+        {
+          "t": 17070.0,
+          "event": "recipe",
+          "id": "nightwalk",
+          "stage": null,
+          "cost": 8500,
+          "gold": 7
+        },
+        {
+          "t": 17280.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 208
+        },
+        {
+          "t": 17490.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 925
+        },
+        {
+          "t": 17670.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 823
+        },
+        {
+          "t": 17850.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 337
+        },
+        {
+          "t": 18060.0,
+          "event": "recipe",
+          "id": "moonradiance",
+          "stage": null,
+          "cost": 9500,
+          "gold": 152
+        },
+        {
+          "t": 18270.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 3,
+          "cost": 8800,
+          "gold": 392
+        },
+        {
+          "t": 18338.0,
+          "event": "region_complete",
+          "id": "moon_ruins",
+          "gold": 3268
+        },
+        {
+          "t": 18480.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 6,
+          "cost": 9000,
+          "gold": 265
+        },
+        {
+          "t": 18690.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 5,
+          "cost": 9000,
+          "gold": 840
+        },
+        {
+          "t": 18900.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 5,
+          "cost": 9000,
+          "gold": 1216
+        },
+        {
+          "t": 19110.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 4,
+          "cost": 9600,
+          "gold": 578
+        },
+        {
+          "t": 19350.0,
+          "event": "recipe",
+          "id": "regeneration",
+          "stage": null,
+          "cost": 10500,
+          "gold": 844
+        },
+        {
+          "t": 19620.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 9,
+          "cost": 12000,
+          "gold": 736
+        },
+        {
+          "t": 19890.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 6,
+          "cost": 12000,
+          "gold": 1110
+        },
+        {
+          "t": 20130.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 9,
+          "cost": 12000,
+          "gold": 321
+        },
+        {
+          "t": 20400.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 7,
+          "cost": 12000,
+          "gold": 191
+        },
+        {
+          "t": 20760.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 17,
+          "cost": 15000,
+          "gold": 1576
+        },
+        {
+          "t": 21090.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 7,
+          "cost": 16000,
+          "gold": 642
+        },
+        {
+          "t": 21450.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 15,
+          "cost": 16000,
+          "gold": 1240
+        },
+        {
+          "t": 21810.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 4,
+          "cost": 17600,
+          "gold": 622
+        },
+        {
+          "t": 22260.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 18,
+          "cost": 20000,
+          "gold": 1449
+        },
+        {
+          "t": 22710.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 7,
+          "cost": 22000,
+          "gold": 609
+        },
+        {
+          "t": 23280.0,
+          "event": "region",
+          "id": "star_garden",
+          "stage": null,
+          "cost": 28000,
+          "gold": 130
+        },
+        {
+          "t": 24210.0,
+          "event": "recipe",
+          "id": "starlight",
+          "stage": null,
+          "cost": 12000,
+          "gold": 32243
+        },
+        {
+          "t": 24930.0,
+          "event": "recipe",
+          "id": "wish",
+          "stage": null,
+          "cost": 14000,
+          "gold": 57375
+        },
+        {
+          "t": 25628.25,
+          "event": "region_complete",
+          "id": "star_garden",
+          "gold": 95232
+        },
+        {
+          "t": 25650.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 10,
+          "cost": 18000,
+          "gold": 78410
+        },
+        {
+          "t": 25650.0,
+          "event": "recipe",
+          "id": "shadow_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 56410
+        },
+        {
+          "t": 25650.0,
+          "event": "recipe",
+          "id": "worldtree_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 34410
+        },
+        {
+          "t": 25650.0,
+          "event": "recipe",
+          "id": "sage_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 12410
+        },
+        {
+          "t": 25710.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 5,
+          "cost": 14400,
+          "gold": 1490
+        },
+        {
+          "t": 25950.0,
+          "event": "recipe",
+          "id": "eternity",
+          "stage": null,
+          "cost": 16000,
+          "gold": 93
+        },
+        {
+          "t": 26250.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 640
+        },
+        {
+          "t": 26550.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 1130
+        },
+        {
+          "t": 26850.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 1814
+        },
+        {
+          "t": 27120.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 250
+        },
+        {
+          "t": 27420.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 6,
+          "cost": 18000,
+          "gold": 562
+        },
+        {
+          "t": 27750.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 5,
+          "cost": 19200,
+          "gold": 1265
+        },
+        {
+          "t": 28080.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 10,
+          "cost": 20000,
+          "gold": 492
+        },
+        {
+          "t": 28410.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 8,
+          "cost": 20000,
+          "gold": 960
+        }
+      ],
+      "sold_by": {
+        "health": 324,
+        "mana": 182,
+        "moon": 470,
+        "purify": 120,
+        "agility": 221,
+        "vigor": 200,
+        "antidote": 407,
+        "fortune": 448,
+        "focus": 782,
+        "restoration": 394,
+        "growth": 258,
+        "clarity": 391,
+        "ward": 376,
+        "spirit": 1083,
+        "arcane_amplification": 525,
+        "iron_skin": 862,
+        "stealth": 488,
+        "poison_resistance": 647,
+        "illusion": 363,
+        "soul_purification": 548,
+        "wisdom": 679,
+        "reflection": 410,
+        "haste": 187,
+        "nightwalk": 693,
+        "moonradiance": 139,
+        "regeneration": 216,
+        "starlight": 189,
+        "wish": 15,
+        "worldtree_elixir": 57,
+        "sage_elixir": 51,
+        "shadow_elixir": 10,
+        "eternity": 20
+      }
+    },
+    {
+      "policy": "return_15m",
+      "seed_initial": 73129,
+      "checkpoints": [
+        {
+          "minute": 10.0,
+          "gold": 978,
+          "recipes": 2,
+          "completed_regions": 0,
+          "opened_regions": 0,
+          "destination": null,
+          "investments": 1,
+          "employees": 0,
+          "sold": 107,
+          "gross": 1218,
+          "materials": 216,
+          "net": 1002,
+          "spent": 24,
+          "loot": 0
+        },
+        {
+          "minute": 30.0,
+          "gold": 3678,
+          "recipes": 5,
+          "completed_regions": 1,
+          "opened_regions": 1,
+          "destination": "forest_edge",
+          "investments": 7,
+          "employees": 0,
+          "sold": 380,
+          "gross": 5696,
+          "materials": 456,
+          "net": 5240,
+          "spent": 1562,
+          "loot": 0
+        },
+        {
+          "minute": 60.0,
+          "gold": 8624,
+          "recipes": 10,
+          "completed_regions": 2,
+          "opened_regions": 2,
+          "destination": "abandoned_greenhouse",
+          "investments": 22,
+          "employees": 1,
+          "sold": 902,
+          "gross": 20335,
+          "materials": 568,
+          "net": 19767,
+          "spent": 11143,
+          "loot": 0
+        },
+        {
+          "minute": 120.0,
+          "gold": 16083,
+          "recipes": 16,
+          "completed_regions": 4,
+          "opened_regions": 4,
+          "destination": "crystal_mine",
+          "investments": 44,
+          "employees": 3,
+          "sold": 2154,
+          "gross": 69939,
+          "materials": 604,
+          "net": 69335,
+          "spent": 53252,
+          "loot": 0
+        },
+        {
+          "minute": 180.0,
+          "gold": 26348,
+          "recipes": 20,
+          "completed_regions": 5,
+          "opened_regions": 6,
+          "destination": "forgotten_tower",
+          "investments": 52,
+          "employees": 4,
+          "sold": 3560,
+          "gross": 150777,
+          "materials": 604,
+          "net": 150173,
+          "spent": 123825,
+          "loot": 0
+        },
+        {
+          "minute": 240.0,
+          "gold": 33462,
+          "recipes": 25,
+          "completed_regions": 7,
+          "opened_regions": 7,
+          "destination": "moon_ruins",
+          "investments": 73,
+          "employees": 4,
+          "sold": 5079,
+          "gross": 269312,
+          "materials": 604,
+          "net": 268708,
+          "spent": 235246,
+          "loot": 0
+        },
+        {
+          "minute": 300.0,
+          "gold": 43688,
+          "recipes": 30,
+          "completed_regions": 8,
+          "opened_regions": 8,
+          "destination": "star_garden",
+          "investments": 82,
+          "employees": 4,
+          "sold": 6679,
+          "gross": 426738,
+          "materials": 604,
+          "net": 426134,
+          "spent": 382446,
+          "loot": 0
+        },
+        {
+          "minute": 480.0,
+          "gold": 70269,
+          "recipes": 32,
+          "completed_regions": 8,
+          "opened_regions": 8,
+          "destination": "star_garden",
+          "investments": 122,
+          "employees": 4,
+          "sold": 12016,
+          "gross": 1028019,
+          "materials": 604,
+          "net": 1027415,
+          "spent": 957146,
+          "loot": 0
+        }
+      ],
+      "all_regions_min": 282.3666666666667,
+      "all_recipes_min": 300.5,
+      "all_investments_min": null,
+      "final": {
+        "minute": 480.0,
+        "gold": 70269,
+        "recipes": 32,
+        "completed_regions": 8,
+        "opened_regions": 8,
+        "destination": "star_garden",
+        "investments": 122,
+        "employees": 4,
+        "sold": 12016,
+        "gross": 1028019,
+        "materials": 604,
+        "net": 1027415,
+        "spent": 957146,
+        "loot": 0
+      },
+      "events": [
+        {
+          "t": 30.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 1,
+          "cost": 24,
+          "gold": 6
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 1,
+          "cost": 30,
+          "gold": 1534
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 2,
+          "cost": 37,
+          "gold": 1497
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 2,
+          "cost": 47,
+          "gold": 1450
+        },
+        {
+          "t": 930.0,
+          "event": "recipe",
+          "id": "moon",
+          "stage": null,
+          "cost": 120,
+          "gold": 1330
+        },
+        {
+          "t": 930.0,
+          "event": "recipe",
+          "id": "purify",
+          "stage": null,
+          "cost": 180,
+          "gold": 1150
+        },
+        {
+          "t": 930.0,
+          "event": "recipe",
+          "id": "agility",
+          "stage": null,
+          "cost": 240,
+          "gold": 910
+        },
+        {
+          "t": 930.0,
+          "event": "region",
+          "id": "forest_edge",
+          "stage": null,
+          "cost": 400,
+          "gold": 510
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 3,
+          "cost": 72,
+          "gold": 438
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 4,
+          "cost": 112,
+          "gold": 326
+        },
+        {
+          "t": 930.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 1,
+          "cost": 300,
+          "gold": 26
+        },
+        {
+          "t": 1630.0,
+          "event": "region_complete",
+          "id": "forest_edge",
+          "gold": 2994
+        },
+        {
+          "t": 1830.0,
+          "event": "region",
+          "id": "abandoned_greenhouse",
+          "stage": null,
+          "cost": 1200,
+          "gold": 2604
+        },
+        {
+          "t": 1830.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 3,
+          "cost": 58,
+          "gold": 2546
+        },
+        {
+          "t": 1830.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 5,
+          "cost": 173,
+          "gold": 2373
+        },
+        {
+          "t": 1830.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 6,
+          "cost": 268,
+          "gold": 2105
+        },
+        {
+          "t": 1830.0,
+          "event": "recipe",
+          "id": "fortune",
+          "stage": null,
+          "cost": 640,
+          "gold": 1465
+        },
+        {
+          "t": 1830.0,
+          "event": "recipe",
+          "id": "antidote",
+          "stage": null,
+          "cost": 480,
+          "gold": 985
+        },
+        {
+          "t": 1830.0,
+          "event": "recipe",
+          "id": "vigor",
+          "stage": null,
+          "cost": 360,
+          "gold": 625
+        },
+        {
+          "t": 1830.0,
+          "event": "employee",
+          "id": "sales_assistant",
+          "stage": null,
+          "cost": 360,
+          "gold": 265
+        },
+        {
+          "t": 1830.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 4,
+          "cost": 89,
+          "gold": 176
+        },
+        {
+          "t": 1830.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 5,
+          "cost": 139,
+          "gold": 37
+        },
+        {
+          "t": 2730.0,
+          "event": "recipe",
+          "id": "restoration",
+          "stage": null,
+          "cost": 950,
+          "gold": 5165
+        },
+        {
+          "t": 2730.0,
+          "event": "recipe",
+          "id": "focus",
+          "stage": null,
+          "cost": 750,
+          "gold": 4415
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 2,
+          "cost": 600,
+          "gold": 3815
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 3,
+          "cost": 1000,
+          "gold": 2815
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 1,
+          "cost": 200,
+          "gold": 2615
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 6,
+          "cost": 215,
+          "gold": 2400
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 1,
+          "cost": 300,
+          "gold": 2100
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 1,
+          "cost": 300,
+          "gold": 1800
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 7,
+          "cost": 333,
+          "gold": 1467
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 2,
+          "cost": 350,
+          "gold": 1117
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 1,
+          "cost": 400,
+          "gold": 717
+        },
+        {
+          "t": 2730.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 7,
+          "cost": 416,
+          "gold": 301
+        },
+        {
+          "t": 2740.0,
+          "event": "region_complete",
+          "id": "abandoned_greenhouse",
+          "gold": 407
+        },
+        {
+          "t": 3630.0,
+          "event": "region",
+          "id": "mist_valley",
+          "stage": null,
+          "cost": 2400,
+          "gold": 6526
+        },
+        {
+          "t": 3630.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 8,
+          "cost": 645,
+          "gold": 5881
+        },
+        {
+          "t": 3630.0,
+          "event": "recipe",
+          "id": "growth",
+          "stage": null,
+          "cost": 1200,
+          "gold": 4681
+        },
+        {
+          "t": 3630.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 4,
+          "cost": 1600,
+          "gold": 3081
+        },
+        {
+          "t": 3630.0,
+          "event": "employee",
+          "id": "cultivation_assistant",
+          "stage": null,
+          "cost": 1800,
+          "gold": 1281
+        },
+        {
+          "t": 3630.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 1,
+          "cost": 450,
+          "gold": 831
+        },
+        {
+          "t": 3630.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 1,
+          "cost": 450,
+          "gold": 381
+        },
+        {
+          "t": 4530.0,
+          "event": "recipe",
+          "id": "ward",
+          "stage": null,
+          "cost": 1700,
+          "gold": 8214
+        },
+        {
+          "t": 4530.0,
+          "event": "recipe",
+          "id": "clarity",
+          "stage": null,
+          "cost": 1400,
+          "gold": 6814
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 1,
+          "cost": 450,
+          "gold": 6364
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 1,
+          "cost": 450,
+          "gold": 5914
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 1,
+          "cost": 500,
+          "gold": 5414
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 8,
+          "cost": 516,
+          "gold": 4898
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 1,
+          "cost": 600,
+          "gold": 4298
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 3,
+          "cost": 600,
+          "gold": 3698
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 2,
+          "cost": 600,
+          "gold": 3098
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 2,
+          "cost": 700,
+          "gold": 2398
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 9,
+          "cost": 800,
+          "gold": 1598
+        },
+        {
+          "t": 4530.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 1,
+          "cost": 900,
+          "gold": 698
+        },
+        {
+          "t": 4716.5,
+          "event": "region_complete",
+          "id": "mist_valley",
+          "gold": 3037
+        },
+        {
+          "t": 5430.0,
+          "event": "region",
+          "id": "crystal_mine",
+          "stage": null,
+          "cost": 4500,
+          "gold": 7466
+        },
+        {
+          "t": 5430.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 9,
+          "cost": 999,
+          "gold": 6467
+        },
+        {
+          "t": 5430.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 10,
+          "cost": 1549,
+          "gold": 4918
+        },
+        {
+          "t": 5430.0,
+          "event": "recipe",
+          "id": "spirit",
+          "stage": null,
+          "cost": 2100,
+          "gold": 2818
+        },
+        {
+          "t": 5430.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 5,
+          "cost": 2400,
+          "gold": 418
+        },
+        {
+          "t": 6330.0,
+          "event": "recipe",
+          "id": "iron_skin",
+          "stage": null,
+          "cost": 2900,
+          "gold": 10515
+        },
+        {
+          "t": 6330.0,
+          "event": "recipe",
+          "id": "arcane_amplification",
+          "stage": null,
+          "cost": 2400,
+          "gold": 8115
+        },
+        {
+          "t": 6330.0,
+          "event": "employee",
+          "id": "expedition_guide",
+          "stage": null,
+          "cost": 2400,
+          "gold": 5715
+        },
+        {
+          "t": 6330.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 2,
+          "cost": 900,
+          "gold": 4815
+        },
+        {
+          "t": 6330.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 2,
+          "cost": 900,
+          "gold": 3915
+        },
+        {
+          "t": 6330.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 4,
+          "cost": 1000,
+          "gold": 2915
+        },
+        {
+          "t": 6330.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 2,
+          "cost": 1100,
+          "gold": 1815
+        },
+        {
+          "t": 6330.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 1,
+          "cost": 1200,
+          "gold": 615
+        },
+        {
+          "t": 6756.0,
+          "event": "region_complete",
+          "id": "crystal_mine",
+          "gold": 8141
+        },
+        {
+          "t": 7230.0,
+          "event": "region",
+          "id": "fog_marsh",
+          "stage": null,
+          "cost": 7500,
+          "gold": 9175
+        },
+        {
+          "t": 7230.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 11,
+          "cost": 2401,
+          "gold": 6774
+        },
+        {
+          "t": 7230.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 12,
+          "cost": 3722,
+          "gold": 3052
+        },
+        {
+          "t": 8130.0,
+          "event": "recipe",
+          "id": "poison_resistance",
+          "stage": null,
+          "cost": 3800,
+          "gold": 15485
+        },
+        {
+          "t": 8130.0,
+          "event": "recipe",
+          "id": "stealth",
+          "stage": null,
+          "cost": 3400,
+          "gold": 12085
+        },
+        {
+          "t": 8130.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 6,
+          "cost": 3600,
+          "gold": 8485
+        },
+        {
+          "t": 8130.0,
+          "event": "employee",
+          "id": "brewing_assistant",
+          "stage": null,
+          "cost": 4500,
+          "gold": 3985
+        },
+        {
+          "t": 8130.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 3,
+          "cost": 1200,
+          "gold": 2785
+        },
+        {
+          "t": 8130.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 10,
+          "cost": 1239,
+          "gold": 1546
+        },
+        {
+          "t": 8130.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 246
+        },
+        {
+          "t": 8754.0,
+          "event": "region_complete",
+          "id": "fog_marsh",
+          "gold": 14391
+        },
+        {
+          "t": 9030.0,
+          "event": "region",
+          "id": "forgotten_tower",
+          "stage": null,
+          "cost": 12000,
+          "gold": 8434
+        },
+        {
+          "t": 9030.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 13,
+          "cost": 5769,
+          "gold": 2665
+        },
+        {
+          "t": 9930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 14,
+          "cost": 8942,
+          "gold": 14064
+        },
+        {
+          "t": 9930.0,
+          "event": "recipe",
+          "id": "wisdom",
+          "stage": null,
+          "cost": 6000,
+          "gold": 8064
+        },
+        {
+          "t": 9930.0,
+          "event": "recipe",
+          "id": "soul_purification",
+          "stage": null,
+          "cost": 5200,
+          "gold": 2864
+        },
+        {
+          "t": 10830.0,
+          "event": "recipe",
+          "id": "reflection",
+          "stage": null,
+          "cost": 6800,
+          "gold": 20430
+        },
+        {
+          "t": 10830.0,
+          "event": "recipe",
+          "id": "illusion",
+          "stage": null,
+          "cost": 4500,
+          "gold": 15930
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 7,
+          "cost": 5400,
+          "gold": 10530
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 9230
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 7930
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 2,
+          "cost": 1300,
+          "gold": 6630
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 3,
+          "cost": 1600,
+          "gold": 5030
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 5,
+          "cost": 1700,
+          "gold": 3330
+        },
+        {
+          "t": 10830.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 3,
+          "cost": 1700,
+          "gold": 1630
+        },
+        {
+          "t": 10914.0,
+          "event": "region_complete",
+          "id": "forgotten_tower",
+          "gold": 4192
+        },
+        {
+          "t": 11730.0,
+          "event": "region",
+          "id": "moon_ruins",
+          "stage": null,
+          "cost": 18000,
+          "gold": 9447
+        },
+        {
+          "t": 11730.0,
+          "event": "recipe",
+          "id": "haste",
+          "stage": null,
+          "cost": 7600,
+          "gold": 1847
+        },
+        {
+          "t": 11730.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 2,
+          "cost": 1800,
+          "gold": 47
+        },
+        {
+          "t": 12630.0,
+          "event": "recipe",
+          "id": "nightwalk",
+          "stage": null,
+          "cost": 8500,
+          "gold": 17607
+        },
+        {
+          "t": 12630.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 8,
+          "cost": 8000,
+          "gold": 9607
+        },
+        {
+          "t": 12630.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 11,
+          "cost": 1921,
+          "gold": 7686
+        },
+        {
+          "t": 12630.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 3,
+          "cost": 2000,
+          "gold": 5686
+        },
+        {
+          "t": 12630.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 3,
+          "cost": 2100,
+          "gold": 3586
+        },
+        {
+          "t": 12630.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 1,
+          "cost": 2200,
+          "gold": 1386
+        },
+        {
+          "t": 13530.0,
+          "event": "recipe",
+          "id": "moonradiance",
+          "stage": null,
+          "cost": 9500,
+          "gold": 24520
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 4,
+          "cost": 2200,
+          "gold": 22320
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 2,
+          "cost": 2400,
+          "gold": 19920
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 4,
+          "cost": 2800,
+          "gold": 17120
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 6,
+          "cost": 2800,
+          "gold": 14320
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 10820
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 7320
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 3820
+        },
+        {
+          "t": 13530.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 3,
+          "cost": 3500,
+          "gold": 320
+        },
+        {
+          "t": 13751.25,
+          "event": "region_complete",
+          "id": "moon_ruins",
+          "gold": 8432
+        },
+        {
+          "t": 14430.0,
+          "event": "region",
+          "id": "star_garden",
+          "stage": null,
+          "cost": 28000,
+          "gold": 6376
+        },
+        {
+          "t": 15330.0,
+          "event": "recipe",
+          "id": "starlight",
+          "stage": null,
+          "cost": 12000,
+          "gold": 28751
+        },
+        {
+          "t": 15330.0,
+          "event": "recipe",
+          "id": "regeneration",
+          "stage": null,
+          "cost": 10500,
+          "gold": 18251
+        },
+        {
+          "t": 15330.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 9,
+          "cost": 12000,
+          "gold": 6251
+        },
+        {
+          "t": 15330.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 3,
+          "cost": 3600,
+          "gold": 2651
+        },
+        {
+          "t": 16230.0,
+          "event": "recipe",
+          "id": "wish",
+          "stage": null,
+          "cost": 14000,
+          "gold": 29105
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 4,
+          "cost": 3600,
+          "gold": 25505
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 12,
+          "cost": 4000,
+          "gold": 21505
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 5,
+          "cost": 4000,
+          "gold": 17505
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 4,
+          "cost": 4000,
+          "gold": 13505
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 2,
+          "cost": 4400,
+          "gold": 9105
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 4,
+          "cost": 4500,
+          "gold": 4605
+        },
+        {
+          "t": 16230.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 7,
+          "cost": 4600,
+          "gold": 5
+        },
+        {
+          "t": 16942.0,
+          "event": "region_complete",
+          "id": "star_garden",
+          "gold": 32914
+        },
+        {
+          "t": 17130.0,
+          "event": "recipe",
+          "id": "shadow_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 19754
+        },
+        {
+          "t": 17130.0,
+          "event": "recipe",
+          "id": "eternity",
+          "stage": null,
+          "cost": 16000,
+          "gold": 3754
+        },
+        {
+          "t": 18030.0,
+          "event": "recipe",
+          "id": "worldtree_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 23001
+        },
+        {
+          "t": 18030.0,
+          "event": "recipe",
+          "id": "sage_elixir",
+          "stage": null,
+          "cost": 22000,
+          "gold": 1001
+        },
+        {
+          "t": 18930.0,
+          "event": "upgrade",
+          "id": "sales_counter",
+          "stage": 10,
+          "cost": 18000,
+          "gold": 25213
+        },
+        {
+          "t": 18930.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 3,
+          "cost": 4800,
+          "gold": 20413
+        },
+        {
+          "t": 18930.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 5,
+          "cost": 5000,
+          "gold": 15413
+        },
+        {
+          "t": 18930.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 5,
+          "cost": 6500,
+          "gold": 8913
+        },
+        {
+          "t": 18930.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 13,
+          "cost": 7000,
+          "gold": 1913
+        },
+        {
+          "t": 19830.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 6,
+          "cost": 7000,
+          "gold": 40859
+        },
+        {
+          "t": 19830.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 4,
+          "cost": 7200,
+          "gold": 33659
+        },
+        {
+          "t": 19830.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 8,
+          "cost": 7600,
+          "gold": 26059
+        },
+        {
+          "t": 19830.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 15,
+          "cost": 8000,
+          "gold": 18059
+        },
+        {
+          "t": 19830.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 10059
+        },
+        {
+          "t": 19830.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 2059
+        },
+        {
+          "t": 20730.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 40854
+        },
+        {
+          "t": 20730.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 4,
+          "cost": 8000,
+          "gold": 32854
+        },
+        {
+          "t": 20730.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 3,
+          "cost": 8800,
+          "gold": 24054
+        },
+        {
+          "t": 20730.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 6,
+          "cost": 9000,
+          "gold": 15054
+        },
+        {
+          "t": 20730.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 5,
+          "cost": 9000,
+          "gold": 6054
+        },
+        {
+          "t": 21630.0,
+          "event": "upgrade",
+          "id": "sales_assistant",
+          "stage": 5,
+          "cost": 9000,
+          "gold": 44540
+        },
+        {
+          "t": 21630.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 4,
+          "cost": 9600,
+          "gold": 34940
+        },
+        {
+          "t": 21630.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 16,
+          "cost": 11000,
+          "gold": 23940
+        },
+        {
+          "t": 21630.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 14,
+          "cost": 11000,
+          "gold": 12940
+        },
+        {
+          "t": 21630.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 6,
+          "cost": 12000,
+          "gold": 940
+        },
+        {
+          "t": 22530.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 9,
+          "cost": 12000,
+          "gold": 40479
+        },
+        {
+          "t": 22530.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 7,
+          "cost": 12000,
+          "gold": 28479
+        },
+        {
+          "t": 22530.0,
+          "event": "upgrade",
+          "id": "cultivation_assistant",
+          "stage": 5,
+          "cost": 14400,
+          "gold": 14079
+        },
+        {
+          "t": 23430.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 17,
+          "cost": 15000,
+          "gold": 49181
+        },
+        {
+          "t": 23430.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 7,
+          "cost": 16000,
+          "gold": 33181
+        },
+        {
+          "t": 23430.0,
+          "event": "upgrade",
+          "id": "herb_pot",
+          "stage": 15,
+          "cost": 16000,
+          "gold": 17181
+        },
+        {
+          "t": 24330.0,
+          "event": "upgrade",
+          "id": "brewing_assistant",
+          "stage": 4,
+          "cost": 17600,
+          "gold": 51538
+        },
+        {
+          "t": 24330.0,
+          "event": "upgrade",
+          "id": "family_arcane",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 33538
+        },
+        {
+          "t": 24330.0,
+          "event": "upgrade",
+          "id": "family_craft",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 15538
+        },
+        {
+          "t": 25230.0,
+          "event": "upgrade",
+          "id": "family_nature",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 52369
+        },
+        {
+          "t": 25230.0,
+          "event": "upgrade",
+          "id": "family_vitality",
+          "stage": 5,
+          "cost": 18000,
+          "gold": 34369
+        },
+        {
+          "t": 25230.0,
+          "event": "upgrade",
+          "id": "precision_filter",
+          "stage": 6,
+          "cost": 18000,
+          "gold": 16369
+        },
+        {
+          "t": 26130.0,
+          "event": "upgrade",
+          "id": "expedition_guide",
+          "stage": 5,
+          "cost": 19200,
+          "gold": 51179
+        },
+        {
+          "t": 26130.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 18,
+          "cost": 20000,
+          "gold": 31179
+        },
+        {
+          "t": 26130.0,
+          "event": "upgrade",
+          "id": "herb_storage",
+          "stage": 10,
+          "cost": 20000,
+          "gold": 11179
+        },
+        {
+          "t": 27030.0,
+          "event": "upgrade",
+          "id": "potion_cabinet",
+          "stage": 8,
+          "cost": 20000,
+          "gold": 45610
+        },
+        {
+          "t": 27030.0,
+          "event": "upgrade",
+          "id": "expedition_path",
+          "stage": 7,
+          "cost": 22000,
+          "gold": 23610
+        },
+        {
+          "t": 27930.0,
+          "event": "upgrade",
+          "id": "cauldron",
+          "stage": 19,
+          "cost": 26000,
+          "gold": 48637
+        },
+        {
+          "t": 27930.0,
+          "event": "upgrade",
+          "id": "drying_rack",
+          "stage": 8,
+          "cost": 28000,
+          "gold": 20637
+        }
+      ],
+      "sold_by": {
+        "health": 264,
+        "mana": 145,
+        "moon": 349,
+        "purify": 88,
+        "agility": 206,
+        "fortune": 341,
+        "antidote": 315,
+        "vigor": 95,
+        "restoration": 335,
+        "focus": 582,
+        "growth": 262,
+        "ward": 389,
+        "clarity": 322,
+        "spirit": 1011,
+        "iron_skin": 865,
+        "arcane_amplification": 490,
+        "poison_resistance": 853,
+        "stealth": 460,
+        "soul_purification": 540,
+        "wisdom": 792,
+        "reflection": 501,
+        "illusion": 298,
+        "haste": 304,
+        "nightwalk": 941,
+        "moonradiance": 99,
+        "starlight": 488,
+        "regeneration": 211,
+        "wish": 40,
+        "eternity": 86,
+        "shadow_elixir": 25,
+        "worldtree_elixir": 194,
+        "sage_elixir": 125
+      }
+    }
+  ]
+}

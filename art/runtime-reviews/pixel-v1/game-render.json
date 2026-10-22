@@ -1,0 +1,48 @@
+{
+	"cases": [
+		{
+			"customer": "traveler",
+			"departure_seconds": 2.3,
+			"earned": 6,
+			"handover_seconds": 0.85,
+			"potion": "health",
+			"sold": 1,
+			"stock_after": 7,
+			"stock_before": 8
+		},
+		{
+			"customer": "mage",
+			"departure_seconds": 2.3,
+			"earned": 26,
+			"handover_seconds": 0.85,
+			"potion": "moon",
+			"sold": 1,
+			"stock_after": 7,
+			"stock_before": 8
+		},
+		{
+			"customer": "elf",
+			"departure_seconds": 2.3,
+			"earned": 24,
+			"handover_seconds": 0.85,
+			"potion": "purify",
+			"sold": 1,
+			"stock_after": 7,
+			"stock_before": 8
+		},
+		{
+			"customer": "rogue",
+			"departure_seconds": 2.3,
+			"earned": 28,
+			"handover_seconds": 0.85,
+			"potion": "agility",
+			"sold": 1,
+			"stock_after": 7,
+			"stock_before": 8
+		}
+	],
+	"frames": 160,
+	"player_save_accessed": false,
+	"renderer": "Godot actual Shop/ShopArt",
+	"status": "passed"
+}

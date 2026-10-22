@@ -1,0 +1,17 @@
+{
+  "method": "Built-in imagegen",
+  "prompt": "Use case: stylized-concept. Asset type: transparent pixel-art game sprite atlas for a cozy purple witch potion shop. Create exactly FOUR animation frames in a strict 2 by 2 square grid. Each cell contains the SAME small squat plum-colored terracotta herb pot at precisely the same size and baseline. Frame order left-to-right top-to-bottom: 0 a tiny two-leaf mint sprout in soil; 1 growing herb with four leaves; 2 full bushy medicinal mint with eight large readable leaves; 3 the same full mint with two tiny pale golden sparkle pixels for harvest. Keep pot identical across all four frames: dark aubergine outline, muted clay purple body, thin warm gold rim and small leaf emblem. Leaves in muted sage and soft lime, stems dark green. Practical low-resolution sprite artwork intended to be downscaled to 32x40 pixels per frame, crisp chunky pixel clusters, no antialiasing, no gradients. Front three-quarter view with a little top of soil visible. Generous equal transparent margins around every frame, no ground shadow, no background, NO grid lines, NO text or labels, no other objects, true alpha transparency. All four entire pots must fit inside their cells without touching cell edges. Match a charming warm wooden potion shop with a purple-hatted witch.",
+  "source": "herb_growth.png",
+  "runtime": "../herb_growth.png",
+  "frame_size": [
+    32,
+    40
+  ],
+  "frames": [
+    "sprout",
+    "growing",
+    "mature",
+    "harvest"
+  ],
+  "importer": "tools/prepare_herbs.gd"
+}

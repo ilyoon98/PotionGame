@@ -1,0 +1,26 @@
+{
+	"cases": [
+		{
+			"empty_space_alpha": 0,
+			"full_width_floor_alpha": 1,
+			"mode": "workshop",
+			"size": [
+				540,
+				300
+			],
+			"transparent_pixels": 87949
+		},
+		{
+			"empty_space_alpha": 0,
+			"full_width_floor_alpha": 1,
+			"mode": "companion",
+			"size": [
+				256,
+				228
+			],
+			"transparent_pixels": 29523
+		}
+	],
+	"player_save_accessed": false,
+	"status": "passed"
+}

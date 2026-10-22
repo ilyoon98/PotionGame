@@ -1,0 +1,12 @@
+{
+  "id": "rare_lunar_seal",
+  "variant": "bottle",
+  "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: wide 10-pixel circular disk body, short gold cap, dark purple fill, an ivory off-center crescent inside a gold rim. Keep its silhouette family matching the reference: FLAT WIDE CIRCULAR DISK bottle like a coin-shaped flask with a short gold neck, broad circle body (never faceted pear). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "reference_role": "paired_potion_palette_silhouette_emblem",
+  "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_potion.png",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-fd467269-890c-458c-a692-b3bec6786637.png",
+  "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_lunar_seal_bottle.png",
+  "transparent_background": true
+}

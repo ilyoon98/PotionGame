@@ -1,0 +1,235 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "idle": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 444,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "918cae25980341dbdd34f8f886ce4f719ea06109689048b4e80249d74dee7158",
+      "native_pixel_sha256": "2a05a203a9126f27763591e952bbad09e78ce8bb225ad18b7eacbaaa2941ec83"
+    },
+    "walk_contact_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 458,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "7d6f41d5f21675b3f20dab2ca4b8eca8242a3fdbb443127c03820b75c4f847d4",
+      "native_pixel_sha256": "9783595ae097d40a6b7d8f7e91dc44dece2c7c2f2d38aaabb4bfa95be78a437b"
+    },
+    "walk_pass_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 444,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4,
+        "shorts": 5
+      },
+      "source_sha256": "27c75b0a2a45c6e662f64446fd10c493777a78298959cf2ac5f01a7fab717a4e",
+      "native_pixel_sha256": "7ae384afbd25e34fe329f81f0302087c7c54203a13bdbfed4aaad7da0cc4f6dc"
+    },
+    "walk_contact_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 453,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "ee2564dfdfa7973b1123bfe10549fdbc28beb54f7993583a34611d0d9ba50ddd",
+      "native_pixel_sha256": "914834262accf61c83374e2dfccef616b1bf40f340d171a2b8634cc0873726fe"
+    },
+    "walk_pass_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 450,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4,
+        "shorts": 5
+      },
+      "source_sha256": "c2c0750ed93c6dfa5cdc2a84878088dfaaa9113461a8be55d2d08ca64280ca6d",
+      "native_pixel_sha256": "d2e45d037d159db6f9589ec500f8c036b4bdd21f72d0c68ff0c44eb8e1ff89cf"
+    },
+    "receive_extend": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 467,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "39a8ee4db0216bc32aa1ba6e88582515c76d32075cb06fb578caed38fda53a0d",
+      "native_pixel_sha256": "89d6d3f0a770718b9516e182bd9da92dcf166c70eb52a6f985502976b912d24c"
+    },
+    "receive_hold": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "b270e9580d69dda487fbbb41024ecbd1c85763b42fe419cfa8c4e54163dfd677",
+      "native_pixel_sha256": "b02a81d1f0ac921761fe51a2de525bd7390064918f2235ee1c92c275a3a83ddb"
+    },
+    "blink_idle": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 444,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "6ca209e8e9bc4f66043631fac6f7a3e2839a63537a7a332e37371cde53676684",
+      "native_pixel_sha256": "f770e104925a773a31857ee4d2df3ae7760feba81394e4102dc4be6a4c2f3a69"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

@@ -1,0 +1,992 @@
+[
+  {
+    "path": "employees/brewing_assistant_icon.png",
+    "sha256": "9AF4B6795EC0ED8AF11DE525AB8EAB2727379317F638E277DA912D66FDE28CF2",
+    "bytes": 2322
+  },
+  {
+    "path": "employees/cultivation_assistant_icon.png",
+    "sha256": "841868B83116F1844256F3BA4A556E1AF44051C62EA684970658A8B5C35F1FCE",
+    "bytes": 2207
+  },
+  {
+    "path": "employees/expedition_guide_icon.png",
+    "sha256": "4516506F39B87109285DEF0462A86E358E1A90887A2B1CA3B95DD855DA41BEBA",
+    "bytes": 2329
+  },
+  {
+    "path": "employees/sales_assistant_icon.png",
+    "sha256": "B8B8A18F2A6232E93C40C58A07C83096431A8BEAC62A7C48985AEDD2FCC542AA",
+    "bytes": 2329
+  },
+  {
+    "path": "equipment/cauldron_basic.png",
+    "sha256": "C2A5C8517C68978B7D0BA9067DB18756F477D72BA1340B0538466EE468D70BAA",
+    "bytes": 1796
+  },
+  {
+    "path": "equipment/cauldron_improved.png",
+    "sha256": "12F79EAE91B92651D90A1E8897E83C4AACE98FAC91E900D2F36F7FFAB8150906",
+    "bytes": 2081
+  },
+  {
+    "path": "equipment/cauldron_premium.png",
+    "sha256": "3513E370460F7F67568FC484AE2744D50C3FBA912349CD89B9B2BCEA8A38D694",
+    "bytes": 2330
+  },
+  {
+    "path": "equipment/drying_rack_basic.png",
+    "sha256": "B9CD1B866552C78486278074A92BA115DAD4D574FF999D73823CF274B3402832",
+    "bytes": 2231
+  },
+  {
+    "path": "equipment/drying_rack_improved.png",
+    "sha256": "623CBD52CED190124910A0FD57606BD490B732BA6AC7724C603FD32AED6A651E",
+    "bytes": 2599
+  },
+  {
+    "path": "equipment/drying_rack_premium.png",
+    "sha256": "84A4EEC7845A64976E4316A3F3D2F83945962691A9C0E25B513F7A5518D98C36",
+    "bytes": 2823
+  },
+  {
+    "path": "equipment/expedition_path_basic.png",
+    "sha256": "196AC84B5E5626428C51ACDABA30435CBB66E41940E6271D6E28CC94F913A64F",
+    "bytes": 1576
+  },
+  {
+    "path": "equipment/expedition_path_improved.png",
+    "sha256": "A7D535A4D74743E7F67BEFC429C0A14DD3084C5AA71AE856DD0D7DE11EC60FEA",
+    "bytes": 1940
+  },
+  {
+    "path": "equipment/expedition_path_premium.png",
+    "sha256": "8BE7A4DB3C82EC632B7FE3AE348EEEC55FCA9555E4B8896A26AABA40BB83B498",
+    "bytes": 2704
+  },
+  {
+    "path": "equipment/herb_pot_basic.png",
+    "sha256": "EA780C4AEEF1C951C7448BF1963255B7AE86BEF5B63B617CA57C94193CB221DE",
+    "bytes": 2707
+  },
+  {
+    "path": "equipment/herb_pot_improved.png",
+    "sha256": "A8C222F74B5D9910A0669961AB435A5EA1A5CF193FCB2AEE2A1DF65A5C4D8BBD",
+    "bytes": 3217
+  },
+  {
+    "path": "equipment/herb_pot_premium.png",
+    "sha256": "9915F406FD82F01D484375F36D47CC105D56DFB6D0B5BB64020E6CB953F6437C",
+    "bytes": 3296
+  },
+  {
+    "path": "equipment/herb_storage_basic.png",
+    "sha256": "E1E396B4F82D26952DA5140A12A87D78CF77E536C2EBCA2EE61D3480C1C7DB8E",
+    "bytes": 2721
+  },
+  {
+    "path": "equipment/herb_storage_improved.png",
+    "sha256": "E046D16120ECEC6303682B5C813C50AB026C0D333B20C576D25B3032C7318AC7",
+    "bytes": 2625
+  },
+  {
+    "path": "equipment/herb_storage_premium.png",
+    "sha256": "2F5D88A8E6FBBF3860BE1255B2D95F301622D00B2154898B559CC28590B7E091",
+    "bytes": 2694
+  },
+  {
+    "path": "equipment/potion_cabinet_basic.png",
+    "sha256": "7098A6FD95E8579E0561C292BF3B7D77C45EA7F3CDC6122F222DD6B912C37316",
+    "bytes": 2540
+  },
+  {
+    "path": "equipment/potion_cabinet_improved.png",
+    "sha256": "1066E8729421153189A1AAB60BF24E26B83489D35ED2402AF4475EEE6DBE088C",
+    "bytes": 2694
+  },
+  {
+    "path": "equipment/potion_cabinet_premium.png",
+    "sha256": "AE96E4FB287E825F7D625F4F4147A7B10022726ACC53364356F55DF848B5A0A4",
+    "bytes": 2819
+  },
+  {
+    "path": "equipment/precision_filter_basic.png",
+    "sha256": "8BBE889C194E0CA49D7F40069CF200365D66697CF00A2558A77C9812DAB1E240",
+    "bytes": 2013
+  },
+  {
+    "path": "equipment/precision_filter_improved.png",
+    "sha256": "568A8FBBFD015910CC6F45F4A66E9AB96C662672761E6CC2260EA59656D97D28",
+    "bytes": 2738
+  },
+  {
+    "path": "equipment/precision_filter_premium.png",
+    "sha256": "F17AE5CD624C9F2748EDA92A40AF873D8DBCB22096ADA07185FA9E0A3EF9DCBB",
+    "bytes": 2941
+  },
+  {
+    "path": "equipment/sales_counter_basic.png",
+    "sha256": "A6326DE964750ACA3A9AC69CC503735C4AF5F76B7A9EF7BD858156EB2724EBEF",
+    "bytes": 1245
+  },
+  {
+    "path": "equipment/sales_counter_improved.png",
+    "sha256": "3CE4D863ECC0B6232273AD6D6006947B96ED51F04B0217DC3AEF901504154DE0",
+    "bytes": 1681
+  },
+  {
+    "path": "equipment/sales_counter_premium.png",
+    "sha256": "C9BAC7A4180FB6A710FB625281CA83E1DFE9F31EE9CA1D857016EDAE0017514A",
+    "bytes": 1714
+  },
+  {
+    "path": "families/arcane_icon.png",
+    "sha256": "35D4B359FA05AAD33D19D6B3CA23D77F0588DEC5601ED9C2B04FC00C80DBCE81",
+    "bytes": 1688
+  },
+  {
+    "path": "families/craft_icon.png",
+    "sha256": "DC1F67C8C7460C6A3FDB6E9A82B7CA64BBB5C93FF2C634AAB6FE30761D6050DF",
+    "bytes": 1792
+  },
+  {
+    "path": "families/nature_icon.png",
+    "sha256": "C5E91100B5FF22FA6A2FA201F85E868F7839C24C53F45E671FE99E78E511DBFC",
+    "bytes": 1836
+  },
+  {
+    "path": "families/vitality_icon.png",
+    "sha256": "2AF09AAB8CEA67D8956F40A3C22C64B1D6AE0222873A64B62D370FD15D25306F",
+    "bytes": 2020
+  },
+  {
+    "path": "materials/ash_sage_growth.png",
+    "sha256": "5C3BBA997A33766D218281C7DEEE3EFE17E043FCBBE41FBCBE21BDCC31F79268",
+    "bytes": 9665
+  },
+  {
+    "path": "materials/ash_sage_icon.png",
+    "sha256": "383EB75D179AADA3A9F8676D7AC8E502A81ACC97548B3771CCDCDAEED19FB048",
+    "bytes": 3626
+  },
+  {
+    "path": "materials/blue_reed_growth.png",
+    "sha256": "7870B14FDCA4768894BC7C6C36C7FBD7B0F60A50F158AADBD832A4E5473AF4A1",
+    "bytes": 9131
+  },
+  {
+    "path": "materials/blue_reed_icon.png",
+    "sha256": "3D75D3153D582C80834A856A52AB895CB36B23602DFB5D99A2A3E2429D7AE577",
+    "bytes": 2884
+  },
+  {
+    "path": "materials/crystal_herb_growth.png",
+    "sha256": "936F71ACBD87F04534D7E9FCBECE7C48ACF8E82DBC8EC76109837B23531D538C",
+    "bytes": 7197
+  },
+  {
+    "path": "materials/crystal_herb_icon.png",
+    "sha256": "1D27BA092117019FD1B95F616AEC6D20211518A4466B1C16DDC80AB4CA3AFB27",
+    "bytes": 3130
+  },
+  {
+    "path": "materials/dewgrass_growth.png",
+    "sha256": "3950411729F712E76C11F82784863FC7943E55E1F1B46DA27E970BC4345EBBED",
+    "bytes": 8612
+  },
+  {
+    "path": "materials/dewgrass_icon.png",
+    "sha256": "DB6FCF6C2C8CD8C49CF06FC6513155CD13FA1B20506F5AF66D84E8AE79FB1A6B",
+    "bytes": 3036
+  },
+  {
+    "path": "materials/herb_growth.png",
+    "sha256": "7BF8C8BB72B8D5E6871CB083D059DC2F27CAB31930FBE9FB8076E6CCDC83B7C3",
+    "bytes": 8894
+  },
+  {
+    "path": "materials/herb_icon.png",
+    "sha256": "639870B7BC5F4EBD3B280DFBFFF02BADEC7C6E8196D275B4EC5DE4199EC4087F",
+    "bytes": 1789
+  },
+  {
+    "path": "materials/mist_mushroom_growth.png",
+    "sha256": "3BF5AD95A6C01A1FF3A01A51620817D8BDD0EF02E3F885FCC877041CC9F2927D",
+    "bytes": 9328
+  },
+  {
+    "path": "materials/mist_mushroom_icon.png",
+    "sha256": "4C16912AA2A736B03C7B7E9C28BD2CA4F79194592E63A9B39C1662FE660AB6C8",
+    "bytes": 2770
+  },
+  {
+    "path": "materials/moon_mushroom_icon.png",
+    "sha256": "03D916C6A50CACF1285D056810D2932DDB95D9ED72F86F7B0D1700D6EEDACA49",
+    "bytes": 1290
+  },
+  {
+    "path": "materials/moonflower_growth.png",
+    "sha256": "ED77597D73AF76612ED258F5E4C65337CC2E84ED28248C9E20FB4857461958D0",
+    "bytes": 8999
+  },
+  {
+    "path": "materials/moonflower_icon.png",
+    "sha256": "F6B8A2376C5B41CAF0D82E1CEB8259D19C542D3A60E6D97BE4D3C9AE93BA2695",
+    "bytes": 3204
+  },
+  {
+    "path": "materials/silver_moss_growth.png",
+    "sha256": "DFDB0DF6967E379B79288DE85D971AB53CAC6F57E8B59F291647574C7775E7F8",
+    "bytes": 7823
+  },
+  {
+    "path": "materials/silver_moss_icon.png",
+    "sha256": "D73F7EE1D2AEDEA2B94F5622BD7DF3D75493DFFB40475FF11D8B523B4DF2A4F3",
+    "bytes": 2527
+  },
+  {
+    "path": "materials/star_seed_growth.png",
+    "sha256": "4DB026387CB082811B03DB986C4F26C3B3A8D7C377B1B92B8D01BD075AC23096",
+    "bytes": 8672
+  },
+  {
+    "path": "materials/star_seed_icon.png",
+    "sha256": "CF99382275A7F2F5BA0691E06DA8D7C157BD1CFE49EF07C0A07033880BE5B67B",
+    "bytes": 2624
+  },
+  {
+    "path": "materials/starleaf_growth.png",
+    "sha256": "3CF10F8196878246C8780AB60DC766508648D5406DCD59F31D149660C3A52C1C",
+    "bytes": 7046
+  },
+  {
+    "path": "materials/starleaf_icon.png",
+    "sha256": "C789AECAAA24333F62BC5776D696BE9FD2CD7DAED1EFD47001C21C6DC54E0AED",
+    "bytes": 2545
+  },
+  {
+    "path": "potions/agility_12x16.png",
+    "sha256": "D3BF37A963E93763888525F142FF66F2B0634AA1F6397174F09DAF1495EFF3C5",
+    "bytes": 363
+  },
+  {
+    "path": "potions/agility_icon.png",
+    "sha256": "D3271675294A24929A442290B155677C53C3C56C7EE23722DA1CFAA24788744C",
+    "bytes": 1442
+  },
+  {
+    "path": "potions/antidote_12x16.png",
+    "sha256": "B9DCF5FC5F046C8E2D63477FFEE26D848529112660F6D1A2DA01D30B26C1EE8A",
+    "bytes": 466
+  },
+  {
+    "path": "potions/antidote_icon.png",
+    "sha256": "729CB27C04D866AAD6DA84D42AD8E7216EA31CB8CB51BE1734DD376F5358E461",
+    "bytes": 2127
+  },
+  {
+    "path": "potions/arcane_amplification_12x16.png",
+    "sha256": "AFA8B8D805E0C42737749141B4EF9B63FB6061A476BA3913180BA0930DB0BC96",
+    "bytes": 527
+  },
+  {
+    "path": "potions/arcane_amplification_icon.png",
+    "sha256": "74B1976CB41845CF3BFD3CC3C4B715B7B3473F111C5902DFBD5404ED1E03268F",
+    "bytes": 2176
+  },
+  {
+    "path": "potions/clarity_12x16.png",
+    "sha256": "BB2EBC09E5EF27286830CFB1CBE136DA40AB76AB9A2BDC4921729583C07A5747",
+    "bytes": 475
+  },
+  {
+    "path": "potions/clarity_icon.png",
+    "sha256": "4B427FA1CF26ECC7AEA6EE302D620ACC15B69C9A2D6C24AD50A63570B552B614",
+    "bytes": 2127
+  },
+  {
+    "path": "potions/eternity_12x16.png",
+    "sha256": "9B960F7A3BD2FD60EAB799A68AACC2C7BF336E520166D8311F0B86644D0C34CF",
+    "bytes": 495
+  },
+  {
+    "path": "potions/eternity_icon.png",
+    "sha256": "91D424BAAD6DA4A7B549924CD5F35E4E4C8A6A9C8930FFD199F456FC6302B036",
+    "bytes": 2193
+  },
+  {
+    "path": "potions/focus_12x16.png",
+    "sha256": "9BC52B38A638AEB7543650AD3FB0E6916AFD6E5683483C77C9079C62EA2A21E9",
+    "bytes": 355
+  },
+  {
+    "path": "potions/focus_icon.png",
+    "sha256": "1C625FF8173219401259E3E11229137B6C145D2C985151620438F6D36391E438",
+    "bytes": 1424
+  },
+  {
+    "path": "potions/fortune_12x16.png",
+    "sha256": "D157C0CD022D81CDF9E9B48F353894097764F7A037495820C89A409E99E8441C",
+    "bytes": 485
+  },
+  {
+    "path": "potions/fortune_icon.png",
+    "sha256": "86CD9E51D75CC782DD3428206DB44DAC1C301324E97DD4FB073EE6F7E776A923",
+    "bytes": 2304
+  },
+  {
+    "path": "potions/growth_12x16.png",
+    "sha256": "5691E768071440CA04527C3F314BC8E57A468FF3DD4C313B5103C2D7C95EDE8E",
+    "bytes": 505
+  },
+  {
+    "path": "potions/growth_icon.png",
+    "sha256": "C470282A2C4F707680E28FFC14173152CD58DB9C9812CBE473AB5203BCAEF420",
+    "bytes": 2574
+  },
+  {
+    "path": "potions/haste_12x16.png",
+    "sha256": "4CDCC7CB6DEC25A6685B252951CE9862BB3A18BC74AD890D22255B82044DB1AB",
+    "bytes": 400
+  },
+  {
+    "path": "potions/haste_icon.png",
+    "sha256": "35B2555EF164561D28BFAD62C8B603B03BB8B4A88C75BB84FBF138723985D4F5",
+    "bytes": 1570
+  },
+  {
+    "path": "potions/health_12x16.png",
+    "sha256": "FC74FA913D3FD03165B888BC9D62DD82CE9E77EDC60F8E7051F7BF330C911FDE",
+    "bytes": 457
+  },
+  {
+    "path": "potions/health_icon.png",
+    "sha256": "B5C0A70506622B2B4226843A31BDA6EF195477BFE25847204AB70E4931F3F487",
+    "bytes": 1940
+  },
+  {
+    "path": "potions/illusion_12x16.png",
+    "sha256": "6C62000036F3886ED28590197777171503C48EB6C3780ED3973779436264EE89",
+    "bytes": 453
+  },
+  {
+    "path": "potions/illusion_icon.png",
+    "sha256": "07DE692975C0F0E8A16CA0580EC8895D4DB65DA6DC24293E82E62AC6D29B0042",
+    "bytes": 1917
+  },
+  {
+    "path": "potions/iron_skin_12x16.png",
+    "sha256": "BCFE0B2EC73BACB5DDA2FE8FEB29E463EDE92E2374FBC4027FFC52807EC81425",
+    "bytes": 554
+  },
+  {
+    "path": "potions/iron_skin_icon.png",
+    "sha256": "02E89695EDFBC305CD7D349F6D7AAE6DC7B5E1955FE9BD5985CE243CCD031125",
+    "bytes": 2354
+  },
+  {
+    "path": "potions/mana_12x16.png",
+    "sha256": "7F01057054A7F94707D8FE498553B2A2380286BEE31FD33603FD149A259D56CC",
+    "bytes": 462
+  },
+  {
+    "path": "potions/mana_icon.png",
+    "sha256": "1A4B13FBE1F0349C1679EBDD5964A7F872F22E5B502439BF40C2955F1464131B",
+    "bytes": 1950
+  },
+  {
+    "path": "potions/moon_12x16.png",
+    "sha256": "15AF40C0F70476B92071030C85B942DB7E40953220AA1D7B6F4987B6945E483C",
+    "bytes": 529
+  },
+  {
+    "path": "potions/moon_icon.png",
+    "sha256": "9193A36C8F4B8ADF5849395AC9EE3C53BBC6DC26C405605E3A53444E58F6C2A8",
+    "bytes": 2292
+  },
+  {
+    "path": "potions/moonradiance_12x16.png",
+    "sha256": "E22CE90A51136113FE494D40B317D478D76E904392AB80B31C80FB1C66FAC83E",
+    "bytes": 460
+  },
+  {
+    "path": "potions/moonradiance_icon.png",
+    "sha256": "48CFB87F94FEEF4770A341C811CBF4F7D4B80D2698BBCCE60E7C0FD0E7890245",
+    "bytes": 1911
+  },
+  {
+    "path": "potions/nightwalk_12x16.png",
+    "sha256": "29B8BF2CB57C0A9FE103346E43D4A4753337CF59B7A33E40FA41DCC48750D840",
+    "bytes": 505
+  },
+  {
+    "path": "potions/nightwalk_icon.png",
+    "sha256": "53356254782B0E01470250319C061C785EDA9D760B995685C3CB270BC9618658",
+    "bytes": 2296
+  },
+  {
+    "path": "potions/poison_resistance_12x16.png",
+    "sha256": "B1F2D5A859B84164C77304C1897EAABE53669D58470029EBECF5F4F07C07613F",
+    "bytes": 457
+  },
+  {
+    "path": "potions/poison_resistance_icon.png",
+    "sha256": "24D7D06AAF0FD9DF5369EC4C56AAB1F73B21E3F590689D5EEC203EC86089112D",
+    "bytes": 1934
+  },
+  {
+    "path": "potions/purify_12x16.png",
+    "sha256": "8AFF74B844CB9098B8A7DC3B4733E6130292C748F8F0F0530CE9C1F952A5F4CE",
+    "bytes": 588
+  },
+  {
+    "path": "potions/purify_icon.png",
+    "sha256": "6BD2648B328FDE4C4B57E480796C10C9128193F1BEA1813E4BFC9BCEA2223EF5",
+    "bytes": 2479
+  },
+  {
+    "path": "potions/reflection_12x16.png",
+    "sha256": "40E3FD4A179F20A64E748B5B700B8774FD2C620AB848F3DE08DEEE35354C0BB3",
+    "bytes": 458
+  },
+  {
+    "path": "potions/reflection_icon.png",
+    "sha256": "DC694426F8EDD067874EB23ACC4F220D0C45667630E08FD89FBC28DCA7BAB95F",
+    "bytes": 2141
+  },
+  {
+    "path": "potions/regeneration_12x16.png",
+    "sha256": "0F84ADA4F2B5B4646B27A0AE06B6FF15D46D1621F81E8970C6977031BFF52609",
+    "bytes": 554
+  },
+  {
+    "path": "potions/regeneration_icon.png",
+    "sha256": "1B5815292923A276D1DC714BD8E1D8591C3C11F1676671683CF8788EE74E9AB0",
+    "bytes": 2491
+  },
+  {
+    "path": "potions/restoration_12x16.png",
+    "sha256": "D7115F3A99A319B2B594FE977F6883F8506EA04234E300E4DBD54E61F168581D",
+    "bytes": 462
+  },
+  {
+    "path": "potions/restoration_icon.png",
+    "sha256": "9A238C99A592E8D067A5C36962FFF010F5353AF1B993E6FA774F7C2590849CFE",
+    "bytes": 2024
+  },
+  {
+    "path": "potions/sage_elixir_12x16.png",
+    "sha256": "73400EAD1B9AD83DA22154DA2D1B72B94050367949EA777E31E6F3A409F9EA33",
+    "bytes": 526
+  },
+  {
+    "path": "potions/sage_elixir_icon.png",
+    "sha256": "7EB2636D2EBD037D2002FE78E16C05CA48837432833EAAC62B1B70A41F0A1493",
+    "bytes": 2234
+  },
+  {
+    "path": "potions/shadow_elixir_12x16.png",
+    "sha256": "6B25DC076230030EA7E7133ABE754F42B158932B43905B901041F015FB6B856A",
+    "bytes": 443
+  },
+  {
+    "path": "potions/shadow_elixir_icon.png",
+    "sha256": "669E098CA2AC8FF05D8DAA7FF173BA9F49AB3A901DA2BBC72ED61C6F49608564",
+    "bytes": 1755
+  },
+  {
+    "path": "potions/soul_purification_12x16.png",
+    "sha256": "EF1F2889982E10CA68877CFDFCCD44DEF49040E7E986A21C19B5C8468D1D3B2B",
+    "bytes": 455
+  },
+  {
+    "path": "potions/soul_purification_icon.png",
+    "sha256": "8C3A9AA27A893694961347390D86D5D012D1AB9BFE3D45C2B00EFF053B817BEB",
+    "bytes": 1848
+  },
+  {
+    "path": "potions/spirit_12x16.png",
+    "sha256": "F3006460084AB397439DF59096CA39FEC8D3120D4161E19C31E58E4C1B2DFC97",
+    "bytes": 457
+  },
+  {
+    "path": "potions/spirit_icon.png",
+    "sha256": "79F97B5CE8060D2DFBE8D66BC3B9CF3D682DF5AC34B1D29A05C38BB994AB56A7",
+    "bytes": 2037
+  },
+  {
+    "path": "potions/starlight_12x16.png",
+    "sha256": "10E9134FF5DCD03124F721FF80EB698CE4116D16A05495BE2489AEB3FA9F9472",
+    "bytes": 416
+  },
+  {
+    "path": "potions/starlight_icon.png",
+    "sha256": "A4AF62688F99789C04E4316D52D70B45908A739770937D11480DE4832CBF0FA5",
+    "bytes": 2134
+  },
+  {
+    "path": "potions/stealth_12x16.png",
+    "sha256": "5CE652F67A3F78E822EE8465B580BAC6D40896F84F262671F64AAF9254A09443",
+    "bytes": 538
+  },
+  {
+    "path": "potions/stealth_icon.png",
+    "sha256": "CD7FEBA66586FF2C1A3A9D3EFD9B00773AB9B2F281F1048D54B8E028C647179F",
+    "bytes": 2389
+  },
+  {
+    "path": "potions/vigor_12x16.png",
+    "sha256": "64F1FDB1E96E934D3EB9B9EB6CEBF6F5785A895B5B02F1AAEE08E376F97049B3",
+    "bytes": 515
+  },
+  {
+    "path": "potions/vigor_icon.png",
+    "sha256": "655A7C4BFC9ADE2B951D62B5BE34BA5A5E5C96F196832817BC156AA0FF82555B",
+    "bytes": 2313
+  },
+  {
+    "path": "potions/ward_12x16.png",
+    "sha256": "CC5D185AC3250B5E48209233E5A5BD5FDA4208F3104E47D8C673893E74D79403",
+    "bytes": 513
+  },
+  {
+    "path": "potions/ward_icon.png",
+    "sha256": "FA63000D181CB01D5CAB6BE0F0542DC3D1657B1EE03E45EE72A11A0C2325C818",
+    "bytes": 2135
+  },
+  {
+    "path": "potions/wisdom_12x16.png",
+    "sha256": "8928235EFC3935970D078B2EC0135C13291F92A8A3568A7CFB65C126B325D867",
+    "bytes": 493
+  },
+  {
+    "path": "potions/wisdom_icon.png",
+    "sha256": "A1870B78629502AC67010AE76E22E44AF2796D13BBC60C9484CFC5B2165E9C0D",
+    "bytes": 2305
+  },
+  {
+    "path": "potions/wish_12x16.png",
+    "sha256": "90C68A6A1BD2338FAD523B7DBD865215E7639087E4C61076062BF08C664D2C71",
+    "bytes": 385
+  },
+  {
+    "path": "potions/wish_icon.png",
+    "sha256": "FBA4D2909600C81138F0C66C1200C3A527B0193CD8AA3C2112780ACE4A74427F",
+    "bytes": 1622
+  },
+  {
+    "path": "potions/worldtree_elixir_12x16.png",
+    "sha256": "19BBD997D6E17897B6404BA37D2AC3E1833CF7292F5C12FE21D8ECE3662D97C6",
+    "bytes": 491
+  },
+  {
+    "path": "potions/worldtree_elixir_icon.png",
+    "sha256": "862968D010A8DA55C669873A4EED3594A1000E3B39CC8DDDC9E3B55CCB115B49",
+    "bytes": 2269
+  },
+  {
+    "path": "previews/employees.png",
+    "sha256": "73EE91F685DA344884C4CC031C1F4823E20E589E2916F72B98D0587F527D6E17",
+    "bytes": 30806
+  },
+  {
+    "path": "previews/equipment.png",
+    "sha256": "F8CBD6ABF9031BCF33046B8D5DCC6C656D169D911D94FBD13F1AE566851A85AB",
+    "bytes": 103491
+  },
+  {
+    "path": "previews/families.png",
+    "sha256": "2CF5077D67FF789B022A2F171A5B05A1EED617656721708B5CA805539DF6D0E9",
+    "bytes": 25699
+  },
+  {
+    "path": "previews/first-batch.png",
+    "sha256": "B302CD97FB04E1CE55FEEF3CF40A48D4E688E61C9D3DDC0F6961AC916C6DFA4F",
+    "bytes": 51643
+  },
+  {
+    "path": "previews/growth.png",
+    "sha256": "C40940E4876A8AE24515250083A661B05B206204F5C64308ABDA630DB558B366",
+    "bytes": 124012
+  },
+  {
+    "path": "previews/materials.png",
+    "sha256": "594E41AD786E907260EDC06E39092F6280CD41AEC59539C61F7B0E1C4C46DF4D",
+    "bytes": 59590
+  },
+  {
+    "path": "previews/potions.png",
+    "sha256": "41EF0941691B678F7AA83A948A8418572FDB9B234296993E98D93A24728BB6D1",
+    "bytes": 158332
+  },
+  {
+    "path": "previews/regions.png",
+    "sha256": "3C3B7970D96A7572CE2C3412ED7E5C705AFA3796E44859048268285587C372E2",
+    "bytes": 55146
+  },
+  {
+    "path": "regions/abandoned_greenhouse_icon.png",
+    "sha256": "D6F7C94DA0D57BCA62D37D3A0FF73A837524787065C9973372AA149F94BF4938",
+    "bytes": 2918
+  },
+  {
+    "path": "regions/crystal_mine_icon.png",
+    "sha256": "8E92FC3C1E6CC01ACCE1A47349CA96A4106810E53E44CF455EE72F14F7894728",
+    "bytes": 2496
+  },
+  {
+    "path": "regions/fog_marsh_icon.png",
+    "sha256": "AB87DC50906B6CD088009059DB5EA5FB7672E7987C4F1BDDDAF162B713C4F78F",
+    "bytes": 2200
+  },
+  {
+    "path": "regions/forest_edge_icon.png",
+    "sha256": "6403AF3F7724A543CD3B78B67BD1E37C503E5ABC47EFD98D4B01B627F7A1E9E8",
+    "bytes": 2510
+  },
+  {
+    "path": "regions/forgotten_tower_icon.png",
+    "sha256": "2956E49F9D3E5BEE289CAA72E527F5C1848CAD0811667E6B45FAC57049539792",
+    "bytes": 2230
+  },
+  {
+    "path": "regions/mist_valley_icon.png",
+    "sha256": "7838230119DCD39FAA9E4A3A08A7AF3E1BF3E0BECABF729D652ADB9C5E700BFD",
+    "bytes": 2968
+  },
+  {
+    "path": "regions/moon_ruins_icon.png",
+    "sha256": "F2B3BA6079E4CF73A6883850C135D28D9AE79D78508210828A778051699E0054",
+    "bytes": 2232
+  },
+  {
+    "path": "regions/star_garden_icon.png",
+    "sha256": "DD0A0917425ECD5547E726F69F31C032E5FDC7111C1AE5615AE18CBC3552DDA8",
+    "bytes": 3066
+  },
+  {
+    "path": "source/abandoned_greenhouse.png",
+    "sha256": "407EA94A4478742BD5167A80158A5802E22AC1F0B66138F4BC547EC0B55726E0",
+    "bytes": 1179257
+  },
+  {
+    "path": "source/antidote.png",
+    "sha256": "2B181F5FA6369A9F0632812A5EF48DB26EFC9F2997E40A603893B3035FC43667",
+    "bytes": 657034
+  },
+  {
+    "path": "source/arcane_amplification.png",
+    "sha256": "645F3CF56AD39FCD947DB4859CF56B233685ACCE6A7BF79FAC2EAC094EF58090",
+    "bytes": 781193
+  },
+  {
+    "path": "source/arcane.png",
+    "sha256": "49EF467BBE99EA471E10E594ACBA90661C70120D14AB97841594F567BB5B03C0",
+    "bytes": 526595
+  },
+  {
+    "path": "source/ash_sage.png",
+    "sha256": "D13D7A5019614D8DA430FB2439BA362BE26329F1ACBDA842CAB1672A49F4BFAD",
+    "bytes": 1520364
+  },
+  {
+    "path": "source/blue_reed.png",
+    "sha256": "12A2FC1CA4185A65466903769D6F19545EFCFA5C3ACDD5E538F7C9D6604591DE",
+    "bytes": 1491687
+  },
+  {
+    "path": "source/brewing_assistant.png",
+    "sha256": "5C256355607E01F9C7B0BA9F7B432D06B739412C08A73430C10E350B88C39B77",
+    "bytes": 693997
+  },
+  {
+    "path": "source/cauldron.png",
+    "sha256": "6E4CFB539F075AAF51293372F3C5291421DC27D852E0EF58002E291B774065EA",
+    "bytes": 978097
+  },
+  {
+    "path": "source/clarity.png",
+    "sha256": "9FDFCD42CB6672560F63A394399C0924A1BD94C74481C14617825D83C0994B1C",
+    "bytes": 709826
+  },
+  {
+    "path": "source/craft.png",
+    "sha256": "080C20202856F56C8656573BEAE629EEA244D1229842032168412A94B75E4222",
+    "bytes": 472383
+  },
+  {
+    "path": "source/crystal_herb.png",
+    "sha256": "78B3FCD1C6FFF3304E61A69B702812B3EA5C0436CCF234E62E52B1DC6BB112F4",
+    "bytes": 1362886
+  },
+  {
+    "path": "source/crystal_mine.png",
+    "sha256": "D3CE380A2EBF539C8568106B902BFAB45972B962AE63DC647C4815BF6F29F314",
+    "bytes": 756518
+  },
+  {
+    "path": "source/cultivation_assistant.png",
+    "sha256": "B25B9D31123AF3A0516E2670B3A488ADD16711D3827D6754F5DF8A15C9D8400F",
+    "bytes": 755208
+  },
+  {
+    "path": "source/dewgrass.png",
+    "sha256": "1C13D1ABD93B7BE7B30A82DCE022489CAF55EBA48EE91F8D5A1CFCCA68D95546",
+    "bytes": 1437342
+  },
+  {
+    "path": "source/drying_rack.png",
+    "sha256": "969FD068F8F0AB66B5E5192CBED84E1DAB000E1FAA3BCECF66747E5D22A3177D",
+    "bytes": 1374847
+  },
+  {
+    "path": "source/eternity.png",
+    "sha256": "C7C6775B12B91BDDC3C5BE67CFA2483A306D03B19B3506C230E99B481B4A70EF",
+    "bytes": 756840
+  },
+  {
+    "path": "source/expedition_guide.png",
+    "sha256": "703B39F933C72AAABABD265167A1B8C20AA28648DC76EDB8DF7695B95B419CD2",
+    "bytes": 730387
+  },
+  {
+    "path": "source/expedition_path.png",
+    "sha256": "AFC6C5D6917B21C4850694F3763A5C840CCCE18228BBFAAA75B3C5F34AF80363",
+    "bytes": 782455
+  },
+  {
+    "path": "source/focus.png",
+    "sha256": "22D0DB8F03567A4DA42228A76C5E9E3539F5A45FF8285244DA8B80169886F83C",
+    "bytes": 457852
+  },
+  {
+    "path": "source/fog_marsh.png",
+    "sha256": "88538E0733A9163A9F55D1C59596B245A2AEEEC59C0B68C2DB44794DC8AECCE2",
+    "bytes": 773975
+  },
+  {
+    "path": "source/forgotten_tower.png",
+    "sha256": "599AE9377C37FB9ABF66C7D0509456F520C76A3DE11B29137846CE5446DE41E4",
+    "bytes": 641592
+  },
+  {
+    "path": "source/fortune.png",
+    "sha256": "0D953EB771CA0396901898110B13CE480C4CED474CA4006172B0BA4841628E69",
+    "bytes": 837979
+  },
+  {
+    "path": "source/growth.png",
+    "sha256": "BECA46EE50CC43472FBFBA4DE03D77020CA1153489EB849E1ED562B94E3F8BCD",
+    "bytes": 778179
+  },
+  {
+    "path": "source/haste.png",
+    "sha256": "9891703DFD0AEE5A88B47E5255471BD3DDD0F4AF4FCCEF906B8522A6DCD03258",
+    "bytes": 521923
+  },
+  {
+    "path": "source/herb_pot.png",
+    "sha256": "97C20D38AB427E373D0FF8EED3EB9082B91D80AB939F602F754A1555D6AFBD40",
+    "bytes": 1325431
+  },
+  {
+    "path": "source/herb_storage.png",
+    "sha256": "6F6C902BD65079E546EB5C6EBC50E2BD58BE61E1A538BE2250D05B201B401D12",
+    "bytes": 1136950
+  },
+  {
+    "path": "source/illusion.png",
+    "sha256": "76F13B98B620B0044336EBBC50845FB3A3BE442DA63F4E8C6E01060AFF2D9689",
+    "bytes": 657661
+  },
+  {
+    "path": "source/iron_skin.png",
+    "sha256": "08BDFDCA5FC89DCFB85E6AB50B8CBD63A853E5C65A2BA0C4718C79C91C670630",
+    "bytes": 879050
+  },
+  {
+    "path": "source/mist_mushroom.png",
+    "sha256": "4CC52D723368C353297EB8043502FCEEFCB632101C7F7E10B0DA12A934142F60",
+    "bytes": 1391020
+  },
+  {
+    "path": "source/mist_valley.png",
+    "sha256": "0B3845A12E20342C6FDD0723A9ACFA330B2BB65893923C731FF049C066ECC977",
+    "bytes": 1070239
+  },
+  {
+    "path": "source/moon_ruins.png",
+    "sha256": "2479EE8FCE8B3BAB4C58A7DD9870A0EDF0391085D1044426BE3BD746B673946C",
+    "bytes": 808908
+  },
+  {
+    "path": "source/moonflower.png",
+    "sha256": "28226CFD51A5F3F6FC0E35007C3FC641484FD07E821C4201CB2DF625F9E40690",
+    "bytes": 1369791
+  },
+  {
+    "path": "source/moonradiance.png",
+    "sha256": "2F5DE16720CE20873ACCF0414F83641E335E0866E7A099CABD73B765968A7E17",
+    "bytes": 585199
+  },
+  {
+    "path": "source/nature.png",
+    "sha256": "5D9BA49579BEE5A4C2D85B7BAE2C20CB63C14D6FCC1448816D9769538EC6083D",
+    "bytes": 635550
+  },
+  {
+    "path": "source/nightwalk.png",
+    "sha256": "AA5551E5163A99F3E325C0ADD764F873103B25F6C15E81ACDE3321E327B018CA",
+    "bytes": 781277
+  },
+  {
+    "path": "source/poison_resistance.png",
+    "sha256": "9E65194C20983976EC43D1CFB71EB62B968A9F2B5DDB27824659072C962F11E1",
+    "bytes": 657468
+  },
+  {
+    "path": "source/potion_cabinet.png",
+    "sha256": "8558A9BDC65D2E94F4344624EDE5614C477941B3B62A6D1459DD53130B1497BD",
+    "bytes": 1117322
+  },
+  {
+    "path": "source/precision_filter.png",
+    "sha256": "0B595231AB8E9F70E8937D04873FA321458115EA2865FC40BE7E4A197FCBE64D",
+    "bytes": 1506171
+  },
+  {
+    "path": "source/reflection.png",
+    "sha256": "2C9A801967CC4D722E013D50087C2E8D7BB8D22B73BC583FC31C87FEA7DFD53E",
+    "bytes": 665461
+  },
+  {
+    "path": "source/regeneration.png",
+    "sha256": "8BB465CEECECAE59524EA99D1C712F82AF1EB4FB02C528E070D15FD19739AD28",
+    "bytes": 961276
+  },
+  {
+    "path": "source/restoration.png",
+    "sha256": "591FC80CE79150E59F9641B053996989B8134AA38D805AD0D61A9EECD8FC3A81",
+    "bytes": 776821
+  },
+  {
+    "path": "source/sage_elixir.png",
+    "sha256": "26EA2E9CD64137F8781DE447528380242AADB17A696B334ACEE38AC00DC31BA1",
+    "bytes": 822246
+  },
+  {
+    "path": "source/sales_counter.png",
+    "sha256": "1CBEB4247479220C48B339AA2CD815116D3E29F473C3F66EEB55D01A8901158A",
+    "bytes": 787008
+  },
+  {
+    "path": "source/shadow_elixir.png",
+    "sha256": "76E127F8213C97E46471259B4681BED676A7F2A03A997009A6E036A0B626DFA6",
+    "bytes": 661685
+  },
+  {
+    "path": "source/silver_moss.png",
+    "sha256": "62F8FCF41E3A3D709DF34D9AFA2291F21A58D551F670432BAECFB9E2188496D2",
+    "bytes": 1325382
+  },
+  {
+    "path": "source/soul_purification.png",
+    "sha256": "6507CCDE70223D0C17FF1926BB0674E86296A5B6D10F30B9EDA0D26D1127AD8D",
+    "bytes": 679143
+  },
+  {
+    "path": "source/spirit.png",
+    "sha256": "6CB8434C785C56DCD029461741841DD5623926FDDD7637600B22A39542C27046",
+    "bytes": 812205
+  },
+  {
+    "path": "source/star_garden.png",
+    "sha256": "E8AD37AB9E4604EF95056C71F02643B91813F2AB78C523064EE2B9E35BB6D160",
+    "bytes": 1101533
+  },
+  {
+    "path": "source/star_seed.png",
+    "sha256": "E8A7613B7C21838497870DF5A710661FE02FD598F73403720C936D9B961BF663",
+    "bytes": 1513987
+  },
+  {
+    "path": "source/starlight.png",
+    "sha256": "A2C55AFED9298BBC92C46D1E2CF96D70AA12EA60B6F2DEB9402123B4F6B12B3E",
+    "bytes": 681850
+  },
+  {
+    "path": "source/stealth.png",
+    "sha256": "0B99920141A4B28FB87A7E73890B095268D7F3D397C13517C44E6F8C1403579B",
+    "bytes": 850226
+  },
+  {
+    "path": "source/vigor.png",
+    "sha256": "1D6200EB236764C11B2C203AE2C0A94F07AA4B518667A3EFABFD7DE325BDAEBE",
+    "bytes": 795198
+  },
+  {
+    "path": "source/vitality.png",
+    "sha256": "A7484735D903E7A5405A2E827E2687E86A446E0CE5C11F490D4D167FEF28BE33",
+    "bytes": 604272
+  },
+  {
+    "path": "source/ward.png",
+    "sha256": "5D1D99088642B71A3891987E1B096AA9BA25B5715ABBE3D056EAFB31FFF5C07B",
+    "bytes": 748943
+  },
+  {
+    "path": "source/wisdom.png",
+    "sha256": "B41C54ADA5FEF34FA333A0C3B6707D2AEFFB8E340FCAAF5210CE99D4F7659B2E",
+    "bytes": 757759
+  },
+  {
+    "path": "source/wish.png",
+    "sha256": "30A82CD436CE2F2F289A399B16E88064DB36471D1B6DDD0A33F4CBF6D728C366",
+    "bytes": 556365
+  },
+  {
+    "path": "source/worldtree_elixir.png",
+    "sha256": "D53B0BA849CDDF2BC758C34E852E83D86B57A6C0D792643C576F2EBE6B78313B",
+    "bytes": 805079
+  },
+  {
+    "path": "tiers/basic.svg",
+    "sha256": "E0CD296BDBBF9BDA08F82E70F7F926403DDC0A8544E423153394937CAD808676",
+    "bytes": 306
+  },
+  {
+    "path": "tiers/improved.svg",
+    "sha256": "5193177C92209336271A72966A7A88F5DB95ADB2C4036A2A8B73E0105776E063",
+    "bytes": 361
+  },
+  {
+    "path": "tiers/premium.svg",
+    "sha256": "016448AC60CEC8D80455F8B905EE108D6C36992FDE21783BE7A7AAAED0D2A858",
+    "bytes": 417
+  },
+  {
+    "path": "tiers/rank_1.svg",
+    "sha256": "B45E0B35AAEF2A8BC87BB87A8A79DF394E48BD870C3F8DCC4E0C350B115F03F7",
+    "bytes": 308
+  },
+  {
+    "path": "tiers/rank_2.svg",
+    "sha256": "E9C3C3A27F347FE3A80A25CDBB51B028465C9452239043591414E169314B005B",
+    "bytes": 363
+  },
+  {
+    "path": "tiers/rank_3.svg",
+    "sha256": "C168FF5FADF81FDA50939ED8C73C72263709391F472DF1D0F9C62AE80DCEB720",
+    "bytes": 419
+  },
+  {
+    "path": "tiers/rank_4.svg",
+    "sha256": "9DC927154B407E3AE792A22E1C51180814B503D6CED6C88F3ADA8DDE1A55FC52",
+    "bytes": 474
+  },
+  {
+    "path": "tiers/rank_5.svg",
+    "sha256": "6A9F82D2EC70264705D1C67E3B7ED203B4A2CBB99B729557CE2546B2C850642E",
+    "bytes": 530
+  }
+]

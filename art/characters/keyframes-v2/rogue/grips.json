@@ -1,0 +1,4 @@
+{
+  "receive_extend": [4,30],
+  "receive_hold": [12,34]
+}

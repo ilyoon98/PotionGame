@@ -1,0 +1,12 @@
+{
+  "id": "rare_nebula_distillate",
+  "variant": "recipe",
+  "prompt": "Use case: stylized-concept. Reference image is ONLY the paired potion's palette, pixel style and emblem. Generate a brand new separate RECIPE SCROLL inventory icon, not another bottle. ONE small upright antique ivory parchment scroll with two curled ends, dark plum #432039 stepped square-pixel outline, antique gold accents, a broad central stamp in deep indigo navy blue with one ivory four-point star with a single gold spiral curling around it. Repeat the exact meaning of the reference emblem in a large bold simple central colored seal. The scroll and its big stamp must read at logical32x40 pixels; use chunky hard square clusters, 4 flat shades, ample padding. True transparent alpha. No bottle illustration, actual bottle object, lettering, text, pseudo-writing, numerals, ingredient drawings, extra particles, glow, drop shadow, floor, gradients or background. All edges crisp. Full scroll visible.",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "reference_role": "paired_potion_palette_silhouette_emblem",
+  "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_potion.png",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-c09b9eb9-fb95-4dbe-b265-fc0c808353db.png",
+  "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_nebula_distillate_recipe.png",
+  "transparent_background": true
+}

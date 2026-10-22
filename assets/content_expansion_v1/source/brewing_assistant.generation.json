@@ -1,0 +1,10 @@
+{
+  "id": "brewing_assistant",
+  "name": "조제 보조",
+  "category": "employees",
+  "prompt": "Use case: stylized-concept. Asset type: one production UI icon for a tiny cozy witch potion-shop game. ONE isolated complete object/emblem centered on REAL transparent alpha background, generous padding. Front orthographic or gentle front three-quarter view. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm antique gold #efc77c, ivory highlights, muted violet/sage accents, 4 flat clustered shades, readable at logical 32x40 pixels. No text, letters, digits, watermark, glow, blur, gradients, cast shadow, floor or background scene. Subject: one ivory mortar and plum pestle with gold rim, tiny lavender herb leaf in mortar and simple lilac potion drop emblem on bowl; compact unified apothecary tool.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-57b23e27-bf2d-4ecc-85f7-ee9f4a2b4d89.png",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "project_source": "res://assets/content_expansion_v1/source/brewing_assistant.png"
+}

@@ -1,0 +1,2248 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/full-ingame-v1",
+  "scene": {
+    "size": [
+      180,
+      100
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "window",
+      "source": "art/mockups/full-ingame-v1/source/window.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.1,
+            0.22
+          ],
+          "value_min": 0.78
+        }
+      ],
+      "fallback_material": "wood"
+    },
+    {
+      "id": "shelf_frame",
+      "source": "art/mockups/full-ingame-v1/source/shelf_frame.png",
+      "size": [
+        48,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.1,
+            0.22
+          ],
+          "value_min": 0.78
+        }
+      ],
+      "fallback_material": "wood"
+    },
+    {
+      "id": "counter",
+      "source": "art/mockups/full-ingame-v1/source/counter.png",
+      "size": [
+        48,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.1,
+            0.22
+          ],
+          "value_min": 0.78
+        }
+      ],
+      "fallback_material": "wood"
+    },
+    {
+      "id": "poster",
+      "source": "art/mockups/full-ingame-v1/source/poster.png",
+      "size": [
+        24,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "purple": [
+          "#50315F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "purple",
+          "hue": [
+            0.65,
+            0.9
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.1,
+            0.22
+          ],
+          "value_min": 0.78
+        }
+      ],
+      "fallback_material": "wood"
+    },
+    {
+      "id": "herb_station",
+      "source": "art/mockups/full-ingame-v1/source/herb_station.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.2,
+            0.45
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.07,
+            0.22
+          ],
+          "value_min": 0.85
+        },
+        {
+          "material": "wood",
+          "y_min": 0.73
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "elf",
+      "source": "art/mockups/full-ingame-v1/source/elf.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0,
+            0.17
+          ],
+          "value_min": 0.82
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.2,
+            0.45
+          ]
+        }
+      ],
+      "fallback_material": "wood"
+    },
+    {
+      "id": "cauldron_moon",
+      "source": "art/mockups/cozy-witch-v1/cauldron-native.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "liquid": [
+          "#C38EB5"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "stone": [
+          "#827589"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.04,
+            0.19
+          ],
+          "saturation_min": 0.35
+        },
+        {
+          "material": "liquid",
+          "hue": [
+            0.36,
+            0.62
+          ],
+          "saturation_min": 0.22
+        },
+        {
+          "material": "stone",
+          "y_min": 0.78,
+          "saturation_max": 0.35
+        }
+      ],
+      "fallback_material": "purple",
+      "preserve_native_frame": true,
+      "material_ramps": {
+        "liquid": "purple"
+      }
+    },
+    {
+      "id": "potion_health",
+      "source": "assets/potion_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#A65D64",
+          "#DE9B88"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "skin"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_mana",
+      "source": "assets/mana_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#24566A",
+          "#3BA8A3"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_moon",
+      "source": "assets/items_v1/moon_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#86548E",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_purify",
+      "source": "assets/items_v1/purify_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_agility",
+      "source": "assets/items_v1/agility_12x16.png",
+      "size": [
+        8,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "gold"
+      },
+      "preserve_source_outline": true,
+      "native_crop": [
+        2,
+        0,
+        10,
+        16
+      ],
+      "preserve_native_frame": true
+    },
+    {
+      "id": "potion_vigor",
+      "source": "assets/content_expansion_v1/potions/vigor_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#9D4359",
+          "#DE7356"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "fire"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_antidote",
+      "source": "assets/content_expansion_v1/potions/antidote_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#3D544D",
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "leaf"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_fortune",
+      "source": "assets/content_expansion_v1/potions/fortune_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#A56A3D",
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "gold"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_focus",
+      "source": "assets/content_expansion_v1/potions/focus_12x16.png",
+      "size": [
+        8,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#24566A",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true,
+      "native_crop": [
+        2,
+        0,
+        10,
+        16
+      ],
+      "preserve_native_frame": true
+    },
+    {
+      "id": "potion_restoration",
+      "source": "assets/content_expansion_v1/potions/restoration_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#DE9B88",
+          "#F6D1AC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "skin"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_growth",
+      "source": "assets/content_expansion_v1/potions/growth_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "leaf"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_clarity",
+      "source": "assets/content_expansion_v1/potions/clarity_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_ward",
+      "source": "assets/content_expansion_v1/potions/ward_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#4A3C52",
+          "#827589"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "stone"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_spirit",
+      "source": "assets/content_expansion_v1/potions/spirit_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#24566A",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_arcane_amplification",
+      "source": "assets/content_expansion_v1/potions/arcane_amplification_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_iron_skin",
+      "source": "assets/content_expansion_v1/potions/iron_skin_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#4A3C52",
+          "#827589"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "stone"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_stealth",
+      "source": "assets/content_expansion_v1/potions/stealth_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_poison_resistance",
+      "source": "assets/content_expansion_v1/potions/poison_resistance_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#3D544D",
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "leaf"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_illusion",
+      "source": "assets/content_expansion_v1/potions/illusion_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#86548E",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_soul_purification",
+      "source": "assets/content_expansion_v1/potions/soul_purification_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_wisdom",
+      "source": "assets/content_expansion_v1/potions/wisdom_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#86548E",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_reflection",
+      "source": "assets/content_expansion_v1/potions/reflection_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#24566A",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_haste",
+      "source": "assets/content_expansion_v1/potions/haste_12x16.png",
+      "size": [
+        8,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "gold"
+      },
+      "preserve_source_outline": true,
+      "native_crop": [
+        2,
+        0,
+        10,
+        16
+      ],
+      "preserve_native_frame": true
+    },
+    {
+      "id": "potion_nightwalk",
+      "source": "assets/content_expansion_v1/potions/nightwalk_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_moonradiance",
+      "source": "assets/content_expansion_v1/potions/moonradiance_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "gold"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_regeneration",
+      "source": "assets/content_expansion_v1/potions/regeneration_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#A65D64",
+          "#F6D1AC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "skin"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_starlight",
+      "source": "assets/content_expansion_v1/potions/starlight_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_wish",
+      "source": "assets/content_expansion_v1/potions/wish_12x16.png",
+      "size": [
+        8,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "gold"
+      },
+      "preserve_source_outline": true,
+      "native_crop": [
+        2,
+        0,
+        10,
+        16
+      ],
+      "preserve_native_frame": true
+    },
+    {
+      "id": "potion_eternity",
+      "source": "assets/content_expansion_v1/potions/eternity_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#A56A3D",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "gold"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_sage_elixir",
+      "source": "assets/content_expansion_v1/potions/sage_elixir_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_worldtree_elixir",
+      "source": "assets/content_expansion_v1/potions/worldtree_elixir_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "leaf"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_shadow_elixir",
+      "source": "assets/content_expansion_v1/potions/shadow_elixir_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_rare_forest_breath",
+      "source": "assets/rare_recipes_v1/potions/rare_forest_breath_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "leaf"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_rare_mist_veil",
+      "source": "assets/rare_recipes_v1/potions/rare_mist_veil_12x16.png",
+      "size": [
+        8,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#24566A",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "teal"
+      },
+      "preserve_source_outline": true,
+      "native_crop": [
+        2,
+        0,
+        10,
+        16
+      ],
+      "preserve_native_frame": true
+    },
+    {
+      "id": "potion_rare_lunar_seal",
+      "source": "assets/rare_recipes_v1/potions/rare_lunar_seal_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#86548E",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    },
+    {
+      "id": "potion_rare_nebula_distillate",
+      "source": "assets/rare_recipes_v1/potions/rare_nebula_distillate_12x16.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glass": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "liquid": [
+          "#50315F",
+          "#C38EB5"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "y_max": 0.34,
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.28,
+          "value_max": 0.88
+        },
+        {
+          "material": "glass",
+          "saturation_max": 0.32,
+          "value_min": 0.8
+        }
+      ],
+      "fallback_material": "liquid",
+      "material_ramps": {
+        "glass": "gold",
+        "liquid": "purple"
+      },
+      "preserve_source_outline": true
+    }
+  ]
+}

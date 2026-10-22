@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "date": "2026-10-15",
+  "checks": {
+    "event_boundaries": [
+      {
+        "action": "receive",
+        "pose": "receive_extend",
+        "x": 48,
+        "y": 12,
+        "facing": "left",
+        "held": false,
+        "index": 19,
+        "elapsed": 8.4
+      },
+      {
+        "action": "receive",
+        "pose": "receive_extend",
+        "x": 48,
+        "y": 12,
+        "facing": "left",
+        "held": true,
+        "index": 19,
+        "elapsed": 8.45
+      },
+      {
+        "action": "depart",
+        "pose": "carry_pass_a",
+        "x": 48,
+        "y": 12,
+        "facing": "right",
+        "held": true,
+        "index": 17,
+        "elapsed": 10.2
+      },
+      {
+        "action": "depart",
+        "pose": "carry_contact_a",
+        "x": 131,
+        "y": 12,
+        "facing": "right",
+        "held": true,
+        "index": 10,
+        "elapsed": 13.35
+      },
+      {
+        "action": "arrive",
+        "pose": "walk_pass_a",
+        "x": 132,
+        "y": 12,
+        "facing": "left",
+        "held": false,
+        "index": 17,
+        "elapsed": 14.2
+      }
+    ],
+    "held_through_exit": true,
+    "original7poses": [
+      {
+        "id": "idle",
+        "sha256": "7b5f8c4dd4b3c07de725286944a3ab22dccc87330c5aad27aee1fde8e7ab5f76",
+        "unchanged": true
+      },
+      {
+        "id": "walk_contact_a",
+        "sha256": "0e2cd5ae9578c8534b73014b3a679009ff98cb341ced145723729256573e0e8f",
+        "unchanged": true
+      },
+      {
+        "id": "walk_pass_a",
+        "sha256": "7832ff1230f61a86475e35ca1b6fc81a0b281adfad1e2c9ad2540e4bfe890e05",
+        "unchanged": true
+      },
+      {
+        "id": "walk_contact_b",
+        "sha256": "a893209e9423f317163b0d720c945345548061dd392420e07a84b18307825d7f",
+        "unchanged": true
+      },
+      {
+        "id": "walk_pass_b",
+        "sha256": "0ce092f14664e2b2fbfbfbe6ed8a7f52a9b2202a58b81f3c83f7f91ef9604393",
+        "unchanged": true
+      },
+      {
+        "id": "receive_extend",
+        "sha256": "d8214b76af588e2d3e192b4311187c39aada4b66c1bc98273edbbb9c11a6885f",
+        "unchanged": true
+      },
+      {
+        "id": "receive_hold",
+        "sha256": "3531a8ccb31423a0e3f26a7482801d8643bf693c268d2b676f7684696603ee19",
+        "unchanged": true
+      }
+    ],
+    "motion_frame_count": 1408,
+    "actual_skin_grips": true,
+    "character_palette_colors": 5,
+    "native_pose_count": 11,
+    "recipe_facing_contacts": 432
+  }
+}

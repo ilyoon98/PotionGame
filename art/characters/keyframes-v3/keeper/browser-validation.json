@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:41239/art/characters/keyframes-v3/keeper/review.html",
+  "loaded_canvas_asset_batch": true,
+  "loop_first": {
+    "inspection": "frames/brew_reach.png",
+    "loaded": "true",
+    "mode": "brew",
+    "pose": "brew_reach"
+  },
+  "loop_second": {
+    "inspection": "frames/brew_stir_left.png",
+    "loaded": "true",
+    "mode": "brew",
+    "pose": "brew_stir_left"
+  },
+  "loop_changed": true,
+  "assets": [
+    {
+      "display": [
+        288,
+        288
+      ],
+      "id": "",
+      "loaded": true,
+      "native": [
+        96,
+        96
+      ],
+      "src": "keeper-keyframes-native.png"
+    },
+    {
+      "display": [
+        192,
+        288
+      ],
+      "id": "inspect-figure",
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "frames/brew_reach.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "id": "",
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../keyframes-v1/traveler/frames/idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "id": "",
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../keyframes-v1/mage/frames/idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "id": "",
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../keyframes-v2/elf/frames/idle.png"
+    },
+    {
+      "display": [
+        96,
+        144
+      ],
+      "id": "",
+      "loaded": true,
+      "native": [
+        32,
+        48
+      ],
+      "src": "../../keyframes-v2/rogue/frames/idle.png"
+    }
+  ],
+  "console": [],
+  "final_selection": "brew_reach",
+  "inspection_scale": 6,
+  "native_scale": 3
+}

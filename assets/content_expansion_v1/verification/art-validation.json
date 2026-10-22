@@ -1,0 +1,28 @@
+{
+	"checks": [
+		"all paths resolve",
+		"stable IDs unique",
+		"icons 32x40",
+		"bottles 12x16",
+		"real alpha/transparent padding",
+		"each bottle visually encoded with unique pixel data",
+		"recipe icon reuse",
+		"four nonempty growth frames",
+		"three distinct equipment tiers"
+	],
+	"counts": {
+		"employees": 4,
+		"equipment": 8,
+		"families": 4,
+		"materials": 11,
+		"potions": 32,
+		"regions": 8
+	},
+	"equipment_stages": 24,
+	"fully_reused_entries": 10,
+	"growth_sheets": 10,
+	"image_checks": 133,
+	"passed": true,
+	"readability_note": "12x16 preserves bottle silhouette and color. Emblems are clearer in 32x40 inventory icons; keep item names alongside icons.",
+	"unique_small_bottles": 32
+}

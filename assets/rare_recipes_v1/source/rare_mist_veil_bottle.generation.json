@@ -1,0 +1,12 @@
+{
+  "id": "rare_mist_veil",
+  "variant": "bottle",
+  "prompt": "Use case: stylized-concept. Reference image is the paired potion's silhouette and palette. Generate a new HIGHLY SIMPLIFIED tiny potion sprite designed for a logical12x16 pixel canvas, cleanly enlarged. Do not make a detailed32x40 icon. ONE whole bottle with dark plum stepped outline, short antique gold stopper, flat 3-color pixel clusters, no subpixel marks. Shape: narrow 6-pixel-wide elongated faceted body, short gold cap, deep teal fill, two pale horizontal wave dashes. Keep its silhouette family matching the reference: TALL NARROW hexagonal bottle with straight sides and beveled corners, elongated angular body (never curvy hourglass). Simplify highlights and emblem to 1 or2 pale pixels. True transparent alpha with generous empty margin. No grid lines, background, text, numbers, bloom, particles, glow, shadow, gradient, blur or fancy cap; the bottle must remain readable after fitting into a maximum10x14 pixel object. This separate tiny sprite is for a real game shelf.",
+  "generator": "built-in image_gen",
+  "date": "2026-10-08",
+  "reference_role": "paired_potion_palette_silhouette_emblem",
+  "reference_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_potion.png",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-1c654d57-3235-44a3-bd43-b100ed2e518a.png",
+  "source_path": "C:/Users/imtl/ilyoon_Git/방치형 게임/새-게임-프로젝트/assets/rare_recipes_v1/source/rare_mist_veil_bottle.png",
+  "transparent_background": true
+}

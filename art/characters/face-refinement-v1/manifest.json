@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/face-refinement-v1/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "keeper",
+      "source": "art/characters/face-refinement-v1/source/keeper-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "material_ramps": {},
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.105,
+            0.2
+          ],
+          "saturation_min": 0.3,
+          "value_min": 0.85
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.5,
+          "value_min": 0.73
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "elf",
+      "source": "art/characters/face-refinement-v1/source/elf-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {},
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.5,
+          "value_min": 0.73
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "leaf"
+    },
+    {
+      "id": "mage",
+      "source": "art/characters/face-refinement-v1/source/mage-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "material_ramps": {},
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.5,
+          "value_min": 0.73
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "traveler",
+      "source": "art/characters/face-refinement-v1/source/traveler-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.25,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "shirt": "gold"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.15
+          ],
+          "saturation_min": 0.12,
+          "saturation_max": 0.5,
+          "value_min": 0.73
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "saturation_min": 0.05,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "wood"
+    }
+  ]
+}

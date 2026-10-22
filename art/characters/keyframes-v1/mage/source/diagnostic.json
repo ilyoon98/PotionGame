@@ -1,0 +1,106 @@
+{
+  "idle": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "walk_contact_a": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "walk_pass_a": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "walk_contact_b": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "walk_pass_b": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "receive_extend": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "receive_hold": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  },
+  "blink_idle": {
+    "head_skin_bounds": [
+      9,
+      19,
+      21,
+      27
+    ],
+    "size": [
+      32,
+      48
+    ],
+    "outline_boundary_violations": 0
+  }
+}

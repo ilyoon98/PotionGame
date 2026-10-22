@@ -1,0 +1,3326 @@
+{
+  "status": "passed",
+  "transfer_seconds": 8.45,
+  "one_bottle_only": true,
+  "same_customer_local_grip_through_exit": true,
+  "ownership_event_checks": [
+    {
+      "customer": "traveler",
+      "recipe": "health",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "mana",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "moon",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "purify",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "agility",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "vigor",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "antidote",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "fortune",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "focus",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "restoration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "growth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "clarity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "ward",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "spirit",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "arcane_amplification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "iron_skin",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "stealth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "poison_resistance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "illusion",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "soul_purification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "wisdom",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "reflection",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "haste",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "nightwalk",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "moonradiance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "regeneration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "starlight",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "wish",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "eternity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "sage_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "worldtree_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "shadow_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_forest_breath",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_mist_veil",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_lunar_seal",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_nebula_distillate",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        57
+      ],
+      "after_bottle_origin": [
+        89,
+        57
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "health",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "mana",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "moon",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "purify",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "agility",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "vigor",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "antidote",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "fortune",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "focus",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "restoration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "growth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "clarity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "ward",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "spirit",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "arcane_amplification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "iron_skin",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "stealth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "poison_resistance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "illusion",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "soul_purification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "wisdom",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "reflection",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "haste",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "nightwalk",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "moonradiance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "regeneration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "starlight",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "wish",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "eternity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "sage_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "worldtree_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "shadow_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_forest_breath",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_mist_veil",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_lunar_seal",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_nebula_distillate",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "health",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "mana",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "moon",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "purify",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "agility",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "vigor",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "antidote",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "fortune",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "focus",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "restoration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "growth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "clarity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "ward",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "spirit",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "arcane_amplification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "iron_skin",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "stealth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "poison_resistance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "illusion",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "soul_purification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "wisdom",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "reflection",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "haste",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "nightwalk",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "moonradiance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "regeneration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "starlight",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "wish",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "eternity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "sage_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "worldtree_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "shadow_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_forest_breath",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_mist_veil",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_lunar_seal",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_nebula_distillate",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        55
+      ],
+      "after_bottle_origin": [
+        89,
+        55
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "health",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "mana",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "moon",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "purify",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "agility",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "vigor",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "antidote",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "fortune",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "focus",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "restoration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "growth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "clarity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "ward",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "spirit",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "arcane_amplification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "iron_skin",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "stealth",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "poison_resistance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "illusion",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "soul_purification",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "wisdom",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "reflection",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "haste",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "nightwalk",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "moonradiance",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "regeneration",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "starlight",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "wish",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "eternity",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "sage_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "worldtree_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "shadow_elixir",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_forest_breath",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_mist_veil",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_lunar_seal",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_nebula_distillate",
+      "before_owner": "keeper",
+      "after_owner": "customer",
+      "before_bottle_origin": [
+        89,
+        56
+      ],
+      "after_bottle_origin": [
+        89,
+        56
+      ],
+      "jump_pixels": 0
+    }
+  ],
+  "paired_contacts": [
+    {
+      "customer": "traveler",
+      "recipe": "health",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "mana",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "moon",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "purify",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "agility",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "vigor",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "antidote",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "fortune",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "focus",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "restoration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "growth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "clarity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "ward",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "spirit",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "arcane_amplification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "iron_skin",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "stealth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "poison_resistance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "illusion",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "soul_purification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "wisdom",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "reflection",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "haste",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "nightwalk",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "moonradiance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "regeneration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "starlight",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "wish",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "eternity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "sage_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "worldtree_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "shadow_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_forest_breath",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_mist_veil",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_lunar_seal",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "traveler",
+      "recipe": "rare_nebula_distillate",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "health",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "mana",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "moon",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "purify",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "agility",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "vigor",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "antidote",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "fortune",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "focus",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "restoration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "growth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "clarity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "ward",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "spirit",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "arcane_amplification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "iron_skin",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "stealth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "poison_resistance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "illusion",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "soul_purification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "wisdom",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "reflection",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "haste",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "nightwalk",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "moonradiance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "regeneration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "starlight",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "wish",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "eternity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "sage_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "worldtree_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "shadow_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_forest_breath",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_mist_veil",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_lunar_seal",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "mage",
+      "recipe": "rare_nebula_distillate",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "health",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "mana",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "moon",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "purify",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "agility",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "vigor",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "antidote",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "fortune",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "focus",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "restoration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "growth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "clarity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "ward",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "spirit",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "arcane_amplification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "iron_skin",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "stealth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "poison_resistance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "illusion",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "soul_purification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "wisdom",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "reflection",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "haste",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "nightwalk",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "moonradiance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "regeneration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "starlight",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "wish",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "eternity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "sage_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "worldtree_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "shadow_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_forest_breath",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_mist_veil",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_lunar_seal",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "elf",
+      "recipe": "rare_nebula_distillate",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "health",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "mana",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "moon",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "purify",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "agility",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "vigor",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "antidote",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "fortune",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "focus",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "restoration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "growth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "clarity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "ward",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "spirit",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "arcane_amplification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "iron_skin",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "stealth",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "poison_resistance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "illusion",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "soul_purification",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "wisdom",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "reflection",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "haste",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "nightwalk",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "moonradiance",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "regeneration",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "starlight",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "wish",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "eternity",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "sage_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "worldtree_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "shadow_elixir",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_forest_breath",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_mist_veil",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_lunar_seal",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    },
+    {
+      "customer": "rogue",
+      "recipe": "rare_nebula_distillate",
+      "paired_skin_contacts": true,
+      "customer_contact_checks": 10,
+      "same_bottle_color_and_grip": true,
+      "passed": true
+    }
+  ],
+  "heads_and_hats_do_not_overlap": true,
+  "hands_excluded_from_keeper_head_mask": true,
+  "source_snapshot": "source-snapshot.json",
+  "remaining_work": "Godot runtime integration after whole-scene review."
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/rest-v1/keeper/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "sleep_sit",
+      "source": "art/characters/rest-v1/keeper/source/sleep_sit-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "sleep_sit_breath",
+      "source": "art/characters/rest-v1/keeper/source/sleep_sit_breath-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    },
+    {
+      "id": "faint",
+      "source": "art/characters/rest-v1/keeper/source/faint-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_max": 0.46,
+          "value_min": 0.75
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.075,
+            0.17
+          ],
+          "saturation_min": 0.42,
+          "value_min": 0.82
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.17
+          ],
+          "saturation_min": 0.1,
+          "value_max": 0.9
+        }
+      ],
+      "fallback_material": "purple"
+    }
+  ]
+}

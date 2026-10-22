@@ -1,0 +1,12 @@
+{
+  "character": "mage",
+  "approved_by_user": false,
+  "scope": "Body/costume and hat[0,4] retain prior approval. New rounded face is a candidate after latest feedback about square faces.",
+  "user_reply": "좋아 이제 다음 손님 엘프 키프레임 만들자고. 기존 엘프 느낌 유지하고 팔레트랑 32×48 규격, 부위별 크기 잘 지켜줘. 외곽선이랑 두 눈도 제대로 확인하고",
+  "approved_on": "2026-10-13",
+  "hat_placement": [
+    0,
+    4
+  ],
+  "prior_approved_scope": "Latest8keyframes with hat seated at[0,4]; does not approve older floating revision or future action animations."
+}

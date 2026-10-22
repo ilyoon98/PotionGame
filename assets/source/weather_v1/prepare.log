@@ -1,0 +1,10 @@
+Godot Engine v4.6.stable.official.89cea1439 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2570)
+PASS sun (24, 24) alpha occupancy=0.396
+PASS moon (24, 32) alpha occupancy=0.311
+PASS star (8, 8) alpha occupancy=0.188
+PASS cloud_clear (64, 24) alpha occupancy=0.494
+PASS cloud_rain (96, 32) alpha occupancy=0.526
+PASS rain (96, 96) alpha occupancy=0.035

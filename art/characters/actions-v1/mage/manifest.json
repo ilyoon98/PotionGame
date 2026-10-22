@@ -1,0 +1,729 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/actions-v1/mage/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "carry_contact_a",
+      "source": "art/characters/actions-v1/mage/source/carry_contact_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.2,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "value_min": 0.76,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.22,
+          "value_max": 0.88
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              21
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ]
+          ],
+          "reason": "Equal eyes and full1px skin halo at existing mage landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              14,
+              23
+            ]
+          ],
+          "reason": "Two equal isolated1x2 pupils."
+        }
+      ]
+    },
+    {
+      "id": "carry_pass_a",
+      "source": "art/characters/actions-v1/mage/source/carry_pass_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.2,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "value_min": 0.76,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.22,
+          "value_max": 0.88
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              21
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ]
+          ],
+          "reason": "Equal eyes and full1px skin halo at existing mage landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              14,
+              23
+            ]
+          ],
+          "reason": "Two equal isolated1x2 pupils."
+        }
+      ]
+    },
+    {
+      "id": "carry_contact_b",
+      "source": "art/characters/actions-v1/mage/source/carry_contact_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.2,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "value_min": 0.76,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.22,
+          "value_max": 0.88
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              21
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ]
+          ],
+          "reason": "Equal eyes and full1px skin halo at existing mage landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              14,
+              23
+            ]
+          ],
+          "reason": "Two equal isolated1x2 pupils."
+        }
+      ]
+    },
+    {
+      "id": "carry_pass_b",
+      "source": "art/characters/actions-v1/mage/source/carry_pass_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.2,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.16
+          ],
+          "value_min": 0.76,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "wood",
+          "hue": [
+            0.025,
+            0.18
+          ],
+          "saturation_min": 0.22,
+          "value_max": 0.88
+        }
+      ],
+      "fallback_material": "purple",
+      "material_pixels": [
+        {
+          "material": "skin",
+          "pixels": [
+            [
+              9,
+              21
+            ],
+            [
+              10,
+              21
+            ],
+            [
+              11,
+              21
+            ],
+            [
+              9,
+              22
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ],
+            [
+              9,
+              23
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              11,
+              23
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              24
+            ],
+            [
+              11,
+              24
+            ],
+            [
+              13,
+              21
+            ],
+            [
+              14,
+              21
+            ],
+            [
+              15,
+              21
+            ],
+            [
+              13,
+              22
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              15,
+              22
+            ],
+            [
+              13,
+              23
+            ],
+            [
+              14,
+              23
+            ],
+            [
+              15,
+              23
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              14,
+              24
+            ],
+            [
+              15,
+              24
+            ]
+          ],
+          "reason": "Equal eyes and full1px skin halo at existing mage landmarks."
+        },
+        {
+          "material": "outline",
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              10,
+              23
+            ],
+            [
+              14,
+              22
+            ],
+            [
+              14,
+              23
+            ]
+          ],
+          "reason": "Two equal isolated1x2 pupils."
+        }
+      ]
+    }
+  ]
+}

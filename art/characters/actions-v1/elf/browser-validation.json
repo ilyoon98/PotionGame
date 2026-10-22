@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "beforeEvent": {
+    "action": "receive",
+    "actorX": "48",
+    "elapsed": "8.4",
+    "facing": "left",
+    "held": "false",
+    "loaded": "true",
+    "mode": "fine",
+    "motionIndex": "19",
+    "playing": "false",
+    "pose": "receive_extend",
+    "recipe": "health"
+  },
+  "atEvent": {
+    "action": "receive",
+    "actorX": "48",
+    "elapsed": "8.45",
+    "facing": "left",
+    "held": "true",
+    "mode": "fine",
+    "motionIndex": "19",
+    "playing": "false",
+    "pose": "receive_extend",
+    "recipe": "health"
+  },
+  "departure": {
+    "action": "depart",
+    "actorX": "51",
+    "elapsed": "0.1",
+    "facing": "right",
+    "held": "true",
+    "mode": "fine",
+    "motionIndex": "0",
+    "playing": "false",
+    "pose": "carry_contact_a",
+    "recipe": "agility"
+  },
+  "blink": {
+    "action": "wait",
+    "actorX": "48",
+    "elapsed": "3.7",
+    "facing": "left",
+    "held": "false",
+    "mode": "grid",
+    "motionIndex": "45",
+    "playing": "false",
+    "pose": "idle",
+    "recipe": "agility"
+  },
+  "breathLift": {
+    "action": "wait",
+    "actorX": "48",
+    "elapsed": "4.95",
+    "facing": "left",
+    "held": "false",
+    "mode": "grid",
+    "motionIndex": "23",
+    "playing": "false",
+    "pose": "idle",
+    "recipe": "agility"
+  },
+  "consoleErrors": [],
+  "scope": "Rendered local controls: bottle attachment at8.45s, whole actor right-facing carry, blink/grid and lifted-breath states."
+}

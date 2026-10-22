@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "canvas_size": [
+    540,
+    249
+  ],
+  "scene_size": [
+    540,
+    300
+  ],
+  "common_floor_added": true,
+  "individual_rug_removed": true,
+  "male_identity_and_anatomy_source": "../full-ingame-v3/characters/",
+  "fine_mode_changes_only_free_fabric_edges_on_display_grid": true,
+  "native_pixel_scale": 3,
+  "fine_displacement_native_pixels": 0.3333333333333333,
+  "normal_text_palette_check_excluded": true,
+  "recipe_count": 36,
+  "art_frames": {
+    "fine": {
+      "checked_art_frames": 144,
+      "off_palette": 0,
+      "partial_alpha": 0
+    },
+    "grid": {
+      "checked_art_frames": 144,
+      "off_palette": 0,
+      "partial_alpha": 0
+    }
+  },
+  "gif_frame_count": 144,
+  "gif_duration_ms": 18000,
+  "secondary_motion_validation": "motion/frames.json",
+  "potion_validation": "potions/recipes.json",
+  "contacts": {
+    "herb_station": 78,
+    "counter": 78,
+    "characters": 78,
+    "hearth": 78,
+    "floor_top": 79
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "scale": 3,
+  "native_canvas": [
+    32,
+    48
+  ],
+  "runtime_integrated": true,
+  "characters": {
+    "traveler": {
+      "palette": "art/palettes/v1/characters/traveler.hex",
+      "keyframes": "art/characters/keyframes-v1/traveler/keyframes.json",
+      "neutral": "art/characters/keyframes-v1/traveler/frames/idle.png",
+      "review": "art/characters/keyframes-v1/traveler/review.html",
+      "validation": "art/characters/keyframes-v1/traveler/validation.json",
+      "status": "review_deferred",
+      "actions": "art/characters/actions-v1/traveler/actions.json",
+      "motion_review": "art/characters/actions-v1/traveler/review.html",
+      "motion_validation": "art/characters/actions-v1/traveler/motion/validation.json",
+      "actions_status": "runtime_integrated",
+      "runtime": {
+        "catalog": "assets/pixel_v1/catalog.json",
+        "character_id": "traveler",
+        "native_canvas": [
+          32,
+          48
+        ],
+        "main_scale": 3,
+        "status": "integrated_pending_visual_feedback"
+      }
+    },
+    "mage": {
+      "palette": "art/palettes/v1/characters/mage.hex",
+      "keyframes": "art/characters/keyframes-v1/mage/keyframes.json",
+      "neutral": "art/characters/keyframes-v1/mage/frames/idle.png",
+      "review": "art/characters/keyframes-v1/mage/review.html",
+      "validation": "art/characters/keyframes-v1/mage/validation.json",
+      "status": "face_revision_candidate",
+      "actions": "art/characters/actions-v1/mage/actions.json",
+      "motion_review": "art/characters/actions-v1/mage/review.html",
+      "motion_validation": "art/characters/actions-v1/mage/motion/validation.json",
+      "actions_status": "runtime_integrated",
+      "runtime": {
+        "catalog": "assets/pixel_v1/catalog.json",
+        "character_id": "mage",
+        "native_canvas": [
+          32,
+          48
+        ],
+        "main_scale": 3,
+        "status": "integrated_pending_visual_feedback"
+      }
+    },
+    "elf": {
+      "palette": "art/palettes/v1/characters/elf.hex",
+      "keyframes": "art/characters/keyframes-v2/elf/keyframes.json",
+      "neutral": "art/characters/keyframes-v2/elf/frames/idle.png",
+      "review": "art/characters/keyframes-v2/elf/review.html",
+      "validation": "art/characters/keyframes-v2/elf/validation.json",
+      "status": "keyframes_v2_candidate",
+      "actions": "art/characters/actions-v1/elf/actions.json",
+      "motion_review": "art/characters/actions-v1/elf/review.html",
+      "motion_validation": "art/characters/actions-v1/elf/motion/validation.json",
+      "actions_status": "runtime_integrated",
+      "runtime": {
+        "catalog": "assets/pixel_v1/catalog.json",
+        "character_id": "elf",
+        "native_canvas": [
+          32,
+          48
+        ],
+        "main_scale": 3,
+        "status": "integrated_pending_visual_feedback"
+      }
+    },
+    "rogue": {
+      "palette": "art/palettes/v1/characters/rogue.hex",
+      "keyframes": "art/characters/keyframes-v2/rogue/keyframes.json",
+      "neutral": "art/characters/keyframes-v2/rogue/frames/idle.png",
+      "review": "art/characters/keyframes-v2/rogue/review.html",
+      "validation": "art/characters/keyframes-v2/rogue/validation.json",
+      "status": "approved_keyposes_for_followup",
+      "actions": "art/characters/actions-v1/rogue/actions.json",
+      "motion_review": "art/characters/actions-v1/rogue/review.html",
+      "motion_validation": "art/characters/actions-v1/rogue/motion/validation.json",
+      "actions_status": "runtime_integrated",
+      "runtime": {
+        "catalog": "assets/pixel_v1/catalog.json",
+        "character_id": "rogue",
+        "native_canvas": [
+          32,
+          48
+        ],
+        "main_scale": 3,
+        "status": "integrated_pending_visual_feedback"
+      }
+    },
+    "keeper": {
+      "palette": "art/palettes/v1/characters/keeper.hex",
+      "keyframes": "art/characters/keyframes-v4/keeper/keyframes.json",
+      "neutral": "art/characters/keyframes-v4/keeper/frames/idle.png",
+      "review": "art/characters/keyframes-v4/keeper/review.html",
+      "validation": "art/characters/keyframes-v4/keeper/validation.json",
+      "status": "corrected_keyframes_and_combined_motion_candidate",
+      "motion": "art/characters/keyframes-v4/keeper/motion/validation.json",
+      "runtime": {
+        "catalog": "assets/pixel_v1/catalog.json",
+        "character_id": "keeper",
+        "native_canvas": [
+          32,
+          48
+        ],
+        "main_scale": 3,
+        "status": "integrated_pending_visual_feedback"
+      },
+      "rest": {
+        "poses": {
+          "sleep": [
+            "art/characters/rest-v1/keeper/frames/sleep_sit.png",
+            "art/characters/rest-v1/keeper/frames/sleep_sit_breath.png"
+          ],
+          "faint": [
+            "art/characters/rest-v1/keeper/frames/faint.png"
+          ]
+        },
+        "review": "art/mockups/f21-rest-aging-v1/review.html",
+        "validation": "art/mockups/f21-rest-aging-v1/validation.json",
+        "approval": "art/mockups/f21-rest-aging-v1/approval.json",
+        "status": "approved_runtime_integrated",
+        "runtime": {
+          "catalog": "assets/pixel_v1/catalog.json",
+          "poses": [
+            "sleep",
+            "faint"
+          ],
+          "effects": [
+            "sleep_z",
+            "dizzy_star"
+          ],
+          "props": [
+            "aging_cask",
+            "aged_seal"
+          ],
+          "verification": ".verification/f21-rest-art-20261021/proof.json"
+        }
+      }
+    }
+  },
+  "whole_scene": {
+    "review": "art/mockups/full-ingame-v9/animated-preview.html",
+    "validation": "art/mockups/full-ingame-v9/validation.json",
+    "verification": "art/mockups/full-ingame-v9/verification.json",
+    "status": "runtime_integrated_pending_visual_feedback",
+    "runtime_integrated": true,
+    "flow": [
+      "cauldron",
+      "shelf_stock",
+      "sales_counter",
+      "magical_flight",
+      "customer_catch",
+      "carry_exit"
+    ],
+    "direct_hand_contact_required": false,
+    "supersedes": "art/mockups/full-ingame-v8/animated-preview.html",
+    "runtime_review": "art/runtime-reviews/pixel-v1/review.html",
+    "runtime_verification": ".verification/pixel-runtime-v1/runtime-tests.json",
+    "full_width_floor": true
+  },
+  "runtime_catalog": "assets/pixel_v1/catalog.json",
+  "runtime_review": "art/runtime-reviews/pixel-v1/review.html"
+}

@@ -1,0 +1,23 @@
+{
+  "whole_body_registration": true,
+  "source_size": [
+    1024,
+    1536
+  ],
+  "clean_bounds": [
+    581,
+    998
+  ],
+  "uniform_scale": 0.36072144288577157,
+  "registered_offset": [
+    55,
+    110
+  ],
+  "native_canvas": [
+    32,
+    48
+  ],
+  "head_top_row": 11,
+  "foot_row": 46,
+  "no_body_part_splicing": true
+}

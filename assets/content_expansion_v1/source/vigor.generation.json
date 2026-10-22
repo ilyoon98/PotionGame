@@ -1,0 +1,15 @@
+{
+  "id": "vigor",
+  "category": "potions",
+  "name": "활력",
+  "family": "vitality",
+  "region": "forest_edge",
+  "shape": "broad barrel-shaped body",
+  "symbol": "upward chevron",
+  "color": "warm vermilion orange",
+  "prompt": "Use case: stylized-concept. Asset type: a production inventory potion sprite for Moonshadow Potion Shop, a tiny cozy witch-shop pixel-art game. ONE complete isolated bottle, front orthographic view, centered with generous TRANSPARENT padding. Actual transparent alpha background. Strict chunky hard-square pixel art, dark plum #432039 stepped outline, warm amber cork and antique gold details, ivory glass highlights, 4 flat clustered shade bands. Simple readable silhouette and ONE bold central emblem taking one third of the bottle body. Think logical 12x16 pixels for shelf bottles and 32x40 for inventory, uniformly enlarge pixels for output. Bottle entire silhouette fully visible. No text, letters, digits, watermark, blur, soft glow, gradients, floor, cast shadows, particles outside bottle, scene or border. Subject: VIGOR potion. Broad barrel-shaped glass body with almost vertical sides, short neck, orange vermilion liquid, bold gold UPWARD CHEVRON emblem on an ivory front label. Distinct from a round pink health flask.",
+  "original_path": "C:\\Users\\imtl\\.codex\\generated_images\\01a11597-1567-7ae2-a4a0-d2c0962a2eef\\exec-2bb1ab58-83a3-4f9d-91f1-024991893413.png",
+  "generator": "built-in image_gen",
+  "project_source": "res://assets/content_expansion_v1/source/vigor.png",
+  "date": "2026-10-08"
+}

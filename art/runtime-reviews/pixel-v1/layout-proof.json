@@ -1,0 +1,24 @@
+{
+	"brew_pose_checks": 6,
+	"button_padding": 8,
+	"buttons_per_toolbar": 5,
+	"compact_character_size": [
+		96,
+		144
+	],
+	"companion_size": [
+		256,
+		228
+	],
+	"mode_rollovers": 12,
+	"modes_preserved": [
+		"workshop",
+		"companion",
+		"information"
+	],
+	"player_save_accessed": false,
+	"pot_grounded": true,
+	"spoon_inside_liquid": true,
+	"status": "passed",
+	"transparent_background": true
+}

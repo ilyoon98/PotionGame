@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "carry_contact_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 454,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "62e80cce8343eb2b7cd64496070b841f77d88690af18c621878f65c6035727c1",
+      "native_pixel_sha256": "f2b8615bd5b54815c22b074fc2eab5cf09adde42b5168970382d600a299130c9"
+    },
+    "carry_pass_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 449,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "83d45048f93bacb579369605837356f68dd0475eb37e807e684effad8d1fbe30",
+      "native_pixel_sha256": "d767f3c0536e7ee249b892c71b516513aca7431903844ca8a3e3cab2dd35cee4"
+    },
+    "carry_contact_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 458,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "6a1da66585ca61d423002c37b48843f6999256338eca9998f5c8e13c8de161c7",
+      "native_pixel_sha256": "87d4f67bf06a695113dae2f7bf752f2fa1a512b6b66bd45cb53f1bf89ac5ac30"
+    },
+    "carry_pass_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 453,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hair_leather": 3,
+        "leaf": 4
+      },
+      "source_sha256": "8f26857cbffc64087677abcfffd906e5a5e25d291efcc4c194791b043f6a8cc1",
+      "native_pixel_sha256": "9fc9f3ba61d7938f2cbae4d7715fd932cd1791a31513f31989c1b657bdac586b"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

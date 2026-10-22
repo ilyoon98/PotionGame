@@ -1,0 +1,31 @@
+{
+  "whole_body_registration": true,
+  "source_size": [
+    1548,
+    1016
+  ],
+  "clean_size": [
+    675,
+    961
+  ],
+  "uniform_scale": 0.2081165452653486,
+  "registered_offset": [
+    100,
+    270
+  ],
+  "native_canvas": [
+    32,
+    48
+  ],
+  "head_top_row": 11,
+  "foot_row": 46,
+  "protected_edit_region": [
+    0,
+    0,
+    32,
+    27
+  ],
+  "protected_reference": "art/characters/elf-redesign-v1/elf-native.png",
+  "torso_and_legs_from_one_generated_source": true,
+  "no_cross_pose_limb_splicing": true
+}

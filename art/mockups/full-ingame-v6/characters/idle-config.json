@@ -1,0 +1,45 @@
+{
+  "witch": {
+    "eyes": [
+      [
+        15,
+        20
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        18,
+        20
+      ],
+      [
+        18,
+        21
+      ]
+    ],
+    "cut": 30
+  },
+  "elf": {
+    "eyes": [
+      [
+        10,
+        21
+      ],
+      [
+        10,
+        22
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        22
+      ]
+    ],
+    "cut": 27
+  },
+  "notes": "Two aligned male eyes on the right-facing face and two same-height elf eyes. All are isolated 1x2 dark components, including 8-neighbor checks."
+}

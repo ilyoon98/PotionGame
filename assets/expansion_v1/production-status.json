@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-08",
+  "status": "in_production",
+  "scope": {
+    "potions": {
+      "existing": 5,
+      "new": 27
+    },
+    "materials": {
+      "existing": 3,
+      "new": 8
+    },
+    "regions": {
+      "existing": 1,
+      "new": 7
+    },
+    "equipment_families": 8,
+    "employees": {
+      "existing": 1,
+      "new": 3
+    },
+    "potion_families": 4
+  },
+  "designs_are_candidates": true,
+  "connected_to_game": false,
+  "first_batch": [
+    {
+      "id": "vigor",
+      "name": "활력",
+      "category": "potions",
+      "status": "generating"
+    },
+    {
+      "id": "antidote",
+      "name": "해독",
+      "category": "potions",
+      "status": "generating"
+    },
+    {
+      "id": "fortune",
+      "name": "행운",
+      "category": "potions",
+      "status": "generating"
+    },
+    {
+      "id": "focus",
+      "name": "집중",
+      "category": "potions",
+      "status": "generating"
+    },
+    {
+      "id": "restoration",
+      "name": "회복",
+      "category": "potions",
+      "status": "generating"
+    },
+    {
+      "id": "growth",
+      "name": "생장",
+      "category": "potions",
+      "status": "generating"
+    },
+    {
+      "id": "dewgrass",
+      "name": "이슬풀",
+      "category": "materials",
+      "status": "generating"
+    },
+    {
+      "id": "silver_moss",
+      "name": "은빛 이끼",
+      "category": "materials",
+      "status": "generating"
+    }
+  ]
+}

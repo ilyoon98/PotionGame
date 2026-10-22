@@ -1,0 +1,1153 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-21",
+  "scale": 3,
+  "palette": "art/palette.hex",
+  "new_palette_colors": 0,
+  "keeper": {
+    "frames": {
+      "sleep_sit": "art/characters/rest-v1/keeper/frames/sleep_sit.png",
+      "sleep_sit_breath": "art/characters/rest-v1/keeper/frames/sleep_sit_breath.png",
+      "faint": "art/characters/rest-v1/keeper/frames/faint.png"
+    },
+    "source_sha256": {
+      "sleep_sit": "d50da1e254135a3f78912e65ac6210082e307f5c125882531293288649f3d769",
+      "sleep_sit_breath": "e0e9f323e54cb95e69736cebfcb9de44f42cf94f8c5be1d3ba98f268c69e9f86",
+      "faint": "5a934eeb3022a11740eb09c64d7bb8581646b2690020ad3014b1b9ba680e3d7f"
+    },
+    "pipeline_report": "art/characters/rest-v1/keeper/pipeline/validation.json",
+    "checks": {
+      "sleep_sit": {
+        "pipeline_passed": true,
+        "pipeline_preserved_source": true,
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "within_keeper_5": true,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "closed_eyes": [
+          [
+            18,
+            32
+          ],
+          [
+            20,
+            32
+          ]
+        ],
+        "closed_eyes_expected": [
+          [
+            18,
+            32
+          ],
+          [
+            20,
+            32
+          ]
+        ],
+        "closed_eyes_ok": true,
+        "floor_row": 46,
+        "floor_row_ok": true,
+        "approved_head_reuse": {
+          "idle_rows": [
+            2,
+            24
+          ],
+          "offset": [
+            1,
+            12
+          ],
+          "identical_pixels": 679,
+          "changed_pixels": [
+            [
+              18,
+              31
+            ],
+            [
+              20,
+              31
+            ],
+            [
+              19,
+              35
+            ]
+          ]
+        },
+        "head_changes_only_eyes_or_chin": true,
+        "passed": true
+      },
+      "sleep_sit_breath": {
+        "pipeline_passed": true,
+        "pipeline_preserved_source": true,
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "within_keeper_5": true,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "closed_eyes": [
+          [
+            18,
+            31
+          ],
+          [
+            20,
+            31
+          ]
+        ],
+        "closed_eyes_expected": [
+          [
+            18,
+            31
+          ],
+          [
+            20,
+            31
+          ]
+        ],
+        "closed_eyes_ok": true,
+        "floor_row": 46,
+        "floor_row_ok": true,
+        "approved_head_reuse": {
+          "idle_rows": [
+            2,
+            24
+          ],
+          "offset": [
+            1,
+            11
+          ],
+          "identical_pixels": 679,
+          "changed_pixels": [
+            [
+              18,
+              30
+            ],
+            [
+              20,
+              30
+            ],
+            [
+              19,
+              34
+            ]
+          ]
+        },
+        "head_changes_only_eyes_or_chin": true,
+        "passed": true
+      },
+      "faint": {
+        "pipeline_passed": true,
+        "pipeline_preserved_source": true,
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#E9B95F",
+          "#F6D1AC"
+        ],
+        "color_count": 5,
+        "within_keeper_5": true,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "closed_eyes": [
+          [
+            15,
+            30
+          ],
+          [
+            17,
+            30
+          ]
+        ],
+        "closed_eyes_expected": [
+          [
+            15,
+            30
+          ],
+          [
+            17,
+            30
+          ]
+        ],
+        "closed_eyes_ok": true,
+        "floor_row": 46,
+        "floor_row_ok": true,
+        "approved_head_reuse": {
+          "idle_rows": [
+            2,
+            24
+          ],
+          "offset": [
+            -2,
+            10
+          ],
+          "identical_pixels": 658,
+          "changed_pixels": [
+            [
+              15,
+              29
+            ],
+            [
+              17,
+              29
+            ]
+          ]
+        },
+        "head_changes_only_eyes_or_chin": true,
+        "passed": true
+      }
+    },
+    "breathing": {
+      "lower_body_rows_identical": true,
+      "upper_body_shift_rows": 1,
+      "upper_body_matches_shift": true,
+      "changed_rows": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "passed": true
+    }
+  },
+  "props": {
+    "pipeline_report": "art/mockups/f21-rest-aging-v1/props/pipeline/validation.json",
+    "checks": {
+      "aged_seal": {
+        "pipeline_passed": true,
+        "size": [
+          5,
+          5
+        ],
+        "colors": [
+          "#241C32",
+          "#A56A3D",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 4,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true
+      },
+      "aging_cask_floor": {
+        "pipeline_passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#50333B",
+          "#827589",
+          "#916047",
+          "#C99463"
+        ],
+        "color_count": 5,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true,
+        "native_32x32": true
+      },
+      "aging_cask_wall": {
+        "pipeline_passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#50333B",
+          "#827589",
+          "#916047",
+          "#C99463"
+        ],
+        "color_count": 5,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true,
+        "native_32x32": true
+      },
+      "bedroll_blanket": {
+        "pipeline_passed": true,
+        "size": [
+          32,
+          16
+        ],
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "color_count": 4,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true
+      },
+      "bedroll_mat": {
+        "pipeline_passed": true,
+        "size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "color_count": 4,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true,
+        "native_32x32": true
+      },
+      "dizzy_star": {
+        "pipeline_passed": true,
+        "size": [
+          5,
+          5
+        ],
+        "colors": [
+          "#241C32",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 3,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true
+      },
+      "sleep_z": {
+        "pipeline_passed": true,
+        "size": [
+          6,
+          7
+        ],
+        "colors": [
+          "#241C32",
+          "#FFF0BC"
+        ],
+        "color_count": 2,
+        "partial_alpha": 0,
+        "outline_violations": [],
+        "passed": true
+      }
+    }
+  },
+  "aged_seal": {
+    "anchor_rule": "seal top-left = (bottle_w-3, bottle_h-6)",
+    "bottles": [
+      {
+        "id": "health",
+        "bottle": "assets/pixel_v1/potions/health.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "e221e15fc59a53f30c98576f7ea109400e1ab70838f0ecca164a78bc909f269c",
+        "interior_visible": 0.824,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "mana",
+        "bottle": "assets/pixel_v1/potions/mana.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "6d45c21e4467a6db133ede22e809ae57a5d57dbe117347d70db4023d92901344",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "moon",
+        "bottle": "assets/pixel_v1/potions/moon.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "2554a8f6aee49c520e7024d3900de8944d6ff04620995b35c4f92dfb4285bf51",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "purify",
+        "bottle": "assets/pixel_v1/potions/purify.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "4e687daeaab465c951cef76365e6f8d6029ee4c47d4df629ca42c6306e226d8f",
+        "interior_visible": 0.81,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "agility",
+        "bottle": "assets/pixel_v1/potions/agility.png",
+        "bottle_size": [
+          8,
+          16
+        ],
+        "seal_anchor": [
+          5,
+          10
+        ],
+        "bottle_sha256": "dc4d27b8ee21c52431f37e4c8e546c7cb4b3f4ba8bb413b527b6f6b27a34a9cb",
+        "interior_visible": 1.0,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "vigor",
+        "bottle": "assets/pixel_v1/potions/vigor.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "dfc9c22ff2584d8cc7274e170d3daf1225eaf3796ab84f00aa14b33dd8b29830",
+        "interior_visible": 0.81,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "antidote",
+        "bottle": "assets/pixel_v1/potions/antidote.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+        "interior_visible": 0.885,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "fortune",
+        "bottle": "assets/pixel_v1/potions/fortune.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "6eadb787bb1fa3a8994988d1f5348cf08ed5bb35b6ff9422397d270e510e138a",
+        "interior_visible": 0.844,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "focus",
+        "bottle": "assets/pixel_v1/potions/focus.png",
+        "bottle_size": [
+          8,
+          16
+        ],
+        "seal_anchor": [
+          5,
+          10
+        ],
+        "bottle_sha256": "8375728c350e08afb542557fe2aa9bc564fecdadac3f95e48adf826baea32dd7",
+        "interior_visible": 1.0,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "restoration",
+        "bottle": "assets/pixel_v1/potions/restoration.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "aec968f34692e014cf3db09e188843da436e3c3b4cca36feb3bcb0512eec821c",
+        "interior_visible": 0.853,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "growth",
+        "bottle": "assets/pixel_v1/potions/growth.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "3a69059253b42589185e91cd3e5a43d35175ce507041ea94b62b8b875331ffa8",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "clarity",
+        "bottle": "assets/pixel_v1/potions/clarity.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "0b94c6b8cb38b14711d1527ce12b7c551c18255568ebc1549aa1a419a9acd487",
+        "interior_visible": 0.867,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "ward",
+        "bottle": "assets/pixel_v1/potions/ward.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "7b2d296e3cbdebb2a912c32a99fc8014ddb1b31097debe08f529a6e37c26925a",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "spirit",
+        "bottle": "assets/pixel_v1/potions/spirit.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "c8eb4abf523c15e2c0fa01b051ce86ad0b8702f5516be8129c18e6ebe2df1ad8",
+        "interior_visible": 0.875,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "arcane_amplification",
+        "bottle": "assets/pixel_v1/potions/arcane_amplification.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "888c27affc96959707fa400602c6e179d66452ba667deada29b414ac1faee6fa",
+        "interior_visible": 0.867,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "iron_skin",
+        "bottle": "assets/pixel_v1/potions/iron_skin.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "64a4d8d4cfae260fa0f16e18dc33840101d8317fbf8c577dc52bcd6a598f8f64",
+        "interior_visible": 0.81,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "stealth",
+        "bottle": "assets/pixel_v1/potions/stealth.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "0bd9449837731b24ce5af4b1c3dee40ad4870459974ed9e871f8e43f4047d9d1",
+        "interior_visible": 0.81,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "poison_resistance",
+        "bottle": "assets/pixel_v1/potions/poison_resistance.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "59241c83aa77b4c0f87e2ba788210a25be0c7497ee3e12d21d2905101124e67e",
+        "interior_visible": 0.893,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "illusion",
+        "bottle": "assets/pixel_v1/potions/illusion.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "897eadaacb2ee656de20ff6ef8ab1bd90779a5a38c9ccf4ea5fc2ec1fcf3c012",
+        "interior_visible": 0.917,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "soul_purification",
+        "bottle": "assets/pixel_v1/potions/soul_purification.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "6008507c6be373fe8c15a2309bab8330ee543017b2c7d7771af153fc2cc16075",
+        "interior_visible": 0.958,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "wisdom",
+        "bottle": "assets/pixel_v1/potions/wisdom.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "8f9a7f99afbf893b53f8e01b01e39799690bc3307e1d782e61c6c7d9dfa712c4",
+        "interior_visible": 0.844,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "reflection",
+        "bottle": "assets/pixel_v1/potions/reflection.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "31e64e9bf82933e4b4a4aa9490c2fb069cad629029ddab8181c18dd6851794db",
+        "interior_visible": 0.885,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "haste",
+        "bottle": "assets/pixel_v1/potions/haste.png",
+        "bottle_size": [
+          8,
+          16
+        ],
+        "seal_anchor": [
+          5,
+          10
+        ],
+        "bottle_sha256": "51361fbc45606e1def93a9de8f85233aca40e400d5d1c5058368d8b4681b1fc1",
+        "interior_visible": 1.0,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "nightwalk",
+        "bottle": "assets/pixel_v1/potions/nightwalk.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "b30e4353b3a4de92842af752b2ef40fbddc8e84cb2bd72045a9e94617981b19c",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "moonradiance",
+        "bottle": "assets/pixel_v1/potions/moonradiance.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "70b6fcbd6b62f2752a294b207bab100c9c6bdb7b1fed233f980f07ea1e9e27d0",
+        "interior_visible": 0.923,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "regeneration",
+        "bottle": "assets/pixel_v1/potions/regeneration.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "a2c6d371d3a2f3122f69b94d682c8bd94703d199e885f56a00f0466502cb6c51",
+        "interior_visible": 0.825,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "starlight",
+        "bottle": "assets/pixel_v1/potions/starlight.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "59b8985e1fe123b9b1914e90f1c80cc98576b5ac6c5fe9c938717b5affb6b0d1",
+        "interior_visible": 0.917,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "wish",
+        "bottle": "assets/pixel_v1/potions/wish.png",
+        "bottle_size": [
+          8,
+          16
+        ],
+        "seal_anchor": [
+          5,
+          10
+        ],
+        "bottle_sha256": "059948accedd8ed6b38237876bf7f813e567914ad971933d524a3b38bc8e5946",
+        "interior_visible": 1.0,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "eternity",
+        "bottle": "assets/pixel_v1/potions/eternity.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "b9e449f9a364901a2a81d6762c113218d914ada6ce215175c9286dce8dea6a5a",
+        "interior_visible": 0.853,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "sage_elixir",
+        "bottle": "assets/pixel_v1/potions/sage_elixir.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "221b93956446c4e6acfb7d938810d253aff3707172056ea4d48ac2f54e30bb3b",
+        "interior_visible": 0.919,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "worldtree_elixir",
+        "bottle": "assets/pixel_v1/potions/worldtree_elixir.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "3a69059253b42589185e91cd3e5a43d35175ce507041ea94b62b8b875331ffa8",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "shadow_elixir",
+        "bottle": "assets/pixel_v1/potions/shadow_elixir.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "323b17fcff848b80c08145ff36ff0f5e3da7f306550c2e5a27d00a943c00a8ad",
+        "interior_visible": 0.923,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "rare_forest_breath",
+        "bottle": "assets/pixel_v1/potions/rare_forest_breath.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "237fc83d42d17af80d1c79fc4d8f1219fccd4f2f5036d61a2ee03112aaedeeff",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "rare_mist_veil",
+        "bottle": "assets/pixel_v1/potions/rare_mist_veil.png",
+        "bottle_size": [
+          8,
+          16
+        ],
+        "seal_anchor": [
+          5,
+          10
+        ],
+        "bottle_sha256": "848e4363e6ee63ef2848c95c339d501d933bdd8e058edfbb8586a8d3ae673b43",
+        "interior_visible": 1.0,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "rare_lunar_seal",
+        "bottle": "assets/pixel_v1/potions/rare_lunar_seal.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "2554a8f6aee49c520e7024d3900de8944d6ff04620995b35c4f92dfb4285bf51",
+        "interior_visible": 0.833,
+        "cork_and_neck_clear": true,
+        "passed": true
+      },
+      {
+        "id": "rare_nebula_distillate",
+        "bottle": "assets/pixel_v1/potions/rare_nebula_distillate.png",
+        "bottle_size": [
+          8,
+          12
+        ],
+        "seal_anchor": [
+          5,
+          6
+        ],
+        "bottle_sha256": "f9a43748d994a22ffceae73599ba2371c7e7c11dff58e5ec1196e11f42ba238f",
+        "interior_visible": 0.844,
+        "cork_and_neck_clear": true,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "bottles_modified": 0
+  },
+  "placements": {
+    "aging_cask_wall": {
+      "native_origin": [
+        73,
+        0
+      ],
+      "display_origin": [
+        219,
+        0
+      ],
+      "opaque_box_native": [
+        73,
+        1,
+        105,
+        31
+      ],
+      "ui_rect_overlaps": [],
+      "keeper_pose_overlap_pixels": {
+        "idle": 0,
+        "brew_reach": 0,
+        "brew_stir_left": 0,
+        "brew_stir_right": 0,
+        "handover_extend": 0,
+        "handover_return": 0,
+        "sleep_sit": 0,
+        "sleep_sit_breath": 0,
+        "faint": 0
+      },
+      "keeper_gaps_native": {
+        "idle": {
+          "vertical": 3,
+          "horizontal": -28
+        },
+        "brew_reach": {
+          "vertical": 3,
+          "horizontal": -27
+        },
+        "brew_stir_left": {
+          "vertical": 3,
+          "horizontal": -27
+        },
+        "brew_stir_right": {
+          "vertical": 3,
+          "horizontal": -27
+        },
+        "handover_extend": {
+          "vertical": 3,
+          "horizontal": -29
+        },
+        "handover_return": {
+          "vertical": 3,
+          "horizontal": -29
+        },
+        "sleep_sit": {
+          "vertical": 15,
+          "horizontal": -30
+        },
+        "sleep_sit_breath": {
+          "vertical": 14,
+          "horizontal": -30
+        },
+        "faint": {
+          "vertical": 13,
+          "horizontal": -31
+        }
+      },
+      "passed": true
+    },
+    "aging_cask_floor": {
+      "native_origin": [
+        98,
+        47
+      ],
+      "display_origin": [
+        294,
+        141
+      ],
+      "opaque_box_native": [
+        104,
+        50,
+        124,
+        79
+      ],
+      "ui_rect_overlaps": [],
+      "keeper_pose_overlap_pixels": {
+        "idle": 0,
+        "brew_reach": 0,
+        "brew_stir_left": 0,
+        "brew_stir_right": 0,
+        "handover_extend": 0,
+        "handover_return": 0,
+        "sleep_sit": 0,
+        "sleep_sit_breath": 0,
+        "faint": 0
+      },
+      "keeper_gaps_native": {
+        "idle": {
+          "vertical": -45,
+          "horizontal": 3
+        },
+        "brew_reach": {
+          "vertical": -45,
+          "horizontal": 4
+        },
+        "brew_stir_left": {
+          "vertical": -45,
+          "horizontal": 4
+        },
+        "brew_stir_right": {
+          "vertical": -45,
+          "horizontal": 4
+        },
+        "handover_extend": {
+          "vertical": -45,
+          "horizontal": 2
+        },
+        "handover_return": {
+          "vertical": -45,
+          "horizontal": 2
+        },
+        "sleep_sit": {
+          "vertical": -33,
+          "horizontal": 1
+        },
+        "sleep_sit_breath": {
+          "vertical": -34,
+          "horizontal": 1
+        },
+        "faint": {
+          "vertical": -35,
+          "horizontal": 0
+        }
+      },
+      "passed": true,
+      "note": "Stands in front of the counter's left end (intentional overlap with the counter, not with the keeper)."
+    }
+  },
+  "mockup_frames": {
+    "sleep_a_wall": [
+      "frames/sleep_a_wall-0.png",
+      "frames/sleep_a_wall-1.png",
+      "frames/sleep_a_wall-2.png",
+      "frames/sleep_a_wall-3.png",
+      "frames/sleep_a_wall-4.png",
+      "frames/sleep_a_wall-5.png",
+      "frames/sleep_a_wall-6.png",
+      "frames/sleep_a_wall-7.png"
+    ],
+    "sleep_b_wall": [
+      "frames/sleep_b_wall-0.png",
+      "frames/sleep_b_wall-1.png",
+      "frames/sleep_b_wall-2.png",
+      "frames/sleep_b_wall-3.png",
+      "frames/sleep_b_wall-4.png",
+      "frames/sleep_b_wall-5.png",
+      "frames/sleep_b_wall-6.png",
+      "frames/sleep_b_wall-7.png"
+    ],
+    "faint_wall": [
+      "frames/faint_wall-0.png",
+      "frames/faint_wall-1.png",
+      "frames/faint_wall-2.png",
+      "frames/faint_wall-3.png",
+      "frames/faint_wall-4.png",
+      "frames/faint_wall-5.png",
+      "frames/faint_wall-6.png",
+      "frames/faint_wall-7.png"
+    ],
+    "idle_cask_floor": [
+      "frames/idle_cask_floor-0.png",
+      "frames/idle_cask_floor-1.png",
+      "frames/idle_cask_floor-2.png",
+      "frames/idle_cask_floor-3.png",
+      "frames/idle_cask_floor-4.png",
+      "frames/idle_cask_floor-5.png",
+      "frames/idle_cask_floor-6.png",
+      "frames/idle_cask_floor-7.png"
+    ]
+  },
+  "passed": true
+}

@@ -1,0 +1,132 @@
+{
+  "source_size": [
+    1448,
+    1086
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "row_gutter": [
+    0,
+    574,
+    1086
+  ],
+  "common_uniform_scale": 0.8391608391608392,
+  "whole_body_registration": true,
+  "head_top_row": 11,
+  "hat_layer_size": [
+    32,
+    14
+  ],
+  "hat_head_anchor": [
+    14,
+    14
+  ],
+  "hat_local_seat_anchor": [
+    14,
+    10
+  ],
+  "hat_placement": [
+    0,
+    4
+  ],
+  "frames": [
+    {
+      "id": "idle",
+      "whole_body_size": [
+        299,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    },
+    {
+      "id": "walk_contact_a",
+      "whole_body_size": [
+        299,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    },
+    {
+      "id": "walk_pass_a",
+      "whole_body_size": [
+        298,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    },
+    {
+      "id": "walk_contact_b",
+      "whole_body_size": [
+        298,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    },
+    {
+      "id": "walk_pass_b",
+      "whole_body_size": [
+        299,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    },
+    {
+      "id": "receive_extend",
+      "whole_body_size": [
+        315,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        18,
+        110
+      ]
+    },
+    {
+      "id": "receive_hold",
+      "whole_body_size": [
+        298,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    },
+    {
+      "id": "blink_idle",
+      "whole_body_size": [
+        298,
+        429
+      ],
+      "common_uniform_scale": 0.8391608391608392,
+      "offset": [
+        32,
+        110
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "grid": [
+    4,
+    2
+  ],
+  "sheet_size": [
+    1586,
+    992
+  ],
+  "source_render_magnification_calibrated_by_whole_body_height": true,
+  "uniform_scale_within_each_generated_sheet": true,
+  "old_face_hook_used": false,
+  "cross_pose_limb_splicing": false,
+  "frames": [
+    {
+      "id": "idle",
+      "source_crop_size": [
+        247,
+        387
+      ],
+      "uniform_source_scale": 0.9090909090909091,
+      "offset": [
+        50,
+        118
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_contact_a",
+      "source_crop_size": [
+        255,
+        396
+      ],
+      "uniform_source_scale": 0.9090909090909091,
+      "offset": [
+        43,
+        120
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_pass_a",
+      "source_crop_size": [
+        257,
+        387
+      ],
+      "uniform_source_scale": 0.9090909090909091,
+      "offset": [
+        45,
+        118
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_contact_b",
+      "source_crop_size": [
+        524,
+        822
+      ],
+      "uniform_source_scale": 0.43795620437956206,
+      "offset": [
+        45,
+        120
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "walk_pass_b",
+      "source_crop_size": [
+        547,
+        820
+      ],
+      "uniform_source_scale": 0.43795620437956206,
+      "offset": [
+        40,
+        121
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "receive_extend",
+      "source_crop_size": [
+        285,
+        383
+      ],
+      "uniform_source_scale": 0.9090909090909091,
+      "offset": [
+        23,
+        122
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "receive_hold",
+      "source_crop_size": [
+        261,
+        383
+      ],
+      "uniform_source_scale": 0.9090909090909091,
+      "offset": [
+        44,
+        122
+      ],
+      "head_center": 15.5,
+      "foot_row": 46,
+      "coherent_whole_body": true
+    },
+    {
+      "id": "blink_idle",
+      "source": "idle-registered.png",
+      "whole_body_reused": true,
+      "only_pupil_material_state_changes": true
+    }
+  ]
+}

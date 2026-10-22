@@ -1,0 +1,67 @@
+{
+  "mode": "built-in image_gen",
+  "selected_sources": [
+    {
+      "path": "source/generated-carry-01.png",
+      "sha256": "5efcfadf2a223df5a9c623a09c826109cca933c39a9d776be4016c04fe0a4fe3"
+    },
+    {
+      "path": "source/generated-opposite-gait-01.png",
+      "sha256": "8ca7241fb38866777b4dd2bcb0e79e46e89edf4fea91e8f33cd3310e1bd64322"
+    },
+    {
+      "path": "source/generated-passing-b-01.png",
+      "sha256": "34df8f53e98e7112707f449b5a642c8d3b7ec144871bec9e3fa4e352c8d3ebd0"
+    }
+  ],
+  "original_generated_paths": [
+    "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-057ac4f9-0848-409d-af33-2db71360df11.png",
+    "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-361a543f-5730-48c8-8c2f-5fd5ba087fdf.png",
+    "C:/Users/imtl/.codex/generated_images/01a13372-5c86-7f80-8239-24f6d4687d56/exec-da61c2a5-1fbf-4b0b-adae-878b3da6f89e.png"
+  ],
+  "prompts": [
+    "source/prompt-carry.txt",
+    "source/prompt-opposite-gait.txt",
+    "source/prompt-passing-b.txt"
+  ],
+  "rejected_variant": {
+    "source": "source/generated-carry-02-rejected.png",
+    "prompt": "source/prompt-carry-correction.txt",
+    "reason": "Opposite gait remained duplicated."
+  },
+  "whole_body_sources": true,
+  "cross_pose_head_or_limb_splicing": false,
+  "new_palette_colors": 0,
+  "registration": "registration.json",
+  "semantic_material_masks": "semantic-masks.json",
+  "old_keypose_sha256": {
+    "idle": "918cae25980341dbdd34f8f886ce4f719ea06109689048b4e80249d74dee7158",
+    "walk_contact_a": "0dca83e10e3a8d9a0d8a82bde11c56edb1e5b938e2bbbf11d5b2c1575bdd5d96",
+    "walk_pass_a": "b35dfb3afbc4cecca88b512f1b49f7e97cc8d6f87ead1cd64d561427e7ab9004",
+    "walk_contact_b": "9229c6c3a71b9321d25ec81abcc77fced462e2036c6115447b08cbc1d4e3812b",
+    "walk_pass_b": "33243cfaf013d38dac770d8b8c93c0e8a7c3bb265d233641ed4a3f9d6e62bdb6",
+    "receive_extend": "46ac2fc2301a447e27a323aac2b69aefad2ef10a56797f9c02cbd2fefca3c404",
+    "receive_hold": "c255d76f7c04328a9cf5cb0f2ccba4808bad3a0319915eb5bc7f69ba04bcda01",
+    "blink_idle": "6ca209e8e9bc4f66043631fac6f7a3e2839a63537a7a332e37371cde53676684"
+  },
+  "processing_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "reference_inputs": {
+    "generated-carry-01.png": [
+      "source/walk-reference-10x.png",
+      "source/identity-reference-10x.png"
+    ],
+    "generated-opposite-gait-01.png": [
+      "source/opposite-gait-reference-10x.png",
+      "source/generated-carry-01.png"
+    ],
+    "generated-passing-b-01.png": [
+      "source/passing-b-reference-10x.png",
+      "source/generated-opposite-gait-01.png"
+    ]
+  }
+}

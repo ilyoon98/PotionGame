@@ -1,0 +1,1798 @@
+{
+  "status": "passed",
+  "frames_tested": 256,
+  "checks": [
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 0,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 1,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 2,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 3,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 4,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 5,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 6,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 7,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 8,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 9,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 10,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 11,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 12,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 13,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 14,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 15,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 16,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 17,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 18,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 19,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 20,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 21,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 22,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 23,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 24,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 25,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 26,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 27,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 28,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 29,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 30,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 31,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 32,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 33,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 34,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 35,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 36,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 37,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 38,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 39,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 40,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 41,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 42,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 43,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 44,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 45,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 46,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 47,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 48,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 49,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 50,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 51,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 52,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 53,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 54,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 55,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 56,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 57,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 58,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 59,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 60,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 61,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 62,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "witch",
+      "index": 63,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 0,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 1,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 2,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 3,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 4,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 5,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 6,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 7,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 8,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 9,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 10,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 11,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 12,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 13,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 14,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 15,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 16,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 17,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 18,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 19,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 20,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 21,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 22,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 23,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 24,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 25,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 26,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 27,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 28,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 29,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 30,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 31,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 32,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 33,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 34,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 35,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 36,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 37,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 38,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 39,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 40,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 41,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 42,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 43,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 44,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 45,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 46,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 47,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 48,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 49,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 50,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 51,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 52,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 53,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 54,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 55,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 56,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 57,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 58,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 59,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 60,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 61,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 62,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "grid",
+      "character": "elf",
+      "index": 63,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 0,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 1,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 2,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 3,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 4,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 5,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 6,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 7,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 8,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 9,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 10,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 11,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 12,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 13,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 14,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 15,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 16,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 17,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 18,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 19,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 20,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 21,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 22,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 23,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 24,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 25,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 26,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 27,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 28,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 29,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 30,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 31,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 32,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 33,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 34,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 35,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 36,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 37,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 38,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 39,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 40,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 41,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 42,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 43,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 44,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 45,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 46,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 47,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 48,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 49,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 50,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 51,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 52,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 53,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 54,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 55,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 56,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 57,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 58,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 59,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 60,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 61,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 62,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "witch",
+      "index": 63,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": true
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 0,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 1,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 2,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 3,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 4,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 5,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 6,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 7,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 8,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 9,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 10,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 11,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 12,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 13,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 14,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 15,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 16,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 17,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 18,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 19,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 20,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 21,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 22,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 23,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 24,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 25,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 26,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 27,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 28,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 29,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 30,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 31,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 32,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 33,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 34,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 35,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 36,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 37,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 38,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 39,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 40,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 41,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 42,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 43,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 44,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 45,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 46,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 47,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 48,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 49,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 50,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 51,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 52,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 53,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 54,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 55,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 56,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 57,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 58,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 59,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 60,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 61,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 62,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    },
+    {
+      "mode": "fine",
+      "character": "elf",
+      "index": 63,
+      "two_eyes_and_skin_gap_passed": true,
+      "forehead_hair_solid": false
+    }
+  ]
+}

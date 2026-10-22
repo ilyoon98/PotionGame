@@ -1,0 +1,43 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": true,
+  "status": "candidate",
+  "approved_by_user": false,
+  "processing": "tools/prepare_character_proportions_v3.py -> tools/build_character_corrected_mockup.py",
+  "jobs": [
+    {
+      "name": "keeper",
+      "source": "characters/source/keeper.png",
+      "references": [
+        "assets/source/character_idle_v2/keeper.png",
+        "art/mockups/cozy-witch-v1/witch-3x.png"
+      ],
+      "prompt": "Pixel sprite precise-object-edit. Image1 is the ORIGINAL APPROVED MALE POTION SHOPKEEPER, the identity edit target. Image2 ONLY sets the very coarse pixel scale of the current new game art. Restore the exact male keeper from image1 but simplify to a genuine logical 32x48 pixel sprite, enlarged with big square pixels. One complete adult male shopkeeper facing slightly RIGHT. Preserve short warm brown hair, flat male chest, large bent PURPLE witch hat with small gold buckle, OPEN PURPLE CAPE, CREAM HIGH-NECK SHIRT visibly framed by the cape, BROWN SHORT PANTS with TWO distinct legs and bare peach knees, and two BROWN BOOTS. The cape extends at the SIDES; the front must visibly show separate shorts/knees/boots. Do not produce the skirt/dress silhouette in Image2. Male identity from Image1 must survive simplification. Normal relaxed idle stance, hands by sides, no tools, no bottle. Anatomy under the hat: hair/face head roughly16x12 logical pixels; exposedface about10x7; shoulders-to-ground18 logical pixels. Hat adds approximately16 extra pixels ABOVE normal head; the face is not enlarged to accommodate the hat. ONE logical pixel outline and large plain flat material blocks. Maximum EXACTLY5 flat colors: deep plum outline #241C32, purplehat/cape #86548E, peachcream skin AND shirt #F6D1AC, warmbrown hair/shorts/boots #916047, gold buckle #E9B95F. No shading, hatching, dithering, textures, gradients, hair strands, tiny buttons, antialiasing, glossy rendering or partially transparent pixels. Simplify the cape into one flat purple fill. Eye is a simple two-pixel-tall dark mark with cream skin immediately to its right, so it can blink. Thick clear silhouette in an actual32-column48-row logical canvas, feet at row46; empty1pixelbelow, centercompletebody, no gridlines. This is tiny cozy RPG GAME ART, not detailed illustration. Genuinely transparent background. No floor, platform, shadow, labels, text, borders or multiple poses."
+    },
+    {
+      "name": "elf_head",
+      "source": "characters/source/elf-head.png",
+      "references": [
+        "characters/source/elf-head-v1.png",
+        "art/mockups/cozy-witch-v1/witch-3x.png"
+      ],
+      "prompt": "Precise pixel sprite HEAD edit. Image1 is the current isolated elf head edit target. Image2 is ONLY a scale reference for the FACE beneath the witchhat; ignore thehat. The central FACE in Image1 is too narrow and the hair dome is too tall. Redraw just this SAME isolated elf HEAD so it has a broad simple readable FACE like Image2 at the SAME native pixel size. Strict logical18x13 pixel box including ears. Face center must occupy approximately11pixels WIDE by7pixels HIGH (over60 percent of total head width); hair occupies only the top3rows plus a small1row fringe and1pixelframe near temples, rather than filling most of the head. Keep warmbrown short tousled hair, one smallsagegreenleaf, two small pointed ears, peachcream skin, simple darkeyes, facing LEFT. Eye marks are simple2verticaldarkpixels with skin on immediate right. One clear roundedhead silhouette; reduce internal dark lines, no interior hair lines. Exactly4 flatcolors: darkplumoutline #241C32, brown hair #916047, peachcreamface #F6D1AC, sageleaf #718C59. Outeroutline1logicalpixel, NO thickblackhairoutlineinsideface. Transparentbackground and enlarged hard square pixels. No gradients, texture, lighting, antialiasing, glossydetail, hair strands, eyelashes, blushing. ONEheadONLY, no body, neck extension, clothes, hands, potion, text, grid, floor orshadow. A lowresolution game sprite head piece to attach to unchanged existing body. Maintain adult fantasy customer identity drawn in compact cute proportions."
+    },
+    {
+      "name": "elf_head_initial",
+      "status": "superseded",
+      "source": "characters/source/elf-head-v1.png",
+      "references": [
+        "art/mockups/full-ingame-v1/elf-3x.png",
+        "art/mockups/cozy-witch-v1/witch-3x.png"
+      ],
+      "prompt": "Use case: precise pixel sprite edit. Image 1 is the elf EDIT TARGET. Image 2 is ONLY a scale reference: the elf's FACE and HEAD must use the same coarse native pixel scale as the witch face beneath the hat; disregard the witch hat entirely. The current elf head is severely oversized. Produce a replacement ELF HEAD ONLY, no torso, no arms, no held potion, no feet. Keep the same character: warm brown short tousled hair, small green leaf in hair, peach skin, pointed elf ears, simple dark eyes, facing slightly LEFT as in image 1. This is an adult fantasy shop customer drawn with cute compact game proportions. Make the head much smaller and simpler in the logical pixel grid, with almost no hair shading. The complete isolated head INCLUDING ears must fit an 18-column by 13-row logical pixel box; central face around 9-to-10 pixels wide and 7-to-8 pixels tall; hair should not be a huge dome. Chunky 1 logical pixel deep plum outline. Exactly four flat color materials: dark plum outline #241C32, warm brown hair #916047, peach cream face #F6D1AC, sage green leaf #718C59. No other colors, no gradients, no dithering, no blur, no anti-aliasing, no individual hair strands, no highlight gloss. Show just ONE isolated head, generously enlarged with nearest-neighbor hard square blocks, with genuinely transparent padding around it. Keep the same left-looking face angle and simple expression from Image 1. The replacement will be attached to the UNCHANGED existing elf torso, so do not make a body or invent clothes. This is a low-resolution sprite piece, not a portrait illustration. No text, no labels, no floor, no shadow, no grid lines."
+    }
+  ],
+  "native_postprocessing_notes": [
+    "Generator instructions are targets, not measured results.",
+    "Material-specific ramps and native grid establish final pixel sizes.",
+    "Elf eye masks are explicit semantic rectangles to retain 2-pixel marks lost during reduction.",
+    "Elf body below row27 is unchanged; exact face widths vary with angle and ears."
+  ]
+}

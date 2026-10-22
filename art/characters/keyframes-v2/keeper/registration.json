@@ -1,0 +1,116 @@
+{
+  "grid": [
+    3,
+    2
+  ],
+  "sheet_size": [
+    1239,
+    1270
+  ],
+  "row_cut": 635,
+  "source_render_magnification_calibrated": true,
+  "head_hat_collar_reference": "art/mockups/full-ingame-v7/characters/witch-native.png",
+  "raised_forearm_region": [
+    0,
+    14,
+    10,
+    28
+  ],
+  "old_face_hook_used": false,
+  "frames": [
+    {
+      "id": "idle",
+      "approved_neutral_reused": true
+    },
+    {
+      "id": "brew_reach",
+      "source_crop_size": [
+        539,
+        805
+      ],
+      "common_uniform_scale": 0.5714285714285714,
+      "offset": [
+        0,
+        10
+      ],
+      "original_head_hat_collar_rows": [
+        0,
+        27
+      ],
+      "whole_body_pose_source": "brew_reach",
+      "cross_pose_limbs": false
+    },
+    {
+      "id": "brew_stir_left",
+      "source_crop_size": [
+        508,
+        805
+      ],
+      "common_uniform_scale": 0.5714285714285714,
+      "offset": [
+        1,
+        10
+      ],
+      "original_head_hat_collar_rows": [
+        0,
+        27
+      ],
+      "whole_body_pose_source": "brew_stir_left",
+      "cross_pose_limbs": false
+    },
+    {
+      "id": "brew_stir_right",
+      "source_crop_size": [
+        495,
+        805
+      ],
+      "common_uniform_scale": 0.5714285714285714,
+      "offset": [
+        10,
+        10
+      ],
+      "original_head_hat_collar_rows": [
+        0,
+        27
+      ],
+      "whole_body_pose_source": "brew_stir_right",
+      "cross_pose_limbs": false
+    },
+    {
+      "id": "handover_extend",
+      "source_crop_size": [
+        394,
+        595
+      ],
+      "common_uniform_scale": 0.7641196013289037,
+      "offset": [
+        15,
+        15
+      ],
+      "original_head_hat_collar_rows": [
+        0,
+        27
+      ],
+      "whole_body_pose_source": "handover_extend",
+      "cross_pose_limbs": false
+    },
+    {
+      "id": "handover_return",
+      "source_crop_size": [
+        356,
+        594
+      ],
+      "common_uniform_scale": 0.7641196013289037,
+      "offset": [
+        19,
+        16
+      ],
+      "original_head_hat_collar_rows": [
+        0,
+        27
+      ],
+      "whole_body_pose_source": "handover_return",
+      "cross_pose_limbs": false
+    }
+  ]
+}

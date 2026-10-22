@@ -1,0 +1,33 @@
+{
+	"fps": 8,
+	"frame_size": [
+		96,
+		96
+	],
+	"frames": [
+		"rain_frame_0_96x96.png",
+		"rain_frame_1_96x96.png",
+		"rain_frame_2_96x96.png",
+		"rain_frame_3_96x96.png"
+	],
+	"gif_preview_size": [
+		224,
+		272
+	],
+	"loop": true,
+	"method": "Exact vertical wrap of existing generated artwork; no new drawing",
+	"note": "Rain-only RGBA frames; cloud_rain_96x32.png remains a separate static object",
+	"offsets_y": [
+		0,
+		24,
+		48,
+		72
+	],
+	"order": "row-major 2x2; 0,1,2,3",
+	"sheet": "rain_animation_192x192.png",
+	"sheet_size": [
+		192,
+		192
+	],
+	"source": "rain_96x96.png"
+}

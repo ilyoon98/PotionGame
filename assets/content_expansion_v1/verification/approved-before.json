@@ -1,0 +1,82 @@
+[
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\health_icon.png",
+    "Hash": "B5C0A70506622B2B4226843A31BDA6EF195477BFE25847204AB70E4931F3F487"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\potion_12x16.png",
+    "Hash": "FC74FA913D3FD03165B888BC9D62DD82CE9E77EDC60F8E7051F7BF330C911FDE"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\mana_icon.png",
+    "Hash": "1A4B13FBE1F0349C1679EBDD5964A7F872F22E5B502439BF40C2955F1464131B"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\mana_12x16.png",
+    "Hash": "7F01057054A7F94707D8FE498553B2A2380286BEE31FD33603FD149A259D56CC"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\moon_icon.png",
+    "Hash": "9193A36C8F4B8ADF5849395AC9EE3C53BBC6DC26C405605E3A53444E58F6C2A8"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\moon_12x16.png",
+    "Hash": "15AF40C0F70476B92071030C85B942DB7E40953220AA1D7B6F4987B6945E483C"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\purify_icon.png",
+    "Hash": "6BD2648B328FDE4C4B57E480796C10C9128193F1BEA1813E4BFC9BCEA2223EF5"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\purify_12x16.png",
+    "Hash": "8AFF74B844CB9098B8A7DC3B4733E6130292C748F8F0F0530CE9C1F952A5F4CE"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\agility_icon.png",
+    "Hash": "D3271675294A24929A442290B155677C53C3C56C7EE23722DA1CFAA24788744C"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\agility_12x16.png",
+    "Hash": "D3BF37A963E93763888525F142FF66F2B0634AA1F6397174F09DAF1495EFF3C5"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\herb_icon.png",
+    "Hash": "CAB03DC597B392A5539F6F341F3503953A5E36AF89AE3CA0BB801D22C19C53A2"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\herb_growth.png",
+    "Hash": "7BF8C8BB72B8D5E6871CB083D059DC2F27CAB31930FBE9FB8076E6CCDC83B7C3"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\mushroom_24.png",
+    "Hash": "2CEEA238257B135C0F823F11BF162B0DC9DA144916A82C3B7294132FC41733FB"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\starleaf_icon.png",
+    "Hash": "C789AECAAA24333F62BC5776D696BE9FD2CD7DAED1EFD47001C21C6DC54E0AED"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\items_v1\\starleaf_growth.png",
+    "Hash": "3CF10F8196878246C8780AB60DC766508648D5406DCD59F31D149660C3A52C1C"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\management_v1\\expedition_icon.png",
+    "Hash": "6403AF3F7724A543CD3B78B67BD1E37C503E5ABC47EFD98D4B01B627F7A1E9E8"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\management_v1\\employee_icon.png",
+    "Hash": "B8B8A18F2A6232E93C40C58A07C83096431A8BEAC62A7C48985AEDD2FCC542AA"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\cauldron_48.png",
+    "Hash": "04B2EFFDDF95E8E22DD1B42BDBECFF4CC5533D7968392214C6C4C7E4A0A573A3"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\workshop_v1\\potion-counter.png",
+    "Hash": "EF367207EA386576894B193B3C3BB8D475F6E50D4B8C99DC8186B345B6E65964"
+  },
+  {
+    "Path": "C:\\Users\\imtl\\ilyoon_Git\\방치형 게임\\새-게임-프로젝트\\assets\\management_v1\\filter_icon.png",
+    "Hash": "8BBE889C194E0CA49D7F40069CF200365D66697CF00A2558A77C9812DAB1E240"
+  }
+]

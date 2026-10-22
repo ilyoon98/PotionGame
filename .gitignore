@@ -1,0 +1,9 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+.verification/
+__pycache__/
+*.pyc
+**/app_userdata/
+**/shader_cache/
+*-appdata/

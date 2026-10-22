@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "art_status": "approved",
+  "approved_by_user": true,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "cauldron": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 585,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#827589",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "teal": 3,
+        "gold": 4,
+        "stone": 5
+      },
+      "source_sha256": "74980808add7486edd972c35b97652ba9a767f6a6de37bcb3cc1da3b79eb1402",
+      "native_pixel_sha256": "a0cccef9612cd6e93c6f162a76f14404283f2c3ee289a5cd99bfd102b9756a78"
+    },
+    "witch": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 765,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "skin": 3,
+        "gold": 4
+      },
+      "source_sha256": "28ca5a2434cd83e7af4cf3f428f7a6b764cd2fd6accfc73a4da6d9e72c006d40",
+      "native_pixel_sha256": "1cf4edf00bc17473788c26b3c9d0c876a91828e1293c716bb1ba8a322b0ee488"
+    },
+    "shelf": {
+      "passed": true,
+      "size": [
+        64,
+        64
+      ],
+      "opaque_pixels": 1761,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#C99463",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "teal": 3,
+        "gold": 4
+      },
+      "source_sha256": "c2cdc7b12adac4c1b73c425ef54ca8dd6c7146d673372e613201090747292bb9",
+      "native_pixel_sha256": "d03975b68bc5b9be2877cfd97960c326256bfe567abf6e1ce75251f4a4df6e34"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

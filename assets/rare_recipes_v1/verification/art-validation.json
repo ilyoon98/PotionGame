@@ -1,0 +1,197 @@
+{
+	"checks": [
+		"exact PNG dimensions",
+		"nonempty genuine alpha",
+		"transparent corner padding",
+		"all 12 images distinct",
+		"4 small bottle silhouettes distinct",
+		"separate potion and recipe PNGs"
+	],
+	"deliverables": 12,
+	"geometry": [
+		{
+			"body_bounds": [
+				30,
+				30
+			],
+			"id": "rare_forest_breath",
+			"opaque_pixels": 522,
+			"path": "res://assets/rare_recipes_v1/potions/rare_forest_breath_icon.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 753,
+			"variant": "potion"
+		},
+		{
+			"body_bounds": [
+				10,
+				10
+			],
+			"id": "rare_forest_breath",
+			"opaque_pixels": 58,
+			"path": "res://assets/rare_recipes_v1/potions/rare_forest_breath_12x16.png",
+			"size": [
+				12,
+				16
+			],
+			"transparent_pixels": 132,
+			"variant": "bottle"
+		},
+		{
+			"body_bounds": [
+				30,
+				37
+			],
+			"id": "rare_forest_breath",
+			"opaque_pixels": 881,
+			"path": "res://assets/rare_recipes_v1/recipes/rare_forest_breath_recipe.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 391,
+			"variant": "recipe"
+		},
+		{
+			"body_bounds": [
+				11,
+				38
+			],
+			"id": "rare_mist_veil",
+			"opaque_pixels": 348,
+			"path": "res://assets/rare_recipes_v1/potions/rare_mist_veil_icon.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 927,
+			"variant": "potion"
+		},
+		{
+			"body_bounds": [
+				5,
+				14
+			],
+			"id": "rare_mist_veil",
+			"opaque_pixels": 60,
+			"path": "res://assets/rare_recipes_v1/potions/rare_mist_veil_12x16.png",
+			"size": [
+				12,
+				16
+			],
+			"transparent_pixels": 132,
+			"variant": "bottle"
+		},
+		{
+			"body_bounds": [
+				29,
+				38
+			],
+			"id": "rare_mist_veil",
+			"opaque_pixels": 859,
+			"path": "res://assets/rare_recipes_v1/recipes/rare_mist_veil_recipe.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 417,
+			"variant": "recipe"
+		},
+		{
+			"body_bounds": [
+				30,
+				38
+			],
+			"id": "rare_lunar_seal",
+			"opaque_pixels": 767,
+			"path": "res://assets/rare_recipes_v1/potions/rare_lunar_seal_icon.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 507,
+			"variant": "potion"
+		},
+		{
+			"body_bounds": [
+				10,
+				13
+			],
+			"id": "rare_lunar_seal",
+			"opaque_pixels": 86,
+			"path": "res://assets/rare_recipes_v1/potions/rare_lunar_seal_12x16.png",
+			"size": [
+				12,
+				16
+			],
+			"transparent_pixels": 103,
+			"variant": "bottle"
+		},
+		{
+			"body_bounds": [
+				30,
+				37
+			],
+			"id": "rare_lunar_seal",
+			"opaque_pixels": 882,
+			"path": "res://assets/rare_recipes_v1/recipes/rare_lunar_seal_recipe.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 397,
+			"variant": "recipe"
+		},
+		{
+			"body_bounds": [
+				29,
+				38
+			],
+			"id": "rare_nebula_distillate",
+			"opaque_pixels": 495,
+			"path": "res://assets/rare_recipes_v1/potions/rare_nebula_distillate_icon.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 782,
+			"variant": "potion"
+		},
+		{
+			"body_bounds": [
+				10,
+				14
+			],
+			"id": "rare_nebula_distillate",
+			"opaque_pixels": 72,
+			"path": "res://assets/rare_recipes_v1/potions/rare_nebula_distillate_12x16.png",
+			"size": [
+				12,
+				16
+			],
+			"transparent_pixels": 120,
+			"variant": "bottle"
+		},
+		{
+			"body_bounds": [
+				30,
+				35
+			],
+			"id": "rare_nebula_distillate",
+			"opaque_pixels": 744,
+			"path": "res://assets/rare_recipes_v1/recipes/rare_nebula_distillate_recipe.png",
+			"size": [
+				32,
+				40
+			],
+			"transparent_pixels": 531,
+			"variant": "recipe"
+		}
+	],
+	"passed": true,
+	"sets": 4,
+	"small_bottle_source": "independently_generated_logical_12x16_designs",
+	"unique_small_bottle_silhouettes": 4
+}

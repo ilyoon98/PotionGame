@@ -1,0 +1,632 @@
+{
+  "status": "passed",
+  "character": "elf",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "native_canvas": [
+    32,
+    48
+  ],
+  "scale": 3,
+  "frame_count": 8,
+  "head_reference_frame": [
+    4,
+    11,
+    26,
+    27
+  ],
+  "head_rows": [
+    11,
+    26
+  ],
+  "torso_rows": [
+    27,
+    39
+  ],
+  "legs_and_boots_rows": [
+    40,
+    46
+  ],
+  "foot_row": 46,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "frames": {
+    "idle": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 490,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        11,
+        11,
+        11
+      ],
+      "tunic_hem_width10_to12": true,
+      "standing_waist_width": 10,
+      "standing_waist_width10": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "walk_contact_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 491,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        12,
+        12,
+        12
+      ],
+      "tunic_hem_width10_to12": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "walk_pass_a": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 474,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        11,
+        11,
+        11
+      ],
+      "tunic_hem_width10_to12": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "walk_contact_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 491,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        12,
+        12,
+        12
+      ],
+      "tunic_hem_width10_to12": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "walk_pass_b": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 470,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        12,
+        12,
+        12
+      ],
+      "tunic_hem_width10_to12": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "receive_extend": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 500,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        12,
+        12,
+        12
+      ],
+      "tunic_hem_width10_to12": true,
+      "standing_waist_width": 10,
+      "standing_waist_width10": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "receive_hold": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 484,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        12,
+        12,
+        12
+      ],
+      "tunic_hem_width10_to12": true,
+      "standing_waist_width": 10,
+      "standing_waist_width10": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              21
+            ],
+            [
+              10,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              21
+            ],
+            [
+              15,
+              22
+            ]
+          ],
+          "width": 1,
+          "height": 2,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    },
+    "blink_idle": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 490,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "top11_rows_clear": true,
+      "foot_on_row46": true,
+      "head_bounds": [
+        4,
+        11,
+        26,
+        27
+      ],
+      "head_width": 22,
+      "head_height": 16,
+      "head_fits_22x16": true,
+      "tunic_hem_widths_rows37_39": [
+        11,
+        11,
+        11
+      ],
+      "tunic_hem_width10_to12": true,
+      "standing_waist_width": 10,
+      "standing_waist_width10": true,
+      "eyes": [
+        {
+          "pixels": [
+            [
+              10,
+              22
+            ],
+            [
+              11,
+              22
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        },
+        {
+          "pixels": [
+            [
+              15,
+              22
+            ],
+            [
+              16,
+              22
+            ]
+          ],
+          "width": 2,
+          "height": 1,
+          "isolated_dark_component_pixels": 2,
+          "one_pixel_skin_gap": true
+        }
+      ],
+      "exact_3x": true
+    }
+  },
+  "walk_contact_leg_changed_pixels": 43,
+  "walk_pass_leg_changed_pixels": 52,
+  "walk_contact_arm_changed_pixels": 32,
+  "blink_only_eye_pixels_changed": true,
+  "bottle_anchor_validation": {
+    "tested_recipes": 36,
+    "tested_pose_recipe_pairs": 72,
+    "grips_on_skin": true
+  }
+}

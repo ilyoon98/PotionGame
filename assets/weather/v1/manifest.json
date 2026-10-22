@@ -1,0 +1,89 @@
+{
+	"alpha": "RGBA; no sky/background rectangles",
+	"assets": {
+		"cloud_clear": {
+			"file": "cloud_clear_64x24.png",
+			"size": [
+				64,
+				24
+			],
+			"visible_fraction": 0.494140625
+		},
+		"cloud_rain": {
+			"file": "cloud_rain_96x32.png",
+			"size": [
+				96,
+				32
+			],
+			"visible_fraction": 0.526041666666667
+		},
+		"moon": {
+			"file": "moon_24x32.png",
+			"size": [
+				24,
+				32
+			],
+			"visible_fraction": 0.311197916666667
+		},
+		"rain": {
+			"file": "rain_96x96.png",
+			"size": [
+				96,
+				96
+			],
+			"visible_fraction": 0.0352647569444444
+		},
+		"raindrop": {
+			"file": "raindrop.png",
+			"size": [
+				9,
+				14
+			]
+		},
+		"star": {
+			"file": "star_8x8.png",
+			"size": [
+				8,
+				8
+			],
+			"visible_fraction": 0.1875
+		},
+		"sun": {
+			"file": "sun_24x24.png",
+			"size": [
+				24,
+				24
+			],
+			"visible_fraction": 0.395833333333333
+		}
+	},
+	"combinations": {
+		"day_clear": [
+			"sun",
+			"cloud_clear"
+		],
+		"day_rain": [
+			"cloud_rain",
+			"rain"
+		],
+		"night_clear": [
+			"moon",
+			"star"
+		],
+		"night_rain": [
+			"moon",
+			"cloud_rain",
+			"rain"
+		]
+	},
+	"filter": "nearest",
+	"layer_order_back_to_front": [
+		"sun or moon",
+		"star",
+		"rain",
+		"cloud",
+		"shop characters"
+	],
+	"rain_note": "Cloud and rain are independent textures. Scroll rain with repeat enabled; a single raindrop is also supplied for particles. Clip rain below the cloud canopy, not across the entire desktop.",
+	"scale": 2
+}

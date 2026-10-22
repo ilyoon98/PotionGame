@@ -1,0 +1,601 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/characters/keyframes-v1/traveler/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "assets": [
+    {
+      "id": "idle",
+      "source": "art/characters/keyframes-v1/traveler/source/idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather",
+      "material_rectangles": [
+        {
+          "rect": [
+            10,
+            38,
+            20,
+            40
+          ],
+          "material": "cloth"
+        }
+      ]
+    },
+    {
+      "id": "walk_contact_a",
+      "source": "art/characters/keyframes-v1/traveler/source/walk_contact_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather"
+    },
+    {
+      "id": "walk_pass_a",
+      "source": "art/characters/keyframes-v1/traveler/source/walk_pass_a-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather"
+    },
+    {
+      "id": "walk_contact_b",
+      "source": "art/characters/keyframes-v1/traveler/source/walk_contact_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather"
+    },
+    {
+      "id": "walk_pass_b",
+      "source": "art/characters/keyframes-v1/traveler/source/walk_pass_b-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather"
+    },
+    {
+      "id": "receive_extend",
+      "source": "art/characters/keyframes-v1/traveler/source/receive_extend-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather",
+      "material_rectangles": [
+        {
+          "rect": [
+            10,
+            38,
+            20,
+            40
+          ],
+          "material": "cloth"
+        }
+      ]
+    },
+    {
+      "id": "receive_hold",
+      "source": "art/characters/keyframes-v1/traveler/source/receive_hold-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather",
+      "material_rectangles": [
+        {
+          "rect": [
+            10,
+            38,
+            20,
+            40
+          ],
+          "material": "cloth"
+        }
+      ]
+    },
+    {
+      "id": "blink_idle",
+      "source": "art/characters/keyframes-v1/traveler/source/blink_idle-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.26,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "shirt": [
+          "#FFF0BC"
+        ],
+        "hair_leather": [
+          "#916047"
+        ],
+        "cloth": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "outline": "outline",
+        "skin": "skin",
+        "shirt": "gold",
+        "hair_leather": "wood",
+        "cloth": "wood"
+      },
+      "rules": [
+        {
+          "material": "shirt",
+          "hue": [
+            0.105,
+            0.22
+          ],
+          "value_min": 0.78,
+          "saturation_max": 0.44
+        },
+        {
+          "material": "skin",
+          "hue": [
+            0.025,
+            0.105
+          ],
+          "value_min": 0.76,
+          "saturation_min": 0.15,
+          "saturation_max": 0.5
+        },
+        {
+          "material": "cloth",
+          "x_max": 0.7,
+          "y_min": 0.73,
+          "y_max": 0.83
+        }
+      ],
+      "fallback_material": "hair_leather",
+      "material_rectangles": [
+        {
+          "rect": [
+            10,
+            38,
+            20,
+            40
+          ],
+          "material": "cloth"
+        }
+      ]
+    }
+  ]
+}
