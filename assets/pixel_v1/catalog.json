@@ -13704,6 +13704,22 @@
     "effects/dizzy_star.png": {
       "source": "art/mockups/f21-rest-aging-v1/props/pipeline/dizzy_star-native.png",
       "sha256": "7277a6a178c8de55560c9a7b7644e4ea0fc8abd9242ca721b1f8ec1bbbde4d87"
+    },
+    "souvenirs/souvenir_compass.png": {
+      "source": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_compass.png",
+      "sha256": "218daa896cc6f5dbfd1c69047ea36a8ff707c7d2beb054636fd1dcefcb336cce"
+    },
+    "souvenirs/souvenir_bookmark.png": {
+      "source": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_bookmark.png",
+      "sha256": "d240b1a3101bba787604d99858b9e7426760202c06d1607d0e0890c98a9e7709"
+    },
+    "souvenirs/souvenir_leaf_brooch.png": {
+      "source": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_leaf_brooch.png",
+      "sha256": "25b3e8b63bd567061e01e97fb3800a7aa988689badd3d2721d38fee57a048ee8"
+    },
+    "souvenirs/souvenir_silver_bell.png": {
+      "source": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_silver_bell.png",
+      "sha256": "29529b25490e5319937ad81cabba0bfbcdbce6996f594ae16160eae79c0628d3"
     }
   },
   "props": {
@@ -14038,5 +14054,11 @@
   "effects": {
     "sleep_z": "res://assets/pixel_v1/effects/sleep_z.png",
     "dizzy_star": "res://assets/pixel_v1/effects/dizzy_star.png"
+  },
+  "souvenirs": {
+    "souvenir_compass": "res://assets/pixel_v1/souvenirs/souvenir_compass.png",
+    "souvenir_bookmark": "res://assets/pixel_v1/souvenirs/souvenir_bookmark.png",
+    "souvenir_leaf_brooch": "res://assets/pixel_v1/souvenirs/souvenir_leaf_brooch.png",
+    "souvenir_silver_bell": "res://assets/pixel_v1/souvenirs/souvenir_silver_bell.png"
   }
 }

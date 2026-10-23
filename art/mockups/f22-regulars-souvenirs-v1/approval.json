@@ -1,20 +1,21 @@
 {
   "schema_version": 1,
-  "status": "candidate",
-  "approved_by_user": false,
-  "approved_on": null,
-  "user_reply": null,
+  "status": "approved",
+  "approved_by_user": true,
+  "approved_on": "2026-10-23",
+  "user_reply": "진행해보자고",
   "review": "art/mockups/f22-regulars-souvenirs-v1/review.html",
-  "runtime_integrated": false,
+  "runtime_integrated": true,
   "scope": {
     "souvenir_compass": "여행자 단골 기념품 · 낡은 나침반",
     "souvenir_bookmark": "여마법사 단골 기념품 · 별무늬 책갈피",
     "souvenir_leaf_brooch": "엘프 단골 기념품 · 잎사귀 브로치",
     "souvenir_silver_bell": "고양이 도적 단골 기념품 · 작은 은방울"
   },
-  "pending_decisions": [
-    "4종 모양·색 승인 또는 수정 지시",
-    "관리 패널 기념품 칸 표시 크기(32px 원본 1배 / 24px 축소)"
-  ],
-  "note": "사용자 승인 전 후보. assets/ 게시와 게임 연결은 승인 후 별도 작업으로 진행한다."
+  "decisions": {
+    "designs": "4종을 수정 없이 채택 (사용자 답변 \"진행해보자고\", 기념품이 게임에 안 나온다는 안내 직후)",
+    "display_size": "관리 · 통계 단골 카드에 32px 원본 1배. 24px 축소는 정수 배율 규칙(AGENTS.md 공통 확대)에 어긋나 쓰지 않는다"
+  },
+  "runtime": "tools/publish_f22_souvenirs_v1.py → assets/pixel_v1/souvenirs/{id}.png, catalog.json souvenirs",
+  "not_in_scope": "작업실 장식 슬롯(꾸미기)·장착/해제는 이번 승인 범위가 아니다"
 }

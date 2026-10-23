@@ -582,9 +582,22 @@ func _regular_card(id: String) -> void:
 	portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	portrait.custom_minimum_size = Vector2(32, 48)
-	portrait.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
 	portrait.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	line.add_child(portrait)
+	# Left column: customer portrait, then the souvenir once the stage gives it.
+	var side := VBoxContainer.new()
+	side.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
+	side.add_theme_constant_override("separation", 8)
+	line.add_child(side)
+	side.add_child(portrait)
+	var souvenir := TextureRect.new()
+	souvenir.name = "Souvenir"
+	souvenir.texture = ManagementArt.icon(Regulars.STORIES[id].souvenir)
+	souvenir.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+	souvenir.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+	souvenir.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+	souvenir.custom_minimum_size = Vector2(32, 32) # Approved display: native 1x.
+	souvenir.tooltip_text = "단골 기념품 · " + Regulars.STORIES[id].souvenir_name
+	side.add_child(souvenir)
 	var body := VBoxContainer.new()
 	body.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	body.add_theme_constant_override("separation", 4)
@@ -618,7 +631,7 @@ func _regular_card(id: String) -> void:
 	story.add_theme_font_size_override("font_size", AUX_SIZE)
 	story.add_theme_color_override("font_color", INK)
 	body.add_child(story)
-	regular_cards[id] = {"panel": panel, "title": title, "badge": badge, "bar": bar, "progress": progress, "habits": habits, "story": story}
+	regular_cards[id] = {"panel": panel, "portrait": portrait, "souvenir": souvenir, "title": title, "badge": badge, "bar": bar, "progress": progress, "habits": habits, "story": story}
 
 
 func _refresh_regulars(state: RefCounted) -> void:
@@ -627,6 +640,7 @@ func _refresh_regulars(state: RefCounted) -> void:
 		var data: Dictionary = state.regulars.view(id)
 		_text(card.title, "%s · %s" % [data.name, data.stage_name])
 		card.badge.visible = data.new
+		card.souvenir.visible = not data.souvenir.is_empty()
 		card.bar.value = data.fraction * card.bar.max_value
 		_text(card.progress, data.progress)
 		_text(card.habits, Regulars.habits(id, state.progression))

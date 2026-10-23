@@ -6,6 +6,7 @@ extends SceneTree
 const Shop = preload("res://scripts/shop.gd")
 const State = preload("res://scripts/shop_state.gd")
 const Regulars = preload("res://scripts/shop_regulars.gd")
+const Catalog = preload("res://scripts/pixel_art_catalog.gd")
 const M = preload("res://tests/contracts_fixture.gd")
 const Compare = preload("res://tests/state_compare.gd")
 var checks := 0
@@ -138,8 +139,18 @@ func run() -> void:
 	await process_frame
 	check(panel.regular_dot.visible, "A stage reached after viewing shows the dot again")
 	for id in panel.regular_cards:
-		var portrait := (panel.regular_cards[id].panel.get_child(0) as HBoxContainer).get_child(0) as TextureRect
+		var portrait: TextureRect = panel.regular_cards[id].portrait
 		check(portrait.texture != null and portrait.texture.get_size() == Vector2(32, 48), "%s portrait is the approved 32x48 idle frame" % id)
+		# Approved souvenir (2026-10-23): shown at native 1x only from the souvenir stage.
+		var icon: TextureRect = panel.regular_cards[id].souvenir
+		var souvenir_id: String = Regulars.STORIES[id].souvenir
+		check(icon.texture != null and icon.texture.get_size() == Vector2(32, 32) and icon.custom_minimum_size == Vector2(32, 32), "%s souvenir is 32x32 at 1x" % id)
+		check(icon.visible == shop.state.regulars.has_souvenir(id), "%s souvenir visible only from the souvenir stage" % id)
+		check(Catalog.DATA.souvenirs[souvenir_id] == "res://assets/pixel_v1/souvenirs/%s.png" % souvenir_id, "%s souvenir is in the catalog" % id)
+		var approved := Image.load_from_file(ProjectSettings.globalize_path("res://art/mockups/f22-regulars-souvenirs-v1/sprites/%s.png" % souvenir_id))
+		var published: Image = icon.texture.get_image()
+		approved.convert(Image.FORMAT_RGBA8); published.convert(Image.FORMAT_RGBA8)
+		check(approved.get_data() == published.get_data(), "%s published pixels equal the approved sprite" % id)
 	# Engine capture of the statistics page for visual review (rendering driver only).
 	var captured := false
 	if DisplayServer.get_name() != "headless":

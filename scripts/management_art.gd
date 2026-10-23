@@ -40,6 +40,10 @@ const DESCRIPTIONS := {
 	"regular_mage": "단골 · 여마법사",
 	"regular_elf": "단골 · 엘프",
 	"regular_rogue": "단골 · 고양이 도적",
+	"souvenir_compass": "단골 기념품 · 낡은 나침반",
+	"souvenir_bookmark": "단골 기념품 · 별무늬 책갈피",
+	"souvenir_leaf_brooch": "단골 기념품 · 잎사귀 브로치",
+	"souvenir_silver_bell": "단골 기념품 · 작은 은방울",
 }
 ## First frame (32×48) of each approved keeper pose sheet (16×4 grid).
 const KEEPER_POSES := {"keeper": "idle", "keeper_sleep": "sleep", "keeper_faint": "faint"}
@@ -63,6 +67,8 @@ static func icon(id: String) -> Texture2D:
 	if id == "sales_counter": return load("res://assets/content_expansion_v1/equipment/sales_counter_basic.png")
 	if id == "cauldron": return load("res://assets/cauldron_48.png")
 	if id == "aging_cask": return load("res://assets/pixel_v1/props/aging_cask.png")
+	# F22 souvenirs approved 2026-10-23, published by tools/publish_f22_souvenirs_v1.py.
+	if id.begins_with("souvenir_"): return load("res://assets/pixel_v1/souvenirs/%s.png" % id)
 	if KEEPER_POSES.has(id) or CUSTOMER_SHEETS.has(id):
 		if not keeper_icons.has(id):
 			var frame := AtlasTexture.new()
