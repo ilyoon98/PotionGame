@@ -725,6 +725,8 @@ func _advance_game(delta: float) -> void:
 	art.apply_potion_events(events, state.stock, state.mana_stock, state.inventory_order())
 	if events["sold"] > 0: play_sound("coin")
 	if events["brewed"] > 0: play_sound("brew_done")
+	# F22: a regular reaching a new stage is rare (16 stages in a whole game).
+	if not events.get("regular_events", []).is_empty(): play_sound("unlock")
 	if events["harvested"] > 0:
 		herb_plant.on_harvest()
 		art.on_harvest(events["harvested"])
@@ -1001,7 +1003,16 @@ func _sync_minimized_state() -> void:
 
 ## One quiet effect per call site; ShopAudio applies mute and per-sound spacing.
 func play_sound(id: String) -> void:
-	if shop_audio != null: shop_audio.play(id)
+	if shop_audio == null: return
+	# Headless reports its dummy window as minimized; only a real hidden window rests.
+	shop_audio.ambient_paused = DisplayServer.get_name() != "headless" and get_window().mode == Window.MODE_MINIMIZED
+	shop_audio.play(id)
+
+
+func set_audio_volume(value: float) -> void:
+	if not _owns_game_session(): return
+	state.audio_volume = clampf(value, 0.0, 1.0)
+	if shop_audio != null: shop_audio.volume = state.audio_volume
 
 
 func set_audio_muted(value: bool) -> void:

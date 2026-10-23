@@ -11,8 +11,12 @@ const SOUNDS := {
 	"unlock": "res://assets/audio/sfx_v1/unlock.wav",
 }
 ## Minimum seconds between two plays of the same sound. Several events in the
-## same frame therefore play once.
-const MIN_INTERVAL := {"coin": 0.25, "brew_done": 0.6, "expedition_return": 1.0, "unlock": 0.4}
+## same frame therefore play once. Late shops sell several bottles a second, so
+## the ambient sounds are spaced to stay background (2026-10-23).
+const MIN_INTERVAL := {"coin": 5.0, "brew_done": 10.0, "expedition_return": 2.0, "unlock": 0.4}
+## Ambient sounds rest while the game is hidden in the tray; unlock stays, since
+## it only follows the player's own purchase or a rare regular stage.
+const AMBIENT := ["coin", "brew_done", "expedition_return"]
 ## Players per sound, so a new play does not cut off a ringing tail.
 const POOL_SIZE := 2
 const DEFAULT_VOLUME := 0.5
@@ -24,6 +28,8 @@ var volume: float = DEFAULT_VOLUME:
 		volume = clampf(value, 0.0, 1.0) if is_finite(value) else DEFAULT_VOLUME
 		_apply_volume()
 var muted: bool = DEFAULT_MUTED
+## True while the main window is minimized (tray hide).
+var ambient_paused := false
 ## False in headless runs: no AudioStreamPlayer.play() call is ever made.
 var playback_enabled: bool = DisplayServer.get_name() != "headless"
 ## Every play() call per sound, before mute and interval gates.
@@ -68,6 +74,7 @@ func play(id: String) -> bool:
 	if not SOUNDS.has(id): return false
 	requests[id] += 1
 	if muted or volume <= 0.0: return false
+	if ambient_paused and AMBIENT.has(id): return false
 	var now := _now()
 	if _last_played.has(id) and now - float(_last_played[id]) < float(MIN_INTERVAL[id]): return false
 	_last_played[id] = now

@@ -336,6 +336,7 @@ func _ready() -> void:
 	sound_toggle.set_pressed_no_signal(not host.state.audio_muted)
 	sound_toggle.toggled.connect(func(enabled: bool): host.set_audio_muted(not enabled))
 	settings.add_child(sound_toggle)
+	_slider(settings, "효과음 크기", 0.0, 1.0, host.state.audio_volume, _change_audio_volume)
 	_section(REPORT, "플레이 통계")
 	_statistic("play_time", "플레이 시간", TITLE_SIZE, INK, "게임을 켜 둔 누적 시간이에요. 게임을 종료한 시간은 제외해요.")
 	_statistic("net", "순영업수입", 22, Palette.ACCENT, "일반 매출과 계약 대금에서 재료비와 원정 출발비를 뺀 금액이에요. 강화·레시피·직원 비용은 포함하지 않아요.")
@@ -1444,6 +1445,11 @@ func _change_weather_effects(value: float) -> void:
 	if not host._owns_game_session(): return
 	host.state.progression.effects = value
 	changed()
+
+## Live volume; the regular autosave and the exit save keep it.
+func _change_audio_volume(value: float) -> void:
+	host.set_audio_volume(value)
+
 
 func _change_brightness_floor(value: float) -> void:
 	if not host._owns_game_session(): return

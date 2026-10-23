@@ -94,15 +94,24 @@ func _check_rate_limit_and_mute_unit() -> void:
 	audio.test_clock = 10.0
 	check(audio.play("coin"), "First coin plays")
 	check(not audio.play("coin") and not audio.play("coin"), "Same-frame coins collapse to one")
-	audio.test_clock = 10.2
-	check(not audio.play("coin"), "Coin within 0.25 s is skipped")
-	audio.test_clock = 10.25
-	check(audio.play("coin"), "Coin after 0.25 s plays again")
+	var coin_gap: float = ShopAudio.MIN_INTERVAL.coin
+	check(coin_gap >= 5.0 and ShopAudio.MIN_INTERVAL.brew_done >= 10.0, "Ambient sounds are spaced for a busy late shop")
+	audio.test_clock = 10.0 + coin_gap - 0.05
+	check(not audio.play("coin"), "Coin within the spacing is skipped")
+	audio.test_clock = 10.0 + coin_gap
+	check(audio.play("coin"), "Coin after the spacing plays again")
 	check(audio.requests.coin == 5 and audio.plays.coin == 2, "Requests counted, two plays")
 	check(audio.play("brew_done"), "Different sounds have separate spacing")
 	check(not audio.play("nonexistent"), "Unknown ids are ignored")
+	# Hidden in the tray: ambient sounds rest, the player's own unlock still plays.
+	audio.ambient_paused = true
+	audio.test_clock = 40.0
+	check(not audio.play("coin") and not audio.play("brew_done") and not audio.play("expedition_return") and audio.play("unlock"), "Tray hide pauses ambient sounds only")
+	audio.ambient_paused = false
+	audio.reset_counts()
+	audio.play("coin"); audio.play("coin"); audio.play("coin"); audio.play("coin"); audio.test_clock = 40.0 + coin_gap; audio.play("coin"); audio.play("brew_done")
 	audio.muted = true
-	audio.test_clock = 20.0
+	audio.test_clock = 60.0
 	for id in ShopAudio.SOUNDS: check(not audio.play(id), id + " is silent while muted")
 	check(audio.plays.coin == 2 and audio.requests.coin == 6, "Muted requests are counted but never played")
 	audio.muted = false
@@ -176,19 +185,29 @@ func _check_shop_wiring() -> void:
 	toggle.button_pressed = false
 	check(shop.state.audio_muted and audio.muted, "Turning the toggle off mutes state and audio")
 	audio.reset_counts()
+	var stages_before := 0
+	for id in shop.state.regulars.ids(): stages_before += shop.state.regulars.stage(id)
 	for i in 1200:
 		clock += 0.5
 		audio.test_clock = clock
 		shop._advance_game(0.5)
+	var muted_stage_ups := -stages_before
+	for id in shop.state.regulars.ids(): muted_stage_ups += shop.state.regulars.stage(id)
 	shop.state.gold += 100000
 	check(shop.state.purchase_reason("staff:sales_assistant") == "", "A muted unlock purchase is available")
 	panel.buy("staff:sales_assistant")
-	check(audio.requests.unlock == 1, "Muted unlock is still requested once")
+	check(audio.requests.unlock == 1 + muted_stage_ups, "Muted unlock and regular stage chimes are still requested")
 	var muted_plays := 0
 	for id in audio.plays: muted_plays += audio.plays[id]
 	check(audio.requests.coin > 0 and muted_plays == 0, "Muted shop requests sounds but plays zero")
 	toggle.button_pressed = true
 	check(not shop.state.audio_muted and not audio.muted, "Turning it back on unmutes")
+	# Volume slider right below the toggle drives the node and the saved state.
+	var slider: HSlider = toggle.get_parent().get_child(toggle.get_index() + 2) as HSlider
+	check(slider != null and absf(slider.value - shop.state.audio_volume) < 0.001, "Volume slider follows the saved volume")
+	slider.value = 0.2
+	check(absf(shop.state.audio_volume - 0.2) < 0.001 and absf(audio.volume - 0.2) < 0.001, "Volume slider changes state and audio")
+	slider.value = 0.5
 	proof["muted_run"] = {"requests": audio.requests.duplicate(), "plays": audio.plays.duplicate()}
 	shop.queue_free()
 	await process_frame
