@@ -1,0 +1,408 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f23-souvenir-mini-v1/pipeline",
+  "scene": {
+    "size": [
+      12,
+      12
+    ],
+    "background": "#4A3C52"
+  },
+  "feature": "F23 workshop souvenir minis",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "souvenir_compass_mini",
+      "source": "art/mockups/f23-souvenir-mini-v1/source/souvenir_compass_mini-registered.png",
+      "size": [
+        12,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "brass_shadow": [
+          "#A56A3D"
+        ],
+        "brass": [
+          "#E9B95F"
+        ],
+        "dial_and_glint": [
+          "#FFF0BC"
+        ],
+        "needle_north": [
+          "#DE7356"
+        ]
+      },
+      "material_ramps": {
+        "brass_shadow": "gold",
+        "brass": "gold",
+        "dial_and_glint": "gold",
+        "needle_north": "fire"
+      },
+      "rules": [
+        {
+          "material": "brass_shadow",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "brass",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "dial_and_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "needle_north",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        }
+      ],
+      "fallback_material": "brass_shadow",
+      "name_ko": "낡은 나침반"
+    },
+    {
+      "id": "souvenir_bookmark_mini",
+      "source": "art/mockups/f23-souvenir-mini-v1/source/souvenir_bookmark_mini-registered.png",
+      "size": [
+        12,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cloth_shadow": [
+          "#50315F"
+        ],
+        "cloth": [
+          "#86548E"
+        ],
+        "cloth_light_and_sparkle": [
+          "#C38EB5"
+        ],
+        "star_and_tassel": [
+          "#E9B95F"
+        ]
+      },
+      "material_ramps": {
+        "cloth_shadow": "purple",
+        "cloth": "purple",
+        "cloth_light_and_sparkle": "purple",
+        "star_and_tassel": "gold"
+      },
+      "rules": [
+        {
+          "material": "cloth_shadow",
+          "hue": [
+            0.775,
+            0.783
+          ],
+          "saturation_min": 0.4742,
+          "saturation_max": 0.4942,
+          "value_min": 0.3625,
+          "value_max": 0.3825
+        },
+        {
+          "material": "cloth",
+          "hue": [
+            0.8063,
+            0.8143
+          ],
+          "saturation_min": 0.3985,
+          "saturation_max": 0.4185,
+          "value_min": 0.5469,
+          "value_max": 0.5669
+        },
+        {
+          "material": "cloth_light_and_sparkle",
+          "hue": [
+            0.8734,
+            0.8814
+          ],
+          "saturation_min": 0.2618,
+          "saturation_max": 0.2818,
+          "value_min": 0.7547,
+          "value_max": 0.7747
+        },
+        {
+          "material": "star_and_tassel",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        }
+      ],
+      "fallback_material": "cloth_shadow",
+      "name_ko": "별무늬 책갈피"
+    },
+    {
+      "id": "souvenir_leaf_brooch_mini",
+      "source": "art/mockups/f23-souvenir-mini-v1/source/souvenir_leaf_brooch_mini-registered.png",
+      "size": [
+        12,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf_shadow": [
+          "#3D544D"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "leaf_light": [
+          "#B5C77D"
+        ],
+        "gold_filigree": [
+          "#E9B95F"
+        ]
+      },
+      "material_ramps": {
+        "leaf_shadow": "leaf",
+        "leaf": "leaf",
+        "leaf_light": "leaf",
+        "gold_filigree": "gold"
+      },
+      "rules": [
+        {
+          "material": "leaf_shadow",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.2509,
+            0.2589
+          ],
+          "saturation_min": 0.3543,
+          "saturation_max": 0.3743,
+          "value_min": 0.539,
+          "value_max": 0.559
+        },
+        {
+          "material": "leaf_light",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        },
+        {
+          "material": "gold_filigree",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        }
+      ],
+      "fallback_material": "leaf_shadow",
+      "name_ko": "잎사귀 브로치"
+    },
+    {
+      "id": "souvenir_silver_bell_mini",
+      "source": "art/mockups/f23-souvenir-mini-v1/source/souvenir_silver_bell_mini-registered.png",
+      "size": [
+        12,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "silver_shadow": [
+          "#4A3C52"
+        ],
+        "silver": [
+          "#827589"
+        ],
+        "metal_glint": [
+          "#FFF0BC"
+        ],
+        "ribbon": [
+          "#DE7356"
+        ]
+      },
+      "material_ramps": {
+        "silver_shadow": "stone",
+        "silver": "stone",
+        "metal_glint": "gold",
+        "ribbon": "fire"
+      },
+      "rules": [
+        {
+          "material": "silver_shadow",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "silver",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "metal_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "ribbon",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        }
+      ],
+      "fallback_material": "silver_shadow",
+      "name_ko": "작은 은방울"
+    },
+    {
+      "id": "souvenir_wall_peg",
+      "source": "art/mockups/f23-souvenir-mini-v1/source/souvenir_wall_peg-registered.png",
+      "size": [
+        3,
+        3
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "iron": [
+          "#827589"
+        ]
+      },
+      "material_ramps": {
+        "iron": "stone"
+      },
+      "rules": [
+        {
+          "material": "iron",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        }
+      ],
+      "fallback_material": "iron",
+      "name_ko": "벽 못 (B안 전용)"
+    }
+  ]
+}

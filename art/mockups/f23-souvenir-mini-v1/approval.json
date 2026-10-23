@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "review": "art/mockups/f23-souvenir-mini-v1/review.html",
+  "runtime_integrated": false,
+  "scope": {
+    "souvenir_compass_mini": "작업실용 작은 기념품 · 낡은 나침반 (12×12)",
+    "souvenir_bookmark_mini": "작업실용 작은 기념품 · 별무늬 책갈피 (12×12)",
+    "souvenir_leaf_brooch_mini": "작업실용 작은 기념품 · 잎사귀 브로치 (12×12)",
+    "souvenir_silver_bell_mini": "작업실용 작은 기념품 · 작은 은방울 (12×12)",
+    "spot_A": "A안 · 창틀 위에 올려 두기",
+    "spot_B": "B안 · 창문과 숙성통 사이 벽 못에 걸기 (3×3 벽 못 그림 포함)",
+    "originals": "관리 창 32×32 기념품(assets/pixel_v1/souvenirs)은 그대로 유지"
+  },
+  "pending_decisions": [
+    "작은 기념품 4종 디자인 승인 또는 수정 지시",
+    "기념품 자리 A/B 선택"
+  ],
+  "note": "사용자 승인 전 후보. assets/ 게시, 장착 로직·관리 UI 연결은 승인 후 별도 작업으로 진행한다."
+}

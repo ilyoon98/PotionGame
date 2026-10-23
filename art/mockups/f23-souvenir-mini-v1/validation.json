@@ -1,0 +1,3348 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-23",
+  "scale": 3,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "new_palette_colors": 0,
+  "pipeline_report": "art/mockups/f23-souvenir-mini-v1/pipeline/validation.json",
+  "pipeline_status": "passed",
+  "rules": {
+    "native_max": [
+      12,
+      12
+    ],
+    "display_max_px": 36,
+    "max_colors_including_outline": 5,
+    "off_palette": 0,
+    "partial_alpha": 0,
+    "outline": "every opaque pixel 4-adjacent to transparency (or the canvas edge) is #241C32",
+    "max_shades_per_ramp": 3,
+    "dithering": "no 3x3 two-color checkerboards",
+    "lighting": "non-outline pixels on the top-left side brighter than the bottom-right side",
+    "ground": "bottom canvas row is the opaque contact row, all outline (sitting in spot A)",
+    "redraw": "same color set as the 32x32 original; not identical to a nearest/box downscale of it",
+    "overlap_unit": "display pixels (native x3) of souvenir (+peg) opacity intersecting each element's union of all reachable pixels",
+    "occupancy_source": "tools/build_f23_decor_v1.py build_masks() imported and called unchanged",
+    "must_be_zero": [
+      "keeper",
+      "customers",
+      "sale_bottle",
+      "stock_bottles",
+      "hud",
+      "all furniture incl. aging cask (counted even when closed)",
+      "approved counter props at 96,40",
+      "souvenir vs peg"
+    ],
+    "draw_order": "counter prop -> (aging cask) -> (peg) -> souvenir -> stock bottles"
+  },
+  "workshop_constants_verified_against_scripts": {
+    "counter": true,
+    "window": true,
+    "herb": true,
+    "poster": true,
+    "shelf": true,
+    "aging_cask": true,
+    "keeper": true,
+    "customer_y": true,
+    "pot": true,
+    "hearth": true,
+    "purchase_feet_x": true,
+    "offscreen_feet_x": true,
+    "brew_origin": true,
+    "table_anchor": true,
+    "wrap_shelf_left": true,
+    "reserve": true,
+    "pot_panel": true,
+    "keeper_panel": true,
+    "herb_panel": true,
+    "potions_button": true,
+    "herbs_button": true,
+    "expeditions_button": true,
+    "poster_captions": true,
+    "stock_caption": true,
+    "sale_caption": true,
+    "harvest_flash": true,
+    "rare_flash": true,
+    "slots": true,
+    "mini_workshop": true,
+    "cask_drawn_before_stock": true
+  },
+  "occupancy_masks_identical_to_f23_validation": true,
+  "element_pixels": {
+    "keeper": 11568,
+    "customers": 11124,
+    "sale_bottle": 22561,
+    "stock_bottles": 32605,
+    "hud": 15070,
+    "furniture_weather_glass": 2574,
+    "furniture_window": 3231,
+    "furniture_herb": 4032,
+    "furniture_poster": 3861,
+    "furniture_shelf": 5562,
+    "furniture_counter": 4032,
+    "furniture_aging_cask": 6210,
+    "furniture_cauldron": 4941,
+    "furniture_fire": 315,
+    "furniture_floor": 6480
+  },
+  "approved_counter_prop_slot": {
+    "origin_native": [
+      96,
+      40
+    ],
+    "props": [
+      "decor_teacup",
+      "decor_dried_vase"
+    ],
+    "source": "art/mockups/f23-decor-v1/approval.json"
+  },
+  "originals_read_only": {
+    "souvenir_compass": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_compass.png",
+      "approved": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_compass.png",
+      "identical": true
+    },
+    "souvenir_bookmark": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_bookmark.png",
+      "approved": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_bookmark.png",
+      "identical": true
+    },
+    "souvenir_leaf_brooch": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_leaf_brooch.png",
+      "approved": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_leaf_brooch.png",
+      "identical": true
+    },
+    "souvenir_silver_bell": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_silver_bell.png",
+      "approved": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_silver_bell.png",
+      "identical": true
+    }
+  },
+  "sprites": {
+    "souvenir_compass_mini": {
+      "name": "낡은 나침반",
+      "native_size": [
+        12,
+        12
+      ],
+      "display_size_x3": [
+        36,
+        36
+      ],
+      "within_12x12": true,
+      "display_within_36px": true,
+      "colors": [
+        "#241C32",
+        "#A56A3D",
+        "#DE7356",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "brass_shadow": {
+          "color": "#A56A3D",
+          "ramp": "gold"
+        },
+        "brass": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "dial_and_glint": {
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "needle_north": {
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 3,
+        "fire": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        0,
+        0,
+        11,
+        12
+      ],
+      "opaque_size": [
+        11,
+        12
+      ],
+      "opaque_pixels": 92,
+      "dither_3x3_blocks": [],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "7a52a187340b537172df3ea42f43576517933a24b5f90ebf54bfd84849ede9d7",
+      "lighting": {
+        "top_left_mean": 0.7073,
+        "bottom_right_mean": 0.5754,
+        "top_left_lit": true
+      },
+      "ground": {
+        "ground_row": 11,
+        "canvas_bottom_row": 11,
+        "ground_x": [
+          3,
+          7
+        ],
+        "ground_pixels": 5,
+        "ground_runs": 1,
+        "ground_all_outline": true,
+        "passed": true
+      },
+      "original": {
+        "path": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_compass.png",
+        "native_size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#A56A3D",
+          "#DE7356",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "same_color_set_as_original": true,
+        "pixel_agreement_with_downscaled_original": {
+          "nearest": 0.413,
+          "box": 0.063
+        },
+        "is_resample_of_original": false
+      },
+      "hang_point": {
+        "native": [
+          5,
+          0
+        ],
+        "opaque": true,
+        "above_is_transparent_or_edge": true
+      },
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f23-souvenir-mini-v1/source/souvenir_compass_mini.txt",
+        "map_sha256": "b1efa99b91ad8486723afb998fbdeb2da5f23fe4aaecad3bd3c4bde46b043c48",
+        "registered_sha256": "426b0b950e244600d9f3bfc5dd39eeb24458717f1a600a851271819c67f8f4b4"
+      }
+    },
+    "souvenir_bookmark_mini": {
+      "name": "별무늬 책갈피",
+      "native_size": [
+        12,
+        12
+      ],
+      "display_size_x3": [
+        36,
+        36
+      ],
+      "within_12x12": true,
+      "display_within_36px": true,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cloth_shadow": {
+          "color": "#50315F",
+          "ramp": "purple"
+        },
+        "cloth": {
+          "color": "#86548E",
+          "ramp": "purple"
+        },
+        "cloth_light_and_sparkle": {
+          "color": "#C38EB5",
+          "ramp": "purple"
+        },
+        "star_and_tassel": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "purple": 3,
+        "gold": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        2,
+        0,
+        11,
+        12
+      ],
+      "opaque_size": [
+        9,
+        12
+      ],
+      "opaque_pixels": 82,
+      "dither_3x3_blocks": [],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "9363858050a74caf36eb996b703c75ed499797a3c8b44307e4f9810cc18ff816",
+      "lighting": {
+        "top_left_mean": 0.2865,
+        "bottom_right_mean": 0.1924,
+        "top_left_lit": true
+      },
+      "ground": {
+        "ground_row": 11,
+        "canvas_bottom_row": 11,
+        "ground_x": [
+          2,
+          8
+        ],
+        "ground_pixels": 6,
+        "ground_runs": 2,
+        "ground_all_outline": true,
+        "passed": true
+      },
+      "original": {
+        "path": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_bookmark.png",
+        "native_size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#50315F",
+          "#86548E",
+          "#C38EB5",
+          "#E9B95F"
+        ],
+        "same_color_set_as_original": true,
+        "pixel_agreement_with_downscaled_original": {
+          "nearest": 0.424,
+          "box": 0.074
+        },
+        "is_resample_of_original": false
+      },
+      "hang_point": {
+        "native": [
+          4,
+          0
+        ],
+        "opaque": true,
+        "above_is_transparent_or_edge": true
+      },
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f23-souvenir-mini-v1/source/souvenir_bookmark_mini.txt",
+        "map_sha256": "fb1b640bcf16a42d9da216ba5160126ec4630fd2878734df70d2bf6698c56d98",
+        "registered_sha256": "5b4ec44922aa31985df638fee9f3c84867e50d826413acebb0646b712d113e77"
+      }
+    },
+    "souvenir_leaf_brooch_mini": {
+      "name": "잎사귀 브로치",
+      "native_size": [
+        12,
+        12
+      ],
+      "display_size_x3": [
+        36,
+        36
+      ],
+      "within_12x12": true,
+      "display_within_36px": true,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#B5C77D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "leaf_shadow": {
+          "color": "#3D544D",
+          "ramp": "leaf"
+        },
+        "leaf": {
+          "color": "#718C59",
+          "ramp": "leaf"
+        },
+        "leaf_light": {
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        },
+        "gold_filigree": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "leaf": 3,
+        "gold": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        0,
+        0,
+        12,
+        12
+      ],
+      "opaque_size": [
+        12,
+        12
+      ],
+      "opaque_pixels": 88,
+      "dither_3x3_blocks": [],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "967759a1c3018230cb1d1d8933888efe9252f6734f51cee5d5c494f37a00d320",
+      "lighting": {
+        "top_left_mean": 0.5218,
+        "bottom_right_mean": 0.1679,
+        "top_left_lit": true
+      },
+      "ground": {
+        "ground_row": 11,
+        "canvas_bottom_row": 11,
+        "ground_x": [
+          1,
+          2
+        ],
+        "ground_pixels": 2,
+        "ground_runs": 1,
+        "ground_all_outline": true,
+        "passed": true
+      },
+      "original": {
+        "path": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_leaf_brooch.png",
+        "native_size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#3D544D",
+          "#718C59",
+          "#B5C77D",
+          "#E9B95F"
+        ],
+        "same_color_set_as_original": true,
+        "pixel_agreement_with_downscaled_original": {
+          "nearest": 0.341,
+          "box": 0.088
+        },
+        "is_resample_of_original": false
+      },
+      "hang_point": {
+        "native": [
+          8,
+          0
+        ],
+        "opaque": true,
+        "above_is_transparent_or_edge": true
+      },
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f23-souvenir-mini-v1/source/souvenir_leaf_brooch_mini.txt",
+        "map_sha256": "c69ef6c61c2857fd3e5fa61a73e3c1f55884242ff1d6d9162a03d9475ef52e21",
+        "registered_sha256": "9b2d4383d2b8f9c9665d05e1fbe69f8479e150e6d2d0f89fc87319e1c847cf36"
+      }
+    },
+    "souvenir_silver_bell_mini": {
+      "name": "작은 은방울",
+      "native_size": [
+        12,
+        12
+      ],
+      "display_size_x3": [
+        36,
+        36
+      ],
+      "within_12x12": true,
+      "display_within_36px": true,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#DE7356",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "silver_shadow": {
+          "color": "#4A3C52",
+          "ramp": "stone"
+        },
+        "silver": {
+          "color": "#827589",
+          "ramp": "stone"
+        },
+        "metal_glint": {
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "ribbon": {
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "stone": 2,
+        "gold": 1,
+        "fire": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        0,
+        0,
+        12,
+        12
+      ],
+      "opaque_size": [
+        12,
+        12
+      ],
+      "opaque_pixels": 106,
+      "dither_3x3_blocks": [],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "4fad61eac8b01e09daadb4231ba372bb63968a9eb0f5becb42d864bcb8c41b2c",
+      "lighting": {
+        "top_left_mean": 0.276,
+        "bottom_right_mean": 0.1145,
+        "top_left_lit": true
+      },
+      "ground": {
+        "ground_row": 11,
+        "canvas_bottom_row": 11,
+        "ground_x": [
+          3,
+          8
+        ],
+        "ground_pixels": 6,
+        "ground_runs": 1,
+        "ground_all_outline": true,
+        "passed": true
+      },
+      "original": {
+        "path": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_silver_bell.png",
+        "native_size": [
+          32,
+          32
+        ],
+        "colors": [
+          "#241C32",
+          "#4A3C52",
+          "#827589",
+          "#DE7356",
+          "#FFF0BC"
+        ],
+        "same_color_set_as_original": true,
+        "pixel_agreement_with_downscaled_original": {
+          "nearest": 0.417,
+          "box": 0.118
+        },
+        "is_resample_of_original": false
+      },
+      "hang_point": {
+        "native": [
+          5,
+          2
+        ],
+        "opaque": true,
+        "above_is_transparent_or_edge": true
+      },
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f23-souvenir-mini-v1/source/souvenir_silver_bell_mini.txt",
+        "map_sha256": "3da0a52c5c8e998a3cc4c23c4a10fd1ea9282ff2904e8e7c5f581c44021708ae",
+        "registered_sha256": "807fa96c6bf8bdd3f79f93722bc483e2247de5bdbc3d36b34b56844c366dcb62"
+      }
+    },
+    "souvenir_wall_peg": {
+      "name": "벽 못 (B안 전용)",
+      "native_size": [
+        3,
+        3
+      ],
+      "display_size_x3": [
+        9,
+        9
+      ],
+      "within_12x12": true,
+      "display_within_36px": true,
+      "colors": [
+        "#241C32",
+        "#827589"
+      ],
+      "color_count": 2,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "iron": {
+          "color": "#827589",
+          "ramp": "stone"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "stone": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        0,
+        0,
+        3,
+        3
+      ],
+      "opaque_size": [
+        3,
+        3
+      ],
+      "opaque_pixels": 5,
+      "dither_3x3_blocks": [],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "9ec6e75db8e75e82f336cc8f2ab381b4c527a7e52561fd63d47ac5b295c73e04",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f23-souvenir-mini-v1/source/souvenir_wall_peg.txt",
+        "map_sha256": "2e2359c8af5690424c26c2152eeafd18a7772f58751eb39cdc27f2e1975970e8",
+        "registered_sha256": "0b8e5f3c906717381f8a04bfda012004bed25db5d4d77a4a1b8921ba19425758"
+      }
+    }
+  },
+  "spots": {
+    "A": {
+      "title": "A안 · 창틀 위에 올려 두기",
+      "kind": "sit",
+      "combos": {
+        "souvenir_compass_mini+decor_teacup+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              21
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_compass_mini+decor_teacup+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              21
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_compass_mini+decor_dried_vase+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              21
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_compass_mini+decor_dried_vase+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              21
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_teacup+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              16,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_teacup+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              16,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_dried_vase+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              16,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_dried_vase+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              16,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_teacup+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              15,
+              16
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_teacup+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              15,
+              16
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_dried_vase+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              15,
+              16
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_dried_vase+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              15,
+              16
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_teacup+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_teacup+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_dried_vase+aging_closed": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_dried_vase+aging_open": {
+          "spot": "A",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            14,
+            0
+          ],
+          "souvenir_origin_display": [
+            42,
+            0
+          ],
+          "peg_origin_native": null,
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "ground row on the window frame top",
+            "ground_native_row": 11,
+            "ground_native_x": [
+              17,
+              22
+            ],
+            "frame_directly_below_every_ground_pixel": true,
+            "ground_row_itself_clear_of_frame": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        }
+      },
+      "examples": {
+        "A-compass-closed": {
+          "id": "A-compass-closed",
+          "souvenir": "souvenir_compass_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "traveler",
+          "weather": "day_clear",
+          "label": "낡은 나침반 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 여행자 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-compass-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_compass_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "A-compass-open": {
+          "id": "A-compass-open",
+          "souvenir": "souvenir_compass_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "traveler",
+          "weather": "day_clear",
+          "label": "낡은 나침반 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 여행자 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-compass-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_compass_mini+decor_teacup+aging_open",
+          "passed": true
+        },
+        "A-bookmark-closed": {
+          "id": "A-bookmark-closed",
+          "souvenir": "souvenir_bookmark_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "mage",
+          "weather": "night_clear",
+          "label": "별무늬 책갈피 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 여마법사 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-bookmark-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_bookmark_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "A-bookmark-open": {
+          "id": "A-bookmark-open",
+          "souvenir": "souvenir_bookmark_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "mage",
+          "weather": "night_clear",
+          "label": "별무늬 책갈피 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 여마법사 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-bookmark-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_bookmark_mini+decor_teacup+aging_open",
+          "passed": true
+        },
+        "A-leaf_brooch-closed": {
+          "id": "A-leaf_brooch-closed",
+          "souvenir": "souvenir_leaf_brooch_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "elf",
+          "weather": "day_rain",
+          "label": "잎사귀 브로치 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 엘프 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-leaf_brooch-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_leaf_brooch_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "A-leaf_brooch-open": {
+          "id": "A-leaf_brooch-open",
+          "souvenir": "souvenir_leaf_brooch_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "elf",
+          "weather": "day_rain",
+          "label": "잎사귀 브로치 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 엘프 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-leaf_brooch-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_leaf_brooch_mini+decor_teacup+aging_open",
+          "passed": true
+        },
+        "A-silver_bell-closed": {
+          "id": "A-silver_bell-closed",
+          "souvenir": "souvenir_silver_bell_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "rogue",
+          "weather": "night_rain",
+          "label": "작은 은방울 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 고양이 도적 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-silver_bell-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_silver_bell_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "A-silver_bell-open": {
+          "id": "A-silver_bell-open",
+          "souvenir": "souvenir_silver_bell_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "rogue",
+          "weather": "night_rain",
+          "label": "작은 은방울 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 고양이 도적 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/A-silver_bell-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_silver_bell_mini+decor_teacup+aging_open",
+          "passed": true
+        }
+      },
+      "canvas_origin_native": [
+        14,
+        0
+      ],
+      "souvenir_origins_native": {
+        "souvenir_compass_mini": [
+          14,
+          0
+        ],
+        "souvenir_bookmark_mini": [
+          14,
+          0
+        ],
+        "souvenir_leaf_brooch_mini": [
+          14,
+          0
+        ],
+        "souvenir_silver_bell_mini": [
+          14,
+          0
+        ]
+      },
+      "souvenir_origins_display": {
+        "souvenir_compass_mini": [
+          42,
+          0
+        ],
+        "souvenir_bookmark_mini": [
+          42,
+          0
+        ],
+        "souvenir_leaf_brooch_mini": [
+          42,
+          0
+        ],
+        "souvenir_silver_bell_mini": [
+          42,
+          0
+        ]
+      },
+      "aging_cask_gap_native_columns": 47
+    },
+    "B": {
+      "title": "B안 · 창문과 숙성통 사이 벽 못에 걸기",
+      "kind": "hang",
+      "combos": {
+        "souvenir_compass_mini+decor_teacup+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            49,
+            4
+          ],
+          "souvenir_origin_display": [
+            147,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_compass_mini+decor_teacup+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            49,
+            4
+          ],
+          "souvenir_origin_display": [
+            147,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_compass_mini+decor_dried_vase+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            49,
+            4
+          ],
+          "souvenir_origin_display": [
+            147,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_compass_mini+decor_dried_vase+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            49,
+            4
+          ],
+          "souvenir_origin_display": [
+            147,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_teacup+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            50,
+            4
+          ],
+          "souvenir_origin_display": [
+            150,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_teacup+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            50,
+            4
+          ],
+          "souvenir_origin_display": [
+            150,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_dried_vase+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            50,
+            4
+          ],
+          "souvenir_origin_display": [
+            150,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_bookmark_mini+decor_dried_vase+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            50,
+            4
+          ],
+          "souvenir_origin_display": [
+            150,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_teacup+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            46,
+            4
+          ],
+          "souvenir_origin_display": [
+            138,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_teacup+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            46,
+            4
+          ],
+          "souvenir_origin_display": [
+            138,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_dried_vase+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            46,
+            4
+          ],
+          "souvenir_origin_display": [
+            138,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_leaf_brooch_mini+decor_dried_vase+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            46,
+            4
+          ],
+          "souvenir_origin_display": [
+            138,
+            12
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_teacup+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            49,
+            2
+          ],
+          "souvenir_origin_display": [
+            147,
+            6
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_teacup+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_teacup",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            49,
+            2
+          ],
+          "souvenir_origin_display": [
+            147,
+            6
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_dried_vase+aging_closed": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": false,
+          "aging_cask_drawn": false,
+          "souvenir_origin_native": [
+            49,
+            2
+          ],
+          "souvenir_origin_display": [
+            147,
+            6
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        },
+        "souvenir_silver_bell_mini+decor_dried_vase+aging_open": {
+          "spot": "B",
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "prop": "decor_dried_vase",
+          "aging_open": true,
+          "aging_cask_drawn": true,
+          "souvenir_origin_native": [
+            49,
+            2
+          ],
+          "souvenir_origin_display": [
+            147,
+            6
+          ],
+          "peg_origin_native": [
+            53,
+            1
+          ],
+          "souvenir_inside_art": true,
+          "peg_inside_art": true,
+          "peg": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0
+          },
+          "souvenir_vs_peg": 0,
+          "cask_overlap_if_drawn": 0,
+          "support": {
+            "kind": "hang point directly under the peg's bottom pixel",
+            "peg_bottom_native": [
+              54,
+              3
+            ],
+            "hang_point_native": [
+              54,
+              4
+            ],
+            "touching": true,
+            "passed": true
+          },
+          "overlap_total": 0,
+          "passed": true
+        }
+      },
+      "examples": {
+        "B-compass-closed": {
+          "id": "B-compass-closed",
+          "souvenir": "souvenir_compass_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "traveler",
+          "weather": "day_clear",
+          "label": "낡은 나침반 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 여행자 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-compass-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_compass_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "B-compass-open": {
+          "id": "B-compass-open",
+          "souvenir": "souvenir_compass_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "traveler",
+          "weather": "day_clear",
+          "label": "낡은 나침반 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 여행자 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-compass-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_compass_mini+decor_teacup+aging_open",
+          "passed": true
+        },
+        "B-bookmark-closed": {
+          "id": "B-bookmark-closed",
+          "souvenir": "souvenir_bookmark_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "mage",
+          "weather": "night_clear",
+          "label": "별무늬 책갈피 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 여마법사 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-bookmark-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_bookmark_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "B-bookmark-open": {
+          "id": "B-bookmark-open",
+          "souvenir": "souvenir_bookmark_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "mage",
+          "weather": "night_clear",
+          "label": "별무늬 책갈피 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 여마법사 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-bookmark-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_bookmark_mini+decor_teacup+aging_open",
+          "passed": true
+        },
+        "B-leaf_brooch-closed": {
+          "id": "B-leaf_brooch-closed",
+          "souvenir": "souvenir_leaf_brooch_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "elf",
+          "weather": "day_rain",
+          "label": "잎사귀 브로치 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 엘프 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-leaf_brooch-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_leaf_brooch_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "B-leaf_brooch-open": {
+          "id": "B-leaf_brooch-open",
+          "souvenir": "souvenir_leaf_brooch_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "elf",
+          "weather": "day_rain",
+          "label": "잎사귀 브로치 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 엘프 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-leaf_brooch-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_leaf_brooch_mini+decor_teacup+aging_open",
+          "passed": true
+        },
+        "B-silver_bell-closed": {
+          "id": "B-silver_bell-closed",
+          "souvenir": "souvenir_silver_bell_mini",
+          "aging_open": false,
+          "prop": "decor_teacup",
+          "customer": "rogue",
+          "weather": "night_rain",
+          "label": "작은 은방울 · 숙성통 닫힘 · 판매대 작은 찻잔 장착 · 고양이 도적 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-silver_bell-closed-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_silver_bell_mini+decor_teacup+aging_closed",
+          "passed": true
+        },
+        "B-silver_bell-open": {
+          "id": "B-silver_bell-open",
+          "souvenir": "souvenir_silver_bell_mini",
+          "aging_open": true,
+          "prop": "decor_teacup",
+          "customer": "rogue",
+          "weather": "night_rain",
+          "label": "작은 은방울 · 숙성통 열림 · 판매대 작은 찻잔 장착 · 고양이 도적 대기",
+          "png": "art/mockups/f23-souvenir-mini-v1/layouts/B-silver_bell-open-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "souvenir_silver_bell_mini+decor_teacup+aging_open",
+          "passed": true
+        }
+      },
+      "peg_origin_native": [
+        53,
+        1
+      ],
+      "peg_origin_display": [
+        159,
+        3
+      ],
+      "souvenir_origins_native": {
+        "souvenir_compass_mini": [
+          49,
+          4
+        ],
+        "souvenir_bookmark_mini": [
+          50,
+          4
+        ],
+        "souvenir_leaf_brooch_mini": [
+          46,
+          4
+        ],
+        "souvenir_silver_bell_mini": [
+          49,
+          2
+        ]
+      },
+      "souvenir_origins_display": {
+        "souvenir_compass_mini": [
+          147,
+          12
+        ],
+        "souvenir_bookmark_mini": [
+          150,
+          12
+        ],
+        "souvenir_leaf_brooch_mini": [
+          138,
+          12
+        ],
+        "souvenir_silver_bell_mini": [
+          147,
+          6
+        ]
+      },
+      "aging_cask_gap_native_columns": 12
+    }
+  },
+  "space_analysis": {
+    "note": "native canvas origins where the whole mini clears keeper, customers, sale/stock bottles, HUD, all furniture including the drawn aging cask, and both approved counter props at 96,40",
+    "zero_overlap_origins": {
+      "souvenir_compass_mini": {
+        "count": 439,
+        "x_range": [
+          0,
+          64
+        ],
+        "y_range": [
+          0,
+          67
+        ],
+        "right_of_x_75": 0
+      },
+      "souvenir_bookmark_mini": {
+        "count": 477,
+        "x_range": [
+          0,
+          64
+        ],
+        "y_range": [
+          0,
+          67
+        ],
+        "right_of_x_75": 0
+      },
+      "souvenir_leaf_brooch_mini": {
+        "count": 441,
+        "x_range": [
+          0,
+          64
+        ],
+        "y_range": [
+          0,
+          67
+        ],
+        "right_of_x_75": 0
+      },
+      "souvenir_silver_bell_mini": {
+        "count": 420,
+        "x_range": [
+          0,
+          64
+        ],
+        "y_range": [
+          0,
+          67
+        ],
+        "right_of_x_75": 0
+      }
+    }
+  },
+  "mini_mode": "not rendered; recommendation follows the approved F23 counter-prop rule (hidden in mini mode, equip state kept)",
+  "passed": true
+}

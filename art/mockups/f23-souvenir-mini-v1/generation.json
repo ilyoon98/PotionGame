@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-23",
+  "mode": "hand-authored small native pixel maps (no image generator, no resampling of the 32x32 icons); the .txt maps are the authoritative source",
+  "request": "사용자: \"기념품은 작업실용 작은 그림을 따로 만들어줘\" (F23 꾸미기 승인 답변, 2026-10-23)",
+  "reference": {
+    "design": "art/mockups/f22-regulars-souvenirs-v1 (approved 32x32 souvenirs; silhouettes and colors kept)",
+    "occupancy": "tools/build_f23_decor_v1.py build_masks()",
+    "rules": "AGENTS.md 색 문법 · 픽셀 규격"
+  },
+  "sizing": "native grid max 12x12 (36 display px at the workshop x3), roughly the size of a shelf bottle (8x12 / 8x16)",
+  "legend": {
+    "#": {
+      "color": "#241C32",
+      "ramp": "outline"
+    },
+    "d": {
+      "color": "#A56A3D",
+      "ramp": "gold"
+    },
+    "g": {
+      "color": "#E9B95F",
+      "ramp": "gold"
+    },
+    "h": {
+      "color": "#FFF0BC",
+      "ramp": "gold"
+    },
+    "P": {
+      "color": "#50315F",
+      "ramp": "purple"
+    },
+    "p": {
+      "color": "#86548E",
+      "ramp": "purple"
+    },
+    "l": {
+      "color": "#C38EB5",
+      "ramp": "purple"
+    },
+    "L": {
+      "color": "#3D544D",
+      "ramp": "leaf"
+    },
+    "e": {
+      "color": "#718C59",
+      "ramp": "leaf"
+    },
+    "n": {
+      "color": "#B5C77D",
+      "ramp": "leaf"
+    },
+    "k": {
+      "color": "#4A3C52",
+      "ramp": "stone"
+    },
+    "m": {
+      "color": "#827589",
+      "ramp": "stone"
+    },
+    "r": {
+      "color": "#DE7356",
+      "ramp": "fire"
+    }
+  },
+  "souvenirs": {
+    "souvenir_compass_mini": {
+      "base": "souvenir_compass",
+      "customer": "traveler",
+      "name": "낡은 나침반",
+      "description": "위 고리(금 1픽셀)와 둥근 놋쇠 테, 크림색 문자판, 오른쪽 위를 가리키는 빨간 북쪽 바늘과 왼쪽 아래 어두운 남쪽 바늘, 가운데 축. 테는 왼쪽 위 금빛·오른쪽 아래 그림자, 왼쪽 위 테에 크림 반짝임 1픽셀. 원본의 눈금은 12칸에서 읽히지 않아 생략.",
+      "hang_point_native": [
+        5,
+        0
+      ],
+      "materials": {
+        "outline": "#241C32",
+        "brass_shadow": "#A56A3D",
+        "brass": "#E9B95F",
+        "dial_and_glint": "#FFF0BC",
+        "needle_north": "#DE7356"
+      }
+    },
+    "souvenir_bookmark_mini": {
+      "base": "souvenir_bookmark",
+      "customer": "mage",
+      "name": "별무늬 책갈피",
+      "description": "제비꼬리 끝의 보라 천 띠(왼쪽 라일락 밝은 단·오른쪽 짙은 그림자 단), 가운데 금빛 십자 별, 아래 라일락 작은 별 1개, 위 끈 고리, 오른쪽 금빛 술. 원본의 작은 별 3개는 1개로 줄였다.",
+      "hang_point_native": [
+        4,
+        0
+      ],
+      "materials": {
+        "outline": "#241C32",
+        "cloth_shadow": "#50315F",
+        "cloth": "#86548E",
+        "cloth_light_and_sparkle": "#C38EB5",
+        "star_and_tassel": "#E9B95F"
+      }
+    },
+    "souvenir_leaf_brooch_mini": {
+      "base": "souvenir_leaf_brooch",
+      "customer": "elf",
+      "name": "잎사귀 브로치",
+      "description": "45도로 기운 넓은 잎과 끝까지 이어지는 금빛 가운데 잎맥, 왼쪽 아래 둥근 금 핀 머리. 잎은 왼쪽 위 반쪽이 밝은 연두, 오른쪽 아래로 갈수록 초록·짙은 초록. 원본의 곁맥 3쌍은 12칸에서 뭉개져 생략.",
+      "hang_point_native": [
+        8,
+        0
+      ],
+      "materials": {
+        "outline": "#241C32",
+        "leaf_shadow": "#3D544D",
+        "leaf": "#718C59",
+        "leaf_light": "#B5C77D",
+        "gold_filigree": "#E9B95F"
+      }
+    },
+    "souvenir_silver_bell_mini": {
+      "base": "souvenir_silver_bell",
+      "customer": "rogue",
+      "name": "작은 은방울",
+      "description": "위의 산호색 리본(고리 2개·가운데 매듭), 둥근 은방울과 가운데 가로 홈 띠, 아래 가로·세로 홈. 은은 돌·금속 램프 2단 (왼쪽 밝게·오른쪽 그림자), 왼쪽 위 크림 반짝임 2픽셀.",
+      "hang_point_native": [
+        5,
+        2
+      ],
+      "materials": {
+        "outline": "#241C32",
+        "silver_shadow": "#4A3C52",
+        "silver": "#827589",
+        "metal_glint": "#FFF0BC",
+        "ribbon": "#DE7356"
+      }
+    }
+  },
+  "peg": {
+    "id": "souvenir_wall_peg",
+    "name": "벽 못 (B안 전용)",
+    "description": "B안에서 기념품을 거는 3×3 쇠못 머리. 외곽선 4픽셀 + 가운데 쇠색 1픽셀.",
+    "used_by": "spot B only",
+    "materials": {
+      "outline": "#241C32",
+      "iron": "#827589"
+    }
+  },
+  "new_palette_colors": 0,
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json"
+}
