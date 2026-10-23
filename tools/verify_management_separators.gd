@@ -5,6 +5,10 @@ const State = preload("res://scripts/shop_state.gd")
 const Currency = preload("res://scripts/currency_text.gd")
 const Compare = preload("res://tests/state_compare.gd")
 const CenteredButton = preload("res://scripts/centered_button_content.gd")
+const Regulars = preload("res://scripts/shop_regulars.gd")
+# Statistics page order: original nine, three contract totals, then the F21
+# keeper/aging section. F22 regulars are separate cards (panel.regular_cards).
+const STATISTIC_KEYS := ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"]
 var shop: Control
 var panel: Window
 var server: TextServer
@@ -159,10 +163,14 @@ func verify_tabs_rows_sections() -> void:
 	shop.state = owned_fixture()
 	var before: Dictionary = shop.state.to_data().duplicate(true)
 	check(panel.tabs.size() == 7 and panel.pages.size() == 8, "Seven tabs and the independent statistics page remain")
+	# Tabs map to pages through TAB_PAGES: statistics (REPORT) is reached from the
+	# header button, so the seventh tab opens the separate SETTINGS page.
+	check(panel.TAB_PAGES == [panel.OPERATION, panel.HERBS, panel.POTIONS, panel.RECIPES, panel.EXPEDITIONS, panel.UPGRADES, panel.SETTINGS] and not panel.TAB_PAGES.has(panel.REPORT), "Seven text tabs open their own pages; statistics stays off the tab row")
 	for index in panel.tabs.size():
+		var page_index: int = panel.TAB_PAGES[index]
 		panel.tabs[index].pressed.emit()
 		await layout()
-		check(panel.selected == index and panel.pages[index].visible, "Native tab pressed signal retains its own page callback")
+		check(panel.selected == page_index and panel.pages[page_index].visible, "Native tab pressed signal retains its own page callback")
 		for tab_index in panel.tabs.size():
 			var tab: Button = panel.tabs[tab_index]
 			var active: bool = tab_index == index
@@ -175,10 +183,10 @@ func verify_tabs_rows_sections() -> void:
 			check(is_zero_approx(focus.bg_color.a) and focus.border_width_top == 1 and focus.border_width_left == 1 and focus.border_width_right == 1 and focus.border_width_bottom == 1, "Keyboard focus has a separate one-pixel outline")
 			check(focus.border_color != tab.get_theme_stylebox("normal").border_color, "Keyboard focus and selected underline use distinct accents")
 		for row: Dictionary in panel.rows.values():
-			if row.page != index or not row.panel.visible: continue
+			if row.page != page_index or not row.panel.visible: continue
 			simple_divider(row.style, row.highlighted)
 			check(row.icon.size == Vector2(48, 48) and row.title.get_theme_font_size("font_size") == 18, "Existing large row icon and title remain")
-			if index == panel.EXPEDITIONS:
+			if page_index == panel.EXPEDITIONS:
 				check(row.panel.size.y == (188 if row.has("rare_line") else 148) and not row.detail_box.visible, "Only four real discovery destinations add the stable 40px line; other collapsed regions retain 148px")
 				check(row.primary_icon.size == Vector2(32, 32) and row.summary.get_theme_font_size("normal_font_size") == 16, "All eight region primary ingredients retain their 32px icon and 16px text")
 				check(row.work.caption.get_theme_font_size("font_size") == 16 and row.work.count.get_theme_font_size("font_size") == 16, "Expedition state and remaining-time text are not reduced")
@@ -226,7 +234,8 @@ func verify_details_weather_scroll() -> void:
 	panel.result_button.pressed.emit()
 	await layout()
 	check(panel.selected == panel.REPORT and panel.pages[panel.REPORT].visible and not panel.recommend_panel.visible, "Statistics remains an independent seventh page")
-	check(panel.statistics_values.size() == 12 and panel.pages[panel.REPORT].find_children("*", "Button", true, false).is_empty(), "Statistics retains nine values plus three contract totals and no ledger/reset action")
+	check(panel.statistics_values.keys() == STATISTIC_KEYS and panel.pages[panel.REPORT].find_children("*", "Button", true, false).is_empty(), "Statistics retains nine values, three contract totals and five F21 keeper/aging values in order, with no ledger/reset action")
+	check(panel.regular_cards.keys() == Regulars.ids() and Regulars.ids().size() == 4 and not panel.regular_cards.keys().any(func(id): return panel.statistics_values.has(id)), "F22 regulars stay four separate read-only cards, never statistics values")
 	check(Compare.equivalent(before, shop.state.to_data()), "Details and statistics never award, charge, roll or alter saved state")
 	shop.state.progression.clock = 190.0
 	shop.state.progression.effects = 0.0
@@ -377,7 +386,7 @@ func run() -> void:
 	var file := FileAccess.open("res://.verification/management-separators/measurements.json", FileAccess.WRITE)
 	file.store_string(JSON.stringify({"verification": "headless native content geometry plus actual rasterized glyph alpha bounds; no OS inputs", "checks": checks, "failures": failures, "measurements": measured}, "  "))
 	if failures == 0:
-		print("MANAGEMENT SEPARATORS PASS: %d checks; uniform gold/fame icons/captions/values and actual glyph bounds, transparent divider rows, six underlined text tabs/separate focus styles, concise section gaps, four 148px/four 188px expedition rows, complete details and read-only statistics, weather accents, short-window per-page scroll, centered native purchase content, held target, title hit areas/internal close-reopen and unchanged economy/RNG/save; headless only; native Windows title bar and movement untested" % checks)
+		print("MANAGEMENT SEPARATORS PASS: %d checks; uniform gold/fame icons/captions/values and actual glyph bounds, transparent divider rows, seven underlined text tabs mapped through TAB_PAGES/separate focus styles, concise section gaps, four 148px/four 188px expedition rows, complete details and 17 read-only statistics plus four separate regular cards, weather accents, short-window per-page scroll, centered native purchase content, held target, title hit areas/internal close-reopen and unchanged economy/RNG/save; headless only; native Windows title bar and movement untested" % checks)
 	else:
 		print("MANAGEMENT SEPARATORS FAILED: %d of %d checks" % [failures, checks])
 	quit(1 if failures > 0 else 0)

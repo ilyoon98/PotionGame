@@ -85,7 +85,10 @@ func verify_unknown_surfaces() -> void:
 		check(panel.rows[row.id].button.disabled and panel.rows[row.id].button.icon == null, "Undiscovered recipes offer no purchase/price coin")
 		var region: Dictionary = panel.rows[row.region]
 		check(region.rare_link.text == "특별 레시피 · 미발견" and region.rare_link.disabled and texture_path(region.rare_icon.texture) == Items.UNKNOWN_RECIPE_PATH, "The expedition uses the same masked disabled identity")
-	check(panel.recommendation.is_empty(), "A completed ordinary shop never recommends a missing discovery")
+	# Later approved purchases (F20 workshop, F21 aging/keeper) may still be
+	# recommended; an undiscovered special recipe never is.
+	var recommended := str(panel.recommendation.get("purchase_key", ""))
+	check(not Rare.ROWS.any(func(row): return not Rare.is_discovered(row.id, shop.state.progression) and recommended.contains(row.id)) and (recommended.is_empty() or recommended == "workshop" or recommended.begins_with(Status.AGING_PREFIX) or recommended.begins_with(Status.KEEPER_PREFIX)), "A completed ordinary shop never recommends a missing discovery (recommended: %s)" % recommended)
 
 func verify_region_rows() -> void:
 	var special_count := 0
@@ -301,7 +304,8 @@ func verify_special_leg_and_normal_restore() -> void:
 	check(Compare.equivalent(before, shop.state.to_data()), "Normal/special UI transitions preserve every immutable paid leg and seed")
 	panel.result_button.pressed.emit()
 	await layout()
-	check(panel.selected == panel.REPORT and panel.statistics_values.size() == 12, "The preserved graph action opens original lifetime values plus three contract totals")
+	# Nine lifetime values, three contract totals, then the five F21 keeper/aging values.
+	check(panel.selected == panel.REPORT and panel.statistics_values.keys() == ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"], "The preserved graph action opens original lifetime values plus contract and F21 totals")
 	panel.close_button.pressed.emit()
 	await process_frame
 	check(not panel.visible and Compare.equivalent(before, shop.state.to_data()), "The preserved close icon hides management without mutating the private model")

@@ -8,6 +8,9 @@ const Rare = preload("res://scripts/rare_recipes.gd")
 const F = preload("res://tests/contracts_fixture.gd")
 const Centered = preload("res://scripts/centered_button_content.gd")
 const Currency = preload("res://scripts/currency_text.gd")
+# Statistics page order: original nine, three contract totals, then the F21
+# keeper/aging section. F22 regulars are separate cards (panel.regular_cards).
+const STATISTIC_KEYS := ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"]
 var shop: Control
 var panel: Window
 var screen: Control
@@ -302,7 +305,7 @@ func verify_statistics_and_geometry() -> void:
 	check(report.net == 130156, "Period net includes only contract pay after its existing baseline")
 	panel.result_button.pressed.emit()
 	await layout()
-	check(panel.statistics_values.size() == 12 and panel.statistics_values.contract_paid.source_text == "12,000 G" and panel.statistics_values.contract_shipped.source_text == "21,799병" and panel.statistics_values.contract_rounds.source_text == "321회", "Nine preserved statistics gain three separate exact contract aggregates")
+	check(panel.statistics_values.keys() == STATISTIC_KEYS and panel.statistics_values.contract_paid.source_text == "12,000 G" and panel.statistics_values.contract_shipped.source_text == "21,799병" and panel.statistics_values.contract_rounds.source_text == "321회", "Nine preserved statistics gain three separate exact contract aggregates (followed by the five F21 keeper/aging values)")
 	check(panel.statistics_values.contract_paid.coin_count == 1 and panel.statistics_values.contract_shipped.coin_count == 0, "Contract money uses the same coin-before-number convention")
 	for button in [panel.result_button, panel.close_button]:
 		var geometry: Dictionary = Centered.rects(button)
@@ -351,6 +354,6 @@ func run() -> void:
 	await verify_rollback_and_status()
 	await verify_statistics_and_geometry()
 	check(writes > 0, "All successful tested contract actions pass the fake save gateway")
-	if failures == 0: print("CONTRACTS UI PASS: %d isolated checks; seven tabs/same-window/back-scroll, 3 original partner icons, exact bottle thresholds/grade multipliers/options, training and frozen single rolls, stale token and failed-save rollback, next-round preservation/actual gauges/material wait, reserved delivery/full-store guard, 12 separate statistics, 18/16px geometry, no GUI/player files" % checks)
+	if failures == 0: print("CONTRACTS UI PASS: %d isolated checks; seven tabs/same-window/back-scroll, 3 original partner icons, exact bottle thresholds/grade multipliers/options, training and frozen single rolls, stale token and failed-save rollback, next-round preservation/actual gauges/material wait, reserved delivery/full-store guard, 17 separate statistics incl. 3 contract totals, 18/16px geometry, no GUI/player files" % checks)
 	else: print("CONTRACTS UI FAILED: %d/%d" % [failures, checks])
 	quit(1 if failures else 0)

@@ -5,6 +5,12 @@ const Fixtures = preload("res://tools/f19_management_fixture.gd")
 const F18 = preload("res://tests/contracts_fixture.gd")
 const Content = preload("res://scripts/shop_content.gd")
 const Status = preload("res://scripts/management_status.gd")
+# Statistics page order: original nine, three contract totals, then the F21
+# keeper/aging section. F22 regulars are separate cards (panel.regular_cards).
+const STATISTIC_KEYS := ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"]
+# Top-level save keys introduced after v11: v12 F20 stock protection/workshop,
+# v13 keeper, v14 aging, v15 keeper upgrades/F21 period baseline, v16 F22 regulars.
+const POST_V11_KEYS := ["stock_protection", "workshop", "keeper", "aging", "keeper_upgrades", "report_f21", "regulars"]
 var checks := 0
 var failures := 0
 var evidence := []
@@ -68,7 +74,7 @@ func period_proof(id: String, state: RefCounted, expected: Dictionary) -> void:
 	check(supply_lines(text).size() == expected.size(), "Zero or historical supply is not invented in period text")
 	check(state.report_text() == text and Compare.equivalent(before, state.to_data()), "Repeated period queries do not grant items or change State/RNG")
 	var restored := State.new()
-	check(restored.load_data(F18.data(state)), "The current v11 fixture roundtrips through strict validation")
+	check(restored.load_data(F18.data(state)), "The current-version fixture roundtrips through strict validation")
 	check(Compare.equivalent(before, restored.to_data()) and restored.report_text() == text and Compare.equivalent(summary, Status.report_summary(restored)), "Saved period baseline and both pure result projections restore unchanged")
 	write_text("report-" + id + ".txt", text)
 	evidence.append({"id": id, "period_api_visible_in_runtime": false, "report_text": text, "report_summary": summary, "expected_supply": expected, "actual_supply_totals": state.late_investments.totals.duplicate(), "report_supply": state.report_supply.duplicate(), "expedition_totals": state.progression.expansion.reward_totals.duplicate(), "materials": F18.materials(state), "state_roundtrip_equal": Compare.equivalent(before, restored.to_data())})
@@ -87,15 +93,34 @@ func same_material_arrival(state: RefCounted) -> void:
 	var summary := Status.report_summary(state)
 	check(summary.materials == [{"id": "starleaf", "count": 3}] and summary.supply_materials == [{"id": "starleaf", "count": 7, "source": "supply"}], "The legacy expedition row is never inflated or merged with the separate supply row")
 
-func migration_proof(state: RefCounted) -> void:
-	var original: Dictionary = F18.data(state)
+func old_v11_data(original: Dictionary) -> Dictionary:
+	# F18.data() writes the current SAVE_VERSION; rebuild the shape a v11 game
+	# actually wrote: version 11, no later sections and no optional baseline.
 	var old_v11: Dictionary = original.duplicate(true)
 	old_v11.erase("report_supply")
+	old_v11.version = 11
+	for key in POST_V11_KEYS: old_v11.erase(key)
+	return old_v11
+
+func only_baseline_added(old_v11: Dictionary, expected: Dictionary, migrated: Dictionary) -> bool:
+	# Every v11 field is unchanged and the missing baseline becomes the actual
+	# receipts. Sections added after v11 are filled by their own migrations,
+	# which the F20/F21/F22 verifiers cover; here they only have to exist.
+	if int(migrated.get("version", 0)) != State.SAVE_VERSION: return false
+	for key in old_v11:
+		if key != "version" and not Compare.equivalent(expected[key], migrated.get(key)): return false
+	for key in POST_V11_KEYS:
+		if not migrated.has(key): return false
+	return Compare.equivalent(expected.report_supply, migrated.get("report_supply"))
+
+func migration_proof(state: RefCounted) -> void:
+	var original: Dictionary = F18.data(state)
+	var old_v11: Dictionary = old_v11_data(original)
 	var restored := State.new()
-	check(int(old_v11.version) == 11 and restored.load_data(old_v11), "Previously written v11 without the optional baseline is accepted")
+	check(int(old_v11.version) == 11 and not old_v11.has("report_supply") and restored.load_data(old_v11), "Previously written v11 without the optional baseline is accepted")
 	var expected: Dictionary = original.duplicate(true)
 	expected.report_supply = original.late_investments.totals.duplicate()
-	check(Compare.equivalent(expected, restored.to_data()), "Old v11 migration changes only the missing baseline to actual historical receipts")
+	check(only_baseline_added(old_v11, expected, restored.to_data()), "Old v11 migration changes only the missing baseline to actual historical receipts")
 	check(supply_lines(restored.report_text()).is_empty(), "Migration does not assign old receipts to an unknowable period")
 	var next: Dictionary = receive(restored)
 	var expected_period := {str(next.material): int(next.quantity)}
@@ -109,7 +134,7 @@ func migration_proof(state: RefCounted) -> void:
 	check(Status.report_summary(restored).supply_materials.is_empty(), "The second period projection also respects the explicit restarted baseline")
 	write_text("report-v11-before-restart.txt", old_report)
 	write_text("report-v11-after-restart.txt", restored.report_text())
-	evidence.append({"id": "old-v11-migration", "old_version": old_v11.version, "baseline_was_missing": true, "only_baseline_added": Compare.equivalent(expected, restored_before_restart(old_v11)), "new_receipts_only": expected_period, "period_restart_supply_lines": supply_lines(restored.report_text()).size()})
+	evidence.append({"id": "old-v11-migration", "old_version": old_v11.version, "baseline_was_missing": true, "only_baseline_added": only_baseline_added(old_v11, expected, restored_before_restart(old_v11)), "new_receipts_only": expected_period, "period_restart_supply_lines": supply_lines(restored.report_text()).size()})
 
 func restored_before_restart(data: Dictionary) -> Dictionary:
 	var copy := State.new()
@@ -143,7 +168,7 @@ func runtime_proof(state: RefCounted, page: int, target: String, id: String, lab
 		check(panel.visible and panel.get_instance_id() == original_window and shop.state.get_instance_id() == identity, "Reopen reuses the same Window and model instance")
 		check(panel.selected == selected and panel.scroll.scroll_vertical == selected_scroll and (target.is_empty() or panel.rows[target].toggle.button_pressed), "Reopen preserves the original page, scroll and folded detail state")
 	check(Compare.equivalent(before, state.to_data()) and state.report_text() == report, "Opening, closing and rendering retain the complete state, supply baseline and RNG")
-	check(panel.tabs.size() == 7 and panel.pages.size() == 8 and panel.statistics_values.size() == 12, "Existing seven tabs and twelve cumulative statistics remain unchanged; no invented period page")
+	check(panel.tabs.size() == 7 and panel.pages.size() == 8 and panel.statistics_values.keys() == STATISTIC_KEYS, "Existing seven tabs and the seventeen cumulative statistics (nine + three contract + five F21) remain unchanged; no invented period page")
 	commands = []
 	nodes = []
 	var boundary: Control = panel.get_child(0)
@@ -197,9 +222,9 @@ func run() -> void:
 	cases.append(await runtime_proof(seven, panel.OPERATION, "gather_supply_support", "seven-materials-operation", "가게운영 · 동일 보급·재열기 보존"))
 	cases.append(await runtime_proof(zero, panel.HERBS, "supply_support", "zero-arrivals-herbs", "보관 가득 · 실제 입고0개"))
 	cases.append(await runtime_proof(same, panel.HERBS, "supply_support", "same-material-herbs", "별잎 보급7+원정3 · 실제 보유10"))
-	cases.append(await runtime_proof(same, panel.REPORT, "", "same-material-statistics", "기존12누적통계 · 기간결과UI는 없음"))
+	cases.append(await runtime_proof(same, panel.REPORT, "", "same-material-statistics", "기존17누적통계 · 기간결과UI는 없음"))
 	write_text("management.json", JSON.stringify({"verification": "Isolated actual Controls/TextServer file composites, not desktop screenshots; report_text has no runtime UI caller", "font": ProjectSettings.globalize_path(FONT.resource_path), "palette": "sage", "cases": cases}, "\t"))
-	write_text("proof.json", JSON.stringify({"checks": checks, "failures": failures, "runtime_report_text_caller": false, "runtime_statistics": "12 cumulative values; no period text", "file_cases": cases.size(), "evidence": evidence}, "\t"))
+	write_text("proof.json", JSON.stringify({"checks": checks, "failures": failures, "runtime_report_text_caller": false, "runtime_statistics": "17 cumulative values; no period text", "file_cases": cases.size(), "evidence": evidence}, "\t"))
 	panel.free()
 	shop.free()
 	print("F19 REPORT UI ", "PASS" if failures == 0 else "FAIL", ": ", checks, " isolated checks; seven material/zero/shared-expedition source text, v11 migration and repeated existing-management reopen preserve complete State/RNG; ", cases.size(), " actual Controls/TextServer layouts; report API remains explicitly separate, no GUI/player data")

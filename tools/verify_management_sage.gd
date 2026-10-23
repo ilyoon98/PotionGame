@@ -6,6 +6,11 @@ const Content = preload("res://scripts/shop_content.gd")
 const Currency = preload("res://scripts/currency_text.gd")
 const Compare = preload("res://tests/state_compare.gd")
 const Palette = preload("res://scripts/management_palette.gd")
+const Rare = preload("res://scripts/rare_recipes.gd")
+const Regulars = preload("res://scripts/shop_regulars.gd")
+# Statistics page order: original nine, three contract totals, then the F21
+# keeper/aging section. F22 regulars are separate cards (panel.regular_cards).
+const STATISTIC_KEYS := ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"]
 const EXPECTED := {"BG": "1d242b", "SURFACE": "263139", "LINE": "40545a", "TEXT": "f3ede0", "MUTED": "abb9be", "ACCENT": "aacbb0", "ACTION": "e5ba73", "ACTION_TEXT": "272b2d", "TRIP": "a7b9d6"}
 const OLD := ["211b2d", "f0dfc4", "b4a4bd", "342b41", "69516d", "4a3953", "efc77c", "ffe2a0", "d9a554", "423446", "6a5865", "b9833f", "302331", "53405b", "a8c99f", "493b51", "a2b5d5", "9b87ac", "bde3ac", "796449", "7d654a", "a99aad", "30273c", "44354e", "463650", "3e3448", "55455e", "66596e"]
 const BUTTON_STATES := {"normal": "font_color", "hover": "font_hover_color", "pressed": "font_pressed_color", "hover_pressed": "font_hover_pressed_color", "disabled": "font_disabled_color"}
@@ -265,7 +270,7 @@ func verify_palette_and_views() -> void:
 						reward_labels += 1
 			row.toggle.button_pressed = false
 		if page == panel.REPORT:
-			check(panel.statistics_values.size() == 12 and panel.pages[page].find_children("*", "Button", true, false).is_empty(), "The read-only twelve statistics preserve the no-ledger/reset controls")
+			check(panel.statistics_values.keys() == STATISTIC_KEYS and panel.regular_cards.keys() == Regulars.ids() and panel.pages[page].find_children("*", "Button", true, false).is_empty(), "The read-only seventeen statistics and four separate regular cards preserve the no-ledger/reset controls")
 			for value in panel.statistics_values.values():
 				readable(value.get_theme_color("default_color"), inherited_background(value), "Statistics/" + value.name)
 		panel.scroll.scroll_vertical = 55 + page
@@ -280,7 +285,14 @@ func verify_palette_and_views() -> void:
 	check(Compare.equivalent(before, shop.state.to_data()), "Theme/view inspections preserve economy, RNG, reservations and serialized progress")
 	panel.select_page(panel.EXPEDITIONS)
 	await layout()
-	for region in Content.DATA.regions: check(panel.rows[region.id].panel.size.y == 148, "All eight regions preserve collapsed 148px")
+	# Approved special-discovery rows (docs/특별-발견-배합-강화-개발결과.md): the four
+	# regions with a discovery recipe add a 40px line (188px); the rest keep 148px.
+	var heights := {148: 0, 188: 0}
+	for region in Content.DATA.regions:
+		var expected_height := 148 if Rare.by_region(region.id).is_empty() else 188
+		heights[expected_height] += 1
+		check(panel.rows[region.id].panel.size.y == expected_height, "Collapsed region keeps its approved height (148px, or 188px with a discovery line): %s %.0f" % [region.id, panel.rows[region.id].panel.size.y])
+	check(heights[148] == 4 and heights[188] == 4, "Eight regions split into four 148px and four 188px discovery rows")
 
 func verify_held_purchase() -> void:
 	shop.state = fixture()

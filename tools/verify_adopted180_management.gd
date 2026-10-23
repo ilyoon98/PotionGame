@@ -4,6 +4,9 @@ const Fixtures = preload("res://tools/f19_management_fixture.gd")
 const F18 = preload("res://tests/contracts_fixture.gd")
 const Status = preload("res://scripts/management_status.gd")
 const Centered = preload("res://scripts/centered_button_content.gd")
+# Statistics page order: original nine, three contract totals, then the F21
+# keeper/aging section. F22 regulars are separate cards (panel.regular_cards).
+const STATISTIC_KEYS := ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"]
 var checks := 0
 var failures := 0
 var writes := 0
@@ -160,8 +163,14 @@ func old_owned() -> void:
 		check(row.completed and row.button.disabled and row.button.text == "최대 단계" and not row.button.tooltip_text.contains("450,000") and not row.button.tooltip_text.contains("600,000"), "Previously owned maximum has neither a repurchase nor a refund price")
 	var before: Dictionary = restored.to_data().duplicate(true)
 	for track in Status.LATE_TRACKS: check(not shop.perform_late_investment_action(track, 3).ok, "The historical owned level cannot be repurchased")
-	check(Compare.equivalent(before, restored.to_data()) and Status.recommendation(restored).is_empty(), "Old ownership is unchanged and never recommended again")
-	check(panel.tabs.size() == 7 and panel.pages.size() == 8 and panel.statistics_values.size() == 12 and panel.size.x == 520, "Price adoption retains seven tabs, twelve cumulative statistics and520px layout")
+	# Later approved purchases (F20 workshop expansion, F21 aging/keeper upgrades)
+	# may still be recommended; the maxed late-investment tracks must never be.
+	var owned_keys: Array = Status.LATE_TRACKS.map(func(track): return Status.LATE_INVESTMENT_PREFIX + track)
+	var candidates: Array = Status.growth_candidates(restored)
+	var recommended: String = str(Status.recommendation(restored).get("purchase_key", ""))
+	var later_only := candidates.all(func(item): return item.purchase_key == "workshop" or str(item.purchase_key).begins_with(Status.AGING_PREFIX) or str(item.purchase_key).begins_with(Status.KEEPER_PREFIX))
+	check(Compare.equivalent(before, restored.to_data()) and not candidates.any(func(item): return owned_keys.has(item.purchase_key)) and not owned_keys.has(recommended) and later_only, "Old ownership is unchanged and never recommended again (only later F20/F21 purchases remain: %s)" % ", ".join(candidates.map(func(item): return str(item.purchase_key))))
+	check(panel.tabs.size() == 7 and panel.pages.size() == 8 and panel.statistics_values.keys() == STATISTIC_KEYS and panel.size.x == 520, "Price adoption retains seven tabs, the seventeen cumulative statistics and520px layout")
 	panel.late_feedback.clear()
 	panel.recommend_feedback = ""
 	for row in panel.rows.values(): row.toggle.set_pressed(false)

@@ -23,7 +23,9 @@ func _initialize() -> void:
 	assert(DisplayServer.get_name() == "headless")
 	set_meta("isolated_preview", true)
 	var fresh := State.new()
-	check(summary(fresh) == {"seconds": 0, "time": "0시간 0분 0초", "net": 0, "sales": 0, "materials_cost": 0, "fees": 0, "brewed": 0, "sold": 0, "expeditions": 0, "reputation_gain": 0}, "New save has zero lifetime totals")
+	# Original nine lifetime values, the contract (F18) aggregates and the F21
+	# keeper/aging section. F22 regulars are cards, not lifetime-summary values.
+	check(summary(fresh) == {"seconds": 0, "time": "0시간 0분 0초", "net": 0, "sales": 0, "materials_cost": 0, "fees": 0, "brewed": 0, "sold": 0, "expeditions": 0, "reputation_gain": 0, "contract_paid": 0, "contract_shipped": 0, "contract_rounds": 0, "keeper_sleeps": 0, "keeper_faints": 0, "fatigue_failed": 0, "aged_sold": 0, "aged_revenue": 0}, "New save has zero lifetime totals")
 	# Advance actual model time while production and trade are fully blocked.
 	var waiting := State.new()
 	waiting.set_shop_open(false)

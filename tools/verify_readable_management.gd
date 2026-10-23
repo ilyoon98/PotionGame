@@ -150,7 +150,8 @@ func run() -> void:
 				row.toggle.button_pressed = false
 			visible_text_fits(panel.pages[page])
 			if page == panel.REPORT:
-				assert(panel.statistics_values.size() == 12)
+				# Nine lifetime values, three contract totals, five F21 keeper/aging values.
+				assert(panel.statistics_values.keys() == ["play_time", "net", "sales", "materials_cost", "fees", "brewed", "sold", "expeditions", "reputation_gain", "contract_paid", "contract_shipped", "contract_rounds", "keeper_sleeps", "keeper_faints", "fatigue_failed", "aged_sold", "aged_revenue"])
 				assert(panel.pages[page].find_children("*", "Button", true, false).is_empty())
 		assert(Compare.equivalent(before, shop.state.to_data()), "Readability changes must not mutate the economy, RNG, saved progress or fees")
 	# The same scroll layout must stay inside a smaller virtual display area.

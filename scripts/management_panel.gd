@@ -205,7 +205,7 @@ func _ready() -> void:
 	workshop_goal_gold.fit_content = false
 	workshop_goal_condition = _label(workshop_goal, "", Rect2(12, 74, 456, 24), AUX_SIZE)
 	workshop_goal_condition.clip_text = true
-	workshop_goal_bar = _bar(workshop_goal, Color("efc77c"))
+	workshop_goal_bar = _bar(workshop_goal, Palette.ACTION)
 	workshop_goal_bar.position = Vector2(12, 64); workshop_goal_bar.size = Vector2(456, 6)
 	workshop_goal_button = _button(workshop_goal, "항목 보기", Rect2(328, 8, 140, 32), _workshop_goal_selected)
 	workshop_goal_button.button_down.connect(func(): workshop_goal_button.set_meta("held_level", int(workshop_goal_button.get_meta("next_level", 0))))
@@ -228,6 +228,9 @@ func _ready() -> void:
 	_row(OPERATION, "craft", "현재 제조", "health")
 	# Approved keeper frames; the icon follows awake/asleep/fainted (see _refresh_keeper).
 	_row(OPERATION, "keeper", "주인공", "keeper", "근무 방식", _cycle_keeper_policy)
+	# Fit the longest label ("명성 1000 필요" with the fame icon); the centered
+	# content otherwise keeps the first, shorter label's width and overflows.
+	rows.keeper.button.custom_minimum_size.x = 156
 	_row(OPERATION, "sale", "판매", "sales_counter")
 	_section(OPERATION, "자동 납품")
 	_row(OPERATION, "aux_craft", "보조 조제대", "cauldron")
