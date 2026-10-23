@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-23",
+  "mode": "hand-authored native 32x32 pixel maps (no image generator); the .txt maps are the authoritative source",
+  "reference": "docs/성장과-단골-꾸미기-기획안.md · 꾸미기와 영구 소장; color/pixel rules in AGENTS.md; counter/bottle scale from assets/pixel_v1",
+  "sizing": "world scale: drawn to fit the counter-top band (native rows 64-70) that no sale/stock bottle, character or HUD reaches",
+  "legend": {
+    "#": {
+      "color": "#241C32",
+      "ramp": "outline"
+    },
+    "l": {
+      "color": "#9BE2CF",
+      "ramp": "teal"
+    },
+    "m": {
+      "color": "#3BA8A3",
+      "ramp": "teal"
+    },
+    "d": {
+      "color": "#24566A",
+      "ramp": "teal"
+    },
+    "t": {
+      "color": "#C99463",
+      "ramp": "wood"
+    },
+    "g": {
+      "color": "#E9B95F",
+      "ramp": "gold"
+    },
+    "a": {
+      "color": "#A56A3D",
+      "ramp": "gold"
+    },
+    "p": {
+      "color": "#86548E",
+      "ramp": "purple"
+    },
+    "q": {
+      "color": "#50315F",
+      "ramp": "purple"
+    }
+  },
+  "props": {
+    "decor_teacup": {
+      "name": "작은 찻잔",
+      "price_candidate": "120 G 1회 구매",
+      "slot": "판매대 소품",
+      "description": "청록 유약을 바른 낮은 찻잔과 받침, 위에서 보이는 꿀빛 차 한 줄, 오른쪽 손잡이(가운데 1픽셀 구멍). 왼쪽 테두리·받침은 밝은 민트, 오른쪽은 깊은 청록 그림자. 판매대 위 빈 높이에 맞춰 원본 12×6.",
+      "materials": {
+        "outline": "#241C32",
+        "glaze_light": "#9BE2CF",
+        "glaze": "#3BA8A3",
+        "glaze_shadow": "#24566A",
+        "tea": "#C99463"
+      }
+    },
+    "decor_dried_vase": {
+      "name": "말린 꽃병",
+      "price_candidate": "240 G 1회 구매",
+      "slot": "판매대 소품",
+      "description": "자두빛 작은 항아리 꽃병에 꽂힌 말린 금빛 꽃대 4줄기. 왼쪽 두 줄기는 길고 밝은 꽃송이, 오른쪽 두 줄기는 짧고 그늘진 색. 꽃병은 왼쪽 밝게·오른쪽 어둡게. 판매대 위 빈 높이에 맞춰 원본 10×7.",
+      "materials": {
+        "outline": "#241C32",
+        "flower_light": "#E9B95F",
+        "flower_shadow": "#A56A3D",
+        "vase": "#86548E",
+        "vase_shadow": "#50315F"
+      }
+    }
+  },
+  "souvenirs_used_read_only": {
+    "souvenir_compass": "assets/pixel_v1/souvenirs/souvenir_compass.png",
+    "souvenir_bookmark": "assets/pixel_v1/souvenirs/souvenir_bookmark.png",
+    "souvenir_leaf_brooch": "assets/pixel_v1/souvenirs/souvenir_leaf_brooch.png",
+    "souvenir_silver_bell": "assets/pixel_v1/souvenirs/souvenir_silver_bell.png"
+  },
+  "new_palette_colors": 0,
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json"
+}
