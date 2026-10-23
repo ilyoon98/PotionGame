@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-22",
+  "scale": 3,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "new_palette_colors": 0,
+  "pipeline_report": "art/mockups/f22-regulars-souvenirs-v1/pipeline/validation.json",
+  "pipeline_status": "passed",
+  "rules": {
+    "native_size": [
+      32,
+      32
+    ],
+    "max_colors_including_outline": 5,
+    "off_palette": 0,
+    "partial_alpha": 0,
+    "outline": "every opaque pixel 4-adjacent to transparency (or the canvas edge) is #241C32",
+    "max_shades_per_ramp": 3,
+    "dithering": "no 3x3 two-color checkerboards (1px diagonal lines are allowed)",
+    "canvas_coverage": "opaque bbox >= 60% of the canvas in both directions",
+    "lighting": "non-outline pixels on the top-left side brighter than the bottom-right side"
+  },
+  "souvenirs": {
+    "souvenir_compass": {
+      "customer": "traveler",
+      "customer_name": "여행자",
+      "name": "낡은 나침반",
+      "size": [
+        32,
+        32
+      ],
+      "native_32x32": true,
+      "colors": [
+        "#241C32",
+        "#A56A3D",
+        "#DE7356",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "brass_shadow": {
+          "color": "#A56A3D",
+          "ramp": "gold"
+        },
+        "brass": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "dial_and_glint": {
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "needle_north": {
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 3,
+        "fire": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        4,
+        0,
+        28,
+        31
+      ],
+      "bbox_canvas_fraction": [
+        0.75,
+        0.969
+      ],
+      "opaque_fill_fraction": 0.484,
+      "dither_2x2_blocks": [],
+      "lighting": {
+        "top_left_mean": 0.6728,
+        "bottom_right_mean": 0.6264,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "28e8ba96c18d4d1f50a1989acd1b7199da3b782b73b7425b3c078349c063099a",
+      "canvas_coverage_ok": true,
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map_sha256": "10ec0ffe8ca22077525492680d5fe5e50b32a08116cb656c1615f8d603dac720",
+        "registered_sha256": "218daa896cc6f5dbfd1c69047ea36a8ff707c7d2beb054636fd1dcefcb336cce"
+      }
+    },
+    "souvenir_bookmark": {
+      "customer": "mage",
+      "customer_name": "여마법사",
+      "name": "별무늬 책갈피",
+      "size": [
+        32,
+        32
+      ],
+      "native_32x32": true,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cloth_shadow": {
+          "color": "#50315F",
+          "ramp": "purple"
+        },
+        "cloth": {
+          "color": "#86548E",
+          "ramp": "purple"
+        },
+        "cloth_light_and_sparkle": {
+          "color": "#C38EB5",
+          "ramp": "purple"
+        },
+        "star_and_tassel": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "purple": 3,
+        "gold": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        8,
+        2,
+        29,
+        31
+      ],
+      "bbox_canvas_fraction": [
+        0.656,
+        0.906
+      ],
+      "opaque_fill_fraction": 0.44,
+      "dither_2x2_blocks": [],
+      "lighting": {
+        "top_left_mean": 0.2414,
+        "bottom_right_mean": 0.2015,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "e1b80d29b1aca97629399f38b1315a9f2113691fda7756ebc9a3263e1250a120",
+      "canvas_coverage_ok": true,
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map_sha256": "1b5be3e2eaf82aa8faf475da7bb25282c19e74f9347364dc18b8dd3add561cec",
+        "registered_sha256": "d240b1a3101bba787604d99858b9e7426760202c06d1607d0e0890c98a9e7709"
+      }
+    },
+    "souvenir_leaf_brooch": {
+      "customer": "elf",
+      "customer_name": "엘프",
+      "name": "잎사귀 브로치",
+      "size": [
+        32,
+        32
+      ],
+      "native_32x32": true,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#B5C77D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "leaf_shadow": {
+          "color": "#3D544D",
+          "ramp": "leaf"
+        },
+        "leaf": {
+          "color": "#718C59",
+          "ramp": "leaf"
+        },
+        "leaf_light": {
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        },
+        "gold_filigree": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "leaf": 3,
+        "gold": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        3,
+        5,
+        29,
+        30
+      ],
+      "bbox_canvas_fraction": [
+        0.812,
+        0.781
+      ],
+      "opaque_fill_fraction": 0.372,
+      "dither_2x2_blocks": [],
+      "lighting": {
+        "top_left_mean": 0.4262,
+        "bottom_right_mean": 0.2251,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "f08d24482117bc8a49354d8cde3cc5278bd7dcc7511788339d3806570335a1c3",
+      "canvas_coverage_ok": true,
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map_sha256": "1d66fbb6e3fa1d7b73862a15813e19e53f0cb5ccf03a47c18a2b6895477e4130",
+        "registered_sha256": "25b3e8b63bd567061e01e97fb3800a7aa988689badd3d2721d38fee57a048ee8"
+      }
+    },
+    "souvenir_silver_bell": {
+      "customer": "rogue",
+      "customer_name": "고양이 도적",
+      "name": "작은 은방울",
+      "size": [
+        32,
+        32
+      ],
+      "native_32x32": true,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#DE7356",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "silver_shadow": {
+          "color": "#4A3C52",
+          "ramp": "stone"
+        },
+        "silver": {
+          "color": "#827589",
+          "ramp": "stone"
+        },
+        "metal_glint": {
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "ribbon": {
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "stone": 2,
+        "gold": 1,
+        "fire": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        5,
+        1,
+        27,
+        30
+      ],
+      "bbox_canvas_fraction": [
+        0.688,
+        0.906
+      ],
+      "opaque_fill_fraction": 0.502,
+      "dither_2x2_blocks": [],
+      "lighting": {
+        "top_left_mean": 0.2601,
+        "bottom_right_mean": 0.1366,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "df74febaf1cc72c611a6898707d75642d6c44a5745589fa34f39c329a4e8fafa",
+      "canvas_coverage_ok": true,
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map_sha256": "f90163c17ca5f15939ae9293db4ad948a3c53148c4e2baac53d8dcd53a23f35b",
+        "registered_sha256": "29529b25490e5319937ad81cabba0bfbcdbce6996f594ae16160eae79c0628d3"
+      }
+    }
+  },
+  "passed": true
+}

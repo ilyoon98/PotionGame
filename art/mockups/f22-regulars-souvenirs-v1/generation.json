@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-22",
+  "mode": "hand-authored native 32x32 pixel maps (no image generator). Base silhouettes were drafted with simple circle/leaf shapes and an automatic 1px #241C32 silhouette outline, then details (needle, ticks, slot, veins, star, tassel, glints) were placed by hand. The .txt maps are the authoritative source.",
+  "reference": "docs/성장과-단골-꾸미기-기획안.md · 손님별 이야기와 기념품 후보; color/pixel rules in AGENTS.md",
+  "legend": {
+    "#": {
+      "color": "#241C32",
+      "ramp": "outline"
+    },
+    "d": {
+      "color": "#A56A3D",
+      "ramp": "gold"
+    },
+    "g": {
+      "color": "#E9B95F",
+      "ramp": "gold"
+    },
+    "h": {
+      "color": "#FFF0BC",
+      "ramp": "gold"
+    },
+    "P": {
+      "color": "#50315F",
+      "ramp": "purple"
+    },
+    "p": {
+      "color": "#86548E",
+      "ramp": "purple"
+    },
+    "l": {
+      "color": "#C38EB5",
+      "ramp": "purple"
+    },
+    "L": {
+      "color": "#3D544D",
+      "ramp": "leaf"
+    },
+    "e": {
+      "color": "#718C59",
+      "ramp": "leaf"
+    },
+    "n": {
+      "color": "#B5C77D",
+      "ramp": "leaf"
+    },
+    "k": {
+      "color": "#4A3C52",
+      "ramp": "stone"
+    },
+    "m": {
+      "color": "#827589",
+      "ramp": "stone"
+    },
+    "r": {
+      "color": "#DE7356",
+      "ramp": "fire"
+    }
+  },
+  "souvenirs": {
+    "souvenir_compass": {
+      "customer": "traveler",
+      "customer_name": "여행자",
+      "name": "낡은 나침반",
+      "story": "출발 전에 들르는 단골 가게",
+      "description": "둥근 놋쇠 케이스와 위쪽 고리, 크림색 문자판, 북쪽(빨강)·남쪽(어둠) 바늘. 놋쇠는 금빛 중간·그림자 위주로 칠해 낡은 느낌을 내고 좌측 상단 테에만 크림 반짝임을 둔다.",
+      "materials": {
+        "outline": "#241C32",
+        "brass_shadow": "#A56A3D",
+        "brass": "#E9B95F",
+        "dial_and_glint": "#FFF0BC",
+        "needle_north": "#DE7356"
+      }
+    },
+    "souvenir_bookmark": {
+      "customer": "mage",
+      "customer_name": "여마법사",
+      "name": "별무늬 책갈피",
+      "story": "밤 연구에 필요한 물약을 찾음",
+      "description": "제비꼬리 끝의 보라 천 책갈피, 가운데 큰 금빛 별과 라일락 작은 별 3개, 위 구멍에서 나온 끈과 오른쪽 금빛 술. 왼쪽 가장자리 밝게, 오른쪽 가장자리 어둡게.",
+      "materials": {
+        "outline": "#241C32",
+        "cloth_shadow": "#50315F",
+        "cloth": "#86548E",
+        "cloth_light_and_sparkle": "#C38EB5",
+        "star_and_tassel": "#E9B95F"
+      }
+    },
+    "souvenir_leaf_brooch": {
+      "customer": "elf",
+      "customer_name": "엘프",
+      "name": "잎사귀 브로치",
+      "story": "비 오는 날 정화 물약을 사러 옴",
+      "description": "45도로 기운 큰 잎사귀와 금빛 잎맥 세공(가운데 줄기 + 위·오른쪽으로 곧게 뻗는 곁맥 3쌍), 왼쪽 아래 둥근 금 받침과 핀 머리. 잎은 좌상단 반쪽이 밝고 우하단 반쪽이 어둡다.",
+      "materials": {
+        "outline": "#241C32",
+        "leaf_shadow": "#3D544D",
+        "leaf": "#718C59",
+        "leaf_light": "#B5C77D",
+        "gold_filigree": "#E9B95F"
+      }
+    },
+    "souvenir_silver_bell": {
+      "customer": "rogue",
+      "customer_name": "고양이 도적",
+      "name": "작은 은방울",
+      "story": "야간 일을 앞두고 조용히 방문",
+      "description": "고양이 목걸이형 둥근 은방울: 가운데 테, 아래쪽 양끝이 둥근 가로 홈과 세로 홈, 위에 고양이 도적의 붉은 목도리와 같은 산호색 리본. 은은 돌·금속 램프 2단, 좌측 상단 크림 반짝임.",
+      "materials": {
+        "outline": "#241C32",
+        "silver_shadow": "#4A3C52",
+        "silver": "#827589",
+        "metal_glint": "#FFF0BC",
+        "ribbon": "#DE7356"
+      }
+    }
+  },
+  "new_palette_colors": 0,
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json"
+}
