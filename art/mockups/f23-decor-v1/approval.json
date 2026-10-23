@@ -1,22 +1,24 @@
 {
   "schema_version": 1,
-  "status": "candidate",
-  "approved_by_user": false,
-  "approved_on": null,
-  "user_reply": null,
+  "status": "approved_partial",
+  "approved_by_user": true,
+  "approved_on": "2026-10-23",
+  "user_reply": "판매대 소품 2종은 A안 자리로 진행하고, 기념품은 작업실용 작은 그림을 따로 만들어줘",
   "review": "art/mockups/f23-decor-v1/review.html",
-  "runtime_integrated": false,
+  "runtime_integrated": true,
   "scope": {
-    "decor_teacup": "판매대 소품 · 작은 찻잔",
-    "decor_dried_vase": "판매대 소품 · 말린 꽃병",
-    "layout_A": "A안 · 주인공 옆 판매대 끝 + 숙성통 우선",
-    "layout_B": "B안 · 판매 병 쉼터 오른쪽 + 기념품 우선",
-    "souvenirs": "승인된 assets/pixel_v1/souvenirs/souvenir_*.png 그대로 사용(수정 없음)"
+    "decor_teacup": "판매대 소품 · 작은 찻잔 (승인)",
+    "decor_dried_vase": "판매대 소품 · 말린 꽃병 (승인)",
+    "layout_A": "판매대 소품 자리만 승인: 판매대 왼쪽 끝, 주인공 쪽 (원본 캔버스 원점 96,40 = 표시 288,120, 접지 y=70)",
+    "layout_B": "채택하지 않음",
+    "souvenirs": "작업실 기념품 칸은 이 후보에서 채택하지 않음. 32×32 관리 아이콘은 작업실 3배에서 너무 커서 작업실용 작은 그림을 별도 후보로 만든다"
   },
+  "decisions": {
+    "mini_mode": "축소(캐릭터) 모드에는 표시하지 않는다(후보 권장안, 장착 상태는 유지)",
+    "full_mode": "기본(전체 실내) 화면에는 넣지 않는다(F21 숙성통과 같은 범위)"
+  },
+  "runtime": "tools/publish_f23_decor_v1.py → assets/pixel_v1/decor/{id}.png, catalog.json decor",
   "pending_decisions": [
-    "소품 디자인(찻잔·말린 꽃병) 승인 또는 수정 지시",
-    "배치 A/B 선택(판매대 위치와 숙성통·기념품 우선순위는 따로 조합 가능)",
-    "축소(캐릭터) 모드 표시 여부(권장: 숨김, 장착 상태 유지)"
-  ],
-  "note": "사용자 승인 전 후보. assets/ 게시, 장착·구매 로직, 관리 화면 UI 연결은 승인 후 별도 작업으로 진행한다."
+    "작업실용 작은 기념품 그림과 자리 (별도 후보)"
+  ]
 }
