@@ -201,7 +201,8 @@ func _loaded_from(data: Dictionary) -> State:
 
 
 func _check_save_settings() -> void:
-	check(State.SAVE_VERSION == 15, "SAVE_VERSION unchanged")
+	# Audio is an optional key and never bumps the version; v16 comes from F22 regulars.
+	check(State.SAVE_VERSION == 16, "SAVE_VERSION unchanged by audio")
 	var state := State.new()
 	check(state.audio_volume == 0.5 and not state.audio_muted, "New saves default to volume 0.5, sound on")
 	state.audio_volume = 0.3
