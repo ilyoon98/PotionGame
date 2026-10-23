@@ -19,6 +19,8 @@ const LoginResume = preload("res://scripts/login_resume.gd")
 const SingleInstance = preload("res://scripts/single_instance.gd")
 const SystemTray = preload("res://scripts/system_tray.gd")
 var system_tray: Node
+const ShopAudio = preload("res://scripts/shop_audio.gd")
+var shop_audio: Node
 var instance_guard: Node
 var instance_bypassed := false
 var login_resume: RefCounted
@@ -166,6 +168,10 @@ func _ready() -> void:
 	system_tray = SystemTray.new()
 	system_tray.host = self
 	add_child(system_tray)
+	shop_audio = ShopAudio.new()
+	shop_audio.name = "ShopAudio"
+	shop_audio.apply_settings(state.audio_volume, state.audio_muted)
+	add_child(shop_audio)
 	if load_result == "recovered":
 		show_message("이전 저장 기록을 복구했어요.")
 	elif load_result == "invalid":
@@ -712,10 +718,13 @@ func _advance_game(delta: float) -> void:
 	art.motion.trade_interval = state.customer_interval()
 	if state.progression.totals["expeditions"] > previous_returns:
 		art.on_expedition_return(state.progression.totals["expeditions"] - previous_returns)
+		play_sound("expedition_return")
 	if state.progression.totals["rare"] > previous_rare:
 		art.on_rare_harvest(state.progression.totals["rare"] - previous_rare)
 	income.advance(delta, events["earned"] + events.get("contract_earned", 0))
 	art.apply_potion_events(events, state.stock, state.mana_stock, state.inventory_order())
+	if events["sold"] > 0: play_sound("coin")
+	if events["brewed"] > 0: play_sound("brew_done")
 	if events["harvested"] > 0:
 		herb_plant.on_harvest()
 		art.on_harvest(events["harvested"])
@@ -988,6 +997,18 @@ func _sync_minimized_state() -> void:
 		desktop_suspended_for_minimize = false
 		var allow_desktop_input := not test_mode or get_tree().has_meta("desktop_input_verification")
 		desktop_input.set_enabled(state.window_mode in [State.WindowMode.WORKSHOP, State.WindowMode.COMPANION] and allow_desktop_input)
+
+
+## One quiet effect per call site; ShopAudio applies mute and per-sound spacing.
+func play_sound(id: String) -> void:
+	if shop_audio != null: shop_audio.play(id)
+
+
+func set_audio_muted(value: bool) -> void:
+	if not _owns_game_session(): return
+	state.audio_muted = value
+	if shop_audio != null: shop_audio.muted = value
+	_save()
 
 
 func _save() -> bool:

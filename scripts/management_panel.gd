@@ -85,6 +85,7 @@ var recommendation := {}
 var snap_gauges := false
 var startup_toggle: CheckButton
 var startup_status: Label
+var sound_toggle: CheckButton
 var contracts_view: Control
 var contracts_origin := 0
 var contracts_origin_scroll := 0
@@ -325,6 +326,16 @@ func _ready() -> void:
 	_refresh_startup_setting()
 	_slider(settings, "날씨 효과 강도", 0.0, 1.0, host.state.progression.effects, _change_weather_effects)
 	_slider(settings, "밤의 밝기 하한", 0.5, 1.0, host.state.progression.brightness_floor, _change_brightness_floor)
+	sound_toggle = CheckButton.new()
+	sound_toggle.name = "SoundToggle"
+	sound_toggle.text = "효과음"
+	sound_toggle.custom_minimum_size.y = 42
+	sound_toggle.add_theme_font_size_override("font_size", BODY_SIZE)
+	sound_toggle.add_theme_color_override("font_color", INK)
+	sound_toggle.tooltip_text = "판매·제조 완료·원정 귀환·해금 때 작은 효과음을 들려줘요. 끄면 소리가 나지 않아요."
+	sound_toggle.set_pressed_no_signal(not host.state.audio_muted)
+	sound_toggle.toggled.connect(func(enabled: bool): host.set_audio_muted(not enabled))
+	settings.add_child(sound_toggle)
 	_section(REPORT, "플레이 통계")
 	_statistic("play_time", "플레이 시간", TITLE_SIZE, INK, "게임을 켜 둔 누적 시간이에요. 게임을 종료한 시간은 제외해요.")
 	_statistic("net", "순영업수입", 22, Palette.ACCENT, "일반 매출과 계약 대금에서 재료비와 원정 출발비를 뺀 금액이에요. 강화·레시피·직원 비용은 포함하지 않아요.")
@@ -1427,7 +1438,9 @@ func _change_brightness_floor(value: float) -> void:
 
 func buy(kind: String) -> void:
 	if not host._owns_game_session(): return
+	var unlocks: int = host.state.progression.totals["unlocks"]
 	host.state.purchase(kind)
+	if host.state.progression.totals["unlocks"] > unlocks: host.play_sound("unlock")
 	changed()
 
 func region_action(id: String) -> void:

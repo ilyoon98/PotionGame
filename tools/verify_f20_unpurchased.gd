@@ -8,7 +8,7 @@ var checks := 0
 func same(current: RefCounted, previous: RefCounted) -> void:
 	var data: Dictionary = M.data(current); data.erase("workshop")
 	# Desktop placement prefs (2026-10-21) postdate the frozen reference.
-	data.erase("window_position"); data.erase("management_position")
+	data.erase("window_position"); data.erase("management_position"); data.erase("audio")
 	data.erase("keeper"); data.erase("aging"); data.erase("keeper_upgrades"); data.erase("report_f21"); data.erase("regulars"); data.version = 12
 	assert(Compare.equivalent(data, M.data(previous)), "Unpurchased expansion preserves approved free recovery policy including actual timers/RNG/economy")
 	checks += 1

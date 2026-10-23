@@ -1,0 +1,219 @@
+{
+  "version": "sfx_v1",
+  "generator": "tools/build_sfx_v1.py (stdlib wave/math only, deterministic)",
+  "format": {
+    "container": "wav",
+    "encoding": "pcm_s16le",
+    "channels": 1,
+    "sample_rate": 22050
+  },
+  "max_peak_dbfs": -6.0,
+  "fade_seconds": {
+    "in": 0.004,
+    "out": 0.025,
+    "per_voice_attack": 0.003,
+    "per_voice_tail": 0.012
+  },
+  "status": "candidate: synthesized and machine-checked; not yet heard on real speakers",
+  "sounds": {
+    "coin": {
+      "file": "coin.wav",
+      "description": "판매 동전: 맑은 두 음(B5→E6), 짧은 종소리 감쇠",
+      "duration_seconds": 0.15,
+      "frames": 3308,
+      "target_peak_dbfs": -10.0,
+      "measured_peak_dbfs": -10.0,
+      "voices": [
+        {
+          "start": 0.0,
+          "freq": 987.77,
+          "length": 0.06,
+          "decay": 0.03,
+          "harmonics": [
+            1.0,
+            0.0,
+            0.18
+          ]
+        },
+        {
+          "start": 0.045,
+          "freq": 1318.51,
+          "length": 0.105,
+          "decay": 0.045,
+          "harmonics": [
+            1.0,
+            0.0,
+            0.15
+          ]
+        }
+      ],
+      "sha256": "15008ebb2617b1db3585f5492446733ecc99f2cfda75abf3c81cbaf367455f7b"
+    },
+    "brew_done": {
+      "file": "brew_done.wav",
+      "description": "제조 완료: 위로 미끄러지는 작은 거품 4개",
+      "duration_seconds": 0.3,
+      "frames": 6615,
+      "target_peak_dbfs": -12.0,
+      "measured_peak_dbfs": -12.0,
+      "voices": [
+        {
+          "start": 0.0,
+          "freq": 360.0,
+          "glide": 1.55,
+          "length": 0.07,
+          "decay": 0.028,
+          "harmonics": [
+            1.0
+          ]
+        },
+        {
+          "start": 0.065,
+          "freq": 500.0,
+          "glide": 1.45,
+          "length": 0.065,
+          "decay": 0.025,
+          "harmonics": [
+            1.0
+          ]
+        },
+        {
+          "start": 0.135,
+          "freq": 430.0,
+          "glide": 1.6,
+          "length": 0.07,
+          "decay": 0.027,
+          "harmonics": [
+            1.0
+          ]
+        },
+        {
+          "start": 0.205,
+          "freq": 620.0,
+          "glide": 1.4,
+          "length": 0.09,
+          "decay": 0.03,
+          "harmonics": [
+            1.0
+          ]
+        }
+      ],
+      "sha256": "e5287d62dffb196e6a23566cff558c1ca57c59639fcc04e4733204a958cfd46d"
+    },
+    "expedition_return": {
+      "file": "expedition_return.wav",
+      "description": "원정 귀환: 짧은 3음 아르페지오(C5-E5-G5), 부드러운 삼각파 느낌",
+      "duration_seconds": 0.5,
+      "frames": 11025,
+      "target_peak_dbfs": -10.0,
+      "measured_peak_dbfs": -10.0,
+      "voices": [
+        {
+          "start": 0.0,
+          "freq": 523.25,
+          "length": 0.26,
+          "decay": 0.1,
+          "harmonics": [
+            1.0,
+            0.0,
+            0.11,
+            0.0,
+            0.04
+          ]
+        },
+        {
+          "start": 0.11,
+          "freq": 659.25,
+          "length": 0.26,
+          "decay": 0.1,
+          "harmonics": [
+            1.0,
+            0.0,
+            0.11,
+            0.0,
+            0.04
+          ]
+        },
+        {
+          "start": 0.22,
+          "freq": 783.99,
+          "length": 0.28,
+          "decay": 0.12,
+          "harmonics": [
+            1.0,
+            0.0,
+            0.11,
+            0.0,
+            0.04
+          ]
+        }
+      ],
+      "sha256": "854dd66b73c570066c17f6661f6335c80e5555af352f814a9ed26a0e1d859a41"
+    },
+    "unlock": {
+      "file": "unlock.wav",
+      "description": "기념·해금: 높은 반짝임 4음(C6-E6-G6-C7) + 은은한 떨림과 E7 잔향",
+      "duration_seconds": 0.6,
+      "frames": 13230,
+      "target_peak_dbfs": -11.0,
+      "measured_peak_dbfs": -11.0,
+      "voices": [
+        {
+          "start": 0.0,
+          "freq": 1046.5,
+          "length": 0.22,
+          "decay": 0.07,
+          "harmonics": [
+            1.0,
+            0.25
+          ],
+          "tremolo": 11.0
+        },
+        {
+          "start": 0.07,
+          "freq": 1318.51,
+          "length": 0.22,
+          "decay": 0.07,
+          "harmonics": [
+            1.0,
+            0.25
+          ],
+          "tremolo": 11.0
+        },
+        {
+          "start": 0.14,
+          "freq": 1567.98,
+          "length": 0.24,
+          "decay": 0.08,
+          "harmonics": [
+            1.0,
+            0.25
+          ],
+          "tremolo": 11.0
+        },
+        {
+          "start": 0.21,
+          "freq": 2093.0,
+          "length": 0.39,
+          "decay": 0.14,
+          "harmonics": [
+            1.0,
+            0.2
+          ],
+          "tremolo": 9.0
+        },
+        {
+          "start": 0.27,
+          "freq": 2637.02,
+          "length": 0.33,
+          "decay": 0.1,
+          "harmonics": [
+            0.45
+          ],
+          "tremolo": 13.0
+        }
+      ],
+      "sha256": "3b5df6d1b2ea30fa951f6735d422203ad31f35f51c1e10211d8abbec2d93fabc"
+    }
+  }
+}

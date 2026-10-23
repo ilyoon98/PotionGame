@@ -75,6 +75,9 @@ var has_window_position: bool = false # False keeps the default bottom-right cor
 var window_position: Vector2i = Vector2i.ZERO # Last windowed top-left on the desktop.
 var has_management_position: bool = false # False opens management beside the game window.
 var management_position: Vector2i = Vector2i.ZERO
+const DEFAULT_AUDIO_VOLUME := 0.5
+var audio_volume: float = DEFAULT_AUDIO_VOLUME # Optional save key `audio`; sound effects master volume 0..1.
+var audio_muted: bool = false
 
 
 func set_shop_open(enabled: bool) -> void:
@@ -850,6 +853,7 @@ func to_data() -> Dictionary:
 		"shop_open": shop_open, "mini_mode": mini_mode, "window_mode": window_mode, "main_window_mode": main_window_mode, "opacity": opacity,
 		"window_position": [window_position.x, window_position.y] if has_window_position else null,
 		"management_position": [management_position.x, management_position.y] if has_management_position else null,
+		"audio": {"volume": audio_volume, "muted": audio_muted},
 	}
 
 
@@ -1058,6 +1062,12 @@ func load_data(data: Variant) -> bool:
 	var saved_management: Variant = _saved_position(data.get("management_position", null))
 	has_management_position = saved_management != null
 	management_position = saved_management if has_management_position else Vector2i.ZERO
+	# Optional sound settings: a missing or malformed value only restores the defaults.
+	var saved_audio: Variant = data.get("audio", null)
+	var saved_volume: Variant = saved_audio.get("volume", null) if saved_audio is Dictionary else null
+	var saved_muted: Variant = saved_audio.get("muted", null) if saved_audio is Dictionary else null
+	audio_volume = float(saved_volume) if (saved_volume is int or saved_volume is float) and is_finite(float(saved_volume)) and saved_volume >= 0.0 and saved_volume <= 1.0 else DEFAULT_AUDIO_VOLUME
+	audio_muted = saved_muted if saved_muted is bool else false
 	return true
 
 
