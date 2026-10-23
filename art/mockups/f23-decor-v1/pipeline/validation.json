@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "decor_teacup": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 58,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#9BE2CF",
+        "#C99463"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "glaze_light": 2,
+        "glaze": 3,
+        "glaze_shadow": 4,
+        "tea": 5
+      },
+      "source_sha256": "525a087afe4376ab2578ad74721d03f07614f9103d0bb6a31ef1cb8a23bd6377",
+      "native_pixel_sha256": "f0ad8e6a6f05029be9c42ccd9fb39ff7fcd4925019e0ed12f798a139f2f38d7e"
+    },
+    "decor_dried_vase": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 50,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#A56A3D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "flower_light": 2,
+        "flower_shadow": 3,
+        "vase": 4,
+        "vase_shadow": 5
+      },
+      "source_sha256": "ccc49b42e839c853dbc3c6e2a9c88f7112e6111f1d5cd5c190d5dfcf8aaac4b3",
+      "native_pixel_sha256": "d3193fca56ac59a7e93778a087667a3a70442a93bd8f1ef08675852b9d26797f"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

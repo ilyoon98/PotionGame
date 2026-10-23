@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "review": "art/mockups/f23-decor-v1/review.html",
+  "runtime_integrated": false,
+  "scope": {
+    "decor_teacup": "판매대 소품 · 작은 찻잔",
+    "decor_dried_vase": "판매대 소품 · 말린 꽃병",
+    "layout_A": "A안 · 주인공 옆 판매대 끝 + 숙성통 우선",
+    "layout_B": "B안 · 판매 병 쉼터 오른쪽 + 기념품 우선",
+    "souvenirs": "승인된 assets/pixel_v1/souvenirs/souvenir_*.png 그대로 사용(수정 없음)"
+  },
+  "pending_decisions": [
+    "소품 디자인(찻잔·말린 꽃병) 승인 또는 수정 지시",
+    "배치 A/B 선택(판매대 위치와 숙성통·기념품 우선순위는 따로 조합 가능)",
+    "축소(캐릭터) 모드 표시 여부(권장: 숨김, 장착 상태 유지)"
+  ],
+  "note": "사용자 승인 전 후보. assets/ 게시, 장착·구매 로직, 관리 화면 UI 연결은 승인 후 별도 작업으로 진행한다."
+}

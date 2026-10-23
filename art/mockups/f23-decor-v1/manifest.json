@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f23-decor-v1/pipeline",
+  "scene": {
+    "size": [
+      32,
+      32
+    ],
+    "background": "#4A3C52"
+  },
+  "feature": "F23 decor counter props",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "decor_teacup",
+      "source": "art/mockups/f23-decor-v1/source/decor_teacup-registered.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "glaze_light": [
+          "#9BE2CF"
+        ],
+        "glaze": [
+          "#3BA8A3"
+        ],
+        "glaze_shadow": [
+          "#24566A"
+        ],
+        "tea": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "glaze_light": "teal",
+        "glaze": "teal",
+        "glaze_shadow": "teal",
+        "tea": "wood"
+      },
+      "rules": [
+        {
+          "material": "glaze_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "glaze",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        },
+        {
+          "material": "glaze_shadow",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        },
+        {
+          "material": "tea",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        }
+      ],
+      "fallback_material": "glaze_light",
+      "name_ko": "작은 찻잔",
+      "slot": "판매대 소품"
+    },
+    {
+      "id": "decor_dried_vase",
+      "source": "art/mockups/f23-decor-v1/source/decor_dried_vase-registered.png",
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "flower_light": [
+          "#E9B95F"
+        ],
+        "flower_shadow": [
+          "#A56A3D"
+        ],
+        "vase": [
+          "#86548E"
+        ],
+        "vase_shadow": [
+          "#50315F"
+        ]
+      },
+      "material_ramps": {
+        "flower_light": "gold",
+        "flower_shadow": "gold",
+        "vase": "purple",
+        "vase_shadow": "purple"
+      },
+      "rules": [
+        {
+          "material": "flower_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "flower_shadow",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "vase",
+          "hue": [
+            0.8063,
+            0.8143
+          ],
+          "saturation_min": 0.3985,
+          "saturation_max": 0.4185,
+          "value_min": 0.5469,
+          "value_max": 0.5669
+        },
+        {
+          "material": "vase_shadow",
+          "hue": [
+            0.775,
+            0.783
+          ],
+          "saturation_min": 0.4742,
+          "saturation_max": 0.4942,
+          "value_min": 0.3625,
+          "value_max": 0.3825
+        }
+      ],
+      "fallback_material": "flower_light",
+      "name_ko": "말린 꽃병",
+      "slot": "판매대 소품"
+    }
+  ]
+}

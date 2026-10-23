@@ -1,0 +1,2973 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-10-23",
+  "scale": 3,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "new_palette_colors": 0,
+  "pipeline_report": "art/mockups/f23-decor-v1/pipeline/validation.json",
+  "pipeline_status": "passed",
+  "rules": {
+    "native_size": [
+      32,
+      32
+    ],
+    "max_colors_including_outline": 5,
+    "off_palette": 0,
+    "partial_alpha": 0,
+    "outline": "every opaque pixel 4-adjacent to transparency (or the canvas edge) is #241C32",
+    "max_shades_per_ramp": 3,
+    "dithering": "no 3x3 two-color checkerboards",
+    "lighting": "non-outline pixels on the top-left side brighter than the bottom-right side",
+    "grounding": "lowest opaque row = 30, one continuous run of outline pixels, nothing below",
+    "overlap_unit": "display pixels (native x3) of decor opacity intersecting each element's union of all reachable pixels",
+    "checked_elements": [
+      "keeper",
+      "customers",
+      "sale_bottle",
+      "stock_bottles",
+      "hud"
+    ],
+    "must_be_zero": [
+      "keeper",
+      "customers",
+      "sale_bottle",
+      "hud",
+      "furniture (except counter contact)",
+      "decor vs decor"
+    ],
+    "stock_bottles": "must be zero except the listed leaf-brooch slot exception (decor is drawn behind stock bottles)",
+    "draw_order": "counter prop right after counter; souvenir at the aging-cask slot before stock bottles"
+  },
+  "exceptions": [
+    {
+      "what": "souvenir_leaf_brooch on the wall slot",
+      "origin_native": [
+        70,
+        -5
+      ],
+      "stock_bottles_display_px": 117,
+      "why": "26 px diagonal sprite; between the cauldron HUD panel corner (x<73 from row 22) and the shelf-wrap stock path (x>=97 at rows 0-44) only 24 columns are free, so no position clears both. The HUD is kept at 0; the leaf's top-right tip lies on the wrap path, where the moving bottle is drawn in front of it.",
+      "alternatives_native": [
+        {
+          "origin": [
+            66,
+            -5
+          ],
+          "hud": 81,
+          "stock_bottles": 0,
+          "other": 0
+        },
+        {
+          "origin": [
+            67,
+            -5
+          ],
+          "hud": 54,
+          "stock_bottles": 0,
+          "other": 0
+        },
+        {
+          "origin": [
+            68,
+            -5
+          ],
+          "hud": 27,
+          "stock_bottles": 0,
+          "other": 0
+        },
+        {
+          "origin": [
+            69,
+            -5
+          ],
+          "hud": 9,
+          "stock_bottles": 18,
+          "other": 0
+        },
+        {
+          "origin": [
+            70,
+            -5
+          ],
+          "hud": 0,
+          "stock_bottles": 117,
+          "other": 0
+        },
+        {
+          "origin": [
+            71,
+            -5
+          ],
+          "hud": 0,
+          "stock_bottles": 243,
+          "other": 0
+        },
+        {
+          "origin": [
+            72,
+            -5
+          ],
+          "hud": 0,
+          "stock_bottles": 387,
+          "other": 0
+        }
+      ]
+    }
+  ],
+  "workshop_constants_verified_against_scripts": {
+    "counter": true,
+    "window": true,
+    "herb": true,
+    "poster": true,
+    "shelf": true,
+    "aging_cask": true,
+    "keeper": true,
+    "customer_y": true,
+    "pot": true,
+    "hearth": true,
+    "purchase_feet_x": true,
+    "offscreen_feet_x": true,
+    "brew_origin": true,
+    "table_anchor": true,
+    "wrap_shelf_left": true,
+    "reserve": true,
+    "pot_panel": true,
+    "keeper_panel": true,
+    "herb_panel": true,
+    "potions_button": true,
+    "herbs_button": true,
+    "expeditions_button": true,
+    "poster_captions": true,
+    "stock_caption": true,
+    "sale_caption": true,
+    "harvest_flash": true,
+    "rare_flash": true,
+    "slots": true,
+    "mini_workshop": true,
+    "cask_drawn_before_stock": true
+  },
+  "props": {
+    "decor_teacup": {
+      "name": "작은 찻잔",
+      "size": [
+        32,
+        32
+      ],
+      "native_32x32": true,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#9BE2CF",
+        "#C99463"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "glaze_light": {
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "glaze": {
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        },
+        "glaze_shadow": {
+          "color": "#24566A",
+          "ramp": "teal"
+        },
+        "tea": {
+          "color": "#C99463",
+          "ramp": "wood"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "teal": 3,
+        "wood": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        11,
+        25,
+        23,
+        31
+      ],
+      "opaque_size": [
+        12,
+        6
+      ],
+      "dither_3x3_blocks": [],
+      "lighting": {
+        "top_left_mean": 0.4268,
+        "bottom_right_mean": 0.1983,
+        "top_left_lit": true
+      },
+      "grounding": {
+        "ground_row": 30,
+        "ground_row_expected": 30,
+        "ground_x": [
+          12,
+          21
+        ],
+        "ground_width": 10,
+        "ground_contiguous": true,
+        "ground_all_outline": true,
+        "rows_below_ground_empty": true,
+        "opaque_rows": [
+          25,
+          30
+        ],
+        "opaque_height": 6,
+        "passed": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "f0ad8e6a6f05029be9c42ccd9fb39ff7fcd4925019e0ed12f798a139f2f38d7e",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map_sha256": "b93de768afd8e0bdd6725dd93f8371da3b3ee204356225d05383d25eee3b714b",
+        "registered_sha256": "525a087afe4376ab2578ad74721d03f07614f9103d0bb6a31ef1cb8a23bd6377"
+      }
+    },
+    "decor_dried_vase": {
+      "name": "말린 꽃병",
+      "size": [
+        32,
+        32
+      ],
+      "native_32x32": true,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#A56A3D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "flower_light": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "flower_shadow": {
+          "color": "#A56A3D",
+          "ramp": "gold"
+        },
+        "vase": {
+          "color": "#86548E",
+          "ramp": "purple"
+        },
+        "vase_shadow": {
+          "color": "#50315F",
+          "ramp": "purple"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "purple": 2
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        12,
+        24,
+        21,
+        31
+      ],
+      "opaque_size": [
+        9,
+        7
+      ],
+      "dither_3x3_blocks": [],
+      "lighting": {
+        "top_left_mean": 0.2711,
+        "bottom_right_mean": 0.0949,
+        "top_left_lit": true
+      },
+      "grounding": {
+        "ground_row": 30,
+        "ground_row_expected": 30,
+        "ground_x": [
+          13,
+          19
+        ],
+        "ground_width": 7,
+        "ground_contiguous": true,
+        "ground_all_outline": true,
+        "rows_below_ground_empty": true,
+        "opaque_rows": [
+          24,
+          30
+        ],
+        "opaque_height": 7,
+        "passed": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "d3193fca56ac59a7e93778a087667a3a70442a93bd8f1ef08675852b9d26797f",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map_sha256": "ad2d5826011130a439f84836bf6b829141ef26fd7a454b7fd7a8783be8496851",
+        "registered_sha256": "ccc49b42e839c853dbc3c6e2a9c88f7112e6111f1d5cd5c190d5dfcf8aaac4b3"
+      }
+    }
+  },
+  "souvenirs": {
+    "souvenir_compass": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_compass.png",
+      "sha256": "218daa896cc6f5dbfd1c69047ea36a8ff707c7d2beb054636fd1dcefcb336cce",
+      "identical_to_approved_f22_sprite": true,
+      "opaque_bbox_native": [
+        4,
+        0,
+        28,
+        31
+      ]
+    },
+    "souvenir_bookmark": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_bookmark.png",
+      "sha256": "d240b1a3101bba787604d99858b9e7426760202c06d1607d0e0890c98a9e7709",
+      "identical_to_approved_f22_sprite": true,
+      "opaque_bbox_native": [
+        8,
+        2,
+        29,
+        31
+      ]
+    },
+    "souvenir_leaf_brooch": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_leaf_brooch.png",
+      "sha256": "25b3e8b63bd567061e01e97fb3800a7aa988689badd3d2721d38fee57a048ee8",
+      "identical_to_approved_f22_sprite": true,
+      "opaque_bbox_native": [
+        3,
+        5,
+        29,
+        30
+      ]
+    },
+    "souvenir_silver_bell": {
+      "published": "assets/pixel_v1/souvenirs/souvenir_silver_bell.png",
+      "sha256": "29529b25490e5319937ad81cabba0bfbcdbce6996f594ae16160eae79c0628d3",
+      "identical_to_approved_f22_sprite": true,
+      "opaque_bbox_native": [
+        5,
+        1,
+        27,
+        30
+      ]
+    }
+  },
+  "element_pixels": {
+    "keeper": 11568,
+    "customers": 11124,
+    "sale_bottle": 22561,
+    "stock_bottles": 32605,
+    "hud": 15070,
+    "furniture_weather_glass": 2574,
+    "furniture_window": 3231,
+    "furniture_herb": 4032,
+    "furniture_poster": 3861,
+    "furniture_shelf": 5562,
+    "furniture_counter": 4032,
+    "furniture_aging_cask": 6210,
+    "furniture_cauldron": 4941,
+    "furniture_fire": 315,
+    "furniture_floor": 6480,
+    "sale_rest": 828
+  },
+  "space_analysis": {
+    "counter_free_from_row_by_x": {
+      "105": 64,
+      "106": 64,
+      "107": 64,
+      "108": 64,
+      "109": 64,
+      "110": 64,
+      "111": 64,
+      "112": 64,
+      "113": 64,
+      "114": 64,
+      "115": 64,
+      "116": 64,
+      "117": 64,
+      "118": 64,
+      "119": 64,
+      "120": 64,
+      "121": 64,
+      "122": 64,
+      "123": 64,
+      "124": 64,
+      "125": 64,
+      "126": 64,
+      "127": 64,
+      "128": 65,
+      "129": 65,
+      "130": 66,
+      "131": 66,
+      "132": 67,
+      "133": 67,
+      "134": 68,
+      "135": 68,
+      "136": 68,
+      "137": 68,
+      "138": 68,
+      "139": 68,
+      "140": 68,
+      "141": 68,
+      "142": 68,
+      "143": 68,
+      "144": 68,
+      "145": 68,
+      "146": 68,
+      "147": 68,
+      "148": 68,
+      "149": 68,
+      "150": 68,
+      "151": 68,
+      "152": 68
+    },
+    "counter_columns_free_from_row_64": [
+      106,
+      127
+    ],
+    "counter_band_rows": [
+      64,
+      70
+    ],
+    "souvenir_zero_overlap_origins": {
+      "souvenir_compass": {
+        "cask_hidden": 4,
+        "cask_drawn": 0,
+        "cask_hidden_list": [
+          [
+            68,
+            0
+          ],
+          [
+            69,
+            0
+          ],
+          [
+            69,
+            1
+          ],
+          [
+            69,
+            2
+          ]
+        ]
+      },
+      "souvenir_bookmark": {
+        "cask_hidden": 20,
+        "cask_drawn": 0,
+        "cask_hidden_list": [
+          [
+            65,
+            -2
+          ],
+          [
+            66,
+            -2
+          ],
+          [
+            67,
+            -2
+          ],
+          [
+            68,
+            -2
+          ],
+          [
+            65,
+            -1
+          ],
+          [
+            66,
+            -1
+          ],
+          [
+            67,
+            -1
+          ],
+          [
+            68,
+            -1
+          ],
+          [
+            65,
+            0
+          ],
+          [
+            66,
+            0
+          ],
+          [
+            67,
+            0
+          ],
+          [
+            68,
+            0
+          ],
+          [
+            65,
+            1
+          ],
+          [
+            66,
+            1
+          ],
+          [
+            67,
+            1
+          ],
+          [
+            68,
+            1
+          ],
+          [
+            65,
+            2
+          ],
+          [
+            66,
+            2
+          ],
+          [
+            67,
+            2
+          ],
+          [
+            68,
+            2
+          ]
+        ]
+      },
+      "souvenir_leaf_brooch": {
+        "cask_hidden": 0,
+        "cask_drawn": 0,
+        "cask_hidden_list": []
+      },
+      "souvenir_silver_bell": {
+        "cask_hidden": 16,
+        "cask_drawn": 0,
+        "cask_hidden_list": [
+          [
+            67,
+            -1
+          ],
+          [
+            68,
+            -1
+          ],
+          [
+            69,
+            -1
+          ],
+          [
+            70,
+            -1
+          ],
+          [
+            68,
+            0
+          ],
+          [
+            69,
+            0
+          ],
+          [
+            70,
+            0
+          ],
+          [
+            68,
+            1
+          ],
+          [
+            69,
+            1
+          ],
+          [
+            70,
+            1
+          ],
+          [
+            68,
+            2
+          ],
+          [
+            69,
+            2
+          ],
+          [
+            70,
+            2
+          ],
+          [
+            68,
+            3
+          ],
+          [
+            69,
+            3
+          ],
+          [
+            70,
+            3
+          ]
+        ]
+      }
+    },
+    "souvenir_common_zero_overlap_origins": {
+      "cask_hidden": [],
+      "cask_drawn": []
+    },
+    "leaf_brooch_top_aligned_options": [
+      {
+        "origin": [
+          66,
+          -5
+        ],
+        "hud": 81,
+        "stock_bottles": 0,
+        "other": 0
+      },
+      {
+        "origin": [
+          67,
+          -5
+        ],
+        "hud": 54,
+        "stock_bottles": 0,
+        "other": 0
+      },
+      {
+        "origin": [
+          68,
+          -5
+        ],
+        "hud": 27,
+        "stock_bottles": 0,
+        "other": 0
+      },
+      {
+        "origin": [
+          69,
+          -5
+        ],
+        "hud": 9,
+        "stock_bottles": 18,
+        "other": 0
+      },
+      {
+        "origin": [
+          70,
+          -5
+        ],
+        "hud": 0,
+        "stock_bottles": 117,
+        "other": 0
+      },
+      {
+        "origin": [
+          71,
+          -5
+        ],
+        "hud": 0,
+        "stock_bottles": 243,
+        "other": 0
+      },
+      {
+        "origin": [
+          72,
+          -5
+        ],
+        "hud": 0,
+        "stock_bottles": 387,
+        "other": 0
+      }
+    ],
+    "slot_rule": {
+      "x": 68,
+      "top_y": 0,
+      "x_offsets": {
+        "souvenir_leaf_brooch": 2
+      }
+    },
+    "slot_origins": {
+      "souvenir_compass": [
+        68,
+        0
+      ],
+      "souvenir_bookmark": [
+        68,
+        -2
+      ],
+      "souvenir_leaf_brooch": [
+        70,
+        -5
+      ],
+      "souvenir_silver_bell": [
+        68,
+        -1
+      ]
+    },
+    "note": "native coordinates; zero = no pixel shared with keeper, customers, sale/stock bottles, HUD or furniture"
+  },
+  "layouts": {
+    "A": {
+      "title": "A안 · 주인공 옆 판매대 끝 + 숙성통 우선",
+      "counter_origin_native": [
+        96,
+        40
+      ],
+      "counter_origin_display": [
+        288,
+        120
+      ],
+      "souvenir_origins_native": {
+        "souvenir_compass": [
+          68,
+          0
+        ],
+        "souvenir_bookmark": [
+          68,
+          -2
+        ],
+        "souvenir_leaf_brooch": [
+          70,
+          -5
+        ],
+        "souvenir_silver_bell": [
+          68,
+          -1
+        ]
+      },
+      "souvenir_origins_display": {
+        "souvenir_compass": [
+          204,
+          0
+        ],
+        "souvenir_bookmark": [
+          204,
+          -6
+        ],
+        "souvenir_leaf_brooch": [
+          210,
+          -15
+        ],
+        "souvenir_silver_bell": [
+          204,
+          -3
+        ]
+      },
+      "cask_policy": "cask_first",
+      "combos": {
+        "decor_teacup+souvenir_compass+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_compass+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3501,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_bookmark+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_bookmark+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3663,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_leaf_brooch+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 117,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 117,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": true,
+          "passed": true
+        },
+        "decor_teacup+souvenir_leaf_brooch+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3114,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_silver_bell+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_silver_bell+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 288,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3708,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            108,
+            117
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_compass+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_compass+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3501,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_bookmark+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_bookmark+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3663,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_leaf_brooch+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 117,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 117,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": true,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_leaf_brooch+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3114,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_silver_bell+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_silver_bell+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": false,
+          "aging_cask_drawn": true,
+          "prop_origin_native": [
+            96,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 216,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3708,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            109,
+            115
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 1,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        }
+      },
+      "examples": {
+        "A-1": {
+          "id": "A-1",
+          "prop": "decor_teacup",
+          "souvenir": "souvenir_compass",
+          "aging_open": false,
+          "moment": "wait",
+          "customer": "traveler",
+          "weather": "day_clear",
+          "label": "찻잔 + 낡은 나침반 · 숙성 전 · 손님 대기",
+          "png": "art/mockups/f23-decor-v1/layouts/A-1-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "decor_teacup+souvenir_compass+aging_closed",
+          "passed": true
+        },
+        "A-2": {
+          "id": "A-2",
+          "prop": "decor_dried_vase",
+          "souvenir": "souvenir_bookmark",
+          "aging_open": false,
+          "moment": "sale",
+          "customer": "mage",
+          "weather": "night_clear",
+          "label": "말린 꽃병 + 별무늬 책갈피 · 숙성 전 · 판매 병이 판매대에 멈춘 순간",
+          "png": "art/mockups/f23-decor-v1/layouts/A-2-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "decor_dried_vase+souvenir_bookmark+aging_closed",
+          "passed": true
+        },
+        "A-3": {
+          "id": "A-3",
+          "prop": "decor_teacup",
+          "souvenir": "souvenir_leaf_brooch",
+          "aging_open": true,
+          "moment": "wait",
+          "customer": "elf",
+          "weather": "day_rain",
+          "label": "찻잔 + 잎사귀 브로치 장착 · 숙성 후(숙성통 우선, 기념품 숨김)",
+          "png": "art/mockups/f23-decor-v1/layouts/A-3-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "decor_teacup+souvenir_leaf_brooch+aging_open",
+          "passed": true
+        }
+      }
+    },
+    "B": {
+      "title": "B안 · 판매 병 쉼터 오른쪽 + 기념품 우선",
+      "counter_origin_native": [
+        109,
+        40
+      ],
+      "counter_origin_display": [
+        327,
+        120
+      ],
+      "souvenir_origins_native": {
+        "souvenir_compass": [
+          68,
+          0
+        ],
+        "souvenir_bookmark": [
+          68,
+          -2
+        ],
+        "souvenir_leaf_brooch": [
+          70,
+          -5
+        ],
+        "souvenir_silver_bell": [
+          68,
+          -1
+        ]
+      },
+      "souvenir_origins_display": {
+        "souvenir_compass": [
+          204,
+          0
+        ],
+        "souvenir_bookmark": [
+          204,
+          -6
+        ],
+        "souvenir_leaf_brooch": [
+          210,
+          -15
+        ],
+        "souvenir_silver_bell": [
+          204,
+          -3
+        ]
+      },
+      "cask_policy": "souvenir_first",
+      "combos": {
+        "decor_teacup+souvenir_compass+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_compass+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3501,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_bookmark+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_bookmark+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3663,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_leaf_brooch+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 117,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 117,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": true,
+          "passed": true
+        },
+        "decor_teacup+souvenir_leaf_brooch+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 117,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3114,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 117,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": true,
+          "passed": true
+        },
+        "decor_teacup+souvenir_silver_bell+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_teacup+souvenir_silver_bell+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 297,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3708,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            121,
+            130
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": 5,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_compass+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_compass+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            0
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3501,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_bookmark+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_bookmark+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -2
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3663,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_leaf_brooch+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 117,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 117,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": true,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_leaf_brooch+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            70,
+            -5
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 117,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3114,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 117,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": true,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_silver_bell+aging_closed": {
+          "aging_open": false,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        },
+        "decor_dried_vase+souvenir_silver_bell+aging_open": {
+          "aging_open": true,
+          "souvenir_drawn": true,
+          "aging_cask_drawn": false,
+          "prop_origin_native": [
+            109,
+            40
+          ],
+          "souvenir_origin_native": [
+            68,
+            -1
+          ],
+          "prop_inside_art": true,
+          "souvenir_inside_art": true,
+          "prop": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter_contact": 225,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "souvenir": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 0,
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0
+          },
+          "decor_vs_decor": 0,
+          "if_cask_and_souvenir_both_drawn": 3708,
+          "ground_native_row": 70,
+          "ground_native_x": [
+            122,
+            128
+          ],
+          "ground_on_counter_top": true,
+          "rest_bottle_min_gap_rows": null,
+          "strict_overlap_total": 0,
+          "stock_overlap_total": 0,
+          "furniture_overlap_total": 0,
+          "decor_drawn_over_any_element_pixels": 0,
+          "stock_exception": false,
+          "passed": true
+        }
+      },
+      "examples": {
+        "B-1": {
+          "id": "B-1",
+          "prop": "decor_dried_vase",
+          "souvenir": "souvenir_leaf_brooch",
+          "aging_open": false,
+          "moment": "wait",
+          "customer": "elf",
+          "weather": "day_clear",
+          "label": "말린 꽃병 + 잎사귀 브로치 · 숙성 전 · 손님 대기",
+          "png": "art/mockups/f23-decor-v1/layouts/B-1-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "decor_dried_vase+souvenir_leaf_brooch+aging_closed",
+          "passed": true
+        },
+        "B-2": {
+          "id": "B-2",
+          "prop": "decor_teacup",
+          "souvenir": "souvenir_silver_bell",
+          "aging_open": true,
+          "moment": "sale",
+          "customer": "rogue",
+          "weather": "night_rain",
+          "label": "찻잔 + 작은 은방울 · 숙성 후(기념품이 숙성통 대신) · 판매 병이 멈춘 순간",
+          "png": "art/mockups/f23-decor-v1/layouts/B-2-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "decor_teacup+souvenir_silver_bell+aging_open",
+          "passed": true
+        },
+        "B-3": {
+          "id": "B-3",
+          "prop": "decor_dried_vase",
+          "souvenir": "souvenir_compass",
+          "aging_open": true,
+          "moment": "wait",
+          "customer": "traveler",
+          "weather": "night_clear",
+          "label": "말린 꽃병 + 낡은 나침반 · 숙성 후(기념품이 숙성통 대신)",
+          "png": "art/mockups/f23-decor-v1/layouts/B-3-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "partial_alpha": 0,
+          "empty_space_alpha_zero": true,
+          "combo": "decor_dried_vase+souvenir_compass+aging_open",
+          "passed": true
+        }
+      }
+    }
+  },
+  "mini_mode": {
+    "size": [
+      256,
+      228
+    ],
+    "keeper_origin": [
+      117,
+      24
+    ],
+    "pot_origin": [
+      24,
+      72
+    ],
+    "free_width_right_of_keeper_px": 43,
+    "souvenir_opaque_widths_px": [
+      63,
+      66,
+      72,
+      78
+    ],
+    "counter_present": false,
+    "rendered": false
+  },
+  "passed": true
+}
