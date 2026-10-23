@@ -13720,6 +13720,14 @@
     "souvenirs/souvenir_silver_bell.png": {
       "source": "art/mockups/f22-regulars-souvenirs-v1/sprites/souvenir_silver_bell.png",
       "sha256": "29529b25490e5319937ad81cabba0bfbcdbce6996f594ae16160eae79c0628d3"
+    },
+    "decor/decor_teacup.png": {
+      "source": "art/mockups/f23-decor-v1/sprites/decor_teacup.png",
+      "sha256": "525a087afe4376ab2578ad74721d03f07614f9103d0bb6a31ef1cb8a23bd6377"
+    },
+    "decor/decor_dried_vase.png": {
+      "source": "art/mockups/f23-decor-v1/sprites/decor_dried_vase.png",
+      "sha256": "ccc49b42e839c853dbc3c6e2a9c88f7112e6111f1d5cd5c190d5dfcf8aaac4b3"
     }
   },
   "props": {
@@ -14060,5 +14068,9 @@
     "souvenir_bookmark": "res://assets/pixel_v1/souvenirs/souvenir_bookmark.png",
     "souvenir_leaf_brooch": "res://assets/pixel_v1/souvenirs/souvenir_leaf_brooch.png",
     "souvenir_silver_bell": "res://assets/pixel_v1/souvenirs/souvenir_silver_bell.png"
+  },
+  "decor": {
+    "decor_teacup": "res://assets/pixel_v1/decor/decor_teacup.png",
+    "decor_dried_vase": "res://assets/pixel_v1/decor/decor_dried_vase.png"
   }
 }

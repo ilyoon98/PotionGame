@@ -5,12 +5,13 @@ const CAPACITY := 12
 const SALE_PRICE := 6
 const CUSTOMER_INTERVAL := 3.2
 const MAX_LEVEL := 15
-const SAVE_VERSION := 16
+const SAVE_VERSION := 17
 const StockProtection = preload("res://scripts/shop_stock_protection.gd")
 const WorkshopOperations = preload("res://scripts/shop_workshop_operations.gd")
 const Keeper = preload("res://scripts/shop_keeper.gd")
 const Aging = preload("res://scripts/shop_aging.gd")
 const Regulars = preload("res://scripts/shop_regulars.gd")
+const Decor = preload("res://scripts/shop_decor.gd")
 const Content = preload("res://scripts/shop_content.gd")
 const Rare = preload("res://scripts/rare_recipes.gd")
 const Contracts = preload("res://scripts/shop_contracts.gd")
@@ -50,6 +51,7 @@ var workshop := WorkshopOperations.new()
 var keeper := Keeper.new()
 var aging := Aging.new()
 var regulars := Regulars.new()
+var decor := Decor.new()
 var report_supply := {}
 ## Period baseline for the F21 return-report lines (keeper counters, aged sales).
 var report_f21 := {}
@@ -834,6 +836,7 @@ func to_data() -> Dictionary:
 		"keeper": keeper.to_data(),
 		"aging": aging.to_data(),
 		"regulars": regulars.to_data(),
+		"decor": decor.to_data(),
 		"keeper_upgrades": keeper.upgrades.to_data(),
 		"report_f21": report_f21.duplicate(),
 		"level": level, "total_sold": total_sold,
@@ -865,7 +868,7 @@ func load_data(data: Variant) -> bool:
 			return false
 		if not is_finite(float(data[key])):
 			return false
-	if float(data["version"]) != int(data["version"]) or int(data["version"]) not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, SAVE_VERSION]:
+	if float(data["version"]) != int(data["version"]) or int(data["version"]) not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, SAVE_VERSION]:
 		return false
 	var saved_fees: Variant = data.get("total_spent_expeditions", 0)
 	if not (saved_fees is int or saved_fees is float) or not is_finite(float(saved_fees)) or saved_fees < 0 or saved_fees > 1000000000000 or float(saved_fees) != int(saved_fees): return false
@@ -1010,6 +1013,9 @@ func load_data(data: Variant) -> bool:
 	# v15 and older start the regulars record at zero; visits are never treated as sales.
 	var saved_regulars := Regulars.new()
 	if data.version >= 16 and not saved_regulars.load_data(data.get("regulars")): return false
+	# v16 and older own no decoration.
+	var saved_decor := Decor.new()
+	if data.version >= 17 and not saved_decor.load_data(data.get("decor")): return false
 	# is assigned. Versions1..9 keep their existing paid batch as retail.
 	contracts = saved_contracts
 	stock_protection = saved_protection
@@ -1017,6 +1023,7 @@ func load_data(data: Variant) -> bool:
 	keeper = saved_keeper
 	aging = saved_aging
 	regulars = saved_regulars
+	decor = saved_decor
 	late_investments = saved_late
 	report_supply = saved_report_supply
 	report_f21 = saved_report_f21

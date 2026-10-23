@@ -92,6 +92,7 @@ var contracts_origin_scroll := 0
 var contract_feedback := ""
 var late_feedback := {}
 var aging_feedback := ""
+var decor_feedback := ""
 var keeper_feedback := ""
 
 func _ready() -> void:
@@ -299,6 +300,9 @@ func _ready() -> void:
 	for target_level in range(1, 4):
 		var id := "workshop_%d" % target_level
 		_row(UPGRADES, id, "작업실 운영 확장" if target_level == 1 else "보조 조제대 개선%d" % (target_level - 1), "cauldron", "확장" if target_level == 1 else "개선", func(): _buy_workshop(target_level))
+	_section(UPGRADES, "꾸미기")
+	for id in host.state.Decor.ORDER:
+		_row(UPGRADES, id, host.state.Decor.ITEMS[id].name, id, "구매", func(): _act_decor(id))
 	_section(UPGRADES, "직원")
 	for employee in Content.DATA["employees"]:
 		var id: String = employee["id"]
@@ -1150,6 +1154,29 @@ func _buy_aging(track: String) -> void:
 	aging_feedback = "" if result.get("ok", false) else str(result.get("error", "숙성 투자를 저장하지 못했어요."))
 	refresh()
 
+func _act_decor(id: String) -> void:
+	var result: Dictionary = host.perform_decor_action(id)
+	decor_feedback = "" if result.get("ok", false) else str(result.get("error", "장식을 바꾸지 못했어요."))
+	refresh()
+
+
+## F23: buy once, then equip or remove for free. No gameplay effect.
+func _refresh_decor(state: RefCounted) -> void:
+	for id in state.Decor.ORDER:
+		var item: Dictionary = state.decor.view(state, id)
+		var row: Dictionary = rows[id]
+		row.completed = false
+		row.work.box.hide(); row.stock.box.hide()
+		_text(row.title, str(item.name))
+		_text(row.detail, "판매대에 놓여 있어요" if item.equipped else "소장 · 판매대 비어 있음" if item.owned and state.decor.counter_prop().is_empty() else "소장" if item.owned else "판매대 소품")
+		_text(row.summary, "작업실 판매대 위에 놓는 장식 · 기능 효과 없음")
+		_text(row.extra, "판매대 소품 칸은 1개예요. 다른 소품을 장착하면 바뀌고, 산 소품은 계속 소장해요." + ("
+" + decor_feedback if not decor_feedback.is_empty() else ""))
+		CurrencyText.button_value(row.button, str(item.reason) if not item.reason.is_empty() else "구매 · %s G" % host._number(int(item.cost)) if not item.owned else str(item.action))
+		row.button.disabled = not bool(item.can_act)
+		_center_purchase_button(row.button)
+
+
 func _buy_keeper(track: String) -> void:
 	var result: Dictionary = host.perform_keeper_action(track, _next_level_from_button(rows["keeper_" + track].button))
 	keeper_feedback = "" if result.get("ok", false) else str(result.get("error", "주인공 투자를 저장하지 못했어요."))
@@ -1828,6 +1855,7 @@ func refresh(visible_only: bool = false) -> void:
 	if not visible_only or selected == UPGRADES: _refresh_workshop(state)
 	if not visible_only or selected == UPGRADES: _refresh_aging(state)
 	if not visible_only or selected == UPGRADES: _refresh_keeper_upgrades(state)
+	if not visible_only or selected == UPGRADES: _refresh_decor(state)
 	if not visible_only or selected in [OPERATION, HERBS]: _refresh_supply_support(state)
 	if selected == REPORT:
 		var lifetime := Status.lifetime_summary(state)

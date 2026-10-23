@@ -86,7 +86,7 @@ func run() -> void:
 	saved.regulars.points = {"traveler": 61, "mage": 3}; saved.regulars.report_stages = {"mage": 1}
 	var restored := State.new()
 	check(restored.load_data(M.data(saved)) and Compare.equivalent(M.data(saved), M.data(restored)), "Roundtrip keeps points and report stages")
-	check(M.data(saved).version == State.SAVE_VERSION and State.SAVE_VERSION == 16, "Saves as v16")
+	check(M.data(saved).version == State.SAVE_VERSION and State.SAVE_VERSION >= 16, "Saves as the current version (v16 or later)")
 	var base: Dictionary = M.data(saved)
 	var bad_cases := [
 		func(d): d.regulars.points.traveler = -1,
@@ -106,7 +106,7 @@ func run() -> void:
 	var legacy: Dictionary = M.data(State.new()); legacy.version = 15; legacy.erase("regulars")
 	legacy.progression.by_customer = {"traveler": 40}
 	var migrated := State.new()
-	check(migrated.load_data(legacy) and total_points(migrated) == 0 and migrated.to_data().version == 16, "v15 save starts at zero; visits are not converted to sales")
+	check(migrated.load_data(legacy) and total_points(migrated) == 0 and migrated.to_data().version == State.SAVE_VERSION, "v15 save starts at zero; visits are not converted to sales")
 	# Statistics page cards.
 	var shop := Shop.new(); root.add_child(shop)
 	await process_frame
