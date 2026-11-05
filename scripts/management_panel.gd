@@ -53,6 +53,8 @@ var statistics_values := {}
 var regular_cards := {} # F22 customer id -> card controls on the statistics page
 var regular_viewed := {} # customer id -> stage last shown on the statistics page (this window only)
 var regular_dot: ColorRect
+var collection_values := {} # completion record key -> value label (separate from statistics_values)
+var collection_done: Label
 var result_button: Button
 var close_button: Button
 var title_drag_handle: Control
@@ -369,6 +371,16 @@ func _ready() -> void:
 	_statistic("fatigue_failed", "피로로 인한 실패", TITLE_SIZE, INK, "피로 페널티가 없었다면 성공했을 실패 물약 수예요.")
 	_statistic("aged_sold", "숙성품 판매")
 	_statistic("aged_revenue", "숙성 수입")
+	_section(REPORT, "수집 기록")
+	for row in Status.collection(host.state): _collection_row(row.key, row.caption)
+	collection_done = Label.new()
+	collection_done.name = "CollectionComplete"
+	collection_done.text = "준비된 레시피와 소장품을 모두 모았어요. 가게가 완성됐어요."
+	collection_done.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	collection_done.add_theme_font_size_override("font_size", BODY_SIZE)
+	collection_done.add_theme_color_override("font_color", Palette.ACTION)
+	collection_done.hide()
+	pages[REPORT].add_child(collection_done)
 	_section(REPORT, "단골 손님")
 	for id in Regulars.ids(): _regular_card(id)
 	contracts_view = ContractsScreen.new()
@@ -578,6 +590,33 @@ func _text_button_style(button: Button, selected: bool = false) -> void:
 	button.set_meta("selected_underline", selected)
 
 ## F22: one record card per customer. Points come from completed sales only.
+func _collection_row(key: String, caption: String) -> void:
+	var panel := PanelContainer.new()
+	panel.name = "Collection_" + key
+	panel.custom_minimum_size.y = 32
+	panel.add_theme_stylebox_override("panel", _divider_style(Palette.LINE))
+	pages[REPORT].add_child(panel)
+	var line := HBoxContainer.new()
+	line.add_theme_constant_override("separation", 16)
+	panel.add_child(line)
+	var title := Label.new()
+	title.text = caption
+	title.custom_minimum_size.x = 120
+	title.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	title.add_theme_font_size_override("font_size", BODY_SIZE)
+	title.add_theme_color_override("font_color", MUTED)
+	line.add_child(title)
+	var value := Label.new()
+	value.name = "Value_" + key
+	value.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
+	value.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	value.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	value.add_theme_font_size_override("font_size", TITLE_SIZE)
+	value.add_theme_color_override("font_color", INK)
+	line.add_child(value)
+	collection_values[key] = value
+
+
 func _regular_card(id: String) -> void:
 	var panel := PanelContainer.new()
 	panel.name = "Regular_" + id
@@ -1890,6 +1929,11 @@ func refresh(visible_only: bool = false) -> void:
 		_text(statistics_values.aged_revenue, host._number(lifetime.aged_revenue) + " G")
 		for key in ["brewed", "sold", "expeditions", "reputation_gain"]:
 			_text(statistics_values[key], host._number(lifetime[key]) + ("회" if key == "expeditions" else "개" if key in ["brewed", "sold"] else ""))
+		for row in Status.collection(state):
+			var done: bool = int(row.have) >= int(row.total)
+			_text(collection_values[row.key], "%d / %d%s" % [row.have, row.total, " · 완료" if done else ""])
+			collection_values[row.key].add_theme_color_override("font_color", Palette.ACCENT if done else INK)
+		collection_done.visible = Status.collection_complete(state)
 		_refresh_regulars(state)
 		# Viewing is remembered by the window, never by the model.
 		for id in Regulars.ids(): regular_viewed[id] = state.regulars.stage(id)

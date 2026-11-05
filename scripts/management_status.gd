@@ -192,6 +192,33 @@ static func recommendation_purpose(item: Dictionary, state: RefCounted = null) -
 		if float(next.get("effect", {}).get("base_brew_seconds", state.base_brew_duration())) >= state.base_brew_duration(): return "물약 판매 품질 높이기"
 	return {"cauldron": "물약 제조 시간 줄이기", "herb_pot": "약초 채집 늘리기", "sales_counter": "판매 속도 높이기", "herb_storage": "재료 보관 늘리기", "potion_cabinet": "물약 보관 늘리기", "precision_filter": "제조 성공률 높이기", "drying_rack": "특수 약초 재배 빠르게", "expedition_path": "원정 시간 줄이기", "sales_assistant": "선호 판매 수입 늘리기", "brewing_assistant": "새 물약 제조 빠르게", "cultivation_assistant": "특수 약초 재배 빠르게", "expedition_guide": "원정 시간 줄이기"}.get(key, "선호 판매 수입 늘리기" if key.begins_with("family_") else "자동 작업 효율 높이기")
 
+## Content completion record (proposal "콘텐츠가 한 차례 끝났을 때"). Read-only.
+static func collection(state: RefCounted) -> Array:
+	var p: RefCounted = state.progression
+	var recipes := 0
+	var recipe_total := 0
+	for row in Content.DATA.potions:
+		if row.get("owned_at_start", false): continue
+		recipe_total += 1
+		if p.owned.has(row.id): recipes += 1
+	var specials := 0
+	for row in Rare.ROWS:
+		if Rare.is_owned(row.id, p): specials += 1
+	var decor: Variant = state.get("decor")
+	var regulars: Variant = state.get("regulars")
+	return [
+		{"key": "recipes", "caption": "레시피", "have": recipes, "total": recipe_total},
+		{"key": "specials", "caption": "특별 레시피", "have": specials, "total": Rare.ROWS.size()},
+		{"key": "regions", "caption": "원정 조사 완료", "have": p.completed_regions(), "total": Content.DATA.regions.size()},
+		{"key": "souvenirs", "caption": "단골 기념품", "have": regulars.souvenirs().size() if regulars != null else 0, "total": regulars.ids().size() if regulars != null else 4},
+		{"key": "decor", "caption": "판매대 소품", "have": decor.owned.size() if decor != null else 0, "total": decor.ITEMS.size() if decor != null else 2},
+	]
+
+
+static func collection_complete(state: RefCounted) -> bool:
+	return collection(state).all(func(row): return int(row.have) >= int(row.total))
+
+
 static func lifetime_summary(state: RefCounted) -> Dictionary:
 	var p: RefCounted = state.progression
 	var seconds := maxi(0, int(p.clock))
