@@ -17,6 +17,7 @@ $ErrorActionPreference = 'Stop'
 if ($StatePath -eq '') { $StatePath = Join-Path $PSScriptRoot 'login_resume.json' }
 $script:childId = 0
 $script:acknowledged = $false
+$script:emitResult = $DryRun -or [Console]::IsOutputRedirected
 
 function Write-Diagnostic([object]$Result) {
     if ($DryRun) { return }
@@ -32,7 +33,9 @@ function Write-Diagnostic([object]$Result) {
 function Finish([string]$Reason, [bool]$WouldLaunch, [bool]$Ok = $true, [string]$ErrorText = '') {
     $result = @{ok=$Ok; reason=$Reason; would_launch=$WouldLaunch; dry_run=[bool]$DryRun; error=$ErrorText}
     Write-Diagnostic $result
-    $result | ConvertTo-Json -Compress
+    # Interactive login tasks retain diagnostics in the bounded JSON file.
+    # Only captured callers/dry runs need stdout after we detach the console.
+    if ($script:emitResult) { $result | ConvertTo-Json -Compress }
     if ($Ok) { exit 0 } else { exit 1 }
 }
 function Is-AbsolutePath([string]$Value) {
@@ -201,7 +204,21 @@ try {
     }
     if ($DryRun) { Finish 'ready' $true }
     $argumentLine = (($arguments | ForEach-Object { Quote-Argument $_ }) -join ' ')
-    # The helper stays hidden. The user's game window is intentionally visible.
+    # Godot's GUI executable explicitly attaches to its parent's console.
+    # WindowStyle Hidden alone does not break that connection: the game keeps
+    # the login terminal alive and closing it can terminate the game.
+    # Detach only this helper before creating the child; never detach or hide
+    # an already running game. Captured stdout pipes remain available to tests.
+    if (-not ('MoonshadeLoginConsoleV1' -as [type])) {
+        Add-Type -TypeDefinition @'
+using System.Runtime.InteropServices;
+public static class MoonshadeLoginConsoleV1 {
+    [DllImport("kernel32.dll")] public static extern bool FreeConsole();
+}
+'@
+    }
+    [MoonshadeLoginConsoleV1]::FreeConsole() | Out-Null
+    # The user's game window is intentionally visible, with no parent console.
     $child = Start-Process -FilePath $executable -ArgumentList $argumentLine -WorkingDirectory $workingDirectory -WindowStyle Normal -PassThru
     $script:childId = $child.Id
     # A pending identity covers loading before the game writes its own PID.
