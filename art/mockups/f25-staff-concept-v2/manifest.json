@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f25-staff-concept-v2/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "feature": "F25 staff concept idle poses",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "staff_sales_assistant",
+      "source": "art/mockups/f25-staff-concept-v2/source/staff_sales_assistant-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "staff_cultivation_assistant",
+      "source": "art/mockups/f25-staff-concept-v2/source/staff_cultivation_assistant-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "staff_brewing_assistant",
+      "source": "art/mockups/f25-staff-concept-v2/source/staff_brewing_assistant-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "staff_expedition_guide",
+      "source": "art/mockups/f25-staff-concept-v2/source/staff_expedition_guide-registered.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "hood_cloak_trousers": [
+          "#24566A"
+        ],
+        "hair_beard_tunic_staff_boots": [
+          "#C99463"
+        ],
+        "lantern_scarf": [
+          "#E9B95F"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "hood_cloak_trousers": "teal",
+        "hair_beard_tunic_staff_boots": "wood",
+        "lantern_scarf": "gold"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "hood_cloak_trousers",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        },
+        {
+          "material": "hair_beard_tunic_staff_boots",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        },
+        {
+          "material": "lantern_scarf",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "원정 길잡이"
+    }
+  ]
+}

@@ -1,0 +1,6750 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-11-05",
+  "scale": 3,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "new_palette_colors": 0,
+  "pipeline_report": "art/mockups/f25-staff-concept-v2/pipeline/validation.json",
+  "pipeline_status": "passed",
+  "rules": {
+    "native": [
+      32,
+      48
+    ],
+    "max_colors_including_outline": 5,
+    "off_palette": 0,
+    "partial_alpha": 0,
+    "outline": "every opaque pixel 4-adjacent to transparency (or the canvas edge) is #241C32",
+    "eyes": "two 1x2 #241C32 eyes at x13/x18, rows 22-23; all 8 neighbours of each eye are the character's skin color",
+    "body": "face skin within rows 11-26, head width at row 21 <= 22, body rows 27-39, legs 40-46, lowest row 46 all outline",
+    "max_shades_per_ramp": 3,
+    "dithering": "no 3x3 two-color checkerboards",
+    "overlap_unit": "display pixels (native x3) of staff opacity intersecting each element's union of all reachable pixels",
+    "occupancy_source": "tools/build_f23_decor_v1.py build_masks() imported and called unchanged, plus the approved counter props (96,40) and workshop souvenir minis (14,0)"
+  },
+  "employees_source": "data/content_expansion.json employees",
+  "employees": {
+    "sales_assistant": {
+      "name": "판매 보조",
+      "cost": 360,
+      "effect": {
+        "preferred_sale_flat": 2
+      },
+      "completed_regions": 0,
+      "reputation": 20
+    },
+    "cultivation_assistant": {
+      "name": "재배 보조",
+      "cost": 1530,
+      "effect": {
+        "new_material_growth_multiplier": 1.1
+      },
+      "completed_regions": 2,
+      "reputation": 0
+    },
+    "brewing_assistant": {
+      "name": "조제 보조",
+      "cost": 3830,
+      "effect": {
+        "new_recipe_time_multiplier": 0.95,
+        "new_recipe_quality_bonus": 0.02
+      },
+      "completed_regions": 4,
+      "reputation": 0
+    },
+    "expedition_guide": {
+      "name": "원정 길잡이",
+      "cost": 2040,
+      "effect": {
+        "trip_time_reduction": 0.04
+      },
+      "completed_regions": 3,
+      "reputation": 0
+    }
+  },
+  "workshop_constants_verified_against_scripts": {
+    "counter": true,
+    "window": true,
+    "herb": true,
+    "poster": true,
+    "shelf": true,
+    "aging_cask": true,
+    "keeper": true,
+    "customer_y": true,
+    "pot": true,
+    "hearth": true,
+    "purchase_feet_x": true,
+    "offscreen_feet_x": true,
+    "brew_origin": true,
+    "table_anchor": true,
+    "wrap_shelf_left": true,
+    "reserve": true,
+    "pot_panel": true,
+    "keeper_panel": true,
+    "herb_panel": true,
+    "potions_button": true,
+    "herbs_button": true,
+    "expeditions_button": true,
+    "poster_captions": true,
+    "stock_caption": true,
+    "sale_caption": true,
+    "harvest_flash": true,
+    "rare_flash": true,
+    "slots": true,
+    "mini_workshop": true,
+    "cask_drawn_before_stock": false
+  },
+  "occupancy_masks_identical_to_f23_validation": true,
+  "element_pixels": {
+    "keeper": 11568,
+    "customers": 11124,
+    "sale_bottle": 22561,
+    "stock_bottles": 32605,
+    "hud": 15070,
+    "furniture_weather_glass": 2574,
+    "furniture_window": 3231,
+    "furniture_herb": 4032,
+    "furniture_poster": 3861,
+    "furniture_shelf": 5562,
+    "furniture_counter": 4032,
+    "furniture_aging_cask": 6210,
+    "furniture_cauldron": 4941,
+    "furniture_fire": 315,
+    "furniture_floor": 6480,
+    "furniture_counter_prop": 567,
+    "furniture_souvenir_mini": 1152
+  },
+  "version": "v2",
+  "supersedes_for_review": "art/mockups/f25-staff-concept-v1 (kept unchanged for comparison)",
+  "based_on": {
+    "staff_sales_assistant": {
+      "base": "elf",
+      "base_png": "assets/pixel_v1/characters/elf/idle-native.png (first 32x48 cell)",
+      "face_skin_pixels_staff": 50,
+      "face_skin_pixels_base": 54,
+      "face_skin_shared": 50,
+      "face_skin_iou": 0.926,
+      "face_skin_kept_fraction_of_base": 0.926,
+      "eyes_same_as_base": true,
+      "base_eyes": {
+        "x": [
+          11,
+          16
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "silhouette_iou_with_base": 0.864,
+      "identical_rgba_pixels_with_base": 205,
+      "changed_opaque_pixels": 273
+    },
+    "staff_cultivation_assistant": {
+      "base": "traveler",
+      "base_png": "assets/pixel_v1/characters/traveler/idle-native.png (first 32x48 cell)",
+      "face_skin_pixels_staff": 47,
+      "face_skin_pixels_base": 47,
+      "face_skin_shared": 47,
+      "face_skin_iou": 1.0,
+      "face_skin_kept_fraction_of_base": 1.0,
+      "eyes_same_as_base": true,
+      "base_eyes": {
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "silhouette_iou_with_base": 0.668,
+      "identical_rgba_pixels_with_base": 166,
+      "changed_opaque_pixels": 577
+    },
+    "staff_brewing_assistant": {
+      "base": "mage",
+      "base_png": "assets/pixel_v1/characters/mage/idle-native.png (first 32x48 cell)",
+      "face_skin_pixels_staff": 42,
+      "face_skin_pixels_base": 45,
+      "face_skin_shared": 42,
+      "face_skin_iou": 0.933,
+      "face_skin_kept_fraction_of_base": 0.933,
+      "eyes_same_as_base": true,
+      "base_eyes": {
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "silhouette_iou_with_base": 0.696,
+      "identical_rgba_pixels_with_base": 126,
+      "changed_opaque_pixels": 696
+    },
+    "staff_expedition_guide": {
+      "base": "keeper",
+      "base_png": "assets/pixel_v1/characters/keeper/idle-native.png (first 32x48 cell)",
+      "face_skin_pixels_staff": 25,
+      "face_skin_pixels_base": 40,
+      "face_skin_shared": 25,
+      "face_skin_iou": 0.625,
+      "face_skin_kept_fraction_of_base": 0.625,
+      "eyes_same_as_base": true,
+      "base_eyes": {
+        "x": [
+          17,
+          19
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      "silhouette_iou_with_base": 0.757,
+      "identical_rgba_pixels_with_base": 227,
+      "changed_opaque_pixels": 604
+    }
+  },
+  "sprites": {
+    "staff_sales_assistant": {
+      "name": "판매 보조",
+      "employee": "sales_assistant",
+      "native_size": [
+        32,
+        48
+      ],
+      "native_32x48": true,
+      "display_size_x3": [
+        96,
+        144
+      ],
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "skin": {
+          "color": "#F6D1AC",
+          "ramp": "skin"
+        },
+        "dress": {
+          "color": "#A65D64",
+          "ramp": "skin"
+        },
+        "apron_headband_ribbon_collar": {
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "hair_cuffs_shoes": {
+          "color": "#50333B",
+          "ramp": "wood"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "skin": 2,
+        "gold": 1,
+        "wood": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        5,
+        9,
+        25,
+        47
+      ],
+      "opaque_pixels": 447,
+      "dither_3x3_blocks": [],
+      "eyes": {
+        "eyes": [
+          {
+            "pixels": [
+              [
+                11,
+                22
+              ],
+              [
+                11,
+                23
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          },
+          {
+            "pixels": [
+              [
+                16,
+                22
+              ],
+              [
+                16,
+                23
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          }
+        ],
+        "same_rows": true,
+        "size_each": [
+          1,
+          2
+        ],
+        "skin_color": "#F6D1AC",
+        "passed": true
+      },
+      "body": {
+        "lowest_opaque_row": 46,
+        "feet_row_46": true,
+        "feet_row_all_outline": true,
+        "face_skin_rows": [
+          17,
+          26
+        ],
+        "face_within_head_rows_11_26": true,
+        "head_width_at_row_21": 18,
+        "head_width_within_22": true,
+        "body_rows_27_39_opaque": true,
+        "leg_rows_40_46_opaque": true,
+        "row_47_empty": true,
+        "passed": true
+      },
+      "attachments_excluded_from_head": [
+        [
+          17,
+          8,
+          25,
+          14
+        ]
+      ],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f25-staff-concept-v2/source/staff_sales_assistant.txt",
+        "map_sha256": "46b2dc55b66721fabccc853a738bdf8cce4d8cb1de82d07fb18b9d4ae2c01f6c",
+        "registered_sha256": "986c5a20ba6227bc9eb9017aeedcd0886d4ec5db9acc50459b7c55deae34155c"
+      },
+      "based_on": {
+        "base": "elf",
+        "base_png": "assets/pixel_v1/characters/elf/idle-native.png (first 32x48 cell)",
+        "face_skin_pixels_staff": 50,
+        "face_skin_pixels_base": 54,
+        "face_skin_shared": 50,
+        "face_skin_iou": 0.926,
+        "face_skin_kept_fraction_of_base": 0.926,
+        "eyes_same_as_base": true,
+        "base_eyes": {
+          "x": [
+            11,
+            16
+          ],
+          "y": [
+            22,
+            23
+          ]
+        },
+        "silhouette_iou_with_base": 0.864,
+        "identical_rgba_pixels_with_base": 205,
+        "changed_opaque_pixels": 273
+      }
+    },
+    "staff_cultivation_assistant": {
+      "name": "재배 보조",
+      "employee": "cultivation_assistant",
+      "native_size": [
+        32,
+        48
+      ],
+      "native_32x48": true,
+      "display_size_x3": [
+        96,
+        144
+      ],
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "skin_tan": {
+          "color": "#DE9B88",
+          "ramp": "skin"
+        },
+        "straw_hat_shirt_hair_light": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "hair_band_can_boots": {
+          "color": "#A56A3D",
+          "ramp": "gold"
+        },
+        "overalls_sprout": {
+          "color": "#3D544D",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "skin": 1,
+        "gold": 2,
+        "leaf": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        0,
+        3,
+        27,
+        47
+      ],
+      "opaque_pixels": 651,
+      "dither_3x3_blocks": [],
+      "eyes": {
+        "eyes": [
+          {
+            "pixels": [
+              [
+                10,
+                22
+              ],
+              [
+                10,
+                23
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          },
+          {
+            "pixels": [
+              [
+                14,
+                22
+              ],
+              [
+                14,
+                23
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          }
+        ],
+        "same_rows": true,
+        "size_each": [
+          1,
+          2
+        ],
+        "skin_color": "#DE9B88",
+        "passed": true
+      },
+      "body": {
+        "lowest_opaque_row": 46,
+        "feet_row_46": true,
+        "feet_row_all_outline": true,
+        "face_skin_rows": [
+          20,
+          26
+        ],
+        "face_within_head_rows_11_26": true,
+        "head_width_at_row_21": 16,
+        "head_width_within_22": true,
+        "body_rows_27_39_opaque": true,
+        "leg_rows_40_46_opaque": true,
+        "row_47_empty": true,
+        "passed": true
+      },
+      "attachments_excluded_from_head": [
+        [
+          2,
+          3,
+          27,
+          15
+        ],
+        [
+          0,
+          33,
+          10,
+          41
+        ]
+      ],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f25-staff-concept-v2/source/staff_cultivation_assistant.txt",
+        "map_sha256": "2721e29648e0d34b3f93a783985ffc0175edb100dcd2fdc64563fec80698dd39",
+        "registered_sha256": "82471436d9422252ee34ea0f60813e9bc3528184281c6ca05b6511eb54934bc9"
+      },
+      "based_on": {
+        "base": "traveler",
+        "base_png": "assets/pixel_v1/characters/traveler/idle-native.png (first 32x48 cell)",
+        "face_skin_pixels_staff": 47,
+        "face_skin_pixels_base": 47,
+        "face_skin_shared": 47,
+        "face_skin_iou": 1.0,
+        "face_skin_kept_fraction_of_base": 1.0,
+        "eyes_same_as_base": true,
+        "base_eyes": {
+          "x": [
+            10,
+            14
+          ],
+          "y": [
+            22,
+            23
+          ]
+        },
+        "silhouette_iou_with_base": 0.668,
+        "identical_rgba_pixels_with_base": 166,
+        "changed_opaque_pixels": 577
+      }
+    },
+    "staff_brewing_assistant": {
+      "name": "조제 보조",
+      "employee": "brewing_assistant",
+      "native_size": [
+        32,
+        48
+      ],
+      "native_32x48": true,
+      "display_size_x3": [
+        96,
+        144
+      ],
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "skin": {
+          "color": "#F6D1AC",
+          "ramp": "skin"
+        },
+        "smock_lens_glass": {
+          "color": "#827589",
+          "ramp": "stone"
+        },
+        "smock_shadow_stockings": {
+          "color": "#4A3C52",
+          "ramp": "stone"
+        },
+        "hair_boots_potion": {
+          "color": "#9D4359",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "skin": 1,
+        "stone": 2,
+        "fire": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        4,
+        11,
+        26,
+        47
+      ],
+      "opaque_pixels": 574,
+      "dither_3x3_blocks": [],
+      "eyes": {
+        "eyes": [
+          {
+            "pixels": [
+              [
+                10,
+                22
+              ],
+              [
+                10,
+                23
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          },
+          {
+            "pixels": [
+              [
+                14,
+                22
+              ],
+              [
+                14,
+                23
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          }
+        ],
+        "same_rows": true,
+        "size_each": [
+          1,
+          2
+        ],
+        "skin_color": "#F6D1AC",
+        "passed": true
+      },
+      "body": {
+        "lowest_opaque_row": 46,
+        "feet_row_46": true,
+        "feet_row_all_outline": true,
+        "face_skin_rows": [
+          20,
+          26
+        ],
+        "face_within_head_rows_11_26": true,
+        "head_width_at_row_21": 20,
+        "head_width_within_22": true,
+        "body_rows_27_39_opaque": true,
+        "leg_rows_40_46_opaque": true,
+        "row_47_empty": true,
+        "passed": true
+      },
+      "attachments_excluded_from_head": [
+        [
+          19,
+          30,
+          27,
+          39
+        ]
+      ],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f25-staff-concept-v2/source/staff_brewing_assistant.txt",
+        "map_sha256": "b91574199f25f80fae115271ded413e2c07ce7dbfd1d90850d13844ca3b925ed",
+        "registered_sha256": "f594ba09debe19490ed3fcc0dac58ee868287f35162d73f4ee48aac444fe52b2"
+      },
+      "based_on": {
+        "base": "mage",
+        "base_png": "assets/pixel_v1/characters/mage/idle-native.png (first 32x48 cell)",
+        "face_skin_pixels_staff": 42,
+        "face_skin_pixels_base": 45,
+        "face_skin_shared": 42,
+        "face_skin_iou": 0.933,
+        "face_skin_kept_fraction_of_base": 0.933,
+        "eyes_same_as_base": true,
+        "base_eyes": {
+          "x": [
+            10,
+            14
+          ],
+          "y": [
+            22,
+            23
+          ]
+        },
+        "silhouette_iou_with_base": 0.696,
+        "identical_rgba_pixels_with_base": 126,
+        "changed_opaque_pixels": 696
+      }
+    },
+    "staff_expedition_guide": {
+      "name": "원정 길잡이",
+      "employee": "expedition_guide",
+      "native_size": [
+        32,
+        48
+      ],
+      "native_32x48": true,
+      "display_size_x3": [
+        96,
+        144
+      ],
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "max_colors": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "outline_color_present": true,
+      "materials": {
+        "outline": {
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "skin": {
+          "color": "#F6D1AC",
+          "ramp": "skin"
+        },
+        "hood_cloak_trousers": {
+          "color": "#24566A",
+          "ramp": "teal"
+        },
+        "hair_beard_tunic_staff_boots": {
+          "color": "#C99463",
+          "ramp": "wood"
+        },
+        "lantern_scarf": {
+          "color": "#E9B95F",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "skin": 1,
+        "teal": 1,
+        "wood": 1,
+        "gold": 1
+      },
+      "max_3_shades_per_ramp": true,
+      "opaque_bbox": [
+        2,
+        1,
+        28,
+        47
+      ],
+      "opaque_pixels": 723,
+      "dither_3x3_blocks": [],
+      "eyes": {
+        "eyes": [
+          {
+            "pixels": [
+              [
+                17,
+                19
+              ],
+              [
+                17,
+                20
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          },
+          {
+            "pixels": [
+              [
+                19,
+                19
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "outline_color": true,
+            "skin_margin_1px_8_neighbours": true
+          }
+        ],
+        "same_rows": true,
+        "size_each": [
+          1,
+          2
+        ],
+        "skin_color": "#F6D1AC",
+        "passed": true
+      },
+      "body": {
+        "lowest_opaque_row": 46,
+        "feet_row_46": true,
+        "feet_row_all_outline": true,
+        "face_skin_rows": [
+          18,
+          23
+        ],
+        "face_within_head_rows_11_26": true,
+        "head_width_at_row_21": 14,
+        "head_width_within_22": true,
+        "body_rows_27_39_opaque": true,
+        "leg_rows_40_46_opaque": true,
+        "row_47_empty": true,
+        "passed": true
+      },
+      "attachments_excluded_from_head": [
+        [
+          4,
+          0,
+          9,
+          47
+        ]
+      ],
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7",
+      "passed": true,
+      "integer_3x_nearest_verified": true,
+      "source": {
+        "map": "art/mockups/f25-staff-concept-v2/source/staff_expedition_guide.txt",
+        "map_sha256": "de7e0c9fdd1cf710df3157dc4929ebcb9211b644bc57874c098768f7bd8d9fbb",
+        "registered_sha256": "fca2882e0cd2f184023d1bb31549d7bdfe7876ea09b65dfa26065d6af22c210b"
+      },
+      "based_on": {
+        "base": "keeper",
+        "base_png": "assets/pixel_v1/characters/keeper/idle-native.png (first 32x48 cell)",
+        "face_skin_pixels_staff": 25,
+        "face_skin_pixels_base": 40,
+        "face_skin_shared": 25,
+        "face_skin_iou": 0.625,
+        "face_skin_kept_fraction_of_base": 0.625,
+        "eyes_same_as_base": true,
+        "base_eyes": {
+          "x": [
+            17,
+            19
+          ],
+          "y": [
+            19,
+            20
+          ]
+        },
+        "silhouette_iou_with_base": 0.757,
+        "identical_rgba_pixels_with_base": 227,
+        "changed_opaque_pixels": 604
+      }
+    }
+  },
+  "distinctness": {
+    "staff": {
+      "staff_sales_assistant": {
+        "against": {
+          "keeper": {
+            "silhouette_iou": 0.504,
+            "silhouette_iou_mirrored": 0.497,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "traveler": {
+            "silhouette_iou": 0.625,
+            "silhouette_iou_mirrored": 0.63,
+            "shared_colors_excluding_outline_skin": [
+              "#FFF0BC"
+            ]
+          },
+          "mage": {
+            "silhouette_iou": 0.527,
+            "silhouette_iou_mirrored": 0.519,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "elf": {
+            "silhouette_iou": 0.864,
+            "silhouette_iou_mirrored": 0.793,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "rogue": {
+            "silhouette_iou": 0.649,
+            "silhouette_iou_mirrored": 0.646,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_cultivation_assistant": {
+            "silhouette_iou": 0.587,
+            "silhouette_iou_mirrored": 0.589,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_brewing_assistant": {
+            "silhouette_iou": 0.626,
+            "silhouette_iou_mirrored": 0.628,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_expedition_guide": {
+            "silhouette_iou": 0.521,
+            "silhouette_iou_mirrored": 0.527,
+            "shared_colors_excluding_outline_skin": []
+          }
+        },
+        "most_similar": "elf",
+        "max_iou": 0.864,
+        "most_similar_approved": "elf",
+        "max_iou_approved": 0.864
+      },
+      "staff_cultivation_assistant": {
+        "against": {
+          "keeper": {
+            "silhouette_iou": 0.664,
+            "silhouette_iou_mirrored": 0.575,
+            "shared_colors_excluding_outline_skin": [
+              "#E9B95F"
+            ]
+          },
+          "traveler": {
+            "silhouette_iou": 0.668,
+            "silhouette_iou_mirrored": 0.562,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "mage": {
+            "silhouette_iou": 0.66,
+            "silhouette_iou_mirrored": 0.624,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "elf": {
+            "silhouette_iou": 0.569,
+            "silhouette_iou_mirrored": 0.594,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "rogue": {
+            "silhouette_iou": 0.567,
+            "silhouette_iou_mirrored": 0.504,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_sales_assistant": {
+            "silhouette_iou": 0.587,
+            "silhouette_iou_mirrored": 0.589,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_brewing_assistant": {
+            "silhouette_iou": 0.651,
+            "silhouette_iou_mirrored": 0.543,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_expedition_guide": {
+            "silhouette_iou": 0.665,
+            "silhouette_iou_mirrored": 0.528,
+            "shared_colors_excluding_outline_skin": [
+              "#E9B95F"
+            ]
+          }
+        },
+        "most_similar": "traveler",
+        "max_iou": 0.668,
+        "most_similar_approved": "traveler",
+        "max_iou_approved": 0.668
+      },
+      "staff_brewing_assistant": {
+        "against": {
+          "keeper": {
+            "silhouette_iou": 0.564,
+            "silhouette_iou_mirrored": 0.521,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "traveler": {
+            "silhouette_iou": 0.833,
+            "silhouette_iou_mirrored": 0.724,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "mage": {
+            "silhouette_iou": 0.696,
+            "silhouette_iou_mirrored": 0.608,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "elf": {
+            "silhouette_iou": 0.669,
+            "silhouette_iou_mirrored": 0.669,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "rogue": {
+            "silhouette_iou": 0.703,
+            "silhouette_iou_mirrored": 0.644,
+            "shared_colors_excluding_outline_skin": [
+              "#9D4359"
+            ]
+          },
+          "staff_sales_assistant": {
+            "silhouette_iou": 0.626,
+            "silhouette_iou_mirrored": 0.628,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_cultivation_assistant": {
+            "silhouette_iou": 0.651,
+            "silhouette_iou_mirrored": 0.543,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_expedition_guide": {
+            "silhouette_iou": 0.644,
+            "silhouette_iou_mirrored": 0.548,
+            "shared_colors_excluding_outline_skin": []
+          }
+        },
+        "most_similar": "traveler",
+        "max_iou": 0.833,
+        "most_similar_approved": "traveler",
+        "max_iou_approved": 0.833
+      },
+      "staff_expedition_guide": {
+        "against": {
+          "keeper": {
+            "silhouette_iou": 0.757,
+            "silhouette_iou_mirrored": 0.62,
+            "shared_colors_excluding_outline_skin": [
+              "#E9B95F"
+            ]
+          },
+          "traveler": {
+            "silhouette_iou": 0.581,
+            "silhouette_iou_mirrored": 0.599,
+            "shared_colors_excluding_outline_skin": [
+              "#C99463"
+            ]
+          },
+          "mage": {
+            "silhouette_iou": 0.636,
+            "silhouette_iou_mirrored": 0.614,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "elf": {
+            "silhouette_iou": 0.518,
+            "silhouette_iou_mirrored": 0.514,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "rogue": {
+            "silhouette_iou": 0.498,
+            "silhouette_iou_mirrored": 0.515,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_sales_assistant": {
+            "silhouette_iou": 0.521,
+            "silhouette_iou_mirrored": 0.527,
+            "shared_colors_excluding_outline_skin": []
+          },
+          "staff_cultivation_assistant": {
+            "silhouette_iou": 0.665,
+            "silhouette_iou_mirrored": 0.528,
+            "shared_colors_excluding_outline_skin": [
+              "#E9B95F"
+            ]
+          },
+          "staff_brewing_assistant": {
+            "silhouette_iou": 0.644,
+            "silhouette_iou_mirrored": 0.548,
+            "shared_colors_excluding_outline_skin": []
+          }
+        },
+        "most_similar": "keeper",
+        "max_iou": 0.757,
+        "most_similar_approved": "keeper",
+        "max_iou_approved": 0.757
+      }
+    },
+    "approved_five_pairwise_max_iou": 0.74,
+    "approved_five_pairwise_mean_iou": 0.598,
+    "note": "IoU of opaque masks on the shared 32x48 canvas (feet row 46); mirrored = the other figure flipped. Outline #241C32 and skin colors are shared by design and excluded from the shared-color list."
+  },
+  "layouts": {
+    "A": {
+      "origin_native": [
+        32,
+        30
+      ],
+      "origin_display": [
+        96,
+        90
+      ],
+      "draw_order": "behind floor furniture (herb, counter, counter prop, fire, cauldron), above wall items",
+      "per_staff": {
+        "staff_sales_assistant": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 81,
+          "hud": 156,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "poster": 0,
+            "shelf": 0,
+            "aging_cask": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 237,
+          "furniture_total": 0,
+          "visible_fraction": 0.606
+        },
+        "staff_cultivation_assistant": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 9,
+          "hud": 780,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "poster": 0,
+            "shelf": 0,
+            "aging_cask": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 789,
+          "furniture_total": 0,
+          "visible_fraction": 0.722
+        },
+        "staff_brewing_assistant": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 36,
+          "hud": 327,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "poster": 0,
+            "shelf": 0,
+            "aging_cask": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 363,
+          "furniture_total": 0,
+          "visible_fraction": 0.605
+        },
+        "staff_expedition_guide": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 9,
+          "hud": 783,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "poster": 0,
+            "shelf": 0,
+            "aging_cask": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 792,
+          "furniture_total": 0,
+          "visible_fraction": 0.689
+        }
+      },
+      "worst_forbidden": 792,
+      "sum_furniture": 0,
+      "min_visible": 0.605,
+      "zero_forbidden_spots": [],
+      "examples": {
+        "staff_sales_assistant": {
+          "png": "layouts/A-sales-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        },
+        "staff_cultivation_assistant": {
+          "png": "layouts/A-cultivation-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        },
+        "staff_brewing_assistant": {
+          "png": "layouts/A-brewing-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        },
+        "staff_expedition_guide": {
+          "png": "layouts/A-guide-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        }
+      }
+    },
+    "A_scan_profile": [
+      {
+        "ox": 11,
+        "oy": 26,
+        "worst_forbidden": 2910,
+        "sum_furniture": 1008
+      },
+      {
+        "ox": 12,
+        "oy": 26,
+        "worst_forbidden": 2979,
+        "sum_furniture": 1008
+      },
+      {
+        "ox": 13,
+        "oy": 26,
+        "worst_forbidden": 3030,
+        "sum_furniture": 999
+      },
+      {
+        "ox": 14,
+        "oy": 26,
+        "worst_forbidden": 3066,
+        "sum_furniture": 990
+      },
+      {
+        "ox": 15,
+        "oy": 26,
+        "worst_forbidden": 3072,
+        "sum_furniture": 972
+      },
+      {
+        "ox": 16,
+        "oy": 26,
+        "worst_forbidden": 3063,
+        "sum_furniture": 900
+      },
+      {
+        "ox": 17,
+        "oy": 26,
+        "worst_forbidden": 3039,
+        "sum_furniture": 828
+      },
+      {
+        "ox": 18,
+        "oy": 26,
+        "worst_forbidden": 2991,
+        "sum_furniture": 747
+      },
+      {
+        "ox": 19,
+        "oy": 26,
+        "worst_forbidden": 2916,
+        "sum_furniture": 675
+      },
+      {
+        "ox": 20,
+        "oy": 26,
+        "worst_forbidden": 2805,
+        "sum_furniture": 612
+      },
+      {
+        "ox": 21,
+        "oy": 26,
+        "worst_forbidden": 2700,
+        "sum_furniture": 558
+      },
+      {
+        "ox": 22,
+        "oy": 26,
+        "worst_forbidden": 2589,
+        "sum_furniture": 504
+      },
+      {
+        "ox": 23,
+        "oy": 26,
+        "worst_forbidden": 2469,
+        "sum_furniture": 450
+      },
+      {
+        "ox": 24,
+        "oy": 26,
+        "worst_forbidden": 2346,
+        "sum_furniture": 396
+      },
+      {
+        "ox": 25,
+        "oy": 26,
+        "worst_forbidden": 2214,
+        "sum_furniture": 324
+      },
+      {
+        "ox": 26,
+        "oy": 26,
+        "worst_forbidden": 2082,
+        "sum_furniture": 243
+      },
+      {
+        "ox": 27,
+        "oy": 26,
+        "worst_forbidden": 1950,
+        "sum_furniture": 180
+      },
+      {
+        "ox": 28,
+        "oy": 26,
+        "worst_forbidden": 1809,
+        "sum_furniture": 99
+      },
+      {
+        "ox": 29,
+        "oy": 26,
+        "worst_forbidden": 1665,
+        "sum_furniture": 27
+      },
+      {
+        "ox": 30,
+        "oy": 26,
+        "worst_forbidden": 1521,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 31,
+        "oy": 26,
+        "worst_forbidden": 1380,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 32,
+        "oy": 26,
+        "worst_forbidden": 1248,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 33,
+        "oy": 26,
+        "worst_forbidden": 1146,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 34,
+        "oy": 26,
+        "worst_forbidden": 1044,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 50,
+        "oy": 26,
+        "worst_forbidden": 2086,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 51,
+        "oy": 26,
+        "worst_forbidden": 2275,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 52,
+        "oy": 26,
+        "worst_forbidden": 2557,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 26,
+        "worst_forbidden": 2884,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 26,
+        "worst_forbidden": 3244,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 26,
+        "worst_forbidden": 3628,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 26,
+        "worst_forbidden": 4015,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 26,
+        "worst_forbidden": 4408,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 26,
+        "worst_forbidden": 4792,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 26,
+        "worst_forbidden": 5173,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 60,
+        "oy": 26,
+        "worst_forbidden": 5545,
+        "sum_furniture": 27
+      },
+      {
+        "ox": 61,
+        "oy": 26,
+        "worst_forbidden": 5910,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 62,
+        "oy": 26,
+        "worst_forbidden": 6261,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 63,
+        "oy": 26,
+        "worst_forbidden": 6606,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 64,
+        "oy": 26,
+        "worst_forbidden": 6908,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 26,
+        "worst_forbidden": 7202,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 26,
+        "worst_forbidden": 7469,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 26,
+        "worst_forbidden": 7727,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 26,
+        "worst_forbidden": 7932,
+        "sum_furniture": 27
+      },
+      {
+        "ox": 69,
+        "oy": 26,
+        "worst_forbidden": 8133,
+        "sum_furniture": 63
+      },
+      {
+        "ox": 70,
+        "oy": 26,
+        "worst_forbidden": 8277,
+        "sum_furniture": 90
+      },
+      {
+        "ox": 71,
+        "oy": 26,
+        "worst_forbidden": 8355,
+        "sum_furniture": 108
+      },
+      {
+        "ox": 72,
+        "oy": 26,
+        "worst_forbidden": 8388,
+        "sum_furniture": 108
+      },
+      {
+        "ox": 73,
+        "oy": 26,
+        "worst_forbidden": 8414,
+        "sum_furniture": 81
+      },
+      {
+        "ox": 74,
+        "oy": 26,
+        "worst_forbidden": 8454,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 75,
+        "oy": 26,
+        "worst_forbidden": 8487,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 76,
+        "oy": 26,
+        "worst_forbidden": 8505,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 26,
+        "worst_forbidden": 8505,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 26,
+        "worst_forbidden": 8469,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 26,
+        "worst_forbidden": 8385,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 80,
+        "oy": 26,
+        "worst_forbidden": 8256,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 81,
+        "oy": 26,
+        "worst_forbidden": 8124,
+        "sum_furniture": 72
+      },
+      {
+        "ox": 82,
+        "oy": 26,
+        "worst_forbidden": 8016,
+        "sum_furniture": 234
+      },
+      {
+        "ox": 83,
+        "oy": 26,
+        "worst_forbidden": 7884,
+        "sum_furniture": 495
+      },
+      {
+        "ox": 84,
+        "oy": 26,
+        "worst_forbidden": 7707,
+        "sum_furniture": 846
+      },
+      {
+        "ox": 85,
+        "oy": 26,
+        "worst_forbidden": 7512,
+        "sum_furniture": 1197
+      },
+      {
+        "ox": 86,
+        "oy": 26,
+        "worst_forbidden": 7344,
+        "sum_furniture": 1494
+      },
+      {
+        "ox": 87,
+        "oy": 26,
+        "worst_forbidden": 7215,
+        "sum_furniture": 1755
+      },
+      {
+        "ox": 88,
+        "oy": 26,
+        "worst_forbidden": 7104,
+        "sum_furniture": 1962
+      },
+      {
+        "ox": 89,
+        "oy": 26,
+        "worst_forbidden": 7038,
+        "sum_furniture": 2178
+      },
+      {
+        "ox": 90,
+        "oy": 26,
+        "worst_forbidden": 7040,
+        "sum_furniture": 2376
+      },
+      {
+        "ox": 91,
+        "oy": 26,
+        "worst_forbidden": 7126,
+        "sum_furniture": 2583
+      },
+      {
+        "ox": 92,
+        "oy": 26,
+        "worst_forbidden": 7232,
+        "sum_furniture": 2772
+      },
+      {
+        "ox": 93,
+        "oy": 26,
+        "worst_forbidden": 7244,
+        "sum_furniture": 2916
+      },
+      {
+        "ox": 94,
+        "oy": 26,
+        "worst_forbidden": 7244,
+        "sum_furniture": 3024
+      },
+      {
+        "ox": 95,
+        "oy": 26,
+        "worst_forbidden": 7358,
+        "sum_furniture": 3105
+      },
+      {
+        "ox": 96,
+        "oy": 26,
+        "worst_forbidden": 7502,
+        "sum_furniture": 3186
+      },
+      {
+        "ox": 97,
+        "oy": 26,
+        "worst_forbidden": 7674,
+        "sum_furniture": 3258
+      },
+      {
+        "ox": 98,
+        "oy": 26,
+        "worst_forbidden": 7858,
+        "sum_furniture": 3348
+      },
+      {
+        "ox": 99,
+        "oy": 26,
+        "worst_forbidden": 8063,
+        "sum_furniture": 3456
+      },
+      {
+        "ox": 100,
+        "oy": 26,
+        "worst_forbidden": 8266,
+        "sum_furniture": 3519
+      },
+      {
+        "ox": 101,
+        "oy": 26,
+        "worst_forbidden": 8438,
+        "sum_furniture": 3501
+      },
+      {
+        "ox": 102,
+        "oy": 26,
+        "worst_forbidden": 8628,
+        "sum_furniture": 3276
+      },
+      {
+        "ox": 103,
+        "oy": 26,
+        "worst_forbidden": 8865,
+        "sum_furniture": 3033
+      },
+      {
+        "ox": 104,
+        "oy": 26,
+        "worst_forbidden": 9305,
+        "sum_furniture": 2808
+      },
+      {
+        "ox": 105,
+        "oy": 26,
+        "worst_forbidden": 9582,
+        "sum_furniture": 2727
+      },
+      {
+        "ox": 106,
+        "oy": 26,
+        "worst_forbidden": 9782,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 107,
+        "oy": 26,
+        "worst_forbidden": 9996,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 108,
+        "oy": 26,
+        "worst_forbidden": 10201,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 109,
+        "oy": 26,
+        "worst_forbidden": 10353,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 110,
+        "oy": 26,
+        "worst_forbidden": 10482,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 111,
+        "oy": 26,
+        "worst_forbidden": 10614,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 112,
+        "oy": 26,
+        "worst_forbidden": 10757,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 113,
+        "oy": 26,
+        "worst_forbidden": 10934,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 114,
+        "oy": 26,
+        "worst_forbidden": 11103,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 115,
+        "oy": 26,
+        "worst_forbidden": 11211,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 116,
+        "oy": 26,
+        "worst_forbidden": 11319,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 117,
+        "oy": 26,
+        "worst_forbidden": 11441,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 118,
+        "oy": 26,
+        "worst_forbidden": 11590,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 119,
+        "oy": 26,
+        "worst_forbidden": 11700,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 120,
+        "oy": 26,
+        "worst_forbidden": 11789,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 121,
+        "oy": 26,
+        "worst_forbidden": 11810,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 122,
+        "oy": 26,
+        "worst_forbidden": 11837,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 123,
+        "oy": 26,
+        "worst_forbidden": 11932,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 124,
+        "oy": 26,
+        "worst_forbidden": 12013,
+        "sum_furniture": 2727
+      },
+      {
+        "ox": 125,
+        "oy": 26,
+        "worst_forbidden": 12004,
+        "sum_furniture": 2799
+      },
+      {
+        "ox": 126,
+        "oy": 26,
+        "worst_forbidden": 11979,
+        "sum_furniture": 2916
+      },
+      {
+        "ox": 127,
+        "oy": 26,
+        "worst_forbidden": 11952,
+        "sum_furniture": 3105
+      },
+      {
+        "ox": 128,
+        "oy": 26,
+        "worst_forbidden": 11955,
+        "sum_furniture": 3312
+      },
+      {
+        "ox": 129,
+        "oy": 26,
+        "worst_forbidden": 11895,
+        "sum_furniture": 3447
+      },
+      {
+        "ox": 130,
+        "oy": 26,
+        "worst_forbidden": 11829,
+        "sum_furniture": 3492
+      },
+      {
+        "ox": 131,
+        "oy": 26,
+        "worst_forbidden": 11703,
+        "sum_furniture": 3438
+      },
+      {
+        "ox": 132,
+        "oy": 26,
+        "worst_forbidden": 11567,
+        "sum_furniture": 3366
+      },
+      {
+        "ox": 133,
+        "oy": 26,
+        "worst_forbidden": 11433,
+        "sum_furniture": 3258
+      },
+      {
+        "ox": 134,
+        "oy": 26,
+        "worst_forbidden": 11303,
+        "sum_furniture": 3150
+      },
+      {
+        "ox": 135,
+        "oy": 26,
+        "worst_forbidden": 11068,
+        "sum_furniture": 3015
+      },
+      {
+        "ox": 136,
+        "oy": 26,
+        "worst_forbidden": 10816,
+        "sum_furniture": 2844
+      },
+      {
+        "ox": 137,
+        "oy": 26,
+        "worst_forbidden": 10600,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 138,
+        "oy": 26,
+        "worst_forbidden": 10364,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 139,
+        "oy": 26,
+        "worst_forbidden": 10057,
+        "sum_furniture": 2322
+      },
+      {
+        "ox": 140,
+        "oy": 26,
+        "worst_forbidden": 9726,
+        "sum_furniture": 2169
+      },
+      {
+        "ox": 141,
+        "oy": 26,
+        "worst_forbidden": 9451,
+        "sum_furniture": 2016
+      },
+      {
+        "ox": 142,
+        "oy": 26,
+        "worst_forbidden": 9205,
+        "sum_furniture": 1854
+      },
+      {
+        "ox": 143,
+        "oy": 26,
+        "worst_forbidden": 9093,
+        "sum_furniture": 1665
+      },
+      {
+        "ox": 144,
+        "oy": 26,
+        "worst_forbidden": 8970,
+        "sum_furniture": 1458
+      },
+      {
+        "ox": 145,
+        "oy": 26,
+        "worst_forbidden": 8902,
+        "sum_furniture": 1080
+      },
+      {
+        "ox": 146,
+        "oy": 26,
+        "worst_forbidden": 8746,
+        "sum_furniture": 684
+      },
+      {
+        "ox": 147,
+        "oy": 26,
+        "worst_forbidden": 8606,
+        "sum_furniture": 351
+      },
+      {
+        "ox": 148,
+        "oy": 26,
+        "worst_forbidden": 8389,
+        "sum_furniture": 189
+      },
+      {
+        "ox": 12,
+        "oy": 27,
+        "worst_forbidden": 2940,
+        "sum_furniture": 747
+      },
+      {
+        "ox": 13,
+        "oy": 27,
+        "worst_forbidden": 2982,
+        "sum_furniture": 747
+      },
+      {
+        "ox": 14,
+        "oy": 27,
+        "worst_forbidden": 3027,
+        "sum_furniture": 747
+      },
+      {
+        "ox": 15,
+        "oy": 27,
+        "worst_forbidden": 3051,
+        "sum_furniture": 747
+      },
+      {
+        "ox": 16,
+        "oy": 27,
+        "worst_forbidden": 3048,
+        "sum_furniture": 711
+      },
+      {
+        "ox": 17,
+        "oy": 27,
+        "worst_forbidden": 3024,
+        "sum_furniture": 657
+      },
+      {
+        "ox": 18,
+        "oy": 27,
+        "worst_forbidden": 2964,
+        "sum_furniture": 594
+      },
+      {
+        "ox": 19,
+        "oy": 27,
+        "worst_forbidden": 2871,
+        "sum_furniture": 540
+      },
+      {
+        "ox": 20,
+        "oy": 27,
+        "worst_forbidden": 2748,
+        "sum_furniture": 495
+      },
+      {
+        "ox": 21,
+        "oy": 27,
+        "worst_forbidden": 2628,
+        "sum_furniture": 450
+      },
+      {
+        "ox": 22,
+        "oy": 27,
+        "worst_forbidden": 2508,
+        "sum_furniture": 414
+      },
+      {
+        "ox": 23,
+        "oy": 27,
+        "worst_forbidden": 2385,
+        "sum_furniture": 378
+      },
+      {
+        "ox": 24,
+        "oy": 27,
+        "worst_forbidden": 2253,
+        "sum_furniture": 342
+      },
+      {
+        "ox": 25,
+        "oy": 27,
+        "worst_forbidden": 2112,
+        "sum_furniture": 297
+      },
+      {
+        "ox": 26,
+        "oy": 27,
+        "worst_forbidden": 1971,
+        "sum_furniture": 225
+      },
+      {
+        "ox": 27,
+        "oy": 27,
+        "worst_forbidden": 1830,
+        "sum_furniture": 171
+      },
+      {
+        "ox": 28,
+        "oy": 27,
+        "worst_forbidden": 1686,
+        "sum_furniture": 99
+      },
+      {
+        "ox": 29,
+        "oy": 27,
+        "worst_forbidden": 1542,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 30,
+        "oy": 27,
+        "worst_forbidden": 1398,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 31,
+        "oy": 27,
+        "worst_forbidden": 1254,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 32,
+        "oy": 27,
+        "worst_forbidden": 1113,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 33,
+        "oy": 27,
+        "worst_forbidden": 993,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 51,
+        "oy": 27,
+        "worst_forbidden": 2140,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 52,
+        "oy": 27,
+        "worst_forbidden": 2422,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 27,
+        "worst_forbidden": 2743,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 27,
+        "worst_forbidden": 3103,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 27,
+        "worst_forbidden": 3505,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 27,
+        "worst_forbidden": 3907,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 27,
+        "worst_forbidden": 4312,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 27,
+        "worst_forbidden": 4699,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 27,
+        "worst_forbidden": 5080,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 60,
+        "oy": 27,
+        "worst_forbidden": 5458,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 61,
+        "oy": 27,
+        "worst_forbidden": 5832,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 62,
+        "oy": 27,
+        "worst_forbidden": 6201,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 63,
+        "oy": 27,
+        "worst_forbidden": 6557,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 64,
+        "oy": 27,
+        "worst_forbidden": 6881,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 27,
+        "worst_forbidden": 7193,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 27,
+        "worst_forbidden": 7478,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 27,
+        "worst_forbidden": 7733,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 27,
+        "worst_forbidden": 7926,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 69,
+        "oy": 27,
+        "worst_forbidden": 8127,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 70,
+        "oy": 27,
+        "worst_forbidden": 8268,
+        "sum_furniture": 63
+      },
+      {
+        "ox": 71,
+        "oy": 27,
+        "worst_forbidden": 8349,
+        "sum_furniture": 72
+      },
+      {
+        "ox": 72,
+        "oy": 27,
+        "worst_forbidden": 8385,
+        "sum_furniture": 72
+      },
+      {
+        "ox": 73,
+        "oy": 27,
+        "worst_forbidden": 8414,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 74,
+        "oy": 27,
+        "worst_forbidden": 8439,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 75,
+        "oy": 27,
+        "worst_forbidden": 8457,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 76,
+        "oy": 27,
+        "worst_forbidden": 8469,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 27,
+        "worst_forbidden": 8454,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 27,
+        "worst_forbidden": 8439,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 27,
+        "worst_forbidden": 8382,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 80,
+        "oy": 27,
+        "worst_forbidden": 8271,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 81,
+        "oy": 27,
+        "worst_forbidden": 8130,
+        "sum_furniture": 90
+      },
+      {
+        "ox": 82,
+        "oy": 27,
+        "worst_forbidden": 7995,
+        "sum_furniture": 234
+      },
+      {
+        "ox": 83,
+        "oy": 27,
+        "worst_forbidden": 7857,
+        "sum_furniture": 468
+      },
+      {
+        "ox": 84,
+        "oy": 27,
+        "worst_forbidden": 7671,
+        "sum_furniture": 783
+      },
+      {
+        "ox": 85,
+        "oy": 27,
+        "worst_forbidden": 7452,
+        "sum_furniture": 1125
+      },
+      {
+        "ox": 86,
+        "oy": 27,
+        "worst_forbidden": 7266,
+        "sum_furniture": 1404
+      },
+      {
+        "ox": 87,
+        "oy": 27,
+        "worst_forbidden": 7119,
+        "sum_furniture": 1665
+      },
+      {
+        "ox": 88,
+        "oy": 27,
+        "worst_forbidden": 6996,
+        "sum_furniture": 1881
+      },
+      {
+        "ox": 89,
+        "oy": 27,
+        "worst_forbidden": 6921,
+        "sum_furniture": 2097
+      },
+      {
+        "ox": 90,
+        "oy": 27,
+        "worst_forbidden": 6889,
+        "sum_furniture": 2277
+      },
+      {
+        "ox": 91,
+        "oy": 27,
+        "worst_forbidden": 6938,
+        "sum_furniture": 2475
+      },
+      {
+        "ox": 92,
+        "oy": 27,
+        "worst_forbidden": 7013,
+        "sum_furniture": 2655
+      },
+      {
+        "ox": 93,
+        "oy": 27,
+        "worst_forbidden": 7004,
+        "sum_furniture": 2799
+      },
+      {
+        "ox": 94,
+        "oy": 27,
+        "worst_forbidden": 6988,
+        "sum_furniture": 2907
+      },
+      {
+        "ox": 95,
+        "oy": 27,
+        "worst_forbidden": 7074,
+        "sum_furniture": 2997
+      },
+      {
+        "ox": 96,
+        "oy": 27,
+        "worst_forbidden": 7223,
+        "sum_furniture": 3087
+      },
+      {
+        "ox": 97,
+        "oy": 27,
+        "worst_forbidden": 7394,
+        "sum_furniture": 3168
+      },
+      {
+        "ox": 98,
+        "oy": 27,
+        "worst_forbidden": 7572,
+        "sum_furniture": 3267
+      },
+      {
+        "ox": 99,
+        "oy": 27,
+        "worst_forbidden": 7767,
+        "sum_furniture": 3366
+      },
+      {
+        "ox": 100,
+        "oy": 27,
+        "worst_forbidden": 7957,
+        "sum_furniture": 3456
+      },
+      {
+        "ox": 101,
+        "oy": 27,
+        "worst_forbidden": 8140,
+        "sum_furniture": 3438
+      },
+      {
+        "ox": 102,
+        "oy": 27,
+        "worst_forbidden": 8330,
+        "sum_furniture": 3258
+      },
+      {
+        "ox": 103,
+        "oy": 27,
+        "worst_forbidden": 8527,
+        "sum_furniture": 3033
+      },
+      {
+        "ox": 104,
+        "oy": 27,
+        "worst_forbidden": 8873,
+        "sum_furniture": 2835
+      },
+      {
+        "ox": 105,
+        "oy": 27,
+        "worst_forbidden": 9146,
+        "sum_furniture": 2745
+      },
+      {
+        "ox": 106,
+        "oy": 27,
+        "worst_forbidden": 9352,
+        "sum_furniture": 2718
+      },
+      {
+        "ox": 107,
+        "oy": 27,
+        "worst_forbidden": 9564,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 108,
+        "oy": 27,
+        "worst_forbidden": 9769,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 109,
+        "oy": 27,
+        "worst_forbidden": 9913,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 110,
+        "oy": 27,
+        "worst_forbidden": 10051,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 111,
+        "oy": 27,
+        "worst_forbidden": 10194,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 112,
+        "oy": 27,
+        "worst_forbidden": 10338,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 113,
+        "oy": 27,
+        "worst_forbidden": 10501,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 114,
+        "oy": 27,
+        "worst_forbidden": 10656,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 115,
+        "oy": 27,
+        "worst_forbidden": 10773,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 116,
+        "oy": 27,
+        "worst_forbidden": 10890,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 117,
+        "oy": 27,
+        "worst_forbidden": 11015,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 118,
+        "oy": 27,
+        "worst_forbidden": 11165,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 119,
+        "oy": 27,
+        "worst_forbidden": 11282,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 120,
+        "oy": 27,
+        "worst_forbidden": 11384,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 121,
+        "oy": 27,
+        "worst_forbidden": 11410,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 122,
+        "oy": 27,
+        "worst_forbidden": 11452,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 123,
+        "oy": 27,
+        "worst_forbidden": 11530,
+        "sum_furniture": 2718
+      },
+      {
+        "ox": 124,
+        "oy": 27,
+        "worst_forbidden": 11593,
+        "sum_furniture": 2745
+      },
+      {
+        "ox": 125,
+        "oy": 27,
+        "worst_forbidden": 11589,
+        "sum_furniture": 2799
+      },
+      {
+        "ox": 126,
+        "oy": 27,
+        "worst_forbidden": 11580,
+        "sum_furniture": 2898
+      },
+      {
+        "ox": 127,
+        "oy": 27,
+        "worst_forbidden": 11568,
+        "sum_furniture": 3060
+      },
+      {
+        "ox": 128,
+        "oy": 27,
+        "worst_forbidden": 11596,
+        "sum_furniture": 3249
+      },
+      {
+        "ox": 129,
+        "oy": 27,
+        "worst_forbidden": 11560,
+        "sum_furniture": 3348
+      },
+      {
+        "ox": 130,
+        "oy": 27,
+        "worst_forbidden": 11535,
+        "sum_furniture": 3384
+      },
+      {
+        "ox": 131,
+        "oy": 27,
+        "worst_forbidden": 11448,
+        "sum_furniture": 3321
+      },
+      {
+        "ox": 132,
+        "oy": 27,
+        "worst_forbidden": 11334,
+        "sum_furniture": 3249
+      },
+      {
+        "ox": 133,
+        "oy": 27,
+        "worst_forbidden": 11236,
+        "sum_furniture": 3141
+      },
+      {
+        "ox": 134,
+        "oy": 27,
+        "worst_forbidden": 11128,
+        "sum_furniture": 3033
+      },
+      {
+        "ox": 135,
+        "oy": 27,
+        "worst_forbidden": 10914,
+        "sum_furniture": 2898
+      },
+      {
+        "ox": 136,
+        "oy": 27,
+        "worst_forbidden": 10700,
+        "sum_furniture": 2727
+      },
+      {
+        "ox": 137,
+        "oy": 27,
+        "worst_forbidden": 10510,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 138,
+        "oy": 27,
+        "worst_forbidden": 10304,
+        "sum_furniture": 2358
+      },
+      {
+        "ox": 139,
+        "oy": 27,
+        "worst_forbidden": 10041,
+        "sum_furniture": 2187
+      },
+      {
+        "ox": 140,
+        "oy": 27,
+        "worst_forbidden": 9756,
+        "sum_furniture": 2025
+      },
+      {
+        "ox": 141,
+        "oy": 27,
+        "worst_forbidden": 9521,
+        "sum_furniture": 1863
+      },
+      {
+        "ox": 142,
+        "oy": 27,
+        "worst_forbidden": 9323,
+        "sum_furniture": 1701
+      },
+      {
+        "ox": 143,
+        "oy": 27,
+        "worst_forbidden": 9235,
+        "sum_furniture": 1530
+      },
+      {
+        "ox": 144,
+        "oy": 27,
+        "worst_forbidden": 9112,
+        "sum_furniture": 1323
+      },
+      {
+        "ox": 145,
+        "oy": 27,
+        "worst_forbidden": 9062,
+        "sum_furniture": 990
+      },
+      {
+        "ox": 146,
+        "oy": 27,
+        "worst_forbidden": 8921,
+        "sum_furniture": 621
+      },
+      {
+        "ox": 147,
+        "oy": 27,
+        "worst_forbidden": 8790,
+        "sum_furniture": 324
+      },
+      {
+        "ox": 148,
+        "oy": 27,
+        "worst_forbidden": 8583,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 12,
+        "oy": 28,
+        "worst_forbidden": 2844,
+        "sum_furniture": 558
+      },
+      {
+        "ox": 13,
+        "oy": 28,
+        "worst_forbidden": 2895,
+        "sum_furniture": 558
+      },
+      {
+        "ox": 14,
+        "oy": 28,
+        "worst_forbidden": 2940,
+        "sum_furniture": 558
+      },
+      {
+        "ox": 15,
+        "oy": 28,
+        "worst_forbidden": 2964,
+        "sum_furniture": 558
+      },
+      {
+        "ox": 16,
+        "oy": 28,
+        "worst_forbidden": 2970,
+        "sum_furniture": 549
+      },
+      {
+        "ox": 17,
+        "oy": 28,
+        "worst_forbidden": 2955,
+        "sum_furniture": 504
+      },
+      {
+        "ox": 18,
+        "oy": 28,
+        "worst_forbidden": 2904,
+        "sum_furniture": 459
+      },
+      {
+        "ox": 19,
+        "oy": 28,
+        "worst_forbidden": 2811,
+        "sum_furniture": 423
+      },
+      {
+        "ox": 20,
+        "oy": 28,
+        "worst_forbidden": 2688,
+        "sum_furniture": 387
+      },
+      {
+        "ox": 21,
+        "oy": 28,
+        "worst_forbidden": 2571,
+        "sum_furniture": 360
+      },
+      {
+        "ox": 22,
+        "oy": 28,
+        "worst_forbidden": 2448,
+        "sum_furniture": 342
+      },
+      {
+        "ox": 23,
+        "oy": 28,
+        "worst_forbidden": 2316,
+        "sum_furniture": 324
+      },
+      {
+        "ox": 24,
+        "oy": 28,
+        "worst_forbidden": 2175,
+        "sum_furniture": 306
+      },
+      {
+        "ox": 25,
+        "oy": 28,
+        "worst_forbidden": 2031,
+        "sum_furniture": 270
+      },
+      {
+        "ox": 26,
+        "oy": 28,
+        "worst_forbidden": 1887,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 27,
+        "oy": 28,
+        "worst_forbidden": 1743,
+        "sum_furniture": 162
+      },
+      {
+        "ox": 28,
+        "oy": 28,
+        "worst_forbidden": 1599,
+        "sum_furniture": 99
+      },
+      {
+        "ox": 29,
+        "oy": 28,
+        "worst_forbidden": 1455,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 30,
+        "oy": 28,
+        "worst_forbidden": 1311,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 31,
+        "oy": 28,
+        "worst_forbidden": 1167,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 32,
+        "oy": 28,
+        "worst_forbidden": 1026,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 33,
+        "oy": 28,
+        "worst_forbidden": 909,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 51,
+        "oy": 28,
+        "worst_forbidden": 2122,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 52,
+        "oy": 28,
+        "worst_forbidden": 2383,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 28,
+        "worst_forbidden": 2683,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 28,
+        "worst_forbidden": 3004,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 28,
+        "worst_forbidden": 3391,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 28,
+        "worst_forbidden": 3805,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 28,
+        "worst_forbidden": 4216,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 28,
+        "worst_forbidden": 4612,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 28,
+        "worst_forbidden": 4987,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 60,
+        "oy": 28,
+        "worst_forbidden": 5368,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 61,
+        "oy": 28,
+        "worst_forbidden": 5757,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 62,
+        "oy": 28,
+        "worst_forbidden": 6141,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 63,
+        "oy": 28,
+        "worst_forbidden": 6515,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 64,
+        "oy": 28,
+        "worst_forbidden": 6857,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 28,
+        "worst_forbidden": 7178,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 28,
+        "worst_forbidden": 7460,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 28,
+        "worst_forbidden": 7715,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 28,
+        "worst_forbidden": 7914,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 69,
+        "oy": 28,
+        "worst_forbidden": 8133,
+        "sum_furniture": 27
+      },
+      {
+        "ox": 70,
+        "oy": 28,
+        "worst_forbidden": 8286,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 71,
+        "oy": 28,
+        "worst_forbidden": 8373,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 72,
+        "oy": 28,
+        "worst_forbidden": 8421,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 73,
+        "oy": 28,
+        "worst_forbidden": 8460,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 74,
+        "oy": 28,
+        "worst_forbidden": 8479,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 75,
+        "oy": 28,
+        "worst_forbidden": 8478,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 76,
+        "oy": 28,
+        "worst_forbidden": 8469,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 28,
+        "worst_forbidden": 8451,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 28,
+        "worst_forbidden": 8433,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 28,
+        "worst_forbidden": 8388,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 80,
+        "oy": 28,
+        "worst_forbidden": 8289,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 81,
+        "oy": 28,
+        "worst_forbidden": 8160,
+        "sum_furniture": 81
+      },
+      {
+        "ox": 82,
+        "oy": 28,
+        "worst_forbidden": 8010,
+        "sum_furniture": 243
+      },
+      {
+        "ox": 83,
+        "oy": 28,
+        "worst_forbidden": 7863,
+        "sum_furniture": 459
+      },
+      {
+        "ox": 84,
+        "oy": 28,
+        "worst_forbidden": 7659,
+        "sum_furniture": 729
+      },
+      {
+        "ox": 85,
+        "oy": 28,
+        "worst_forbidden": 7431,
+        "sum_furniture": 1017
+      },
+      {
+        "ox": 86,
+        "oy": 28,
+        "worst_forbidden": 7224,
+        "sum_furniture": 1296
+      },
+      {
+        "ox": 87,
+        "oy": 28,
+        "worst_forbidden": 7059,
+        "sum_furniture": 1566
+      },
+      {
+        "ox": 88,
+        "oy": 28,
+        "worst_forbidden": 6920,
+        "sum_furniture": 1782
+      },
+      {
+        "ox": 89,
+        "oy": 28,
+        "worst_forbidden": 6836,
+        "sum_furniture": 1998
+      },
+      {
+        "ox": 90,
+        "oy": 28,
+        "worst_forbidden": 6791,
+        "sum_furniture": 2178
+      },
+      {
+        "ox": 91,
+        "oy": 28,
+        "worst_forbidden": 6795,
+        "sum_furniture": 2358
+      },
+      {
+        "ox": 92,
+        "oy": 28,
+        "worst_forbidden": 6836,
+        "sum_furniture": 2529
+      },
+      {
+        "ox": 93,
+        "oy": 28,
+        "worst_forbidden": 6827,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 94,
+        "oy": 28,
+        "worst_forbidden": 6807,
+        "sum_furniture": 2781
+      },
+      {
+        "ox": 95,
+        "oy": 28,
+        "worst_forbidden": 6849,
+        "sum_furniture": 2871
+      },
+      {
+        "ox": 96,
+        "oy": 28,
+        "worst_forbidden": 6980,
+        "sum_furniture": 2970
+      },
+      {
+        "ox": 97,
+        "oy": 28,
+        "worst_forbidden": 7142,
+        "sum_furniture": 3060
+      },
+      {
+        "ox": 98,
+        "oy": 28,
+        "worst_forbidden": 7320,
+        "sum_furniture": 3159
+      },
+      {
+        "ox": 99,
+        "oy": 28,
+        "worst_forbidden": 7500,
+        "sum_furniture": 3258
+      },
+      {
+        "ox": 100,
+        "oy": 28,
+        "worst_forbidden": 7683,
+        "sum_furniture": 3348
+      },
+      {
+        "ox": 101,
+        "oy": 28,
+        "worst_forbidden": 7870,
+        "sum_furniture": 3339
+      },
+      {
+        "ox": 102,
+        "oy": 28,
+        "worst_forbidden": 8051,
+        "sum_furniture": 3195
+      },
+      {
+        "ox": 103,
+        "oy": 28,
+        "worst_forbidden": 8239,
+        "sum_furniture": 2997
+      },
+      {
+        "ox": 104,
+        "oy": 28,
+        "worst_forbidden": 8509,
+        "sum_furniture": 2808
+      },
+      {
+        "ox": 105,
+        "oy": 28,
+        "worst_forbidden": 8771,
+        "sum_furniture": 2709
+      },
+      {
+        "ox": 106,
+        "oy": 28,
+        "worst_forbidden": 8991,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 107,
+        "oy": 28,
+        "worst_forbidden": 9198,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 108,
+        "oy": 28,
+        "worst_forbidden": 9395,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 109,
+        "oy": 28,
+        "worst_forbidden": 9538,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 110,
+        "oy": 28,
+        "worst_forbidden": 9676,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 111,
+        "oy": 28,
+        "worst_forbidden": 9820,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 112,
+        "oy": 28,
+        "worst_forbidden": 9964,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 113,
+        "oy": 28,
+        "worst_forbidden": 10127,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 114,
+        "oy": 28,
+        "worst_forbidden": 10274,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 115,
+        "oy": 28,
+        "worst_forbidden": 10393,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 116,
+        "oy": 28,
+        "worst_forbidden": 10519,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 117,
+        "oy": 28,
+        "worst_forbidden": 10644,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 118,
+        "oy": 28,
+        "worst_forbidden": 10793,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 119,
+        "oy": 28,
+        "worst_forbidden": 10914,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 120,
+        "oy": 28,
+        "worst_forbidden": 11019,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 121,
+        "oy": 28,
+        "worst_forbidden": 11048,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 122,
+        "oy": 28,
+        "worst_forbidden": 11090,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 123,
+        "oy": 28,
+        "worst_forbidden": 11161,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 124,
+        "oy": 28,
+        "worst_forbidden": 11217,
+        "sum_furniture": 2709
+      },
+      {
+        "ox": 125,
+        "oy": 28,
+        "worst_forbidden": 11200,
+        "sum_furniture": 2772
+      },
+      {
+        "ox": 126,
+        "oy": 28,
+        "worst_forbidden": 11200,
+        "sum_furniture": 2844
+      },
+      {
+        "ox": 127,
+        "oy": 28,
+        "worst_forbidden": 11189,
+        "sum_furniture": 2970
+      },
+      {
+        "ox": 128,
+        "oy": 28,
+        "worst_forbidden": 11225,
+        "sum_furniture": 3114
+      },
+      {
+        "ox": 129,
+        "oy": 28,
+        "worst_forbidden": 11221,
+        "sum_furniture": 3213
+      },
+      {
+        "ox": 130,
+        "oy": 28,
+        "worst_forbidden": 11222,
+        "sum_furniture": 3240
+      },
+      {
+        "ox": 131,
+        "oy": 28,
+        "worst_forbidden": 11165,
+        "sum_furniture": 3168
+      },
+      {
+        "ox": 132,
+        "oy": 28,
+        "worst_forbidden": 11081,
+        "sum_furniture": 3096
+      },
+      {
+        "ox": 133,
+        "oy": 28,
+        "worst_forbidden": 11012,
+        "sum_furniture": 2988
+      },
+      {
+        "ox": 134,
+        "oy": 28,
+        "worst_forbidden": 10944,
+        "sum_furniture": 2880
+      },
+      {
+        "ox": 135,
+        "oy": 28,
+        "worst_forbidden": 10749,
+        "sum_furniture": 2745
+      },
+      {
+        "ox": 136,
+        "oy": 28,
+        "worst_forbidden": 10569,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 137,
+        "oy": 28,
+        "worst_forbidden": 10408,
+        "sum_furniture": 2394
+      },
+      {
+        "ox": 138,
+        "oy": 28,
+        "worst_forbidden": 10222,
+        "sum_furniture": 2205
+      },
+      {
+        "ox": 139,
+        "oy": 28,
+        "worst_forbidden": 10009,
+        "sum_furniture": 2025
+      },
+      {
+        "ox": 140,
+        "oy": 28,
+        "worst_forbidden": 9753,
+        "sum_furniture": 1845
+      },
+      {
+        "ox": 141,
+        "oy": 28,
+        "worst_forbidden": 9537,
+        "sum_furniture": 1683
+      },
+      {
+        "ox": 142,
+        "oy": 28,
+        "worst_forbidden": 9374,
+        "sum_furniture": 1539
+      },
+      {
+        "ox": 143,
+        "oy": 28,
+        "worst_forbidden": 9290,
+        "sum_furniture": 1368
+      },
+      {
+        "ox": 144,
+        "oy": 28,
+        "worst_forbidden": 9174,
+        "sum_furniture": 1188
+      },
+      {
+        "ox": 145,
+        "oy": 28,
+        "worst_forbidden": 9146,
+        "sum_furniture": 900
+      },
+      {
+        "ox": 146,
+        "oy": 28,
+        "worst_forbidden": 9017,
+        "sum_furniture": 567
+      },
+      {
+        "ox": 147,
+        "oy": 28,
+        "worst_forbidden": 8886,
+        "sum_furniture": 279
+      },
+      {
+        "ox": 148,
+        "oy": 28,
+        "worst_forbidden": 8691,
+        "sum_furniture": 90
+      },
+      {
+        "ox": 13,
+        "oy": 29,
+        "worst_forbidden": 2790,
+        "sum_furniture": 432
+      },
+      {
+        "ox": 14,
+        "oy": 29,
+        "worst_forbidden": 2826,
+        "sum_furniture": 432
+      },
+      {
+        "ox": 15,
+        "oy": 29,
+        "worst_forbidden": 2841,
+        "sum_furniture": 432
+      },
+      {
+        "ox": 16,
+        "oy": 29,
+        "worst_forbidden": 2856,
+        "sum_furniture": 432
+      },
+      {
+        "ox": 17,
+        "oy": 29,
+        "worst_forbidden": 2841,
+        "sum_furniture": 414
+      },
+      {
+        "ox": 18,
+        "oy": 29,
+        "worst_forbidden": 2799,
+        "sum_furniture": 378
+      },
+      {
+        "ox": 19,
+        "oy": 29,
+        "worst_forbidden": 2718,
+        "sum_furniture": 342
+      },
+      {
+        "ox": 20,
+        "oy": 29,
+        "worst_forbidden": 2595,
+        "sum_furniture": 315
+      },
+      {
+        "ox": 21,
+        "oy": 29,
+        "worst_forbidden": 2475,
+        "sum_furniture": 297
+      },
+      {
+        "ox": 22,
+        "oy": 29,
+        "worst_forbidden": 2343,
+        "sum_furniture": 279
+      },
+      {
+        "ox": 23,
+        "oy": 29,
+        "worst_forbidden": 2202,
+        "sum_furniture": 270
+      },
+      {
+        "ox": 24,
+        "oy": 29,
+        "worst_forbidden": 2058,
+        "sum_furniture": 261
+      },
+      {
+        "ox": 25,
+        "oy": 29,
+        "worst_forbidden": 1914,
+        "sum_furniture": 243
+      },
+      {
+        "ox": 26,
+        "oy": 29,
+        "worst_forbidden": 1770,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 27,
+        "oy": 29,
+        "worst_forbidden": 1626,
+        "sum_furniture": 153
+      },
+      {
+        "ox": 28,
+        "oy": 29,
+        "worst_forbidden": 1482,
+        "sum_furniture": 99
+      },
+      {
+        "ox": 29,
+        "oy": 29,
+        "worst_forbidden": 1338,
+        "sum_furniture": 54
+      },
+      {
+        "ox": 30,
+        "oy": 29,
+        "worst_forbidden": 1194,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 31,
+        "oy": 29,
+        "worst_forbidden": 1050,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 32,
+        "oy": 29,
+        "worst_forbidden": 912,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 51,
+        "oy": 29,
+        "worst_forbidden": 2104,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 52,
+        "oy": 29,
+        "worst_forbidden": 2356,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 29,
+        "worst_forbidden": 2644,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 29,
+        "worst_forbidden": 2965,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 29,
+        "worst_forbidden": 3331,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 29,
+        "worst_forbidden": 3739,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 29,
+        "worst_forbidden": 4150,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 29,
+        "worst_forbidden": 4534,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 29,
+        "worst_forbidden": 4921,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 60,
+        "oy": 29,
+        "worst_forbidden": 5308,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 61,
+        "oy": 29,
+        "worst_forbidden": 5721,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 62,
+        "oy": 29,
+        "worst_forbidden": 6129,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 63,
+        "oy": 29,
+        "worst_forbidden": 6512,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 64,
+        "oy": 29,
+        "worst_forbidden": 6863,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 29,
+        "worst_forbidden": 7166,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 29,
+        "worst_forbidden": 7448,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 29,
+        "worst_forbidden": 7709,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 29,
+        "worst_forbidden": 7926,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 69,
+        "oy": 29,
+        "worst_forbidden": 8142,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 70,
+        "oy": 29,
+        "worst_forbidden": 8319,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 71,
+        "oy": 29,
+        "worst_forbidden": 8412,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 72,
+        "oy": 29,
+        "worst_forbidden": 8478,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 73,
+        "oy": 29,
+        "worst_forbidden": 8536,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 74,
+        "oy": 29,
+        "worst_forbidden": 8557,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 75,
+        "oy": 29,
+        "worst_forbidden": 8545,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 76,
+        "oy": 29,
+        "worst_forbidden": 8517,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 29,
+        "worst_forbidden": 8481,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 29,
+        "worst_forbidden": 8445,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 29,
+        "worst_forbidden": 8391,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 80,
+        "oy": 29,
+        "worst_forbidden": 8307,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 81,
+        "oy": 29,
+        "worst_forbidden": 8187,
+        "sum_furniture": 72
+      },
+      {
+        "ox": 82,
+        "oy": 29,
+        "worst_forbidden": 8031,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 83,
+        "oy": 29,
+        "worst_forbidden": 7869,
+        "sum_furniture": 423
+      },
+      {
+        "ox": 84,
+        "oy": 29,
+        "worst_forbidden": 7656,
+        "sum_furniture": 684
+      },
+      {
+        "ox": 85,
+        "oy": 29,
+        "worst_forbidden": 7428,
+        "sum_furniture": 936
+      },
+      {
+        "ox": 86,
+        "oy": 29,
+        "worst_forbidden": 7200,
+        "sum_furniture": 1170
+      },
+      {
+        "ox": 87,
+        "oy": 29,
+        "worst_forbidden": 7013,
+        "sum_furniture": 1413
+      },
+      {
+        "ox": 88,
+        "oy": 29,
+        "worst_forbidden": 6866,
+        "sum_furniture": 1629
+      },
+      {
+        "ox": 89,
+        "oy": 29,
+        "worst_forbidden": 6763,
+        "sum_furniture": 1845
+      },
+      {
+        "ox": 90,
+        "oy": 29,
+        "worst_forbidden": 6706,
+        "sum_furniture": 2025
+      },
+      {
+        "ox": 91,
+        "oy": 29,
+        "worst_forbidden": 6673,
+        "sum_furniture": 2205
+      },
+      {
+        "ox": 92,
+        "oy": 29,
+        "worst_forbidden": 6689,
+        "sum_furniture": 2358
+      },
+      {
+        "ox": 93,
+        "oy": 29,
+        "worst_forbidden": 6683,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 94,
+        "oy": 29,
+        "worst_forbidden": 6645,
+        "sum_furniture": 2601
+      },
+      {
+        "ox": 95,
+        "oy": 29,
+        "worst_forbidden": 6670,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 96,
+        "oy": 29,
+        "worst_forbidden": 6782,
+        "sum_furniture": 2799
+      },
+      {
+        "ox": 97,
+        "oy": 29,
+        "worst_forbidden": 6919,
+        "sum_furniture": 2898
+      },
+      {
+        "ox": 98,
+        "oy": 29,
+        "worst_forbidden": 7087,
+        "sum_furniture": 2997
+      },
+      {
+        "ox": 99,
+        "oy": 29,
+        "worst_forbidden": 7256,
+        "sum_furniture": 3105
+      },
+      {
+        "ox": 100,
+        "oy": 29,
+        "worst_forbidden": 7440,
+        "sum_furniture": 3177
+      },
+      {
+        "ox": 101,
+        "oy": 29,
+        "worst_forbidden": 7603,
+        "sum_furniture": 3168
+      },
+      {
+        "ox": 102,
+        "oy": 29,
+        "worst_forbidden": 7767,
+        "sum_furniture": 3051
+      },
+      {
+        "ox": 103,
+        "oy": 29,
+        "worst_forbidden": 7959,
+        "sum_furniture": 2889
+      },
+      {
+        "ox": 104,
+        "oy": 29,
+        "worst_forbidden": 8215,
+        "sum_furniture": 2718
+      },
+      {
+        "ox": 105,
+        "oy": 29,
+        "worst_forbidden": 8442,
+        "sum_furniture": 2619
+      },
+      {
+        "ox": 106,
+        "oy": 29,
+        "worst_forbidden": 8659,
+        "sum_furniture": 2592
+      },
+      {
+        "ox": 107,
+        "oy": 29,
+        "worst_forbidden": 8857,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 108,
+        "oy": 29,
+        "worst_forbidden": 9051,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 109,
+        "oy": 29,
+        "worst_forbidden": 9188,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 110,
+        "oy": 29,
+        "worst_forbidden": 9325,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 111,
+        "oy": 29,
+        "worst_forbidden": 9469,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 112,
+        "oy": 29,
+        "worst_forbidden": 9613,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 113,
+        "oy": 29,
+        "worst_forbidden": 9776,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 114,
+        "oy": 29,
+        "worst_forbidden": 9923,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 115,
+        "oy": 29,
+        "worst_forbidden": 10042,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 116,
+        "oy": 29,
+        "worst_forbidden": 10168,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 117,
+        "oy": 29,
+        "worst_forbidden": 10296,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 118,
+        "oy": 29,
+        "worst_forbidden": 10445,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 119,
+        "oy": 29,
+        "worst_forbidden": 10566,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 120,
+        "oy": 29,
+        "worst_forbidden": 10679,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 121,
+        "oy": 29,
+        "worst_forbidden": 10709,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 122,
+        "oy": 29,
+        "worst_forbidden": 10741,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 123,
+        "oy": 29,
+        "worst_forbidden": 10803,
+        "sum_furniture": 2592
+      },
+      {
+        "ox": 124,
+        "oy": 29,
+        "worst_forbidden": 10845,
+        "sum_furniture": 2619
+      },
+      {
+        "ox": 125,
+        "oy": 29,
+        "worst_forbidden": 10840,
+        "sum_furniture": 2682
+      },
+      {
+        "ox": 126,
+        "oy": 29,
+        "worst_forbidden": 10817,
+        "sum_furniture": 2763
+      },
+      {
+        "ox": 127,
+        "oy": 29,
+        "worst_forbidden": 10814,
+        "sum_furniture": 2880
+      },
+      {
+        "ox": 128,
+        "oy": 29,
+        "worst_forbidden": 10846,
+        "sum_furniture": 2988
+      },
+      {
+        "ox": 129,
+        "oy": 29,
+        "worst_forbidden": 10890,
+        "sum_furniture": 3051
+      },
+      {
+        "ox": 130,
+        "oy": 29,
+        "worst_forbidden": 10924,
+        "sum_furniture": 3069
+      },
+      {
+        "ox": 131,
+        "oy": 29,
+        "worst_forbidden": 10896,
+        "sum_furniture": 3015
+      },
+      {
+        "ox": 132,
+        "oy": 29,
+        "worst_forbidden": 10822,
+        "sum_furniture": 2943
+      },
+      {
+        "ox": 133,
+        "oy": 29,
+        "worst_forbidden": 10785,
+        "sum_furniture": 2835
+      },
+      {
+        "ox": 134,
+        "oy": 29,
+        "worst_forbidden": 10751,
+        "sum_furniture": 2727
+      },
+      {
+        "ox": 135,
+        "oy": 29,
+        "worst_forbidden": 10604,
+        "sum_furniture": 2592
+      },
+      {
+        "ox": 136,
+        "oy": 29,
+        "worst_forbidden": 10440,
+        "sum_furniture": 2421
+      },
+      {
+        "ox": 137,
+        "oy": 29,
+        "worst_forbidden": 10317,
+        "sum_furniture": 2241
+      },
+      {
+        "ox": 138,
+        "oy": 29,
+        "worst_forbidden": 10152,
+        "sum_furniture": 2052
+      },
+      {
+        "ox": 139,
+        "oy": 29,
+        "worst_forbidden": 9972,
+        "sum_furniture": 1872
+      },
+      {
+        "ox": 140,
+        "oy": 29,
+        "worst_forbidden": 9738,
+        "sum_furniture": 1692
+      },
+      {
+        "ox": 141,
+        "oy": 29,
+        "worst_forbidden": 9536,
+        "sum_furniture": 1521
+      },
+      {
+        "ox": 142,
+        "oy": 29,
+        "worst_forbidden": 9382,
+        "sum_furniture": 1377
+      },
+      {
+        "ox": 143,
+        "oy": 29,
+        "worst_forbidden": 9321,
+        "sum_furniture": 1215
+      },
+      {
+        "ox": 144,
+        "oy": 29,
+        "worst_forbidden": 9228,
+        "sum_furniture": 1062
+      },
+      {
+        "ox": 145,
+        "oy": 29,
+        "worst_forbidden": 9221,
+        "sum_furniture": 801
+      },
+      {
+        "ox": 146,
+        "oy": 29,
+        "worst_forbidden": 9095,
+        "sum_furniture": 513
+      },
+      {
+        "ox": 147,
+        "oy": 29,
+        "worst_forbidden": 8976,
+        "sum_furniture": 234
+      },
+      {
+        "ox": 148,
+        "oy": 29,
+        "worst_forbidden": 8802,
+        "sum_furniture": 54
+      },
+      {
+        "ox": 13,
+        "oy": 30,
+        "worst_forbidden": 2661,
+        "sum_furniture": 306
+      },
+      {
+        "ox": 14,
+        "oy": 30,
+        "worst_forbidden": 2688,
+        "sum_furniture": 306
+      },
+      {
+        "ox": 15,
+        "oy": 30,
+        "worst_forbidden": 2703,
+        "sum_furniture": 306
+      },
+      {
+        "ox": 16,
+        "oy": 30,
+        "worst_forbidden": 2718,
+        "sum_furniture": 306
+      },
+      {
+        "ox": 17,
+        "oy": 30,
+        "worst_forbidden": 2712,
+        "sum_furniture": 306
+      },
+      {
+        "ox": 18,
+        "oy": 30,
+        "worst_forbidden": 2670,
+        "sum_furniture": 279
+      },
+      {
+        "ox": 19,
+        "oy": 30,
+        "worst_forbidden": 2592,
+        "sum_furniture": 252
+      },
+      {
+        "ox": 20,
+        "oy": 30,
+        "worst_forbidden": 2475,
+        "sum_furniture": 234
+      },
+      {
+        "ox": 21,
+        "oy": 30,
+        "worst_forbidden": 2352,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 22,
+        "oy": 30,
+        "worst_forbidden": 2211,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 23,
+        "oy": 30,
+        "worst_forbidden": 2067,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 24,
+        "oy": 30,
+        "worst_forbidden": 1923,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 25,
+        "oy": 30,
+        "worst_forbidden": 1779,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 26,
+        "oy": 30,
+        "worst_forbidden": 1635,
+        "sum_furniture": 180
+      },
+      {
+        "ox": 27,
+        "oy": 30,
+        "worst_forbidden": 1491,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 28,
+        "oy": 30,
+        "worst_forbidden": 1347,
+        "sum_furniture": 90
+      },
+      {
+        "ox": 29,
+        "oy": 30,
+        "worst_forbidden": 1203,
+        "sum_furniture": 54
+      },
+      {
+        "ox": 30,
+        "oy": 30,
+        "worst_forbidden": 1059,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 31,
+        "oy": 30,
+        "worst_forbidden": 915,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 32,
+        "oy": 30,
+        "worst_forbidden": 792,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 52,
+        "oy": 30,
+        "worst_forbidden": 2329,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 30,
+        "worst_forbidden": 2599,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 30,
+        "worst_forbidden": 2926,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 30,
+        "worst_forbidden": 3292,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 30,
+        "worst_forbidden": 3709,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 30,
+        "worst_forbidden": 4114,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 30,
+        "worst_forbidden": 4516,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 30,
+        "worst_forbidden": 4912,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 60,
+        "oy": 30,
+        "worst_forbidden": 5308,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 61,
+        "oy": 30,
+        "worst_forbidden": 5748,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 62,
+        "oy": 30,
+        "worst_forbidden": 6171,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 63,
+        "oy": 30,
+        "worst_forbidden": 6545,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 64,
+        "oy": 30,
+        "worst_forbidden": 6884,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 30,
+        "worst_forbidden": 7187,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 30,
+        "worst_forbidden": 7460,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 30,
+        "worst_forbidden": 7742,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 30,
+        "worst_forbidden": 7965,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 69,
+        "oy": 30,
+        "worst_forbidden": 8187,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 70,
+        "oy": 30,
+        "worst_forbidden": 8373,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 71,
+        "oy": 30,
+        "worst_forbidden": 8490,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 72,
+        "oy": 30,
+        "worst_forbidden": 8581,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 73,
+        "oy": 30,
+        "worst_forbidden": 8650,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 74,
+        "oy": 30,
+        "worst_forbidden": 8674,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 75,
+        "oy": 30,
+        "worst_forbidden": 8629,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 76,
+        "oy": 30,
+        "worst_forbidden": 8592,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 30,
+        "worst_forbidden": 8538,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 30,
+        "worst_forbidden": 8487,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 30,
+        "worst_forbidden": 8421,
+        "sum_furniture": 9
+      },
+      {
+        "ox": 80,
+        "oy": 30,
+        "worst_forbidden": 8346,
+        "sum_furniture": 27
+      },
+      {
+        "ox": 81,
+        "oy": 30,
+        "worst_forbidden": 8226,
+        "sum_furniture": 72
+      },
+      {
+        "ox": 82,
+        "oy": 30,
+        "worst_forbidden": 8076,
+        "sum_furniture": 180
+      },
+      {
+        "ox": 83,
+        "oy": 30,
+        "worst_forbidden": 7911,
+        "sum_furniture": 387
+      },
+      {
+        "ox": 84,
+        "oy": 30,
+        "worst_forbidden": 7680,
+        "sum_furniture": 630
+      },
+      {
+        "ox": 85,
+        "oy": 30,
+        "worst_forbidden": 7422,
+        "sum_furniture": 855
+      },
+      {
+        "ox": 86,
+        "oy": 30,
+        "worst_forbidden": 7176,
+        "sum_furniture": 1053
+      },
+      {
+        "ox": 87,
+        "oy": 30,
+        "worst_forbidden": 6965,
+        "sum_furniture": 1287
+      },
+      {
+        "ox": 88,
+        "oy": 30,
+        "worst_forbidden": 6808,
+        "sum_furniture": 1503
+      },
+      {
+        "ox": 89,
+        "oy": 30,
+        "worst_forbidden": 6687,
+        "sum_furniture": 1719
+      },
+      {
+        "ox": 90,
+        "oy": 30,
+        "worst_forbidden": 6612,
+        "sum_furniture": 1899
+      },
+      {
+        "ox": 91,
+        "oy": 30,
+        "worst_forbidden": 6562,
+        "sum_furniture": 2079
+      },
+      {
+        "ox": 92,
+        "oy": 30,
+        "worst_forbidden": 6568,
+        "sum_furniture": 2232
+      },
+      {
+        "ox": 93,
+        "oy": 30,
+        "worst_forbidden": 6557,
+        "sum_furniture": 2349
+      },
+      {
+        "ox": 94,
+        "oy": 30,
+        "worst_forbidden": 6513,
+        "sum_furniture": 2457
+      },
+      {
+        "ox": 95,
+        "oy": 30,
+        "worst_forbidden": 6464,
+        "sum_furniture": 2556
+      },
+      {
+        "ox": 96,
+        "oy": 30,
+        "worst_forbidden": 6542,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 97,
+        "oy": 30,
+        "worst_forbidden": 6673,
+        "sum_furniture": 2772
+      },
+      {
+        "ox": 98,
+        "oy": 30,
+        "worst_forbidden": 6823,
+        "sum_furniture": 2871
+      },
+      {
+        "ox": 99,
+        "oy": 30,
+        "worst_forbidden": 6974,
+        "sum_furniture": 2970
+      },
+      {
+        "ox": 100,
+        "oy": 30,
+        "worst_forbidden": 7158,
+        "sum_furniture": 3051
+      },
+      {
+        "ox": 101,
+        "oy": 30,
+        "worst_forbidden": 7288,
+        "sum_furniture": 3069
+      },
+      {
+        "ox": 102,
+        "oy": 30,
+        "worst_forbidden": 7425,
+        "sum_furniture": 2970
+      },
+      {
+        "ox": 103,
+        "oy": 30,
+        "worst_forbidden": 7613,
+        "sum_furniture": 2826
+      },
+      {
+        "ox": 104,
+        "oy": 30,
+        "worst_forbidden": 7904,
+        "sum_furniture": 2664
+      },
+      {
+        "ox": 105,
+        "oy": 30,
+        "worst_forbidden": 8130,
+        "sum_furniture": 2592
+      },
+      {
+        "ox": 106,
+        "oy": 30,
+        "worst_forbidden": 8341,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 107,
+        "oy": 30,
+        "worst_forbidden": 8538,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 108,
+        "oy": 30,
+        "worst_forbidden": 8723,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 109,
+        "oy": 30,
+        "worst_forbidden": 8848,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 110,
+        "oy": 30,
+        "worst_forbidden": 8986,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 111,
+        "oy": 30,
+        "worst_forbidden": 9130,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 112,
+        "oy": 30,
+        "worst_forbidden": 9274,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 113,
+        "oy": 30,
+        "worst_forbidden": 9446,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 114,
+        "oy": 30,
+        "worst_forbidden": 9602,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 115,
+        "oy": 30,
+        "worst_forbidden": 9712,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 116,
+        "oy": 30,
+        "worst_forbidden": 9832,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 117,
+        "oy": 30,
+        "worst_forbidden": 9963,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 118,
+        "oy": 30,
+        "worst_forbidden": 10112,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 119,
+        "oy": 30,
+        "worst_forbidden": 10235,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 120,
+        "oy": 30,
+        "worst_forbidden": 10356,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 121,
+        "oy": 30,
+        "worst_forbidden": 10388,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 122,
+        "oy": 30,
+        "worst_forbidden": 10418,
+        "sum_furniture": 2565
+      },
+      {
+        "ox": 123,
+        "oy": 30,
+        "worst_forbidden": 10456,
+        "sum_furniture": 2574
+      },
+      {
+        "ox": 124,
+        "oy": 30,
+        "worst_forbidden": 10476,
+        "sum_furniture": 2592
+      },
+      {
+        "ox": 125,
+        "oy": 30,
+        "worst_forbidden": 10477,
+        "sum_furniture": 2646
+      },
+      {
+        "ox": 126,
+        "oy": 30,
+        "worst_forbidden": 10459,
+        "sum_furniture": 2736
+      },
+      {
+        "ox": 127,
+        "oy": 30,
+        "worst_forbidden": 10452,
+        "sum_furniture": 2826
+      },
+      {
+        "ox": 128,
+        "oy": 30,
+        "worst_forbidden": 10489,
+        "sum_furniture": 2898
+      },
+      {
+        "ox": 129,
+        "oy": 30,
+        "worst_forbidden": 10556,
+        "sum_furniture": 2925
+      },
+      {
+        "ox": 130,
+        "oy": 30,
+        "worst_forbidden": 10616,
+        "sum_furniture": 2961
+      },
+      {
+        "ox": 131,
+        "oy": 30,
+        "worst_forbidden": 10609,
+        "sum_furniture": 2916
+      },
+      {
+        "ox": 132,
+        "oy": 30,
+        "worst_forbidden": 10554,
+        "sum_furniture": 2844
+      },
+      {
+        "ox": 133,
+        "oy": 30,
+        "worst_forbidden": 10537,
+        "sum_furniture": 2736
+      },
+      {
+        "ox": 134,
+        "oy": 30,
+        "worst_forbidden": 10523,
+        "sum_furniture": 2628
+      },
+      {
+        "ox": 135,
+        "oy": 30,
+        "worst_forbidden": 10418,
+        "sum_furniture": 2493
+      },
+      {
+        "ox": 136,
+        "oy": 30,
+        "worst_forbidden": 10292,
+        "sum_furniture": 2322
+      },
+      {
+        "ox": 137,
+        "oy": 30,
+        "worst_forbidden": 10179,
+        "sum_furniture": 2142
+      },
+      {
+        "ox": 138,
+        "oy": 30,
+        "worst_forbidden": 10028,
+        "sum_furniture": 1953
+      },
+      {
+        "ox": 139,
+        "oy": 30,
+        "worst_forbidden": 9860,
+        "sum_furniture": 1773
+      },
+      {
+        "ox": 140,
+        "oy": 30,
+        "worst_forbidden": 9642,
+        "sum_furniture": 1593
+      },
+      {
+        "ox": 141,
+        "oy": 30,
+        "worst_forbidden": 9470,
+        "sum_furniture": 1422
+      },
+      {
+        "ox": 142,
+        "oy": 30,
+        "worst_forbidden": 9330,
+        "sum_furniture": 1278
+      },
+      {
+        "ox": 143,
+        "oy": 30,
+        "worst_forbidden": 9288,
+        "sum_furniture": 1134
+      },
+      {
+        "ox": 144,
+        "oy": 30,
+        "worst_forbidden": 9216,
+        "sum_furniture": 999
+      },
+      {
+        "ox": 145,
+        "oy": 30,
+        "worst_forbidden": 9212,
+        "sum_furniture": 747
+      },
+      {
+        "ox": 146,
+        "oy": 30,
+        "worst_forbidden": 9095,
+        "sum_furniture": 468
+      },
+      {
+        "ox": 147,
+        "oy": 30,
+        "worst_forbidden": 8988,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 148,
+        "oy": 30,
+        "worst_forbidden": 8847,
+        "sum_furniture": 54
+      },
+      {
+        "ox": 13,
+        "oy": 31,
+        "worst_forbidden": 2514,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 14,
+        "oy": 31,
+        "worst_forbidden": 2532,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 15,
+        "oy": 31,
+        "worst_forbidden": 2556,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 16,
+        "oy": 31,
+        "worst_forbidden": 2571,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 17,
+        "oy": 31,
+        "worst_forbidden": 2565,
+        "sum_furniture": 216
+      },
+      {
+        "ox": 18,
+        "oy": 31,
+        "worst_forbidden": 2532,
+        "sum_furniture": 207
+      },
+      {
+        "ox": 19,
+        "oy": 31,
+        "worst_forbidden": 2448,
+        "sum_furniture": 189
+      },
+      {
+        "ox": 20,
+        "oy": 31,
+        "worst_forbidden": 2340,
+        "sum_furniture": 171
+      },
+      {
+        "ox": 21,
+        "oy": 31,
+        "worst_forbidden": 2220,
+        "sum_furniture": 162
+      },
+      {
+        "ox": 22,
+        "oy": 31,
+        "worst_forbidden": 2076,
+        "sum_furniture": 162
+      },
+      {
+        "ox": 23,
+        "oy": 31,
+        "worst_forbidden": 1932,
+        "sum_furniture": 162
+      },
+      {
+        "ox": 24,
+        "oy": 31,
+        "worst_forbidden": 1788,
+        "sum_furniture": 162
+      },
+      {
+        "ox": 25,
+        "oy": 31,
+        "worst_forbidden": 1644,
+        "sum_furniture": 162
+      },
+      {
+        "ox": 26,
+        "oy": 31,
+        "worst_forbidden": 1506,
+        "sum_furniture": 153
+      },
+      {
+        "ox": 27,
+        "oy": 31,
+        "worst_forbidden": 1371,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 28,
+        "oy": 31,
+        "worst_forbidden": 1236,
+        "sum_furniture": 81
+      },
+      {
+        "ox": 29,
+        "oy": 31,
+        "worst_forbidden": 1104,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 30,
+        "oy": 31,
+        "worst_forbidden": 984,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 31,
+        "oy": 31,
+        "worst_forbidden": 870,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 52,
+        "oy": 31,
+        "worst_forbidden": 2293,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 31,
+        "worst_forbidden": 2566,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 31,
+        "worst_forbidden": 2911,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 31,
+        "worst_forbidden": 3289,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 31,
+        "worst_forbidden": 3709,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 31,
+        "worst_forbidden": 4129,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 31,
+        "worst_forbidden": 4522,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 31,
+        "worst_forbidden": 4906,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 60,
+        "oy": 31,
+        "worst_forbidden": 5305,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 61,
+        "oy": 31,
+        "worst_forbidden": 5730,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 62,
+        "oy": 31,
+        "worst_forbidden": 6162,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 63,
+        "oy": 31,
+        "worst_forbidden": 6548,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 64,
+        "oy": 31,
+        "worst_forbidden": 6899,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 31,
+        "worst_forbidden": 7202,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 31,
+        "worst_forbidden": 7478,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 31,
+        "worst_forbidden": 7781,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 31,
+        "worst_forbidden": 8019,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 69,
+        "oy": 31,
+        "worst_forbidden": 8241,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 70,
+        "oy": 31,
+        "worst_forbidden": 8430,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 71,
+        "oy": 31,
+        "worst_forbidden": 8580,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 72,
+        "oy": 31,
+        "worst_forbidden": 8700,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 73,
+        "oy": 31,
+        "worst_forbidden": 8779,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 74,
+        "oy": 31,
+        "worst_forbidden": 8785,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 75,
+        "oy": 31,
+        "worst_forbidden": 8725,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 76,
+        "oy": 31,
+        "worst_forbidden": 8670,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 31,
+        "worst_forbidden": 8598,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 31,
+        "worst_forbidden": 8526,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 31,
+        "worst_forbidden": 8442,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 80,
+        "oy": 31,
+        "worst_forbidden": 8373,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 81,
+        "oy": 31,
+        "worst_forbidden": 8253,
+        "sum_furniture": 63
+      },
+      {
+        "ox": 82,
+        "oy": 31,
+        "worst_forbidden": 8103,
+        "sum_furniture": 171
+      },
+      {
+        "ox": 83,
+        "oy": 31,
+        "worst_forbidden": 7908,
+        "sum_furniture": 342
+      },
+      {
+        "ox": 84,
+        "oy": 31,
+        "worst_forbidden": 7668,
+        "sum_furniture": 558
+      },
+      {
+        "ox": 85,
+        "oy": 31,
+        "worst_forbidden": 7401,
+        "sum_furniture": 756
+      },
+      {
+        "ox": 86,
+        "oy": 31,
+        "worst_forbidden": 7140,
+        "sum_furniture": 954
+      },
+      {
+        "ox": 87,
+        "oy": 31,
+        "worst_forbidden": 6908,
+        "sum_furniture": 1179
+      },
+      {
+        "ox": 88,
+        "oy": 31,
+        "worst_forbidden": 6738,
+        "sum_furniture": 1386
+      },
+      {
+        "ox": 89,
+        "oy": 31,
+        "worst_forbidden": 6604,
+        "sum_furniture": 1602
+      },
+      {
+        "ox": 90,
+        "oy": 31,
+        "worst_forbidden": 6520,
+        "sum_furniture": 1782
+      },
+      {
+        "ox": 91,
+        "oy": 31,
+        "worst_forbidden": 6454,
+        "sum_furniture": 1962
+      },
+      {
+        "ox": 92,
+        "oy": 31,
+        "worst_forbidden": 6441,
+        "sum_furniture": 2115
+      },
+      {
+        "ox": 93,
+        "oy": 31,
+        "worst_forbidden": 6409,
+        "sum_furniture": 2232
+      },
+      {
+        "ox": 94,
+        "oy": 31,
+        "worst_forbidden": 6357,
+        "sum_furniture": 2340
+      },
+      {
+        "ox": 95,
+        "oy": 31,
+        "worst_forbidden": 6287,
+        "sum_furniture": 2439
+      },
+      {
+        "ox": 96,
+        "oy": 31,
+        "worst_forbidden": 6284,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 97,
+        "oy": 31,
+        "worst_forbidden": 6404,
+        "sum_furniture": 2655
+      },
+      {
+        "ox": 98,
+        "oy": 31,
+        "worst_forbidden": 6539,
+        "sum_furniture": 2736
+      },
+      {
+        "ox": 99,
+        "oy": 31,
+        "worst_forbidden": 6692,
+        "sum_furniture": 2844
+      },
+      {
+        "ox": 100,
+        "oy": 31,
+        "worst_forbidden": 6852,
+        "sum_furniture": 2934
+      },
+      {
+        "ox": 101,
+        "oy": 31,
+        "worst_forbidden": 6964,
+        "sum_furniture": 2979
+      },
+      {
+        "ox": 102,
+        "oy": 31,
+        "worst_forbidden": 7110,
+        "sum_furniture": 2898
+      },
+      {
+        "ox": 103,
+        "oy": 31,
+        "worst_forbidden": 7298,
+        "sum_furniture": 2772
+      },
+      {
+        "ox": 104,
+        "oy": 31,
+        "worst_forbidden": 7601,
+        "sum_furniture": 2619
+      },
+      {
+        "ox": 105,
+        "oy": 31,
+        "worst_forbidden": 7821,
+        "sum_furniture": 2556
+      },
+      {
+        "ox": 106,
+        "oy": 31,
+        "worst_forbidden": 8023,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 107,
+        "oy": 31,
+        "worst_forbidden": 8220,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 108,
+        "oy": 31,
+        "worst_forbidden": 8407,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 109,
+        "oy": 31,
+        "worst_forbidden": 8529,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 110,
+        "oy": 31,
+        "worst_forbidden": 8654,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 111,
+        "oy": 31,
+        "worst_forbidden": 8789,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 112,
+        "oy": 31,
+        "worst_forbidden": 8932,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 113,
+        "oy": 31,
+        "worst_forbidden": 9104,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 114,
+        "oy": 31,
+        "worst_forbidden": 9269,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 115,
+        "oy": 31,
+        "worst_forbidden": 9382,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 116,
+        "oy": 31,
+        "worst_forbidden": 9499,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 117,
+        "oy": 31,
+        "worst_forbidden": 9629,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 118,
+        "oy": 31,
+        "worst_forbidden": 9778,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 119,
+        "oy": 31,
+        "worst_forbidden": 9899,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 120,
+        "oy": 31,
+        "worst_forbidden": 10032,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 121,
+        "oy": 31,
+        "worst_forbidden": 10065,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 122,
+        "oy": 31,
+        "worst_forbidden": 10092,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 123,
+        "oy": 31,
+        "worst_forbidden": 10108,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 124,
+        "oy": 31,
+        "worst_forbidden": 10130,
+        "sum_furniture": 2556
+      },
+      {
+        "ox": 125,
+        "oy": 31,
+        "worst_forbidden": 10117,
+        "sum_furniture": 2610
+      },
+      {
+        "ox": 126,
+        "oy": 31,
+        "worst_forbidden": 10108,
+        "sum_furniture": 2673
+      },
+      {
+        "ox": 127,
+        "oy": 31,
+        "worst_forbidden": 10081,
+        "sum_furniture": 2736
+      },
+      {
+        "ox": 128,
+        "oy": 31,
+        "worst_forbidden": 10118,
+        "sum_furniture": 2772
+      },
+      {
+        "ox": 129,
+        "oy": 31,
+        "worst_forbidden": 10193,
+        "sum_furniture": 2808
+      },
+      {
+        "ox": 130,
+        "oy": 31,
+        "worst_forbidden": 10281,
+        "sum_furniture": 2835
+      },
+      {
+        "ox": 131,
+        "oy": 31,
+        "worst_forbidden": 10299,
+        "sum_furniture": 2790
+      },
+      {
+        "ox": 132,
+        "oy": 31,
+        "worst_forbidden": 10275,
+        "sum_furniture": 2727
+      },
+      {
+        "ox": 133,
+        "oy": 31,
+        "worst_forbidden": 10282,
+        "sum_furniture": 2619
+      },
+      {
+        "ox": 134,
+        "oy": 31,
+        "worst_forbidden": 10277,
+        "sum_furniture": 2511
+      },
+      {
+        "ox": 135,
+        "oy": 31,
+        "worst_forbidden": 10211,
+        "sum_furniture": 2376
+      },
+      {
+        "ox": 136,
+        "oy": 31,
+        "worst_forbidden": 10133,
+        "sum_furniture": 2205
+      },
+      {
+        "ox": 137,
+        "oy": 31,
+        "worst_forbidden": 10019,
+        "sum_furniture": 2025
+      },
+      {
+        "ox": 138,
+        "oy": 31,
+        "worst_forbidden": 9887,
+        "sum_furniture": 1836
+      },
+      {
+        "ox": 139,
+        "oy": 31,
+        "worst_forbidden": 9733,
+        "sum_furniture": 1656
+      },
+      {
+        "ox": 140,
+        "oy": 31,
+        "worst_forbidden": 9539,
+        "sum_furniture": 1476
+      },
+      {
+        "ox": 141,
+        "oy": 31,
+        "worst_forbidden": 9390,
+        "sum_furniture": 1305
+      },
+      {
+        "ox": 142,
+        "oy": 31,
+        "worst_forbidden": 9265,
+        "sum_furniture": 1179
+      },
+      {
+        "ox": 143,
+        "oy": 31,
+        "worst_forbidden": 9255,
+        "sum_furniture": 1053
+      },
+      {
+        "ox": 144,
+        "oy": 31,
+        "worst_forbidden": 9205,
+        "sum_furniture": 936
+      },
+      {
+        "ox": 145,
+        "oy": 31,
+        "worst_forbidden": 9212,
+        "sum_furniture": 693
+      },
+      {
+        "ox": 146,
+        "oy": 31,
+        "worst_forbidden": 9104,
+        "sum_furniture": 441
+      },
+      {
+        "ox": 147,
+        "oy": 31,
+        "worst_forbidden": 9015,
+        "sum_furniture": 198
+      },
+      {
+        "ox": 148,
+        "oy": 31,
+        "worst_forbidden": 8885,
+        "sum_furniture": 63
+      },
+      {
+        "ox": 14,
+        "oy": 32,
+        "worst_forbidden": 2367,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 15,
+        "oy": 32,
+        "worst_forbidden": 2400,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 16,
+        "oy": 32,
+        "worst_forbidden": 2418,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 17,
+        "oy": 32,
+        "worst_forbidden": 2412,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 18,
+        "oy": 32,
+        "worst_forbidden": 2379,
+        "sum_furniture": 135
+      },
+      {
+        "ox": 19,
+        "oy": 32,
+        "worst_forbidden": 2307,
+        "sum_furniture": 126
+      },
+      {
+        "ox": 20,
+        "oy": 32,
+        "worst_forbidden": 2208,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 21,
+        "oy": 32,
+        "worst_forbidden": 2097,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 22,
+        "oy": 32,
+        "worst_forbidden": 1959,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 23,
+        "oy": 32,
+        "worst_forbidden": 1830,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 24,
+        "oy": 32,
+        "worst_forbidden": 1704,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 25,
+        "oy": 32,
+        "worst_forbidden": 1578,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 26,
+        "oy": 32,
+        "worst_forbidden": 1452,
+        "sum_furniture": 117
+      },
+      {
+        "ox": 27,
+        "oy": 32,
+        "worst_forbidden": 1326,
+        "sum_furniture": 90
+      },
+      {
+        "ox": 28,
+        "oy": 32,
+        "worst_forbidden": 1200,
+        "sum_furniture": 63
+      },
+      {
+        "ox": 29,
+        "oy": 32,
+        "worst_forbidden": 1074,
+        "sum_furniture": 36
+      },
+      {
+        "ox": 30,
+        "oy": 32,
+        "worst_forbidden": 954,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 31,
+        "oy": 32,
+        "worst_forbidden": 849,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 53,
+        "oy": 32,
+        "worst_forbidden": 2533,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 54,
+        "oy": 32,
+        "worst_forbidden": 2890,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 55,
+        "oy": 32,
+        "worst_forbidden": 3268,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 56,
+        "oy": 32,
+        "worst_forbidden": 3679,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 57,
+        "oy": 32,
+        "worst_forbidden": 4099,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 58,
+        "oy": 32,
+        "worst_forbidden": 4483,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 59,
+        "oy": 32,
+        "worst_forbidden": 4876,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 60,
+        "oy": 32,
+        "worst_forbidden": 5296,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 61,
+        "oy": 32,
+        "worst_forbidden": 5718,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 62,
+        "oy": 32,
+        "worst_forbidden": 6141,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 63,
+        "oy": 32,
+        "worst_forbidden": 6545,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 64,
+        "oy": 32,
+        "worst_forbidden": 6896,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 65,
+        "oy": 32,
+        "worst_forbidden": 7199,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 66,
+        "oy": 32,
+        "worst_forbidden": 7481,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 67,
+        "oy": 32,
+        "worst_forbidden": 7808,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 68,
+        "oy": 32,
+        "worst_forbidden": 8055,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 69,
+        "oy": 32,
+        "worst_forbidden": 8286,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 70,
+        "oy": 32,
+        "worst_forbidden": 8478,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 71,
+        "oy": 32,
+        "worst_forbidden": 8643,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 72,
+        "oy": 32,
+        "worst_forbidden": 8784,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 73,
+        "oy": 32,
+        "worst_forbidden": 8887,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 74,
+        "oy": 32,
+        "worst_forbidden": 8866,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 75,
+        "oy": 32,
+        "worst_forbidden": 8815,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 76,
+        "oy": 32,
+        "worst_forbidden": 8742,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 77,
+        "oy": 32,
+        "worst_forbidden": 8649,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 78,
+        "oy": 32,
+        "worst_forbidden": 8559,
+        "sum_furniture": 0
+      },
+      {
+        "ox": 79,
+        "oy": 32,
+        "worst_forbidden": 8466,
+        "sum_furniture": 18
+      },
+      {
+        "ox": 80,
+        "oy": 32,
+        "worst_forbidden": 8373,
+        "sum_furniture": 45
+      },
+      {
+        "ox": 81,
+        "oy": 32,
+        "worst_forbidden": 8250,
+        "sum_furniture": 81
+      },
+      {
+        "ox": 82,
+        "oy": 32,
+        "worst_forbidden": 8097,
+        "sum_furniture": 153
+      },
+      {
+        "ox": 83,
+        "oy": 32,
+        "worst_forbidden": 7884,
+        "sum_furniture": 288
+      },
+      {
+        "ox": 84,
+        "oy": 32,
+        "worst_forbidden": 7629,
+        "sum_furniture": 486
+      },
+      {
+        "ox": 85,
+        "oy": 32,
+        "worst_forbidden": 7359,
+        "sum_furniture": 684
+      },
+      {
+        "ox": 86,
+        "oy": 32,
+        "worst_forbidden": 7091,
+        "sum_furniture": 873
+      },
+      {
+        "ox": 87,
+        "oy": 32,
+        "worst_forbidden": 6842,
+        "sum_furniture": 1080
+      },
+      {
+        "ox": 88,
+        "oy": 32,
+        "worst_forbidden": 6655,
+        "sum_furniture": 1278
+      },
+      {
+        "ox": 89,
+        "oy": 32,
+        "worst_forbidden": 6511,
+        "sum_furniture": 1485
+      },
+      {
+        "ox": 90,
+        "oy": 32,
+        "worst_forbidden": 6421,
+        "sum_furniture": 1665
+      },
+      {
+        "ox": 91,
+        "oy": 32,
+        "worst_forbidden": 6349,
+        "sum_furniture": 1845
+      },
+      {
+        "ox": 92,
+        "oy": 32,
+        "worst_forbidden": 6301,
+        "sum_furniture": 1998
+      },
+      {
+        "ox": 93,
+        "oy": 32,
+        "worst_forbidden": 6256,
+        "sum_furniture": 2115
+      },
+      {
+        "ox": 94,
+        "oy": 32,
+        "worst_forbidden": 6186,
+        "sum_furniture": 2214
+      },
+      {
+        "ox": 95,
+        "oy": 32,
+        "worst_forbidden": 6113,
+        "sum_furniture": 2313
+      },
+      {
+        "ox": 96,
+        "oy": 32,
+        "worst_forbidden": 6059,
+        "sum_furniture": 2421
+      },
+      {
+        "ox": 97,
+        "oy": 32,
+        "worst_forbidden": 6155,
+        "sum_furniture": 2520
+      },
+      {
+        "ox": 98,
+        "oy": 32,
+        "worst_forbidden": 6272,
+        "sum_furniture": 2601
+      },
+      {
+        "ox": 99,
+        "oy": 32,
+        "worst_forbidden": 6425,
+        "sum_furniture": 2700
+      },
+      {
+        "ox": 100,
+        "oy": 32,
+        "worst_forbidden": 6567,
+        "sum_furniture": 2790
+      },
+      {
+        "ox": 101,
+        "oy": 32,
+        "worst_forbidden": 6661,
+        "sum_furniture": 2844
+      },
+      {
+        "ox": 102,
+        "oy": 32,
+        "worst_forbidden": 6813,
+        "sum_furniture": 2790
+      },
+      {
+        "ox": 103,
+        "oy": 32,
+        "worst_forbidden": 6992,
+        "sum_furniture": 2673
+      },
+      {
+        "ox": 104,
+        "oy": 32,
+        "worst_forbidden": 7302,
+        "sum_furniture": 2538
+      },
+      {
+        "ox": 105,
+        "oy": 32,
+        "worst_forbidden": 7533,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 106,
+        "oy": 32,
+        "worst_forbidden": 7729,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 107,
+        "oy": 32,
+        "worst_forbidden": 7917,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 108,
+        "oy": 32,
+        "worst_forbidden": 8104,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 109,
+        "oy": 32,
+        "worst_forbidden": 8226,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 110,
+        "oy": 32,
+        "worst_forbidden": 8353,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 111,
+        "oy": 32,
+        "worst_forbidden": 8486,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 112,
+        "oy": 32,
+        "worst_forbidden": 8623,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 113,
+        "oy": 32,
+        "worst_forbidden": 8794,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 114,
+        "oy": 32,
+        "worst_forbidden": 8968,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 115,
+        "oy": 32,
+        "worst_forbidden": 9093,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 116,
+        "oy": 32,
+        "worst_forbidden": 9198,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 117,
+        "oy": 32,
+        "worst_forbidden": 9314,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 118,
+        "oy": 32,
+        "worst_forbidden": 9463,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 119,
+        "oy": 32,
+        "worst_forbidden": 9587,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 120,
+        "oy": 32,
+        "worst_forbidden": 9726,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 121,
+        "oy": 32,
+        "worst_forbidden": 9759,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 122,
+        "oy": 32,
+        "worst_forbidden": 9783,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 123,
+        "oy": 32,
+        "worst_forbidden": 9796,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 124,
+        "oy": 32,
+        "worst_forbidden": 9816,
+        "sum_furniture": 2484
+      },
+      {
+        "ox": 125,
+        "oy": 32,
+        "worst_forbidden": 9771,
+        "sum_furniture": 2502
+      },
+      {
+        "ox": 126,
+        "oy": 32,
+        "worst_forbidden": 9748,
+        "sum_furniture": 2547
+      },
+      {
+        "ox": 127,
+        "oy": 32,
+        "worst_forbidden": 9739,
+        "sum_furniture": 2601
+      },
+      {
+        "ox": 128,
+        "oy": 32,
+        "worst_forbidden": 9763,
+        "sum_furniture": 2637
+      },
+      {
+        "ox": 129,
+        "oy": 32,
+        "worst_forbidden": 9822,
+        "sum_furniture": 2646
+      },
+      {
+        "ox": 130,
+        "oy": 32,
+        "worst_forbidden": 9938,
+        "sum_furniture": 2655
+      },
+      {
+        "ox": 131,
+        "oy": 32,
+        "worst_forbidden": 9981,
+        "sum_furniture": 2619
+      },
+      {
+        "ox": 132,
+        "oy": 32,
+        "worst_forbidden": 9998,
+        "sum_furniture": 2556
+      },
+      {
+        "ox": 133,
+        "oy": 32,
+        "worst_forbidden": 10023,
+        "sum_furniture": 2457
+      },
+      {
+        "ox": 134,
+        "oy": 32,
+        "worst_forbidden": 10031,
+        "sum_furniture": 2349
+      },
+      {
+        "ox": 135,
+        "oy": 32,
+        "worst_forbidden": 10007,
+        "sum_furniture": 2214
+      },
+      {
+        "ox": 136,
+        "oy": 32,
+        "worst_forbidden": 9947,
+        "sum_furniture": 2043
+      },
+      {
+        "ox": 137,
+        "oy": 32,
+        "worst_forbidden": 9860,
+        "sum_furniture": 1863
+      },
+      {
+        "ox": 138,
+        "oy": 32,
+        "worst_forbidden": 9743,
+        "sum_furniture": 1683
+      },
+      {
+        "ox": 139,
+        "oy": 32,
+        "worst_forbidden": 9605,
+        "sum_furniture": 1512
+      },
+      {
+        "ox": 140,
+        "oy": 32,
+        "worst_forbidden": 9447,
+        "sum_furniture": 1341
+      },
+      {
+        "ox": 141,
+        "oy": 32,
+        "worst_forbidden": 9304,
+        "sum_furniture": 1179
+      },
+      {
+        "ox": 142,
+        "oy": 32,
+        "worst_forbidden": 9202,
+        "sum_furniture": 1062
+      },
+      {
+        "ox": 143,
+        "oy": 32,
+        "worst_forbidden": 9222,
+        "sum_furniture": 954
+      },
+      {
+        "ox": 144,
+        "oy": 32,
+        "worst_forbidden": 9220,
+        "sum_furniture": 846
+      },
+      {
+        "ox": 145,
+        "oy": 32,
+        "worst_forbidden": 9215,
+        "sum_furniture": 639
+      },
+      {
+        "ox": 146,
+        "oy": 32,
+        "worst_forbidden": 9131,
+        "sum_furniture": 405
+      },
+      {
+        "ox": 147,
+        "oy": 32,
+        "worst_forbidden": 9051,
+        "sum_furniture": 189
+      },
+      {
+        "ox": 148,
+        "oy": 32,
+        "worst_forbidden": 8939,
+        "sum_furniture": 72
+      }
+    ],
+    "B": {
+      "extend_native": 77,
+      "extend_display": 231,
+      "art_size_display": [
+        771,
+        249
+      ],
+      "positions_native_in_widened_art": {
+        "staff_sales_assistant": [
+          33,
+          32
+        ],
+        "staff_cultivation_assistant": [
+          48,
+          27
+        ],
+        "staff_brewing_assistant": [
+          15,
+          27
+        ],
+        "staff_expedition_guide": [
+          0,
+          32
+        ]
+      },
+      "rows": {
+        "staff_sales_assistant": "front",
+        "staff_cultivation_assistant": "back",
+        "staff_brewing_assistant": "back",
+        "staff_expedition_guide": "front"
+      },
+      "examples": {
+        "all": {
+          "png": "layouts/B-all-3x.png",
+          "size": [
+            771,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        }
+      },
+      "per_staff": {
+        "staff_sales_assistant": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 0,
+          "hud": 0,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 0,
+          "furniture_total": 0,
+          "inside_strip": true
+        },
+        "staff_cultivation_assistant": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 0,
+          "hud": 0,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 0,
+          "furniture_total": 0,
+          "inside_strip": true
+        },
+        "staff_brewing_assistant": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 0,
+          "hud": 0,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 0,
+          "furniture_total": 0,
+          "inside_strip": true
+        },
+        "staff_expedition_guide": {
+          "keeper": 0,
+          "customers": 0,
+          "sale_bottle": 0,
+          "stock_bottles": 0,
+          "hud": 0,
+          "furniture": {
+            "weather_glass": 0,
+            "window": 0,
+            "herb": 0,
+            "poster": 0,
+            "shelf": 0,
+            "counter": 0,
+            "aging_cask": 0,
+            "cauldron": 0,
+            "fire": 0,
+            "floor": 0,
+            "counter_prop": 0,
+            "souvenir_mini": 0
+          },
+          "forbidden_total": 0,
+          "furniture_total": 0,
+          "inside_strip": true
+        }
+      },
+      "staff_vs_staff": {
+        "staff_sales_assistant|staff_cultivation_assistant": 684,
+        "staff_sales_assistant|staff_brewing_assistant": 45,
+        "staff_sales_assistant|staff_expedition_guide": 0,
+        "staff_cultivation_assistant|staff_brewing_assistant": 0,
+        "staff_cultivation_assistant|staff_expedition_guide": 0,
+        "staff_brewing_assistant|staff_expedition_guide": 585
+      },
+      "back_row_hidden_fraction": {
+        "staff_cultivation_assistant": 0.117,
+        "staff_brewing_assistant": 0.122
+      }
+    },
+    "C": {
+      "staff": {
+        "staff_sales_assistant": {
+          "zone": "판매대 뒤",
+          "equipment": "counter",
+          "origin_native": [
+            104,
+            32
+          ],
+          "origin_display": [
+            312,
+            96
+          ],
+          "feet_native_row": 78,
+          "visible_fraction": 0.756,
+          "hidden_by_floor_furniture_px": 981,
+          "overlap": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 2632,
+            "stock_bottles": 2579,
+            "hud": 216,
+            "furniture": {
+              "weather_glass": 0,
+              "window": 0,
+              "poster": 0,
+              "shelf": 540,
+              "aging_cask": 0,
+              "souvenir_mini": 0
+            },
+            "forbidden_total": 5427,
+            "furniture_total": 540
+          }
+        },
+        "staff_cultivation_assistant": {
+          "zone": "약초대 뒤",
+          "equipment": "herb",
+          "origin_native": [
+            0,
+            32
+          ],
+          "origin_display": [
+            0,
+            96
+          ],
+          "feet_native_row": 78,
+          "visible_fraction": 0.61,
+          "hidden_by_floor_furniture_px": 2286,
+          "overlap": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 0,
+            "hud": 1371,
+            "furniture": {
+              "weather_glass": 0,
+              "window": 18,
+              "poster": 0,
+              "shelf": 0,
+              "aging_cask": 0,
+              "souvenir_mini": 0
+            },
+            "forbidden_total": 1371,
+            "furniture_total": 18
+          }
+        },
+        "staff_brewing_assistant": {
+          "zone": "솥 뒤",
+          "equipment": "cauldron",
+          "origin_native": [
+            36,
+            30
+          ],
+          "origin_display": [
+            108,
+            90
+          ],
+          "feet_native_row": 76,
+          "visible_fraction": 0.455,
+          "hidden_by_floor_furniture_px": 2817,
+          "overlap": {
+            "keeper": 0,
+            "customers": 0,
+            "sale_bottle": 0,
+            "stock_bottles": 243,
+            "hud": 18,
+            "furniture": {
+              "weather_glass": 0,
+              "window": 0,
+              "poster": 0,
+              "shelf": 0,
+              "aging_cask": 0,
+              "souvenir_mini": 0
+            },
+            "forbidden_total": 261,
+            "furniture_total": 0
+          }
+        },
+        "staff_expedition_guide": {
+          "zone": "원정 표지판 아래",
+          "equipment": "poster",
+          "origin_native": [
+            148,
+            24
+          ],
+          "origin_display": [
+            444,
+            72
+          ],
+          "feet_native_row": 70,
+          "visible_fraction": 1.0,
+          "hidden_by_floor_furniture_px": 0,
+          "overlap": {
+            "keeper": 0,
+            "customers": 5736,
+            "sale_bottle": 2124,
+            "stock_bottles": 0,
+            "hud": 30,
+            "furniture": {
+              "weather_glass": 0,
+              "window": 0,
+              "poster": 63,
+              "shelf": 9,
+              "aging_cask": 0,
+              "souvenir_mini": 0
+            },
+            "forbidden_total": 7890,
+            "furniture_total": 72
+          }
+        }
+      },
+      "staff_vs_staff": {
+        "staff_sales_assistant|staff_cultivation_assistant": 0,
+        "staff_sales_assistant|staff_brewing_assistant": 0,
+        "staff_sales_assistant|staff_expedition_guide": 0,
+        "staff_cultivation_assistant|staff_brewing_assistant": 0,
+        "staff_cultivation_assistant|staff_expedition_guide": 0,
+        "staff_brewing_assistant|staff_expedition_guide": 0
+      },
+      "front_layers": [
+        "herb",
+        "counter",
+        "cauldron",
+        "fire",
+        "counter_prop"
+      ],
+      "examples": {
+        "all": {
+          "png": "layouts/C-all-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        }
+      }
+    },
+    "D": {
+      "examples": {
+        "workshop_unchanged": {
+          "png": "layouts/D-workshop-3x.png",
+          "size": [
+            540,
+            249
+          ],
+          "empty_space_alpha_zero": true,
+          "partial_alpha": 0,
+          "passed": true
+        }
+      },
+      "portraits_png": "sprites/portraits-1x.png",
+      "overlap_total": 0
+    }
+  },
+  "comparison_rows": [
+    {
+      "staff": "판매 보조",
+      "A": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 81,
+        "hud": 156,
+        "furniture": 0,
+        "total": 237
+      },
+      "B": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      },
+      "C": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 2632,
+        "stock_bottles": 2579,
+        "hud": 216,
+        "furniture": 540,
+        "total": 5967,
+        "visible": 0.756,
+        "zone": "판매대 뒤"
+      },
+      "D": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      }
+    },
+    {
+      "staff": "재배 보조",
+      "A": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 9,
+        "hud": 780,
+        "furniture": 0,
+        "total": 789
+      },
+      "B": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      },
+      "C": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 1371,
+        "furniture": 18,
+        "total": 1389,
+        "visible": 0.61,
+        "zone": "약초대 뒤"
+      },
+      "D": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      }
+    },
+    {
+      "staff": "조제 보조",
+      "A": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 36,
+        "hud": 327,
+        "furniture": 0,
+        "total": 363
+      },
+      "B": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      },
+      "C": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 243,
+        "hud": 18,
+        "furniture": 0,
+        "total": 261,
+        "visible": 0.455,
+        "zone": "솥 뒤"
+      },
+      "D": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      }
+    },
+    {
+      "staff": "원정 길잡이",
+      "A": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 9,
+        "hud": 783,
+        "furniture": 0,
+        "total": 792
+      },
+      "B": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      },
+      "C": {
+        "keeper": 0,
+        "customers": 5736,
+        "sale_bottle": 2124,
+        "stock_bottles": 0,
+        "hud": 30,
+        "furniture": 72,
+        "total": 7962,
+        "visible": 1.0,
+        "zone": "원정 표지판 아래"
+      },
+      "D": {
+        "keeper": 0,
+        "customers": 0,
+        "sale_bottle": 0,
+        "stock_bottles": 0,
+        "hud": 0,
+        "furniture": 0,
+        "total": 0
+      }
+    }
+  ],
+  "workload": {
+    "A": {
+      "keyframes": {
+        "idle": 4,
+        "role_action": 8,
+        "walk_in_out": 0
+      },
+      "derived_cells_note": "호흡·깜빡임 64칸 아틀라스 × (대기+행동 2) × 4명 = 768칸, 기존 파이프라인으로 파생",
+      "other_art": "없음",
+      "code": [
+        "pixel_shop_scene.gd: 고용한 직원 중 1명을 고정 자리에 그리는 명령 1개(벽 소품 다음·바닥 가구 앞 순서, 솥이 하반신을 가림)",
+        "순번 규칙(예: 판매 N건 또는 몇 분마다 교대) · 저장 불필요(표시 전용)",
+        "축소·전체 실내 모드 정책(표시 안 함 권장) · 관리 화면 토글은 선택",
+        "검증: 모든 고용 조합 × 겹침 0 확인 스크립트"
+      ],
+      "size": "중",
+      "risk": "고정 자리가 약초대·HUD(약초 패널)와 겹친다 — 겹침 해소를 위해 HUD 이동 또는 자리 타협 필요",
+      "keyframes_total": 12
+    },
+    "B": {
+      "keyframes": {
+        "idle": 4,
+        "role_action": 8,
+        "walk_in_out": 0
+      },
+      "derived_cells_note": "A와 같음(768칸)",
+      "other_art": "왼쪽 확장 띠 원본 77×83(바닥 연장 + 벽 장식 최소 1~2점) — 기존 v9 배경 규칙대로 새로 그려야 함",
+      "code": [
+        "작업실 아트 폭 540→771(표시) · 창 크기·드래그 제한·창 위치 복원·클릭 통과 영역",
+        "workshop_layout.gd / pixel_shop_scene.gd / shop_art.gd / potion_display.gd / workshop_gauges.gd의 모든 표시 좌표(+231)",
+        "축소(캐릭터) 모드·전체 실내 모드 별도 판단 · 투명 배경·바닥 양끝 검증 재작성",
+        "기존 검증 스크립트(verify_pixel_*, verify_f2x_*)의 540 기준 상수 갱신"
+      ],
+      "size": "대",
+      "risk": "창이 43% 넓어져 바탕화면 점유가 커진다. 모든 좌표 상수와 검증이 함께 바뀐다.",
+      "keyframes_total": 12
+    },
+    "C": {
+      "keyframes": {
+        "idle": 4,
+        "role_action": 8,
+        "walk_in_out": 0
+      },
+      "derived_cells_note": "A와 같음(768칸) — 하반신이 가려져 행동은 상반신 위주로 그려도 됨",
+      "other_art": "없음(단, 가려지는 경계가 어색하면 설비별 가림 마스크 조정)",
+      "code": [
+        "직원 4명을 각각 설비 앞 그리기 순서 사이에 끼워 넣기(가구 그리기 순서 재배치 필요)",
+        "고용 여부별 표시 · 겹치는 HUD(약초 패널·수확 알림·재고 글자)와 이동 병 경로 조정",
+        "손님 대기 자리·판매 병 경로와 겹치는 판매대/표지판 자리는 별도 규칙(예: 판매 순간 숨김)",
+        "검증: 16가지 고용 조합 × 겹침·가림 비율"
+      ],
+      "size": "중~대",
+      "risk": "판매대·표지판 쪽은 판매 병 비행 경로와 손님 자리를 피할 수 없다(겹침 수 참고).",
+      "keyframes_total": 12
+    },
+    "D": {
+      "keyframes": {
+        "idle": 4,
+        "role_action": 0,
+        "walk_in_out": 0
+      },
+      "derived_cells_note": "없음(대기 1장 그대로 1배 표시)",
+      "other_art": "없음",
+      "code": [
+        "management_art.gd에 직원 초상 id 4개 · management_panel.gd 직원 행 아이콘을 32×48 초상으로 교체(또는 카드 추가)",
+        "assets 게시 스크립트(추가 전용) · 검증: 게시 픽셀 = 승인 스프라이트"
+      ],
+      "size": "소",
+      "risk": "작업실에서는 직원이 보이지 않는다(기획안의 '새 작업실 캐릭터는 필수 조건 아님'과 일치).",
+      "keyframes_total": 4
+    }
+  },
+  "passed": true
+}

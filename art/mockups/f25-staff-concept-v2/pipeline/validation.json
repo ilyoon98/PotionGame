@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "staff_sales_assistant": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "986c5a20ba6227bc9eb9017aeedcd0886d4ec5db9acc50459b7c55deae34155c",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_cultivation_assistant": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "82471436d9422252ee34ea0f60813e9bc3528184281c6ca05b6511eb54934bc9",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_brewing_assistant": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "f594ba09debe19490ed3fcc0dac58ee868287f35162d73f4ee48aac444fe52b2",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_expedition_guide": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "fca2882e0cd2f184023d1bb31549d7bdfe7876ea09b65dfa26065d6af22c210b",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

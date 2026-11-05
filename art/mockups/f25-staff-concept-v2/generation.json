@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-11-05",
+  "mode": "hand-edited 32x48 native pixel maps that start from the approved idle first frame of the closest-build character (no image generator, no face pasting); the .txt maps are the authoritative source",
+  "feedback": "사용자: \"지금 다른 캐릭터들 디자인 기존 디자인과 전혀 다른 거 같은데.\" (v1 → v2)",
+  "request": "사용자: \"직원 4명은 들어가기 너무 빡센데 일단 배치안과 컨셉이 필요할 거 같아. 어렵지만 캐릭터들 추가되는 것도 좋다고 생각해.\"",
+  "reference": {
+    "characters": "assets/pixel_v1/characters/*/idle-native.png (approved keeper + 4 customers, read only)",
+    "spec": "AGENTS.md 색 문법 · 픽셀 규격 · 캐릭터 규격(32×48, 머리 11~26행, 몸통 27~39, 다리 40~46, 발 46)",
+    "planning": "docs/성장과-단골-꾸미기-기획안.md 종업원 상세안",
+    "occupancy": "tools/build_f23_decor_v1.py build_masks()"
+  },
+  "legend": {
+    "#": {
+      "color": "#241C32",
+      "ramp": "outline"
+    },
+    "s": {
+      "color": "#F6D1AC",
+      "ramp": "skin"
+    },
+    "S": {
+      "color": "#DE9B88",
+      "ramp": "skin"
+    },
+    "r": {
+      "color": "#A65D64",
+      "ramp": "skin"
+    },
+    "c": {
+      "color": "#FFF0BC",
+      "ramp": "gold"
+    },
+    "g": {
+      "color": "#E9B95F",
+      "ramp": "gold"
+    },
+    "a": {
+      "color": "#A56A3D",
+      "ramp": "gold"
+    },
+    "w": {
+      "color": "#50333B",
+      "ramp": "wood"
+    },
+    "o": {
+      "color": "#C99463",
+      "ramp": "wood"
+    },
+    "L": {
+      "color": "#3D544D",
+      "ramp": "leaf"
+    },
+    "m": {
+      "color": "#827589",
+      "ramp": "stone"
+    },
+    "R": {
+      "color": "#9D4359",
+      "ramp": "fire"
+    },
+    "t": {
+      "color": "#9BE2CF",
+      "ramp": "teal"
+    },
+    "T": {
+      "color": "#24566A",
+      "ramp": "teal"
+    },
+    "k": {
+      "color": "#4A3C52",
+      "ramp": "stone"
+    }
+  },
+  "staff": {
+    "staff_sales_assistant": {
+      "employee": "sales_assistant",
+      "name": "판매 보조",
+      "concept": "머리띠 앞치마 점원",
+      "summary": "판매대를 지키는 점원. 엘프 대기 전신(왼쪽을 보는 3/4, 가는 몸통, 몸에서 떨어진 팔)에 짙은 밤색 머리, 크림 머리띠, 뒤통수의 올림머리(크림 리본), 장밋빛 원피스와 가운데 크림 앞치마, 무릎 위로 퍼지는 치마.",
+      "silhouette": "뒤통수 위로 솟은 동그란 올림머리 + 앞머리 위 가로 머리띠 + 무릎 위에서 퍼지는 치마.",
+      "pose": "엘프와 같은 대기(양팔을 몸에서 조금 떨어뜨려 내림). 행동 후보는 가벼운 인사·손 흔들기.",
+      "distinct": "엘프와 같은 몸이지만 뾰족 귀·잎 장식·옆땋은 머리·초록 옷이 모두 없다. 치마 실루엣과 올림머리가 새로 생겼다.",
+      "base": "elf",
+      "kept": "얼굴 틀(눈 x11/x16·22~23행, 턱 계단, 왼쪽 볼 끝), 머리 외곽 대부분, 몸통·팔·손(37~38행)·다리·발 위치",
+      "changes": "머리색 갈색→#50333B, 잎 장식·옆땋은 머리 제거→뒤통수 올림머리와 크림 리본, 정수리 삐침 머리 제거, 크림 머리띠(14행), 뾰족 귀→짧은 둥근 귀, 한쪽 어깨 잎 상의·반바지→장밋빛 원피스(어깨 덮는 퍼프)·크림 앞치마·퍼진 치마(36~40행), 허리 노출 덮음, 손목 띠·신발 #50333B",
+      "eyes": {
+        "x": [
+          11,
+          16
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "materials": {
+        "outline": "#241C32",
+        "skin": "#F6D1AC",
+        "dress": "#A65D64",
+        "apron_headband_ribbon_collar": "#FFF0BC",
+        "hair_cuffs_shoes": "#50333B"
+      }
+    },
+    "staff_cultivation_assistant": {
+      "employee": "cultivation_assistant",
+      "name": "재배 보조",
+      "concept": "밀짚모자 정원사",
+      "summary": "약초대를 돌보는 정원사. 여행자 대기 전신(왼쪽 3/4, 같은 자세·손 위치)에 넓고 납작한 밀짚모자(꼭대기 새싹), 구릿빛 머리와 금빛 머릿결, 노란 셔츠에 짙은 초록 멜빵 작업복, 앞쪽 손의 구리 물뿌리개.",
+      "silhouette": "머리보다 넓은 평평한 챙 + 앞쪽 아래로 튀어나온 물뿌리개 주둥이. 배낭이 없어 등이 곧다.",
+      "pose": "여행자와 같은 대기에서 앞손으로 물뿌리개를 든다. 행동 후보는 물 주기(기울이기 2장).",
+      "distinct": "여행자의 배낭·침낭·크림 셔츠가 없고, 모자와 물뿌리개로 윤곽이 바뀐다. 뾰족 모자가 아니라 납작한 챙이다.",
+      "base": "traveler",
+      "kept": "얼굴 틀(눈 x10/x14·22~23행, 턱 계단), 머리카락 결 위치, 몸통·소매·양손(34~35행)·다리·장화 형태",
+      "changes": "머리 윗부분 위에 밀짚모자(6~14행, 챙 25픽셀), 머리색 #C99463→#A56A3D·결 #916047→#E9B95F, 피부 #DE9B88, 크림 셔츠→노란 셔츠, 갈색 조끼·허리띠·바지→초록 멜빵 작업복(가슴판), 배낭·침낭 제거, 앞손에 물뿌리개, 장화 #A56A3D",
+      "eyes": {
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "materials": {
+        "outline": "#241C32",
+        "skin_tan": "#DE9B88",
+        "straw_hat_shirt_hair_light": "#E9B95F",
+        "hair_band_can_boots": "#A56A3D",
+        "overalls_sprout": "#3D544D"
+      }
+    },
+    "staff_brewing_assistant": {
+      "employee": "brewing_assistant",
+      "name": "조제 보조",
+      "concept": "고글 견습 조제사",
+      "summary": "솥 옆에서 일하는 견습 조제사. 여마법사 대기 전신(왼쪽 3/4)에서 모자를 벗기고 짧은 와인색 단발과 목덜미 꽁지, 이마에 올린 고글(회색 렌즈 2개·끈), 2단 회색 조제 가운(무릎 길이), 어두운 스타킹과 와인색 장화, 앞손의 둥근 플라스크.",
+      "silhouette": "모자 없는 둥근 단발 + 이마의 고글 띠 + 무릎에서 끝나는 가운과 드러난 다리 + 앞으로 내민 둥근 플라스크.",
+      "pose": "여마법사와 같은 대기에서 앞손으로 플라스크를 든다. 행동 후보는 플라스크 흔들기·솥에 붓기.",
+      "distinct": "보라·모자·긴 머리가 모두 없다. 와인색(#9D4359)은 고양이 도적 목도리와 같은 색이지만 머리·장화·물약에만 쓴다.",
+      "base": "mage",
+      "kept": "얼굴 틀(눈 x10/x14·22~23행, 턱 계단, 얼굴 왼쪽 앞머리 그림자), 가운 주름 위치(여마법사 로브의 2단 명암을 회색 2단으로), 양손 위치(34~37행)",
+      "changes": "모자 제거, 모자에 가려 있던 머리 윗부분은 같은 얼굴 틀의 여행자 머리 외곽선을 옮겨 단발로, 긴 보라 머리→와인색 단발+짧은 꽁지, 고글 추가, 보라 로브→회색 가운(#827589/#4A3C52), 책→플라스크(회색 유리 목·와인색 물약), 로브 길이 43→39행·다리 새로",
+      "eyes": {
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "materials": {
+        "outline": "#241C32",
+        "skin": "#F6D1AC",
+        "smock_lens_glass": "#827589",
+        "smock_shadow_stockings": "#4A3C52",
+        "hair_boots_potion": "#9D4359"
+      }
+    },
+    "staff_expedition_guide": {
+      "employee": "expedition_guide",
+      "name": "원정 길잡이",
+      "concept": "후드 등불 길잡이",
+      "summary": "원정을 이끄는 길잡이. 주인공 대기 전신(오른쪽 3/4, 망토 자세)에서 마녀 모자를 둥근 청록 후드로, 열린 보라 망토를 청록 여행 망토로 바꾸고 모래색 머리·턱수염, 금빛 목수건, 뒤쪽 손의 등불 지팡이를 더했다.",
+      "silhouette": "둥근 후드 + 몸 왼쪽(뒤)으로 솟은 키보다 높은 지팡이와 등불. 뾰족한 부분이 없다.",
+      "pose": "주인공과 같은 대기에서 뒤쪽 손으로 지팡이를 짚는다. 행동 후보는 등불 들기·원정 출발/귀환 걷기.",
+      "distinct": "주인공과 같은 망토 자세지만 모자·보라색·맨가슴이 없고 후드와 지팡이가 윤곽을 바꾼다.",
+      "base": "keeper",
+      "kept": "얼굴 틀(눈 x17/x19·19~20행, 턱 계단), 망토 자락·팔·손(33~35행)·반바지·장화의 형태와 자세",
+      "changes": "마녀 모자 전체 제거→머리를 감싸는 둥근 후드(8~24행, 접힌 선), 늘어진 모자 끝 제거, 보라→#24566A, 갈색 머리→#C99463·턱수염, 맨가슴→모래색 튜닉, 무릎→청록 바지, 금 목수건, 뒤쪽 손에 쥔 지팡이와 금빛 등불(1~46행)",
+      "eyes": {
+        "x": [
+          17,
+          19
+        ],
+        "y": [
+          19,
+          20
+        ]
+      },
+      "materials": {
+        "outline": "#241C32",
+        "skin": "#F6D1AC",
+        "hood_cloak_trousers": "#24566A",
+        "hair_beard_tunic_staff_boots": "#C99463",
+        "lantern_scarf": "#E9B95F"
+      }
+    }
+  },
+  "new_palette_colors": 0,
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json"
+}
