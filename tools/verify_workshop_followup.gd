@@ -71,11 +71,10 @@ func run() -> void:
 		panel.result_button.pressed.emit()
 	assert(Compare.equivalent(baseline, shop.state.to_data()))
 	assert(panel.heading.get_rect().end.x < panel.result_button.position.x)
-	# All ten sheets use exact 32x40 regions and a separate species path.
+	# All eleven sheets use exact 32x40 regions and a separate species path.
 	var growth_count := 0
 	for source in Content.DATA.materials:
-		# F26 dawn bloom has no approved 64x80 growth sheet (outside its approval scope); no stand-in is used.
-		if source.id in ["moon_mushroom", "dawn_bloom"]:
+		if source.id in ["moon_mushroom"]:
 			assert(Art.growth_path(source.id).is_empty())
 			continue
 		growth_count += 1
@@ -83,7 +82,7 @@ func run() -> void:
 			var texture: AtlasTexture = Art.growth_frame(source.id, phase)
 			assert(texture.atlas.resource_path == Art.growth_path(source.id) and texture.region.size == Vector2(32, 40))
 			assert(Rect2(Vector2.ZERO, texture.atlas.get_size()).encloses(texture.region))
-	assert(growth_count == 10)
+	assert(growth_count == 11)
 	# Representatives stay fixed while every real source keeps running independently.
 	var p: RefCounted = shop.state.progression
 	p.owned = ["vigor", "moon", "focus"]

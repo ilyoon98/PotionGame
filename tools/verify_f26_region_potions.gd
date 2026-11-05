@@ -69,6 +69,12 @@ func pixels(path: String) -> PackedByteArray:
 	image.convert(Image.FORMAT_RGBA8)
 	return image.get_data()
 
+## RGBA with fully transparent pixels zeroed; the importer's alpha-border fix recolours them.
+func visible_pixels(data: PackedByteArray) -> PackedByteArray:
+	for i in range(0, data.size(), 4):
+		if data[i + 3] == 0: data[i] = 0; data[i + 1] = 0; data[i + 2] = 0
+	return data
+
 func texture_pixels(texture: Texture2D) -> PackedByteArray:
 	var image := texture.get_image()
 	image.convert(Image.FORMAT_RGBA8)
@@ -314,9 +320,13 @@ func test_art() -> void:
 	for pair in [[MATERIAL, "materials/dawn_bloom_icon.png", "dawn_bloom_icon"], [REGION, "regions/dawn_lighthouse_icon.png", "dawn_lighthouse_icon"]]:
 		var texture := ItemArt.icon(pair[0])
 		check(texture.resource_path == "res://assets/content_expansion_v1/" + pair[1] and texture_pixels(texture) == pixels(MOCK + "sprites/%s.png" % pair[2]), "%s icon = approved" % pair[0])
-	# The 64x80 planter growth sheet was outside the approval: none is published or substituted.
-	check(ItemArt.growth_path(MATERIAL).is_empty() and not FileAccess.file_exists("res://assets/content_expansion_v1/materials/dawn_bloom_growth.png"), "No growth sheet stand-in for dawn bloom")
-	check(ItemArt.growth_frame(MATERIAL, 0.5) == ItemArt.icon(MATERIAL), "Any growth-frame lookup falls back to the approved icon")
+	# The 64x80 planter growth sheet v2 was approved separately (2026-11-05) and is published byte for byte.
+	const GROWTH := "res://assets/content_expansion_v1/materials/dawn_bloom_growth.png"
+	check(ItemArt.growth_path(MATERIAL) == GROWTH and FileAccess.get_file_as_bytes(GROWTH) == FileAccess.get_file_as_bytes("res://art/mockups/f26-dawn-bloom-growth-v2/sheets/dawn_bloom_growth.png"), "Dawn bloom growth sheet = approved v2 file")
+	var sheet: Texture2D = load(GROWTH)
+	check(sheet.get_size() == Vector2(64, 80) and visible_pixels(texture_pixels(sheet)) == visible_pixels(pixels("res://art/mockups/f26-dawn-bloom-growth-v2/sheets/dawn_bloom_growth.png")), "Growth sheet 64x80, visible pixels unchanged")
+	var frames := [0.0, 0.4, 0.8].map(func(phase): return ItemArt.growth_frame(MATERIAL, phase))
+	check(frames.all(func(frame): return frame is AtlasTexture and frame.atlas.resource_path == GROWTH and frame.region.size == Vector2(32, 40)) and frames[0].region != frames[2].region, "Garden shows three 32x40 growth stages")
 	check(Catalog.DATA.potions.size() == 40, "Catalog has 36 + 4 potion rows")
 
 func test_collection() -> void:
@@ -384,7 +394,7 @@ func test_ui(base: RefCounted) -> void:
 	panel.refresh()
 	await process_frame
 	var herb: Dictionary = panel.rows.get(panel.material_row(MATERIAL), {})
-	check(not herb.is_empty() and not herb.has("growth_preview"), "Herb tab lists dawn bloom without a growth stand-in")
+	check(not herb.is_empty() and herb.has("growth_preview") and herb.growth_preview.texture is AtlasTexture and herb.growth_preview.texture.atlas.resource_path == ItemArt.growth_path(MATERIAL), "Herb tab shows the approved dawn bloom growth sheet")
 	shop.queue_free()
 	await process_frame
 
