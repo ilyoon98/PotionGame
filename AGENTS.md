@@ -4,7 +4,7 @@
 
 ## 최신 승인과 제작 순서 · 2026-10-13
 
-- **F25 직원 4명 배치 D·아이콘 유지 · 2026-11-05:** 직원 컨셉 v2(브랜치 `feature/f25-staff-concept`, `art/mockups/f25-staff-concept-v2/`)에 사용자가 "너 진짜 디자인 못하네 일단 D로하자"라고 답했다: 작업실에는 직원을 넣지 않는다. 실제 관리 화면 캡처(`tools/capture_f25_staff_portraits.gd`, 그 브랜치)에서 32×48 1배 초상이 지금 48칸 아이콘보다 읽기 어려워 비교를 보여 줬고 사용자가 "Keep icons for now"를 골랐다. 관리 · 가구·직원의 직원 행은 지금 아이콘(앞치마·정원 도구·절구·배낭)을 그대로 쓴다. v2 캐릭터 디자인은 승인되지 않았고 게시·연결하지 않는다. 초상을 다시 만들면 사용자가 지적하는 부분부터 고친 v3 후보로 따로 진행한다.
+- **F25 직원 4명 배치 D·아이콘 유지 · 2026-11-05:** 직원 컨셉 v2(브랜치 `feature/f25-staff-concept`, `art/mockups/f25-staff-concept-v2/`)에 사용자가 "너 진짜 디자인 못하네 일단 D로하자"라고 답했다: 작업실에는 직원을 넣지 않는다. 실제 관리 화면 캡처(`tools/capture_f25_staff_portraits.gd`, 그 브랜치)에서 32×48 1배 초상이 지금 48칸 아이콘보다 읽기 어려워 비교를 보여 줬고 사용자가 "Keep icons for now"를 골랐다. 관리 · 가구·직원의 직원 행은 지금 아이콘(앞치마·정원 도구·절구·배낭)을 그대로 쓴다. v2 캐릭터 디자인은 승인되지 않았고 게시·연결하지 않는다. 영어 버튼으로 고른 결정은 한국어로 다시 확인했다("지금 아이콘 유지"). 사용자 메모: 판매 보조 얼굴, 원정 길잡이 옷, 직원 4명 전부 신발을 고칠 것 — 사용자가 직접 고친다고 했으므로 어시스턴트는 다시 그리지 않는다.
 
 - **F26 여명초 화분 성장 그림 v2 승인과 연결 · 2026-11-05:** v1(사용자: "기존꺼랑 너무 다른데")을 보존하고 기존 성장 그림처럼 승인된 화분 픽셀을 그대로 쓰는 v2(`art/mockups/f26-dawn-bloom-growth-v2/`, 재현 `tools/build_f26_dawn_bloom_growth_v2.py`)를 만들었고 사용자가 "연결해줘"라고 답했다. 기존 성장 그림 10종과 같은 규칙 밖 예외(5색 초과)로 승인했다. 시트를 바이트 그대로 `assets/content_expansion_v1/materials/dawn_bloom_growth.png`에 복사하고 `assets/content_expansion_v1/catalog.json`에 여명초 `materials` 행(growth_path·icon_path)만 추가했다. 코드 변경 없음, 관리 · 약초 탭 여명초 행에 성장 미리보기가 나온다. 검증 `tools/verify_f26_region_potions.gd`(파일 바이트=승인본, 보이는 픽셀 동일 — 가져오기의 alpha border 보정은 투명 픽셀 RGB만 바꾼다, 32×40 3단계, 약초 탭 미리보기)와 `tools/verify_workshop_followup.gd` 성장 그림 11종(이 도구의 앞쪽 단계 실패는 이전부터 있던 것).
 
