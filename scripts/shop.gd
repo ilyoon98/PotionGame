@@ -808,6 +808,7 @@ func _update_interface() -> void:
 	art.keeper_rest = state.keeper.state if state.keeper.resting() else ""
 	art.aging_open = state.aging.opened()
 	art.counter_prop = state.decor.counter_prop()
+	art.souvenir = state.decor.souvenir()
 	art.customer_phase = state.customer_elapsed / state.customer_interval()
 	art.customer_interval = state.customer_interval()
 	art.queue_redraw()
@@ -1110,11 +1111,15 @@ func perform_aging_action(track: String, expected_next_level: int) -> Dictionary
 
 ## F23: buy a counter prop once, or equip/remove an owned one. Rolls back on a failed save.
 func perform_decor_action(id: String) -> Dictionary:
+	return _decor_change(func(): return state.decor.act_souvenir(state, id) if state.Decor.is_souvenir(id) else state.decor.act(state, id))
+
+
+func _decor_change(change: Callable) -> Dictionary:
 	if not _owns_game_session(): return {"ok": false, "error": "실행 보호가 종료되었어요"}
 	var before: Dictionary = state.decor.to_data()
 	var previous_gold: int = state.gold
 	var previous_investment: int = state.progression.totals.manual_spent
-	var result: Dictionary = state.decor.act(state, id)
+	var result: Dictionary = change.call()
 	if not result.get("ok", false): return result
 	var saved := bool(get_meta("decor_save_fixture").call()) if test_mode and has_meta("decor_save_fixture") else _save()
 	if not saved:

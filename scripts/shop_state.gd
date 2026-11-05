@@ -1016,6 +1016,7 @@ func load_data(data: Variant) -> bool:
 	# v16 and older own no decoration.
 	var saved_decor := Decor.new()
 	if data.version >= 17 and not saved_decor.load_data(data.get("decor")): return false
+	if not saved_decor.souvenir().is_empty() and not saved_regulars.souvenirs().has(saved_decor.souvenir()): return false
 	# is assigned. Versions1..9 keep their existing paid batch as retail.
 	contracts = saved_contracts
 	stock_protection = saved_protection

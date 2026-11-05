@@ -13728,6 +13728,22 @@
     "decor/decor_dried_vase.png": {
       "source": "art/mockups/f23-decor-v1/sprites/decor_dried_vase.png",
       "sha256": "ccc49b42e839c853dbc3c6e2a9c88f7112e6111f1d5cd5c190d5dfcf8aaac4b3"
+    },
+    "souvenirs/souvenir_compass_mini.png": {
+      "source": "art/mockups/f23-souvenir-mini-v1/sprites/souvenir_compass_mini.png",
+      "sha256": "426b0b950e244600d9f3bfc5dd39eeb24458717f1a600a851271819c67f8f4b4"
+    },
+    "souvenirs/souvenir_bookmark_mini.png": {
+      "source": "art/mockups/f23-souvenir-mini-v1/sprites/souvenir_bookmark_mini.png",
+      "sha256": "5b4ec44922aa31985df638fee9f3c84867e50d826413acebb0646b712d113e77"
+    },
+    "souvenirs/souvenir_leaf_brooch_mini.png": {
+      "source": "art/mockups/f23-souvenir-mini-v1/sprites/souvenir_leaf_brooch_mini.png",
+      "sha256": "9b2d4383d2b8f9c9665d05e1fbe69f8479e150e6d2d0f89fc87319e1c847cf36"
+    },
+    "souvenirs/souvenir_silver_bell_mini.png": {
+      "source": "art/mockups/f23-souvenir-mini-v1/sprites/souvenir_silver_bell_mini.png",
+      "sha256": "807fa96c6bf8bdd3f79f93722bc483e2247de5bdbc3d36b34b56844c366dcb62"
     }
   },
   "props": {
@@ -14072,5 +14088,11 @@
   "decor": {
     "decor_teacup": "res://assets/pixel_v1/decor/decor_teacup.png",
     "decor_dried_vase": "res://assets/pixel_v1/decor/decor_dried_vase.png"
+  },
+  "souvenirs_mini": {
+    "souvenir_compass_mini": "res://assets/pixel_v1/souvenirs/souvenir_compass_mini.png",
+    "souvenir_bookmark_mini": "res://assets/pixel_v1/souvenirs/souvenir_bookmark_mini.png",
+    "souvenir_leaf_brooch_mini": "res://assets/pixel_v1/souvenirs/souvenir_leaf_brooch_mini.png",
+    "souvenir_silver_bell_mini": "res://assets/pixel_v1/souvenirs/souvenir_silver_bell_mini.png"
   }
 }

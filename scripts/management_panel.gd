@@ -303,6 +303,9 @@ func _ready() -> void:
 	_section(UPGRADES, "꾸미기")
 	for id in host.state.Decor.ORDER:
 		_row(UPGRADES, id, host.state.Decor.ITEMS[id].name, id, "구매", func(): _act_decor(id))
+	# Souvenirs come from the regulars record; the 12x12 workshop art is an exact 4x in the 48px icon.
+	for id in host.state.Decor.souvenir_ids():
+		_row(UPGRADES, "decor_" + id, host.state.Decor.souvenir_name(id), id + "_mini", "장착", func(): _act_decor(id))
 	_section(UPGRADES, "직원")
 	for employee in Content.DATA["employees"]:
 		var id: String = employee["id"]
@@ -1173,6 +1176,19 @@ func _refresh_decor(state: RefCounted) -> void:
 		_text(row.extra, "판매대 소품 칸은 1개예요. 다른 소품을 장착하면 바뀌고, 산 소품은 계속 소장해요." + ("
 " + decor_feedback if not decor_feedback.is_empty() else ""))
 		CurrencyText.button_value(row.button, str(item.reason) if not item.reason.is_empty() else "구매 · %s G" % host._number(int(item.cost)) if not item.owned else str(item.action))
+		row.button.disabled = not bool(item.can_act)
+		_center_purchase_button(row.button)
+	for id in state.Decor.souvenir_ids():
+		var item: Dictionary = state.decor.souvenir_view(state, id)
+		var row: Dictionary = rows["decor_" + id]
+		row.completed = false
+		row.work.box.hide(); row.stock.box.hide()
+		_text(row.title, "%s · 기념품" % item.name)
+		_text(row.detail, "창틀 위에 놓여 있어요" if item.equipped else "소장" if item.owned else "단골 손님에게 받는 기념품")
+		_text(row.summary, "작업실 창틀 위에 놓는 장식 · 기능 효과 없음")
+		_text(row.extra, "기념품 칸은 1개예요. 해당 손님이 단골(기록 60) 단계가 되면 받아요." + ("
+" + decor_feedback if not decor_feedback.is_empty() else ""))
+		CurrencyText.button_value(row.button, str(item.action))
 		row.button.disabled = not bool(item.can_act)
 		_center_purchase_button(row.button)
 

@@ -46,6 +46,10 @@ const DESCRIPTIONS := {
 	"souvenir_silver_bell": "단골 기념품 · 작은 은방울",
 	"decor_teacup": "판매대 소품 · 작은 찻잔",
 	"decor_dried_vase": "판매대 소품 · 말린 꽃병",
+	"souvenir_compass_mini": "작업실 기념품 · 낡은 나침반",
+	"souvenir_bookmark_mini": "작업실 기념품 · 별무늬 책갈피",
+	"souvenir_leaf_brooch_mini": "작업실 기념품 · 잎사귀 브로치",
+	"souvenir_silver_bell_mini": "작업실 기념품 · 작은 은방울",
 }
 ## First frame (32×48) of each approved keeper pose sheet (16×4 grid).
 const KEEPER_POSES := {"keeper": "idle", "keeper_sleep": "sleep", "keeper_faint": "faint"}

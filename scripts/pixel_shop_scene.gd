@@ -136,6 +136,8 @@ static func workshop_commands(view: Control) -> Array[Dictionary]:
 	if view.aging_open: out.append(command("aging_cask", Catalog.texture(Catalog.DATA.props.aging_cask), Vector2(219,0)))
 	# F23 approved layout A: counter-top prop at the keeper end, behind bottles and people.
 	if not view.counter_prop.is_empty(): out.append(command("counter_prop", Catalog.texture(Catalog.DATA.decor[view.counter_prop]), Vector2(288,120)))
+	# F23 approved spot A (2026-11-05): the small souvenir stands on the window frame.
+	if not view.souvenir.is_empty(): out.append(command("souvenir", Catalog.texture(Catalog.DATA.souvenirs_mini[view.souvenir + "_mini"]), Vector2(42,0)))
 	var stock_start := out.size()
 	for i in view.bottles.visible_capacity():
 		if not view.bottles.slots[i].is_empty():

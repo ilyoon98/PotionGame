@@ -1,23 +1,22 @@
 {
   "schema_version": 1,
-  "status": "candidate",
-  "approved_by_user": false,
-  "approved_on": null,
-  "user_reply": null,
+  "status": "approved",
+  "approved_by_user": true,
+  "approved_on": "2026-11-05",
+  "user_reply": "A안 창틀 위",
   "review": "art/mockups/f23-souvenir-mini-v1/review.html",
-  "runtime_integrated": false,
+  "runtime_integrated": true,
   "scope": {
-    "souvenir_compass_mini": "작업실용 작은 기념품 · 낡은 나침반 (12×12)",
-    "souvenir_bookmark_mini": "작업실용 작은 기념품 · 별무늬 책갈피 (12×12)",
-    "souvenir_leaf_brooch_mini": "작업실용 작은 기념품 · 잎사귀 브로치 (12×12)",
-    "souvenir_silver_bell_mini": "작업실용 작은 기념품 · 작은 은방울 (12×12)",
-    "spot_A": "A안 · 창틀 위에 올려 두기",
-    "spot_B": "B안 · 창문과 숙성통 사이 벽 못에 걸기 (3×3 벽 못 그림 포함)",
+    "souvenir_compass_mini": "작업실용 작은 기념품 · 낡은 나침반 (12×12, 승인)",
+    "souvenir_bookmark_mini": "작업실용 작은 기념품 · 별무늬 책갈피 (12×12, 승인)",
+    "souvenir_leaf_brooch_mini": "작업실용 작은 기념품 · 잎사귀 브로치 (12×12, 승인)",
+    "souvenir_silver_bell_mini": "작업실용 작은 기념품 · 작은 은방울 (12×12, 승인)",
+    "spot_A": "채택 · 창틀 위 (12×12 캔버스 원점 원본 14,0 = 표시 42,0)",
+    "spot_B": "채택하지 않음 (벽 못 그림도 게시하지 않음)",
     "originals": "관리 창 32×32 기념품(assets/pixel_v1/souvenirs)은 그대로 유지"
   },
-  "pending_decisions": [
-    "작은 기념품 4종 디자인 승인 또는 수정 지시",
-    "기념품 자리 A/B 선택"
-  ],
-  "note": "사용자 승인 전 후보. assets/ 게시, 장착 로직·관리 UI 연결은 승인 후 별도 작업으로 진행한다."
+  "decisions": {
+    "mini_mode": "축소(캐릭터) 모드·전체 실내 화면에는 표시하지 않는다(판매대 소품과 같은 규칙)"
+  },
+  "runtime": "tools/publish_f23_souvenir_mini_v1.py → assets/pixel_v1/souvenirs/{id}_mini.png, catalog.json souvenirs_mini"
 }

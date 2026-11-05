@@ -60,7 +60,9 @@ func run() -> void:
 		func(d): d.decor.owned = ["decor_dried_vase"],
 		func(d): d.decor.equipped = {},
 		func(d): d.decor.equipped.counter = 3,
-		func(d): d.decor.version = 2,
+		func(d): d.decor.version = 3,
+		func(d): d.decor.equipped.souvenir = "decor_teacup",
+		func(d): d.decor.equipped.souvenir = "souvenir_compass",
 		func(d): d.decor = [],
 		func(d): d.erase("decor"),
 	]
@@ -112,7 +114,40 @@ func run() -> void:
 	for id in ["decor_teacup", "decor_dried_vase"]:
 		var icon: Texture2D = ManagementArt.icon(id)
 		check(icon != null and icon.get_size() == Vector2(16, 16), "%s list icon is a 16x16 crop (3x in the 48px slot)" % id)
-	check(not shop.companion.get_script().source_code.contains("counter_prop"), "Character mode does not draw counter props")
+	check(not shop.companion.get_script().source_code.contains("counter_prop") and not shop.companion.get_script().source_code.contains("souvenirs_mini"), "Character mode draws no counter prop or souvenir")
+	# Souvenir slot (approved 2026-11-05, spot A on the window frame).
+	var row_compass: Dictionary = panel.rows.decor_souvenir_compass
+	check(row_compass.button.disabled and row_compass.button.text == "단골이 되면 받아요", "Souvenir not yet received cannot be equipped")
+	check(not shop.perform_decor_action("souvenir_compass").ok and shop.state.decor.souvenir().is_empty(), "Shop refuses an unreceived souvenir")
+	shop.state.regulars.points = {"traveler": 60, "mage": 60}
+	panel.refresh()
+	check(not row_compass.button.disabled and row_compass.button.text == "장착", "Received souvenir offers equip")
+	var gold_before: int = shop.state.gold
+	row_compass.button.pressed.emit()
+	check(shop.state.decor.souvenir() == "souvenir_compass" and shop.state.gold == gold_before and row_compass.button.text == "해제", "Equipping a souvenir is free")
+	check(shop.perform_decor_action("souvenir_bookmark").ok and shop.state.decor.souvenir() == "souvenir_bookmark", "Equipping another souvenir swaps the slot")
+	check(shop.state.decor.counter_prop() == "decor_dried_vase", "Counter and souvenir slots are independent")
+	shop._update_interface()
+	commands = shop.art.render_commands()
+	var hung := role(commands, "souvenir")
+	check(hung >= 0 and commands[hung].rect == Rect2(42, 0, 36, 36) and hung > role(commands, "window"), "Souvenir stands on the window frame at approved spot A (42,0), 3x of 12x12")
+	for id in Decor.souvenir_ids():
+		var mini := Image.load_from_file(ProjectSettings.globalize_path("res://art/mockups/f23-souvenir-mini-v1/sprites/%s_mini.png" % id))
+		var shown: Image = Catalog.texture(Catalog.DATA.souvenirs_mini[id + "_mini"]).get_image()
+		mini.convert(Image.FORMAT_RGBA8); shown.convert(Image.FORMAT_RGBA8)
+		check(mini.get_size() == Vector2i(12, 12) and mini.get_data() == shown.get_data(), "%s mini pixels equal the approved sprite" % id)
+		check(ManagementArt.icon(id + "_mini").get_size() == Vector2(12, 12), "%s row icon is the 12x12 mini (4x in 48px)" % id)
+	var souvenir_save := State.new()
+	check(souvenir_save.load_data(M.data(shop.state)) and souvenir_save.decor.souvenir() == "souvenir_bookmark", "Equipped souvenir survives a save roundtrip")
+	var lost: Dictionary = M.data(shop.state); lost.regulars.points = {}
+	check(not State.new().load_data(lost), "A save with an equipped but unreceived souvenir is rejected")
+	var old_decor: Dictionary = M.data(State.new()); old_decor.decor = {"version": 1, "owned": ["decor_teacup"], "equipped": {"counter": "decor_teacup"}}
+	var upgraded := State.new()
+	check(upgraded.load_data(old_decor) and upgraded.decor.counter_prop() == "decor_teacup" and upgraded.decor.souvenir().is_empty() and upgraded.to_data().decor.version == 2, "Decor record v1 migrates with an empty souvenir slot")
+	shop.perform_decor_action("souvenir_bookmark")
+	shop._update_interface()
+	check(role(shop.art.render_commands(), "souvenir") < 0, "Removed souvenir is not drawn")
+	shop.perform_decor_action("souvenir_compass")
 	# Engine captures for visual review (rendering driver only).
 	var captured := 0
 	if DisplayServer.get_name() != "headless":
@@ -121,6 +156,7 @@ func run() -> void:
 		panel.hide()
 		for id in ["decor_teacup", "decor_dried_vase"]:
 			shop.state.decor.equipped.counter = id
+			shop.state.decor.equipped.souvenir = "souvenir_compass" if id == "decor_teacup" else "souvenir_bookmark"
 			shop._update_interface()
 			shop.art.queue_redraw()
 			await process_frame
