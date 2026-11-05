@@ -1,0 +1,2170 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "review_scale": 6,
+  "palette": "art/palette.hex (approved 24)",
+  "pipeline": {
+    "tool": "tools/process_pixel_art.py",
+    "manifest": "art/mockups/f27-region-potions-v1/manifest.json",
+    "report": "art/mockups/f27-region-potions-v1/pipeline/validation.json",
+    "status": "passed",
+    "stage_order": [
+      "background_cleanup",
+      "native_grid",
+      "material_ramp_remap",
+      "validation"
+    ]
+  },
+  "derivation_rule": "모든 그림은 승인된 그림의 픽셀에서 파생(병: 승인 병 행 이어 붙이기 + 액체 글자 재색, 솥: 액체 마스크만, 아이콘: F26 승인 아이콘 + 문양 교체, 성장: 여명초 v2 + 꽃잎 재색·문양 교체). provenance에 출처 파일 해시를 기록.",
+  "sprites": {
+    "warmth_bottle": {
+      "name": "온기 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "B",
+          "color": "#F6D1AC",
+          "ramp": "skin"
+        },
+        "liquid_dark": {
+          "letter": "A",
+          "color": "#C99463",
+          "ramp": "wood"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 1,
+        "skin": 1
+      },
+      "opaque_pixels": 64,
+      "lighting": {
+        "top_left_mean": 0.6055,
+        "bottom_right_mean": 0.5165,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "40694e8616218d1f2f7326166b4b2409c1f88d220f0c91e96fc94dd322dd94c1",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/warmth_bottle.txt",
+      "description": "활력 계열 `vigor`의 0~9행(각진 어깨·안쪽 반짝임, 꿀단지 몸통) + 첫 물약 `health`의 10~11행(작은 굽). 살구 크림 + 꿀빛.",
+      "provenance": {
+        "segments": [
+          {
+            "bottle": "vigor",
+            "rows": [
+              0,
+              9
+            ],
+            "source": "assets/pixel_v1/potions/vigor.png",
+            "source_sha256": "dfc9c22ff2584d8cc7274e170d3daf1225eaf3796ab84f00aa14b33dd8b29830",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#DE7356",
+              "A": "#9D4359"
+            }
+          },
+          {
+            "bottle": "health",
+            "rows": [
+              10,
+              11
+            ],
+            "source": "assets/pixel_v1/potions/health.png",
+            "source_sha256": "e221e15fc59a53f30c98576f7ea109400e1ab70838f0ecca164a78bc909f269c",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#DE9B88",
+              "A": "#A65D64"
+            }
+          }
+        ],
+        "edits": [],
+        "edited_pixels": 0,
+        "note": "실루엣·외곽선·코르크·유리 반짝임은 위 승인 병의 행 그대로. 액체 두 글자만 새 램프로."
+      }
+    },
+    "warmth_icon": {
+      "name": "온기 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "D",
+          "color": "#F6D1AC",
+          "ramp": "skin"
+        },
+        "emblem": {
+          "letter": "L",
+          "color": "#C99463",
+          "ramp": "wood"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 1,
+        "skin": 1
+      },
+      "opaque_pixels": 550,
+      "lighting": {
+        "top_left_mean": 0.6096,
+        "bottom_right_mean": 0.646,
+        "top_left_lit": false
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "94bb80378bfb861e44c1cccbc4414a198ed035f0457d421f9423acc412d9ec6d",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/warmth_icon.txt",
+      "description": "승인된 F26 일월의 물약 아이콘(받침 둥근 병) 실루엣 그대로, 몸통을 살구 크림으로, 해·달 문양 자리에 꿀빛 하트.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_icon.txt",
+        "base_published": "assets/content_expansion_v1/potions/sun_moon_elixir_icon.png",
+        "base_published_sha256": "3b8fd380aa45e7323aab0274769f3ef6e1e3188263fc9a60c7d1160f890d45f4",
+        "base_map_renders_published_pixels": true,
+        "silhouette_identical_to_base": true,
+        "letters_changed": 111
+      }
+    },
+    "warmth_recipe": {
+      "name": "온기 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "seal": {
+          "letter": "D",
+          "color": "#C99463",
+          "ramp": "wood"
+        },
+        "seal_motif": {
+          "letter": "L",
+          "color": "#F6D1AC",
+          "ramp": "skin"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "wood": 1,
+        "skin": 1
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.6076,
+        "bottom_right_mean": 0.5752,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "3280de8cdd6e9cb0c12bcb83b7363a3f381899640cbe0addd456d85476a41a7b",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/warmth_recipe.txt",
+      "description": "승인된 F26 레시피 두루마리 그대로, 인장 원을 꿀빛으로, 안쪽 문양을 살구 크림 하트로.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_recipe.txt",
+        "base_published": "assets/content_expansion_v1/recipes/sun_moon_elixir_recipe.png",
+        "base_published_sha256": "c634d1161b481f566c1a4fd87d0ddd13b8797e304669dc31d118a2b87ce159ec",
+        "base_map_renders_published_pixels": true,
+        "scroll_pixels_identical": true,
+        "seal_motif_cleared": 35,
+        "seal_motif_painted": 27,
+        "stamp": "heart_small"
+      }
+    },
+    "thin_ice_bottle": {
+      "name": "살얼음 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "B",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "liquid_dark": {
+          "letter": "A",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "teal": 2
+      },
+      "opaque_pixels": 56,
+      "lighting": {
+        "top_left_mean": 0.6002,
+        "bottom_right_mean": 0.4925,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "67157b2a49c5a2b77b0301cb453024ae7fb64d78213ba189a0fc77ca170eba2c",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/thin_ice_bottle.txt",
+      "description": "활력 `vigor`의 0~7행(넓은 어깨·안쪽 반짝임) + 그림자 `shadow_elixir`의 8~11행(뾰족한 아래) = 고드름처럼 아래로 좁아지는 병. 얼음 민트 + 청록.",
+      "provenance": {
+        "segments": [
+          {
+            "bottle": "vigor",
+            "rows": [
+              0,
+              7
+            ],
+            "source": "assets/pixel_v1/potions/vigor.png",
+            "source_sha256": "dfc9c22ff2584d8cc7274e170d3daf1225eaf3796ab84f00aa14b33dd8b29830",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#DE7356",
+              "A": "#9D4359"
+            }
+          },
+          {
+            "bottle": "shadow_elixir",
+            "rows": [
+              8,
+              11
+            ],
+            "source": "assets/pixel_v1/potions/shadow_elixir.png",
+            "source_sha256": "c0ddbbc3220488ca5e93e740dd448d57cc249b1d5ab262137e8f0e82642927ac",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#C38EB5",
+              "A": "#86548E"
+            }
+          }
+        ],
+        "edits": [],
+        "edited_pixels": 0,
+        "note": "실루엣·외곽선·코르크·유리 반짝임은 위 승인 병의 행 그대로. 액체 두 글자만 새 램프로."
+      }
+    },
+    "thin_ice_icon": {
+      "name": "살얼음 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_and_frost": {
+          "letter": "L",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "D",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "snowflake": {
+          "letter": "E",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "teal": 2
+      },
+      "opaque_pixels": 586,
+      "lighting": {
+        "top_left_mean": 0.6745,
+        "bottom_right_mean": 0.6405,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "a6d9b4707cc46b338f10c97f1b37173e6bb79e07c0469ab6cc272b05becd41c3",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/thin_ice_icon.txt",
+      "description": "승인된 F26 물보라 아이콘(거꾸로 된 물방울) 실루엣 그대로, 몸통을 얼음 민트로, 물거품 띠를 크림 서리로, 소용돌이 자리에 청록 눈송이.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sea_spray_icon.txt",
+        "base_published": "assets/content_expansion_v1/potions/sea_spray_icon.png",
+        "base_published_sha256": "52edd313358534f8f3031ce87efc473f0f85e66beaabee12645a4aaee3abaa94",
+        "base_map_renders_published_pixels": true,
+        "silhouette_identical_to_base": true,
+        "letters_changed": 57
+      }
+    },
+    "thin_ice_recipe": {
+      "name": "살얼음 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#9BE2CF",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "seal": {
+          "letter": "D",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "seal_motif": {
+          "letter": "L",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "teal": 2
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.6864,
+        "bottom_right_mean": 0.6691,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "802ccd7160995a7bf1b3363da159d1f3681e58f9d87b68e13a48b53708c6f936",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/thin_ice_recipe.txt",
+      "description": "두루마리 그대로, 인장 원을 얼음 민트로, 문양을 청록 눈송이로.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_recipe.txt",
+        "base_published": "assets/content_expansion_v1/recipes/sun_moon_elixir_recipe.png",
+        "base_published_sha256": "c634d1161b481f566c1a4fd87d0ddd13b8797e304669dc31d118a2b87ce159ec",
+        "base_map_renders_published_pixels": true,
+        "scroll_pixels_identical": true,
+        "seal_motif_cleared": 35,
+        "seal_motif_painted": 21,
+        "stamp": "snowflake_small"
+      }
+    },
+    "pine_wind_bottle": {
+      "name": "솔바람 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "B",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        },
+        "liquid_dark": {
+          "letter": "A",
+          "color": "#3D544D",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "leaf": 2
+      },
+      "opaque_pixels": 52,
+      "lighting": {
+        "top_left_mean": 0.5103,
+        "bottom_right_mean": 0.3162,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "87e38d40d6fa475d8b66d99851df009a3537cd518175e493b3797aa520ac9c29",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/pine_wind_bottle.txt",
+      "description": "해독 `antidote`(위로 좁은 병)의 7·8행 순서만 바꿔 2단 소나무 층을 만들고, 층마다 왼쪽 위 1픽셀을 크림 눈으로. 새싹 빛 + 그늘 잎.",
+      "provenance": {
+        "segments": [
+          {
+            "bottle": "antidote",
+            "rows": [
+              0,
+              6
+            ],
+            "source": "assets/pixel_v1/potions/antidote.png",
+            "source_sha256": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#718C59",
+              "A": "#3D544D"
+            }
+          },
+          {
+            "bottle": "antidote",
+            "rows": [
+              8,
+              8
+            ],
+            "source": "assets/pixel_v1/potions/antidote.png",
+            "source_sha256": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#718C59",
+              "A": "#3D544D"
+            }
+          },
+          {
+            "bottle": "antidote",
+            "rows": [
+              7,
+              7
+            ],
+            "source": "assets/pixel_v1/potions/antidote.png",
+            "source_sha256": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#718C59",
+              "A": "#3D544D"
+            }
+          },
+          {
+            "bottle": "antidote",
+            "rows": [
+              9,
+              11
+            ],
+            "source": "assets/pixel_v1/potions/antidote.png",
+            "source_sha256": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#718C59",
+              "A": "#3D544D"
+            }
+          }
+        ],
+        "edits": [
+          {
+            "x": 3,
+            "y": 6,
+            "letter": "h"
+          },
+          {
+            "x": 2,
+            "y": 7,
+            "letter": "h"
+          },
+          {
+            "x": 2,
+            "y": 9,
+            "letter": "h"
+          },
+          {
+            "x": 1,
+            "y": 10,
+            "letter": "h"
+          }
+        ],
+        "edited_pixels": 4,
+        "note": "실루엣·외곽선·코르크·유리 반짝임은 위 승인 병의 행 그대로. 액체 두 글자만 새 램프로."
+      }
+    },
+    "pine_wind_icon": {
+      "name": "솔바람 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_and_snow": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "needles_light": {
+          "letter": "L",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        },
+        "needles_dark": {
+          "letter": "D",
+          "color": "#3D544D",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "leaf": 2
+      },
+      "opaque_pixels": 533,
+      "lighting": {
+        "top_left_mean": 0.3146,
+        "bottom_right_mean": 0.3355,
+        "top_left_lit": false
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "ca0c55ce321d86a8575687779885d488f9dae37dc9928a075a73fa05ea43474a",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/pine_wind_icon.txt",
+      "description": "승인된 F26 등대불 아이콘(층층이 넓어지는 탑) 실루엣 그대로, 몸통을 그늘 잎·띠를 새싹 빛으로, 띠마다 첫 줄을 크림 눈으로.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/beacon_icon.txt",
+        "base_published": "assets/content_expansion_v1/potions/beacon_icon.png",
+        "base_published_sha256": "4ec6f9e35c9995d0c9aceed47a78b4253cd3684c5d3f3f3fa5684438b01f2224",
+        "base_map_renders_published_pixels": true,
+        "silhouette_identical_to_base": true,
+        "letters_changed": 48
+      }
+    },
+    "pine_wind_recipe": {
+      "name": "솔바람 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#B5C77D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "seal": {
+          "letter": "D",
+          "color": "#3D544D",
+          "ramp": "leaf"
+        },
+        "seal_motif": {
+          "letter": "L",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "leaf": 2
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.5188,
+        "bottom_right_mean": 0.4855,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "06faca0e295a8872472dc30f3ce0dfd6a0311fb9fae2a823ee4d942b721ab863",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/pine_wind_recipe.txt",
+      "description": "두루마리 그대로, 인장 원을 그늘 잎으로, 문양을 새싹 빛 소나무로.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_recipe.txt",
+        "base_published": "assets/content_expansion_v1/recipes/sun_moon_elixir_recipe.png",
+        "base_published_sha256": "c634d1161b481f566c1a4fd87d0ddd13b8797e304669dc31d118a2b87ce159ec",
+        "base_map_renders_published_pixels": true,
+        "scroll_pixels_identical": true,
+        "seal_motif_cleared": 35,
+        "seal_motif_painted": 26,
+        "stamp": "pine"
+      }
+    },
+    "aurora_elixir_bottle": {
+      "name": "오로라의 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "B",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        },
+        "liquid_dark": {
+          "letter": "A",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "leaf": 1,
+        "teal": 1
+      },
+      "opaque_pixels": 60,
+      "lighting": {
+        "top_left_mean": 0.5103,
+        "bottom_right_mean": 0.3815,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "528219ea020fc430f22d1066fbfd986f4deca54aba18ccdf31edf08e9ae9a636",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/aurora_elixir_bottle.txt",
+      "description": "특별 `rare_forest_breath`의 0~9행(종 모양 윗부분) + `iron_skin`의 10~11행(평평한 바닥) = 평평한 바닥의 종. 청록 몸통에 새싹 빛 띠 2줄(오로라).",
+      "provenance": {
+        "segments": [
+          {
+            "bottle": "rare_forest_breath",
+            "rows": [
+              0,
+              9
+            ],
+            "source": "assets/pixel_v1/potions/rare_forest_breath.png",
+            "source_sha256": "237fc83d42d17af80d1c79fc4d8f1219fccd4f2f5036d61a2ee03112aaedeeff",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#B5C77D",
+              "A": "#718C59"
+            }
+          },
+          {
+            "bottle": "iron_skin",
+            "rows": [
+              10,
+              11
+            ],
+            "source": "assets/pixel_v1/potions/iron_skin.png",
+            "source_sha256": "64a4d8d4cfae260fa0f16e18dc33840101d8317fbf8c577dc52bcd6a598f8f64",
+            "source_liquids": {
+              "#": "#241C32",
+              "c": "#916047",
+              "h": "#FFF0BC",
+              "B": "#827589",
+              "A": "#4A3C52"
+            }
+          }
+        ],
+        "edits": [
+          {
+            "x": 3,
+            "y": 6,
+            "letter": "A"
+          },
+          {
+            "x": 2,
+            "y": 7,
+            "letter": "B"
+          },
+          {
+            "x": 3,
+            "y": 7,
+            "letter": "A"
+          },
+          {
+            "x": 2,
+            "y": 8,
+            "letter": "A"
+          },
+          {
+            "x": 3,
+            "y": 8,
+            "letter": "B"
+          },
+          {
+            "x": 4,
+            "y": 8,
+            "letter": "B"
+          },
+          {
+            "x": 2,
+            "y": 9,
+            "letter": "A"
+          },
+          {
+            "x": 3,
+            "y": 9,
+            "letter": "A"
+          },
+          {
+            "x": 4,
+            "y": 9,
+            "letter": "A"
+          },
+          {
+            "x": 5,
+            "y": 9,
+            "letter": "B"
+          },
+          {
+            "x": 6,
+            "y": 9,
+            "letter": "B"
+          },
+          {
+            "x": 1,
+            "y": 10,
+            "letter": "A"
+          },
+          {
+            "x": 2,
+            "y": 10,
+            "letter": "A"
+          },
+          {
+            "x": 3,
+            "y": 10,
+            "letter": "A"
+          },
+          {
+            "x": 4,
+            "y": 10,
+            "letter": "A"
+          },
+          {
+            "x": 5,
+            "y": 10,
+            "letter": "A"
+          },
+          {
+            "x": 6,
+            "y": 10,
+            "letter": "A"
+          }
+        ],
+        "edited_pixels": 17,
+        "note": "실루엣·외곽선·코르크·유리 반짝임은 위 승인 병의 행 그대로. 액체 두 글자만 새 램프로."
+      }
+    },
+    "aurora_elixir_icon": {
+      "name": "오로라의 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_body": {
+          "letter": "L",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        },
+        "aurora_band": {
+          "letter": "G",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "teal": 1,
+        "leaf": 1
+      },
+      "opaque_pixels": 656,
+      "lighting": {
+        "top_left_mean": 0.4184,
+        "bottom_right_mean": 0.3561,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "8e123807bcf72eac0b6e508938c8f659a6baf40e1b605a8c0bc38b13b32a4e23",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/aurora_elixir_icon.txt",
+      "description": "승인된 F26 해돋이 아이콘(평평한 바닥의 돔) 실루엣·왼쪽 반짝임 그대로, 몸통을 청록으로, 해·수평선 자리에 새싹 빛 물결 띠 2줄.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sunrise_icon.txt",
+        "base_published": "assets/content_expansion_v1/potions/sunrise_icon.png",
+        "base_published_sha256": "986ea43a917682f2d4645785c6be1fab8e5a9331d8aa5a302aaf7ffc4d16219c",
+        "base_map_renders_published_pixels": true,
+        "silhouette_identical_to_base": true,
+        "letters_changed": 203
+      }
+    },
+    "aurora_elixir_recipe": {
+      "name": "오로라의 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#B5C77D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "seal": {
+          "letter": "D",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        },
+        "seal_motif": {
+          "letter": "L",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "teal": 1,
+        "leaf": 1
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.588,
+        "bottom_right_mean": 0.5644,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "d94aca5dcac4f5553c2ed9f97b9b6cf9c9d7ac4ded02a5517efbba8625acf48d",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/aurora_elixir_recipe.txt",
+      "description": "두루마리 그대로, 인장 원을 청록으로, 문양을 새싹 빛 물결 2줄로.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_recipe.txt",
+        "base_published": "assets/content_expansion_v1/recipes/sun_moon_elixir_recipe.png",
+        "base_published_sha256": "c634d1161b481f566c1a4fd87d0ddd13b8797e304669dc31d118a2b87ce159ec",
+        "base_map_renders_published_pixels": true,
+        "scroll_pixels_identical": true,
+        "seal_motif_cleared": 35,
+        "seal_motif_painted": 24,
+        "stamp": "aurora"
+      }
+    },
+    "frost_flower_icon": {
+      "name": "서리꽃 (재료)",
+      "kind": "material",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#718C59",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "petal_light": {
+          "letter": "L",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "petal_shade": {
+          "letter": "D",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        },
+        "flower_heart": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "leaf_and_stem": {
+          "letter": "G",
+          "color": "#718C59",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "teal": 2,
+        "gold": 1,
+        "leaf": 1
+      },
+      "opaque_pixels": 501,
+      "lighting": {
+        "top_left_mean": 0.6177,
+        "bottom_right_mean": 0.2638,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "0b17e995b215544c38b5ea321aa3e4a4ef9a66b99a03fa7616a3e46490c333fe",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/frost_flower_icon.txt",
+      "description": "승인된 F26 여명초 아이콘 그대로(꽃잎 6장·꽃심·줄기·잎 2장), 꽃잎만 얼음 민트/청록으로 다시 칠함. 잎·꽃심 색은 그대로.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/dawn_bloom_icon.txt",
+        "base_published": "assets/content_expansion_v1/materials/dawn_bloom_icon.png",
+        "base_published_sha256": "00b8d5b854bbdf44ef2f0fec42e2cf74018b3aaa5774ce6cb484f6d2d3a7655b",
+        "base_map_renders_published_pixels": true,
+        "letters_changed": 0,
+        "recoloured_letters": {
+          "L": [
+            "#F4AC68",
+            "#9BE2CF"
+          ],
+          "D": [
+            "#DE7356",
+            "#3BA8A3"
+          ]
+        }
+      }
+    },
+    "aurora_snowfield_icon": {
+      "name": "오로라 설원 (지역)",
+      "kind": "region",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#3D544D",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "snow": {
+          "letter": "s",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "pine": {
+          "letter": "P",
+          "color": "#3D544D",
+          "ramp": "leaf"
+        },
+        "aurora_and_needles": {
+          "letter": "G",
+          "color": "#B5C77D",
+          "ramp": "leaf"
+        },
+        "aurora": {
+          "letter": "A",
+          "color": "#3BA8A3",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 1,
+        "leaf": 2,
+        "teal": 1
+      },
+      "opaque_pixels": 596,
+      "lighting": {
+        "top_left_mean": 0.3965,
+        "bottom_right_mean": 0.8337,
+        "top_left_lit": false
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "4ba07cb92436789bd8cbcb72059ac7068a011979f6a13b5c753f16ff791d27b2",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f27-region-potions-v1/source/aurora_snowfield_icon.txt",
+      "description": "승인된 F26 새벽 등대 아이콘의 땅(29~38행)을 그대로 쓰고 돌색을 눈(크림)으로. 등대 자리에 눈 덮인 3층 소나무, 해 자리에 청록·새싹 빛 오로라 띠.",
+      "provenance": {
+        "base": "art/mockups/f26-region-potions-v1/source/dawn_lighthouse_icon.txt",
+        "base_published": "assets/content_expansion_v1/regions/dawn_lighthouse_icon.png",
+        "base_published_sha256": "9a8d975ff2de4f37551910f8592169b2c6155f9ad7f6a2f7e08fb03c107bf14b",
+        "base_map_renders_published_pixels": true,
+        "ground_rows_29_38_identical_letters": true,
+        "ground_recolour": {
+          "s": [
+            "#827589",
+            "#FFF0BC"
+          ]
+        },
+        "new": "소나무(10~27행)·오로라 띠(4~17행)·땅 윗선(28행)은 새로 그림"
+      }
+    }
+  },
+  "pots": {
+    "source_frames": [
+      {
+        "path": "assets/pixel_v1/pots/health-0.png",
+        "sha256": "0ed4ca4b134ffbfd7fdd48b60aee75c9104056d159e3c4004371e1a4e5e81efe"
+      },
+      {
+        "path": "assets/pixel_v1/pots/health-1.png",
+        "sha256": "9140743185379a6cf5091944979d7e12beac9e46ec161d756a62abae8caf6bdb"
+      },
+      {
+        "path": "assets/pixel_v1/pots/health-2.png",
+        "sha256": "c8ed5a2db58ee0380c8fe38e0e399bf0131bdb575b03ced8e64efd441775ce8e"
+      }
+    ],
+    "liquid_mask_pixels": 63,
+    "potions": {
+      "warmth": {
+        "liquid": "#F6D1AC",
+        "frames": [
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/warmth-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/warmth-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/warmth-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 82.4,
+          "#827589": 47.7,
+          "#86548E": 67.6,
+          "#E9B95F": 29.5
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      },
+      "thin_ice": {
+        "liquid": "#9BE2CF",
+        "frames": [
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/thin_ice-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/thin_ice-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/thin_ice-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 82.5,
+          "#827589": 50.1,
+          "#86548E": 75.3,
+          "#E9B95F": 60.0
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      },
+      "pine_wind": {
+        "liquid": "#B5C77D",
+        "frames": [
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/pine_wind-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/pine_wind-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/pine_wind-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 85.7,
+          "#827589": 58.1,
+          "#86548E": 83.8,
+          "#E9B95F": 30.3
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      },
+      "aurora_elixir": {
+        "liquid": "#3BA8A3",
+        "frames": [
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/aurora_elixir-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/aurora_elixir-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f27-region-potions-v1/pots/aurora_elixir-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 65.8,
+          "#827589": 42.4,
+          "#86548E": 67.7,
+          "#E9B95F": 71.4
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      }
+    },
+    "body_colors": [
+      "#241C32",
+      "#827589",
+      "#86548E",
+      "#E9B95F"
+    ]
+  },
+  "liquid_colours": {
+    "existing_liquids": {
+      "health": "#DE9B88",
+      "mana": "#3BA8A3",
+      "moon": "#C38EB5",
+      "purify": "#9BE2CF",
+      "agility": "#FFF0BC",
+      "vigor": "#DE7356",
+      "antidote": "#718C59",
+      "fortune": "#E9B95F",
+      "focus": "#9BE2CF",
+      "restoration": "#F6D1AC",
+      "growth": "#B5C77D",
+      "clarity": "#9BE2CF",
+      "ward": "#827589",
+      "spirit": "#9BE2CF",
+      "arcane_amplification": "#C38EB5",
+      "iron_skin": "#827589",
+      "stealth": "#718C59",
+      "poison_resistance": "#718C59",
+      "illusion": "#C38EB5",
+      "soul_purification": "#9BE2CF",
+      "wisdom": "#C38EB5",
+      "reflection": "#9BE2CF",
+      "haste": "#FFF0BC",
+      "nightwalk": "#3BA8A3",
+      "moonradiance": "#FFF0BC",
+      "regeneration": "#F6D1AC",
+      "starlight": "#C38EB5",
+      "wish": "#FFF0BC",
+      "eternity": "#FFF0BC",
+      "sage_elixir": "#C38EB5",
+      "worldtree_elixir": "#B5C77D",
+      "shadow_elixir": "#C38EB5",
+      "rare_forest_breath": "#B5C77D",
+      "rare_mist_veil": "#9BE2CF",
+      "rare_lunar_seal": "#C38EB5",
+      "rare_nebula_distillate": "#C38EB5",
+      "sunrise": "#F4AC68",
+      "beacon": "#A56A3D",
+      "sea_spray": "#24566A",
+      "sun_moon_elixir": "#9D4359"
+    },
+    "new": {
+      "warmth": {
+        "liquid": "#F6D1AC",
+        "bottle_colors": [
+          "#F6D1AC",
+          "#C99463"
+        ],
+        "delta_e_to_pot_body_86548E": 67.6,
+        "delta_e_to_f26": {
+          "sunrise": 26.9,
+          "beacon": 39.3,
+          "sea_spray": 67.7,
+          "sun_moon_elixir": 57.9
+        },
+        "min_delta_e_to_f26": 26.9,
+        "same_as_existing_liquid": [
+          "restoration",
+          "regeneration"
+        ],
+        "nearest_existing": {
+          "id": "restoration",
+          "color": "#F6D1AC",
+          "delta_e": 0.0
+        },
+        "delta_e_to_new_siblings": {
+          "thin_ice": 39.8,
+          "pine_wind": 29.7,
+          "aurora_elixir": 54.4
+        }
+      },
+      "thin_ice": {
+        "liquid": "#9BE2CF",
+        "bottle_colors": [
+          "#9BE2CF",
+          "#3BA8A3"
+        ],
+        "delta_e_to_pot_body_86548E": 75.3,
+        "delta_e_to_f26": {
+          "sunrise": 63.2,
+          "beacon": 65.5,
+          "sea_spray": 56.5,
+          "sun_moon_elixir": 79.2
+        },
+        "min_delta_e_to_f26": 56.5,
+        "same_as_existing_liquid": [
+          "purify",
+          "focus",
+          "clarity",
+          "spirit",
+          "soul_purification",
+          "reflection",
+          "rare_mist_veil"
+        ],
+        "nearest_existing": {
+          "id": "purify",
+          "color": "#9BE2CF",
+          "delta_e": 0.0
+        },
+        "delta_e_to_new_siblings": {
+          "warmth": 39.8,
+          "pine_wind": 34.6,
+          "aurora_elixir": 24.2
+        }
+      },
+      "pine_wind": {
+        "liquid": "#B5C77D",
+        "bottle_colors": [
+          "#B5C77D",
+          "#3D544D"
+        ],
+        "delta_e_to_pot_body_86548E": 83.8,
+        "delta_e_to_f26": {
+          "sunrise": 38.8,
+          "beacon": 46.0,
+          "sea_spray": 67.8,
+          "sun_moon_elixir": 74.2
+        },
+        "min_delta_e_to_f26": 38.8,
+        "same_as_existing_liquid": [
+          "growth",
+          "worldtree_elixir",
+          "rare_forest_breath"
+        ],
+        "nearest_existing": {
+          "id": "growth",
+          "color": "#B5C77D",
+          "delta_e": 0.0
+        },
+        "delta_e_to_new_siblings": {
+          "warmth": 29.7,
+          "thin_ice": 34.6,
+          "aurora_elixir": 46.0
+        }
+      },
+      "aurora_elixir": {
+        "liquid": "#3BA8A3",
+        "bottle_colors": [
+          "#B5C77D",
+          "#3BA8A3"
+        ],
+        "delta_e_to_pot_body_86548E": 67.7,
+        "delta_e_to_f26": {
+          "sunrise": 73.7,
+          "beacon": 66.5,
+          "sea_spray": 37.4,
+          "sun_moon_elixir": 75.5
+        },
+        "min_delta_e_to_f26": 37.4,
+        "same_as_existing_liquid": [
+          "mana",
+          "nightwalk"
+        ],
+        "nearest_existing": {
+          "id": "mana",
+          "color": "#3BA8A3",
+          "delta_e": 0.0
+        },
+        "delta_e_to_new_siblings": {
+          "warmth": 54.4,
+          "thin_ice": 24.2,
+          "pine_wind": 46.0
+        }
+      }
+    },
+    "passed": true,
+    "palette_colours_never_used_as_liquid": {
+      "#3D544D": {
+        "to_body": 49.3,
+        "nearest_f26": 17.8
+      },
+      "#4A3C52": {
+        "to_body": 28.5,
+        "nearest_f26": 22.6
+      },
+      "#50315F": {
+        "to_body": 19.0,
+        "nearest_f26": 34.8
+      },
+      "#50333B": {
+        "to_body": 34.5,
+        "nearest_f26": 30.4
+      },
+      "#86548E": {
+        "to_body": 0.0,
+        "nearest_f26": 30.9
+      },
+      "#A65D64": {
+        "to_body": 33.3,
+        "nearest_f26": 12.0
+      },
+      "#C99463": {
+        "to_body": 63.7,
+        "nearest_f26": 15.9
+      }
+    },
+    "rule": "새 액체는 솥 몸체 #86548E와 ΔE 40 이상, F26 4종과 25 이상, 새 4종끼리 20 이상(CIE76).",
+    "note": "24색 중 아직 액체로 쓰지 않은 색(꿀빛 #C99463·장밋빛 #A65D64·그늘 잎 #3D544D·#4A3C52·#50333B·#50315F)은 F26 액체와 ΔE 12~18로 가깝거나 외곽선·솥 몸체에 가까운 어두운 색이라 솥 안에서 '빈 솥/솥 색'으로 읽힌다. 그래서 초기 단계 물약이 쓰던 밝은 색을 다시 쓰고 병 모양으로 구분한다."
+  },
+  "silhouettes": {
+    "bottles": {
+      "warmth": {
+        "identical_silhouettes": [],
+        "closest_same_size": [
+          {
+            "id": "health",
+            "differing_pixels": 4
+          },
+          {
+            "id": "regeneration",
+            "differing_pixels": 4
+          },
+          {
+            "id": "nightwalk",
+            "differing_pixels": 6
+          }
+        ]
+      },
+      "thin_ice": {
+        "identical_silhouettes": [],
+        "closest_same_size": [
+          {
+            "id": "sea_spray",
+            "differing_pixels": 4
+          },
+          {
+            "id": "eternity",
+            "differing_pixels": 6
+          },
+          {
+            "id": "reflection",
+            "differing_pixels": 8
+          }
+        ]
+      },
+      "pine_wind": {
+        "identical_silhouettes": [],
+        "closest_same_size": [
+          {
+            "id": "antidote",
+            "differing_pixels": 4
+          },
+          {
+            "id": "spirit",
+            "differing_pixels": 6
+          },
+          {
+            "id": "mana",
+            "differing_pixels": 10
+          }
+        ]
+      },
+      "aurora_elixir": {
+        "identical_silhouettes": [],
+        "closest_same_size": [
+          {
+            "id": "mana",
+            "differing_pixels": 6
+          },
+          {
+            "id": "rare_forest_breath",
+            "differing_pixels": 6
+          },
+          {
+            "id": "sunrise",
+            "differing_pixels": 6
+          }
+        ]
+      }
+    },
+    "new_duplicates": [],
+    "passed": true
+  },
+  "shelf_and_cauldron": {
+    "frame": "art/mockups/full-ingame-v4/potions/shelf_frame-native.png",
+    "layouts": {
+      "new4_over_f26": [
+        {
+          "id": "warmth",
+          "origin": [
+            4,
+            10
+          ]
+        },
+        {
+          "id": "thin_ice",
+          "origin": [
+            14,
+            10
+          ]
+        },
+        {
+          "id": "pine_wind",
+          "origin": [
+            24,
+            10
+          ]
+        },
+        {
+          "id": "aurora_elixir",
+          "origin": [
+            34,
+            10
+          ]
+        },
+        {
+          "id": "sunrise",
+          "origin": [
+            4,
+            31
+          ]
+        },
+        {
+          "id": "beacon",
+          "origin": [
+            14,
+            27
+          ]
+        },
+        {
+          "id": "sea_spray",
+          "origin": [
+            24,
+            31
+          ]
+        },
+        {
+          "id": "sun_moon_elixir",
+          "origin": [
+            34,
+            31
+          ]
+        }
+      ],
+      "mixed": [
+        {
+          "id": "warmth",
+          "origin": [
+            4,
+            10
+          ]
+        },
+        {
+          "id": "sunrise",
+          "origin": [
+            14,
+            10
+          ]
+        },
+        {
+          "id": "thin_ice",
+          "origin": [
+            24,
+            10
+          ]
+        },
+        {
+          "id": "beacon",
+          "origin": [
+            34,
+            6
+          ]
+        },
+        {
+          "id": "pine_wind",
+          "origin": [
+            4,
+            31
+          ]
+        },
+        {
+          "id": "antidote",
+          "origin": [
+            14,
+            31
+          ]
+        },
+        {
+          "id": "aurora_elixir",
+          "origin": [
+            24,
+            31
+          ]
+        },
+        {
+          "id": "mana",
+          "origin": [
+            34,
+            31
+          ]
+        }
+      ]
+    },
+    "cauldrons": {
+      "order": [
+        "health",
+        "sunrise",
+        "beacon",
+        "sea_spray",
+        "sun_moon_elixir",
+        "warmth",
+        "thin_ice",
+        "pine_wind",
+        "aurora_elixir"
+      ],
+      "image": "art/mockups/f27-region-potions-v1/compare/cauldrons-6x.png",
+      "note": "불(assets/pixel_v1/fire/0.png)은 workshop_layout.gd의 화덕 위치(솥 원점 +10,+23, 원본 픽셀)에 솥보다 먼저 그린 검토용 합성. 게임 화면 캡처가 아니며 솥 앞 장식(cauldron_foreground)은 넣지 않았다."
+    }
+  },
+  "growth": {
+    "image": "art/mockups/f27-region-potions-v1/growth/frost_flower_growth.png",
+    "provenance": {
+      "source": "assets/content_expansion_v1/materials/dawn_bloom_growth.png",
+      "source_sha256": "c5d1c2adad3dfa41d54f28c6859fbefcad2b6808a5f589f2bfbcd5e23c0225c5",
+      "source_note": "사용자가 2026-11-05 '연결해줘'로 승인한 여명초 성장 그림 v2(달꽃 화분 픽셀 그대로 + 손으로 그린 식물)",
+      "plant_letter_maps": [
+        "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_0.txt",
+        "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_1.txt",
+        "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_2.txt",
+        "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_3.txt"
+      ],
+      "plant_letters_match_published": true,
+      "recoloured_plant_pixels": 279,
+      "plant_remap": {
+        "H": [
+          "#FADDC3",
+          "#FFF0BC"
+        ],
+        "O": [
+          "#F4AC68",
+          "#9BE2CF"
+        ],
+        "C": [
+          "#DE7356",
+          "#3BA8A3"
+        ],
+        "D": [
+          "#B96F2B",
+          "#24566A"
+        ],
+        "h": [
+          "#FFF0BC",
+          "#FFF0BC"
+        ],
+        "g": [
+          "#F9C54F",
+          "#FFF0BC"
+        ],
+        "G": [
+          "#E8AD53",
+          "#9BE2CF"
+        ]
+      },
+      "leaves_stem_unchanged": "잎·줄기 글자(a b c e t #)는 바꾸지 않음",
+      "emblem": "해돋이 문양 7×5 → 눈송이 7×5(같은 자리, 색은 달꽃 화분 초승달 문양에서 가장 많은 크림 픽셀 #FAEBD2, 비는 칸은 v2처럼 행의 몸통 중앙값)",
+      "changed_pixels": 349
+    },
+    "checks": {
+      "size_64x80": true,
+      "partial_alpha_pixels": 0,
+      "silhouette_identical_to_approved_v2": true,
+      "rgb_colors": 207,
+      "off_palette_colors": 203,
+      "passed": true,
+      "rule_exception": "기존 성장 그림 11종(여명초 v2 포함)과 같은 규칙 밖 예외: 승인 24색·물체당 5색·#241C32 외곽선을 따르지 않는다(화분·잎은 승인 v2 픽셀 그대로)."
+    },
+    "native_sha256": "e3f6a123d68a604a40f9c20c5aa10a661ce5d1c0a7d05ebe161a37145ad7a5d2"
+  },
+  "boards": {
+    "warmth": "art/mockups/f27-region-potions-v1/compare/warmth-compare-6x.png",
+    "thin_ice": "art/mockups/f27-region-potions-v1/compare/thin_ice-compare-6x.png",
+    "pine_wind": "art/mockups/f27-region-potions-v1/compare/pine_wind-compare-6x.png",
+    "aurora_elixir": "art/mockups/f27-region-potions-v1/compare/aurora_elixir-compare-6x.png",
+    "frost_flower_icon": "art/mockups/f27-region-potions-v1/compare/frost_flower_icon-compare-6x.png",
+    "aurora_snowfield_icon": "art/mockups/f27-region-potions-v1/compare/aurora_snowfield_icon-compare-6x.png",
+    "growth": "art/mockups/f27-region-potions-v1/compare/frost_flower_growth-compare-6x.png"
+  },
+  "scope_note": "후보 검사. assets/·scripts/·data/는 쓰지 않았다."
+}

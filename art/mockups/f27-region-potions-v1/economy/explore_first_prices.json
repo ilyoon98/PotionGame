@@ -1,0 +1,103 @@
+{
+ "date": "2026-11-05",
+ "what": "첫 측정(탐색): 판매가 250/265/280/400, 지역 60만 + 레시피 35/45/55/100만. 이 결과로 F26 계단(+14.5%)에 맞추려고 판매가를 ×0.92(230/245/260/370)로 낮춘 것이 summary.json이다.",
+ "baseline_net_per_hour": 754068,
+ "rows": {
+  "complete": {
+   "net_per_hour": 873884,
+   "gain_pct": 15.9,
+   "gain_vs_baseline_per_hour": 119816,
+   "new_sold_6h": {
+    "aurora_elixir": 178,
+    "pine_wind": 406,
+    "thin_ice": 313,
+    "warmth": 290
+   }
+  },
+  "env_clear": {
+   "net_per_hour": 872754,
+   "gain_pct": 15.7,
+   "gain_vs_baseline_per_hour": 118686,
+   "new_sold_6h": {
+    "aurora_elixir": 185,
+    "pine_wind": 433,
+    "thin_ice": 338,
+    "warmth": 298
+   }
+  },
+  "env_cloudy": {
+   "net_per_hour": 867938,
+   "gain_pct": 15.1,
+   "gain_vs_baseline_per_hour": 113870,
+   "new_sold_6h": {
+    "aurora_elixir": 179,
+    "pine_wind": 461,
+    "thin_ice": 299,
+    "warmth": 292
+   }
+  },
+  "no_garden": {
+   "net_per_hour": 783032,
+   "gain_pct": 3.8,
+   "gain_vs_baseline_per_hour": 28964,
+   "new_sold_6h": {
+    "aurora_elixir": 24,
+    "pine_wind": 50,
+    "thin_ice": 43,
+    "warmth": 42
+   }
+  },
+  "price085": {
+   "net_per_hour": 853998,
+   "gain_pct": 13.3,
+   "gain_vs_baseline_per_hour": 99930,
+   "new_sold_6h": {
+    "aurora_elixir": 176,
+    "pine_wind": 432,
+    "thin_ice": 319,
+    "warmth": 300
+   }
+  },
+  "price115": {
+   "net_per_hour": 903999,
+   "gain_pct": 19.9,
+   "gain_vs_baseline_per_hour": 149931,
+   "new_sold_6h": {
+    "aurora_elixir": 169,
+    "pine_wind": 402,
+    "thin_ice": 300,
+    "warmth": 278
+   }
+  },
+  "progress_active": {
+   "net_per_hour": 876081,
+   "gain_pct": 16.2,
+   "gain_vs_baseline_per_hour": 122013,
+   "new_sold_6h": {
+    "aurora_elixir": 145,
+    "pine_wind": 381,
+    "thin_ice": 291,
+    "warmth": 291
+   }
+  },
+  "progress_poor20m": {
+   "net_per_hour": 869277,
+   "gain_pct": 15.3,
+   "gain_vs_baseline_per_hour": 115209,
+   "new_sold_6h": {
+    "aurora_elixir": 114,
+    "pine_wind": 387,
+    "thin_ice": 299,
+    "warmth": 281
+   }
+  }
+ },
+ "price_points_gain_pct": {
+  "200/213/226/320 (×0.85)": 13.3,
+  "250/265/280/400 (×1.0)": 15.9,
+  "288/305/322/460 (×1.15)": 19.9,
+  "196/208/221/315 (final×0.85)": 11.8,
+  "230/245/260/370 (final)": 15.1,
+  "265/282/299/426 (final×1.15)": 17.7
+ }
+}

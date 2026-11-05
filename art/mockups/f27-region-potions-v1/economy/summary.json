@@ -1,0 +1,953 @@
+{
+ "baseline": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.0,
+  "net_per_hour": 754068,
+  "retail_per_hour": 298797,
+  "contract_per_hour": 464045,
+  "aging_per_hour": 30539,
+  "material_cost_per_hour": 1472,
+  "fees_per_hour": 7303,
+  "sold_per_hour": 2302,
+  "new_sold_6h": {},
+  "f26_sold_6h": {
+   "beacon": 328,
+   "sea_spray": 476,
+   "sun_moon_elixir": 113,
+   "sunrise": 404
+  },
+  "end_stock_mean": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0.7,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   742601,
+   715697,
+   772388,
+   815175,
+   729558,
+   748988
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 752000,
+   "73129": 756738,
+   "9973": 753465
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 391,
+  "region_rewards_6h_mean": {},
+  "gain_vs_baseline_per_hour": 0,
+  "gain_pct": 0.0
+ },
+ "complete": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.0,
+  "net_per_hour": 867672,
+  "retail_per_hour": 338435,
+  "contract_per_hour": 539625,
+  "aging_per_hour": 31247,
+  "material_cost_per_hour": 1370,
+  "fees_per_hour": 9018,
+  "sold_per_hour": 2140,
+  "new_sold_6h": {
+   "aurora_elixir": 182,
+   "pine_wind": 433,
+   "thin_ice": 303,
+   "warmth": 288
+  },
+  "f26_sold_6h": {
+   "beacon": 305,
+   "sea_spray": 372,
+   "sun_moon_elixir": 89,
+   "sunrise": 374
+  },
+  "end_stock_mean": {
+   "ash_sage": 8,
+   "crystal_herb": 0.7,
+   "dawn_bloom": 1,
+   "frost_flower": 0.3,
+   "moonflower": 0,
+   "silver_moss": 4,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 1,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   861537,
+   819026,
+   881904,
+   936819,
+   850301,
+   856446
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 866779,
+   "73129": 867437,
+   "9973": 868801
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 388,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 113604,
+  "gain_pct": 15.1
+ },
+ "env_clear": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "clear",
+  "price_scale": 1.0,
+  "net_per_hour": 861945,
+  "retail_per_hour": 336482,
+  "contract_per_hour": 535868,
+  "aging_per_hour": 28089,
+  "material_cost_per_hour": 1386,
+  "fees_per_hour": 9018,
+  "sold_per_hour": 2134,
+  "new_sold_6h": {
+   "aurora_elixir": 184,
+   "pine_wind": 443,
+   "thin_ice": 341,
+   "warmth": 296
+  },
+  "f26_sold_6h": {
+   "beacon": 278,
+   "sea_spray": 366,
+   "sun_moon_elixir": 84,
+   "sunrise": 364
+  },
+  "end_stock_mean": {
+   "ash_sage": 8,
+   "crystal_herb": 18,
+   "dawn_bloom": 0.7,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 4.7,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   862043,
+   817076,
+   855022,
+   943031,
+   836851,
+   857646
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 863833,
+   "73129": 864018,
+   "9973": 857984
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 383,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 107877,
+  "gain_pct": 14.3
+ },
+ "env_cloudy": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "cloudy",
+  "price_scale": 1.0,
+  "net_per_hour": 861327,
+  "retail_per_hour": 337859,
+  "contract_per_hour": 533879,
+  "aging_per_hour": 29606,
+  "material_cost_per_hour": 1390,
+  "fees_per_hour": 9021,
+  "sold_per_hour": 2140,
+  "new_sold_6h": {
+   "aurora_elixir": 177,
+   "pine_wind": 472,
+   "thin_ice": 293,
+   "warmth": 301
+  },
+  "f26_sold_6h": {
+   "beacon": 301,
+   "sea_spray": 373,
+   "sun_moon_elixir": 91,
+   "sunrise": 363
+  },
+  "end_stock_mean": {
+   "ash_sage": 5.3,
+   "crystal_herb": 1,
+   "dawn_bloom": 0.7,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 8.3,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   853385,
+   821596,
+   852357,
+   936601,
+   835112,
+   868911
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 860426,
+   "73129": 864377,
+   "9973": 859179
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 392,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 107259,
+  "gain_pct": 14.2
+ },
+ "no_garden": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.0,
+  "net_per_hour": 780088,
+  "retail_per_hour": 305328,
+  "contract_per_hour": 485258,
+  "aging_per_hour": 30069,
+  "material_cost_per_hour": 1464,
+  "fees_per_hour": 9035,
+  "sold_per_hour": 2278,
+  "new_sold_6h": {
+   "aurora_elixir": 24,
+   "pine_wind": 51,
+   "thin_ice": 47,
+   "warmth": 45
+  },
+  "f26_sold_6h": {
+   "beacon": 330,
+   "sea_spray": 478,
+   "sun_moon_elixir": 118,
+   "sunrise": 417
+  },
+  "end_stock_mean": {
+   "ash_sage": 0,
+   "crystal_herb": 1,
+   "dawn_bloom": 0.7,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 16,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   753502,
+   754118,
+   786711,
+   846422,
+   760499,
+   779277
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 779849,
+   "73129": 779330,
+   "9973": 781085
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 393,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 26020,
+  "gain_pct": 3.5
+ },
+ "pre_f26": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.0,
+  "net_per_hour": 658829,
+  "retail_per_hour": 256428,
+  "contract_per_hour": 409915,
+  "aging_per_hour": 28964,
+  "material_cost_per_hour": 1625,
+  "fees_per_hour": 5888,
+  "sold_per_hour": 2400,
+  "new_sold_6h": {},
+  "f26_sold_6h": {
+   "beacon": 0,
+   "sea_spray": 0,
+   "sun_moon_elixir": 0,
+   "sunrise": 0
+  },
+  "end_stock_mean": {
+   "ash_sage": 0,
+   "crystal_herb": 1.7,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   639272,
+   624446,
+   686770,
+   718520,
+   633365,
+   650602
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 653588,
+   "73129": 662136,
+   "9973": 660764
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 0,
+  "region_rewards_6h_mean": {},
+  "gain_vs_baseline_per_hour": -95239,
+  "gain_pct": -12.6
+ },
+ "price085": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 0.85,
+  "net_per_hour": 842978,
+  "retail_per_hour": 325650,
+  "contract_per_hour": 527732,
+  "aging_per_hour": 29194,
+  "material_cost_per_hour": 1382,
+  "fees_per_hour": 9021,
+  "sold_per_hour": 2128,
+  "new_sold_6h": {
+   "aurora_elixir": 192,
+   "pine_wind": 446,
+   "thin_ice": 332,
+   "warmth": 313
+  },
+  "f26_sold_6h": {
+   "beacon": 283,
+   "sea_spray": 355,
+   "sun_moon_elixir": 76,
+   "sunrise": 383
+  },
+  "end_stock_mean": {
+   "ash_sage": 9,
+   "crystal_herb": 7.7,
+   "dawn_bloom": 0.7,
+   "frost_flower": 0,
+   "moonflower": 8.3,
+   "silver_moss": 5,
+   "star_seed": 0
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   824655,
+   799094,
+   860863,
+   918283,
+   831269,
+   823706
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 834311,
+   "73129": 844423,
+   "9973": 850201
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 391,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 88910,
+  "gain_pct": 11.8
+ },
+ "price115": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.15,
+  "net_per_hour": 887218,
+  "retail_per_hour": 345116,
+  "contract_per_hour": 552496,
+  "aging_per_hour": 27866,
+  "material_cost_per_hour": 1375,
+  "fees_per_hour": 9019,
+  "sold_per_hour": 2137,
+  "new_sold_6h": {
+   "aurora_elixir": 169,
+   "pine_wind": 400,
+   "thin_ice": 311,
+   "warmth": 294
+  },
+  "f26_sold_6h": {
+   "beacon": 299,
+   "sea_spray": 381,
+   "sun_moon_elixir": 93,
+   "sunrise": 385
+  },
+  "end_stock_mean": {
+   "ash_sage": 0.3,
+   "crystal_herb": 4.3,
+   "dawn_bloom": 0.7,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 4,
+   "star_seed": 2.7
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   862952,
+   849750,
+   899295,
+   953020,
+   866451,
+   891839
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 882784,
+   "73129": 885045,
+   "9973": 893825
+  },
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "dawn_bloom_expedition_rewards_6h_mean": 391,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 133150,
+  "gain_pct": 17.7
+ },
+ "progress_active": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.0,
+  "net_per_hour": 868421,
+  "retail_per_hour": 337183,
+  "contract_per_hour": 541653,
+  "aging_per_hour": 31338,
+  "material_cost_per_hour": 1392,
+  "fees_per_hour": 9024,
+  "sold_per_hour": 2143,
+  "new_sold_6h": {
+   "aurora_elixir": 156,
+   "pine_wind": 380,
+   "thin_ice": 298,
+   "warmth": 297
+  },
+  "f26_sold_6h": {
+   "beacon": 300,
+   "sea_spray": 399,
+   "sun_moon_elixir": 104,
+   "sunrise": 369
+  },
+  "end_stock_mean": {
+   "ash_sage": 0.7,
+   "crystal_herb": 2,
+   "dawn_bloom": 1.3,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 2.3,
+   "star_seed": 0.3
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   820717,
+   838124,
+   871939,
+   965040,
+   858272,
+   856434
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 860121,
+   "73129": 875891,
+   "9973": 869251
+  },
+  "events_by_seed": {
+   "19337": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 500000
+    },
+    {
+     "minute": 10.0,
+     "event": "recipe",
+     "id": "warmth",
+     "cost": 300000
+    },
+    {
+     "minute": 25.0,
+     "event": "recipe",
+     "id": "thin_ice",
+     "cost": 400000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "pine_wind",
+     "cost": 500000
+    },
+    {
+     "minute": 56.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 60.0,
+     "event": "recipe",
+     "id": "aurora_elixir",
+     "cost": 900000
+    }
+   ],
+   "73129": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 500000
+    },
+    {
+     "minute": 10.0,
+     "event": "recipe",
+     "id": "warmth",
+     "cost": 300000
+    },
+    {
+     "minute": 25.0,
+     "event": "recipe",
+     "id": "thin_ice",
+     "cost": 400000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "pine_wind",
+     "cost": 500000
+    },
+    {
+     "minute": 56.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 60.0,
+     "event": "recipe",
+     "id": "aurora_elixir",
+     "cost": 900000
+    }
+   ],
+   "9973": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 500000
+    },
+    {
+     "minute": 10.0,
+     "event": "recipe",
+     "id": "warmth",
+     "cost": 300000
+    },
+    {
+     "minute": 25.0,
+     "event": "recipe",
+     "id": "thin_ice",
+     "cost": 400000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "pine_wind",
+     "cost": 500000
+    },
+    {
+     "minute": 56.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 60.0,
+     "event": "recipe",
+     "id": "aurora_elixir",
+     "cost": 900000
+    }
+   ]
+  },
+  "spent_on_content": 2600000,
+  "dawn_bloom_expedition_rewards_6h_mean": 393,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 114353,
+  "gain_pct": 15.2
+ },
+ "progress_poor20m": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "environment": "night",
+  "price_scale": 1.0,
+  "net_per_hour": 857958,
+  "retail_per_hour": 333613,
+  "contract_per_hour": 534776,
+  "aging_per_hour": 29554,
+  "material_cost_per_hour": 1402,
+  "fees_per_hour": 9030,
+  "sold_per_hour": 2152,
+  "new_sold_6h": {
+   "aurora_elixir": 139,
+   "pine_wind": 383,
+   "thin_ice": 287,
+   "warmth": 294
+  },
+  "f26_sold_6h": {
+   "beacon": 292,
+   "sea_spray": 389,
+   "sun_moon_elixir": 113,
+   "sunrise": 353
+  },
+  "end_stock_mean": {
+   "ash_sage": 0.3,
+   "crystal_herb": 9.3,
+   "dawn_bloom": 1,
+   "frost_flower": 0.3,
+   "moonflower": 0.3,
+   "silver_moss": 17.7,
+   "star_seed": 1
+  },
+  "min_stock": {
+   "ash_sage": 0,
+   "crystal_herb": 0,
+   "dawn_bloom": 0,
+   "frost_flower": 0,
+   "moonflower": 0,
+   "silver_moss": 0,
+   "star_seed": 0
+  },
+  "hourly_net": [
+   780871,
+   839975,
+   867331,
+   933447,
+   854786,
+   871339
+  ],
+  "net_per_hour_by_seed": {
+   "19337": 854511,
+   "73129": 858602,
+   "9973": 860762
+  },
+  "events_by_seed": {
+   "19337": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 500000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "warmth",
+     "cost": 300000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "thin_ice",
+     "cost": 400000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "pine_wind",
+     "cost": 500000
+    },
+    {
+     "minute": 56.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 80.0,
+     "event": "recipe",
+     "id": "aurora_elixir",
+     "cost": 900000
+    }
+   ],
+   "73129": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 500000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "warmth",
+     "cost": 300000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "thin_ice",
+     "cost": 400000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "pine_wind",
+     "cost": 500000
+    },
+    {
+     "minute": 56.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 80.0,
+     "event": "recipe",
+     "id": "aurora_elixir",
+     "cost": 900000
+    }
+   ],
+   "9973": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 500000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "warmth",
+     "cost": 300000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "thin_ice",
+     "cost": 400000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "pine_wind",
+     "cost": 500000
+    },
+    {
+     "minute": 56.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 80.0,
+     "event": "recipe",
+     "id": "aurora_elixir",
+     "cost": 900000
+    }
+   ]
+  },
+  "spent_on_content": 2600000,
+  "dawn_bloom_expedition_rewards_6h_mean": 388,
+  "region_rewards_6h_mean": {
+   "star_seed": 28,
+   "moonflower": 11,
+   "frost_flower": 408,
+   "dawn_bloom": 53
+  },
+  "gain_vs_baseline_per_hour": 103890,
+  "gain_pct": 13.8
+ },
+ "_steps": {
+  "pre_f26": 658829,
+  "f26_complete": 754068,
+  "f27_complete": 867672,
+  "f26_step": 95239,
+  "f26_step_pct": 14.5,
+  "f27_step": 113604,
+  "f27_step_pct": 15.1
+ }
+}

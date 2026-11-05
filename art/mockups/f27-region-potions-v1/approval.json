@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "date": "2026-11-05",
+  "review": "art/mockups/f27-region-potions-v1/review.html",
+  "plan": "docs/새-원정-지역과-물약-F27-기획안.md",
+  "runtime_integrated": false,
+  "scope": {
+    "warmth_bottle": "온기 물약 진열 병 8×12 (후보, 승인 병 행 파생)",
+    "thin_ice_bottle": "살얼음 물약 진열 병 8×12 (후보, 승인 병 행 파생)",
+    "pine_wind_bottle": "솔바람 물약 진열 병 8×12 (후보, 승인 병 행 파생)",
+    "aurora_elixir_bottle": "오로라의 물약 진열 병 8×12 (후보, 승인 병 행 파생)",
+    "warmth_pot": "온기 물약 솥 액체 #F6D1AC · 승인 솥 3프레임의 액체 마스크만 재색 (후보)",
+    "thin_ice_pot": "살얼음 물약 솥 액체 #9BE2CF · 승인 솥 3프레임의 액체 마스크만 재색 (후보)",
+    "pine_wind_pot": "솔바람 물약 솥 액체 #B5C77D · 승인 솥 3프레임의 액체 마스크만 재색 (후보)",
+    "aurora_elixir_pot": "오로라의 물약 솥 액체 #3BA8A3 · 승인 솥 3프레임의 액체 마스크만 재색 (후보)",
+    "warmth_icon": "온기 물약 물약 아이콘 32×40 (후보, F26 아이콘 파생)",
+    "thin_ice_icon": "살얼음 물약 물약 아이콘 32×40 (후보, F26 아이콘 파생)",
+    "pine_wind_icon": "솔바람 물약 물약 아이콘 32×40 (후보, F26 아이콘 파생)",
+    "aurora_elixir_icon": "오로라의 물약 물약 아이콘 32×40 (후보, F26 아이콘 파생)",
+    "warmth_recipe": "온기 물약 레시피 아이콘 32×40 (후보, F26 레시피 두루마리 파생)",
+    "thin_ice_recipe": "살얼음 물약 레시피 아이콘 32×40 (후보, F26 레시피 두루마리 파생)",
+    "pine_wind_recipe": "솔바람 물약 레시피 아이콘 32×40 (후보, F26 레시피 두루마리 파생)",
+    "aurora_elixir_recipe": "오로라의 물약 레시피 아이콘 32×40 (후보, F26 레시피 두루마리 파생)",
+    "frost_flower_icon": "서리꽃 재료 아이콘 32×40 (후보, 여명초 아이콘 재색)",
+    "aurora_snowfield_icon": "오로라 설원 지역 아이콘 32×40 (후보, 새벽 등대 땅 + 새 소나무·오로라)",
+    "frost_flower_growth": "서리꽃 화분 성장 그림 64×80 (후보, 여명초 v2 꽃잎 재색·문양 교체, 기존 성장 그림과 같은 규칙 밖 예외)"
+  },
+  "not_in_scope": [
+    "원정 카드 큰 그림",
+    "게임 연결(assets/·catalog·scripts·data)"
+  ],
+  "pending_decisions": [
+    "이름 6개",
+    "액체색 4종(초기 물약 색 재사용)",
+    "병 실루엣(승인 병 행 파생, 차이 작음)",
+    "32×40 아이콘이 F26 아이콘과 같은 실루엣인 점",
+    "서리꽃 아이콘·성장 그림이 여명초 재색인 점",
+    "지역 아이콘의 새로 그린 소나무·오로라"
+  ],
+  "publish_after_approval": "추가 전용 게시 스크립트(F26과 같은 방식)로 assets/pixel_v1/potions·pots, content_expansion_v1 아이콘·성장 그림, catalog 행만 더한다(기존 자산 재생성 금지)."
+}

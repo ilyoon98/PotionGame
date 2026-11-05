@@ -1,0 +1,34 @@
+{
+ "date": "2026-11-05",
+ "question": "F27: 서리꽃을 원정 전용(화분 지급 없음)으로 두면 수입 계단이 유지되는가? (F26 no_garden_check.json과 같은 질문)",
+ "method": "probe_f27_economy.gd --mode=complete --no-garden, 시드 73129/19337/9973, 6시간. 시작 상태는 summary.json complete와 같다(서리꽃 보관함만 0).",
+ "baseline_net_per_hour": 754068,
+ "planned_complete_net_per_hour": 867672,
+ "planned_gain_pct": 15.1,
+ "no_garden_net_per_hour": 780088,
+ "no_garden_gain_per_hour": 26020,
+ "no_garden_gain_pct": 3.5,
+ "new_sold_6h": {
+  "planned": {
+   "aurora_elixir": 182,
+   "pine_wind": 433,
+   "thin_ice": 303,
+   "warmth": 288
+  },
+  "no_garden": {
+   "aurora_elixir": 24,
+   "pine_wind": 51,
+   "thin_ice": 47,
+   "warmth": 45
+  }
+ },
+ "payback_hours_2600000": {
+  "planned": 22.9,
+  "no_garden": 99.9
+ },
+ "f26_same_check": {
+  "no_garden_gain_pct": 2.4,
+  "planned_gain_pct": 14.1
+ },
+ "conclusion": "원정 전용이면 새 물약 판매가 약 86% 줄고 수입 증가가 +15.1%에서 +3.5%로 떨어진다(F26과 같은 결과). 서리꽃은 F26 여명초처럼 레시피 구매 시 화분 지급 + 원정 보장 재료로 둔다."
+}

@@ -1,0 +1,1238 @@
+{
+  "output": "art/mockups/f27-region-potions-v1/pipeline",
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "alpha_threshold": 128,
+  "max_colors": 5,
+  "compose": false,
+  "scene": {
+    "size": [
+      32,
+      40
+    ],
+    "background": "#241C32"
+  },
+  "assets": [
+    {
+      "id": "warmth_bottle",
+      "source": "art/mockups/f27-region-potions-v1/registered/warmth_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#F6D1AC"
+        ],
+        "liquid_dark": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "skin",
+        "liquid_dark": "wood"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "온기 물약 · 진열 병"
+    },
+    {
+      "id": "warmth_icon",
+      "source": "art/mockups/f27-region-potions-v1/registered/warmth_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#F6D1AC"
+        ],
+        "emblem": [
+          "#C99463"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "skin",
+        "emblem": "wood"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "emblem",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "온기 물약 · 물약 아이콘"
+    },
+    {
+      "id": "warmth_recipe",
+      "source": "art/mockups/f27-region-potions-v1/registered/warmth_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "seal": [
+          "#C99463"
+        ],
+        "seal_motif": [
+          "#F6D1AC"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "seal": "wood",
+        "seal_motif": "skin"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "seal",
+          "hue": [
+            0.0761,
+            0.0841
+          ],
+          "saturation_min": 0.4975,
+          "saturation_max": 0.5175,
+          "value_min": 0.7782,
+          "value_max": 0.7982
+        },
+        {
+          "material": "seal_motif",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "온기 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "thin_ice_bottle",
+      "source": "art/mockups/f27-region-potions-v1/registered/thin_ice_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#9BE2CF"
+        ],
+        "liquid_dark": [
+          "#3BA8A3"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "teal",
+        "liquid_dark": "teal"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "살얼음 물약 · 진열 병"
+    },
+    {
+      "id": "thin_ice_icon",
+      "source": "art/mockups/f27-region-potions-v1/registered/thin_ice_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_and_frost": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#9BE2CF"
+        ],
+        "snowflake": [
+          "#3BA8A3"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_and_frost": "gold",
+        "liquid_light": "teal",
+        "snowflake": "teal"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_and_frost",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "snowflake",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "살얼음 물약 · 물약 아이콘"
+    },
+    {
+      "id": "thin_ice_recipe",
+      "source": "art/mockups/f27-region-potions-v1/registered/thin_ice_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "seal": [
+          "#9BE2CF"
+        ],
+        "seal_motif": [
+          "#3BA8A3"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "seal": "teal",
+        "seal_motif": "teal"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "seal",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "seal_motif",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "살얼음 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "pine_wind_bottle",
+      "source": "art/mockups/f27-region-potions-v1/registered/pine_wind_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#B5C77D"
+        ],
+        "liquid_dark": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "leaf",
+        "liquid_dark": "leaf"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "솔바람 물약 · 진열 병"
+    },
+    {
+      "id": "pine_wind_icon",
+      "source": "art/mockups/f27-region-potions-v1/registered/pine_wind_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_and_snow": [
+          "#FFF0BC"
+        ],
+        "needles_light": [
+          "#B5C77D"
+        ],
+        "needles_dark": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_and_snow": "gold",
+        "needles_light": "leaf",
+        "needles_dark": "leaf"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_and_snow",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "needles_light",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        },
+        {
+          "material": "needles_dark",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "솔바람 물약 · 물약 아이콘"
+    },
+    {
+      "id": "pine_wind_recipe",
+      "source": "art/mockups/f27-region-potions-v1/registered/pine_wind_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "seal": [
+          "#3D544D"
+        ],
+        "seal_motif": [
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "seal": "leaf",
+        "seal_motif": "leaf"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "seal",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        },
+        {
+          "material": "seal_motif",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "솔바람 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "aurora_elixir_bottle",
+      "source": "art/mockups/f27-region-potions-v1/registered/aurora_elixir_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#B5C77D"
+        ],
+        "liquid_dark": [
+          "#3BA8A3"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "leaf",
+        "liquid_dark": "teal"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "오로라의 물약 · 진열 병"
+    },
+    {
+      "id": "aurora_elixir_icon",
+      "source": "art/mockups/f27-region-potions-v1/registered/aurora_elixir_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_body": [
+          "#3BA8A3"
+        ],
+        "aurora_band": [
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_body": "teal",
+        "aurora_band": "leaf"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_body",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        },
+        {
+          "material": "aurora_band",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "오로라의 물약 · 물약 아이콘"
+    },
+    {
+      "id": "aurora_elixir_recipe",
+      "source": "art/mockups/f27-region-potions-v1/registered/aurora_elixir_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "seal": [
+          "#3BA8A3"
+        ],
+        "seal_motif": [
+          "#B5C77D"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "seal": "teal",
+        "seal_motif": "leaf"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "seal",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        },
+        {
+          "material": "seal_motif",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "오로라의 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "frost_flower_icon",
+      "source": "art/mockups/f27-region-potions-v1/registered/frost_flower_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "petal_light": [
+          "#9BE2CF"
+        ],
+        "petal_shade": [
+          "#3BA8A3"
+        ],
+        "flower_heart": [
+          "#FFF0BC"
+        ],
+        "leaf_and_stem": [
+          "#718C59"
+        ]
+      },
+      "material_ramps": {
+        "petal_light": "teal",
+        "petal_shade": "teal",
+        "flower_heart": "gold",
+        "leaf_and_stem": "leaf"
+      },
+      "rules": [
+        {
+          "material": "petal_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "petal_shade",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        },
+        {
+          "material": "flower_heart",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "leaf_and_stem",
+          "hue": [
+            0.2509,
+            0.2589
+          ],
+          "saturation_min": 0.3543,
+          "saturation_max": 0.3743,
+          "value_min": 0.539,
+          "value_max": 0.559
+        }
+      ],
+      "fallback_material": "petal_light",
+      "name_ko": "서리꽃 (재료)"
+    },
+    {
+      "id": "aurora_snowfield_icon",
+      "source": "art/mockups/f27-region-potions-v1/registered/aurora_snowfield_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "snow": [
+          "#FFF0BC"
+        ],
+        "pine": [
+          "#3D544D"
+        ],
+        "aurora_and_needles": [
+          "#B5C77D"
+        ],
+        "aurora": [
+          "#3BA8A3"
+        ]
+      },
+      "material_ramps": {
+        "snow": "gold",
+        "pine": "leaf",
+        "aurora_and_needles": "leaf",
+        "aurora": "teal"
+      },
+      "rules": [
+        {
+          "material": "snow",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "pine",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        },
+        {
+          "material": "aurora_and_needles",
+          "hue": [
+            0.2032,
+            0.2112
+          ],
+          "saturation_min": 0.3619,
+          "saturation_max": 0.3819,
+          "value_min": 0.7704,
+          "value_max": 0.7904
+        },
+        {
+          "material": "aurora",
+          "hue": [
+            0.4884,
+            0.4964
+          ],
+          "saturation_min": 0.6388,
+          "saturation_max": 0.6588,
+          "value_min": 0.6488,
+          "value_max": 0.6688
+        }
+      ],
+      "fallback_material": "snow",
+      "name_ko": "오로라 설원 (지역)"
+    }
+  ]
+}
