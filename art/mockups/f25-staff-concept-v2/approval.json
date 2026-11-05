@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "candidate",
+  "status": "layout_decided_art_not_approved",
   "approved_by_user": false,
   "approved_on": null,
   "user_reply": null,
@@ -16,11 +16,13 @@
     "layout_C": "4명이 각자 설비(약초대·솥·판매대·표지판) 근처, 바닥 가구 뒤에 반쯤 가려 서기",
     "layout_D": "작업실에는 넣지 않고 관리 화면 직원 행에 초상만"
   },
-  "pending_decisions": [
-    "직원 4명 컨셉(외형·색) 승인 또는 수정 지시 — 인물별로 따로 답해도 됨",
-    "배치안 A/B/C/D 중 선택(또는 'D 먼저, 나중에 A' 같은 단계 진행)",
-    "작업실 등장을 고르면: 행동 애니메이션 범위(대기만 / 대기+역할 행동 2장)",
-    "A를 고르면: 교대 규칙(판매 건수·시간)과 겹치는 약초 HUD 처리 방식"
-  ],
-  "note": "사용자 승인 전 후보(v2). v1은 비교용으로 보존. assets/·scripts/는 바꾸지 않았다. 승인 뒤 게시·연결은 별도 작업."
+  "pending_decisions": [],
+  "note": "사용자 승인 전 후보(v2). v1은 비교용으로 보존. assets/·scripts/는 바꾸지 않았다. 승인 뒤 게시·연결은 별도 작업.",
+  "decisions": {
+    "date": "2026-11-05",
+    "layout": "D (작업실에는 넣지 않음) · 사용자 \"일단 D로하자\"",
+    "staff_rows": "지금 직원 아이콘(앞치마·정원 도구·절구·배낭) 유지 · 사용자 \"Keep icons for now\"",
+    "portraits": "v2 초상은 연결하지 않음. 실제 관리 화면 캡처(tools/capture_f25_staff_portraits.gd)에서 32×48 1배 초상이 기존 48칸 아이콘보다 읽기 어려웠다. 사용자 평가: \"너 진짜 디자인 못하네\" — v2 캐릭터 디자인은 승인되지 않음",
+    "next": "초상을 다시 만들면 사용자가 지적할 부분(얼굴·비율·옷·색)부터 고친 v3 후보로 별도 진행"
+  }
 }
