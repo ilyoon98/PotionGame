@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "status": "candidate",
-  "approved_by_user": false,
-  "approved_on": null,
-  "user_reply": null,
+  "status": "approved",
+  "approved_by_user": true,
+  "approved_on": "2026-11-05",
+  "user_reply": "새 지역 제안대로",
   "date": "2026-11-05",
   "review": "art/mockups/f26-region-potions-v1/review.html",
   "plan": "docs/새-원정-지역과-물약-F26-기획안.md",
@@ -33,10 +33,16 @@
     "원정 카드 큰 그림",
     "게임 연결(assets/·catalog·scripts·data)"
   ],
-  "pending_decisions": [
-    "이름 6개",
-    "병 모양·액체색 4종",
-    "32×40 아이콘 질감(24색 규칙 대 기존 생성 질감)"
-  ],
-  "publish_after_approval": "추가 전용 게시 스크립트로 assets/pixel_v1/potions·pots와 catalog potions 키만 더한다(기존 자산 재생성 금지)."
+  "pending_decisions": [],
+  "publish_after_approval": "추가 전용 게시 스크립트로 assets/pixel_v1/potions·pots와 catalog potions 키만 더한다(기존 자산 재생성 금지).",
+  "decisions": {
+    "names": "제안 그대로 (새벽 등대, 여명초, 해돋이, 등대불, 물보라, 일월의 물약)",
+    "cost": "제안 225만 G",
+    "sale_price": "제안대로",
+    "survey_returns": "8회",
+    "environment": "clear (코드 변경 없음)",
+    "supply_support": "여명초는 보급 지원 대상에서 제외",
+    "tenth_region": "이번에는 만들지 않음",
+    "art": "병 4종·액체색 4종·32×40 아이콘·레시피·재료·지역 아이콘 후보 그대로"
+  }
 }
