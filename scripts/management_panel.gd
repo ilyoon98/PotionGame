@@ -2,6 +2,7 @@ extends Window
 const Expeditions = preload("res://scripts/parallel_expeditions.gd")
 const Content = preload("res://scripts/shop_content.gd")
 const ItemArt = preload("res://scripts/item_art.gd")
+const PixelIcon = preload("res://scripts/pixel_icon.gd")
 const ManagementArt = preload("res://scripts/management_art.gd")
 const WorkshopAssets = preload("res://scripts/workshop_assets.gd")
 const HerbPlant = preload("res://scripts/herb_plant.gd")
@@ -144,12 +145,13 @@ func _ready() -> void:
 	header_stats.size = Vector2(CONTENT_WIDTH, 28)
 	header_stats.add_theme_constant_override("separation", 24)
 	root.add_child(header_stats)
-	var gold := _header_metric("GoldGroup", "골드", WorkshopAssets.icon("gold-coin"))
+	var coin := ManagementArt.small_icon("coin")
+	var gold := _header_metric("GoldGroup", "골드", coin if coin != null else WorkshopAssets.icon("gold-coin"))
 	gold_group = gold.group
 	gold_icon = gold.icon
 	gold_caption = gold.caption
 	gold_label = gold.value
-	var reputation := _header_metric("ReputationGroup", "명성", ManagementArt.icon("reputation"))
+	var reputation := _header_metric("ReputationGroup", "명성", ManagementArt.small_icon("reputation"))
 	reputation_group = reputation.group
 	reputation_icon = reputation.icon
 	reputation_caption = reputation.caption
@@ -444,7 +446,7 @@ func _header_metric(id: String, text: String, texture: Texture2D) -> Dictionary:
 	group.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	group.add_theme_constant_override("separation", 8)
 	header_stats.add_child(group)
-	var icon := TextureRect.new()
+	var icon := PixelIcon.new()
 	icon.texture = texture
 	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -629,7 +631,7 @@ func _regular_card(id: String) -> void:
 	var line := HBoxContainer.new()
 	line.add_theme_constant_override("separation", 12)
 	panel.add_child(line)
-	var portrait := TextureRect.new()
+	var portrait := PixelIcon.new()
 	portrait.texture = ManagementArt.icon("regular_" + id)
 	portrait.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	portrait.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
@@ -642,7 +644,7 @@ func _regular_card(id: String) -> void:
 	side.add_theme_constant_override("separation", 8)
 	line.add_child(side)
 	side.add_child(portrait)
-	var souvenir := TextureRect.new()
+	var souvenir := PixelIcon.new()
 	souvenir.name = "Souvenir"
 	souvenir.texture = ManagementArt.icon(Regulars.STORIES[id].souvenir)
 	souvenir.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -780,7 +782,7 @@ func _row(page: int, id: String, title_text: String, icon_id: String, action: St
 	layout.add_child(body)
 	var line := HBoxContainer.new()
 	body.add_child(line)
-	var icon := TextureRect.new()
+	var icon := PixelIcon.new()
 	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	icon.texture = ItemArt.unknown_recipe_icon() if icon_id == "unknown_recipe" else ManagementArt.readable_icon(ManagementArt.icon(icon_id) if ManagementArt.has_icon(icon_id) else ItemArt.icon(icon_id))
 	icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -799,8 +801,8 @@ func _row(page: int, id: String, title_text: String, icon_id: String, action: St
 	title.add_theme_font_override("font", host.title_font)
 	title.add_theme_color_override("font_color", INK)
 	line.add_child(title)
-	var reputation_marker := TextureRect.new()
-	reputation_marker.texture = ManagementArt.icon("reputation")
+	var reputation_marker := PixelIcon.new()
+	reputation_marker.texture = ManagementArt.small_icon("reputation")
 	reputation_marker.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 	reputation_marker.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	reputation_marker.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
@@ -885,7 +887,7 @@ func _row(page: int, id: String, title_text: String, icon_id: String, action: St
 		primary.add_theme_constant_override("separation", 6)
 		body.add_child(primary)
 		body.move_child(primary, summary.get_index())
-		var primary_icon := TextureRect.new()
+		var primary_icon := PixelIcon.new()
 		primary_icon.custom_minimum_size = Vector2(32, 32)
 		primary_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		primary_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -937,7 +939,7 @@ func _row(page: int, id: String, title_text: String, icon_id: String, action: St
 			rare_line.add_theme_constant_override("separation", 6)
 			body.add_child(rare_line)
 			body.move_child(rare_line, primary.get_index() + 1)
-			var rare_icon := TextureRect.new()
+			var rare_icon := PixelIcon.new()
 			rare_icon.texture = ItemArt.unknown_recipe_icon()
 			rare_icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 			rare_icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -983,7 +985,7 @@ func _row(page: int, id: String, title_text: String, icon_id: String, action: St
 			detail.reparent(body)
 			body.move_child(detail, 1)
 			if page == HERBS and not ItemArt.growth_path(icon_id).is_empty():
-				var growth := TextureRect.new()
+				var growth := PixelIcon.new()
 				growth.custom_minimum_size = Vector2(32, 40)
 				growth.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 				growth.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -1011,8 +1013,8 @@ func _purchase_button(row: Dictionary, key: String, action: String, completed: S
 	CurrencyText.button_value(row.button, completed if not completed.is_empty() else reason if not reason.is_empty() else "%s · %d G" % [action, host.state.purchase_cost(key)])
 	row.button.disabled = not completed.is_empty() or not reason.is_empty()
 	if reason.contains("명성") and completed.is_empty():
-		row.button.icon = ManagementArt.icon("reputation")
-		row.button.add_theme_constant_override("icon_max_width", 20)
+		row.button.icon = ManagementArt.small_icon("reputation")
+		row.button.add_theme_constant_override("icon_max_width", 16)
 	_center_purchase_button(row.button)
 
 func _gauge_value(gauge: Dictionary, visible: bool, fraction: float, caption: String, count: String = "") -> void:
@@ -1256,7 +1258,7 @@ func _refresh_keeper_upgrades(state: RefCounted) -> void:
 " + keeper_feedback if not keeper_feedback.is_empty() else ""))
 		CurrencyText.button_value(upgrade.button, "최대 단계" if item.complete else reason if not reason.is_empty() else "투자 · %s G" % host._number(int(item.cost)))
 		upgrade.button.disabled = not bool(item.can_buy)
-		upgrade.button.icon = ManagementArt.icon("reputation") if reason.contains("명성") else upgrade.button.icon
+		upgrade.button.icon = ManagementArt.small_icon("reputation") if reason.contains("명성") else upgrade.button.icon
 		upgrade.button.set_meta("next_level", int(item.next_level))
 		_center_purchase_button(upgrade.button)
 
@@ -1303,7 +1305,7 @@ func _refresh_aging(state: RefCounted, progress_only: bool = false) -> void:
 		_text(upgrade.extra, "오래 걸리지만 비싼 숙성 물약 · 넘치는 판매 재고를 활용해요." + ("\n" + aging_feedback if not aging_feedback.is_empty() else ""))
 		CurrencyText.button_value(upgrade.button, "최대 단계" if item.complete else reason if not reason.is_empty() else "투자 · %s G" % host._number(int(item.cost)))
 		upgrade.button.disabled = not bool(item.can_buy)
-		upgrade.button.icon = ManagementArt.icon("reputation") if reason.contains("명성") else upgrade.button.icon
+		upgrade.button.icon = ManagementArt.small_icon("reputation") if reason.contains("명성") else upgrade.button.icon
 		upgrade.button.set_meta("next_level", int(item.next_level))
 		_center_purchase_button(upgrade.button)
 
@@ -1335,8 +1337,8 @@ func _refresh_keeper(state: RefCounted, gauges_only: bool = false) -> void:
 	var reason: String = state.keeper_policy_reason(next)
 	CurrencyText.button_value(row.button, reason if not reason.is_empty() else "다음: %s" % policies[next].name)
 	row.button.disabled = not reason.is_empty()
-	row.button.icon = ManagementArt.icon("reputation") if reason.contains("명성") else null
-	if reason.contains("명성"): row.button.add_theme_constant_override("icon_max_width", 20)
+	row.button.icon = ManagementArt.small_icon("reputation") if reason.contains("명성") else null
+	if reason.contains("명성"): row.button.add_theme_constant_override("icon_max_width", 16)
 	_center_purchase_button(row.button)
 	_text(row.extra, "솥은 주인공이 깨어 있을 때만 돌아가요. 판매·채집·원정·보조 조제대는 자는 동안에도 계속돼요.\n규칙적 22~6시 · 바쁘게 0~6시 · 철야 2~6시\n피로 40 미만(상쾌): 깨어 있는 동안 제조 속도 +30%\n피로 40/60/80 이상: 성공률 −3/−10/−20%p (기본 물약은 절반)\n피로 100이면 쓰러져 10시간 동안 회복해요.
 " + _keeper_days(state))

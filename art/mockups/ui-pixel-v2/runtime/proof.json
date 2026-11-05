@@ -1,0 +1,18 @@
+{
+	"captures": [
+		"res://.verification/ui-pixel-v2/reputation-locked.png",
+		"res://.verification/ui-pixel-v2/expeditions-top.png",
+		"res://.verification/ui-pixel-v2/expeditions-bottom.png",
+		"res://.verification/ui-pixel-v2/herbs-top.png",
+		"res://.verification/ui-pixel-v2/herbs-bottom.png",
+		"res://.verification/ui-pixel-v2/potions-top.png",
+		"res://.verification/ui-pixel-v2/potions-bottom.png",
+		"res://.verification/ui-pixel-v2/recipes-top.png",
+		"res://.verification/ui-pixel-v2/recipes-bottom.png",
+		"res://.verification/ui-pixel-v2/upgrades-top.png",
+		"res://.verification/ui-pixel-v2/upgrades-bottom.png"
+	],
+	"checks": 1070,
+	"failures": [],
+	"passed": true
+}

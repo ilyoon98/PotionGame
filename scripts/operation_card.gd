@@ -1,4 +1,5 @@
 extends Control
+const PixelIcon = preload("res://scripts/pixel_icon.gd")
 ## One layout for supply and upgrades: item, current effect, next status, action.
 signal action_pressed
 const CurrencyText = preload("res://scripts/currency_text.gd")
@@ -56,7 +57,7 @@ func _ready() -> void:
 
 
 func set_icon(texture: Texture2D) -> void:
-	var icon := TextureRect.new()
+	var icon := PixelIcon.new()
 	icon.texture = texture
 	icon.size = Vector2(40, 40)
 	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE

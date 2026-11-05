@@ -2,12 +2,15 @@ extends RefCounted
 ## Shared item identity for inventory, recipes, shelf and handover animations.
 const ROOT := "res://assets/items_v1/"
 const Content = preload("res://scripts/shop_content.gd")
+const UiPixel = preload("res://scripts/ui_pixel_catalog.gd")
 static var CATALOG: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/content_expansion_v1/catalog.json"))
 static var RARE_CATALOG: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/rare_recipes_v1/catalog.json"))
 static var GROWTH_FRAMES := {}
 const UNKNOWN_RECIPE_PATH := "res://assets/rare_discovery_ui_v1/unknown_recipe_map.png"
 
 static func unknown_recipe_icon() -> Texture2D:
+	var replacement := UiPixel.icon("unknown_recipe")
+	if replacement != null: return replacement
 	return load(UNKNOWN_RECIPE_PATH)
 
 static func rare_art(id: String) -> Dictionary:
@@ -17,6 +20,9 @@ static func rare_art(id: String) -> Dictionary:
 	return {}
 
 static func recipe_icon(id: String) -> Texture2D:
+	var replacement := UiPixel.icon("recipe:" + id)
+	if replacement == null: replacement = UiPixel.icon(id)
+	if replacement != null: return replacement
 	var rare := rare_art(id)
 	if not rare.is_empty(): return load(rare.recipe_path)
 	var source := Content.lookup("potions", id)
@@ -46,6 +52,8 @@ static func growth_path(id: String) -> String:
 static func equipment_icon(track: String, stage: int) -> Texture2D:
 	var maximum := maxi(1, Content.track_rows(track).size())
 	var tier := mini(2, int(float(stage) / maximum * 3.0))
+	var replacement := UiPixel.equipment(track, tier)
+	if replacement != null: return replacement
 	return load("res://assets/content_expansion_v1/equipment/%s_%s.png" % [track, ["basic", "improved", "premium"][tier]])
 const ICONS := {
 	"health": "health_icon.png", "mana": "mana_icon.png",
@@ -69,6 +77,7 @@ static func bottle(kind: Variant) -> Texture2D:
 
 
 static func has_icon(id: String) -> bool:
+	if UiPixel.icon(id) != null: return true
 	if ICONS.has(id) or id == "mushroom": return true
 	if not rare_art(id).is_empty(): return true
 	for category in ["potions", "materials", "regions", "employees"]:
@@ -77,6 +86,11 @@ static func has_icon(id: String) -> bool:
 
 
 static func icon(id: String) -> Texture2D:
+	var replacement := UiPixel.icon(id)
+	if replacement != null: return replacement
+	if id == "mushroom":
+		replacement = UiPixel.icon("moon_mushroom")
+		if replacement != null: return replacement
 	if id == "mushroom": return load("res://assets/mushroom_24.png")
 	if ICONS.has(id): return load(ROOT + ICONS[id])
 	var rare := rare_art(id)
@@ -86,6 +100,9 @@ static func icon(id: String) -> Texture2D:
 		if not row.is_empty(): return load(row["icon_candidate"])
 	if id.begins_with("growth:"):
 		var track := id.trim_prefix("growth:")
+		replacement = UiPixel.icon(track)
+		if replacement == null: replacement = UiPixel.equipment(track, 0)
+		if replacement != null: return replacement
 		if track.begins_with("family_"): return load("res://assets/content_expansion_v1/families/" + track.trim_prefix("family_") + "_icon.png")
 		if not Content.lookup("employees", track).is_empty(): return icon(track)
 		return load("res://assets/content_expansion_v1/equipment/" + track + "_basic.png")

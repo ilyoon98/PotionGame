@@ -1,6 +1,8 @@
 extends SceneTree
-## Approved art is read-only. Verify actual IDs, source pixels and exact hashes.
+## Approved sources stay read-only; UI v2 uses separate native32 presentation art.
+## Verify actual IDs, original hashes, current UI routing and workshop pixels.
 const ItemArt = preload("res://scripts/item_art.gd")
+const UiPixel = preload("res://scripts/ui_pixel_catalog.gd")
 const Catalog = preload("res://scripts/pixel_art_catalog.gd")
 const Visual = preload("res://scripts/potion_visual.gd")
 const State = preload("res://scripts/shop_state.gd")
@@ -25,7 +27,9 @@ func run() -> void:
 		if str(entry.path).begins_with("potions/") or str(entry.path).begins_with("recipes/"): delivered += 1
 	assert(delivered == 12)
 	assert(FileAccess.get_sha256(ItemArt.UNKNOWN_RECIPE_PATH).to_lower() == MAP_SHA)
-	assert(ItemArt.unknown_recipe_icon().get_size() == Vector2(32, 40))
+	var original_unknown: Texture2D = load(ItemArt.UNKNOWN_RECIPE_PATH)
+	assert(original_unknown.get_size() == Vector2(32, 40), "Original unknown-map source is preserved")
+	assert(ItemArt.unknown_recipe_icon() == UiPixel.icon("unknown_recipe") and ItemArt.unknown_recipe_icon().get_size() == Vector2(32, 32), "Current unknown recipe uses the new native32 placeholder")
 	var cauldron: Image = Catalog.pot("health").get_image()
 	var board := Image.create(64 * 4, 128, false, Image.FORMAT_RGBA8)
 	board.fill(Color("1d242b"))
@@ -39,8 +43,11 @@ func run() -> void:
 		var potion: Texture2D = ItemArt.icon(id)
 		var recipe: Texture2D = ItemArt.recipe_icon(id)
 		var bottle: Texture2D = ItemArt.bottle(id)
-		assert(potion.resource_path == entry.potion_path and potion.get_size() == Vector2(32, 40))
-		assert(recipe.resource_path == entry.recipe_path and recipe.get_size() == Vector2(32, 40))
+		var original_potion: Texture2D = load(entry.potion_path)
+		var original_recipe: Texture2D = load(entry.recipe_path)
+		assert(original_potion.get_size() == Vector2(32, 40) and original_recipe.get_size() == Vector2(32, 40), "Original 32x40 icon/recipe sources remain alongside their verified hashes")
+		assert(potion == UiPixel.icon(id) and UiPixel.owns(potion) and potion.get_size() == Vector2(32, 32), "Current rare potion uses its native32 catalog icon")
+		assert(recipe == UiPixel.icon("recipe:" + id) and UiPixel.owns(recipe) and recipe.get_size() == Vector2(32, 32), "Current rare recipe uses its native32 catalog icon")
 		assert(bottle.resource_path == Catalog.DATA.potions[id].bottle and bottle.get_size() == Catalog.bottle_size(id))
 		var source: Image = bottle.get_image()
 		var color := Visual.liquid_color(id)
@@ -55,8 +62,8 @@ func run() -> void:
 				elif old != next: changed += 1
 		assert(changed > 0)
 
-		board.blit_rect(potion.get_image(), Rect2i(0, 0, 32, 40), Vector2i(index * 64, 0))
-		board.blit_rect(recipe.get_image(), Rect2i(0, 0, 32, 40), Vector2i(index * 64 + 32, 0))
+		board.blit_rect(potion.get_image(), Rect2i(0, 0, 32, 32), Vector2i(index * 64, 0))
+		board.blit_rect(recipe.get_image(), Rect2i(0, 0, 32, 32), Vector2i(index * 64 + 32, 0))
 		board.blit_rect(source, Rect2i(Vector2i.ZERO,source.get_size()), Vector2i(index * 64 + 26, 46))
 		board.blit_rect(actual, Rect2i(0, 0, 32, 32), Vector2i(index * 64 + 8, 70))
 		proof.append({"id": id, "potion": potion.resource_path, "recipe": recipe.resource_path, "bottle": bottle.resource_path,  "liquid_color": color.to_html(false), "changed_liquid_pixels": changed})
@@ -64,5 +71,5 @@ func run() -> void:
 	assert(board.save_png(OUT.path_join("rare-art-and-liquid.png")) == OK)
 	var file := FileAccess.open(OUT.path_join("art-proof.json"), FileAccess.WRITE)
 	file.store_string(JSON.stringify({"cases": proof, "approved_rare_hashes": manifests, "approved_unknown_map_sha256": MAP_SHA, "state_unchanged": true, "headless_only": true}, "\t"))
-	print("RARE ITEM ART PASS: 4 exact IDs/12 approved hashes + unknown-map SHA; original32x40 icons/recipe art + approved8x12/8x16 bottles/32x32 pots, approved liquid colors and mask, unchanged state/RNG; headless only")
+	print("RARE ITEM ART PASS: 4 exact IDs/12 original hashes + unknown-map SHA preserved; current native32 UI catalog + approved8x12/8x16 bottles/32x32 pots, approved liquid colors and mask, unchanged state/RNG; headless only")
 	quit()

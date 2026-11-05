@@ -6,6 +6,8 @@ const ShopArt = preload("res://scripts/shop_art.gd")
 const RecentIncome = preload("res://scripts/recent_income.gd")
 const HerbPlant = preload("res://scripts/herb_plant.gd")
 const OperationCard = preload("res://scripts/operation_card.gd")
+const ItemArt = preload("res://scripts/item_art.gd")
+const ManagementArt = preload("res://scripts/management_art.gd")
 const ManagementPanel = preload("res://scripts/management_panel.gd")
 const DesktopInput = preload("res://scripts/desktop_input.gd")
 const WorkshopAssets = preload("res://scripts/workshop_assets.gd")
@@ -278,7 +280,7 @@ func _operation_card(y: float, accent: Color) -> Control:
 
 func _build_operation_cards() -> void:
 	supply_card = _operation_card(434, Color("9ccbdc"))
-	supply_card.set_icon(load("res://assets/mushroom_24.png"))
+	supply_card.set_icon(ItemArt.icon("moon_mushroom"))
 	supply_card.title_label.text = "달빛 버섯 · 자동 발주"
 	supply_button = supply_card.action_button
 	supply_button.hide()
@@ -295,7 +297,7 @@ func _build_operation_cards() -> void:
 	garden_button = garden_card.action_button
 	garden_card.action_pressed.connect(_upgrade_garden)
 	cauldron_card = _operation_card(574, GOLD)
-	cauldron_card.set_icon(load("res://assets/cauldron_48.png"))
+	cauldron_card.set_icon(ManagementArt.icon("cauldron"))
 	level_label = cauldron_card.title_label
 	speed_label = cauldron_card.detail_label
 	cauldron_card.status_label.text = "자동 제조 · 재료가 있으면 마나 우선"

@@ -1,13 +1,14 @@
 extends RefCounted
 ## Management actions share the shop's plum, brass and ivory pixel palette.
 const ROOT := "res://assets/management_v1/"
+const UiPixel = preload("res://scripts/ui_pixel_catalog.gd")
 const GENERATED := ["flow", "filter", "employee", "visitors", "basic", "expedition"]
 static var reputation_texture: AtlasTexture
 static var readable_icons := {}
 
 static func readable_icon(texture: Texture2D) -> Texture2D:
 	# Trim display-only padding; source art and other game views keep their regions.
-	if texture == null or texture is AtlasTexture: return texture
+	if texture == null or texture is AtlasTexture or UiPixel.owns(texture): return texture
 	var key := texture.get_instance_id()
 	if not readable_icons.has(key):
 		var image := texture.get_image()
@@ -59,10 +60,18 @@ static var keeper_icons := {}
 
 
 static func has_icon(id: String) -> bool:
-	return DESCRIPTIONS.has(id)
+	return DESCRIPTIONS.has(id) or UiPixel.icon(id) != null
+
+
+static func small_icon(id: String) -> Texture2D:
+	var replacement := UiPixel.icon(id + "_small")
+	return replacement if replacement != null else icon(id)
 
 
 static func icon(id: String) -> Texture2D:
+	var replacement := UiPixel.icon(id)
+	if replacement == null and id == "journey": replacement = UiPixel.icon("expedition")
+	if replacement != null: return replacement
 	if id == "reputation":
 		if reputation_texture == null:
 			reputation_texture = AtlasTexture.new()
