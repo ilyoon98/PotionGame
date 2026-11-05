@@ -31,18 +31,18 @@ func without_decor(state: RefCounted) -> Dictionary:
 func run() -> void:
 	check(get_meta("isolated_preview", false), "Isolated preview; no player save")
 	# Model.
-	var s := State.new(); s.gold = 1000
+	var s := State.new(); s.gold = 30000
 	check(not s.decor.act(s, "nonexistent").ok, "Unknown decoration is refused")
 	var bought: Dictionary = s.decor.act(s, "decor_teacup")
-	check(bought.ok and bought.action == "bought" and s.gold == 880 and s.progression.totals.manual_spent == 120, "Teacup costs 120 G once and counts as direct spending")
+	check(bought.ok and bought.action == "bought" and s.gold == 25000 and s.progression.totals.manual_spent == 5000, "Teacup costs 5,000 G once and counts as direct spending")
 	check(s.decor.owns("decor_teacup") and s.decor.counter_prop().is_empty(), "Buying never equips automatically")
 	check(s.decor.view(s, "decor_teacup").action == "장착", "Owned teacup offers equip")
-	check(s.decor.act(s, "decor_teacup").action == "equipped" and s.decor.counter_prop() == "decor_teacup" and s.gold == 880, "Equipping is free")
-	check(s.decor.act(s, "decor_dried_vase").action == "bought" and s.gold == 640 and s.decor.counter_prop() == "decor_teacup", "Buying the vase keeps the equipped teacup")
+	check(s.decor.act(s, "decor_teacup").action == "equipped" and s.decor.counter_prop() == "decor_teacup" and s.gold == 25000, "Equipping is free")
+	check(s.decor.act(s, "decor_dried_vase").action == "bought" and s.gold == 7000 and s.decor.counter_prop() == "decor_teacup", "Buying the vase keeps the equipped teacup")
 	check(s.decor.act(s, "decor_dried_vase").action == "equipped" and s.decor.counter_prop() == "decor_dried_vase" and s.decor.owns("decor_teacup"), "Swapping keeps ownership of the old prop")
-	check(s.decor.act(s, "decor_dried_vase").action == "removed" and s.decor.counter_prop().is_empty() and s.gold == 640, "Removing is free and empties the slot")
-	var poor := State.new(); poor.gold = 100
-	check(not poor.decor.act(poor, "decor_teacup").ok and poor.gold == 100 and poor.decor.view(poor, "decor_teacup").reason == "20 G 부족", "Not enough gold is refused without charging")
+	check(s.decor.act(s, "decor_dried_vase").action == "removed" and s.decor.counter_prop().is_empty() and s.gold == 7000, "Removing is free and empties the slot")
+	var poor := State.new(); poor.gold = 4980
+	check(not poor.decor.act(poor, "decor_teacup").ok and poor.gold == 4980 and poor.decor.view(poor, "decor_teacup").reason == "20 G 부족", "Not enough gold is refused without charging")
 	# Economy independence: an equipped prop changes nothing else.
 	var plain := State.new(); var decorated := State.new()
 	decorated.decor.owned = ["decor_teacup"]; decorated.decor.equipped = {"counter": "decor_teacup"}
@@ -77,7 +77,7 @@ func run() -> void:
 	var shop := Shop.new(); root.add_child(shop)
 	await process_frame
 	freeze(shop)
-	shop.state = State.new(); shop.state.gold = 1000
+	shop.state = State.new(); shop.state.gold = 30000
 	shop.set_meta("decor_save_fixture", fail_save)
 	var before_fail: Dictionary = M.data(shop.state)
 	check(not shop.perform_decor_action("decor_teacup").ok and Compare.equivalent(before_fail, M.data(shop.state)), "Failed save restores gold, spending and ownership")
@@ -100,12 +100,12 @@ func run() -> void:
 	# Management rows.
 	shop.open_management()
 	var panel = shop.management; panel.set_process(false)
-	shop.state.gold = 1000
+	shop.state.gold = 30000
 	panel.select_page(panel.UPGRADES); panel.refresh()
 	for i in 3: await process_frame
 	var vase: Dictionary = panel.rows.decor_dried_vase
 	var teacup: Dictionary = panel.rows.decor_teacup
-	check(vase.panel.is_visible_in_tree() and vase.title.text == "말린 꽃병" and vase.button.text.contains("구매") and vase.button.text.contains("240") and not vase.button.disabled, "Unowned vase offers purchase for 240 G")
+	check(vase.panel.is_visible_in_tree() and vase.title.text == "말린 꽃병" and vase.button.text.contains("구매") and vase.button.text.contains("18") and not vase.button.disabled, "Unowned vase offers purchase for 18,000 G")
 	check(teacup.button.text == "장착" and teacup.detail.text.contains("소장"), "Owned teacup offers equip")
 	vase.button.pressed.emit()
 	check(shop.state.decor.owns("decor_dried_vase") and shop.state.decor.counter_prop().is_empty() and vase.button.text == "장착", "Row purchase buys without equipping")
@@ -119,7 +119,7 @@ func run() -> void:
 	var row_compass: Dictionary = panel.rows.decor_souvenir_compass
 	check(row_compass.button.disabled and row_compass.button.text == "단골이 되면 받아요", "Souvenir not yet received cannot be equipped")
 	check(not shop.perform_decor_action("souvenir_compass").ok and shop.state.decor.souvenir().is_empty(), "Shop refuses an unreceived souvenir")
-	shop.state.regulars.points = {"traveler": 60, "mage": 60}
+	shop.state.regulars.points = {"traveler": 2500, "mage": 2500}
 	panel.refresh()
 	check(not row_compass.button.disabled and row_compass.button.text == "장착", "Received souvenir offers equip")
 	var gold_before: int = shop.state.gold

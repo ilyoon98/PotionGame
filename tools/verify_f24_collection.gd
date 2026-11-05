@@ -33,7 +33,7 @@ func complete(state: RefCounted) -> void:
 		else:
 			if not p.expansion.regions.has(region.id): p.expansion.regions.append(region.id)
 			p.expansion.returns[region.id] = int(region.complete_returns)
-	for id in state.regulars.ids(): state.regulars.points[id] = 60
+	for id in state.regulars.ids(): state.regulars.points[id] = 2500
 	state.decor.owned = ["decor_teacup", "decor_dried_vase"]
 func run() -> void:
 	check(get_meta("isolated_preview", false), "Isolated preview; no player save")
@@ -43,7 +43,7 @@ func run() -> void:
 	check(not Status.collection_complete(fresh), "New game is not complete")
 	var partial := State.new()
 	partial.progression.owned.append("moon")
-	partial.regulars.points["elf"] = 60
+	partial.regulars.points["elf"] = 2500
 	partial.decor.owned = ["decor_teacup"]
 	c = counts(partial)
 	check(c.recipes == [1, 30] and c.souvenirs == [1, 4] and c.decor == [1, 2], "Counts follow owned recipes, received souvenirs and bought props")

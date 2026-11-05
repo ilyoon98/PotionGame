@@ -6,10 +6,11 @@ extends RefCounted
 ## Souvenirs are owned through the regulars record, never bought.
 const VERSION := 2
 const SLOTS := ["counter", "souvenir"]
-## Prices from the 2026-10-07 proposal (cosmetic, one-time).
+## One-time cosmetic prices, about ten minutes of net income at the time each is
+## within reach (measured 2026-11-05: ~480 G/min at 1 h, ~1,750 G/min at 3 h).
 const ITEMS := {
-	"decor_teacup": {"name": "작은 찻잔", "cost": 120, "slot": "counter"},
-	"decor_dried_vase": {"name": "말린 꽃병", "cost": 240, "slot": "counter"},
+	"decor_teacup": {"name": "작은 찻잔", "cost": 5000, "slot": "counter"},
+	"decor_dried_vase": {"name": "말린 꽃병", "cost": 18000, "slot": "counter"},
 }
 const ORDER := ["decor_teacup", "decor_dried_vase"]
 const Regulars = preload("res://scripts/shop_regulars.gd")

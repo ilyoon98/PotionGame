@@ -26,7 +26,7 @@ func run() -> void:
 	check(get_meta("isolated_preview", false), "Isolated preview; no player save")
 	check(Regulars.ids() == ["traveler", "mage", "elf", "rogue"], "Current four customers, no knight")
 	# Stage thresholds.
-	var expected := {0: 0, 1: 1, 14: 1, 15: 2, 59: 2, 60: 3, 149: 3, 150: 4, 100000: 4}
+	var expected := {0: 0, 1: 1, 149: 1, 150: 2, 2499: 2, 2500: 3, 6999: 3, 7000: 4, 100000: 4}
 	for value in expected: check(Regulars.stage_for(value) == expected[value], "Stage of %d points is %d" % [value, expected[value]])
 	# Recording.
 	var r := Regulars.new()
@@ -36,12 +36,12 @@ func run() -> void:
 	r.record("mage", true)
 	check(r.points_of("mage") == 3, "Preferred sale adds 3 points")
 	check(r.record("knight", true).is_empty() and not r.points.has("knight"), "Retired knight slot is ignored")
-	r.points["elf"] = 59
+	r.points["elf"] = 2499
 	var souvenir := r.record("elf", false)
-	check(souvenir.get("stage") == 3 and souvenir.get("souvenir") == "souvenir_leaf_brooch" and r.has_souvenir("elf"), "60 points gives the elf souvenir")
+	check(souvenir.get("stage") == 3 and souvenir.get("souvenir") == "souvenir_leaf_brooch" and r.has_souvenir("elf"), "2,500 points give the elf souvenir")
 	check(r.souvenirs() == ["souvenir_leaf_brooch"], "Souvenir list follows stage")
 	check(r.lines("elf").size() == 3 and r.lines("elf")[2].contains("잎사귀 브로치"), "Stage 3 shows intro, story and souvenir line")
-	r.points["rogue"] = 150
+	r.points["rogue"] = 7000
 	check(r.lines("rogue").size() == 4 and r.next_threshold("rogue") == 0 and r.view("rogue").fraction == 1.0, "Stage 4 is the last stage")
 	r.points["rogue"] = Regulars.MAX_POINTS; r.record("rogue", true)
 	check(r.points_of("rogue") == Regulars.MAX_POINTS, "Points are capped")
@@ -64,7 +64,7 @@ func run() -> void:
 	check(visits >= sold, "Visits are counted separately from sales")
 	# Economy independence: a full record changes nothing else.
 	var plain := State.new(); var rich := State.new()
-	for id in Regulars.ids(): rich.regulars.points[id] = 149
+	for id in Regulars.ids(): rich.regulars.points[id] = 6999
 	plain.advance(1200.0); rich.advance(1200.0)
 	check(Compare.equivalent(without_regulars(plain), without_regulars(rich)), "Regulars never change the economy")
 	# Frame independence.
@@ -76,14 +76,14 @@ func run() -> void:
 	var report := State.new()
 	report.start_report_period()
 	check(not report.report_text().contains("단골 ·"), "No regular lines before a stage change")
-	report.regulars.points["traveler"] = 59; report.regulars.record("traveler", false)
+	report.regulars.points["traveler"] = 2499; report.regulars.record("traveler", false)
 	var text: String = report.report_text()
 	check(text.contains("단골 · 여행자 단골") and text.contains("기념품 낡은 나침반"), "Report shows the stage and souvenir")
 	report.start_report_period()
 	check(not report.report_text().contains("단골 ·"), "A new period starts from the current stages")
 	# Saves.
 	var saved := State.new()
-	saved.regulars.points = {"traveler": 61, "mage": 3}; saved.regulars.report_stages = {"mage": 1}
+	saved.regulars.points = {"traveler": 2501, "mage": 151}; saved.regulars.report_stages = {"mage": 1}
 	var restored := State.new()
 	check(restored.load_data(M.data(saved)) and Compare.equivalent(M.data(saved), M.data(restored)), "Roundtrip keeps points and report stages")
 	check(M.data(saved).version == State.SAVE_VERSION and State.SAVE_VERSION >= 16, "Saves as the current version (v16 or later)")
@@ -113,7 +113,7 @@ func run() -> void:
 	shop.set_process(false); shop.art.set_process(false); shop.open_management()
 	var panel = shop.management; panel.set_process(false)
 	shop.state = State.new(); shop.state.set_shop_open(false)
-	shop.state.regulars.points = {"traveler": 60, "mage": 15, "elf": 1}
+	shop.state.regulars.points = {"traveler": 2500, "mage": 150, "elf": 1}
 	panel.select_page(panel.OPERATION); panel.refresh()
 	await process_frame
 	check(panel.regular_dot.visible, "Statistics button shows a dot for new stages")
@@ -123,12 +123,12 @@ func run() -> void:
 	check(panel.regular_cards.size() == 4, "Four regular cards")
 	var traveler: Dictionary = panel.regular_cards.traveler
 	check(traveler.panel.is_visible_in_tree() and traveler.title.text == "여행자 · 단골" and traveler.badge.visible, "Traveler card shows stage and new badge")
-	shop.state.regulars.points.mage = 150
+	shop.state.regulars.points.mage = 7000
 	panel.refresh()
 	check(panel.regular_cards.mage.title.text == "여마법사 · 믿고 찾는 손님 ★", "Last stage shows the record mark")
-	shop.state.regulars.points.mage = 15
+	shop.state.regulars.points.mage = 150
 	panel.refresh()
-	check(traveler.story.text.contains("낡은 나침반") and traveler.progress.text.contains("60 / 150"), "Traveler card shows souvenir and progress")
+	check(traveler.story.text.contains("낡은 나침반") and traveler.progress.text.contains("2500 / 7000"), "Traveler card shows souvenir and progress")
 	check(panel.regular_cards.mage.habits.text == "방문 0회 · 선호 마나 물약", "Mage habits include mana, owned from the start")
 	check(traveler.habits.text == "방문 0회 · 선호 체력 물약" and panel.regular_cards.elf.habits.text == "방문 0회 · 선호 물약을 아직 갖추지 않았어요", "Habits show visits and owned preferred potions only")
 	shop.state.progression.owned.append("purify"); shop.state.progression.by_customer["elf"] = 7
@@ -160,7 +160,7 @@ func run() -> void:
 	# Engine capture of the statistics page for visual review (rendering driver only).
 	var captured := false
 	if DisplayServer.get_name() != "headless":
-		shop.state.regulars.points = {"traveler": 160, "mage": 61, "elf": 16, "rogue": 0}
+		shop.state.regulars.points = {"traveler": 7100, "mage": 2510, "elf": 160, "rogue": 0}
 		shop.state.regulars.report_stages = {"traveler": 3}
 		panel.select_page(panel.REPORT); panel.refresh()
 		for i in 3: await process_frame

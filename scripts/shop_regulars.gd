@@ -8,8 +8,10 @@ const VERSION := 1
 const NORMAL_POINTS := 1
 const PREFERRED_POINTS := 3
 const MAX_POINTS := 1000000000
-## Points needed for stages 1..4. Provisional values from the 2026-10-07 proposal.
-const THRESHOLDS := [1, 15, 60, 150]
+## Points needed for stages 1..4. Retuned 2026-11-05 from the measured growth timeline
+## (tools/measure_f22_growth_timeline.gd, slowest customer): ~30 min, ~3 h (main
+## content), ~8 h (full growth). Was 1/15/60/150, which all customers passed in 34 min.
+const THRESHOLDS := [1, 150, 2500, 7000]
 const STAGE_NAMES := ["처음 보는 손님", "첫 거래", "익숙한 손님", "단골", "믿고 찾는 손님"]
 const SOUVENIR_STAGE := 3
 ## Draft lines; stage 1 introduces, 2 and 4 are stories, 3 gives the souvenir.

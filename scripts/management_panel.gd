@@ -1229,7 +1229,7 @@ func _refresh_decor(state: RefCounted) -> void:
 		_text(row.title, "%s · 기념품" % item.name)
 		_text(row.detail, "창틀 위에 놓여 있어요" if item.equipped else "소장" if item.owned else "단골 손님에게 받는 기념품")
 		_text(row.summary, "작업실 창틀 위에 놓는 장식 · 기능 효과 없음")
-		_text(row.extra, "기념품 칸은 1개예요. 해당 손님이 단골(기록 60) 단계가 되면 받아요." + ("
+		_text(row.extra, "기념품 칸은 1개예요. 해당 손님이 단골(기록 %d) 단계가 되면 받아요." % Regulars.THRESHOLDS[Regulars.SOUVENIR_STAGE - 1] + ("
 " + decor_feedback if not decor_feedback.is_empty() else ""))
 		CurrencyText.button_value(row.button, str(item.action))
 		row.button.disabled = not bool(item.can_act)
