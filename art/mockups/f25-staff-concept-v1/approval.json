@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "review": "art/mockups/f25-staff-concept-v1/review.html",
+  "runtime_integrated": false,
+  "scope": {
+    "staff_sales_assistant": "판매 보조 컨셉 · 단정한 앞치마 점원 (대기 1장 32×48, 5색)",
+    "staff_cultivation_assistant": "재배 보조 컨셉 · 밀짚모자 정원사 (대기 1장 32×48, 5색)",
+    "staff_brewing_assistant": "조제 보조 컨셉 · 고글 견습 조제사 (대기 1장 32×48, 5색)",
+    "staff_expedition_guide": "원정 길잡이 컨셉 · 후드 등불 길잡이 (대기 1장 32×48, 5색)",
+    "layout_A": "고용한 직원 중 1명만 순번으로 고정 자리에 등장",
+    "layout_B": "작업실 왼쪽 확장(+243px) 띠에 4명 앞·뒷줄",
+    "layout_C": "4명이 각자 설비(약초대·솥·판매대·표지판) 근처, 바닥 가구 뒤에 반쯤 가려 서기",
+    "layout_D": "작업실에는 넣지 않고 관리 화면 직원 행에 초상만"
+  },
+  "pending_decisions": [
+    "직원 4명 컨셉(외형·색) 승인 또는 수정 지시 — 인물별로 따로 답해도 됨",
+    "배치안 A/B/C/D 중 선택(또는 'D 먼저, 나중에 A' 같은 단계 진행)",
+    "작업실 등장을 고르면: 행동 애니메이션 범위(대기만 / 대기+역할 행동 2장)",
+    "A를 고르면: 교대 규칙(판매 건수·시간)과 겹치는 약초 HUD 처리 방식"
+  ],
+  "note": "사용자 승인 전 후보. assets/·scripts/는 바꾸지 않았다. 승인 뒤 게시·연결은 별도 작업."
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "date": "2026-11-05",
+  "mode": "hand-authored 32x48 native pixel maps (no image generator); the .txt maps are the authoritative source",
+  "request": "사용자: \"직원 4명은 들어가기 너무 빡센데 일단 배치안과 컨셉이 필요할 거 같아. 어렵지만 캐릭터들 추가되는 것도 좋다고 생각해.\"",
+  "reference": {
+    "characters": "assets/pixel_v1/characters/*/idle-native.png (approved keeper + 4 customers, read only)",
+    "spec": "AGENTS.md 색 문법 · 픽셀 규격 · 캐릭터 규격(32×48, 머리 11~26행, 몸통 27~39, 다리 40~46, 발 46)",
+    "planning": "docs/성장과-단골-꾸미기-기획안.md 종업원 상세안",
+    "occupancy": "tools/build_f23_decor_v1.py build_masks()"
+  },
+  "legend": {
+    "#": {
+      "color": "#241C32",
+      "ramp": "outline"
+    },
+    "s": {
+      "color": "#F6D1AC",
+      "ramp": "skin"
+    },
+    "S": {
+      "color": "#DE9B88",
+      "ramp": "skin"
+    },
+    "r": {
+      "color": "#A65D64",
+      "ramp": "skin"
+    },
+    "c": {
+      "color": "#FFF0BC",
+      "ramp": "gold"
+    },
+    "g": {
+      "color": "#E9B95F",
+      "ramp": "gold"
+    },
+    "a": {
+      "color": "#A56A3D",
+      "ramp": "gold"
+    },
+    "w": {
+      "color": "#50333B",
+      "ramp": "wood"
+    },
+    "o": {
+      "color": "#C99463",
+      "ramp": "wood"
+    },
+    "L": {
+      "color": "#3D544D",
+      "ramp": "leaf"
+    },
+    "m": {
+      "color": "#827589",
+      "ramp": "stone"
+    },
+    "R": {
+      "color": "#9D4359",
+      "ramp": "fire"
+    },
+    "t": {
+      "color": "#9BE2CF",
+      "ramp": "teal"
+    },
+    "T": {
+      "color": "#24566A",
+      "ramp": "teal"
+    }
+  },
+  "staff": {
+    "staff_sales_assistant": {
+      "employee": "sales_assistant",
+      "name": "판매 보조",
+      "concept": "단정한 앞치마 점원",
+      "summary": "판매대를 지키는 점원. 위로 올려 묶은 동그란 머리(크림 리본)와 장밋빛 원피스, 무릎까지 오는 크림색 앞치마. 관리 화면의 판매 보조 아이콘(상점 앞치마)과 같은 소재를 몸에 입혔다.",
+      "silhouette": "정수리 위 동그란 올림머리 + 아래로 퍼지는 A라인 치마. 모자·망토·꼬리·소품 없이 머리 위 작은 혹 하나로 읽힌다.",
+      "pose": "양팔을 옆에 내린 대기. 손님 쪽 행동 후보는 가벼운 인사(허리 숙이기)·손 흔들기.",
+      "distinct": "주인공(뾰족 모자·보라 망토)·여마법사(보라 모자·긴 머리)와 달리 모자가 없고, 여행자(크림 셔츠·배낭)와 달리 장밋빛 치마가 주색이다. 크림색은 앞치마에만 써서 여행자와 면적이 다르다.",
+      "materials": {
+        "outline": "#241C32",
+        "skin": "#F6D1AC",
+        "dress_and_blush": "#A65D64",
+        "apron_ribbon_cuffs": "#FFF0BC",
+        "hair_and_shoes": "#50333B"
+      }
+    },
+    "staff_cultivation_assistant": {
+      "employee": "cultivation_assistant",
+      "name": "재배 보조",
+      "concept": "밀짚모자 정원사",
+      "summary": "약초대를 돌보는 정원사 소년. 챙이 넓은 납작한 밀짚모자(꼭대기에 새싹 하나), 노란 셔츠에 짙은 초록 멜빵 작업복, 구리 물뿌리개. 햇볕에 그을린 피부(복숭아 피부 램프의 중간 단)와 주근깨.",
+      "silhouette": "머리보다 넓은 28픽셀 평평한 챙(뾰족 모자와 반대 형태) + 오른손 아래로 튀어나온 물뿌리개 주둥이.",
+      "pose": "물뿌리개를 든 대기. 행동 후보는 약초대에 물 주기(기울이기 2장).",
+      "distinct": "엘프의 밝은 잎 초록(#718C59·#B5C77D) 대신 그늘 잎(#3D544D)만 쓰고, 금빛 모자는 주인공 모자 장식보다 훨씬 넓은 면적이다. 4명 중 유일하게 다른 피부 단(#DE9B88)이다.",
+      "materials": {
+        "outline": "#241C32",
+        "skin_tan": "#DE9B88",
+        "straw_hat_shirt": "#E9B95F",
+        "hair_boots_can_copper": "#A56A3D",
+        "overalls_sprout": "#3D544D"
+      }
+    },
+    "staff_brewing_assistant": {
+      "employee": "brewing_assistant",
+      "name": "조제 보조",
+      "concept": "고글 견습 조제사",
+      "summary": "솥 옆에서 일하는 견습 조제사. 이마에 올린 둥근 고글(민트 렌즈), 짧은 와인색 머리와 옆으로 뻗은 꽁지머리, 회색 조제 가운(가슴 주머니의 민트 시험관), 오른손의 둥근 민트 물약 플라스크.",
+      "silhouette": "머리 오른쪽으로 뻗은 꽁지머리 + 무릎까지 곧게 떨어지는 가운 + 아래로 매달린 둥근 플라스크.",
+      "pose": "플라스크를 든 대기. 행동 후보는 플라스크 흔들기·솥에 붓기(2장).",
+      "distinct": "보라를 전혀 쓰지 않는다(주인공·여마법사와 분리). 와인색(#9D4359)은 고양이 도적 목도리와 같은 색이지만 머리카락에만 쓰고 고양이 귀·꼬리가 없다. 회색 가운은 5명 누구도 쓰지 않은 돌 램프다.",
+      "materials": {
+        "outline": "#241C32",
+        "skin": "#F6D1AC",
+        "smock": "#827589",
+        "hair_and_shoes": "#9D4359",
+        "goggles_flask_tube": "#9BE2CF"
+      }
+    },
+    "staff_expedition_guide": {
+      "employee": "expedition_guide",
+      "name": "원정 길잡이",
+      "concept": "후드 등불 길잡이",
+      "summary": "원정을 이끄는 길잡이. 짙은 청록 후드 망토, 모래색 앞머리와 짧은 턱수염, 금빛 목수건, 왼손에 쥔 머리보다 높은 지팡이와 그 끝의 금빛 등불.",
+      "silhouette": "둥근 후드 + 아래로 넓게 퍼지는 망토 + 왼쪽으로 솟은 가는 지팡이(캔버스 2행까지).",
+      "pose": "지팡이를 짚은 대기. 행동 후보는 등불 들어 올리기·원정 출발/귀환 걷기.",
+      "distinct": "망토는 주인공의 앞이 열린 보라 망토와 달리 머리를 덮는 청록 후드다. 4명 중 유일하게 키보다 높은 소품을 든다. 여행자와 같은 모래색(#C99463)은 지팡이·장화·앞머리에만 쓴다.",
+      "materials": {
+        "outline": "#241C32",
+        "skin": "#F6D1AC",
+        "hood_cloak_trousers": "#24566A",
+        "staff_hair_beard_boots": "#C99463",
+        "lantern_scarf": "#E9B95F"
+      }
+    }
+  },
+  "new_palette_colors": 0,
+  "postprocess_tool": "tools/process_pixel_art.py with manifest.json"
+}
