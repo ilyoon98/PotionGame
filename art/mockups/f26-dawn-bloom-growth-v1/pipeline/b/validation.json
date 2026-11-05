@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "dawn_bloom_growth": {
+      "passed": true,
+      "size": [
+        64,
+        80
+      ],
+      "opaque_pixels": 1642,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#50315F",
+        "#50333B",
+        "#718C59",
+        "#86548E",
+        "#DE7356",
+        "#E9B95F",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 10,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "pot_body": 2,
+        "pot_light": 3,
+        "rim_and_sparkle": 4,
+        "cream_heart_glint": 5,
+        "soil": 6,
+        "leaf": 7,
+        "leaf_shade": 8,
+        "petal_light": 9,
+        "petal_shade": 10
+      },
+      "source_sha256": "4b5136c01d411398c98cbe9f74dbac443529a10fb91c0afcaa74927ab04d204e",
+      "native_pixel_sha256": "581debe0930e8b60d9460ba3b6665f035cf02c579653da40118afa66c2b74461"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

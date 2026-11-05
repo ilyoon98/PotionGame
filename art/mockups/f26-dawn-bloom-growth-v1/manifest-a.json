@@ -1,0 +1,107 @@
+{
+  "output": "art/mockups/f26-dawn-bloom-growth-v1/pipeline/a",
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "alpha_threshold": 128,
+  "max_colors": 5,
+  "compose": false,
+  "scene": {
+    "size": [
+      64,
+      80
+    ],
+    "background": "#241C32"
+  },
+  "assets": [
+    {
+      "id": "dawn_bloom_growth",
+      "source": "art/mockups/f26-dawn-bloom-growth-v1/registered/a/dawn_bloom_growth.png",
+      "size": [
+        64,
+        80
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "pot": [
+          "#86548E"
+        ],
+        "cream": [
+          "#FFF0BC"
+        ],
+        "petal": [
+          "#F4AC68"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "material_ramps": {
+        "pot": "purple",
+        "cream": "gold",
+        "petal": "fire",
+        "leaf": "leaf"
+      },
+      "rules": [
+        {
+          "material": "pot",
+          "hue": [
+            0.8063,
+            0.8143
+          ],
+          "saturation_min": 0.3985,
+          "saturation_max": 0.4185,
+          "value_min": 0.5469,
+          "value_max": 0.5669
+        },
+        {
+          "material": "cream",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "petal",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.2509,
+            0.2589
+          ],
+          "saturation_min": 0.3543,
+          "saturation_max": 0.3743,
+          "value_min": 0.539,
+          "value_max": 0.559
+        }
+      ],
+      "fallback_material": "pot",
+      "name_ko": "여명초 성장 그림 A안 · 규칙 엄수 (5색)"
+    }
+  ]
+}

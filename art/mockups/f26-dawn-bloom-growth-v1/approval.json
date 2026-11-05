@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "date": "2026-11-05",
+  "review": "art/mockups/f26-dawn-bloom-growth-v1/review.html",
+  "plan": "docs/새-원정-지역과-물약-F26-기획안.md",
+  "runtime_integrated": false,
+  "scope": {
+    "dawn_bloom_growth_a": "여명초 성장 그림 64×80 (32×40 칸 2×2) A안 · 5색 규칙 엄수 (후보)",
+    "dawn_bloom_growth_b": "여명초 성장 그림 64×80 (32×40 칸 2×2) B안 · 10색, 물체당 5색 상한 예외 (후보)"
+  },
+  "pending_decisions": [
+    "A안/B안 선택 (B안은 5색 상한 예외 승인과 palette-log 기록 필요)",
+    "봉오리 단계 잎·수확 반짝임 위치"
+  ],
+  "publish_after_approval": {
+    "copy": "선택한 sheets/dawn_bloom_growth_{a|b}.png → assets/content_expansion_v1/materials/dawn_bloom_growth.png (바이트 그대로)",
+    "catalog": "assets/content_expansion_v1/catalog.json 여명초(materials) 행에 growth_path만 추가",
+    "growth_path": "res://assets/content_expansion_v1/materials/dawn_bloom_growth.png",
+    "tests_to_update": [
+      "tools/verify_f26_region_potions.gd: 'No growth sheet stand-in for dawn bloom' 검사",
+      "tools/verify_workshop_followup.gd: 재료별 성장 그림 검사의 여명초 예외"
+    ]
+  }
+}

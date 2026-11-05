@@ -1,0 +1,182 @@
+{
+  "output": "art/mockups/f26-dawn-bloom-growth-v1/pipeline/b",
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "alpha_threshold": 128,
+  "max_colors": 10,
+  "compose": false,
+  "scene": {
+    "size": [
+      64,
+      80
+    ],
+    "background": "#241C32"
+  },
+  "assets": [
+    {
+      "id": "dawn_bloom_growth",
+      "source": "art/mockups/f26-dawn-bloom-growth-v1/registered/b/dawn_bloom_growth.png",
+      "size": [
+        64,
+        80
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "pot_body": [
+          "#50315F"
+        ],
+        "pot_light": [
+          "#86548E"
+        ],
+        "rim_and_sparkle": [
+          "#E9B95F"
+        ],
+        "cream_heart_glint": [
+          "#FFF0BC"
+        ],
+        "soil": [
+          "#50333B"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "leaf_shade": [
+          "#3D544D"
+        ],
+        "petal_light": [
+          "#F4AC68"
+        ],
+        "petal_shade": [
+          "#DE7356"
+        ]
+      },
+      "material_ramps": {
+        "pot_body": "purple",
+        "pot_light": "purple",
+        "rim_and_sparkle": "gold",
+        "cream_heart_glint": "gold",
+        "soil": "wood",
+        "leaf": "leaf",
+        "leaf_shade": "leaf",
+        "petal_light": "fire",
+        "petal_shade": "fire"
+      },
+      "rules": [
+        {
+          "material": "pot_body",
+          "hue": [
+            0.775,
+            0.783
+          ],
+          "saturation_min": 0.4742,
+          "saturation_max": 0.4942,
+          "value_min": 0.3625,
+          "value_max": 0.3825
+        },
+        {
+          "material": "pot_light",
+          "hue": [
+            0.8063,
+            0.8143
+          ],
+          "saturation_min": 0.3985,
+          "saturation_max": 0.4185,
+          "value_min": 0.5469,
+          "value_max": 0.5669
+        },
+        {
+          "material": "rim_and_sparkle",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "cream_heart_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "soil",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.2509,
+            0.2589
+          ],
+          "saturation_min": 0.3543,
+          "saturation_max": 0.3743,
+          "value_min": 0.539,
+          "value_max": 0.559
+        },
+        {
+          "material": "leaf_shade",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        },
+        {
+          "material": "petal_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "petal_shade",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        }
+      ],
+      "fallback_material": "pot_body",
+      "name_ko": "여명초 성장 그림 B안 · 기존 성장 그림과 어울림 우선 (10색)"
+    }
+  ]
+}

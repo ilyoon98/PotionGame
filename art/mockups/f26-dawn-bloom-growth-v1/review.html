@@ -1,0 +1,76 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>여명초 성장 그림 후보</title><style>
+@font-face{font-family:Pretendard;src:url('../../../assets/fonts/pretendard/Pretendard-Regular.otf')}
+:root{--bg:#241c32;--panel:#30263f;--line:#827589;--text:#fff0bc;--muted:#c38eb5;--accent:#e9b95f;--ok:#b5c77d;--bad:#de7356}
+*{box-sizing:border-box}html,body{background:var(--bg)}body{margin:0;color:var(--text);font:15px/1.55 Pretendard,system-ui,sans-serif}
+main{max-width:1210px;margin:auto;padding:18px 16px 48px}h1{font-size:23px;margin:0 0 6px}h2{font-size:17px;margin:28px 0 8px}h3{font-size:15px;margin:0}
+p{margin:6px 0 10px}.muted{color:var(--muted)}.ok{color:var(--ok)}.bad{color:var(--bad)}.warn{color:var(--accent)}
+.note{border-left:3px solid #718c59;padding:8px 12px;background:var(--panel);margin:10px 0}.note.warn{border-left-color:var(--accent);color:var(--text)}
+.check{background-color:#4a3c52;background-image:linear-gradient(45deg,#3f3347 25%,transparent 25%),linear-gradient(-45deg,#3f3347 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#3f3347 75%),linear-gradient(-45deg,transparent 75%,#3f3347 75%);background-size:12px 12px;background-position:0 0,0 6px,6px -6px,-6px 0}
+img{image-rendering:pixelated;image-rendering:crisp-edges;max-width:none;display:block}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(540px,1fr));gap:12px}@media(max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid #4a3c52;border-radius:6px;padding:12px;overflow-x:auto}
+.sizes{display:flex;align-items:flex-end;gap:10px;margin:10px 0 6px;flex-wrap:wrap}.sizes figure{margin:0;text-align:center}.sizes .check{display:flex;align-items:center;justify-content:center;padding:4px}
+figcaption{font-size:11px;color:var(--muted);margin-top:3px}.desc{font-size:13px;margin:6px 0}
+.sw{display:flex;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--muted)}.sw span{display:flex;align-items:center;gap:3px}.sw i{width:12px;height:12px;display:inline-block;border:1px solid #000;background:var(--c)}
+.wide{overflow-x:auto;background:var(--panel);padding:8px;border-radius:6px}
+table{border-collapse:collapse;font-size:13px;width:100%}td,th{border-bottom:1px solid #4a3c52;padding:5px 6px;text-align:left;vertical-align:top}
+</style></head><body><main>
+<h1>여명초(dawn_bloom) 화분 성장 그림 후보 v1</h1>
+<p class="muted">2026-11-05 · 상태 <b>후보(candidate)</b> · 게임 미연결 · 승인 전. 승인되면 <code>assets/content_expansion_v1/catalog.json</code>의 여명초 행에
+<code>growth_path: res://assets/content_expansion_v1/materials/dawn_bloom_growth.png</code>만 더한다.</p>
+<div class="note">기존 재배 재료 10종과 같은 형식: <b>64×80 시트 = 32×40 칸 2×2</b> (0 왼쪽 위 새싹 · 1 오른쪽 위 자라는 중 · 2 왼쪽 아래 다 자람 · 3 오른쪽 아래 수확 반짝임).
+관리 · 약초 탭은 진행도로 칸 0/1/2를 원본 1배(32×40)로 보여 주고, 칸 3은 작업실 화분(기본 약초 전용)의 수확 연출에서만 쓰인다. 모든 칸의 가장 아래 불투명 행은 기존과 같이 y=38,
+화분은 기존 9종과 같은 자리(행 24~38, 테 x7~24)에 두었다. 원본은 손으로 쓴 문자 지도 <code>source/*.txt</code> → <code>tools/process_pixel_art.py</code>. 체크무늬는 CSS 배경이다.</div>
+<div class="note warn">기존 성장 그림 10종은 <b>승인 24색 규칙 이전의 생성 그림</b>이다(시트당 1,300~2,000색, 반투명 픽셀 약 1,600~2,600개). 그대로 흉내 내면 규칙 위반이고, 규칙대로 5색에 넣으면
+기존 화분의 금테·흙·그늘이 빠진다. 그래서 같은 지도를 두 범례로 칠한 <b>A안(5색 규칙 엄수)</b>과 <b>B안(10색, 기존과 어울림 우선 · 5색 상한 예외 승인 필요)</b>을 함께 보여 준다.
+두 안 모두 승인 24색만 쓰고 반투명 0, 1픽셀 외곽선, 램프당 3단계 이하다.</div>
+
+<h2>1. 후보 A / B · 단계별 3배</h2>
+<div class="cards"><div class="card"><h3>A안 · 규칙 엄수 (5색)</h3>
+<div class="sizes"><figure><div class="check"><img src="sheets/dawn_bloom_growth_a-3x.png" class="" alt=""></div><figcaption>시트 64×80 ×3</figcaption></figure>
+<figure><div class="check"><img src="sheets/dawn_bloom_growth_a.png" class="" alt=""></div><figcaption>원본 1배</figcaption></figure></div>
+<div class="sizes"><figure><div class="check"><img src="stages/a/frame_0-3x.png" class="" alt=""></div><figcaption>0 새싹 (진행 0~33%)</figcaption></figure><figure><div class="check"><img src="stages/a/frame_1-3x.png" class="" alt=""></div><figcaption>1 꽃봉오리 (33~66%)</figcaption></figure><figure><div class="check"><img src="stages/a/frame_2-3x.png" class="" alt=""></div><figcaption>2 만개 (66~100%)</figcaption></figure><figure><div class="check"><img src="stages/a/frame_3-3x.png" class="" alt=""></div><figcaption>3 수확 반짝임 (화분 수확 연출 칸)</figcaption></figure></div>
+<p class="desc">승인 24색·물체당 5색·반투명 0·1픽셀 외곽선을 모두 지킨다. 화분은 승인된 작업실 약초 화분(assets/pixel_v1/props/herb.png)과 같은 자두 보라 #86548E 한 색(금테·흙·밝은 면 없음, 흙은 외곽선색)이라 기존 9종의 어두운 화분보다 밝다. 꽃은 귤빛 한 색 + 크림 꽃심이라 아이콘의 산호색 오른쪽 아래 그늘이 빠진다.</p>
+<div class="sw"><span><i style="--c:#241C32"></i>#241C32</span><span><i style="--c:#718C59"></i>#718C59</span><span><i style="--c:#86548E"></i>#86548E</span><span><i style="--c:#F4AC68"></i>#F4AC68</span><span><i style="--c:#FFF0BC"></i>#FFF0BC</span></div>
+<p class="desc">5색 · 팔레트 밖 0 · 반투명 0 · 외곽선 위반 0 ·
+디더링 0 · 램프별 단계 outline 1, purple 1, gold 1, fire 1, leaf 1 ·
+모든 칸 바닥 행 38 예 · 화분 4칸 동일 예 ·
+판정 <b class="ok">passed</b></p></div><div class="card"><h3>B안 · 기존 성장 그림과 어울림 우선 (10색)</h3>
+<div class="sizes"><figure><div class="check"><img src="sheets/dawn_bloom_growth_b-3x.png" class="" alt=""></div><figcaption>시트 64×80 ×3</figcaption></figure>
+<figure><div class="check"><img src="sheets/dawn_bloom_growth_b.png" class="" alt=""></div><figcaption>원본 1배</figcaption></figure></div>
+<div class="sizes"><figure><div class="check"><img src="stages/b/frame_0-3x.png" class="" alt=""></div><figcaption>0 새싹 (진행 0~33%)</figcaption></figure><figure><div class="check"><img src="stages/b/frame_1-3x.png" class="" alt=""></div><figcaption>1 꽃봉오리 (33~66%)</figcaption></figure><figure><div class="check"><img src="stages/b/frame_2-3x.png" class="" alt=""></div><figcaption>2 만개 (66~100%)</figcaption></figure><figure><div class="check"><img src="stages/b/frame_3-3x.png" class="" alt=""></div><figcaption>3 수확 반짝임 (화분 수확 연출 칸)</figcaption></figure></div>
+<p class="desc">승인 24색·반투명 0·1픽셀 외곽선·램프당 3단계 이하는 지킨다. 기존 9종 화분처럼 어두운 가지 보라 몸통(#50315F)+왼쪽 밝은 면(#86548E)·금테·흙·테 아래 어두운 줄을 넣고 꽃은 아이콘과 같은 귤빛/산호 그늘/크림 꽃심. 물체당 5색 상한을 넘으므로(10색) 사용자 승인이 필요한 예외다.</p>
+<div class="sw"><span><i style="--c:#241C32"></i>#241C32</span><span><i style="--c:#3D544D"></i>#3D544D</span><span><i style="--c:#50315F"></i>#50315F</span><span><i style="--c:#50333B"></i>#50333B</span><span><i style="--c:#718C59"></i>#718C59</span><span><i style="--c:#86548E"></i>#86548E</span><span><i style="--c:#DE7356"></i>#DE7356</span><span><i style="--c:#E9B95F"></i>#E9B95F</span><span><i style="--c:#F4AC68"></i>#F4AC68</span><span><i style="--c:#FFF0BC"></i>#FFF0BC</span></div>
+<p class="desc">10색 · 팔레트 밖 0 · 반투명 0 · 외곽선 위반 0 ·
+디더링 0 · 램프별 단계 outline 1, purple 2, gold 2, wood 1, leaf 2, fire 2 ·
+모든 칸 바닥 행 38 예 · 화분 4칸 동일 예 ·
+판정 <b class="warn">passed_except_five_colour_limit (사용자 승인 필요)</b></p></div></div>
+
+<h2>2. 기존 성장 그림과 나란히 (관리 화면 배경 #1D242B, 3배)</h2>
+<div class="wide"><img src="compare/growth-compare-3x.png" class="" alt=""></div>
+<p class="desc muted">원본 1배 비교: <code>growth-compare-native.png</code></p>
+<div class="wide" style="margin-top:8px"><img src="compare/growth-compare-native.png" class="" alt=""></div>
+
+<h2>3. 다 자란 꽃 대 승인된 여명초 아이콘</h2>
+<div class="wide"><img src="compare/bloom-vs-icon-3x.png" class="" alt=""></div>
+<p class="desc">아이콘의 여섯 꽃잎 실루엣(위·좌우 위·좌우 아래·아래 꽃잎과 양옆 홈), 크림색 육각 꽃심을 16×15로 줄였다. 아이콘의 줄기는 외곽선색(#241C32) 2픽셀이지만 관리 화면 배경(#1D242B)에서는 보이지 않아 꽃이 떠 보였으므로,
+성장 그림에서는 세이지 잎색(#718C59) 1픽셀 줄기에 양옆 외곽선을 둘렀다(기존 성장 그림도 초록 줄기). B안은 아이콘처럼 오른쪽 아래가 산호색(#DE7356) 그늘,
+A안은 5색 제한 때문에 귤빛 한 색이다. 화분 앞 문양은 해돋이(귤빛 반원과 빛살)로, 다른 화분이 재료 색 문양(달·물방울·별)을 쓰는 방식과 같다.</p>
+
+<h2>4. 관리 · 약초 탭 행에 넣었을 때 (원본 1배 · 근사)</h2>
+<p class="desc">관리 · 약초 탭 _row 근사: 패널 폭 458(CONTENT_WIDTH 480−22), 여백 8, 왼쪽 48×48 아이콘(readable_icon으로 여백을 자른 뒤 KEEP_ASPECT 최근접 확대), 제목 18 SemiBold·상세 버튼 52×32, 상태 줄 16, 작업/보유 막대(높이 7), 그 아래 성장 미리보기 TextureRect 32×40(원본 1배, 상세를 펼쳤을 때). 글자·막대 위치는 Python 근사이며 Godot 실제 캡처가 아니다.</p>
+<div class="wide"><img src="compare/management-herbs-rows-1x.png" class="" alt=""></div>
+<p class="desc muted">2배 확대본: <code>management-herbs-rows-2x.png</code></p>
+
+<h2>5. 형식 비교 수치</h2>
+<div class="wide"><table><tr><th>시트</th><th>크기</th><th>RGB 색 수</th><th>반투명 픽셀</th><th>칸별 바닥 행</th><th>화분(행 24~38) x 범위, 칸 0/1/2/3</th></tr><tr><td>herb</td><td>64×80</td><td>1959</td><td>2629</td><td>38, 38, 38, 38</td><td>4~27 / 4~27 / 3~25 / 2~25</td></tr><tr><td>starleaf</td><td>64×80</td><td>1445</td><td>1783</td><td>38, 38, 38, 38</td><td>9~22 / 9~22 / 5~25 / 5~25</td></tr><tr><td>dewgrass</td><td>64×80</td><td>1684</td><td>1888</td><td>38, 38, 38, 38</td><td>7~24 / 6~23 / 6~24 / 3~28</td></tr><tr><td>silver_moss</td><td>64×80</td><td>1346</td><td>1805</td><td>38, 38, 38, 38</td><td>6~25 / 6~25 / 5~24 / 7~26</td></tr><tr><td>blue_reed</td><td>64×80</td><td>1590</td><td>1851</td><td>38, 38, 38, 38</td><td>7~23 / 6~22 / 6~24 / 7~24</td></tr><tr><td>crystal_herb</td><td>64×80</td><td>1431</td><td>1625</td><td>38, 38, 38, 38</td><td>7~23 / 7~23 / 6~24 / 7~25</td></tr><tr><td>mist_mushroom</td><td>64×80</td><td>1642</td><td>2302</td><td>38, 38, 38, 38</td><td>5~25 / 5~26 / 5~26 / 5~26</td></tr><tr><td>ash_sage</td><td>64×80</td><td>1746</td><td>2122</td><td>38, 38, 38, 38</td><td>7~23 / 6~22 / 7~28 / 6~27</td></tr><tr><td>moonflower</td><td>64×80</td><td>1701</td><td>2042</td><td>38, 38, 38, 38</td><td>7~24 / 7~24 / 7~28 / 5~26</td></tr><tr><td>star_seed</td><td>64×80</td><td>1690</td><td>1860</td><td>38, 38, 38, 38</td><td>8~22 / 7~22 / 6~24 / 2~29</td></tr><tr><td>여명초 A안</td><td>64×80</td><td>5</td><td>0</td><td>38, 38, 38, 38</td><td>7~24 / 7~24 / 7~24 / 7~24</td></tr><tr><td>여명초 B안</td><td>64×80</td><td>10</td><td>0</td><td>38, 38, 38, 38</td><td>7~24 / 7~24 / 7~24 / 7~24</td></tr></table></div>
+
+<h2>6. 결정 필요</h2>
+<ul>
+<li>A안(5색 규칙 엄수)과 B안(10색, 기존 9종 화분과 같은 금테·흙·그늘 · 물체당 5색 상한 예외) 중 하나. B안을 고르면 예외 사유와 승인을 <code>art/palette-log.md</code>에 기록한다.</li>
+<li>꽃봉오리 단계(칸 1)의 잎을 다 자란 단계와 같게 둔 것, 수확 반짝임 3개의 위치.</li>
+<li>연결 시 <code>tools/verify_f26_region_potions.gd</code>의 "No growth sheet stand-in for dawn bloom" 검사와 <code>tools/verify_workshop_followup.gd</code>의 여명초 예외를 함께 고쳐야 한다.</li>
+</ul>
+<p class="muted">검사 결과: <code>validation.json</code> · 후처리 보고: <code>pipeline/a/validation.json</code>, <code>pipeline/b/validation.json</code> · 승인 상태: <code>approval.json</code></p>
+</main></body></html>
