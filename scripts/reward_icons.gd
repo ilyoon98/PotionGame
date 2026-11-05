@@ -1,4 +1,5 @@
 extends HFlowContainer
+const PixelIcon = preload("res://scripts/pixel_icon.gd")
 ## Presentation only: public ranges and completed amounts never roll or pay.
 const Content = preload("res://scripts/shop_content.gd")
 const ItemArt = preload("res://scripts/item_art.gd")
@@ -29,9 +30,11 @@ func show_entries(items: Array) -> void:
 		chip.custom_minimum_size.x = 178
 		chip.add_theme_constant_override("separation", 6)
 		add_child(chip)
-		var icon := TextureRect.new()
+		var icon := PixelIcon.new()
 		var recipe_path: String = item.get("recipe_path", "")
-		icon.texture = load(recipe_path) if recipe and not recipe_path.is_empty() else ManagementArt.icon("basic") if recipe else ItemArt.icon(item.id)
+		if recipe:
+			icon.texture = ItemArt.recipe_icon(item.id) if ItemArt.has_icon(item.id) else load(recipe_path) if not recipe_path.is_empty() else ManagementArt.icon("basic")
+		else: icon.texture = ItemArt.icon(item.id)
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		icon.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST

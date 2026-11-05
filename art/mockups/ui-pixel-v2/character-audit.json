@@ -1,0 +1,3239 @@
+{
+  "status": "passed",
+  "operation": "read-only audit of current published character atlases",
+  "source_catalog": "assets/pixel_v1/catalog.json",
+  "character_count": 5,
+  "sheet_count": 104,
+  "frame_count": 6656,
+  "max_color_count": 5,
+  "off_palette_colors": 0,
+  "partial_alpha_pixels": 0,
+  "outline_boundary_violations": 0,
+  "all_source_hashes_unchanged": true,
+  "sheets": [
+    {
+      "character_id": "keeper",
+      "pose": "idle",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/idle-fine.png",
+      "sha256": "1cda8c170f19c0f7257ccf3d0c8bf68adf767718767b0d032d471d9b4e8f8897",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 423936,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "idle",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/idle-native.png",
+      "sha256": "c75de87b13dfd2e1d90ad2d4d69ab42f9d056c3f95b7df6a92064f33a3c65cd3",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 47488,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "brew_reach",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/brew_reach-fine.png",
+      "sha256": "1b235eef7e324709e5e7bfe50659e511da4e431729c11a083aa84a928e698f01",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 430560,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "brew_reach",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/brew_reach-native.png",
+      "sha256": "b22de548c5f4786db7a82fa0dbd529b67e8e73a774d4fbe95371bacc56f60b73",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 48224,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "brew_stir_left",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/brew_stir_left-fine.png",
+      "sha256": "128d7dd771c2a7ef532e5f5876bbf9f1756900c54901b1b5da395eadf1b443be",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 430272,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "brew_stir_left",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/brew_stir_left-native.png",
+      "sha256": "2b7defee406a6c5fd524124c2b44cba8839af6f0a7da46f00b2c465b51fdc148",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 48192,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "brew_stir_right",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/brew_stir_right-fine.png",
+      "sha256": "913c6d219026f1dd091e3a9f0ed0ab804cd3c3d8784ae163a5b2a3e1e8b48c16",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 431136,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "brew_stir_right",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/brew_stir_right-native.png",
+      "sha256": "6e57aa878c168a34e154c6f72d12a758245330525339583653d87ca0388b04a6",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 48288,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "handover_extend",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/handover_extend-fine.png",
+      "sha256": "1a87788072b1e57ab383f2f69c4590e042033b836c93a2143bcd69ffe7c2b1a8",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 442368,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "handover_extend",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/handover_extend-native.png",
+      "sha256": "6ef8e376ffa9f9ea9ec5c2f1e6e1f6cb76166a66b2fa4edaa5af73d50314731c",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 49536,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "handover_return",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/handover_return-fine.png",
+      "sha256": "f80c07affe51694e3603700c571434b07559b92a6010f6a12daa0bb91979db14",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 443808,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "handover_return",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/handover_return-native.png",
+      "sha256": "b4819f59ecd60362dc3cac6c91a5e9b671e35187f3a94d3059a1cd7a670504a1",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 49696,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "sleep",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/sleep-fine.png",
+      "sha256": "960406d2f55cdcef9588cb43c8e8cde955fb0b6a5b9a8b739ff0467b2c3f1c37",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 335232,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "sleep",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/sleep-native.png",
+      "sha256": "d2ef32c6048e45931c3f7bf926f825537cb92fdedf3c91aeda60a56e9b33a06a",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37248,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "faint",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/keeper/faint-fine.png",
+      "sha256": "c48bb2f933d1cb1c53c129780d0230fac26ada3ff0b58faeb7b1f1d9f61b7a7b",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 341568,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "keeper",
+      "pose": "faint",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/keeper/faint-native.png",
+      "sha256": "e2bf3e501e3a3d1de7a21e38a006da19495d3a70b95b59b3c7619fc284b8f62f",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37952,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "idle",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/idle-fine.png",
+      "sha256": "f860e8e2fd28f169238ec7cdcf76de0aa632354ac9e431f799abf41c05aae546",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 343296,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "idle",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/idle-native.png",
+      "sha256": "5f716f2b4e3d12d0f74d5eefe08d80829a5af94a2b6ffbf033969f4b7db856c6",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 38144,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_contact_a-fine.png",
+      "sha256": "8f8beb7dc2b0cba373608d2df0b979c29d600e5c861112cb9e1c71953174b9f3",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 342720,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_contact_a-native.png",
+      "sha256": "128cd9a9f57820fc111e44c7f6b0c1489f8809075f7b57a6498f40231df2cafd",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 38080,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_pass_a-fine.png",
+      "sha256": "0fe30cd39d98998f0e66c1fa3103ed3557ffa85ee30f38f20b99be159c12d977",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 328320,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_pass_a-native.png",
+      "sha256": "9e5bde09b74f39bb00852317c41850794ae799e799b3614bb29ff498b45fba0c",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 36480,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_contact_b-fine.png",
+      "sha256": "0e4d606773bfa660c38ce62d37082c0289607bc304b41fc00344e9b2507d6a78",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 340704,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_contact_b-native.png",
+      "sha256": "ff5961f07f1f16fb1bc96407eb9d83d82507c263aecfeccbb0c9ff35d710d6ed",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37856,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_pass_b-fine.png",
+      "sha256": "7b917e9c8d7fcaaf83278b8aa2d65d1336405120a8f027fbaa3e9d1f3696b2c5",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 334080,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "walk_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/walk_pass_b-native.png",
+      "sha256": "401ef03438699032abeb4bea391d1245118270a3cf4dbf465363d86c960236da",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37120,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "receive_extend",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/receive_extend-fine.png",
+      "sha256": "add8c49220707904d47cfa629b9cbaf61c1c0cdda93e08cf5a4da496568498d6",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 354240,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "receive_extend",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/receive_extend-native.png",
+      "sha256": "33bcdf790e64226a77cc1971a75f97a0d97b3a8d496ad3e6425e578c39291f00",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 39360,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "receive_hold",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/receive_hold-fine.png",
+      "sha256": "1070d7bf6687ad95ffa272d403dfe08e62288087b7e560cc8120c8beedb0ea17",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 339840,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "receive_hold",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/receive_hold-native.png",
+      "sha256": "c1b5c53c3f4c447fee9a7d7fad7e7994716e0a5a0abf5963bb6d02c6c4d5aec9",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37760,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_contact_a-fine.png",
+      "sha256": "0fbb6f1355cd8d71eea892f24364bb13a1c5792c9ca9eda9340cc74424c5dcab",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 335232,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_contact_a-native.png",
+      "sha256": "625433cf704cd80113cd773200b238e0ead721b494237b984f3347ee25d326fc",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37248,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_pass_a-fine.png",
+      "sha256": "e3c678d9a888be9528d2b58d5f7de945eb0663ec493c9ba51dda77d3ee0b51b4",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 324864,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_pass_a-native.png",
+      "sha256": "3a8d77b1f55c8af45fdae419a4867ae2f6a593ec33e63133170d8ab09c0c8ffa",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 36096,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_contact_b-fine.png",
+      "sha256": "73f762c998e35535553473ea01d26cd6a13b3286922d98c3908179ce69a0d8f8",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 333504,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_contact_b-native.png",
+      "sha256": "bb268022222857cedeedce0344c66a97e97272f98e3d966a708a3fa113e9620e",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 37056,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_pass_b-fine.png",
+      "sha256": "472c0ee467708e0a4e46c0b504d4ea995e88d89c38783f704b13f2e90d5c206f",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 326592,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "traveler",
+      "pose": "carry_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/traveler/carry_pass_b-native.png",
+      "sha256": "9e33d0bdc225495fa900065ba783b8e83136476d00b281b79c7209fce0a1c072",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 36288,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "idle",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/idle-fine.png",
+      "sha256": "3a1902e2f9367c13dab0996d2284f10efb05b6030070cdaa8131bfdb35907da6",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 478656,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "idle",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/idle-native.png",
+      "sha256": "ac6abd9581c30c9ba5159587b2fe341215e0596a83fe47c0df22410fad7ef00e",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 53184,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/walk_contact_a-fine.png",
+      "sha256": "18561e97e7b063c257e54699a3f59b14e00fcc3121234bb6c4465ad5f5e5f5eb",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 481536,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/walk_contact_a-native.png",
+      "sha256": "406b57dd7f6d441d01f9c09f5174832551d1554d6adc5e91995e701b107e4c1e",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 53504,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/walk_pass_a-fine.png",
+      "sha256": "f00bbaa30610b500204ce25eacb049962fd309ba69eee7bb22b519076b9d0c84",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 475488,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/walk_pass_a-native.png",
+      "sha256": "83c138d88d28513a158ca6bcb37dbe66560bdae5d011e7efc0f899f67f2919bf",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 52832,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/walk_contact_b-fine.png",
+      "sha256": "948d0ef07734be1f3f003b194e6c86debcf0f48db1e70592a6fba00a822d45bf",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 480384,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/walk_contact_b-native.png",
+      "sha256": "184fbf35dc6c6a2725b618786b959dad8110935300deec1228fc8560beac1b62",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 53376,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/walk_pass_b-fine.png",
+      "sha256": "46d89913d7ffa56e0a2cf1c80c1513fc866d9213b38688c48a859f48110ea0f5",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 483264,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "walk_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/walk_pass_b-native.png",
+      "sha256": "1048e7c0e5adf50d3e7492dafd837d9ad8f212e1e8ff1933b8ca93a9872b5ab0",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 53696,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "receive_extend",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/receive_extend-fine.png",
+      "sha256": "65d90b3fb1dede5822a7a856f2773ac71627c8e7caf4b61362b91520d5666169",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 482976,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "receive_extend",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/receive_extend-native.png",
+      "sha256": "af18030d3337e213576303ca3c24b2429b9e4d8d35de863c9e9ce4456f6efc8b",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 53664,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "receive_hold",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/receive_hold-fine.png",
+      "sha256": "d1f8c900356b2d6b2f44abc97f19239da60ee4d6bafdf0daeeebf67acb443707",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 473760,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "receive_hold",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/receive_hold-native.png",
+      "sha256": "4d53f45bc80782bc5d9603fe72b57705ea9d6f8775a2a759ffcbd3f7a0eec647",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 52640,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/carry_contact_a-fine.png",
+      "sha256": "926c2f9c3ff5a91eecc9f707de82c1340eded352b8350a5d95594ab4460f5e57",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 478944,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/carry_contact_a-native.png",
+      "sha256": "4903254d3aea447712c5cd26fd1fe3c4d12dab7e23283c5f5818702d54a5c02f",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 53216,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/carry_pass_a-fine.png",
+      "sha256": "47478faa05b0df3e31516636e074b76e38a3a05c4bbf82dc959a52b72d5fd128",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 466560,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/carry_pass_a-native.png",
+      "sha256": "71abd92e347c4f6b87705db9e9ff487aa2fe1c6711784d4e62f61068b8fac3fc",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 51840,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/carry_contact_b-fine.png",
+      "sha256": "1ea41b392b67360dfa71feca817b726aeda16f89831bffef3680634922d68dd6",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 476352,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/carry_contact_b-native.png",
+      "sha256": "4a9010cf7181afee9d48ebf619def14f5f4b8a79b85648baacfafa744269a163",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 52928,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/mage/carry_pass_b-fine.png",
+      "sha256": "5ef6853481485c4eac0c82f0882fb31474d35237f766c9aed27a19a85b35771c",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 473472,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "mage",
+      "pose": "carry_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/mage/carry_pass_b-native.png",
+      "sha256": "9b536d05e590397fdc2b00e1f701bdca05aafd04b4a57ca5901a43e02664530b",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 52608,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#916047",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "idle",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/idle-fine.png",
+      "sha256": "1d47630f281139719ba0fd24bf88301ff1896d90076930245d9a19e8144c4487",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 258048,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "idle",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/idle-native.png",
+      "sha256": "994cd1b5b913a8e60d4dcf52d1720fbc67fc4918dcce4c2f5139ef5d26e8b4ea",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 28672,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/walk_contact_a-fine.png",
+      "sha256": "86a8b1984e849fe9dfb35fcf1367ffdbaabbecd817e11feb8e6f64ef437da230",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 266400,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/walk_contact_a-native.png",
+      "sha256": "ef813fb8a35d5fd6c28b7a68cd2d1767aa182b969ef61d0e539db1e2deb48aab",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29600,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/walk_pass_a-fine.png",
+      "sha256": "cf16d49f676138e557930586e3cca6a216e4df4de1cc382cf32cf7b17499f7b5",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 258336,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/walk_pass_a-native.png",
+      "sha256": "e9dca8467b86b16752c706bd848876bbe5772a8be70d761590cefffd1e1be221",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 28704,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/walk_contact_b-fine.png",
+      "sha256": "6c7b411055b2ccc00c38c329eb1c01ecf46e8fe033d6076984ae83927dbe0cfd",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 263520,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/walk_contact_b-native.png",
+      "sha256": "351d4a3a319b8ab629676a432238f8c0ed28fb0950abf98500fa21f563d564e6",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29280,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/walk_pass_b-fine.png",
+      "sha256": "9342d8ab4766a584de685cf0fbd679e142781334501095dab5b4b4b054d54f55",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 261792,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "walk_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/walk_pass_b-native.png",
+      "sha256": "9e5b6d07e2ef6b72c2ed73bcc3b4ba431acf7aa6473fa9271a3d8e102ece7615",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29088,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "receive_extend",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/receive_extend-fine.png",
+      "sha256": "79be6f9c13593d72b30c75f9fa8033f1c88198656eb6946c182700bf60384532",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 272160,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "receive_extend",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/receive_extend-native.png",
+      "sha256": "5354b223ab81c1b0243d156b8dd12c54e1e717530f274ac4702cbc404fee3cc3",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 30240,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "receive_hold",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/receive_hold-fine.png",
+      "sha256": "aac59478309532fcacd4f8dde035933275f55283758f63bbfa270fe303d11818",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 260064,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "receive_hold",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/receive_hold-native.png",
+      "sha256": "4964b77cc668f8349ae334c5ec7c1a090a78ea3d9fc268eda5eb0505aa8cb6bf",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 28896,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/carry_contact_a-fine.png",
+      "sha256": "d3f5cd62226ae9ffb435700c029c526d7d19664de50ef5f7ff00174a6254a908",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 263808,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/carry_contact_a-native.png",
+      "sha256": "afe5c6bc05017198a9b5004c3f5ed116223539d5882dc7d501feb324f7f58e0d",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29312,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/carry_pass_a-fine.png",
+      "sha256": "ab089baf67ecbd26590d88dc86a45e29ebfbb54206955b47a3ced73799f02e79",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 261216,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/carry_pass_a-native.png",
+      "sha256": "2a3ec403fb7c05514192bc36da5e17bc069040aeed549b88d8c4e0a703fcaad5",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29024,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/carry_contact_b-fine.png",
+      "sha256": "242d4280dbc78313ec75498bab5d3a7ed02ca89c9544e5e456d5a4bdb0929595",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 266400,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/carry_contact_b-native.png",
+      "sha256": "2c2679ff35580b753c833ff36a4fe7c763f2993acc9b791a2a83e3cc94e94580",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29600,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/elf/carry_pass_b-fine.png",
+      "sha256": "62cada5de75349593313c2dcfd7121090e3752d5df34c1825bda083c61258917",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 263808,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "elf",
+      "pose": "carry_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/elf/carry_pass_b-native.png",
+      "sha256": "bd66766ee426bc62c4b302ba651a36e419221b98062d2412cf87998ec356cd51",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29312,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "idle",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/idle-fine.png",
+      "sha256": "01a17a7f89e1539fc3ed27a5c14b2804ed9603ead0e9c3c664d8dfebde33846a",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 272676,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "idle",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/idle-native.png",
+      "sha256": "cbadc85c170e671de84ccb3b3c56bc0a1d7f7556c6738c6206dd5ce395ee4737",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 30220,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_contact_a-fine.png",
+      "sha256": "1142f587def697ca171670073bcc3b146586fbc30fe4abad724ed43e7f566d96",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 280080,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_contact_a-native.png",
+      "sha256": "907bb9f348ef48197e3e56102d8371aed45a3bc2c87707d07e22e1c9b8dbf55e",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 31088,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_pass_a-fine.png",
+      "sha256": "ca9ef4e5976d900fc9a25ccaddee6254b0a9eefc353ff28fb9e5a24760e5e5e6",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 271668,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_pass_a-native.png",
+      "sha256": "8c2c91d0c4d920f234e1650cfcee3b56edad5634623523366e304e3e4d0eacc5",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 30140,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_contact_b-fine.png",
+      "sha256": "9f1156c3ccbb325adfc0051554f98c15a1f2bb19f833d584697d4d06e463a05e",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 261516,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_contact_b-native.png",
+      "sha256": "ea35406de6c4001b5645e562b1c254ec48fb59af89adce9ab2f018162a6ea1b5",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 28996,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_pass_b-fine.png",
+      "sha256": "7cff7abfba9df4e85229d752a0fd37aa7a19624cd2adfdbfbc38c49b0bc29298",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 260940,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "walk_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/walk_pass_b-native.png",
+      "sha256": "fe2f6050050a085ea0f5631fedea9c64bec30fe921a93df56adcc5423fdc47a7",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 28932,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "receive_extend",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/receive_extend-fine.png",
+      "sha256": "82f995993fbdb29e7667776b5e2cdc148d0d0f4b991df99fd0f802d3693f45e4",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 288864,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "receive_extend",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/receive_extend-native.png",
+      "sha256": "f82a2371167103bf601c724060da7ade37c5764a5800645023a75be3500cd135",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 32096,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "receive_hold",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/receive_hold-fine.png",
+      "sha256": "6027e4ce36b5ed8b784e2f8562aec8935750d3ed72579e51435ee999429a7023",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 274392,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "receive_hold",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/receive_hold-native.png",
+      "sha256": "1a81194cad2f7228e1ca8d0be02f2954d942f3d086787bbdac9b760ae046f169",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 30472,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_contact_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_contact_a-fine.png",
+      "sha256": "0fc66316b6fb5d92ccb89fd8c283622fd0b740140de5a277d1bb405cf469837f",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 285996,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_contact_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_contact_a-native.png",
+      "sha256": "a226bfe9a548cdd211caa23101d46af1afd3ffc461e5aa3a137eeedc25622f15",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 31716,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_pass_a",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_pass_a-fine.png",
+      "sha256": "01b25f126c4bd695a087a770b1d4a86688c5cc9b5753115987c5d69762da795f",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 281172,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_pass_a",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_pass_a-native.png",
+      "sha256": "78141104e5e2970920039a1977eafd2ac3ca33c6cb060856267f58841af6d776",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 31196,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_contact_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_contact_b-fine.png",
+      "sha256": "b702e460340b4e4006d657a41d1225762c96ef18e01902abb5b30e01ad4013c8",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 262092,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_contact_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_contact_b-native.png",
+      "sha256": "64c6a033230bb524fe4c044320b842064a0fc15ccc2b2e9f4d87d30f2a9b151b",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 29060,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_pass_b",
+      "mode": "fine",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_pass_b-fine.png",
+      "sha256": "8fe8282198ab4daf19c7b6ae8d06009d76ea3a1cc18acc442d8d0852e8eff65e",
+      "frame_size": [
+        96,
+        144
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        1536,
+        576
+      ],
+      "opaque_pixels": 283764,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    },
+    {
+      "character_id": "rogue",
+      "pose": "carry_pass_b",
+      "mode": "native",
+      "path": "res://assets/pixel_v1/characters/rogue/carry_pass_b-native.png",
+      "sha256": "eb95c0522bb34895be242bc0d3134e49a8573bb2ff31e48e6751501c92f77ec3",
+      "frame_size": [
+        32,
+        48
+      ],
+      "frame_count": 64,
+      "passed": true,
+      "size": [
+        512,
+        192
+      ],
+      "opaque_pixels": 31484,
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#DE7356",
+        "#F4AC68",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 0,
+      "source_unchanged": true
+    }
+  ]
+}

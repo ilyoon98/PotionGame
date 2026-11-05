@@ -1,0 +1,1686 @@
+{
+  "status": "passed",
+  "art_status": "user_requested_style_unification",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "forest_edge": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 565,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#C99463"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "leaf": 2,
+        "wood": 3
+      },
+      "source_sha256": "7fef54bb675c5d4a70c574ea7786e160eef9a0afbe8867f5474355a9e6b12e64",
+      "native_pixel_sha256": "eb10f7a1cb5f6c3e0a9010bf65d0c6ab997f86952150fd26c0a973532ae22448"
+    },
+    "abandoned_greenhouse": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 547,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "teal": 3,
+        "leaf": 4,
+        "gold": 5
+      },
+      "source_sha256": "d1ae3f041b5122c8a65235502b2e774552eebf10e4c47ad0b7d65da5cf12ba49",
+      "native_pixel_sha256": "7ff50338f4b664090aeec6c03bdac479ed720d5009aea563f988cce273499b30"
+    },
+    "mist_valley": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 548,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#4A3C52",
+        "#718C59",
+        "#827589"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "stone": 2,
+        "teal": 3,
+        "leaf": 4
+      },
+      "source_sha256": "05d688f542e90ef4774ae03f013f9253c9786d751170b761b2c23c126caa07bf",
+      "native_pixel_sha256": "e6751575a06bb3fdf90c9304718d70bd89b1eeae03a792f3bc083dc9854771f5"
+    },
+    "crystal_mine": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 518,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "stone": 2,
+        "purple": 3,
+        "gold": 4
+      },
+      "source_sha256": "6a709b6e12f16e27cb87cd493dffcb08a5a10ebe5bbea6f576f0b90309af4971",
+      "native_pixel_sha256": "25eea400ab106dc02c6b4fa9be98fb43da973f18f49da96ac238cd777669d5cf"
+    },
+    "fog_marsh": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 426,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#718C59",
+        "#916047",
+        "#9BE2CF"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "teal": 4
+      },
+      "source_sha256": "1c0e17afe02eb6d4c86ad46835f76ac4a2e4724ed63475b6d22daf8c82edbaf3",
+      "native_pixel_sha256": "d1510240ace703ac3e2c6cd4838d35c254ab67553dbf3df30ef6dd2e011a18d7"
+    },
+    "forgotten_tower": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 519,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "stone": 2,
+        "purple": 3,
+        "gold": 4
+      },
+      "source_sha256": "bc8016d12f36f954dc0123998444c69db653ac31c33f028ca67f1a9994cf9e87",
+      "native_pixel_sha256": "352440ea0830ae19a82b5b11e3e81335020437f6d805e7a21606a159d441be5e"
+    },
+    "moon_ruins": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 432,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "stone": 2,
+        "purple": 3,
+        "gold": 4
+      },
+      "source_sha256": "684c98efb4d4d5d16494469f512fb1d41a2dd02ad83e856f4c579f6270ceae6a",
+      "native_pixel_sha256": "789bb2a41b20f622472a23adef10cbc076cbec73bc49f83cf1ecd40caab74c83"
+    },
+    "star_garden": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 550,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "cb6cc6c4925963e67f318f0f44338a8200670faf06eda00316042b2f21789dac",
+      "native_pixel_sha256": "cfd5f6c87f1f3cf879dfe372d8acb573a186ae9d935ccd08615ba2715b4e73b8"
+    },
+    "dawn_lighthouse": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 390,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#DE7356",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "gold": 2,
+        "fire": 3,
+        "teal": 4
+      },
+      "source_sha256": "6b6f62d0bb2f748eefd90ce7e7c243d1c0f1db4914b9d9f703fcabbc02edf0e0",
+      "native_pixel_sha256": "7baa6c56f177a71dd28555f777b1e4a8e155584cbe357fe56c66ec28396b9f93"
+    },
+    "herb": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 426,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#B5C77D"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "leaf": 2,
+        "wood": 3
+      },
+      "source_sha256": "1a62d763a8bbc64d302655e8da46a3848dfad3a335859d69566b3b0462fb5e0f",
+      "native_pixel_sha256": "fb4c55c1c60f8ab9ff4ea11e927201fc5d6f87de64afc8aa9176295bc63cb758"
+    },
+    "moon_mushroom": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 492,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "teal": 2,
+        "gold": 3
+      },
+      "source_sha256": "320929e596c74483f87d97f05cfc07f623d94005b777bbba42f6cc5d1fa7ef48",
+      "native_pixel_sha256": "a2b264aba9ea3a3bd0aba2a4853dbf31537c276e913be43326c6ab28b470c9c8"
+    },
+    "starleaf": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 375,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "b0b5e54c119952d1b5645ca61a0e15635553ac55b1fd1e49fe17cddf3c1ea4d4",
+      "native_pixel_sha256": "f24d8d7ea95104a33736b9120c20d319b773ec35b356ffb2463d30343e453656"
+    },
+    "dewgrass": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 361,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#718C59",
+        "#9BE2CF",
+        "#B5C77D"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "leaf": 2,
+        "teal": 3
+      },
+      "source_sha256": "742952eab7da4d555f659981cc94d01aba459132e634ea8fb39fc8caadffa20a",
+      "native_pixel_sha256": "9cb80064700a66fdf2238d3c870012a176cf346bbf6f96a9c1457cc0ed8ee653"
+    },
+    "silver_moss": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 428,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#B5C77D"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "leaf": 2,
+        "gold": 3
+      },
+      "source_sha256": "5a4620c61c38ff8ba090dcf0fb2f66ad54cbf41f98905d382c6d9a17c7ab9d8f",
+      "native_pixel_sha256": "07163b0ccd5dad86a6db2d786ca7783f53fb47e4f5c9f7563c833ffc77c548a0"
+    },
+    "blue_reed": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 284,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#9BE2CF"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "teal": 2,
+        "leaf": 3
+      },
+      "source_sha256": "0044ce6e2fc387464e0140066637703650e7455f06dea6934d0ce1854b51e9ca",
+      "native_pixel_sha256": "cc9e6d1f1cf4c15cee9aeacbe93fd69d02fd7de3625b1ca652e5022bdab50c17"
+    },
+    "crystal_herb": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 473,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#86548E",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "059d42047f67c4a37659a956bb72dd82de9207488fee48dfea1bdf29b09f4e69",
+      "native_pixel_sha256": "c62fc794f579726ffabeb8ab17683aff4c033552a1d87a6963548847add946c1"
+    },
+    "mist_mushroom": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 478,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#86548E",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3,
+        "leaf": 4
+      },
+      "source_sha256": "ac64aff1d8f47dc7abe33009e94cc986f316dfaa7b2d32c1b0a44052df0cce8f",
+      "native_pixel_sha256": "f1396778e1545e59ebd6532631926f73954e8b3de9eeb3a32617cebd13a0a213"
+    },
+    "ash_sage": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 409,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#C38EB5"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "stone": 2,
+        "purple": 3,
+        "wood": 4
+      },
+      "source_sha256": "f6302a9f4eecf15acdf94a9ecf57483a84633490a26b0365e491017727e85971",
+      "native_pixel_sha256": "4f9761ceb5f731ad715eeb3c208498a304785d1ac34055a5810295c07260ed51"
+    },
+    "moonflower": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 401,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#B5C77D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "gold": 2,
+        "leaf": 3
+      },
+      "source_sha256": "691013d31d3fd694ff27626b663a06a292fe5940647b2b5f24d7c53019c4c7d2",
+      "native_pixel_sha256": "f5c1f616d3d61ff3653023ecdc64eb23cf80ebd52be9a8fadcb838c27aa12fa4"
+    },
+    "star_seed": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 313,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "gold": 2,
+        "fire": 3,
+        "wood": 4
+      },
+      "source_sha256": "40966cd3feaeeaac5a64ea1cd9719d08628911a35402341a2f4694adadfd942c",
+      "native_pixel_sha256": "a5f2b1acbd7d8b2408ec0ac9724c1ed045f8c57ba0415f454878db44edc1a5f4"
+    },
+    "dawn_bloom": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 508,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#DE7356",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "fire": 2,
+        "gold": 3,
+        "leaf": 4
+      },
+      "source_sha256": "b621dd9976a8c64742c2de50c15b02639a66d1e7f396b3bd2b906503e95a5aea",
+      "native_pixel_sha256": "d3afdd843badafca957563dfd7c5b4e3f74e8a39fbb06e703097ca9907f662ad"
+    },
+    "sales_assistant": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 486,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3
+      },
+      "source_sha256": "e858499bdb997cf9eb2dd1e44f6c19b339aaa811c0a63d312c7ffcb7b4a21686",
+      "native_pixel_sha256": "3d02298efc2882cdb2da90ac5f643a9002615fb819d9ce02e40d090169a0217c"
+    },
+    "cultivation_assistant": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 531,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "d6d34e760c1907ec4160dde7cb6305cd7b26fa380bd03b03d4ebcd4abaad66dd",
+      "native_pixel_sha256": "324aee9d49a28f2f5776f4ea866e636e558a9210d8ac589498f3a1358f559636"
+    },
+    "brewing_assistant": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 462,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "gold": 2,
+        "wood": 3,
+        "leaf": 4
+      },
+      "source_sha256": "e72851bc4ed7e19a7c305a8bba0f091ef6d252eccbb27a179027ee0271af5f4c",
+      "native_pixel_sha256": "ac710d27b4ce7bf37237e4b3b60f512fd0aceab7a97be1c2908e8228aef540a6"
+    },
+    "expedition_guide": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 616,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#FFF0BC"
+      ],
+      "color_count": 3,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "purple": 4
+      },
+      "source_sha256": "614adc863f588f4ebe2825833e1b37531e59130660131702f45a9911ae90f900",
+      "native_pixel_sha256": "8dfcfa83764abf653fa28464dae69ee76c790d8ac4bd1f6bf2f0a0bf09266843"
+    },
+    "family_vitality": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 498,
+      "colors": [
+        "#241C32",
+        "#DE7356",
+        "#E9B95F",
+        "#F4AC68"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "fire": 2,
+        "highlight": 3,
+        "gold": 4
+      },
+      "source_sha256": "b3db558988697c3d7729a3a5e5da8c3bc676fcc3c606fbe5ff9e830af375c347",
+      "native_pixel_sha256": "2dbb7b3e093646aabd95663826bcf64a917a518d2c393e94f8d4948078989b93"
+    },
+    "family_arcane": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 387,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3
+      },
+      "source_sha256": "86665d9d56c67015af7c0ad1cd13507cf84f7dfa0e55175f0e871ac5f260e11d",
+      "native_pixel_sha256": "b9394bd1c8029edf0ae1c1d6bedf92572149c305fc524665cbb78444d01483a9"
+    },
+    "family_nature": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 547,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#B5C77D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "leaf": 2,
+        "gold": 3
+      },
+      "source_sha256": "f4a8125439fdadc7c613db756eba538196227d326a74798c7974fa01f9319f35",
+      "native_pixel_sha256": "dd7fbcdbe141506133509854a78b852b1dd7b18f440f9fa64bda482784520b65"
+    },
+    "family_craft": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 538,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#9BE2CF",
+        "#E9B95F"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "teal": 2,
+        "gold": 3
+      },
+      "source_sha256": "664755dc4a7f1596c6e207941d967dd0574f8c9b74c327d49fddbd3066c0da1e",
+      "native_pixel_sha256": "b6d61225e7f4f985fb9f378c7a67b705d06de6a8f93e4db797e361c2649e4eaa"
+    },
+    "flow": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 575,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#86548E",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3,
+        "teal": 4
+      },
+      "source_sha256": "b1a627112aae03dbaedd1c26f272c8b45b7cf27e0dbe9f6e62a8b9f05b72f810",
+      "native_pixel_sha256": "916c78620269cc881c8c670a4105cfb579c2107a531ec7f42101bc4f03d9d65b"
+    },
+    "basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 656,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#86548E",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3,
+        "paper": 4
+      },
+      "source_sha256": "73a69b904088e051d6a5459479df6c7eb4fa04d18471cb3c88822a1b6f70ccaf",
+      "native_pixel_sha256": "25f1fb28c8c8fe20b376b4dccd11297f343c2eeaba342f8cd99bbba94e8fc7f6"
+    },
+    "filter": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 504,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "teal": 4
+      },
+      "source_sha256": "de6487a21a12dcbb7d2e846b81fcdeca2fdca5ad1e7b08a1e77ac28c6cb09f79",
+      "native_pixel_sha256": "cfae7682ad47f81bb195c3f826a6697747a9b1c3ea8e9a82f03bb62da6fad46a"
+    },
+    "reputation": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 489,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3
+      },
+      "source_sha256": "2f70a210d78793dd253319d36c2851b2900afcb5b27f055226d59783aac87c69",
+      "native_pixel_sha256": "7c7087d449271e7c5f29cdfa9be441c77c39cf347eddb897a4446bcedce77069"
+    },
+    "reputation_small": {
+      "passed": true,
+      "size": [
+        16,
+        16
+      ],
+      "opaque_pixels": 113,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#C38EB5",
+        "#E9B95F"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "gold": 3
+      },
+      "source_sha256": "2f70a210d78793dd253319d36c2851b2900afcb5b27f055226d59783aac87c69",
+      "native_pixel_sha256": "1e4d90094b058ae17ac875d567f44e36e2e33fef54b1f328c8324ea1e2542cfa"
+    },
+    "coin": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 640,
+      "colors": [
+        "#241C32",
+        "#A56A3D",
+        "#FFF0BC"
+      ],
+      "color_count": 3,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "gold": 2
+      },
+      "source_sha256": "b8c81c2a8935f531f843f46d365c337a82fe67be6e2bcf60031e23f739a2307e",
+      "native_pixel_sha256": "75401266e2eddc6c783dc498e6a48da5ec1eba7e9c5dc9235ee85d28f15b4c23"
+    },
+    "coin_small": {
+      "passed": true,
+      "size": [
+        16,
+        16
+      ],
+      "opaque_pixels": 161,
+      "colors": [
+        "#241C32",
+        "#A56A3D",
+        "#FFF0BC"
+      ],
+      "color_count": 3,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "gold": 2
+      },
+      "source_sha256": "b8c81c2a8935f531f843f46d365c337a82fe67be6e2bcf60031e23f739a2307e",
+      "native_pixel_sha256": "65f56a1381adbf1384fbda50d1af921be6206b35b07c435171e780d114aad113"
+    },
+    "visitors": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 495,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#86548E",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "e3dbe0a3ee577df80ed71706bea750b6ecbc2e882514f3c81dcc6075ae764060",
+      "native_pixel_sha256": "a2d42320e50be2306ecd250bdb8585bb64a7da63ef9ab21adc0991e13bcaabac"
+    },
+    "unknown_recipe": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 613,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "purple": 3,
+        "gold": 4
+      },
+      "source_sha256": "bc8c7a18a8bffd5fd829b8794f245056f9f9bd818dc6242e1cbde47c3e02036f",
+      "native_pixel_sha256": "566681e668c49e4f472c44713a8f79872dca9e62aa76bf2ff46ec646891ca726"
+    },
+    "expedition": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 575,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "d2f0a5780cb2a582f888b1fbafaed9fe9867983c857a9d49f5586d6a1a787b25",
+      "native_pixel_sha256": "3306921228b6278c613a92a3e6a794400facba97bafbebf578f0671489bd57d7"
+    },
+    "cauldron_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 639,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "shade": 3,
+        "gold": 4,
+        "teal": 5
+      },
+      "source_sha256": "b018e43c19b61fe58c36570f79a7c8fbf542d91a98e5b5970622624efa9ae9dc",
+      "native_pixel_sha256": "97a05cbe1571f552494eca866f9d95cdc6bfb772035cb5229b4044838f550ca6"
+    },
+    "cauldron_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 475,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "shade": 3,
+        "gold": 4,
+        "teal": 5
+      },
+      "source_sha256": "9a6849bc218f574f795bddef22ed5dec6f49cb60a45da064cfe9fdcaed96ea7b",
+      "native_pixel_sha256": "5160c06d8f064189c5482dd0893f183f77fa3c240e6ed420a4016cfec3d23572"
+    },
+    "cauldron_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 491,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#86548E",
+        "#E9B95F"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "purple": 2,
+        "shade": 3,
+        "gold": 4,
+        "teal": 5
+      },
+      "source_sha256": "07863cfc7f131c8146e849340f1a9634cc148b2e45b8a0e7e104c5b265336cc9",
+      "native_pixel_sha256": "0d7be3e881f51574605f3f913e07eec324c333e9ca903591025f3c92027b1859"
+    },
+    "herb_pot_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 504,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "leaf": 4
+      },
+      "source_sha256": "9375621e4abae89ddf63aedd63bc33e55f5c7a54bf9fc1e16c76cd81c926cc00",
+      "native_pixel_sha256": "4be76ceb45dd93412ef6389c21d93a5fefaac874724d36b55999a57a438a0582"
+    },
+    "herb_pot_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 510,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "leaf": 4
+      },
+      "source_sha256": "aca397dcad9c2dea72cc3ab5acb589fb7fcf71ae8b8aacf7baa267f7df1f56a6",
+      "native_pixel_sha256": "ecc73b5c3f9f6a480603069b2810dd0f3e5eeef40399c0660a67f414d9d33646"
+    },
+    "herb_pot_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 485,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "leaf": 4
+      },
+      "source_sha256": "c7056d656e43890053e01008bce37aaafde079b0daa5429cd19f3a0977a42f7e",
+      "native_pixel_sha256": "9c222279c21a823cdc695cd2304a6797e6f5cf1ba14eedbde901d3ed387823c8"
+    },
+    "sales_counter_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 409,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C99463"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "purple": 4
+      },
+      "source_sha256": "2f300095fd10dce7376e353a029f22250108b4bed9aa28641d86de4d0a36267f",
+      "native_pixel_sha256": "3f7a5b09546c2a56b2142db96fe96586365771ac3649ffb24a35aa1cdc4ebb52"
+    },
+    "sales_counter_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 490,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "purple": 4
+      },
+      "source_sha256": "220a72b18e2cbc212624ae4f96d49b83648faf17b41b44a733626e61d68ce17d",
+      "native_pixel_sha256": "b0ea9d62836dbbff70b737c8a161521de274ee2523ec6976dad38197bdc9ff49"
+    },
+    "sales_counter_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 548,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "purple": 4
+      },
+      "source_sha256": "1fdd3b7ac4dc36d1a962d7d81747b4b02c6cee9b3bbbefb688b3d1d09a41c370",
+      "native_pixel_sha256": "8be46f21e6c19e7b45bbaadfbb7102d491b1a37e7dfdfea94d02ff4cc11d48a6"
+    },
+    "precision_filter_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 287,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "teal": 4
+      },
+      "source_sha256": "0a69fa2496ec837325f7e61504809ff4da41516ca5b707c4d0d4aaf843402437",
+      "native_pixel_sha256": "5fbd534800d6785ba2b091dc818cdd44c641c9887d05aa36c7dc0a16d0f5a9c7"
+    },
+    "precision_filter_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 491,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "teal": 4
+      },
+      "source_sha256": "b32e9de85a664ec22d0f6ce1d11b29ac82648f0e75c0ed941dacb4051bed301d",
+      "native_pixel_sha256": "e14ad7b13f7f1c2425c55d7fc99db0abdf031be2602eaadad6e4572da3456eef"
+    },
+    "precision_filter_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 526,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "gold": 3,
+        "teal": 4
+      },
+      "source_sha256": "fc6f669e951add549921fe53bd0922e0684a71388af0a6c3b984989923f2514c",
+      "native_pixel_sha256": "f165b941799bcf7397f1557c1672fd151efd7db4b51a056560d666947def0705"
+    },
+    "herb_storage_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 527,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "ac4fcdc47e9b994bcb5cce1256429092690683c8240403c37cce891af831f18a",
+      "native_pixel_sha256": "edcab24f587ff1f78ddbd51020901161cee0a690960063fda6f0ea6a8eff5b17"
+    },
+    "herb_storage_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 573,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "510fe232647b599a05191ae03658dbb89d0c25414d6defdea7fb7ea31022ee8a",
+      "native_pixel_sha256": "27228bfa97a8477d80dd1447ac449191069752dda16978e112e8cb62a26ee12d"
+    },
+    "herb_storage_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 640,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "754b4b957758c2f4fbb4568194c01c2e2f4b4a10a2052f42a3f971577cde441e",
+      "native_pixel_sha256": "21f47f13a51d6e08a29a606437b475bcf3cad8b6ee5dda617ea65c1effc43047"
+    },
+    "potion_cabinet_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 586,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#C99463",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "teal": 3,
+        "gold": 4
+      },
+      "source_sha256": "a0073f90fafd36fdd4667701ca9d01bbed4826a7ea7702663d5b5364220c0533",
+      "native_pixel_sha256": "b0d740313ade5119da4495928f1519937c64546ea036dd9c9427355f39d01009"
+    },
+    "potion_cabinet_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 660,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#C99463",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "teal": 3,
+        "gold": 4
+      },
+      "source_sha256": "00a18d8c2a63620add642c16d0fbc00ca30540f526216ab895d0326d16bc93a7",
+      "native_pixel_sha256": "a93877401643968ffd35891ca57ab6cdc0f19a74e5de13ab27b20213e3827553"
+    },
+    "potion_cabinet_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 577,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#C99463",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "teal": 3,
+        "gold": 4
+      },
+      "source_sha256": "81a85ba71f799e189db8169416753d12820d187499287af77862083593711176",
+      "native_pixel_sha256": "98d18042fd627c2ccb9a374b54f3d4b1df8d7927351000489e5da96e01da7c59"
+    },
+    "drying_rack_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 339,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "f37ab9231ebb719f87b998fa8b36ca61a72e19f6e9afceb3c6e17c04f207ef28",
+      "native_pixel_sha256": "d1bf75d2ae37f73abe8a206be2428bfcae2973f47961bf0ab68359b3372e1417"
+    },
+    "drying_rack_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 390,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "8f6d0362e0181c562ced3d85fa9be3d682c205c14563e8878c3b173e67c1de76",
+      "native_pixel_sha256": "52d06676744901a0278b1d8910e4e5301cca321f8e71a8cbe2c16b9648099a83"
+    },
+    "drying_rack_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 386,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#C99463",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "leaf": 3,
+        "gold": 4
+      },
+      "source_sha256": "4ffdb656bbf138908b67d92a16bb15ad639f0811e2cc5db5c722c57731cd58da",
+      "native_pixel_sha256": "f09ae814efdd47ba2615071c31e42fb7e10fff6b9407ed15567272e367ead0bf"
+    },
+    "expedition_path_basic": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 360,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#827589",
+        "#916047"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "stone": 3,
+        "leaf": 4,
+        "gold": 5
+      },
+      "source_sha256": "bf2b2e1ae741b7634acfb9b07aa7d1fe729a28a214593d1f4515878fb72a1245",
+      "native_pixel_sha256": "499efea35569d04f40fe250d820ee381f0a4451b0816aedc83698d70b259b0ff"
+    },
+    "expedition_path_improved": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 384,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#827589",
+        "#916047"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "stone": 3,
+        "leaf": 4,
+        "gold": 5
+      },
+      "source_sha256": "36f3b29070fdbea2c78a7c1eacbbd37d557dad4076706ad4bc24ab11146765a3",
+      "native_pixel_sha256": "9e056b0eae7ba7152489951b7289e9ae698ab099414ac87468d54bf352dbd7d8"
+    },
+    "expedition_path_premium": {
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 431,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "wood": 2,
+        "stone": 3,
+        "leaf": 4,
+        "gold": 5
+      },
+      "source_sha256": "442c775f8c0e179bfdf3c0a5a8b6445941d5f76e5421d745cc3ad80330376d0d",
+      "native_pixel_sha256": "26b1265753436ea15cb8834376c9b9983c1a2bde842d59c4fc94dca6e8215527"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

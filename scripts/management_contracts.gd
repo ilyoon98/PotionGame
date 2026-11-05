@@ -1,4 +1,5 @@
 extends Control
+const PixelIcon = preload("res://scripts/pixel_icon.gd")
 ## The same management Window owns this screen. Every write uses Shop's gateway.
 const Palette = preload("res://scripts/management_palette.gd")
 const PixelArt = preload("res://scripts/pixel_art_catalog.gd")
@@ -87,7 +88,7 @@ func _partner_row(source: Dictionary) -> void:
 	var header := HBoxContainer.new()
 	header.add_theme_constant_override("separation", 12)
 	body.add_child(header)
-	var icon := TextureRect.new()
+	var icon := PixelIcon.new()
 	icon.texture = PixelArt.frame(source.customer, "idle", 0, false)
 	icon.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE

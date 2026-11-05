@@ -1,4 +1,5 @@
 extends HFlowContainer
+const PixelIcon = preload("res://scripts/pixel_icon.gd")
 ## Display-only recipe quantities. The current batch has already reserved stock.
 const Status = preload("res://scripts/management_status.gd")
 const ItemArt = preload("res://scripts/item_art.gd")
@@ -73,7 +74,7 @@ func show_entries(items: Array, recipe_known: bool = true) -> void:
 			separator.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 			separator.mouse_filter = Control.MOUSE_FILTER_IGNORE
 			chip.add_child(separator)
-		var icon := TextureRect.new()
+		var icon := PixelIcon.new()
 		icon.name = "Icon"
 		icon.texture = ItemArt.icon(str(item.id))
 		icon.expand_mode = TextureRect.EXPAND_IGNORE_SIZE

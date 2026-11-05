@@ -1,0 +1,4186 @@
+{
+  "output": "art/mockups/ui-pixel-v2/pipeline",
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "status": "user_requested_style_unification",
+  "approved_by_user": false,
+  "scale": 3,
+  "alpha_threshold": 128,
+  "max_colors": 5,
+  "compose": false,
+  "scene": {
+    "size": [
+      32,
+      32
+    ],
+    "background": "#241C32"
+  },
+  "assets": [
+    {
+      "id": "forest_edge",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/forest_edge.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_crop": [
+        0,
+        0,
+        433,
+        422
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        101,
+        113,
+        379,
+        370
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "abandoned_greenhouse",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "teal": [
+          "#9BE2CF"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "value_min": 0.85,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/abandoned_greenhouse.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_crop": [
+        433,
+        0,
+        819,
+        422
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        60,
+        106,
+        328,
+        369
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "mist_valley",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52",
+          "#827589"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        }
+      ],
+      "fallback_material": "stone",
+      "source": "art/mockups/ui-pixel-v2/registered/mist_valley.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_crop": [
+        819,
+        0,
+        1261,
+        422
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        51,
+        123,
+        344,
+        370
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "crystal_mine",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "purple",
+          "saturation_min": 0.22,
+          "value_min": 0.46,
+          "hue": [
+            0.62,
+            0.96
+          ]
+        }
+      ],
+      "fallback_material": "stone",
+      "source": "art/mockups/ui-pixel-v2/registered/crystal_mine.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_crop": [
+        0,
+        422,
+        433,
+        795
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        101,
+        55,
+        383,
+        325
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "fog_marsh",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/fog_marsh.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_crop": [
+        433,
+        422,
+        819,
+        795
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        58,
+        69,
+        332,
+        317
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "forgotten_tower",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52",
+          "#827589"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "purple",
+          "saturation_min": 0.3,
+          "y_min": 0.55,
+          "hue": [
+            0.62,
+            0.96
+          ]
+        }
+      ],
+      "fallback_material": "stone",
+      "source": "art/mockups/ui-pixel-v2/registered/forgotten_tower.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_crop": [
+        819,
+        422,
+        1261,
+        795
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        80,
+        53,
+        326,
+        325
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "moon_ruins",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52",
+          "#827589"
+        ],
+        "purple": [
+          "#C38EB5"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "value_min": 0.72,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "purple",
+          "saturation_min": 0.26,
+          "value_min": 0.6,
+          "hue": [
+            0.62,
+            0.96
+          ]
+        }
+      ],
+      "fallback_material": "stone",
+      "source": "art/mockups/ui-pixel-v2/registered/moon_ruins.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_crop": [
+        0,
+        795,
+        433,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        101,
+        63,
+        378,
+        346
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "star_garden",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.78,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/star_garden.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_crop": [
+        433,
+        795,
+        819,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        50,
+        69,
+        335,
+        341
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "dawn_lighthouse",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "fire": [
+          "#DE7356"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "fire",
+          "saturation_min": 0.35,
+          "hue": [
+            0.0,
+            0.065
+          ]
+        },
+        {
+          "material": "outline",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        }
+      ],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/dawn_lighthouse.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/regions.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_crop": [
+        819,
+        795,
+        1261,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        64,
+        49,
+        341,
+        352
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#3D544D",
+          "#718C59",
+          "#B5C77D"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "leaf",
+      "source": "art/mockups/ui-pixel-v2/registered/herb.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_crop": [
+        0,
+        0,
+        387,
+        361
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        105,
+        85,
+        331,
+        339
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "moon_mushroom",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "teal": [
+          "#24566A",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "gold",
+          "saturation_max": 0.18,
+          "value_min": 0.7
+        }
+      ],
+      "fallback_material": "teal",
+      "source": "art/mockups/ui-pixel-v2/registered/moon_mushroom.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_crop": [
+        387,
+        0,
+        714,
+        361
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        43,
+        88,
+        276,
+        329
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "starleaf",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/starleaf.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_crop": [
+        714,
+        0,
+        1050,
+        361
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        71,
+        88,
+        286,
+        339
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "dewgrass",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        }
+      ],
+      "fallback_material": "leaf",
+      "source": "art/mockups/ui-pixel-v2/registered/dewgrass.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "source_crop": [
+        1050,
+        0,
+        1448,
+        361
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        43,
+        85,
+        309,
+        328
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "silver_moss",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#3D544D",
+          "#718C59",
+          "#B5C77D"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "saturation_max": 0.25,
+          "value_min": 0.78
+        },
+        {
+          "material": "gold",
+          "value_min": 0.8,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "leaf",
+      "source": "art/mockups/ui-pixel-v2/registered/silver_moss.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_crop": [
+        0,
+        361,
+        387,
+        701
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        83,
+        85,
+        344,
+        280
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "blue_reed",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "teal": [
+          "#24566A",
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        }
+      ],
+      "fallback_material": "teal",
+      "source": "art/mockups/ui-pixel-v2/registered/blue_reed.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_crop": [
+        387,
+        361,
+        714,
+        701
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        54,
+        23,
+        270,
+        313
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "crystal_herb",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "saturation_max": 0.2,
+          "value_min": 0.83
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/crystal_herb.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_crop": [
+        714,
+        361,
+        1050,
+        701
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        54,
+        53,
+        292,
+        303
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "mist_mushroom",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "gold",
+          "saturation_max": 0.2,
+          "value_min": 0.83
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/mist_mushroom.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "source_crop": [
+        1050,
+        361,
+        1448,
+        701
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        47,
+        53,
+        303,
+        303
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "ash_sage",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "stone": [
+          "#4A3C52",
+          "#827589"
+        ],
+        "purple": [
+          "#C38EB5"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "wood",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "purple",
+          "saturation_min": 0.27,
+          "value_min": 0.6,
+          "hue": [
+            0.62,
+            0.96
+          ]
+        }
+      ],
+      "fallback_material": "stone",
+      "source": "art/mockups/ui-pixel-v2/registered/ash_sage.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_crop": [
+        0,
+        701,
+        387,
+        1086
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        95,
+        34,
+        322,
+        304
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "moonflower",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        }
+      ],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/moonflower.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_crop": [
+        387,
+        701,
+        714,
+        1086
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        43,
+        28,
+        264,
+        296
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "star_seed",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "fire": [
+          "#DE7356"
+        ],
+        "wood": [
+          "#916047"
+        ]
+      },
+      "rules": [
+        {
+          "material": "fire",
+          "saturation_min": 0.42,
+          "hue": [
+            0.0,
+            0.065
+          ]
+        },
+        {
+          "material": "wood",
+          "value_max": 0.55,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/star_seed.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_crop": [
+        714,
+        701,
+        1050,
+        1086
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        51,
+        46,
+        293,
+        266
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "dawn_bloom",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "fire": [
+          "#DE7356",
+          "#F4AC68"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.78,
+          "hue": [
+            0.1,
+            0.18
+          ]
+        }
+      ],
+      "fallback_material": "fire",
+      "source": "art/mockups/ui-pixel-v2/registered/dawn_bloom.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/materials.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_crop": [
+        1050,
+        701,
+        1448,
+        1086
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        59,
+        41,
+        298,
+        295
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "sales_assistant",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/sales_assistant.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_crop": [
+        0,
+        0,
+        336,
+        350
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        75,
+        84,
+        309,
+        323
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "cultivation_assistant",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.84,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/cultivation_assistant.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_crop": [
+        336,
+        0,
+        628,
+        350
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        38,
+        93,
+        264,
+        318
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "brewing_assistant",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "wood",
+          "value_max": 0.65,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/brewing_assistant.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_crop": [
+        628,
+        0,
+        917,
+        350
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        41,
+        84,
+        248,
+        322
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "expedition_guide",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "purple": [
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "purple",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/expedition_guide.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "source_crop": [
+        917,
+        0,
+        1261,
+        350
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        42,
+        84,
+        270,
+        321
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "family_vitality",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "fire": [
+          "#DE7356"
+        ],
+        "highlight": [
+          "#F4AC68"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.08,
+            0.17
+          ]
+        },
+        {
+          "material": "highlight",
+          "saturation_max": 0.5,
+          "value_min": 0.88
+        }
+      ],
+      "fallback_material": "fire",
+      "material_ramps": {
+        "highlight": "fire"
+      },
+      "source": "art/mockups/ui-pixel-v2/registered/family_vitality.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_crop": [
+        0,
+        350,
+        336,
+        634
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        78,
+        57,
+        307,
+        254
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "family_arcane",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/family_arcane.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_crop": [
+        336,
+        350,
+        628,
+        634
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        35,
+        28,
+        262,
+        254
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "family_nature",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "leaf",
+      "source": "art/mockups/ui-pixel-v2/registered/family_nature.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_crop": [
+        628,
+        350,
+        917,
+        634
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        36,
+        28,
+        248,
+        257
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "family_craft",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        }
+      ],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/family_craft.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "source_crop": [
+        917,
+        350,
+        1261,
+        634
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        36,
+        32,
+        277,
+        261
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "flow",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/flow.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_crop": [
+        0,
+        634,
+        336,
+        934
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        65,
+        23,
+        318,
+        272
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#50315F",
+          "#86548E"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "paper": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "paper",
+          "saturation_max": 0.32,
+          "value_min": 0.85
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "material_ramps": {
+        "paper": "gold"
+      },
+      "source": "art/mockups/ui-pixel-v2/registered/basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_crop": [
+        336,
+        634,
+        628,
+        934
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        38,
+        23,
+        251,
+        268
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "filter",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.72,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/filter.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_crop": [
+        628,
+        634,
+        917,
+        934
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        42,
+        23,
+        250,
+        268
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "reputation",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/reputation.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_crop": [
+        917,
+        634,
+        1261,
+        934
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        25,
+        30,
+        280,
+        272
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "reputation_small",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E",
+          "#C38EB5"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/reputation.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_crop": [
+        917,
+        634,
+        1261,
+        934
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "source_opaque_bbox": [
+        25,
+        30,
+        280,
+        272
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "coin",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold": [
+          "#A56A3D",
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/coin.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "source_crop": [
+        0,
+        934,
+        336,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        80,
+        29,
+        297,
+        249
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "coin_small",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "gold": [
+          "#A56A3D",
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [],
+      "fallback_material": "gold",
+      "source": "art/mockups/ui-pixel-v2/registered/coin.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "source_crop": [
+        0,
+        934,
+        336,
+        1247
+      ],
+      "size": [
+        16,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 1,
+      "source_opaque_bbox": [
+        80,
+        29,
+        297,
+        249
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "visitors",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        }
+      ],
+      "fallback_material": "purple",
+      "source": "art/mockups/ui-pixel-v2/registered/visitors.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "source_crop": [
+        336,
+        934,
+        628,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        18,
+        53,
+        267,
+        244
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "unknown_recipe",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "purple",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.77,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/unknown_recipe.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "source_crop": [
+        628,
+        934,
+        917,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        26,
+        34,
+        264,
+        249
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "expedition",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F",
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.77,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/expedition.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/roles.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "source_crop": [
+        917,
+        934,
+        1261,
+        1247
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        27,
+        40,
+        280,
+        249
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "cauldron_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "shade": [
+          "#50315F"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "shade",
+          "value_max": 0.4
+        }
+      ],
+      "fallback_material": "purple",
+      "material_ramps": {
+        "shade": "purple"
+      },
+      "source": "art/mockups/ui-pixel-v2/registered/cauldron_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        0,
+        0
+      ],
+      "source_crop": [
+        0,
+        0,
+        266,
+        281
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        61,
+        96,
+        223,
+        253
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "cauldron_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "shade": [
+          "#50315F"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "shade",
+          "value_max": 0.4
+        }
+      ],
+      "fallback_material": "purple",
+      "material_ramps": {
+        "shade": "purple"
+      },
+      "source": "art/mockups/ui-pixel-v2/registered/cauldron_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        1,
+        0
+      ],
+      "source_crop": [
+        266,
+        0,
+        512,
+        281
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        30,
+        96,
+        225,
+        253
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "cauldron_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "purple": [
+          "#86548E"
+        ],
+        "shade": [
+          "#50315F"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "hue": [
+            0.02,
+            0.15
+          ]
+        },
+        {
+          "material": "shade",
+          "value_max": 0.4
+        }
+      ],
+      "fallback_material": "purple",
+      "material_ramps": {
+        "shade": "purple"
+      },
+      "source": "art/mockups/ui-pixel-v2/registered/cauldron_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        2,
+        0
+      ],
+      "source_crop": [
+        512,
+        0,
+        772,
+        281
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        32,
+        47,
+        231,
+        253
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb_pot_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.8,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/herb_pot_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        3,
+        0
+      ],
+      "source_crop": [
+        772,
+        0,
+        1015,
+        281
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        51,
+        87,
+        195,
+        252
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb_pot_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.8,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/herb_pot_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        4,
+        0
+      ],
+      "source_crop": [
+        1015,
+        0,
+        1268,
+        281
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        47,
+        68,
+        210,
+        251
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb_pot_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "leaf": [
+          "#718C59",
+          "#B5C77D"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.8,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/herb_pot_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        5,
+        0
+      ],
+      "source_crop": [
+        1268,
+        0,
+        1536,
+        281
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        44,
+        68,
+        240,
+        251
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "sales_counter_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "purple": [
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "purple",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/sales_counter_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        0,
+        1
+      ],
+      "source_crop": [
+        0,
+        281,
+        266,
+        510
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        41,
+        87,
+        239,
+        209
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "sales_counter_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "purple": [
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "purple",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/sales_counter_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        1,
+        1
+      ],
+      "source_crop": [
+        266,
+        281,
+        512,
+        510
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        26,
+        29,
+        225,
+        209
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "sales_counter_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "gold": [
+          "#E9B95F"
+        ],
+        "purple": [
+          "#86548E"
+        ]
+      },
+      "rules": [
+        {
+          "material": "purple",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/sales_counter_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        2,
+        1
+      ],
+      "source_crop": [
+        512,
+        281,
+        772,
+        510
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        32,
+        28,
+        232,
+        209
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "precision_filter_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.72,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/precision_filter_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        3,
+        1
+      ],
+      "source_crop": [
+        772,
+        281,
+        1015,
+        510
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        62,
+        32,
+        176,
+        212
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "precision_filter_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.72,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/precision_filter_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        4,
+        1
+      ],
+      "source_crop": [
+        1015,
+        281,
+        1268,
+        510
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        41,
+        32,
+        215,
+        216
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "precision_filter_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ],
+        "teal": [
+          "#3BA8A3",
+          "#9BE2CF"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.72,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/precision_filter_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        5,
+        1
+      ],
+      "source_crop": [
+        1268,
+        281,
+        1536,
+        510
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        41,
+        32,
+        231,
+        216
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb_storage_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/herb_storage_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        0,
+        2
+      ],
+      "source_crop": [
+        0,
+        510,
+        266,
+        765
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        48,
+        37,
+        236,
+        227
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb_storage_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/herb_storage_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        1,
+        2
+      ],
+      "source_crop": [
+        266,
+        510,
+        512,
+        765
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        34,
+        37,
+        223,
+        229
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "herb_storage_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/herb_storage_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        2,
+        2
+      ],
+      "source_crop": [
+        512,
+        510,
+        772,
+        765
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        37,
+        37,
+        227,
+        232
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "potion_cabinet_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/potion_cabinet_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        3,
+        2
+      ],
+      "source_crop": [
+        772,
+        510,
+        1015,
+        765
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        25,
+        37,
+        216,
+        227
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "potion_cabinet_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/potion_cabinet_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        4,
+        2
+      ],
+      "source_crop": [
+        1015,
+        510,
+        1268,
+        765
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        35,
+        37,
+        223,
+        228
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "potion_cabinet_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "teal": [
+          "#3BA8A3"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "teal",
+          "hue": [
+            0.39,
+            0.62
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/potion_cabinet_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        5,
+        2
+      ],
+      "source_crop": [
+        1268,
+        510,
+        1536,
+        765
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        30,
+        13,
+        222,
+        229
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "drying_rack_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/drying_rack_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        0,
+        3
+      ],
+      "source_crop": [
+        0,
+        765,
+        266,
+        1024
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        38,
+        42,
+        245,
+        212
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "drying_rack_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/drying_rack_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        1,
+        3
+      ],
+      "source_crop": [
+        266,
+        765,
+        512,
+        1024
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        21,
+        42,
+        229,
+        212
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "drying_rack_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047",
+          "#C99463"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#E9B95F"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.83,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/drying_rack_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        2,
+        3
+      ],
+      "source_crop": [
+        512,
+        765,
+        772,
+        1024
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        17,
+        38,
+        242,
+        212
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "expedition_path_basic",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "stone": [
+          "#827589"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "stone",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/expedition_path_basic.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        3,
+        3
+      ],
+      "source_crop": [
+        772,
+        765,
+        1015,
+        1024
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        18,
+        38,
+        219,
+        210
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "expedition_path_improved",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "stone": [
+          "#827589"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "stone",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/expedition_path_improved.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        4,
+        3
+      ],
+      "source_crop": [
+        1015,
+        765,
+        1268,
+        1024
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        24,
+        38,
+        234,
+        216
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    },
+    {
+      "id": "expedition_path_premium",
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "wood": [
+          "#916047"
+        ],
+        "stone": [
+          "#827589"
+        ],
+        "leaf": [
+          "#718C59"
+        ],
+        "gold": [
+          "#FFF0BC"
+        ]
+      },
+      "rules": [
+        {
+          "material": "leaf",
+          "hue": [
+            0.15,
+            0.39
+          ]
+        },
+        {
+          "material": "stone",
+          "hue": [
+            0.62,
+            0.96
+          ]
+        },
+        {
+          "material": "gold",
+          "value_min": 0.87,
+          "hue": [
+            0.02,
+            0.15
+          ]
+        }
+      ],
+      "fallback_material": "wood",
+      "source": "art/mockups/ui-pixel-v2/registered/expedition_path_premium.png",
+      "source_sheet": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "source_cell": [
+        5,
+        3
+      ],
+      "source_crop": [
+        1268,
+        765,
+        1536,
+        1024
+      ],
+      "size": [
+        32,
+        32
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 2,
+      "source_opaque_bbox": [
+        20,
+        24,
+        239,
+        216
+      ],
+      "source_crop_edge_contacts": 0,
+      "dark_value": 0.24,
+      "preserve_source_outline": false
+    }
+  ],
+  "source_sheets": {
+    "regions": {
+      "path": "art/mockups/ui-pixel-v2/source/regions.png",
+      "sha256": "dd9675c6bbdafb5bd14d1656e4963862be31a5d504c2ad216da0134454c955ac",
+      "grid": [
+        3,
+        3
+      ],
+      "size": [
+        1261,
+        1247
+      ],
+      "x_cuts": [
+        0,
+        433,
+        819,
+        1261
+      ],
+      "y_cuts": [
+        0,
+        422,
+        795,
+        1247
+      ]
+    },
+    "materials": {
+      "path": "art/mockups/ui-pixel-v2/source/materials.png",
+      "sha256": "ea0a34cf1f87e7711ccac3d514088541fcf39481b069f076541b8679fd78a6a4",
+      "grid": [
+        4,
+        3
+      ],
+      "size": [
+        1448,
+        1086
+      ],
+      "x_cuts": [
+        0,
+        387,
+        714,
+        1050,
+        1448
+      ],
+      "y_cuts": [
+        0,
+        361,
+        701,
+        1086
+      ]
+    },
+    "roles": {
+      "path": "art/mockups/ui-pixel-v2/source/roles.png",
+      "sha256": "cefbbdbbeaffccfa13596ee89ef4ad181bc0f41f1480e7df966227c2786fd7ef",
+      "grid": [
+        4,
+        4
+      ],
+      "size": [
+        1261,
+        1247
+      ],
+      "x_cuts": [
+        0,
+        336,
+        628,
+        917,
+        1261
+      ],
+      "y_cuts": [
+        0,
+        350,
+        634,
+        934,
+        1247
+      ]
+    },
+    "equipment": {
+      "path": "art/mockups/ui-pixel-v2/source/equipment.png",
+      "sha256": "b4f2b4ea9b168938e59c6b6d7c0e8d3bdd2bae7e581eb58fab3c4dec8ce39005",
+      "grid": [
+        6,
+        4
+      ],
+      "size": [
+        1536,
+        1024
+      ],
+      "x_cuts": [
+        0,
+        266,
+        512,
+        772,
+        1015,
+        1268,
+        1536
+      ],
+      "y_cuts": [
+        0,
+        281,
+        510,
+        765,
+        1024
+      ]
+    }
+  }
+}

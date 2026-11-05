@@ -13,6 +13,7 @@ const Rare = preload("res://scripts/rare_recipes.gd")
 const Late = preload("res://scripts/shop_late_investments.gd")
 const Catalog = preload("res://scripts/pixel_art_catalog.gd")
 const ItemArt = preload("res://scripts/item_art.gd")
+const UiPixel = preload("res://scripts/ui_pixel_catalog.gd")
 const Status = preload("res://scripts/management_status.gd")
 const M = preload("res://tests/contracts_fixture.gd")
 const Compare = preload("res://tests/state_compare.gd")
@@ -313,13 +314,21 @@ func test_art() -> void:
 		for cid in CUSTOMER_INDEX:
 			var binding: Dictionary = Catalog.DATA.characters[cid].bindings.get(id, {})
 			check(not binding.is_empty() and binding.checks.size() == 10 and binding.checks.all(func(c): return c.passed and int(c.bottle_bottom_row) <= 43 and int(c.visible_liquid_pixels) > 0) and Catalog.local_grip(cid, id) == Vector2(binding.local_grip[0], binding.local_grip[1]), "%s: %s hand grip %s passes all 10 pose/facing checks" % [cid, id, str(binding.get("local_grip", []))])
+		# The UI refresh selects new 32px presentation art without overwriting
+		# the approved F26 source files or workshop bottles/pots above.
+		var original_icon: Texture2D = load("res://assets/content_expansion_v1/potions/%s_icon.png" % id)
+		check(texture_pixels(original_icon) == pixels(MOCK + "sprites/%s_icon.png" % id) and original_icon.get_size() == Vector2(32, 40), "%s original 32x40 potion icon is preserved" % id)
+		var original_recipe: Texture2D = load("res://assets/content_expansion_v1/recipes/%s_recipe.png" % id)
+		check(texture_pixels(original_recipe) == pixels(MOCK + "sprites/%s_recipe.png" % id) and original_recipe.get_size() == Vector2(32, 40), "%s original 32x40 recipe icon is preserved" % id)
 		var icon := ItemArt.icon(id)
-		check(icon.resource_path == "res://assets/content_expansion_v1/potions/%s_icon.png" % id and texture_pixels(icon) == pixels(MOCK + "sprites/%s_icon.png" % id) and icon.get_size() == Vector2(32, 40), "%s 32x40 potion icon = approved" % id)
+		check(icon == UiPixel.icon(id) and UiPixel.owns(icon) and icon.get_size() == Vector2(32, 32), "%s runtime potion icon uses the new native32 catalog" % id)
 		var recipe := ItemArt.recipe_icon(id)
-		check(recipe.resource_path == "res://assets/content_expansion_v1/recipes/%s_recipe.png" % id and texture_pixels(recipe) == pixels(MOCK + "sprites/%s_recipe.png" % id), "%s 32x40 recipe icon = approved" % id)
+		check(recipe == UiPixel.icon("recipe:" + id) and UiPixel.owns(recipe) and recipe.get_size() == Vector2(32, 32), "%s runtime recipe icon uses the new native32 catalog" % id)
 	for pair in [[MATERIAL, "materials/dawn_bloom_icon.png", "dawn_bloom_icon"], [REGION, "regions/dawn_lighthouse_icon.png", "dawn_lighthouse_icon"]]:
+		var original_texture: Texture2D = load("res://assets/content_expansion_v1/" + pair[1])
+		check(texture_pixels(original_texture) == pixels(MOCK + "sprites/%s.png" % pair[2]), "%s original approved icon is preserved" % pair[0])
 		var texture := ItemArt.icon(pair[0])
-		check(texture.resource_path == "res://assets/content_expansion_v1/" + pair[1] and texture_pixels(texture) == pixels(MOCK + "sprites/%s.png" % pair[2]), "%s icon = approved" % pair[0])
+		check(texture == UiPixel.icon(pair[0]) and UiPixel.owns(texture) and texture.get_size() == Vector2(32, 32), "%s runtime icon uses the new native32 catalog" % pair[0])
 	# The 64x80 planter growth sheet v2 was approved separately (2026-11-05) and is published byte for byte.
 	const GROWTH := "res://assets/content_expansion_v1/materials/dawn_bloom_growth.png"
 	check(ItemArt.growth_path(MATERIAL) == GROWTH and FileAccess.get_file_as_bytes(GROWTH) == FileAccess.get_file_as_bytes("res://art/mockups/f26-dawn-bloom-growth-v2/sheets/dawn_bloom_growth.png"), "Dawn bloom growth sheet = approved v2 file")
@@ -387,9 +396,9 @@ func test_ui(base: RefCounted) -> void:
 	panel.refresh()
 	await process_frame
 	var recipe: Dictionary = panel.rows.get("sunrise", {})
-	check(not recipe.is_empty() and recipe.icon.texture.resource_path == "res://assets/content_expansion_v1/recipes/sunrise_recipe.png" and recipe.title.text == "해돋이", "Recipe tab shows the approved sunrise recipe icon")
+	check(not recipe.is_empty() and recipe.icon.texture == UiPixel.icon("recipe:sunrise") and recipe.icon.texture.get_size() == Vector2(32, 32) and recipe.title.text == "해돋이", "Recipe tab shows the new native32 sunrise icon")
 	var eternity: Dictionary = panel.rows.get("eternity", {})
-	check(not eternity.is_empty() and eternity.icon.texture is AtlasTexture, "Older ordinary recipes keep their trimmed potion icons")
+	check(not eternity.is_empty() and eternity.icon.texture == UiPixel.icon("eternity") and eternity.icon.texture.get_size() == Vector2(32, 32), "Older ordinary recipes also use the new native32 icons")
 	panel.select_page(panel.HERBS)
 	panel.refresh()
 	await process_frame

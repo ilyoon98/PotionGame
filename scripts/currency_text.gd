@@ -1,13 +1,18 @@
 extends RichTextLabel
 ## Display only. Keep original strings available without changing purchase reasons.
-const COIN = preload("res://assets/workshop_v1/gold_coin.tres")
-const COIN_PATH := "res://assets/workshop_v1/gold_coin.tres"
+const UiPixel = preload("res://scripts/ui_pixel_catalog.gd")
+static var COIN: Texture2D = _coin()
+static var COIN_PATH: String = COIN.resource_path
 static var gold_pattern: RegEx
 var source_text := ""
 var coin_count := 0
 var initialized := false
 var currency_size := 14
 var money_alignment := HORIZONTAL_ALIGNMENT_LEFT
+
+static func _coin() -> Texture2D:
+	var replacement := UiPixel.icon("coin_small")
+	return replacement if replacement != null else preload("res://assets/workshop_v1/gold_coin.tres")
 
 func _init() -> void:
 	bbcode_enabled = true
@@ -26,7 +31,7 @@ static func escape(value: String) -> String:
 	return value.replace("[", "\u0001").replace("]", "[rb]").replace("\u0001", "[lb]")
 
 func appearance(font_size: int, color: Color) -> void:
-	currency_size = maxi(12, font_size + 2)
+	currency_size = 16 if UiPixel.owns(COIN) else maxi(12, font_size + 2)
 	add_theme_font_size_override("normal_font_size", font_size)
 	add_theme_color_override("default_color", color)
 

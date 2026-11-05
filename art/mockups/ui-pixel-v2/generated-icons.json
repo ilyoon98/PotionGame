@@ -1,0 +1,109 @@
+{
+  "icons": {
+    "forest_edge": "res://assets/ui_pixel_v2/icons/forest_edge.png",
+    "abandoned_greenhouse": "res://assets/ui_pixel_v2/icons/abandoned_greenhouse.png",
+    "mist_valley": "res://assets/ui_pixel_v2/icons/mist_valley.png",
+    "crystal_mine": "res://assets/ui_pixel_v2/icons/crystal_mine.png",
+    "fog_marsh": "res://assets/ui_pixel_v2/icons/fog_marsh.png",
+    "forgotten_tower": "res://assets/ui_pixel_v2/icons/forgotten_tower.png",
+    "moon_ruins": "res://assets/ui_pixel_v2/icons/moon_ruins.png",
+    "star_garden": "res://assets/ui_pixel_v2/icons/star_garden.png",
+    "dawn_lighthouse": "res://assets/ui_pixel_v2/icons/dawn_lighthouse.png",
+    "herb": "res://assets/ui_pixel_v2/icons/herb.png",
+    "moon_mushroom": "res://assets/ui_pixel_v2/icons/moon_mushroom.png",
+    "starleaf": "res://assets/ui_pixel_v2/icons/starleaf.png",
+    "dewgrass": "res://assets/ui_pixel_v2/icons/dewgrass.png",
+    "silver_moss": "res://assets/ui_pixel_v2/icons/silver_moss.png",
+    "blue_reed": "res://assets/ui_pixel_v2/icons/blue_reed.png",
+    "crystal_herb": "res://assets/ui_pixel_v2/icons/crystal_herb.png",
+    "mist_mushroom": "res://assets/ui_pixel_v2/icons/mist_mushroom.png",
+    "ash_sage": "res://assets/ui_pixel_v2/icons/ash_sage.png",
+    "moonflower": "res://assets/ui_pixel_v2/icons/moonflower.png",
+    "star_seed": "res://assets/ui_pixel_v2/icons/star_seed.png",
+    "dawn_bloom": "res://assets/ui_pixel_v2/icons/dawn_bloom.png",
+    "sales_assistant": "res://assets/ui_pixel_v2/icons/sales_assistant.png",
+    "cultivation_assistant": "res://assets/ui_pixel_v2/icons/cultivation_assistant.png",
+    "brewing_assistant": "res://assets/ui_pixel_v2/icons/brewing_assistant.png",
+    "expedition_guide": "res://assets/ui_pixel_v2/icons/expedition_guide.png",
+    "family_vitality": "res://assets/ui_pixel_v2/icons/family_vitality.png",
+    "family_arcane": "res://assets/ui_pixel_v2/icons/family_arcane.png",
+    "family_nature": "res://assets/ui_pixel_v2/icons/family_nature.png",
+    "family_craft": "res://assets/ui_pixel_v2/icons/family_craft.png",
+    "flow": "res://assets/ui_pixel_v2/icons/flow.png",
+    "basic": "res://assets/ui_pixel_v2/icons/basic.png",
+    "filter": "res://assets/ui_pixel_v2/icons/filter.png",
+    "reputation": "res://assets/ui_pixel_v2/icons/reputation.png",
+    "reputation_small": "res://assets/ui_pixel_v2/icons/reputation_small.png",
+    "coin": "res://assets/ui_pixel_v2/icons/coin.png",
+    "coin_small": "res://assets/ui_pixel_v2/icons/coin_small.png",
+    "visitors": "res://assets/ui_pixel_v2/icons/visitors.png",
+    "unknown_recipe": "res://assets/ui_pixel_v2/icons/unknown_recipe.png",
+    "expedition": "res://assets/ui_pixel_v2/icons/expedition.png",
+    "cauldron_basic": "res://assets/ui_pixel_v2/icons/cauldron_basic.png",
+    "cauldron_improved": "res://assets/ui_pixel_v2/icons/cauldron_improved.png",
+    "cauldron_premium": "res://assets/ui_pixel_v2/icons/cauldron_premium.png",
+    "herb_pot_basic": "res://assets/ui_pixel_v2/icons/herb_pot_basic.png",
+    "herb_pot_improved": "res://assets/ui_pixel_v2/icons/herb_pot_improved.png",
+    "herb_pot_premium": "res://assets/ui_pixel_v2/icons/herb_pot_premium.png",
+    "sales_counter_basic": "res://assets/ui_pixel_v2/icons/sales_counter_basic.png",
+    "sales_counter_improved": "res://assets/ui_pixel_v2/icons/sales_counter_improved.png",
+    "sales_counter_premium": "res://assets/ui_pixel_v2/icons/sales_counter_premium.png",
+    "precision_filter_basic": "res://assets/ui_pixel_v2/icons/precision_filter_basic.png",
+    "precision_filter_improved": "res://assets/ui_pixel_v2/icons/precision_filter_improved.png",
+    "precision_filter_premium": "res://assets/ui_pixel_v2/icons/precision_filter_premium.png",
+    "herb_storage_basic": "res://assets/ui_pixel_v2/icons/herb_storage_basic.png",
+    "herb_storage_improved": "res://assets/ui_pixel_v2/icons/herb_storage_improved.png",
+    "herb_storage_premium": "res://assets/ui_pixel_v2/icons/herb_storage_premium.png",
+    "potion_cabinet_basic": "res://assets/ui_pixel_v2/icons/potion_cabinet_basic.png",
+    "potion_cabinet_improved": "res://assets/ui_pixel_v2/icons/potion_cabinet_improved.png",
+    "potion_cabinet_premium": "res://assets/ui_pixel_v2/icons/potion_cabinet_premium.png",
+    "drying_rack_basic": "res://assets/ui_pixel_v2/icons/drying_rack_basic.png",
+    "drying_rack_improved": "res://assets/ui_pixel_v2/icons/drying_rack_improved.png",
+    "drying_rack_premium": "res://assets/ui_pixel_v2/icons/drying_rack_premium.png",
+    "expedition_path_basic": "res://assets/ui_pixel_v2/icons/expedition_path_basic.png",
+    "expedition_path_improved": "res://assets/ui_pixel_v2/icons/expedition_path_improved.png",
+    "expedition_path_premium": "res://assets/ui_pixel_v2/icons/expedition_path_premium.png"
+  },
+  "equipment": {
+    "cauldron": [
+      "res://assets/ui_pixel_v2/icons/cauldron_basic.png",
+      "res://assets/ui_pixel_v2/icons/cauldron_improved.png",
+      "res://assets/ui_pixel_v2/icons/cauldron_premium.png"
+    ],
+    "herb_pot": [
+      "res://assets/ui_pixel_v2/icons/herb_pot_basic.png",
+      "res://assets/ui_pixel_v2/icons/herb_pot_improved.png",
+      "res://assets/ui_pixel_v2/icons/herb_pot_premium.png"
+    ],
+    "sales_counter": [
+      "res://assets/ui_pixel_v2/icons/sales_counter_basic.png",
+      "res://assets/ui_pixel_v2/icons/sales_counter_improved.png",
+      "res://assets/ui_pixel_v2/icons/sales_counter_premium.png"
+    ],
+    "precision_filter": [
+      "res://assets/ui_pixel_v2/icons/precision_filter_basic.png",
+      "res://assets/ui_pixel_v2/icons/precision_filter_improved.png",
+      "res://assets/ui_pixel_v2/icons/precision_filter_premium.png"
+    ],
+    "herb_storage": [
+      "res://assets/ui_pixel_v2/icons/herb_storage_basic.png",
+      "res://assets/ui_pixel_v2/icons/herb_storage_improved.png",
+      "res://assets/ui_pixel_v2/icons/herb_storage_premium.png"
+    ],
+    "potion_cabinet": [
+      "res://assets/ui_pixel_v2/icons/potion_cabinet_basic.png",
+      "res://assets/ui_pixel_v2/icons/potion_cabinet_improved.png",
+      "res://assets/ui_pixel_v2/icons/potion_cabinet_premium.png"
+    ],
+    "drying_rack": [
+      "res://assets/ui_pixel_v2/icons/drying_rack_basic.png",
+      "res://assets/ui_pixel_v2/icons/drying_rack_improved.png",
+      "res://assets/ui_pixel_v2/icons/drying_rack_premium.png"
+    ],
+    "expedition_path": [
+      "res://assets/ui_pixel_v2/icons/expedition_path_basic.png",
+      "res://assets/ui_pixel_v2/icons/expedition_path_improved.png",
+      "res://assets/ui_pixel_v2/icons/expedition_path_premium.png"
+    ]
+  }
+}

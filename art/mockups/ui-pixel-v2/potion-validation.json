@@ -1,0 +1,2882 @@
+{
+  "status": "passed",
+  "operation": "exact approved bottle pixels at common 2x on transparent 32x32 canvas",
+  "source_catalog": "assets/pixel_v1/catalog.json",
+  "validator": "tools/process_pixel_art.py:validate",
+  "icon_count": 40,
+  "recipe_identity": "same potion-id icon; original recipe glyph files are unchanged",
+  "outline_note": "Approved source bottles expose brown cork on their top boundary. These exact existing pixels are retained; no claim of zero inherited outline violations is made.",
+  "max_color_count": 5,
+  "all_bottles_rgba_exact_2x": true,
+  "all_source_hashes_unchanged": true,
+  "icons": {
+    "health": {
+      "path": "res://assets/ui_pixel_v2/icons/health.png",
+      "source": "res://assets/pixel_v1/potions/health.png",
+      "source_sha256": "e221e15fc59a53f30c98576f7ea109400e1ab70838f0ecca164a78bc909f269c",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#A65D64",
+          "#DE9B88",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A65D64",
+        "#DE9B88",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "a96ceb73770637e2aa00f552b9bbdafe76c2df2f9037d026caf91d7679daef48"
+    },
+    "mana": {
+      "path": "res://assets/ui_pixel_v2/icons/mana.png",
+      "source": "res://assets/pixel_v1/potions/mana.png",
+      "source_sha256": "6d45c21e4467a6db133ede22e809ae57a5d57dbe117347d70db4023d92901344",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 58,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#3BA8A3",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 232,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "6da1cc31927461aa4b12b84c55a7180f55fd0efebe271ccc2cc4d0ccdc010cf5"
+    },
+    "moon": {
+      "path": "res://assets/ui_pixel_v2/icons/moon.png",
+      "source": "res://assets/pixel_v1/potions/moon.png",
+      "source_sha256": "2554a8f6aee49c520e7024d3900de8944d6ff04620995b35c4f92dfb4285bf51",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "17ab48e7169e83f1b38220036c5fbabbea08649d2ced8e8cdd76a74f4c8ec7df"
+    },
+    "purify": {
+      "path": "res://assets/ui_pixel_v2/icons/purify.png",
+      "source": "res://assets/pixel_v1/potions/purify.png",
+      "source_sha256": "4e687daeaab465c951cef76365e6f8d6029ee4c47d4df629ca42c6306e226d8f",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 68,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 272,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "b2a9960bddea5ea71aabcf8a03e90d2f78006e3e44748d64c3d6c0f9d2475986"
+    },
+    "agility": {
+      "path": "res://assets/ui_pixel_v2/icons/agility.png",
+      "source": "res://assets/pixel_v1/potions/agility.png",
+      "source_sha256": "dc4d27b8ee21c52431f37e4c8e546c7cb4b3f4ba8bb413b527b6f6b27a34a9cb",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          16
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        0
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "97b93a9cf4669abe8c9662009ff159c6e609c5f1daf747f51124d2d3d9d1415f"
+    },
+    "vigor": {
+      "path": "res://assets/ui_pixel_v2/icons/vigor.png",
+      "source": "res://assets/pixel_v1/potions/vigor.png",
+      "source_sha256": "dfc9c22ff2584d8cc7274e170d3daf1225eaf3796ab84f00aa14b33dd8b29830",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 70,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#9D4359",
+          "#DE7356",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 280,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#9D4359",
+        "#DE7356",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "d0431b4170c20d2d766140a5f67bd5b7856b60e01cea47b58c7f18706bbdd7d3"
+    },
+    "antidote": {
+      "path": "res://assets/ui_pixel_v2/icons/antidote.png",
+      "source": "res://assets/pixel_v1/potions/antidote.png",
+      "source_sha256": "ab3c3e27e265dbe97311fe28ec7d4c958a3540081d4b6ac1010c0b0a588a9774",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 52,
+        "colors": [
+          "#241C32",
+          "#3D544D",
+          "#718C59",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 208,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "68fbbae6bfea72f1ec574d4a167c679ae5edf5f003b29963a4b6cb0a543ce812"
+    },
+    "fortune": {
+      "path": "res://assets/ui_pixel_v2/icons/fortune.png",
+      "source": "res://assets/pixel_v1/potions/fortune.png",
+      "source_sha256": "6eadb787bb1fa3a8994988d1f5348cf08ed5bb35b6ff9422397d270e510e138a",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 58,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#A56A3D",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 232,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "a25dfc6757590b5b2523eded0ef859a040157cf536bd4b1e4148b276cdb4f42e"
+    },
+    "focus": {
+      "path": "res://assets/ui_pixel_v2/icons/focus.png",
+      "source": "res://assets/pixel_v1/potions/focus.png",
+      "source_sha256": "8375728c350e08afb542557fe2aa9bc564fecdadac3f95e48adf826baea32dd7",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          16
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        0
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "f4c01469edeaf7f00b6f5c7903cf24506bfdb83176783caed338f7df4eb1699a"
+    },
+    "restoration": {
+      "path": "res://assets/ui_pixel_v2/icons/restoration.png",
+      "source": "res://assets/pixel_v1/potions/restoration.png",
+      "source_sha256": "aec968f34692e014cf3db09e188843da436e3c3b4cca36feb3bcb0512eec821c",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 58,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#DE9B88",
+          "#F6D1AC",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 232,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#DE9B88",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "93408d896d393dc90667a9f363586e5a374a6a5944f40d4b1f2708cc1e51281b"
+    },
+    "growth": {
+      "path": "res://assets/ui_pixel_v2/icons/growth.png",
+      "source": "res://assets/pixel_v1/potions/growth.png",
+      "source_sha256": "3a69059253b42589185e91cd3e5a43d35175ce507041ea94b62b8b875331ffa8",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#916047",
+          "#B5C77D",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "ad98ecbc7edf190fc8af32f9bd93b8d6e27d908f81f78ab641e3e2290f73c784"
+    },
+    "clarity": {
+      "path": "res://assets/ui_pixel_v2/icons/clarity.png",
+      "source": "res://assets/pixel_v1/potions/clarity.png",
+      "source_sha256": "0b94c6b8cb38b14711d1527ce12b7c551c18255568ebc1549aa1a419a9acd487",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 56,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 224,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "a1ce37fe4e7c60fe7e67ba71961185b64dce7af2b0bd5fbb1a36e16922aefd40"
+    },
+    "ward": {
+      "path": "res://assets/ui_pixel_v2/icons/ward.png",
+      "source": "res://assets/pixel_v1/potions/ward.png",
+      "source_sha256": "7b2d296e3cbdebb2a912c32a99fc8014ddb1b31097debe08f529a6e37c26925a",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#4A3C52",
+          "#827589",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "835b367b5ea08348a6689632653a33b91584376eccee7654be2ba379f81a1db0"
+    },
+    "spirit": {
+      "path": "res://assets/ui_pixel_v2/icons/spirit.png",
+      "source": "res://assets/pixel_v1/potions/spirit.png",
+      "source_sha256": "c8eb4abf523c15e2c0fa01b051ce86ad0b8702f5516be8129c18e6ebe2df1ad8",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 58,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 232,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "988ab2577cba4db470b64066110c8948b8f4fb7481ba89adaf640402ea814354"
+    },
+    "arcane_amplification": {
+      "path": "res://assets/ui_pixel_v2/icons/arcane_amplification.png",
+      "source": "res://assets/pixel_v1/potions/arcane_amplification.png",
+      "source_sha256": "c4a0c941d9e3513cc3a7e157e42b70071d60efcdfe4a5deb91f674eb3e1a399e",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 54,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 216,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "5c914f24490416a475cb6bc4734c60be31fbeb2a334e7162e79b51fd79f6cfb4"
+    },
+    "iron_skin": {
+      "path": "res://assets/ui_pixel_v2/icons/iron_skin.png",
+      "source": "res://assets/pixel_v1/potions/iron_skin.png",
+      "source_sha256": "64a4d8d4cfae260fa0f16e18dc33840101d8317fbf8c577dc52bcd6a598f8f64",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 70,
+        "colors": [
+          "#241C32",
+          "#4A3C52",
+          "#827589",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 280,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "732aaeb266f43dbe451fc8a0383051ffcb9da73af6fe62acffbdfb6905bb7ee3"
+    },
+    "stealth": {
+      "path": "res://assets/ui_pixel_v2/icons/stealth.png",
+      "source": "res://assets/pixel_v1/potions/stealth.png",
+      "source_sha256": "ffc2ba91f6867d195ee36f62b53611cb625ebf83f428756ed0d5a504399250fb",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 72,
+        "colors": [
+          "#241C32",
+          "#3D544D",
+          "#718C59",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 288,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "e6a79b9fa9db046131b3c6b06d33caeac8af30102ec88dfa767ab882628f0469"
+    },
+    "poison_resistance": {
+      "path": "res://assets/ui_pixel_v2/icons/poison_resistance.png",
+      "source": "res://assets/pixel_v1/potions/poison_resistance.png",
+      "source_sha256": "59241c83aa77b4c0f87e2ba788210a25be0c7497ee3e12d21d2905101124e67e",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 50,
+        "colors": [
+          "#241C32",
+          "#3D544D",
+          "#718C59",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 200,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#718C59",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "52f640ef12841f6382e25b21994b97af671d98c551d4ba11cd7599507b5b5496"
+    },
+    "illusion": {
+      "path": "res://assets/ui_pixel_v2/icons/illusion.png",
+      "source": "res://assets/pixel_v1/potions/illusion.png",
+      "source_sha256": "897eadaacb2ee656de20ff6ef8ab1bd90779a5a38c9ccf4ea5fc2ec1fcf3c012",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 48,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 192,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "036528d3673ecb8ca6ec5a5771313c5d77c1cdc34c7fe23cb75509d6284115c6"
+    },
+    "soul_purification": {
+      "path": "res://assets/ui_pixel_v2/icons/soul_purification.png",
+      "source": "res://assets/pixel_v1/potions/soul_purification.png",
+      "source_sha256": "6008507c6be373fe8c15a2309bab8330ee543017b2c7d7771af153fc2cc16075",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 48,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 192,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "69558a3336d8bf4f0e9ef18201a887fe645d4202edf604b38fc2c340ef638eee"
+    },
+    "wisdom": {
+      "path": "res://assets/ui_pixel_v2/icons/wisdom.png",
+      "source": "res://assets/pixel_v1/potions/wisdom.png",
+      "source_sha256": "8f9a7f99afbf893b53f8e01b01e39799690bc3307e1d782e61c6c7d9dfa712c4",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 58,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 232,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "ac637315609206076b26de747311400b1cec91bc5c35a867fca359074196de8e"
+    },
+    "reflection": {
+      "path": "res://assets/ui_pixel_v2/icons/reflection.png",
+      "source": "res://assets/pixel_v1/potions/reflection.png",
+      "source_sha256": "31e64e9bf82933e4b4a4aa9490c2fb069cad629029ddab8181c18dd6851794db",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 48,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 192,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "f3537a6bd1e7d4b4e4c548dbdc9001a88b41a3484421894ff3e1056c21f1507f"
+    },
+    "haste": {
+      "path": "res://assets/ui_pixel_v2/icons/haste.png",
+      "source": "res://assets/pixel_v1/potions/haste.png",
+      "source_sha256": "51361fbc45606e1def93a9de8f85233aca40e400d5d1c5058368d8b4681b1fc1",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          16
+        ],
+        "opaque_pixels": 71,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        0
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 284,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "faa2426ed9afb7499901354f35e6049f8d5692e82068b22b60ed02b061988d8d"
+    },
+    "nightwalk": {
+      "path": "res://assets/ui_pixel_v2/icons/nightwalk.png",
+      "source": "res://assets/pixel_v1/potions/nightwalk.png",
+      "source_sha256": "ea9ed07745290164d94bbf4980b20d3af36b2a7a62b05d22ca7695c55bd14ee7",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 62,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#3BA8A3",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 248,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#3BA8A3",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "b5f1bc72fe8f8877bd35434060ebab8400c78ab96c4fac8536b6b8f2a76997b9"
+    },
+    "moonradiance": {
+      "path": "res://assets/ui_pixel_v2/icons/moonradiance.png",
+      "source": "res://assets/pixel_v1/potions/moonradiance.png",
+      "source_sha256": "70b6fcbd6b62f2752a294b207bab100c9c6bdb7b1fed233f980f07ea1e9e27d0",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 51,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 204,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "710d16a39d4332683d7a21419020696dd23c1872872e5d033f073cad964fb043"
+    },
+    "regeneration": {
+      "path": "res://assets/ui_pixel_v2/icons/regeneration.png",
+      "source": "res://assets/pixel_v1/potions/regeneration.png",
+      "source_sha256": "a2c6d371d3a2f3122f69b94d682c8bd94703d199e885f56a00f0466502cb6c51",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 64,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#A65D64",
+          "#F6D1AC",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 256,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "aa93081fa592609b2831627a1c96ee431fa2e3559eb7e1593fe8df598875b723"
+    },
+    "starlight": {
+      "path": "res://assets/ui_pixel_v2/icons/starlight.png",
+      "source": "res://assets/pixel_v1/potions/starlight.png",
+      "source_sha256": "59b8985e1fe123b9b1914e90f1c80cc98576b5ac6c5fe9c938717b5affb6b0d1",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 50,
+        "colors": [
+          "#241C32",
+          "#50315F",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 200,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "f2a52d396e476f7f86ce337bb564c9b8d6514077ebcdb904c9e4d673a87cb133"
+    },
+    "wish": {
+      "path": "res://assets/ui_pixel_v2/icons/wish.png",
+      "source": "res://assets/pixel_v1/potions/wish.png",
+      "source_sha256": "059948accedd8ed6b38237876bf7f813e567914ad971933d524a3b38bc8e5946",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          16
+        ],
+        "opaque_pixels": 61,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#FFF0BC"
+        ],
+        "color_count": 3,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        0
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 244,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#FFF0BC"
+      ],
+      "color_count": 3,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "3b486cd151ee8d7c89b4370827447ee0d5a1b053742ab9e3b9462e1ac40354c2"
+    },
+    "eternity": {
+      "path": "res://assets/ui_pixel_v2/icons/eternity.png",
+      "source": "res://assets/pixel_v1/potions/eternity.png",
+      "source_sha256": "b9e449f9a364901a2a81d6762c113218d914ada6ce215175c9286dce8dea6a5a",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 58,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#A56A3D",
+          "#FFF0BC"
+        ],
+        "color_count": 4,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 232,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "3ca3fc2c885cce9a16ddfad68a4bc7b8ed700363fdbb2e6050f52d099b214130"
+    },
+    "sage_elixir": {
+      "path": "res://assets/ui_pixel_v2/icons/sage_elixir.png",
+      "source": "res://assets/pixel_v1/potions/sage_elixir.png",
+      "source_sha256": "221b93956446c4e6acfb7d938810d253aff3707172056ea4d48ac2f54e30bb3b",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 63,
+        "colors": [
+          "#241C32",
+          "#50315F",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 252,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "7b5ed0bd073b40f366c5d5b07f0e807d6051c28a8f819a16b91a34bee95dc4e8"
+    },
+    "worldtree_elixir": {
+      "path": "res://assets/ui_pixel_v2/icons/worldtree_elixir.png",
+      "source": "res://assets/pixel_v1/potions/worldtree_elixir.png",
+      "source_sha256": "3a69059253b42589185e91cd3e5a43d35175ce507041ea94b62b8b875331ffa8",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#916047",
+          "#B5C77D",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "ad98ecbc7edf190fc8af32f9bd93b8d6e27d908f81f78ab641e3e2290f73c784"
+    },
+    "shadow_elixir": {
+      "path": "res://assets/ui_pixel_v2/icons/shadow_elixir.png",
+      "source": "res://assets/pixel_v1/potions/shadow_elixir.png",
+      "source_sha256": "c0ddbbc3220488ca5e93e740dd448d57cc249b1d5ab262137e8f0e82642927ac",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 48,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 192,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "e8456423c575aa2afc0d054c58361f4d3fc24f5cd82da8da982c9542f87ed103"
+    },
+    "rare_forest_breath": {
+      "path": "res://assets/ui_pixel_v2/icons/rare_forest_breath.png",
+      "source": "res://assets/pixel_v1/potions/rare_forest_breath.png",
+      "source_sha256": "237fc83d42d17af80d1c79fc4d8f1219fccd4f2f5036d61a2ee03112aaedeeff",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 54,
+        "colors": [
+          "#241C32",
+          "#718C59",
+          "#916047",
+          "#B5C77D",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 216,
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "89d1fc992a50ff0f2c2eb63971678f3ea1bf14cf2453feb1410f1d1954642431"
+    },
+    "rare_mist_veil": {
+      "path": "res://assets/ui_pixel_v2/icons/rare_mist_veil.png",
+      "source": "res://assets/pixel_v1/potions/rare_mist_veil.png",
+      "source_sha256": "848e4363e6ee63ef2848c95c339d501d933bdd8e058edfbb8586a8d3ae673b43",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          16
+        ],
+        "opaque_pixels": 70,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        0
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 280,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "0036b5af5f4bd271086f691fe738d121e23014fac4d4b94321f712c1da3a9372"
+    },
+    "rare_lunar_seal": {
+      "path": "res://assets/ui_pixel_v2/icons/rare_lunar_seal.png",
+      "source": "res://assets/pixel_v1/potions/rare_lunar_seal.png",
+      "source_sha256": "2554a8f6aee49c520e7024d3900de8944d6ff04620995b35c4f92dfb4285bf51",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#86548E",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#86548E",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "17ab48e7169e83f1b38220036c5fbabbea08649d2ced8e8cdd76a74f4c8ec7df"
+    },
+    "rare_nebula_distillate": {
+      "path": "res://assets/ui_pixel_v2/icons/rare_nebula_distillate.png",
+      "source": "res://assets/pixel_v1/potions/rare_nebula_distillate.png",
+      "source_sha256": "f9a43748d994a22ffceae73599ba2371c7e7c11dff58e5ec1196e11f42ba238f",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 54,
+        "colors": [
+          "#241C32",
+          "#50315F",
+          "#916047",
+          "#C38EB5",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 216,
+      "colors": [
+        "#241C32",
+        "#50315F",
+        "#916047",
+        "#C38EB5",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "dd8a103764aa4bb916b2ca14fb93e9f6a462fea8adc0b53075aa0684e336434e"
+    },
+    "sunrise": {
+      "path": "res://assets/ui_pixel_v2/icons/sunrise.png",
+      "source": "res://assets/pixel_v1/potions/sunrise.png",
+      "source_sha256": "ae6fe77c3fe84d7b6704bf83c7b09211f30f7e02e587f9a99ef2484cf9aeff05",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 66,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#DE7356",
+          "#F4AC68",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 264,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#DE7356",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "15b736ccb41f999c8ddf0aa885330e5c89cc6a79634af37e88d6e4de26849df0"
+    },
+    "beacon": {
+      "path": "res://assets/ui_pixel_v2/icons/beacon.png",
+      "source": "res://assets/pixel_v1/potions/beacon.png",
+      "source_sha256": "d70e228f5f69f09e6e73e1c3872a56c4e3b6a34c04c1ee8bbd35be0536053bd7",
+      "source_size": [
+        8,
+        16
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          16
+        ],
+        "opaque_pixels": 84,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#A56A3D",
+          "#E9B95F",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        0
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 336,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "a1f2542c454c62db1eacbf484cb215dce6483973e57b47c91d28ab37eadb7440"
+    },
+    "sea_spray": {
+      "path": "res://assets/ui_pixel_v2/icons/sea_spray.png",
+      "source": "res://assets/pixel_v1/potions/sea_spray.png",
+      "source_sha256": "680a2eb133031628a33ad774a65db84406200d9de5d03e3ca61c91f23414d3d2",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#24566A",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "e95587a4e95d124ffbb7423ec28a2f3f61ed4fb65b24f2247828da986bdcd09f"
+    },
+    "sun_moon_elixir": {
+      "path": "res://assets/ui_pixel_v2/icons/sun_moon_elixir.png",
+      "source": "res://assets/pixel_v1/potions/sun_moon_elixir.png",
+      "source_sha256": "382cf67c623b3f107351566cabf7def5f23e6d90a29c4fd7a41f90728ba05015",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 64,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#9D4359",
+          "#F4AC68",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 256,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#9D4359",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "f19dab16a326c451cd5c269a1e3110f0a574487801a361e7776ccc210961e137"
+    }
+  }
+}
