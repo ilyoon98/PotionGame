@@ -11,6 +11,7 @@ static func completed(rank: int = 1, training: int = 0, all_partners: bool = fal
 			if not all_partners and partner.id != "caravan": continue
 			accept_basic(state, partner.id)
 			while state.contracts.grade(partner.id) < rank: finish_round(state, partner.id)
+	F18.complete_post_growth(state) # nothing left but the F19+ purchases under test
 	state.gold = 10000000 # UI affordability fixture, never a measured growth balance.
 	var normalized := State.new()
 	assert(normalized.load_data(F18.data(state)), "F19 UI history passes strict current save validation")

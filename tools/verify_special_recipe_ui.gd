@@ -203,7 +203,7 @@ func verify_all_blends_and_effects() -> void:
 	panel.select_page(panel.POTIONS)
 	await layout()
 	var kinds: Array = [false, true] + Content.RECIPES.keys()
-	check(kinds.size() == 36 and panel.potion_heading.text.contains("공용 창고"), "All 32 ordinary plus 4 special recipes use one explicitly shared potion warehouse")
+	check(kinds.size() == Content.DATA.potions.size() + Rare.ROWS.size() and kinds.size() == 36 + 4 and panel.potion_heading.text.contains("공용 창고"), "All 32+4 ordinary plus 4 special recipes use one explicitly shared potion warehouse")
 	for kind in kinds:
 		var row: Dictionary = panel.rows["potion_" + Status.kind_id(kind)]
 		verify_blend(row, kind)

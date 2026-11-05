@@ -18,16 +18,20 @@ static func clone(state: RefCounted) -> RefCounted:
 
 
 static func remaining(state: RefCounted) -> Dictionary:
+	# Original growth only: F26 post-growth rows (content_set) are not part of it.
 	var recipes := 0
 	for row in Content.DATA.potions:
-		if not row.owned_at_start and not state.progression.owned.has(row.id): recipes += 1
+		if F18.original(row) and not row.owned_at_start and not state.progression.owned.has(row.id): recipes += 1
+	var regions := 0
+	for row in Content.DATA.regions:
+		if F18.original(row) and state.progression.expansion.region_returns(row.id, state.progression) < int(row.complete_returns): regions += 1
 	var investments := 0
 	for track in ORIGINAL_TRACKS:
 		investments += maxi(0, int(ORIGINAL_TRACKS[track]) - state.track_level(track))
 	var staff := 0
 	for row in Content.DATA.employees:
 		if not state.progression.expansion.staff.has(row.id) and not (row.id == "sales_assistant" and state.progression.employee): staff += 1
-	return {"recipes": recipes, "regions": 8 - state.progression.completed_regions(), "investments": investments, "employees": staff}
+	return {"recipes": recipes, "regions": regions, "investments": investments, "employees": staff}
 
 
 static func complete_original(state: RefCounted) -> bool:

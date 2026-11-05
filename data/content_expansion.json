@@ -156,6 +156,19 @@
       "favored_growth_multiplier": 1.5,
       "seed_quantity": 2,
       "icon_candidate": "res://assets/content_expansion_v1/materials/star_seed_icon.png"
+    },
+    {
+      "id": "dawn_bloom",
+      "name": "여명초",
+      "source": "recipe_granted_garden",
+      "region": "dawn_lighthouse",
+      "growth_seconds": 26,
+      "capacity": 12,
+      "environment": "clear",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/dawn_bloom_icon.png",
+      "content_set": "f26_dawn_lighthouse"
     }
   ],
   "potions": [
@@ -1166,6 +1179,153 @@
         "mist_mushroom",
         "moonflower"
       ]
+    },
+    {
+      "id": "sunrise",
+      "name": "해돋이",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 36,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "dawn_lighthouse",
+          "returns": 1
+        }
+      },
+      "cost": 250000,
+      "sale_price": 200,
+      "ingredients": {
+        "herb": 2,
+        "dawn_bloom": 1,
+        "dewgrass": 1
+      },
+      "duration_multiplier": 3.1,
+      "success": 0.82,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "dawn_bloom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/sunrise_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/sunrise.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/sunrise_recipe.png",
+      "grant_sources": [
+        "dawn_bloom",
+        "dewgrass"
+      ],
+      "content_set": "f26_dawn_lighthouse"
+    },
+    {
+      "id": "beacon",
+      "name": "등대불",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 37,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "dawn_lighthouse",
+          "returns": 3
+        }
+      },
+      "cost": 350000,
+      "sale_price": 215,
+      "ingredients": {
+        "herb": 2,
+        "dawn_bloom": 1,
+        "mist_mushroom": 1
+      },
+      "duration_multiplier": 3.2,
+      "success": 0.8,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "dawn_bloom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/beacon_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/beacon.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/beacon_recipe.png",
+      "grant_sources": [
+        "dawn_bloom",
+        "mist_mushroom"
+      ],
+      "content_set": "f26_dawn_lighthouse"
+    },
+    {
+      "id": "sea_spray",
+      "name": "물보라",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 38,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "dawn_lighthouse",
+          "returns": 5
+        }
+      },
+      "cost": 450000,
+      "sale_price": 230,
+      "ingredients": {
+        "herb": 2,
+        "dawn_bloom": 1,
+        "blue_reed": 1
+      },
+      "duration_multiplier": 3.3,
+      "success": 0.8,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "dawn_bloom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/sea_spray_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/sea_spray.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/sea_spray_recipe.png",
+      "grant_sources": [
+        "dawn_bloom",
+        "blue_reed"
+      ],
+      "content_set": "f26_dawn_lighthouse"
+    },
+    {
+      "id": "sun_moon_elixir",
+      "name": "일월의 물약",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 39,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "dawn_lighthouse",
+          "returns": 8
+        },
+        "recipes": [
+          "sunrise",
+          "beacon",
+          "sea_spray"
+        ]
+      },
+      "cost": 800000,
+      "sale_price": 320,
+      "ingredients": {
+        "herb": 2,
+        "dawn_bloom": 1,
+        "moonflower": 1,
+        "star_seed": 1
+      },
+      "duration_multiplier": 3.6,
+      "success": 0.78,
+      "environment": "clear",
+      "environment_bonus": 0.08,
+      "grant_material": "dawn_bloom",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/sun_moon_elixir_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/sun_moon_elixir.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/sun_moon_elixir_recipe.png",
+      "grant_sources": [
+        "dawn_bloom",
+        "moonflower",
+        "star_seed"
+      ],
+      "content_set": "f26_dawn_lighthouse"
     }
   ],
   "regions": [
@@ -1313,6 +1473,25 @@
       "rewards": {
         "star_seed": 6
       }
+    },
+    {
+      "id": "dawn_lighthouse",
+      "name": "새벽 등대",
+      "cost": 400000,
+      "explore_seconds": 450,
+      "return_seconds": 90,
+      "complete_returns": 8,
+      "previous_region": "star_garden",
+      "reputation": 0,
+      "material": "dawn_bloom",
+      "repeat_material_quantity": 7,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/dawn_lighthouse_icon.png",
+      "departure_cost": 150,
+      "rewards": {
+        "dawn_bloom": 7
+      },
+      "content_set": "f26_dawn_lighthouse"
     }
   ],
   "upgrades": [

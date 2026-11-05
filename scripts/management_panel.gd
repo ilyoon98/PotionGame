@@ -1825,7 +1825,8 @@ func refresh(visible_only: bool = false) -> void:
 			_masked_recipe_row(row, id)
 			continue
 		_text(row.title, Content.potion_name(id))
-		row.icon.texture = ItemArt.recipe_icon(id) if Rare.is_special(id) else ManagementArt.readable_icon(ItemArt.icon(id))
+		# Special recipes and F26 rows have approved 32x40 recipe icons; older rows reuse the potion icon.
+		row.icon.texture = ItemArt.recipe_icon(id) if Rare.is_special(id) or Content.lookup("potions", id).has("recipe_candidate") else ManagementArt.readable_icon(ItemArt.icon(id))
 		row.panel.tooltip_text = Content.potion_name(id)
 		row.title.tooltip_text = Content.potion_name(id)
 		row.icon.tooltip_text = Content.potion_name(id)

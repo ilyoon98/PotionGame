@@ -37,20 +37,24 @@ func complete(state: RefCounted) -> void:
 	state.decor.owned = ["decor_teacup", "decor_dried_vase"]
 func run() -> void:
 	check(get_meta("isolated_preview", false), "Isolated preview; no player save")
+	# Totals come from the data: 30 + 4 F26 recipes (owned_at_start excluded), 8 + 1 F26 regions.
+	var recipe_total: int = Content.DATA.potions.filter(func(row): return not row.get("owned_at_start", false)).size()
+	var region_total: int = Content.DATA.regions.size()
+	check(recipe_total == 30 + 4 and region_total == 8 + 1, "Collection totals follow the data (%d recipes, %d regions)" % [recipe_total, region_total])
 	var fresh := State.new()
 	var c := counts(fresh)
-	check(c.recipes == [0, 30] and c.specials == [0, 4] and c.regions == [0, 8] and c.souvenirs == [0, 4] and c.decor == [0, 2], "New game counts every category from zero (%s)" % str(c))
+	check(c.recipes == [0, recipe_total] and c.specials == [0, 4] and c.regions == [0, region_total] and c.souvenirs == [0, 4] and c.decor == [0, 2], "New game counts every category from zero (%s)" % str(c))
 	check(not Status.collection_complete(fresh), "New game is not complete")
 	var partial := State.new()
 	partial.progression.owned.append("moon")
 	partial.regulars.points["elf"] = 2500
 	partial.decor.owned = ["decor_teacup"]
 	c = counts(partial)
-	check(c.recipes == [1, 30] and c.souvenirs == [1, 4] and c.decor == [1, 2], "Counts follow owned recipes, received souvenirs and bought props")
+	check(c.recipes == [1, recipe_total] and c.souvenirs == [1, 4] and c.decor == [1, 2], "Counts follow owned recipes, received souvenirs and bought props")
 	var done := State.new()
 	complete(done)
 	c = counts(done)
-	check(c.recipes == [30, 30] and c.specials == [4, 4] and c.regions == [8, 8] and c.souvenirs == [4, 4] and c.decor == [2, 2], "A completed shop fills every category (%s)" % str(c))
+	check(c.recipes == [recipe_total, recipe_total] and c.specials == [4, 4] and c.regions == [region_total, region_total] and c.souvenirs == [4, 4] and c.decor == [2, 2], "A completed shop fills every category (%s)" % str(c))
 	check(Status.collection_complete(done), "A completed shop is complete")
 	var before: Dictionary = M.data(done)
 	Status.collection(done); Status.collection_complete(done)
@@ -63,14 +67,14 @@ func run() -> void:
 	shop.state = partial
 	panel.select_page(panel.REPORT); panel.refresh()
 	for i in 3: await process_frame
-	check(panel.collection_values.size() == 5 and panel.collection_values.recipes.text == "1 / 30" and panel.collection_values.decor.text == "1 / 2", "Collection rows show have / total")
+	check(panel.collection_values.size() == 5 and panel.collection_values.recipes.text == "1 / %d" % recipe_total and panel.collection_values.decor.text == "1 / 2", "Collection rows show have / total")
 	check(not panel.collection_done.visible, "Completion line hidden while incomplete")
 	check(panel.pages[panel.REPORT].find_children("*", "Button", true, false).is_empty(), "Statistics page stays free of buttons")
 	shop.state = done
 	var viewed: Dictionary = M.data(shop.state)
 	panel.refresh()
 	await process_frame
-	check(panel.collection_values.regions.text == "8 / 8 · 완료" and panel.collection_done.visible and panel.collection_done.is_visible_in_tree(), "A complete shop shows every row done and the completion line")
+	check(panel.collection_values.regions.text == "%d / %d · 완료" % [region_total, region_total] and panel.collection_done.visible and panel.collection_done.is_visible_in_tree(), "A complete shop shows every row done and the completion line")
 	check(Compare.equivalent(viewed, M.data(shop.state)), "Viewing the record never changes the model")
 	var result := {"checks": checks, "failures": failures, "passed": failures.is_empty()}
 	M.write_json("res://.verification/f24-collection-20261105/collection.json", result)

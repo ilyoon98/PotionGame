@@ -11,7 +11,7 @@ func _initialize() -> void:
 		for frame in 3: assert(has_color(Catalog.pot(key,frame/6.0).get_image(),color),"Each boiling frame contains the same recipe color")
 	var file := FileAccess.open("res://.verification/pixel-runtime-v1/imported-textures.json",FileAccess.WRITE)
 	file.store_string(JSON.stringify({"status":"passed","texture_count":textures.size(),"textures":textures},"\t"))
-	print("PIXEL CATALOG PASS: ",textures.size()," actual imported texture hashes;36 bottle/pot liquid assignments")
+	print("PIXEL CATALOG PASS: ",textures.size()," actual imported texture hashes;",Catalog.DATA.potions.size()," bottle/pot liquid assignments")
 	quit()
 
 func has_color(image: Image, color: Color) -> bool:

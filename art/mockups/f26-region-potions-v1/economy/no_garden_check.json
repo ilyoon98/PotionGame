@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-05",
+  "question": "F26 implementation: dawn bloom has no approved 64x80 planter growth sheet. Would an expedition-only dawn bloom (no planter) keep the planned economy?",
+  "method": "probe_f26_economy.gd --mode=complete --hours=6 --no-garden, seeds 73129/19337/9973 (same start as summary.json complete). Sanity: without --no-garden seed 73129 reproduces summary.json (744,693/h).",
+  "baseline_net_per_hour": 658829,
+  "planned_complete_net_per_hour": 751561,
+  "no_garden_net_per_hour": 674868,
+  "no_garden_gain_per_hour": 16039,
+  "no_garden_gain_pct": 2.4,
+  "planned_gain_per_hour": 92732,
+  "planned_gain_pct": 14.1,
+  "payback_hours_2250000": {
+    "planned": 24.3,
+    "no_garden": 140.3
+  },
+  "by_seed": {
+    "19337": {
+      "net_per_hour": 672854,
+      "new_sold_6h": {
+        "beacon": 48,
+        "sea_spray": 82,
+        "sun_moon_elixir": 19,
+        "sunrise": 83
+      },
+      "region_rewards_6h": {
+        "dawn_bloom": 392,
+        "dewgrass": 10,
+        "moonflower": 38,
+        "star_seed": 49
+      }
+    },
+    "73129": {
+      "net_per_hour": 673387,
+      "new_sold_6h": {
+        "beacon": 61,
+        "sea_spray": 76,
+        "sun_moon_elixir": 22,
+        "sunrise": 74
+      },
+      "region_rewards_6h": {
+        "dawn_bloom": 385,
+        "dewgrass": 13,
+        "moonflower": 16,
+        "star_seed": 68
+      }
+    },
+    "9973": {
+      "net_per_hour": 678364,
+      "new_sold_6h": {
+        "beacon": 59,
+        "sea_spray": 68,
+        "sun_moon_elixir": 20,
+        "sunrise": 77
+      },
+      "region_rewards_6h": {
+        "dawn_bloom": 379,
+        "dewgrass": 11,
+        "moonflower": 35,
+        "star_seed": 54
+      }
+    }
+  },
+  "conclusion": "Expedition-only dawn bloom cuts new-potion sales by about 82% and the gain from +14.1% to about +2.4% (payback ~24 h -> ~140 h). It breaks the approved economy, so the planter (26 s, clear x1.5) is kept and simply shown without a growth sheet (the code already treats growth art as optional)."
+}

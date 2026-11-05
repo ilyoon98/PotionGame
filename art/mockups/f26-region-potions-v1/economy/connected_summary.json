@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-05",
+  "script": "art/mockups/f26-region-potions-v1/economy/measure_connected.gd",
+  "what": "Same synthetic late store/warm-up as probe_f26_economy.gd, but with F26 connected in data/ and scripts/ (real expeditions, reward rolls and planter).",
+  "baseline": {
+    "seeds": [
+      19337,
+      73129,
+      9973
+    ],
+    "net_per_hour": 658829,
+    "net_per_hour_by_seed": {
+      "19337": 653588,
+      "73129": 662135,
+      "9973": 660764
+    },
+    "new_sold_6h_mean": {
+      "beacon": 0,
+      "sea_spray": 0,
+      "sun_moon_elixir": 0,
+      "sunrise": 0
+    },
+    "dawn_bloom_expedition_rewards_6h_mean": 0,
+    "supply_dawn_bloom": 0
+  },
+  "complete": {
+    "seeds": [
+      19337,
+      73129,
+      9973
+    ],
+    "net_per_hour": 754067,
+    "net_per_hour_by_seed": {
+      "19337": 752000,
+      "73129": 756737,
+      "9973": 753465
+    },
+    "new_sold_6h_mean": {
+      "beacon": 328,
+      "sea_spray": 476,
+      "sun_moon_elixir": 113,
+      "sunrise": 404
+    },
+    "dawn_bloom_expedition_rewards_6h_mean": 391,
+    "supply_dawn_bloom": 0
+  },
+  "gain_per_hour": 95238,
+  "gain_pct": 14.5,
+  "plan": {
+    "baseline": 658829,
+    "complete": 751561,
+    "gain_pct": 14.1,
+    "new_sold_6h": {
+      "sunrise": 400,
+      "beacon": 323,
+      "sea_spray": 472,
+      "sun_moon_elixir": 109
+    }
+  }
+}

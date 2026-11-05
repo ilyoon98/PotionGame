@@ -9,6 +9,8 @@ const POOLS := {
 	"forgotten_tower": {"main": "ash_sage", "min": 3, "max": 5, "extra": ["mist_mushroom", "crystal_herb", "silver_moss"]},
 	"moon_ruins": {"main": "moonflower", "min": 4, "max": 6, "extra": ["ash_sage", "mist_mushroom", "starleaf"]},
 	"star_garden": {"main": "star_seed", "min": 5, "max": 7, "extra": ["moonflower", "ash_sage", "crystal_herb"]},
+	# F26 (approved 2026-11-05): dawn bloom 6-8 guaranteed, extras weighted 60/30/10. No special recipe.
+	"dawn_lighthouse": {"main": "dawn_bloom", "min": 6, "max": 8, "extra": ["star_seed", "moonflower", "dewgrass"]},
 }
 const RARE := {
 	"forest_edge": {"id": "rare_forest_breath", "name": "숲숨결 물약"},

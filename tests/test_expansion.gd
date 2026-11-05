@@ -10,10 +10,14 @@ func _initialize() -> void:
 
 
 func _run() -> void:
-	assert(State.Content.DATA.potions.size() == 32 and State.Content.RECIPES.size() + 2 == 36 and State.Content.DATA["regions"].size() == 8)
+	# The original 32 rows and 8 regions are unchanged; F26 (content_set) adds 4 recipes and the 9th region.
+	var originals: Array = State.Content.DATA.potions.filter(func(row): return not row.has("content_set"))
+	var f26_regions: Array = State.Content.DATA["regions"].filter(func(row): return row.has("content_set"))
+	assert(originals.size() == 32 and State.Content.DATA.potions.size() - originals.size() == 4 and State.Content.RECIPES.size() + 2 == State.Content.DATA.potions.size() + 4)
+	assert(State.Content.DATA["regions"].size() - f26_regions.size() == 8 and f26_regions.size() == 1)
 	assert(State.Content.DATA["upgrades"].size() == 125)
 	var state := State.new()
-	state.gold = 1000000
+	state.gold = 1000000 + 1850000 # + the four F26 recipes (25/35/45/80만 G)
 	state.progression.reputation = 1000
 	assert(not state.purchase("vigor") and not state.purchase("region:abandoned_greenhouse"))
 	state.purchase("moon")
@@ -61,7 +65,7 @@ func _run() -> void:
 		if not potion["owned_at_start"] and not state.progression.owned.has(id): assert(state.purchase(id))
 		assert(Art.icon(id) != null and Art.bottle(false if id == "health" else true if id == "mana" else id) != null)
 	State.Progression.Expeditions.ensure(state.progression)
-	assert(state.progression.owned.size() + 2 == 32 and state.progression.completed_regions() == 8)
+	assert(state.progression.owned.size() + 2 == State.Content.DATA.potions.size() and state.progression.completed_regions() == State.Content.DATA["regions"].size())
 	for kind in ["health", "mana", "moon", "purify", "agility", "vigor"]:
 		state.brew_active = true
 		state.progression.active_recipe = false if kind == "health" else true if kind == "mana" else kind
@@ -132,7 +136,7 @@ func _run() -> void:
 	coarse.advance(90.0)
 	for i in 2700: fine.advance(1.0 / 30.0)
 	assert(Compare.equivalent(coarse.to_data(), fine.to_data()), "Expanded plants, reservations, trips and stock are frame independent")
-	print("EXPANSION PASS: 32 potions/8 regions/125 investments/4 employees; discovery and plants; automatic manufacture/sale; parallel region opening; final assistant values; old recipes unchanged; 60-slot inventory and 8-bottle display; save integrity and deterministic resume")
+	print("EXPANSION PASS: 32+4 potions/8+1 regions/125 investments/4 employees; discovery and plants; automatic manufacture/sale; parallel region opening; final assistant values; old recipes unchanged; 60-slot inventory and 8-bottle display; save integrity and deterministic resume")
 	quit()
 
 

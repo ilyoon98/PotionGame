@@ -20,6 +20,7 @@ func run() -> void:
 	shop.set_process(false); shop.art.set_process(false); shop.open_management()
 	var panel = shop.management; panel.set_process(false)
 	shop.state = F.completed_store(73129, "final", "both3", "normal")
+	M.complete_post_growth(shop.state) # F26 done: the workshop is the only remaining purchase
 	shop.state.gold = 400000
 	shop.state._start_batch()
 	panel.select_page(panel.OPERATION); panel.refresh()

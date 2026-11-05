@@ -7,7 +7,8 @@
   "date": "2026-11-05",
   "review": "art/mockups/f26-region-potions-v1/review.html",
   "plan": "docs/새-원정-지역과-물약-F26-기획안.md",
-  "runtime_integrated": false,
+  "runtime_integrated": true,
+  "runtime_integration": "2026-11-05 tools/publish_f26_region_potions_v1.py (additive); growth sheet 64x80 not published (out of scope)",
   "scope": {
     "sunrise_bottle": "해돋이 물약 진열 병 8×12 (후보)",
     "beacon_bottle": "등대불 물약 진열 병 8×16 (후보)",

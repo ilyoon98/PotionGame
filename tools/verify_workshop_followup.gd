@@ -74,7 +74,8 @@ func run() -> void:
 	# All ten sheets use exact 32x40 regions and a separate species path.
 	var growth_count := 0
 	for source in Content.DATA.materials:
-		if source.id == "moon_mushroom":
+		# F26 dawn bloom has no approved 64x80 growth sheet (outside its approval scope); no stand-in is used.
+		if source.id in ["moon_mushroom", "dawn_bloom"]:
 			assert(Art.growth_path(source.id).is_empty())
 			continue
 		growth_count += 1

@@ -8,6 +8,7 @@ extends SceneTree
 ## Run (art/ has .gdignore, so pass the file path):
 ##   Godot_v4.6-stable_win64_console.exe --headless --path <project> --script <this file> -- --mode=baseline|complete|progress
 ##     --seed=73129 --hours=6 [--check=300] [--gold=3000000] [--price=1.0] [--cost=1.0] --out=<json path>
+##   --no-garden (2026-11-05 implementation check): dawn bloom only from expeditions (no planter grant).
 const State = preload("res://scripts/shop_state.gd")
 const Content = preload("res://scripts/shop_content.gd")
 const F = preload("res://tests/late_investment_fixture.gd")
@@ -30,6 +31,7 @@ var out := ""
 var price_scale := 1.0
 var cost_scale := 1.0
 var start_gold := 3000000
+var no_garden := false
 var region_open := false
 var trip := {"running": false, "elapsed": 0.0, "duration": 0.0, "rewards": {}}
 var rng := RandomNumberGenerator.new()
@@ -48,6 +50,7 @@ func parse() -> void:
 		if arg.begins_with("--price="): price_scale = float(arg.split("=")[1])
 		if arg.begins_with("--cost="): cost_scale = float(arg.split("=")[1])
 		if arg.begins_with("--gold="): start_gold = int(arg.split("=")[1])
+		if arg == "--no-garden": no_garden = true
 		if arg.begins_with("--complete="): REGION.complete = int(arg.split("=")[1])
 
 func late_store() -> RefCounted:
@@ -68,7 +71,7 @@ func inject_catalog() -> void:
 		var data := {"id": row.id, "name": row.name, "family": row.family, "preferred_customer": row.preferred_customer, "order": row.order, "existing": false, "owned_at_start": false,
 			"unlock": {"discovery": {"region": REGION.id, "returns": row.returns}, "recipes": row.recipes}, "cost": int(row.cost * cost_scale), "sale_price": int(round(row.sale_price * price_scale)),
 			"ingredients": row.ingredients.duplicate(), "duration_multiplier": row.duration_multiplier, "success": row.success, "environment": "clear", "environment_bonus": 0.08,
-			"grant_material": "dawn_bloom", "grant_sources": row.ingredients.keys().filter(func(m): return m != "herb")}
+			"grant_material": "dawn_bloom", "grant_sources": row.ingredients.keys().filter(func(m): return m != "herb" and (not no_garden or m != "dawn_bloom"))}
 		Content.DATA["potions"].append(data)
 		Content.RECIPES[row.id] = {"name": row.name, "cost": data.cost, "reputation": 0, "price": data.sale_price, "duration": row.duration_multiplier, "success": row.success, "color": "c6aeed"}
 	Content.LOOKUPS.clear()

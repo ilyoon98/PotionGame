@@ -28,16 +28,20 @@ func run() -> void:
 			assert(not seen.has(row["id"]))
 			seen.append(row["id"])
 			assert(ResourceLoader.exists(row["icon_candidate"]))
-	assert(State.Content.DATA["potions"].size() == 32 and State.Content.DATA["materials"].size() == 11 and State.Content.DATA["regions"].size() == 8 and State.Content.DATA["upgrades"].size() == 125 and State.Content.DATA["employees"].size() == 4)
+	# F26 adds the dawn lighthouse (one region, dawn bloom, four recipes) to the original 32/11/8.
+	assert(State.Content.DATA["potions"].size() == 32 + 4 and State.Content.DATA["materials"].size() == 11 + 1 and State.Content.DATA["regions"].size() == 8 + 1 and State.Content.DATA["upgrades"].size() == 125 and State.Content.DATA["employees"].size() == 4)
+	var all_fees := 0
+	for row in State.Content.DATA["regions"]: all_fees += int(row["departure_cost"])
+	assert(all_fees == 355 + 150)
 	var s := fixture(true)
 	Trips.tick(s, 0)
-	assert(Trips.active_count(s.progression) == 8 and s.total_spent_expeditions == 355 and s.gold == 99645)
+	assert(Trips.active_count(s.progression) == State.Content.DATA["regions"].size() and s.total_spent_expeditions == all_fees and s.gold == 100000 - all_fees)
 	var copy := clone(s)
 	for key in s.to_data():
 		if not Compare.equivalent(s.to_data()[key], copy.to_data()[key]): print("DIFF ", key, " ", s.to_data()[key], " / ", copy.to_data()[key])
 	assert(Compare.equivalent(s.to_data(), copy.to_data()))
 	Trips.tick(copy, 0)
-	assert(copy.gold == s.gold and copy.total_spent_expeditions == 355, "Restore never repeats a departure charge")
+	assert(copy.gold == s.gold and copy.total_spent_expeditions == all_fees, "Restore never repeats a departure charge")
 	var frozen: Dictionary = s.progression.expansion.cycles["star_garden"].duplicate(true)
 	s.progression.expansion.stages["expedition_path"] = 10
 	s.progression.expansion.staff.append("expedition_guide")
@@ -155,5 +159,5 @@ func run() -> void:
 	var bad: Dictionary = before.duplicate(true)
 	bad["progression"]["expansion"]["cycles"]["forest_edge"]["paid"] = "yes"
 	assert(not fine.load_data(bad) and Compare.equivalent(fine.to_data(), before))
-	print("PARALLEL PASS: data/assets; 8 independent legs; once-only fees/reserve/protection; full-store investigation and pending; repeat recovery; seed preservation; v1-v7 migration/free legacy leg; coarse/fine returns; ledger; readonly reports; atomic invalid-cycle rejection")
+	print("PARALLEL PASS: data/assets; 9 independent legs; once-only fees/reserve/protection; full-store investigation and pending; repeat recovery; seed preservation; v1-v7 migration/free legacy leg; coarse/fine returns; ledger; readonly reports; atomic invalid-cycle rejection")
 	quit()
