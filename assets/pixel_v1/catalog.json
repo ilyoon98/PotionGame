@@ -12001,7 +12001,7 @@
       "family": "arcane",
       "rare": false,
       "liquid_ramp": "purple",
-      "liquid_color": "#86548E",
+      "liquid_color": "#C38EB5",
       "bottle_path": "bottles/arcane_amplification.png",
       "bottle_size": [
         8,
@@ -12052,8 +12052,8 @@
       "name": "은신",
       "family": "craft",
       "rare": false,
-      "liquid_ramp": "purple",
-      "liquid_color": "#86548E",
+      "liquid_ramp": "leaf",
+      "liquid_color": "#718C59",
       "bottle_path": "bottles/stealth.png",
       "bottle_size": [
         8,
@@ -12234,8 +12234,8 @@
       "name": "야행",
       "family": "craft",
       "rare": false,
-      "liquid_ramp": "purple",
-      "liquid_color": "#86548E",
+      "liquid_ramp": "teal",
+      "liquid_color": "#3BA8A3",
       "bottle_path": "bottles/nightwalk.png",
       "bottle_size": [
         8,
@@ -12443,7 +12443,7 @@
       "family": "craft",
       "rare": false,
       "liquid_ramp": "purple",
-      "liquid_color": "#86548E",
+      "liquid_color": "#C38EB5",
       "bottle_path": "bottles/shadow_elixir.png",
       "bottle_size": [
         8,
@@ -13022,20 +13022,20 @@
       "sha256": "db5fad4c069a1f3adf3b254d4809ae7fbb53fd7e9e2ca5a29a28907013348827"
     },
     "potions/arcane_amplification.png": {
-      "source": "art/mockups/full-ingame-v7/potions/bottles/arcane_amplification.png",
-      "sha256": "888c27affc96959707fa400602c6e179d66452ba667deada29b414ac1faee6fa"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/bottles/arcane_amplification.png",
+      "sha256": "c4a0c941d9e3513cc3a7e157e42b70071d60efcdfe4a5deb91f674eb3e1a399e"
     },
     "pots/arcane_amplification-0.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/arcane_amplification/frame-00.png",
-      "sha256": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/arcane_amplification-0.png",
+      "sha256": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4"
     },
     "pots/arcane_amplification-1.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/arcane_amplification/frame-01.png",
-      "sha256": "4fb97729110f7021e0683ea282d4a26138fe7a9dc1c8b89d509e7cb50946bd57"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/arcane_amplification-1.png",
+      "sha256": "6465caedb99a8b965432c9f641b4d9d830f2bd289a0aaf9fc5acac2debbe08c8"
     },
     "pots/arcane_amplification-2.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/arcane_amplification/frame-02.png",
-      "sha256": "328991bfb1f8e0e4f4f5da16aa4e904240375f3f98cf8dc1bcbb4f014eb11efe"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/arcane_amplification-2.png",
+      "sha256": "1d750f87bdd173e5ef705927b0a20e729fb8d29696ae54c970f3937c0a7de5e2"
     },
     "potions/iron_skin.png": {
       "source": "art/mockups/full-ingame-v7/potions/bottles/iron_skin.png",
@@ -13054,20 +13054,20 @@
       "sha256": "eb284272d1f86e7da8f2bbfa036c57da39265f3a343bfc9f3fcdce8084c5dc90"
     },
     "potions/stealth.png": {
-      "source": "art/mockups/full-ingame-v7/potions/bottles/stealth.png",
-      "sha256": "0bd9449837731b24ce5af4b1c3dee40ad4870459974ed9e871f8e43f4047d9d1"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/bottles/stealth.png",
+      "sha256": "ffc2ba91f6867d195ee36f62b53611cb625ebf83f428756ed0d5a504399250fb"
     },
     "pots/stealth-0.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/stealth/frame-00.png",
-      "sha256": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/stealth-0.png",
+      "sha256": "4ed71d2ef3c53b9bc20573c18f738d9d0eabae3cfa9e6546fc76cad2868ace0a"
     },
     "pots/stealth-1.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/stealth/frame-01.png",
-      "sha256": "4fb97729110f7021e0683ea282d4a26138fe7a9dc1c8b89d509e7cb50946bd57"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/stealth-1.png",
+      "sha256": "573fde717c80103144e798c15291480733ae4539448e520bef26a44b598c85f2"
     },
     "pots/stealth-2.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/stealth/frame-02.png",
-      "sha256": "328991bfb1f8e0e4f4f5da16aa4e904240375f3f98cf8dc1bcbb4f014eb11efe"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/stealth-2.png",
+      "sha256": "e71f0d79069d02edcc911534e4e12b784f1cc7b0868fe896fdeb638230b7be5c"
     },
     "potions/poison_resistance.png": {
       "source": "art/mockups/full-ingame-v7/potions/bottles/poison_resistance.png",
@@ -13166,20 +13166,20 @@
       "sha256": "0d99499a2deeedfd95e1bb62668301599e83a90c73de3891cf83aa0eabc08d47"
     },
     "potions/nightwalk.png": {
-      "source": "art/mockups/full-ingame-v7/potions/bottles/nightwalk.png",
-      "sha256": "b30e4353b3a4de92842af752b2ef40fbddc8e84cb2bd72045a9e94617981b19c"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/bottles/nightwalk.png",
+      "sha256": "ea9ed07745290164d94bbf4980b20d3af36b2a7a62b05d22ca7695c55bd14ee7"
     },
     "pots/nightwalk-0.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/nightwalk/frame-00.png",
-      "sha256": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/nightwalk-0.png",
+      "sha256": "8d0189da48e0858f1f1c489ef0b871b695b3eb44b2ae907d0a57c14ddbd5b335"
     },
     "pots/nightwalk-1.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/nightwalk/frame-01.png",
-      "sha256": "4fb97729110f7021e0683ea282d4a26138fe7a9dc1c8b89d509e7cb50946bd57"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/nightwalk-1.png",
+      "sha256": "021d19fd7f61f5ef7b52b9a23967c5e29432c0575eacb866528b4517da01aea0"
     },
     "pots/nightwalk-2.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/nightwalk/frame-02.png",
-      "sha256": "328991bfb1f8e0e4f4f5da16aa4e904240375f3f98cf8dc1bcbb4f014eb11efe"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/nightwalk-2.png",
+      "sha256": "71ec33c39f1b8cfca96c84bde1594825231ad060e2872dd03145dd2e6a785f28"
     },
     "potions/moonradiance.png": {
       "source": "art/mockups/full-ingame-v7/potions/bottles/moonradiance.png",
@@ -13294,20 +13294,20 @@
       "sha256": "f245fdf686c8e0c2072c65d013fc2a32de839276de06109d32458cb5dc1538a4"
     },
     "potions/shadow_elixir.png": {
-      "source": "art/mockups/full-ingame-v7/potions/bottles/shadow_elixir.png",
-      "sha256": "323b17fcff848b80c08145ff36ff0f5e3da7f306550c2e5a27d00a943c00a8ad"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/bottles/shadow_elixir.png",
+      "sha256": "c0ddbbc3220488ca5e93e740dd448d57cc249b1d5ab262137e8f0e82642927ac"
     },
     "pots/shadow_elixir-0.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/shadow_elixir/frame-00.png",
-      "sha256": "acd5ef195be45937f318a54ca87e5a3b045aa41edd21b0bdf77f41dc484b416a"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/shadow_elixir-0.png",
+      "sha256": "592b4ad904b51994d32037eba74c32983d14dcab536c8022371f66bdc4e8afd4"
     },
     "pots/shadow_elixir-1.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/shadow_elixir/frame-01.png",
-      "sha256": "4fb97729110f7021e0683ea282d4a26138fe7a9dc1c8b89d509e7cb50946bd57"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/shadow_elixir-1.png",
+      "sha256": "6465caedb99a8b965432c9f641b4d9d830f2bd289a0aaf9fc5acac2debbe08c8"
     },
     "pots/shadow_elixir-2.png": {
-      "source": "art/mockups/full-ingame-v7/potions/pot/shadow_elixir/frame-02.png",
-      "sha256": "328991bfb1f8e0e4f4f5da16aa4e904240375f3f98cf8dc1bcbb4f014eb11efe"
+      "source": "art/mockups/f25-potion-liquid-fix-v1/pots/shadow_elixir-2.png",
+      "sha256": "1d750f87bdd173e5ef705927b0a20e729fb8d29696ae54c970f3937c0a7de5e2"
     },
     "potions/rare_forest_breath.png": {
       "source": "art/mockups/full-ingame-v7/potions/bottles/rare_forest_breath.png",

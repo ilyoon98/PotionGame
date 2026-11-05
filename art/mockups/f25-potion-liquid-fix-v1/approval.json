@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "applied_on_user_request",
+  "approved_by_user": true,
+  "approved_on": "2026-11-05",
+  "user_reply": "물약중에 가마솥이랑 같은 색상의 물약 있는데 그거 나올떄마다 버그같아서 색상을 바꾸고 싶어",
+  "problem": "liquid_color #86548E equals the cauldron body, so the pot looked empty while brewing these four",
+  "change": {
+    "stealth": "purple mid -> leaf #718C59 / #3D544D (camouflage)",
+    "nightwalk": "purple mid -> teal #3BA8A3 / #24566A (night)",
+    "arcane_amplification": "purple mid -> purple light #C38EB5 / #86548E",
+    "shadow_elixir": "purple mid -> purple light #C38EB5 / #86548E"
+  },
+  "scope": "liquid pixels only (bottle liquid + pot liquid mask); no new palette colors; original approved sources in art/mockups/full-ingame-v7 kept",
+  "tool": "tools/recolor_f25_potion_liquids.py",
+  "review": "art/mockups/f25-potion-liquid-fix-v1/before-after.png",
+  "note": "Colors were chosen by the assistant within approved ramps; the user can ask for different ones."
+}

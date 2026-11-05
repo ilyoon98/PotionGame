@@ -1,0 +1,46 @@
+{
+  "stealth": {
+    "ramp": "leaf",
+    "liquid": "#718C59",
+    "shade": "#3D544D",
+    "pixels": {
+      "potions/stealth.png": 30,
+      "pots/stealth-0.png": 61,
+      "pots/stealth-1.png": 61,
+      "pots/stealth-2.png": 61
+    }
+  },
+  "nightwalk": {
+    "ramp": "teal",
+    "liquid": "#3BA8A3",
+    "shade": "#24566A",
+    "pixels": {
+      "potions/nightwalk.png": 23,
+      "pots/nightwalk-0.png": 61,
+      "pots/nightwalk-1.png": 61,
+      "pots/nightwalk-2.png": 61
+    }
+  },
+  "arcane_amplification": {
+    "ramp": "purple",
+    "liquid": "#C38EB5",
+    "shade": "#86548E",
+    "pixels": {
+      "potions/arcane_amplification.png": 21,
+      "pots/arcane_amplification-0.png": 61,
+      "pots/arcane_amplification-1.png": 61,
+      "pots/arcane_amplification-2.png": 61
+    }
+  },
+  "shadow_elixir": {
+    "ramp": "purple",
+    "liquid": "#C38EB5",
+    "shade": "#86548E",
+    "pixels": {
+      "potions/shadow_elixir.png": 18,
+      "pots/shadow_elixir-0.png": 61,
+      "pots/shadow_elixir-1.png": 61,
+      "pots/shadow_elixir-2.png": 61
+    }
+  }
+}
