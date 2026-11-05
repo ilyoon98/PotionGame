@@ -688,7 +688,8 @@ func _refresh_regulars(state: RefCounted) -> void:
 	for id in regular_cards:
 		var card: Dictionary = regular_cards[id]
 		var data: Dictionary = state.regulars.view(id)
-		_text(card.title, "%s · %s" % [data.name, data.stage_name])
+		# The last stage carries the proposal's record mark.
+		_text(card.title, "%s · %s%s" % [data.name, data.stage_name, " ★" if data.next == 0 else ""])
 		card.badge.visible = data.new
 		card.souvenir.visible = not data.souvenir.is_empty()
 		card.bar.value = data.fraction * card.bar.max_value
