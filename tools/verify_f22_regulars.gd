@@ -129,6 +129,7 @@ func run() -> void:
 	shop.state.regulars.points.mage = 15
 	panel.refresh()
 	check(traveler.story.text.contains("낡은 나침반") and traveler.progress.text.contains("60 / 150"), "Traveler card shows souvenir and progress")
+	check(panel.regular_cards.mage.habits.text == "방문 0회 · 선호 마나 물약", "Mage habits include mana, owned from the start")
 	check(traveler.habits.text == "방문 0회 · 선호 체력 물약" and panel.regular_cards.elf.habits.text == "방문 0회 · 선호 물약을 아직 갖추지 않았어요", "Habits show visits and owned preferred potions only")
 	shop.state.progression.owned.append("purify"); shop.state.progression.by_customer["elf"] = 7
 	panel.refresh()

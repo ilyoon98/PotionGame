@@ -145,8 +145,8 @@ static func habits(id: String, progression: RefCounted) -> String:
 	for row in Content.CUSTOMERS:
 		if row.id != id: continue
 		for kind in row.preferences:
-			# The basic potion is always made; legacy bool names lack the "물약" suffix.
-			if kind is bool and not kind: names.append(Content.potion_name(kind) + " 물약")
+			# Health and mana are owned from the start; legacy bool names lack the "물약" suffix.
+			if kind is bool: names.append(Content.potion_name(kind) + " 물약")
 			elif kind is String and progression.owned.has(kind): names.append(Content.potion_name(kind))
 	for kind in progression.owned:
 		if kind is String and not Content.LEGACY_RECIPES.has(kind) and Content.lookup("potions", kind).get("preferred_customer", "") == id: names.append(Content.potion_name(kind))

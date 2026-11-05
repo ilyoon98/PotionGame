@@ -346,7 +346,10 @@ func _ready() -> void:
 	sound_toggle.add_theme_color_override("font_color", INK)
 	sound_toggle.tooltip_text = "판매·제조 완료·원정 귀환·해금 때 작은 효과음을 들려줘요. 끄면 소리가 나지 않아요."
 	sound_toggle.set_pressed_no_signal(not host.state.audio_muted)
-	sound_toggle.toggled.connect(func(enabled: bool): host.set_audio_muted(not enabled))
+	# Re-sync from the model: a refused change (lost session guard) must not leave the toggle flipped.
+	sound_toggle.toggled.connect(func(enabled: bool):
+		host.set_audio_muted(not enabled)
+		sound_toggle.set_pressed_no_signal(not host.state.audio_muted))
 	settings.add_child(sound_toggle)
 	_slider(settings, "효과음 크기", 0.0, 1.0, host.state.audio_volume, _change_audio_volume)
 	_section(REPORT, "플레이 통계")
