@@ -1,0 +1,1227 @@
+{
+  "output": "art/mockups/f26-region-potions-v1/pipeline",
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "alpha_threshold": 128,
+  "max_colors": 5,
+  "compose": false,
+  "scene": {
+    "size": [
+      32,
+      40
+    ],
+    "background": "#241C32"
+  },
+  "assets": [
+    {
+      "id": "sunrise_bottle",
+      "source": "art/mockups/f26-region-potions-v1/registered/sunrise_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#F4AC68"
+        ],
+        "liquid_dark": [
+          "#DE7356"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "fire",
+        "liquid_dark": "fire"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "해돋이 물약 · 진열 병"
+    },
+    {
+      "id": "sunrise_icon",
+      "source": "art/mockups/f26-region-potions-v1/registered/sunrise_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#F4AC68"
+        ],
+        "liquid_dark": [
+          "#DE7356"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "fire",
+        "liquid_dark": "fire"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "해돋이 물약 · 물약 아이콘"
+    },
+    {
+      "id": "sunrise_recipe",
+      "source": "art/mockups/f26-region-potions-v1/registered/sunrise_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "emblem_light": [
+          "#F4AC68"
+        ],
+        "emblem_dark": [
+          "#DE7356"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "emblem_light": "fire",
+        "emblem_dark": "fire"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "emblem_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "emblem_dark",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "해돋이 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "beacon_bottle",
+      "source": "art/mockups/f26-region-potions-v1/registered/beacon_bottle.png",
+      "size": [
+        8,
+        16
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#E9B95F"
+        ],
+        "liquid_dark": [
+          "#A56A3D"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "gold",
+        "liquid_dark": "gold"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "등대불 물약 · 진열 병"
+    },
+    {
+      "id": "beacon_icon",
+      "source": "art/mockups/f26-region-potions-v1/registered/beacon_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#E9B95F"
+        ],
+        "liquid_dark": [
+          "#A56A3D"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "gold",
+        "liquid_dark": "gold"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "등대불 물약 · 물약 아이콘"
+    },
+    {
+      "id": "beacon_recipe",
+      "source": "art/mockups/f26-region-potions-v1/registered/beacon_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "emblem_light": [
+          "#E9B95F"
+        ],
+        "emblem_dark": [
+          "#A56A3D"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "emblem_light": "gold",
+        "emblem_dark": "gold"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "emblem_dark",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "등대불 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "sea_spray_bottle",
+      "source": "art/mockups/f26-region-potions-v1/registered/sea_spray_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#9BE2CF"
+        ],
+        "liquid_dark": [
+          "#24566A"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "teal",
+        "liquid_dark": "teal"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "물보라 물약 · 진열 병"
+    },
+    {
+      "id": "sea_spray_icon",
+      "source": "art/mockups/f26-region-potions-v1/registered/sea_spray_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#9BE2CF"
+        ],
+        "liquid_dark": [
+          "#24566A"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "teal",
+        "liquid_dark": "teal"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "물보라 물약 · 물약 아이콘"
+    },
+    {
+      "id": "sea_spray_recipe",
+      "source": "art/mockups/f26-region-potions-v1/registered/sea_spray_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "emblem_light": [
+          "#9BE2CF"
+        ],
+        "emblem_dark": [
+          "#24566A"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "emblem_light": "teal",
+        "emblem_dark": "teal"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "emblem_light",
+          "hue": [
+            0.4514,
+            0.4594
+          ],
+          "saturation_min": 0.3042,
+          "saturation_max": 0.3242,
+          "value_min": 0.8763,
+          "value_max": 0.8963
+        },
+        {
+          "material": "emblem_dark",
+          "hue": [
+            0.5436,
+            0.5516
+          ],
+          "saturation_min": 0.6504,
+          "saturation_max": 0.6704,
+          "value_min": 0.4057,
+          "value_max": 0.4257
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "물보라 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "sun_moon_elixir_bottle",
+      "source": "art/mockups/f26-region-potions-v1/registered/sun_moon_elixir_bottle.png",
+      "size": [
+        8,
+        12
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#F4AC68"
+        ],
+        "liquid_dark": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "fire",
+        "liquid_dark": "fire"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "일월의 물약 · 진열 병"
+    },
+    {
+      "id": "sun_moon_elixir_icon",
+      "source": "art/mockups/f26-region-potions-v1/registered/sun_moon_elixir_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "cork": [
+          "#916047"
+        ],
+        "glass_glint": [
+          "#FFF0BC"
+        ],
+        "liquid_light": [
+          "#F4AC68"
+        ],
+        "liquid_dark": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "cork": "wood",
+        "glass_glint": "gold",
+        "liquid_light": "fire",
+        "liquid_dark": "fire"
+      },
+      "rules": [
+        {
+          "material": "cork",
+          "hue": [
+            0.0523,
+            0.0603
+          ],
+          "saturation_min": 0.5003,
+          "saturation_max": 0.5203,
+          "value_min": 0.5586,
+          "value_max": 0.5786
+        },
+        {
+          "material": "glass_glint",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "liquid_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "liquid_dark",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "cork",
+      "name_ko": "일월의 물약 · 물약 아이콘"
+    },
+    {
+      "id": "sun_moon_elixir_recipe",
+      "source": "art/mockups/f26-region-potions-v1/registered/sun_moon_elixir_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "parchment": [
+          "#FFF0BC"
+        ],
+        "scroll_roll": [
+          "#E9B95F"
+        ],
+        "emblem_light": [
+          "#F4AC68"
+        ],
+        "emblem_dark": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "parchment": "gold",
+        "scroll_roll": "gold",
+        "emblem_light": "fire",
+        "emblem_dark": "fire"
+      },
+      "rules": [
+        {
+          "material": "parchment",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "scroll_roll",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "emblem_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "emblem_dark",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "parchment",
+      "name_ko": "일월의 물약 · 레시피 아이콘"
+    },
+    {
+      "id": "dawn_bloom_icon",
+      "source": "art/mockups/f26-region-potions-v1/registered/dawn_bloom_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "petal_light": [
+          "#F4AC68"
+        ],
+        "petal_shade": [
+          "#DE7356"
+        ],
+        "flower_heart": [
+          "#FFF0BC"
+        ],
+        "leaf_and_stem": [
+          "#718C59"
+        ]
+      },
+      "material_ramps": {
+        "petal_light": "fire",
+        "petal_shade": "fire",
+        "flower_heart": "gold",
+        "leaf_and_stem": "leaf"
+      },
+      "rules": [
+        {
+          "material": "petal_light",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "petal_shade",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "flower_heart",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "leaf_and_stem",
+          "hue": [
+            0.2509,
+            0.2589
+          ],
+          "saturation_min": 0.3543,
+          "saturation_max": 0.3743,
+          "value_min": 0.539,
+          "value_max": 0.559
+        }
+      ],
+      "fallback_material": "petal_light",
+      "name_ko": "여명초 (재료)"
+    },
+    {
+      "id": "dawn_lighthouse_icon",
+      "source": "art/mockups/f26-region-potions-v1/registered/dawn_lighthouse_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "preserve_source_outline": false,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "sun_and_lamp": [
+          "#F4AC68"
+        ],
+        "roof_and_stripes": [
+          "#DE7356"
+        ],
+        "tower": [
+          "#FFF0BC"
+        ],
+        "cliff": [
+          "#827589"
+        ]
+      },
+      "material_ramps": {
+        "sun_and_lamp": "fire",
+        "roof_and_stripes": "fire",
+        "tower": "gold",
+        "cliff": "stone"
+      },
+      "rules": [
+        {
+          "material": "sun_and_lamp",
+          "hue": [
+            0.077,
+            0.085
+          ],
+          "saturation_min": 0.5638,
+          "saturation_max": 0.5838,
+          "value_min": 0.9469,
+          "value_max": 0.9669
+        },
+        {
+          "material": "roof_and_stripes",
+          "hue": [
+            0.0315,
+            0.0395
+          ],
+          "saturation_min": 0.6026,
+          "saturation_max": 0.6226,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "tower",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "cliff",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        }
+      ],
+      "fallback_material": "sun_and_lamp",
+      "name_ko": "새벽 등대 (지역)"
+    }
+  ]
+}

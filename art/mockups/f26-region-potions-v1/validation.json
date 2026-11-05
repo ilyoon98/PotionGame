@@ -1,0 +1,1714 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "scale": 3,
+  "palette": "art/palette.hex (approved 24)",
+  "pipeline": {
+    "tool": "tools/process_pixel_art.py",
+    "manifest": "art/mockups/f26-region-potions-v1/manifest.json",
+    "report": "art/mockups/f26-region-potions-v1/pipeline/validation.json",
+    "status": "passed",
+    "stage_order": [
+      "background_cleanup",
+      "native_grid",
+      "material_ramp_remap",
+      "validation"
+    ]
+  },
+  "sprites": {
+    "sunrise_bottle": {
+      "name": "해돋이 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#DE7356",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "fire": 2
+      },
+      "opaque_pixels": 66,
+      "lighting": {
+        "top_left_mean": 0.5749,
+        "bottom_right_mean": 0.3864,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "96dce6c49174522b5cd4a38060e34493dbcdcb093d2e8f84aa5dead9742d30c3",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sunrise_bottle.txt",
+      "description": "평평한 수평선 바닥 위의 둥근 돔(떠오르는 해). 바닥 행이 병 폭 전체인 유일한 8×12 병."
+    },
+    "sunrise_icon": {
+      "name": "해돋이 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#DE7356",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "fire": 2
+      },
+      "opaque_pixels": 656,
+      "lighting": {
+        "top_left_mean": 0.5141,
+        "bottom_right_mean": 0.4343,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "629ea2e5b9c05ee9530bd6431cbccb4a50cabf950722b865433115004eadd3a8",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sunrise_icon.txt",
+      "description": "같은 돔 병을 32×40으로 다시 그림. 산호색 반원 해와 빛살, 수평선."
+    },
+    "sunrise_recipe": {
+      "name": "해돋이 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#DE7356",
+        "#E9B95F",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "emblem_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "emblem_dark": {
+          "letter": "D",
+          "color": "#DE7356",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "fire": 2
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.5813,
+        "bottom_right_mean": 0.572,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "bf46deb1994c3b97d4b3f207bb30e2f0f93c5801b4f0573dc0fecdeb20f23144",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sunrise_recipe.txt",
+      "description": "두루마리 원형 인장 안에 귤빛 해와 빛살, 크림 수평선."
+    },
+    "beacon_bottle": {
+      "name": "등대불 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        16
+      ],
+      "expected_size": [
+        8,
+        16
+      ],
+      "display_size_x3": [
+        24,
+        48
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#A56A3D",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 3
+      },
+      "opaque_pixels": 84,
+      "lighting": {
+        "top_left_mean": 0.5183,
+        "bottom_right_mean": 0.33,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "9d0875129a599c21a1118a35cbf6b2dbfbb278d6d693d265aeb90e2e93d72063",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 15,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/beacon_bottle.txt",
+      "description": "4→6→8칸으로 넓어지는 등대 탑 모양 긴 병. 꼭대기 버터색 등불, 탑에 버터색 띠 2줄."
+    },
+    "beacon_icon": {
+      "name": "등대불 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#A56A3D",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 3
+      },
+      "opaque_pixels": 533,
+      "lighting": {
+        "top_left_mean": 0.3441,
+        "bottom_right_mean": 0.3457,
+        "top_left_lit": false
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "66b8fccfb85b44e264b1b381ae9fec61ce7f8a40c00410fc8f7ddf17690d05b0",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/beacon_icon.txt",
+      "description": "코르크색 뾰족 지붕(마개)·등불 방·버터색 띠 3줄의 등대 탑."
+    },
+    "beacon_recipe": {
+      "name": "등대불 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#A56A3D",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 4,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "emblem_light": {
+          "letter": "L",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "emblem_dark": {
+          "letter": "D",
+          "color": "#A56A3D",
+          "ramp": "gold"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 3
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.5561,
+        "bottom_right_mean": 0.5268,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "67285f5e155d20835597bf6b0217c46ea84d1e04ed5489d11f3bad2a57ef0cfd",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/beacon_recipe.txt",
+      "description": "호박색 인장 안에 작은 등대(등불·띠)."
+    },
+    "sea_spray_bottle": {
+      "name": "물보라 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#24566A",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "teal": 2
+      },
+      "opaque_pixels": 60,
+      "lighting": {
+        "top_left_mean": 0.5631,
+        "bottom_right_mean": 0.1415,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "7e76f2ea7b4f25ad32b7a8375615eeb1ebcfcec49a62b14e529d61cad979130e",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sea_spray_bottle.txt",
+      "description": "어깨가 넓고 아래로 뾰족해지는 거꾸로 된 물방울. 윗줄 전체가 민트 물거품, 몸통은 깊은 청록."
+    },
+    "sea_spray_icon": {
+      "name": "물보라 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#24566A",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "teal": 2
+      },
+      "opaque_pixels": 586,
+      "lighting": {
+        "top_left_mean": 0.3167,
+        "bottom_right_mean": 0.2087,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "1c112c91e78e0c33b5b2e08f34d144161d7a3b85d54b5598853f5ad638593565",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sea_spray_icon.txt",
+      "description": "같은 거꾸로 물방울 병, 위쪽 물거품 띠와 크림색 소용돌이 파도 문양."
+    },
+    "sea_spray_recipe": {
+      "name": "물보라 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#9BE2CF",
+        "#E9B95F",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "emblem_light": {
+          "letter": "L",
+          "color": "#9BE2CF",
+          "ramp": "teal"
+        },
+        "emblem_dark": {
+          "letter": "D",
+          "color": "#24566A",
+          "ramp": "teal"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "teal": 2
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.5298,
+        "bottom_right_mean": 0.5132,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "ded96fc290981eb3d9db0e624483332af3d2175284448ab07c5ec827dfba3de0",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sea_spray_recipe.txt",
+      "description": "깊은 청록 인장 안에 민트 소용돌이 파도와 크림 물마루."
+    },
+    "sun_moon_elixir_bottle": {
+      "name": "일월의 물약 · 진열 병",
+      "kind": "bottle",
+      "native_size": [
+        8,
+        12
+      ],
+      "expected_size": [
+        8,
+        12
+      ],
+      "display_size_x3": [
+        24,
+        36
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#9D4359",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#9D4359",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "fire": 2
+      },
+      "opaque_pixels": 64,
+      "lighting": {
+        "top_left_mean": 0.4536,
+        "bottom_right_mean": 0.119,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "ce3bd7959890c9575d532255af48fa7bed5841afdb837e04043747f33e268c49",
+      "cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "approved_bottle_cork_edge_pixels": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "bottom_row": 11,
+      "bottom_row_is_canvas_bottom": true,
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_bottle.txt",
+      "description": "짧은 목·둥근 몸통·가는 대·받침이 있는 잔 모양 병. 진홍 액체 안 왼쪽 위 귤빛 해 2×2."
+    },
+    "sun_moon_elixir_icon": {
+      "name": "일월의 물약 · 물약 아이콘",
+      "kind": "icon",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#9D4359",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "cork": {
+          "letter": "c",
+          "color": "#916047",
+          "ramp": "wood"
+        },
+        "glass_glint": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "liquid_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "liquid_dark": {
+          "letter": "D",
+          "color": "#9D4359",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "wood": 1,
+        "gold": 1,
+        "fire": 2
+      },
+      "opaque_pixels": 550,
+      "lighting": {
+        "top_left_mean": 0.2867,
+        "bottom_right_mean": 0.1947,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "64678cec5d1b90736a21e07722804f0ad67b7b2618dbd0d0dde0c1ea5b5fa518",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_icon.txt",
+      "description": "받침 달린 둥근 구슬 병. 진홍 액체 안에 귤빛 해와 크림색 초승달."
+    },
+    "sun_moon_elixir_recipe": {
+      "name": "일월의 물약 · 레시피 아이콘",
+      "kind": "recipe",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#9D4359",
+        "#E9B95F",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "parchment": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "scroll_roll": {
+          "letter": "g",
+          "color": "#E9B95F",
+          "ramp": "gold"
+        },
+        "emblem_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "emblem_dark": {
+          "letter": "D",
+          "color": "#9D4359",
+          "ramp": "fire"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "gold": 2,
+        "fire": 2
+      },
+      "opaque_pixels": 780,
+      "lighting": {
+        "top_left_mean": 0.5407,
+        "bottom_right_mean": 0.5144,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "8cddde9f1c0e842604ee403873c7180d6857e003839f8f9553e59db4852e8aa9",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/sun_moon_elixir_recipe.txt",
+      "description": "진홍 인장 안에 귤빛 해와 크림 초승달."
+    },
+    "dawn_bloom_icon": {
+      "name": "여명초 (재료)",
+      "kind": "material",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#718C59",
+        "#DE7356",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "petal_light": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "petal_shade": {
+          "letter": "D",
+          "color": "#DE7356",
+          "ramp": "fire"
+        },
+        "flower_heart": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "leaf_and_stem": {
+          "letter": "G",
+          "color": "#718C59",
+          "ramp": "leaf"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "fire": 2,
+        "gold": 1,
+        "leaf": 1
+      },
+      "opaque_pixels": 501,
+      "lighting": {
+        "top_left_mean": 0.5138,
+        "bottom_right_mean": 0.2515,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "da0bb1fdc9f6560d752a5a9f267df44b86a52098ea77fdc35c2bb26cba2de5bd",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/dawn_bloom_icon.txt",
+      "description": "여섯 꽃잎의 귤빛 꽃(오른쪽 아래 꽃잎은 산호 그늘), 크림색 꽃심, 줄기와 세이지 잎 2장. 기존 재료 아이콘과 같은 32×40."
+    },
+    "dawn_lighthouse_icon": {
+      "name": "새벽 등대 (지역)",
+      "kind": "region",
+      "native_size": [
+        32,
+        40
+      ],
+      "expected_size": [
+        32,
+        40
+      ],
+      "display_size_x3": [
+        96,
+        120
+      ],
+      "colors": [
+        "#241C32",
+        "#827589",
+        "#DE7356",
+        "#F4AC68",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "outline_violations": [],
+      "dither_3x3_blocks": [],
+      "materials": {
+        "outline": {
+          "letter": "#",
+          "color": "#241C32",
+          "ramp": "outline"
+        },
+        "sun_and_lamp": {
+          "letter": "L",
+          "color": "#F4AC68",
+          "ramp": "fire"
+        },
+        "roof_and_stripes": {
+          "letter": "r",
+          "color": "#DE7356",
+          "ramp": "fire"
+        },
+        "tower": {
+          "letter": "h",
+          "color": "#FFF0BC",
+          "ramp": "gold"
+        },
+        "cliff": {
+          "letter": "s",
+          "color": "#827589",
+          "ramp": "stone"
+        }
+      },
+      "colors_in_declared_ramps": true,
+      "shades_per_ramp": {
+        "outline": 1,
+        "fire": 2,
+        "gold": 1,
+        "stone": 1
+      },
+      "opaque_pixels": 678,
+      "lighting": {
+        "top_left_mean": 0.5133,
+        "bottom_right_mean": 0.3107,
+        "top_left_lit": true
+      },
+      "pipeline_passed": true,
+      "pipeline_preserved_source": true,
+      "native_sha256": "d1b5bd6a7fcff529b9c58821fbfe7324d603b81c1b807d6cb32327dbe91606a4",
+      "lighting_note": "32×40 아이콘은 참고값(해·절벽 배치상 강제하지 않음). 병은 필수.",
+      "passed": true,
+      "source": "art/mockups/f26-region-potions-v1/source/dawn_lighthouse_icon.txt",
+      "description": "돌 절벽 위 흰 등대(산호 띠 2줄·지붕, 귤빛 등불)와 뒤로 떠오르는 해. 기존 지역 아이콘과 같은 32×40."
+    }
+  },
+  "pots": {
+    "source_frames": [
+      "assets/pixel_v1/pots/health-0.png",
+      "assets/pixel_v1/pots/health-1.png",
+      "assets/pixel_v1/pots/health-2.png"
+    ],
+    "liquid_mask_pixels": 63,
+    "potions": {
+      "sunrise": {
+        "liquid": "#F4AC68",
+        "frames": [
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sunrise-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sunrise-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sunrise-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 86.9,
+          "#827589": 60.5,
+          "#86548E": 77.1,
+          "#E9B95F": 13.7
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      },
+      "beacon": {
+        "liquid": "#A56A3D",
+        "frames": [
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/beacon-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/beacon-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/beacon-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 61.8,
+          "#827589": 44.8,
+          "#86548E": 59.9,
+          "#E9B95F": 34.3
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      },
+      "sea_spray": {
+        "liquid": "#24566A",
+        "frames": [
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sea_spray-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sea_spray-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sea_spray-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 29.7,
+          "#827589": 26.4,
+          "#86548E": 42.5,
+          "#E9B95F": 82.6
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      },
+      "sun_moon_elixir": {
+        "liquid": "#9D4359",
+        "frames": [
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sun_moon_elixir-0.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sun_moon_elixir-1.png",
+            "recoloured_pixels": 61
+          },
+          {
+            "path": "art/mockups/f26-region-potions-v1/pots/sun_moon_elixir-2.png",
+            "recoloured_pixels": 61
+          }
+        ],
+        "outside_mask_identical": true,
+        "is_pot_body_color": false,
+        "delta_e_to_pot": {
+          "#241C32": 45.7,
+          "#827589": 35.5,
+          "#86548E": 30.9,
+          "#E9B95F": 66.9
+        },
+        "large_surface_gap_ok": true,
+        "passed": true
+      }
+    },
+    "body_colors": [
+      "#241C32",
+      "#827589",
+      "#86548E",
+      "#E9B95F"
+    ]
+  },
+  "liquid_colours": {
+    "existing_liquids_used": {
+      "health": "#DE9B88",
+      "mana": "#3BA8A3",
+      "moon": "#C38EB5",
+      "purify": "#9BE2CF",
+      "agility": "#FFF0BC",
+      "vigor": "#DE7356",
+      "antidote": "#718C59",
+      "fortune": "#E9B95F",
+      "focus": "#9BE2CF",
+      "restoration": "#F6D1AC",
+      "growth": "#B5C77D",
+      "clarity": "#9BE2CF",
+      "ward": "#827589",
+      "spirit": "#9BE2CF",
+      "arcane_amplification": "#C38EB5",
+      "iron_skin": "#827589",
+      "stealth": "#718C59",
+      "poison_resistance": "#718C59",
+      "illusion": "#C38EB5",
+      "soul_purification": "#9BE2CF",
+      "wisdom": "#C38EB5",
+      "reflection": "#9BE2CF",
+      "haste": "#FFF0BC",
+      "nightwalk": "#3BA8A3",
+      "moonradiance": "#FFF0BC",
+      "regeneration": "#F6D1AC",
+      "starlight": "#C38EB5",
+      "wish": "#FFF0BC",
+      "eternity": "#FFF0BC",
+      "sage_elixir": "#C38EB5",
+      "worldtree_elixir": "#B5C77D",
+      "shadow_elixir": "#C38EB5",
+      "rare_forest_breath": "#B5C77D",
+      "rare_mist_veil": "#9BE2CF",
+      "rare_lunar_seal": "#C38EB5",
+      "rare_nebula_distillate": "#C38EB5"
+    },
+    "new": {
+      "sunrise": {
+        "liquid": "#F4AC68",
+        "ramp": "fire",
+        "bottle_colors": [
+          "#F4AC68",
+          "#DE7356"
+        ],
+        "same_as_existing_liquid": [],
+        "nearest_existing": {
+          "id": "fortune",
+          "color": "#E9B95F",
+          "delta_e": 13.7
+        },
+        "delta_e_to_new_siblings": {
+          "beacon": 27.7,
+          "sea_spray": 80.0,
+          "sun_moon_elixir": 56.3
+        },
+        "bottle_pair_used_by_existing": []
+      },
+      "beacon": {
+        "liquid": "#A56A3D",
+        "ramp": "gold",
+        "bottle_colors": [
+          "#E9B95F",
+          "#A56A3D"
+        ],
+        "same_as_existing_liquid": [],
+        "nearest_existing": {
+          "id": "vigor",
+          "color": "#DE7356",
+          "delta_e": 22.5
+        },
+        "delta_e_to_new_siblings": {
+          "sunrise": 27.7,
+          "sea_spray": 61.0,
+          "sun_moon_elixir": 36.6
+        },
+        "bottle_pair_used_by_existing": [
+          "fortune"
+        ]
+      },
+      "sea_spray": {
+        "liquid": "#24566A",
+        "ramp": "teal",
+        "bottle_colors": [
+          "#9BE2CF",
+          "#24566A"
+        ],
+        "same_as_existing_liquid": [],
+        "nearest_existing": {
+          "id": "ward",
+          "color": "#827589",
+          "delta_e": 26.4
+        },
+        "delta_e_to_new_siblings": {
+          "sunrise": 80.0,
+          "beacon": 61.0,
+          "sun_moon_elixir": 54.8
+        },
+        "bottle_pair_used_by_existing": [
+          "focus",
+          "spirit",
+          "reflection",
+          "rare_mist_veil"
+        ]
+      },
+      "sun_moon_elixir": {
+        "liquid": "#9D4359",
+        "ramp": "fire",
+        "bottle_colors": [
+          "#F4AC68",
+          "#9D4359"
+        ],
+        "same_as_existing_liquid": [],
+        "nearest_existing": {
+          "id": "moon",
+          "color": "#C38EB5",
+          "delta_e": 33.0
+        },
+        "delta_e_to_new_siblings": {
+          "sunrise": 56.3,
+          "beacon": 36.6,
+          "sea_spray": 54.8
+        },
+        "bottle_pair_used_by_existing": []
+      }
+    },
+    "passed": true,
+    "note": "ΔE = CIE76 Lab 거리. 10 이상이면 나란히 볼 때 다른 색으로 읽힌다고 본다. 솥 몸체·돌 테와는 25 이상, 새 4종끼리는 20 이상을 요구했다. 같은 두 색 병 조합은 참고로 보고하고 실루엣으로 구분한다."
+  },
+  "silhouettes": {
+    "bottles": {
+      "sunrise": {
+        "identical_silhouettes": [],
+        "closest_same_size": {
+          "id": "iron_skin",
+          "differing_pixels": 4
+        }
+      },
+      "beacon": {
+        "identical_silhouettes": [],
+        "closest_same_size": {
+          "id": "haste",
+          "differing_pixels": 19
+        }
+      },
+      "sea_spray": {
+        "identical_silhouettes": [],
+        "closest_same_size": {
+          "id": "eternity",
+          "differing_pixels": 6
+        }
+      },
+      "sun_moon_elixir": {
+        "identical_silhouettes": [],
+        "closest_same_size": {
+          "id": "vigor",
+          "differing_pixels": 10
+        }
+      }
+    },
+    "new_duplicates": [],
+    "passed": true
+  },
+  "shelf": {
+    "frame": "art/mockups/full-ingame-v4/potions/shelf_frame-native.png",
+    "boards": {
+      "1": 22,
+      "2": 43
+    },
+    "centers": [
+      8,
+      18,
+      28,
+      38
+    ],
+    "layouts": {
+      "new4_with_tops": [
+        {
+          "id": "sunrise",
+          "origin": [
+            4,
+            10
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "beacon",
+          "origin": [
+            14,
+            6
+          ],
+          "size": [
+            8,
+            16
+          ]
+        },
+        {
+          "id": "sea_spray",
+          "origin": [
+            24,
+            10
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "sun_moon_elixir",
+          "origin": [
+            34,
+            10
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "eternity",
+          "origin": [
+            4,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "sage_elixir",
+          "origin": [
+            14,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "worldtree_elixir",
+          "origin": [
+            24,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "rare_nebula_distillate",
+          "origin": [
+            34,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        }
+      ],
+      "mixed": [
+        {
+          "id": "sunrise",
+          "origin": [
+            4,
+            10
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "eternity",
+          "origin": [
+            14,
+            10
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "beacon",
+          "origin": [
+            24,
+            6
+          ],
+          "size": [
+            8,
+            16
+          ]
+        },
+        {
+          "id": "shadow_elixir",
+          "origin": [
+            34,
+            10
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "sea_spray",
+          "origin": [
+            4,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "worldtree_elixir",
+          "origin": [
+            14,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "sun_moon_elixir",
+          "origin": [
+            24,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        },
+        {
+          "id": "rare_nebula_distillate",
+          "origin": [
+            34,
+            31
+          ],
+          "size": [
+            8,
+            12
+          ]
+        }
+      ]
+    }
+  },
+  "existing_icon_format": [
+    {
+      "label": "영원 (기존 물약 아이콘)",
+      "source": "assets/content_expansion_v1/potions/eternity_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "image": "art/mockups/f26-region-potions-v1/compare/icons/eternity_icon-3x.png",
+      "colors": 510
+    },
+    {
+      "label": "현자의 물약 (기존 물약 아이콘)",
+      "source": "assets/content_expansion_v1/potions/sage_elixir_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "image": "art/mockups/f26-region-potions-v1/compare/icons/sage_elixir_icon-3x.png",
+      "colors": 549
+    },
+    {
+      "label": "성운 증류액 (기존 특별 물약 아이콘)",
+      "source": "assets/rare_recipes_v1/potions/rare_nebula_distillate_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "image": "art/mockups/f26-region-potions-v1/compare/icons/rare_nebula_distillate_icon-3x.png",
+      "colors": 396
+    },
+    {
+      "label": "성운 증류액 (기존 레시피 아이콘)",
+      "source": "assets/rare_recipes_v1/recipes/rare_nebula_distillate_recipe.png",
+      "size": [
+        32,
+        40
+      ],
+      "image": "art/mockups/f26-region-potions-v1/compare/icons/rare_nebula_distillate_recipe-3x.png",
+      "colors": 501
+    },
+    {
+      "label": "별씨 (기존 재료 아이콘)",
+      "source": "assets/content_expansion_v1/materials/star_seed_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "image": "art/mockups/f26-region-potions-v1/compare/icons/star_seed_icon-3x.png",
+      "colors": 497
+    },
+    {
+      "label": "별의 정원 (기존 지역 아이콘)",
+      "source": "assets/content_expansion_v1/regions/star_garden_icon.png",
+      "size": [
+        32,
+        40
+      ],
+      "image": "art/mockups/f26-region-potions-v1/compare/icons/star_garden_icon-3x.png",
+      "colors": 563
+    }
+  ],
+  "f25_display_recolour": {
+    "stealth": {
+      "#86548E": "#718C59",
+      "#50315F": "#3D544D"
+    },
+    "nightwalk": {
+      "#86548E": "#3BA8A3",
+      "#50315F": "#24566A"
+    },
+    "arcane_amplification": {
+      "#86548E": "#C38EB5",
+      "#50315F": "#86548E"
+    },
+    "shadow_elixir": {
+      "#86548E": "#C38EB5",
+      "#50315F": "#86548E"
+    }
+  },
+  "scope_note": "후보 검사. assets/·scripts/·data/는 쓰지 않았다."
+}
