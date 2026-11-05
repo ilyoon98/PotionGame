@@ -28,11 +28,11 @@ func run() -> void:
 			assert(not seen.has(row["id"]))
 			seen.append(row["id"])
 			assert(ResourceLoader.exists(row["icon_candidate"]))
-	# F26 adds the dawn lighthouse (one region, dawn bloom, four recipes) to the original 32/11/8.
-	assert(State.Content.DATA["potions"].size() == 32 + 4 and State.Content.DATA["materials"].size() == 11 + 1 and State.Content.DATA["regions"].size() == 8 + 1 and State.Content.DATA["upgrades"].size() == 125 and State.Content.DATA["employees"].size() == 4)
+	# F26 (dawn lighthouse) and F27 (aurora snowfield) each add one region, one material and four recipes to the original 32/11/8.
+	assert(State.Content.DATA["potions"].size() == 32 + 4 + 4 and State.Content.DATA["materials"].size() == 11 + 1 + 1 and State.Content.DATA["regions"].size() == 8 + 1 + 1 and State.Content.DATA["upgrades"].size() == 125 and State.Content.DATA["employees"].size() == 4)
 	var all_fees := 0
 	for row in State.Content.DATA["regions"]: all_fees += int(row["departure_cost"])
-	assert(all_fees == 355 + 150)
+	assert(all_fees == 355 + 150 + 200)
 	var s := fixture(true)
 	Trips.tick(s, 0)
 	assert(Trips.active_count(s.progression) == State.Content.DATA["regions"].size() and s.total_spent_expeditions == all_fees and s.gold == 100000 - all_fees)
@@ -159,5 +159,5 @@ func run() -> void:
 	var bad: Dictionary = before.duplicate(true)
 	bad["progression"]["expansion"]["cycles"]["forest_edge"]["paid"] = "yes"
 	assert(not fine.load_data(bad) and Compare.equivalent(fine.to_data(), before))
-	print("PARALLEL PASS: data/assets; 9 independent legs; once-only fees/reserve/protection; full-store investigation and pending; repeat recovery; seed preservation; v1-v7 migration/free legacy leg; coarse/fine returns; ledger; readonly reports; atomic invalid-cycle rejection")
+	print("PARALLEL PASS: data/assets; 10 independent legs; once-only fees/reserve/protection; full-store investigation and pending; repeat recovery; seed preservation; v1-v7 migration/free legacy leg; coarse/fine returns; ledger; readonly reports; atomic invalid-cycle rejection")
 	quit()

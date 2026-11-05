@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "status": "candidate",
-  "approved_by_user": false,
-  "approved_on": null,
-  "user_reply": null,
+  "status": "approved",
+  "approved_by_user": true,
+  "approved_on": "2026-11-05",
+  "user_reply": "그림은 그대로 수치만 바꿔",
   "date": "2026-11-05",
   "review": "art/mockups/f27-region-potions-v1/review.html",
   "plan": "docs/새-원정-지역과-물약-F27-기획안.md",
-  "runtime_integrated": false,
+  "runtime_integrated": true,
   "scope": {
     "warmth_bottle": "온기 물약 진열 병 8×12 (후보, 승인 병 행 파생)",
     "thin_ice_bottle": "살얼음 물약 진열 병 8×12 (후보, 승인 병 행 파생)",
@@ -31,15 +31,23 @@
   },
   "not_in_scope": [
     "원정 카드 큰 그림",
-    "게임 연결(assets/·catalog·scripts·data)"
+    "관리 아이콘 v2(32×32) 오로라 설원·서리꽃 새 그림 — 만들지 않음, 승인된 32×40 F27 아이콘을 그대로 쓴다"
   ],
-  "pending_decisions": [
-    "이름 6개",
-    "액체색 4종(초기 물약 색 재사용)",
-    "병 실루엣(승인 병 행 파생, 차이 작음)",
-    "32×40 아이콘이 F26 아이콘과 같은 실루엣인 점",
-    "서리꽃 아이콘·성장 그림이 여명초 재색인 점",
-    "지역 아이콘의 새로 그린 소나무·오로라"
-  ],
-  "publish_after_approval": "추가 전용 게시 스크립트(F26과 같은 방식)로 assets/pixel_v1/potions·pots, content_expansion_v1 아이콘·성장 그림, catalog 행만 더한다(기존 자산 재생성 금지)."
+  "pending_decisions": [],
+  "publish_after_approval": "추가 전용 게시 스크립트(F26과 같은 방식)로 assets/pixel_v1/potions·pots, content_expansion_v1 아이콘·성장 그림, catalog 행만 더한다(기존 자산 재생성 금지).",
+  "runtime_integration": "2026-11-05 tools/publish_f27_region_potions_v1.py (additive, byte-for-byte; includes the 64x80 frost flower growth sheet and UI v2 2x bottle list/recipe icons)",
+  "decisions": {
+    "names": "제안 그대로 (오로라 설원, 서리꽃, 온기, 살얼음, 솔바람, 오로라의 물약)",
+    "cost": "제안 260만 G (개방 50만 · 레시피 30/40/50/90만)",
+    "sale_price": "제안대로 230/245/260/370",
+    "survey_returns": "8회",
+    "environment": "night (코드 변경 없음)",
+    "supply_support": "서리꽃은 보급 지원 대상에서 제외",
+    "final_potion_customer": "여마법사(비술), F26과 같음",
+    "liquid_colours": "초기 물약 색 재사용(살구 크림·얼음 민트·새싹 빛·청록)",
+    "art": "그림은 그대로 — 병 4종(승인 병 행 파생)·솥 액체 4종·32×40 아이콘(F26과 같은 실루엣)·레시피·서리꽃(여명초 재색)·지역 아이콘(새 소나무·오로라) 후보 수정 없이 채택",
+    "growth_sheet": "서리꽃 화분 성장 그림 64×80 후보 그대로 채택, 기존 성장 그림 11종과 같은 규칙 밖 예외(5색 초과·화분 픽셀 재사용)",
+    "eleventh_region": "이번에는 만들지 않음"
+  },
+  "approved_scope": "scope의 19개 후보 전부(병·솥·32×40 아이콘·레시피·재료·지역 아이콘·성장 그림) 수정 없이; 성장 그림은 기존 성장 그림과 같은 규칙 밖 예외"
 }

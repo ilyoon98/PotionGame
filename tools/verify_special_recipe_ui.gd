@@ -54,6 +54,8 @@ func fixture() -> RefCounted:
 	Trips.ensure(p)
 	return state
 
+## The management icon refresh (ui_pixel_v2) routes the unknown map and recipe art through ItemArt;
+## compare with what ItemArt selects instead of the pre-v2 file paths.
 func texture_path(texture: Texture2D) -> String:
 	if texture == null: return ""
 	return texture_path(texture.atlas) if texture is AtlasTexture else texture.resource_path
@@ -80,11 +82,11 @@ func verify_unknown_surfaces() -> void:
 		check(not text.contains(row.name) and not art.contains(row.id), "Undiscovered true name/art is absent from every tab, hidden detail and tooltip: " + row.id)
 		for id in [row.id, "potion_" + row.id]:
 			var item: Dictionary = panel.rows[id]
-			check(item.title.text == "특별 레시피 · 미발견" and texture_path(item.icon.texture) == Items.UNKNOWN_RECIPE_PATH, "The same unknown map replaces each recipe and potion identity")
+			check(item.title.text == "특별 레시피 · 미발견" and texture_path(item.icon.texture) == texture_path(Items.unknown_recipe_icon()), "The same unknown map replaces each recipe and potion identity")
 			check(item.blend.entries.is_empty() and not item.blend.visible and not item.blend_title.visible and item.blend.tooltip_text.is_empty(), "Unknown blends and ingredient names/quantities are cleared even in hidden details")
 		check(panel.rows[row.id].button.disabled and panel.rows[row.id].button.icon == null, "Undiscovered recipes offer no purchase/price coin")
 		var region: Dictionary = panel.rows[row.region]
-		check(region.rare_link.text == "특별 레시피 · 미발견" and region.rare_link.disabled and texture_path(region.rare_icon.texture) == Items.UNKNOWN_RECIPE_PATH, "The expedition uses the same masked disabled identity")
+		check(region.rare_link.text == "특별 레시피 · 미발견" and region.rare_link.disabled and texture_path(region.rare_icon.texture) == texture_path(Items.unknown_recipe_icon()), "The expedition uses the same masked disabled identity")
 	# Later approved purchases (F20 workshop, F21 aging/keeper) may still be
 	# recommended; an undiscovered special recipe never is.
 	var recommended := str(panel.recommendation.get("purchase_key", ""))
@@ -159,7 +161,7 @@ func verify_masks_and_transitions() -> void:
 		panel.select_page(panel.EXPEDITIONS)
 		await layout()
 		var region: Dictionary = panel.rows[rare.region]
-		check(region.rare_link.text == rare.name and not region.rare_link.disabled and region.rare_state.text == "발견 · 미구매" and texture_path(region.rare_icon.texture) == rare.recipe_icon_candidate, "Discovery replaces the map with the real named recipe, retaining purchase separation")
+		check(region.rare_link.text == rare.name and not region.rare_link.disabled and region.rare_state.text == "발견 · 미구매" and texture_path(region.rare_icon.texture) == texture_path(Items.recipe_icon(rare.id)), "Discovery replaces the map with the real named recipe, retaining purchase separation")
 		region.rare_link.pressed.emit()
 		await layout()
 		await process_frame
@@ -203,7 +205,7 @@ func verify_all_blends_and_effects() -> void:
 	panel.select_page(panel.POTIONS)
 	await layout()
 	var kinds: Array = [false, true] + Content.RECIPES.keys()
-	check(kinds.size() == Content.DATA.potions.size() + Rare.ROWS.size() and kinds.size() == 36 + 4 and panel.potion_heading.text.contains("공용 창고"), "All 32+4 ordinary plus 4 special recipes use one explicitly shared potion warehouse")
+	check(kinds.size() == Content.DATA.potions.size() + Rare.ROWS.size() and kinds.size() == 40 + 4 and panel.potion_heading.text.contains("공용 창고"), "All 32+4+4 ordinary plus 4 special recipes use one explicitly shared potion warehouse")
 	for kind in kinds:
 		var row: Dictionary = panel.rows["potion_" + Status.kind_id(kind)]
 		verify_blend(row, kind)

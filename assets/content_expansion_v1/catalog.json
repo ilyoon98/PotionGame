@@ -1018,6 +1018,15 @@
       "id": "dawn_bloom",
       "name": "여명초",
       "status": "approved_2026-11-05"
+    },
+    {
+      "category": "materials",
+      "growth_path": "res://assets/content_expansion_v1/materials/frost_flower_growth.png",
+      "growth_source": "res://art/mockups/f27-region-potions-v1/growth/frost_flower_growth.png",
+      "icon_path": "res://assets/content_expansion_v1/materials/frost_flower_icon.png",
+      "id": "frost_flower",
+      "name": "서리꽃",
+      "status": "approved_2026-11-05"
     }
   ],
   "candidate_designs": true,

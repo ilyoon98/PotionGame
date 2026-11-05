@@ -61,6 +61,11 @@ func verify_assets() -> void:
 	for category in ["regions", "materials", "employees", "potions"]:
 		for row in Content.DATA[category]:
 			var texture := ItemArt.icon(row.id)
+			if category in ["regions", "materials"] and row.get("content_set", "") == "f27_aurora_snowfield" and UiPixel.icon(row.id) == null:
+				# F27 (approved 2026-11-05 "그림은 그대로") has no v2 32px region/material art; drawing one would be new,
+				# unapproved art, so the approved 32x40 F27 icon is the designed fallback.
+				check(texture == load(row.icon_candidate), "F27 %s keeps its approved icon without invented v2 art: %s" % [category, row.id])
+				continue
 			check(texture == UiPixel.icon(row.id), "Runtime uses published %s icon: %s" % [category, row.id])
 	for id in Content.RECIPES:
 		check(ItemArt.recipe_icon(id) == UiPixel.icon("recipe:" + id), "Recipe art routes through catalog: " + id)
@@ -77,6 +82,24 @@ func check_icon(node: TextureRect, context: String) -> void:
 	var scale := rect.size / node.texture.get_size()
 	check(is_equal_approx(scale.x, scale.y) and scale.x >= 1.0 and is_equal_approx(scale.x, roundf(scale.x)), context + " keeps an integer, uniform pixel scale")
 	check(Rect2(Vector2.ZERO, node.size).encloses(rect), context + " fits its slot")
+
+## F27's region/material keep their approved 32x40 icons (no v2 32px art was drawn). In a 32px slot such an icon
+## cannot sit at an integer scale; it is shrunk with its aspect kept until v2 art is approved. Strict rows still
+## use check_icon above (48px rows hold the trimmed 32x40 icon at 1x).
+func f27_fallback(texture: Texture2D) -> bool:
+	if texture == null or UiPixel.owns(texture): return false
+	var source: Texture2D = texture.atlas if texture is AtlasTexture else texture
+	for category in ["regions", "materials"]:
+		for row in Content.DATA[category]:
+			if row.get("content_set", "") == "f27_aurora_snowfield" and source.resource_path == row.icon_candidate: return true
+	return false
+
+func check_fallback_icon(node: TextureRect, context: String) -> void:
+	check(node is PixelIcon, context + " uses pixel-aware drawing")
+	if not node is PixelIcon or node.texture == null: return
+	var rect: Rect2 = node.drawn_rect()
+	var scale := rect.size / node.texture.get_size()
+	check(is_equal_approx(scale.x, scale.y) and Rect2(Vector2.ZERO, node.size).encloses(rect), context + " (approved F27 32x40 fallback, no v2 art) keeps its aspect and fits its slot")
 
 func settle() -> void:
 	for frame in 4: await process_frame
@@ -178,7 +201,9 @@ func run() -> void:
 			var row: Dictionary = panel.rows[id]
 			if row.page != entry[0]: continue
 			check_icon(row.icon, "Row " + id)
-			if row.has("primary_icon") and row.primary_icon.texture != null: check_icon(row.primary_icon, "Region material " + id)
+			if row.has("primary_icon") and row.primary_icon.texture != null:
+				if f27_fallback(row.primary_icon.texture): check_fallback_icon(row.primary_icon, "Region material " + id)
+				else: check_icon(row.primary_icon, "Region material " + id)
 			if row.has("growth_preview") and row.growth_preview.texture != null:
 				row.toggle.button_pressed = true
 				await settle()

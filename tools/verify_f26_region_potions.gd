@@ -23,6 +23,9 @@ const OUT := "res://.verification/f26-region-potions-20261105/result.json"
 const REGION := "dawn_lighthouse"
 const MATERIAL := "dawn_bloom"
 const NEW := ["sunrise", "beacon", "sea_spray", "sun_moon_elixir"]
+## F27 (aurora snowfield, approved later the same day) rows come after F26; they are checked by verify_f27_region_potions.gd.
+const LATER := ["warmth", "thin_ice", "pine_wind", "aurora_elixir"]
+const LATER_REGION := "aurora_snowfield"
 ## docs/새-원정-지역과-물약-F26-기획안.md §2 (approved as proposed).
 const PLAN := {
 	"sunrise": {"name": "해돋이", "family": "vitality", "customer": "traveler", "order": 36, "returns": 1, "recipes": [], "cost": 250000, "price": 200, "ingredients": {"herb": 2, "dawn_bloom": 1, "dewgrass": 1}, "duration": 3.1, "success": 0.82, "retail": [238, 281]},
@@ -100,15 +103,15 @@ func f26_complete(base: RefCounted) -> RefCounted:
 
 func test_data() -> void:
 	var region := Content.lookup("regions", REGION)
-	check(Content.DATA.regions.size() == 9 and Content.DATA.regions[-1].id == REGION, "Nine regions; the dawn lighthouse is ninth")
+	check(Content.DATA.regions.size() == 10 and Content.DATA.regions[8].id == REGION and Content.DATA.regions[9].id == LATER_REGION, "Ten regions; the dawn lighthouse is ninth (F27 aurora snowfield tenth)")
 	check(region.name == "새벽 등대" and int(region.cost) == 400000 and int(region.explore_seconds) == 450 and int(region.return_seconds) == 90 and int(region.departure_cost) == 150 and int(region.complete_returns) == 8 and region.previous_region == "star_garden" and int(region.reputation) == 0, "Region values follow the plan (400,000 G, 450+90 s, 150 G, 8 returns, after the star garden)")
 	check(region.material == MATERIAL and int(region.repeat_material_quantity) == 7 and Compare.equivalent(region.rewards, {"dawn_bloom": 7}), "Region's main material is dawn bloom")
 	var pool: Dictionary = Rewards.POOLS[REGION]
 	check(pool.main == MATERIAL and int(pool.min) == 6 and int(pool.max) == 8 and pool.extra == ["star_seed", "moonflower", "dewgrass"], "Reward pool: dawn bloom 6-8 + star seed/moonflower/dewgrass (60/30/10)")
 	check(Rare.by_region(REGION).is_empty(), "No special recipe for the dawn lighthouse")
 	var material := Content.lookup("materials", MATERIAL)
-	check(Content.DATA.materials.size() == 12 and material.name == "여명초" and material.source == "recipe_granted_garden" and material.region == REGION and int(material.growth_seconds) == 26 and material.environment == "clear" and float(material.favored_growth_multiplier) == 1.5 and int(material.seed_quantity) == 2, "Dawn bloom: garden 26 s, clear ×1.5, two seeds, region dawn lighthouse")
-	check(Content.DATA.potions.size() == 36 and Content.RECIPES.size() + 2 == 40, "36 ordinary rows (32 + 4) and 40 recipes with the four specials")
+	check(Content.DATA.materials.size() == 13 and Content.DATA.materials[11].id == MATERIAL and material.name == "여명초" and material.source == "recipe_granted_garden" and material.region == REGION and int(material.growth_seconds) == 26 and material.environment == "clear" and float(material.favored_growth_multiplier) == 1.5 and int(material.seed_quantity) == 2, "Dawn bloom: garden 26 s, clear ×1.5, two seeds, region dawn lighthouse")
+	check(Content.DATA.potions.size() == 40 and Content.DATA.potions.slice(32, 36).map(func(row): return row.id) == NEW and Content.RECIPES.size() + 2 == 44, "40 ordinary rows (32 + 4 F26 + 4 F27) and 44 recipes with the four specials")
 	for id in NEW:
 		var row := Content.lookup("potions", id)
 		var plan: Dictionary = PLAN[id]
@@ -123,13 +126,13 @@ func test_data() -> void:
 func test_unchanged() -> void:
 	var catalog_rows := {}
 	for id in Catalog.DATA.potions:
-		if id not in NEW: catalog_rows[id] = Catalog.DATA.potions[id]
+		if id not in NEW and id not in LATER: catalog_rows[id] = Catalog.DATA.potions[id]
 	var recipes := {}
 	for id in Content.RECIPES:
-		if id not in NEW: recipes[id] = Content.RECIPES[id]
+		if id not in NEW and id not in LATER: recipes[id] = Content.RECIPES[id]
 	var pools := {}
 	for id in Rewards.POOLS:
-		if id != REGION: pools[id] = Rewards.POOLS[id]
+		if id != REGION and id != LATER_REGION: pools[id] = Rewards.POOLS[id]
 	var now := {
 		"potions32": JSON.stringify(Content.DATA.potions.slice(0, 32)).sha256_text(),
 		"regions8": JSON.stringify(Content.DATA.regions.slice(0, 8)).sha256_text(),
@@ -153,7 +156,7 @@ func test_player_copy(base: RefCounted) -> void:
 	for id in NEW: check(base.purchase_reason(id) == "새벽 등대 귀환 %d회 필요" % int(PLAN[id].returns), "%s waits for dawn lighthouse returns" % id)
 	var c := {}
 	for row in Status.collection(base): c[row.key] = [row.have, row.total]
-	check(c.recipes == [30, 34] and c.regions == [8, 9], "Collection shows recipes 30/34 and surveys 8/9 (%s)" % str(c))
+	check(c.recipes == [30, 38] and c.regions == [8, 10], "Collection shows recipes 30/38 and surveys 8/10 incl. F27 (%s)" % str(c))
 	check(Late.new().growth_view(base).recipes == 32, "Late-investment gate counts the original 32 recipes")
 	var again := clone(base)
 	check(Compare.equivalent(M.data(base), M.data(again)), "The loaded copy round-trips unchanged")
@@ -336,13 +339,13 @@ func test_art() -> void:
 	check(sheet.get_size() == Vector2(64, 80) and visible_pixels(texture_pixels(sheet)) == visible_pixels(pixels("res://art/mockups/f26-dawn-bloom-growth-v2/sheets/dawn_bloom_growth.png")), "Growth sheet 64x80, visible pixels unchanged")
 	var frames := [0.0, 0.4, 0.8].map(func(phase): return ItemArt.growth_frame(MATERIAL, phase))
 	check(frames.all(func(frame): return frame is AtlasTexture and frame.atlas.resource_path == GROWTH and frame.region.size == Vector2(32, 40)) and frames[0].region != frames[2].region, "Garden shows three 32x40 growth stages")
-	check(Catalog.DATA.potions.size() == 40, "Catalog has 36 + 4 potion rows")
+	check(Catalog.DATA.potions.size() == 44, "Catalog has 36 + 4 F26 + 4 F27 potion rows")
 
 func test_collection() -> void:
 	var fresh := State.new()
 	var c := {}
 	for row in Status.collection(fresh): c[row.key] = [row.have, row.total]
-	check(c.recipes == [0, 34] and c.regions == [0, 9], "New game: recipes 0/34, surveys 0/9 (%s)" % str(c))
+	check(c.recipes == [0, 38] and c.regions == [0, 10], "New game: recipes 0/38, surveys 0/10 incl. F27 (%s)" % str(c))
 
 func test_save(base: RefCounted) -> void:
 	var s := f26_complete(base)

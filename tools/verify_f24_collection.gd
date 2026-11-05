@@ -37,10 +37,10 @@ func complete(state: RefCounted) -> void:
 	state.decor.owned = ["decor_teacup", "decor_dried_vase"]
 func run() -> void:
 	check(get_meta("isolated_preview", false), "Isolated preview; no player save")
-	# Totals come from the data: 30 + 4 F26 recipes (owned_at_start excluded), 8 + 1 F26 regions.
+	# Totals come from the data: 30 + 4 F26 + 4 F27 recipes (owned_at_start excluded), 8 + 1 F26 + 1 F27 regions.
 	var recipe_total: int = Content.DATA.potions.filter(func(row): return not row.get("owned_at_start", false)).size()
 	var region_total: int = Content.DATA.regions.size()
-	check(recipe_total == 30 + 4 and region_total == 8 + 1, "Collection totals follow the data (%d recipes, %d regions)" % [recipe_total, region_total])
+	check(recipe_total == 30 + 4 + 4 and region_total == 8 + 1 + 1, "Collection totals follow the data (%d recipes, %d regions)" % [recipe_total, region_total])
 	var fresh := State.new()
 	var c := counts(fresh)
 	check(c.recipes == [0, recipe_total] and c.specials == [0, 4] and c.regions == [0, region_total] and c.souvenirs == [0, 4] and c.decor == [0, 2], "New game counts every category from zero (%s)" % str(c))

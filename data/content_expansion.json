@@ -169,6 +169,19 @@
       "seed_quantity": 2,
       "icon_candidate": "res://assets/content_expansion_v1/materials/dawn_bloom_icon.png",
       "content_set": "f26_dawn_lighthouse"
+    },
+    {
+      "id": "frost_flower",
+      "name": "서리꽃",
+      "source": "recipe_granted_garden",
+      "region": "aurora_snowfield",
+      "growth_seconds": 28,
+      "capacity": 12,
+      "environment": "night",
+      "favored_growth_multiplier": 1.5,
+      "seed_quantity": 2,
+      "icon_candidate": "res://assets/content_expansion_v1/materials/frost_flower_icon.png",
+      "content_set": "f27_aurora_snowfield"
     }
   ],
   "potions": [
@@ -1326,6 +1339,153 @@
         "star_seed"
       ],
       "content_set": "f26_dawn_lighthouse"
+    },
+    {
+      "id": "warmth",
+      "name": "온기",
+      "family": "vitality",
+      "preferred_customer": "traveler",
+      "order": 40,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "aurora_snowfield",
+          "returns": 1
+        }
+      },
+      "cost": 300000,
+      "sale_price": 230,
+      "ingredients": {
+        "herb": 2,
+        "frost_flower": 1,
+        "ash_sage": 1
+      },
+      "duration_multiplier": 3.4,
+      "success": 0.8,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "frost_flower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/warmth_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/warmth.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/warmth_recipe.png",
+      "grant_sources": [
+        "frost_flower",
+        "ash_sage"
+      ],
+      "content_set": "f27_aurora_snowfield"
+    },
+    {
+      "id": "thin_ice",
+      "name": "살얼음",
+      "family": "craft",
+      "preferred_customer": "rogue",
+      "order": 41,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "aurora_snowfield",
+          "returns": 3
+        }
+      },
+      "cost": 400000,
+      "sale_price": 245,
+      "ingredients": {
+        "herb": 2,
+        "frost_flower": 1,
+        "crystal_herb": 1
+      },
+      "duration_multiplier": 3.5,
+      "success": 0.78,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "frost_flower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/thin_ice_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/thin_ice.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/thin_ice_recipe.png",
+      "grant_sources": [
+        "frost_flower",
+        "crystal_herb"
+      ],
+      "content_set": "f27_aurora_snowfield"
+    },
+    {
+      "id": "pine_wind",
+      "name": "솔바람",
+      "family": "nature",
+      "preferred_customer": "elf",
+      "order": 42,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "aurora_snowfield",
+          "returns": 5
+        }
+      },
+      "cost": 500000,
+      "sale_price": 260,
+      "ingredients": {
+        "herb": 2,
+        "frost_flower": 1,
+        "silver_moss": 1
+      },
+      "duration_multiplier": 3.6,
+      "success": 0.78,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "frost_flower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/pine_wind_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/pine_wind.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/pine_wind_recipe.png",
+      "grant_sources": [
+        "frost_flower",
+        "silver_moss"
+      ],
+      "content_set": "f27_aurora_snowfield"
+    },
+    {
+      "id": "aurora_elixir",
+      "name": "오로라의 물약",
+      "family": "arcane",
+      "preferred_customer": "mage",
+      "order": 43,
+      "existing": false,
+      "owned_at_start": false,
+      "unlock": {
+        "discovery": {
+          "region": "aurora_snowfield",
+          "returns": 8
+        },
+        "recipes": [
+          "warmth",
+          "thin_ice",
+          "pine_wind"
+        ]
+      },
+      "cost": 900000,
+      "sale_price": 370,
+      "ingredients": {
+        "herb": 2,
+        "frost_flower": 1,
+        "star_seed": 1,
+        "crystal_herb": 1
+      },
+      "duration_multiplier": 3.9,
+      "success": 0.76,
+      "environment": "night",
+      "environment_bonus": 0.08,
+      "grant_material": "frost_flower",
+      "icon_candidate": "res://assets/content_expansion_v1/potions/aurora_elixir_icon.png",
+      "bottle_candidate": "res://assets/pixel_v1/potions/aurora_elixir.png",
+      "recipe_candidate": "res://assets/content_expansion_v1/recipes/aurora_elixir_recipe.png",
+      "grant_sources": [
+        "frost_flower",
+        "star_seed",
+        "crystal_herb"
+      ],
+      "content_set": "f27_aurora_snowfield"
     }
   ],
   "regions": [
@@ -1492,6 +1652,25 @@
         "dawn_bloom": 7
       },
       "content_set": "f26_dawn_lighthouse"
+    },
+    {
+      "id": "aurora_snowfield",
+      "name": "오로라 설원",
+      "cost": 500000,
+      "explore_seconds": 500,
+      "return_seconds": 100,
+      "complete_returns": 8,
+      "previous_region": "dawn_lighthouse",
+      "reputation": 0,
+      "material": "frost_flower",
+      "repeat_material_quantity": 8,
+      "legacy_starleaf_quantity": 0,
+      "icon_candidate": "res://assets/content_expansion_v1/regions/aurora_snowfield_icon.png",
+      "departure_cost": 200,
+      "rewards": {
+        "frost_flower": 8
+      },
+      "content_set": "f27_aurora_snowfield"
     }
   ],
   "upgrades": [

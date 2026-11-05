@@ -10,14 +10,14 @@ func _initialize() -> void:
 
 
 func _run() -> void:
-	# The original 32 rows and 8 regions are unchanged; F26 (content_set) adds 4 recipes and the 9th region.
+	# The original 32 rows and 8 regions are unchanged; F26 and F27 (content_set) each add 4 recipes and one region.
 	var originals: Array = State.Content.DATA.potions.filter(func(row): return not row.has("content_set"))
-	var f26_regions: Array = State.Content.DATA["regions"].filter(func(row): return row.has("content_set"))
-	assert(originals.size() == 32 and State.Content.DATA.potions.size() - originals.size() == 4 and State.Content.RECIPES.size() + 2 == State.Content.DATA.potions.size() + 4)
-	assert(State.Content.DATA["regions"].size() - f26_regions.size() == 8 and f26_regions.size() == 1)
+	var later_regions: Array = State.Content.DATA["regions"].filter(func(row): return row.has("content_set"))
+	assert(originals.size() == 32 and State.Content.DATA.potions.size() - originals.size() == 4 + 4 and State.Content.RECIPES.size() + 2 == State.Content.DATA.potions.size() + 4)
+	assert(State.Content.DATA["regions"].size() - later_regions.size() == 8 and later_regions.size() == 2)
 	assert(State.Content.DATA["upgrades"].size() == 125)
 	var state := State.new()
-	state.gold = 1000000 + 1850000 # + the four F26 recipes (25/35/45/80만 G)
+	state.gold = 1000000 + 1850000 + 2100000 # + the four F26 recipes (25/35/45/80만 G) and the four F27 recipes (30/40/50/90만 G)
 	state.progression.reputation = 1000
 	assert(not state.purchase("vigor") and not state.purchase("region:abandoned_greenhouse"))
 	state.purchase("moon")
@@ -136,7 +136,7 @@ func _run() -> void:
 	coarse.advance(90.0)
 	for i in 2700: fine.advance(1.0 / 30.0)
 	assert(Compare.equivalent(coarse.to_data(), fine.to_data()), "Expanded plants, reservations, trips and stock are frame independent")
-	print("EXPANSION PASS: 32+4 potions/8+1 regions/125 investments/4 employees; discovery and plants; automatic manufacture/sale; parallel region opening; final assistant values; old recipes unchanged; 60-slot inventory and 8-bottle display; save integrity and deterministic resume")
+	print("EXPANSION PASS: 32+4+4 potions/8+1+1 regions/125 investments/4 employees; discovery and plants; automatic manufacture/sale; parallel region opening; final assistant values; old recipes unchanged; 60-slot inventory and 8-bottle display; save integrity and deterministic resume")
 	quit()
 
 

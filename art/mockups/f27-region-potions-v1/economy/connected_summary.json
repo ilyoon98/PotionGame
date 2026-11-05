@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-05",
+  "script": "art/mockups/f27-region-potions-v1/economy/measure_connected.gd",
+  "what": "Same synthetic late store/warm-up as probe_f27_economy.gd; F26 finished in both modes. F27 now comes from data/ and scripts/ (real aurora snowfield trips, reward rolls and frost flower planter).",
+  "baseline": {
+    "seeds": [
+      19337,
+      73129,
+      9973
+    ],
+    "net_per_hour": 754067,
+    "net_per_hour_by_seed": {
+      "19337": 752000,
+      "73129": 756737,
+      "9973": 753465
+    },
+    "sold_6h_mean": {
+      "aurora_elixir": 0,
+      "beacon": 328,
+      "pine_wind": 0,
+      "sea_spray": 476,
+      "sun_moon_elixir": 113,
+      "sunrise": 404,
+      "thin_ice": 0,
+      "warmth": 0
+    },
+    "frost_flower_expedition_rewards_6h_mean": 0,
+    "fees_per_hour": 7303,
+    "supply_frost_flower": 0
+  },
+  "complete": {
+    "seeds": [
+      19337,
+      73129,
+      9973
+    ],
+    "net_per_hour": 866261,
+    "net_per_hour_by_seed": {
+      "19337": 873103,
+      "73129": 862010,
+      "9973": 863670
+    },
+    "sold_6h_mean": {
+      "aurora_elixir": 174,
+      "beacon": 290,
+      "pine_wind": 410,
+      "sea_spray": 394,
+      "sun_moon_elixir": 92,
+      "sunrise": 365,
+      "thin_ice": 321,
+      "warmth": 299
+    },
+    "frost_flower_expedition_rewards_6h_mean": 403,
+    "fees_per_hour": 9016,
+    "supply_frost_flower": 0
+  },
+  "gain_per_hour": 112194,
+  "gain_pct": 14.9,
+  "plan": {
+    "baseline": 754068,
+    "complete": 867672,
+    "gain_pct": 15.1,
+    "new_sold_6h": {
+      "warmth": 288,
+      "thin_ice": 303,
+      "pine_wind": 433,
+      "aurora_elixir": 182
+    }
+  },
+  "payback_hours": 23.2
+}

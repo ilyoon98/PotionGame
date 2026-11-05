@@ -292,8 +292,8 @@ func verify_palette_and_views() -> void:
 		var expected_height := 148 if Rare.by_region(region.id).is_empty() else 188
 		heights[expected_height] += 1
 		check(panel.rows[region.id].panel.size.y == expected_height, "Collapsed region keeps its approved height (148px, or 188px with a discovery line): %s %.0f" % [region.id, panel.rows[region.id].panel.size.y])
-	# F26's dawn lighthouse has no special recipe, so it is a fifth 148px row.
-	check(heights[188] == Rare.ROWS.size() and heights[148] == Content.DATA.regions.size() - Rare.ROWS.size() and heights[148] == 5, "Nine regions split into five 148px and four 188px discovery rows")
+	# F26's dawn lighthouse and F27's aurora snowfield have no special recipe: fifth and sixth 148px rows.
+	check(heights[188] == Rare.ROWS.size() and heights[148] == Content.DATA.regions.size() - Rare.ROWS.size() and heights[148] == 6, "Ten regions split into six 148px and four 188px discovery rows")
 
 func verify_held_purchase() -> void:
 	shop.state = fixture()

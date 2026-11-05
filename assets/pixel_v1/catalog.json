@@ -3254,6 +3254,318 @@
               "bottle_bottom_row": 38
             }
           ]
+        },
+        "warmth": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 36
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "thin_ice": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 36
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "pine_wind": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 36
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "aurora_elixir": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 14,
+              "bottle_bottom_row": 36
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 38
+            }
+          ]
         }
       },
       "palms": {
@@ -6455,6 +6767,318 @@
               "facing": "right",
               "passed": true,
               "visible_liquid_pixels": 20,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "warmth": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "thin_ice": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "pine_wind": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "aurora_elixir": {
+          "local_grip": [
+            4,
+            5
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 16,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 17,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 17,
               "bottle_bottom_row": 38
             }
           ]
@@ -9662,6 +10286,318 @@
               "bottle_bottom_row": 39
             }
           ]
+        },
+        "warmth": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 9,
+              "bottle_bottom_row": 34
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 39
+            }
+          ]
+        },
+        "thin_ice": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 34
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 39
+            }
+          ]
+        },
+        "pine_wind": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 34
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 39
+            }
+          ]
+        },
+        "aurora_elixir": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 34
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 37
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 39
+            }
+          ]
         }
       },
       "palms": {
@@ -12866,6 +13802,318 @@
               "bottle_bottom_row": 38
             }
           ]
+        },
+        "warmth": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 8,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "thin_ice": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 6,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 7,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 3,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "pine_wind": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 3,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 4,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 5,
+              "bottle_bottom_row": 38
+            }
+          ]
+        },
+        "aurora_elixir": {
+          "local_grip": [
+            4,
+            6
+          ],
+          "checks": [
+            {
+              "pose": "receive_extend",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 35
+            },
+            {
+              "pose": "receive_hold",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 39
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_a",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 13,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 14,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_contact_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 14,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "left",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 38
+            },
+            {
+              "pose": "carry_pass_b",
+              "facing": "right",
+              "passed": true,
+              "visible_liquid_pixels": 12,
+              "bottle_bottom_row": 38
+            }
+          ]
         }
       },
       "palms": {
@@ -13917,6 +15165,110 @@
         "res://assets/pixel_v1/pots/sun_moon_elixir-0.png",
         "res://assets/pixel_v1/pots/sun_moon_elixir-1.png",
         "res://assets/pixel_v1/pots/sun_moon_elixir-2.png"
+      ]
+    },
+    "warmth": {
+      "id": "warmth",
+      "name": "온기",
+      "family": "vitality",
+      "rare": false,
+      "liquid_ramp": "skin",
+      "liquid_color": "#F6D1AC",
+      "bottle_path": "art/mockups/f27-region-potions-v1/sprites/warmth_bottle.png",
+      "bottle_size": [
+        8,
+        12
+      ],
+      "body_silhouette_source": "art/mockups/f27-region-potions-v1/sprites/warmth_bottle.png",
+      "runtime_bottle_source": "art/mockups/f27-region-potions-v1/sprites/warmth_bottle.png",
+      "pot_frames": [
+        "art/mockups/f27-region-potions-v1/pots/warmth-0.png",
+        "art/mockups/f27-region-potions-v1/pots/warmth-1.png",
+        "art/mockups/f27-region-potions-v1/pots/warmth-2.png"
+      ],
+      "bottle": "res://assets/pixel_v1/potions/warmth.png",
+      "pots": [
+        "res://assets/pixel_v1/pots/warmth-0.png",
+        "res://assets/pixel_v1/pots/warmth-1.png",
+        "res://assets/pixel_v1/pots/warmth-2.png"
+      ]
+    },
+    "thin_ice": {
+      "id": "thin_ice",
+      "name": "살얼음",
+      "family": "craft",
+      "rare": false,
+      "liquid_ramp": "teal",
+      "liquid_color": "#9BE2CF",
+      "bottle_path": "art/mockups/f27-region-potions-v1/sprites/thin_ice_bottle.png",
+      "bottle_size": [
+        8,
+        12
+      ],
+      "body_silhouette_source": "art/mockups/f27-region-potions-v1/sprites/thin_ice_bottle.png",
+      "runtime_bottle_source": "art/mockups/f27-region-potions-v1/sprites/thin_ice_bottle.png",
+      "pot_frames": [
+        "art/mockups/f27-region-potions-v1/pots/thin_ice-0.png",
+        "art/mockups/f27-region-potions-v1/pots/thin_ice-1.png",
+        "art/mockups/f27-region-potions-v1/pots/thin_ice-2.png"
+      ],
+      "bottle": "res://assets/pixel_v1/potions/thin_ice.png",
+      "pots": [
+        "res://assets/pixel_v1/pots/thin_ice-0.png",
+        "res://assets/pixel_v1/pots/thin_ice-1.png",
+        "res://assets/pixel_v1/pots/thin_ice-2.png"
+      ]
+    },
+    "pine_wind": {
+      "id": "pine_wind",
+      "name": "솔바람",
+      "family": "nature",
+      "rare": false,
+      "liquid_ramp": "leaf",
+      "liquid_color": "#B5C77D",
+      "bottle_path": "art/mockups/f27-region-potions-v1/sprites/pine_wind_bottle.png",
+      "bottle_size": [
+        8,
+        12
+      ],
+      "body_silhouette_source": "art/mockups/f27-region-potions-v1/sprites/pine_wind_bottle.png",
+      "runtime_bottle_source": "art/mockups/f27-region-potions-v1/sprites/pine_wind_bottle.png",
+      "pot_frames": [
+        "art/mockups/f27-region-potions-v1/pots/pine_wind-0.png",
+        "art/mockups/f27-region-potions-v1/pots/pine_wind-1.png",
+        "art/mockups/f27-region-potions-v1/pots/pine_wind-2.png"
+      ],
+      "bottle": "res://assets/pixel_v1/potions/pine_wind.png",
+      "pots": [
+        "res://assets/pixel_v1/pots/pine_wind-0.png",
+        "res://assets/pixel_v1/pots/pine_wind-1.png",
+        "res://assets/pixel_v1/pots/pine_wind-2.png"
+      ]
+    },
+    "aurora_elixir": {
+      "id": "aurora_elixir",
+      "name": "오로라의 물약",
+      "family": "arcane",
+      "rare": false,
+      "liquid_ramp": "teal",
+      "liquid_color": "#3BA8A3",
+      "bottle_path": "art/mockups/f27-region-potions-v1/sprites/aurora_elixir_bottle.png",
+      "bottle_size": [
+        8,
+        12
+      ],
+      "body_silhouette_source": "art/mockups/f27-region-potions-v1/sprites/aurora_elixir_bottle.png",
+      "runtime_bottle_source": "art/mockups/f27-region-potions-v1/sprites/aurora_elixir_bottle.png",
+      "pot_frames": [
+        "art/mockups/f27-region-potions-v1/pots/aurora_elixir-0.png",
+        "art/mockups/f27-region-potions-v1/pots/aurora_elixir-1.png",
+        "art/mockups/f27-region-potions-v1/pots/aurora_elixir-2.png"
+      ],
+      "bottle": "res://assets/pixel_v1/potions/aurora_elixir.png",
+      "pots": [
+        "res://assets/pixel_v1/pots/aurora_elixir-0.png",
+        "res://assets/pixel_v1/pots/aurora_elixir-1.png",
+        "res://assets/pixel_v1/pots/aurora_elixir-2.png"
       ]
     }
   },
@@ -15160,6 +16512,70 @@
     "pots/sun_moon_elixir-2.png": {
       "source": "art/mockups/f26-region-potions-v1/pots/sun_moon_elixir-2.png",
       "sha256": "eee2a887d73caeb0b815aedc5e4304c322014914cd53f5b143d8483d15a974b2"
+    },
+    "potions/warmth.png": {
+      "source": "art/mockups/f27-region-potions-v1/sprites/warmth_bottle.png",
+      "sha256": "1235580bae535c40581159133757863dec18a4fdf573e710df0e8f4b38bd339d"
+    },
+    "pots/warmth-0.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/warmth-0.png",
+      "sha256": "be4e84148bb97d963057541daa4626162e028803270627d28149c585811adbb1"
+    },
+    "pots/warmth-1.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/warmth-1.png",
+      "sha256": "cd00fc6c27d226f2704495e4228ca8af574db75a38dbeb22c228fb20e1302c04"
+    },
+    "pots/warmth-2.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/warmth-2.png",
+      "sha256": "da0d7cf716ae01b386a7a3dadb7413e1faf738caa63d38a14ef4015c7f629808"
+    },
+    "potions/thin_ice.png": {
+      "source": "art/mockups/f27-region-potions-v1/sprites/thin_ice_bottle.png",
+      "sha256": "e95f83411b6070bf26c3eeae85faaa834ebee86cd5ce7de6fe681eedf9cd2730"
+    },
+    "pots/thin_ice-0.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/thin_ice-0.png",
+      "sha256": "c45c9b43a6641a1eca7645f3f60da1d8fad20d937ae9092f0aeb273901e70efb"
+    },
+    "pots/thin_ice-1.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/thin_ice-1.png",
+      "sha256": "ee55e6df0f1f0bb250eba3ce920824d2971e3e0bd7ab843b4c7d4a81d0ff7728"
+    },
+    "pots/thin_ice-2.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/thin_ice-2.png",
+      "sha256": "db5fad4c069a1f3adf3b254d4809ae7fbb53fd7e9e2ca5a29a28907013348827"
+    },
+    "potions/pine_wind.png": {
+      "source": "art/mockups/f27-region-potions-v1/sprites/pine_wind_bottle.png",
+      "sha256": "304150dccfb02b9902c3b718696f4edb106451a5d146bda92aafafbabde329f0"
+    },
+    "pots/pine_wind-0.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/pine_wind-0.png",
+      "sha256": "812b73e9d56c97fbfe5ef7b4b2edef14ebc3e856d5464d36fe79408c52536f2c"
+    },
+    "pots/pine_wind-1.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/pine_wind-1.png",
+      "sha256": "af3746ea07f1d31b6bfb0ecff2ac2c22f15dc7338709eb4a74e6243de1ca7fe6"
+    },
+    "pots/pine_wind-2.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/pine_wind-2.png",
+      "sha256": "f245fdf686c8e0c2072c65d013fc2a32de839276de06109d32458cb5dc1538a4"
+    },
+    "potions/aurora_elixir.png": {
+      "source": "art/mockups/f27-region-potions-v1/sprites/aurora_elixir_bottle.png",
+      "sha256": "17373e717cb718338789a7d9a70ee37eba78939b4d3cea76a25efe9d24a99834"
+    },
+    "pots/aurora_elixir-0.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/aurora_elixir-0.png",
+      "sha256": "8d0189da48e0858f1f1c489ef0b871b695b3eb44b2ae907d0a57c14ddbd5b335"
+    },
+    "pots/aurora_elixir-1.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/aurora_elixir-1.png",
+      "sha256": "021d19fd7f61f5ef7b52b9a23967c5e29432c0575eacb866528b4517da01aea0"
+    },
+    "pots/aurora_elixir-2.png": {
+      "source": "art/mockups/f27-region-potions-v1/pots/aurora_elixir-2.png",
+      "sha256": "71ec33c39f1b8cfca96c84bde1594825231ad060e2872dd03145dd2e6a785f28"
     }
   },
   "props": {

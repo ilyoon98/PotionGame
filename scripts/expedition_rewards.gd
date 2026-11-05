@@ -11,6 +11,8 @@ const POOLS := {
 	"star_garden": {"main": "star_seed", "min": 5, "max": 7, "extra": ["moonflower", "ash_sage", "crystal_herb"]},
 	# F26 (approved 2026-11-05): dawn bloom 6-8 guaranteed, extras weighted 60/30/10. No special recipe.
 	"dawn_lighthouse": {"main": "dawn_bloom", "min": 6, "max": 8, "extra": ["star_seed", "moonflower", "dewgrass"]},
+	# F27 (approved 2026-11-05): frost flower 7-9 guaranteed, extras weighted 60/30/10. No special recipe.
+	"aurora_snowfield": {"main": "frost_flower", "min": 7, "max": 9, "extra": ["dawn_bloom", "star_seed", "moonflower"]},
 }
 const RARE := {
 	"forest_edge": {"id": "rare_forest_breath", "name": "숲숨결 물약"},

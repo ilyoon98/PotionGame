@@ -17,9 +17,9 @@ static func materials(state: RefCounted) -> Dictionary:
 	return result
 
 
-## F26 rows (content_set) are a post-growth expansion. The completed fixtures below
-## stay the pre-F26 "original growth complete" store; tools/verify_f26_region_potions.gd
-## covers the new region, material and recipes on top of it.
+## F26/F27 rows (content_set) are post-growth expansions. The completed fixtures below
+## stay the pre-F26 "original growth complete" store; tools/verify_f26_region_potions.gd and
+## tools/verify_f27_region_potions.gd cover the new regions, materials and recipes on top of it.
 static func original(row: Dictionary) -> bool:
 	return not row.has("content_set")
 
@@ -86,8 +86,8 @@ static func completed(seed_value: int = 73129) -> RefCounted:
 
 
 ## UI fixtures that mean "nothing left to buy except the feature under test" also finish
-## F26: the dawn lighthouse opened and surveyed, its four recipes owned and dawn bloom
-## planted and stocked. Otherwise the region (recommendation score 100) and its recipes
+## every content_set row (F26 dawn lighthouse, F27 aurora snowfield): regions opened and
+## surveyed, their recipes owned and dawn bloom/frost flower planted and stocked. Otherwise the region (recommendation score 100) and its recipes
 ## (90) are the next real purchases for a late store, as they are for a real late save.
 static func complete_post_growth(state: RefCounted) -> void:
 	var p = state.progression

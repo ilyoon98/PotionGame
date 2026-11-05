@@ -181,7 +181,15 @@
     "growth:sales_assistant": "res://assets/ui_pixel_v2/icons/sales_assistant.png",
     "growth:cultivation_assistant": "res://assets/ui_pixel_v2/icons/cultivation_assistant.png",
     "growth:brewing_assistant": "res://assets/ui_pixel_v2/icons/brewing_assistant.png",
-    "growth:expedition_guide": "res://assets/ui_pixel_v2/icons/expedition_guide.png"
+    "growth:expedition_guide": "res://assets/ui_pixel_v2/icons/expedition_guide.png",
+    "warmth": "res://assets/ui_pixel_v2/icons/warmth.png",
+    "recipe:warmth": "res://assets/ui_pixel_v2/icons/warmth.png",
+    "thin_ice": "res://assets/ui_pixel_v2/icons/thin_ice.png",
+    "recipe:thin_ice": "res://assets/ui_pixel_v2/icons/thin_ice.png",
+    "pine_wind": "res://assets/ui_pixel_v2/icons/pine_wind.png",
+    "recipe:pine_wind": "res://assets/ui_pixel_v2/icons/pine_wind.png",
+    "aurora_elixir": "res://assets/ui_pixel_v2/icons/aurora_elixir.png",
+    "recipe:aurora_elixir": "res://assets/ui_pixel_v2/icons/aurora_elixir.png"
   },
   "equipment": {
     "cauldron": [

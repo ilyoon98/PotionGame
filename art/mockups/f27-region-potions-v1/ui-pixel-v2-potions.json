@@ -1,0 +1,302 @@
+{
+  "status": "passed",
+  "operation": "exact approved bottle pixels at common 2x on transparent 32x32 canvas",
+  "source_catalog": "assets/pixel_v1/catalog.json",
+  "validator": "tools/process_pixel_art.py:validate",
+  "icon_count": 4,
+  "recipe_identity": "same potion-id icon; original recipe glyph files are unchanged",
+  "outline_note": "Approved source bottles expose brown cork on their top boundary. These exact existing pixels are retained; no claim of zero inherited outline violations is made.",
+  "max_color_count": 5,
+  "all_bottles_rgba_exact_2x": true,
+  "all_source_hashes_unchanged": true,
+  "icons": {
+    "warmth": {
+      "path": "res://assets/ui_pixel_v2/icons/warmth.png",
+      "source": "res://assets/pixel_v1/potions/warmth.png",
+      "source_sha256": "1235580bae535c40581159133757863dec18a4fdf573e710df0e8f4b38bd339d",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 64,
+        "colors": [
+          "#241C32",
+          "#916047",
+          "#C99463",
+          "#F6D1AC",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 256,
+      "colors": [
+        "#241C32",
+        "#916047",
+        "#C99463",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "636e5cedae04926a699d3cb28a9b25d6039959cb843dd0a59b1a173b7ea56261"
+    },
+    "thin_ice": {
+      "path": "res://assets/ui_pixel_v2/icons/thin_ice.png",
+      "source": "res://assets/pixel_v1/potions/thin_ice.png",
+      "source_sha256": "e95f83411b6070bf26c3eeae85faaa834ebee86cd5ce7de6fe681eedf9cd2730",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 56,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#916047",
+          "#9BE2CF",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 224,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#9BE2CF",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "09b52904f20878500668ec546ba4ec51ae15a4c5c4ab1030783e2ae098de5b3f"
+    },
+    "pine_wind": {
+      "path": "res://assets/ui_pixel_v2/icons/pine_wind.png",
+      "source": "res://assets/pixel_v1/potions/pine_wind.png",
+      "source_sha256": "304150dccfb02b9902c3b718696f4edb106451a5d146bda92aafafbabde329f0",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 52,
+        "colors": [
+          "#241C32",
+          "#3D544D",
+          "#916047",
+          "#B5C77D",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 208,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "f4b53c600d0adb6ea762ce09760462d6e48ee50ece5510d297b5bfa05b9cd008"
+    },
+    "aurora_elixir": {
+      "path": "res://assets/ui_pixel_v2/icons/aurora_elixir.png",
+      "source": "res://assets/pixel_v1/potions/aurora_elixir.png",
+      "source_sha256": "17373e717cb718338789a7d9a70ee37eba78939b4d3cea76a25efe9d24a99834",
+      "source_size": [
+        8,
+        12
+      ],
+      "source_validation": {
+        "passed": true,
+        "size": [
+          8,
+          12
+        ],
+        "opaque_pixels": 60,
+        "colors": [
+          "#241C32",
+          "#3BA8A3",
+          "#916047",
+          "#B5C77D",
+          "#FFF0BC"
+        ],
+        "color_count": 5,
+        "off_palette_colors": 0,
+        "partial_alpha_pixels": 0,
+        "problems": []
+      },
+      "integer_scale": 2,
+      "offset": [
+        8,
+        4
+      ],
+      "bottle_rgba_exact_2x": true,
+      "source_unchanged": true,
+      "passed": true,
+      "size": [
+        32,
+        32
+      ],
+      "opaque_pixels": 240,
+      "colors": [
+        "#241C32",
+        "#3BA8A3",
+        "#916047",
+        "#B5C77D",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "outline_boundary_violations": 4,
+      "inherited_source_boundary_exceptions": [
+        {
+          "position": [
+            3,
+            1
+          ],
+          "color": "#916047"
+        },
+        {
+          "position": [
+            4,
+            1
+          ],
+          "color": "#916047"
+        }
+      ],
+      "new_outline_boundary_violations": 0,
+      "png_rgba_roundtrip_exact": true,
+      "output_sha256": "84dbb0b896cef432c551aef414fefbc8c2caecc36b727d79e06edba93972a1eb"
+    }
+  }
+}

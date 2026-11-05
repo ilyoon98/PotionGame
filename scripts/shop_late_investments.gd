@@ -19,7 +19,7 @@ func growth_view(state: RefCounted) -> Dictionary:
 	var missing: Array[String] = []
 	var owned := 0
 	for row in Content.DATA.potions:
-		# F26 post-growth rows (content_set) never stand in for an original recipe.
+		# F26/F27 post-growth rows (content_set) never stand in for an original recipe.
 		if row.has("content_set"): continue
 		if row.id in ["health", "mana"] or p.owned.has(row.id): owned += 1
 	if owned < 32: missing.append("일반 레시피 32종 보유 필요 · %d/32" % owned)

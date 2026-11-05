@@ -22,7 +22,7 @@ func run() -> void:
 	art.size = Vector2(540,249)
 	root.add_child(art)
 	art.set_process(false)
-	assert(Catalog.DATA.potions.size() == State.Content.RECIPES.size() + 2) # 36 + 4 F26 rows
+	assert(Catalog.DATA.potions.size() == State.Content.RECIPES.size() + 2) # 36 + 4 F26 + 4 F27 rows
 	assert(art.customer_sheets.size() == 4 and not art.customer_sheets.has("knight"))
 	var original := State.new()
 	var before := JSON.stringify(original.to_data())
