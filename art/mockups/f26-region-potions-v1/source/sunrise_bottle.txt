@@ -1,0 +1,12 @@
+...##...
+...cc...
+..#cc#..
+..#hh#..
+..#hh#..
+..#LL#..
+.#hLLL#.
+#hLLLLD#
+#LLLLDD#
+#LLLDDD#
+#DDDDDD#
+########

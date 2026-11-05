@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "date": "2026-11-05",
+  "review": "art/mockups/f26-region-potions-v1/review.html",
+  "plan": "docs/새-원정-지역과-물약-F26-기획안.md",
+  "runtime_integrated": false,
+  "scope": {
+    "sunrise_bottle": "해돋이 물약 진열 병 8×12 (후보)",
+    "beacon_bottle": "등대불 물약 진열 병 8×16 (후보)",
+    "sea_spray_bottle": "물보라 물약 진열 병 8×12 (후보)",
+    "sun_moon_elixir_bottle": "일월의 물약 진열 병 8×12 (후보)",
+    "sunrise_pot": "해돋이 물약 솥 액체 #F4AC68 · 승인 솥 프레임 3장의 액체 마스크만 재색 (후보)",
+    "beacon_pot": "등대불 물약 솥 액체 #A56A3D · 승인 솥 프레임 3장의 액체 마스크만 재색 (후보)",
+    "sea_spray_pot": "물보라 물약 솥 액체 #24566A · 승인 솥 프레임 3장의 액체 마스크만 재색 (후보)",
+    "sun_moon_elixir_pot": "일월의 물약 솥 액체 #9D4359 · 승인 솥 프레임 3장의 액체 마스크만 재색 (후보)",
+    "sunrise_icon": "해돋이 물약 물약 아이콘 32×40 (후보)",
+    "beacon_icon": "등대불 물약 물약 아이콘 32×40 (후보)",
+    "sea_spray_icon": "물보라 물약 물약 아이콘 32×40 (후보)",
+    "sun_moon_elixir_icon": "일월의 물약 물약 아이콘 32×40 (후보)",
+    "sunrise_recipe": "해돋이 물약 레시피 아이콘 32×40 (후보)",
+    "beacon_recipe": "등대불 물약 레시피 아이콘 32×40 (후보)",
+    "sea_spray_recipe": "물보라 물약 레시피 아이콘 32×40 (후보)",
+    "sun_moon_elixir_recipe": "일월의 물약 레시피 아이콘 32×40 (후보)",
+    "dawn_bloom_icon": "여명초 재료 아이콘 32×40 (후보)",
+    "dawn_lighthouse_icon": "새벽 등대 지역 아이콘 32×40 (후보)"
+  },
+  "not_in_scope": [
+    "재배 화분 성장 그림 64×80",
+    "원정 카드 큰 그림",
+    "게임 연결(assets/·catalog·scripts·data)"
+  ],
+  "pending_decisions": [
+    "이름 6개",
+    "병 모양·액체색 4종",
+    "32×40 아이콘 질감(24색 규칙 대 기존 생성 질감)"
+  ],
+  "publish_after_approval": "추가 전용 게시 스크립트로 assets/pixel_v1/potions·pots와 catalog potions 키만 더한다(기존 자산 재생성 금지)."
+}

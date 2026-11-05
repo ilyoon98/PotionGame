@@ -1,0 +1,501 @@
+{
+ "baseline": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "net_per_hour": 658829,
+  "retail_per_hour": 256428,
+  "contract_per_hour": 409915,
+  "aging_per_hour": 28964,
+  "material_cost_per_hour": 1625,
+  "fees_per_hour": 5888,
+  "sold_per_hour": 2400,
+  "new_sold_6h": {
+   "beacon": 0,
+   "sea_spray": 0,
+   "sun_moon_elixir": 0,
+   "sunrise": 0
+  },
+  "hourly_net": [
+   639272,
+   624446,
+   686770,
+   718520,
+   633365,
+   650602
+  ],
+  "net_per_hour_by_seed": [
+   653588,
+   662136,
+   660764
+  ],
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "region_rewards_6h_mean": {},
+  "gain_vs_baseline_per_hour": 0,
+  "gain_pct": 0.0
+ },
+ "complete": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "net_per_hour": 751561,
+  "retail_per_hour": 297680,
+  "contract_per_hour": 462659,
+  "aging_per_hour": 30578,
+  "material_cost_per_hour": 1491,
+  "fees_per_hour": 7286,
+  "sold_per_hour": 2306,
+  "new_sold_6h": {
+   "beacon": 323,
+   "sea_spray": 472,
+   "sun_moon_elixir": 109,
+   "sunrise": 400
+  },
+  "hourly_net": [
+   736279,
+   722064,
+   761707,
+   832092,
+   730094,
+   727132
+  ],
+  "net_per_hour_by_seed": [
+   745041,
+   744693,
+   764950
+  ],
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "region_rewards_6h_mean": {
+   "moonflower": 30,
+   "dewgrass": 11,
+   "dawn_bloom": 385,
+   "star_seed": 57
+  },
+  "gain_vs_baseline_per_hour": 92732,
+  "gain_pct": 14.1
+ },
+ "price085": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "net_per_hour": 733316,
+  "retail_per_hour": 285035,
+  "contract_per_hour": 457038,
+  "aging_per_hour": 26785,
+  "material_cost_per_hour": 1477,
+  "fees_per_hour": 7280,
+  "sold_per_hour": 2306,
+  "new_sold_6h": {
+   "beacon": 313,
+   "sea_spray": 490,
+   "sun_moon_elixir": 119,
+   "sunrise": 414
+  },
+  "hourly_net": [
+   709651,
+   699482,
+   749893,
+   780160,
+   717556,
+   743155
+  ],
+  "net_per_hour_by_seed": [
+   734626,
+   734676,
+   730646
+  ],
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "region_rewards_6h_mean": {
+   "moonflower": 30,
+   "dewgrass": 11,
+   "dawn_bloom": 385,
+   "star_seed": 57
+  },
+  "gain_vs_baseline_per_hour": 74487,
+  "gain_pct": 11.3
+ },
+ "price115": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "net_per_hour": 765639,
+  "retail_per_hour": 306897,
+  "contract_per_hour": 467474,
+  "aging_per_hour": 28813,
+  "material_cost_per_hour": 1453,
+  "fees_per_hour": 7279,
+  "sold_per_hour": 2301,
+  "new_sold_6h": {
+   "beacon": 314,
+   "sea_spray": 478,
+   "sun_moon_elixir": 112,
+   "sunrise": 395
+  },
+  "hourly_net": [
+   751752,
+   728625,
+   761654,
+   837509,
+   740010,
+   774285
+  ],
+  "net_per_hour_by_seed": [
+   765743,
+   771512,
+   759663
+  ],
+  "events_by_seed": {
+   "19337": [],
+   "73129": [],
+   "9973": []
+  },
+  "spent_on_content": 0,
+  "region_rewards_6h_mean": {
+   "moonflower": 30,
+   "dewgrass": 11,
+   "dawn_bloom": 385,
+   "star_seed": 57
+  },
+  "gain_vs_baseline_per_hour": 106810,
+  "gain_pct": 16.2
+ },
+ "progress-active": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "net_per_hour": 748982,
+  "retail_per_hour": 294690,
+  "contract_per_hour": 463068,
+  "aging_per_hour": 28380,
+  "material_cost_per_hour": 1494,
+  "fees_per_hour": 7282,
+  "sold_per_hour": 2303,
+  "new_sold_6h": {
+   "beacon": 321,
+   "sea_spray": 433,
+   "sun_moon_elixir": 82,
+   "sunrise": 429
+  },
+  "hourly_net": [
+   719946,
+   708267,
+   769767,
+   811190,
+   718540,
+   766178
+  ],
+  "net_per_hour_by_seed": [
+   744662,
+   748036,
+   754248
+  ],
+  "events_by_seed": {
+   "19337": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 400000
+    },
+    {
+     "minute": 10.0,
+     "event": "recipe",
+     "id": "sunrise",
+     "cost": 250000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "beacon",
+     "cost": 350000
+    },
+    {
+     "minute": 35.0,
+     "event": "recipe",
+     "id": "sea_spray",
+     "cost": 450000
+    },
+    {
+     "minute": 52.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 55.0,
+     "event": "recipe",
+     "id": "sun_moon_elixir",
+     "cost": 800000
+    }
+   ],
+   "73129": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 400000
+    },
+    {
+     "minute": 10.0,
+     "event": "recipe",
+     "id": "sunrise",
+     "cost": 250000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "beacon",
+     "cost": 350000
+    },
+    {
+     "minute": 35.0,
+     "event": "recipe",
+     "id": "sea_spray",
+     "cost": 450000
+    },
+    {
+     "minute": 52.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 55.0,
+     "event": "recipe",
+     "id": "sun_moon_elixir",
+     "cost": 800000
+    }
+   ],
+   "9973": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 400000
+    },
+    {
+     "minute": 10.0,
+     "event": "recipe",
+     "id": "sunrise",
+     "cost": 250000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "beacon",
+     "cost": 350000
+    },
+    {
+     "minute": 35.0,
+     "event": "recipe",
+     "id": "sea_spray",
+     "cost": 450000
+    },
+    {
+     "minute": 52.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 55.0,
+     "event": "recipe",
+     "id": "sun_moon_elixir",
+     "cost": 800000
+    }
+   ]
+  },
+  "spent_on_content": 2250000,
+  "region_rewards_6h_mean": {
+   "moonflower": 30,
+   "dewgrass": 11,
+   "dawn_bloom": 385,
+   "star_seed": 57
+  },
+  "gain_vs_baseline_per_hour": 90153,
+  "gain_pct": 13.7
+ },
+ "progress-poor20m": {
+  "seeds": [
+   19337,
+   73129,
+   9973
+  ],
+  "net_per_hour": 747594,
+  "retail_per_hour": 292878,
+  "contract_per_hour": 463487,
+  "aging_per_hour": 28586,
+  "material_cost_per_hour": 1490,
+  "fees_per_hour": 7281,
+  "sold_per_hour": 2314,
+  "new_sold_6h": {
+   "beacon": 300,
+   "sea_spray": 427,
+   "sun_moon_elixir": 94,
+   "sunrise": 388
+  },
+  "hourly_net": [
+   699269,
+   711945,
+   769476,
+   820281,
+   721074,
+   763522
+  ],
+  "net_per_hour_by_seed": [
+   745209,
+   751990,
+   745585
+  ],
+  "events_by_seed": {
+   "19337": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 400000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "sunrise",
+     "cost": 250000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "beacon",
+     "cost": 350000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "sea_spray",
+     "cost": 450000
+    },
+    {
+     "minute": 52.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 60.0,
+     "event": "recipe",
+     "id": "sun_moon_elixir",
+     "cost": 800000
+    }
+   ],
+   "73129": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 400000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "sunrise",
+     "cost": 250000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "beacon",
+     "cost": 350000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "sea_spray",
+     "cost": 450000
+    },
+    {
+     "minute": 52.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 60.0,
+     "event": "recipe",
+     "id": "sun_moon_elixir",
+     "cost": 800000
+    }
+   ],
+   "9973": [
+    {
+     "minute": 0.0,
+     "event": "region_open",
+     "id": "",
+     "cost": 400000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "sunrise",
+     "cost": 250000
+    },
+    {
+     "minute": 20.0,
+     "event": "recipe",
+     "id": "beacon",
+     "cost": 350000
+    },
+    {
+     "minute": 40.0,
+     "event": "recipe",
+     "id": "sea_spray",
+     "cost": 450000
+    },
+    {
+     "minute": 52.5,
+     "event": "survey_complete",
+     "id": "",
+     "cost": 0
+    },
+    {
+     "minute": 60.0,
+     "event": "recipe",
+     "id": "sun_moon_elixir",
+     "cost": 800000
+    }
+   ]
+  },
+  "spent_on_content": 2250000,
+  "region_rewards_6h_mean": {
+   "moonflower": 30,
+   "dewgrass": 11,
+   "dawn_bloom": 385,
+   "star_seed": 57
+  },
+  "gain_vs_baseline_per_hour": 88765,
+  "gain_pct": 13.5
+ }
+}

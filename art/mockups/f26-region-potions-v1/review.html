@@ -1,0 +1,133 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>새벽 등대 물약 후보</title><style>
+@font-face{font-family:Pretendard;src:url('../../../assets/fonts/pretendard/Pretendard-Regular.otf')}
+:root{--bg:#241c32;--panel:#30263f;--line:#827589;--text:#fff0bc;--muted:#c38eb5;--accent:#e9b95f;--ok:#b5c77d;--bad:#de7356}
+*{box-sizing:border-box}html,body{background:var(--bg)}body{margin:0;color:var(--text);font:15px/1.55 Pretendard,system-ui,sans-serif}
+main{max-width:1210px;margin:auto;padding:18px 16px 48px}h1{font-size:23px;margin:0 0 6px}h2{font-size:17px;margin:28px 0 8px}h3{font-size:15px;margin:0}h3 small{color:var(--muted);font-weight:normal}
+p{margin:6px 0 10px}.muted{color:var(--muted)}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.note{border-left:3px solid #718c59;padding:8px 12px;background:var(--panel);margin:10px 0}.warn{border-left-color:var(--accent)}
+.check{background-color:#4a3c52;background-image:linear-gradient(45deg,#3f3347 25%,transparent 25%),linear-gradient(-45deg,#3f3347 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#3f3347 75%),linear-gradient(-45deg,transparent 75%,#3f3347 75%);background-size:12px 12px;background-position:0 0,0 6px,6px -6px,-6px 0}
+img{image-rendering:pixelated;image-rendering:crisp-edges;max-width:none;display:block}img.x1{zoom:1}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(520px,1fr));gap:12px}@media(max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid #4a3c52;border-radius:6px;padding:12px;overflow-x:auto}
+.sizes{display:flex;align-items:flex-end;gap:10px;margin:10px 0 6px;flex-wrap:wrap}.sizes figure{margin:0;text-align:center}.sizes .check{display:flex;align-items:center;justify-content:center;padding:4px}
+.sizes .sep{width:1px;align-self:stretch;background:#4a3c52}figcaption{font-size:11px;color:var(--muted);margin-top:3px}
+.desc{font-size:13px;margin:6px 0}.sw{display:flex;flex-wrap:wrap;gap:8px;font-size:11px;color:var(--muted)}.sw span{display:flex;align-items:center;gap:3px}
+.sw i{width:12px;height:12px;display:inline-block;border:1px solid #000;background:var(--c)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(70px,1fr));gap:8px}.grid figure{margin:0;text-align:center}
+.grid .bottle{height:64px;display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px}.grid figure.new figcaption{color:var(--accent);font-weight:bold}.grid figure.new .bottle{outline:2px solid var(--accent)}
+.row{display:flex;flex-wrap:wrap;gap:14px}.row figure{margin:0;text-align:center}.row .check{padding:6px}
+table{border-collapse:collapse;font-size:13px;width:100%}td,th{border-bottom:1px solid #4a3c52;padding:5px 6px;text-align:left;vertical-align:top}.wrap{overflow-x:auto}
+</style></head><body><main>
+<h1>새 원정 지역 「새벽 등대」 · 새 물약 4종 아트 후보 v1</h1>
+<p class="muted">2026-11-05 · 상태 <b>후보(candidate)</b> · 게임 미연결 · 승인 전. 기획은 <code>docs/새-원정-지역과-물약-F26-기획안.md</code>.</p>
+<div class="note">모든 그림은 손으로 작성한 문자 픽셀 지도(<code>source/*.txt</code>)를 고정 후처리 <code>tools/process_pixel_art.py</code>에 통과시킨 결과다.
+승인된 24색·물체당 5색 이하·1픽셀 외곽선·반투명 0·공통 3배. 체크무늬는 CSS 배경이며 그림에 구워 넣지 않았다.</div>
+<div class="note warn">솥 액체색: 솥 몸체(#86548E)·돌 테(#827589)·문양(#E9B95F)과 같은 색을 쓰지 않는다. 기존 36종이 쓰지 않는 액체색만 골랐다
+(#F4AC68 귤빛·#A56A3D 호박·#24566A 깊은 청록·#9D4359 진홍). 비교에는 main 브랜치의 F25 재색(은신·야행·비전 증폭·그림자 엘릭서)을 표시용으로 다시 적용했다(표시 ·F25).</div>
+
+<h2>1. 새 물약 4종 · 병 / 솥 / 아이콘 / 레시피</h2>
+<div class="cards">
+<div class="card"><h3>해돋이 물약 <small>· 활력 계열 · 여행자 선호</small></h3>
+<div class="sizes">
+ <figure><div class="check"><img src="sprites/sunrise_bottle-3x.png" class="" alt=""></div><figcaption>병 8×12 ×3</figcaption></figure>
+ <figure><div class="check"><img src="sprites/sunrise_bottle.png" class="x1" alt=""></div><figcaption>원본 1배</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="pots/sunrise-0-3x.png" class="" alt=""></div><figcaption>솥 0</figcaption></figure><figure><div class="check"><img src="pots/sunrise-1-3x.png" class="" alt=""></div><figcaption>솥 1</figcaption></figure><figure><div class="check"><img src="pots/sunrise-2-3x.png" class="" alt=""></div><figcaption>솥 2</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="sprites/sunrise_icon-3x.png" class="" alt=""></div><figcaption>물약 아이콘 32×40</figcaption></figure>
+ <figure><div class="check"><img src="sprites/sunrise_recipe-3x.png" class="" alt=""></div><figcaption>레시피 아이콘 32×40</figcaption></figure>
+</div>
+<p class="desc"><b>병</b> 평평한 수평선 바닥 위의 둥근 돔(떠오르는 해). 바닥 행이 병 폭 전체인 유일한 8×12 병.<br><b>아이콘</b> 같은 돔 병을 32×40으로 다시 그림. 산호색 반원 해와 빛살, 수평선.<br><b>레시피</b> 두루마리 원형 인장 안에 귤빛 해와 빛살, 크림 수평선.</p>
+<div class="sw"><span><i style="--c:#F4AC68"></i>#F4AC68</span><span><i style="--c:#DE7356"></i>#DE7356</span><span>· 솥 액체 <b>#F4AC68</b> (fire 램프)</span></div>
+<p class="desc">가장 가까운 기존 액체: fortune #E9B95F (ΔE 13.7) ·
+솥 몸체 #86548E와 ΔE 77.1 · 같은 병 색 조합을 쓰는 기존 물약 0종 ·
+같은 실루엣 기존 병 0종 · 검사 <b class="ok">통과</b></p>
+</div>
+<div class="card"><h3>등대불 물약 <small>· 기교 계열 · 고양이 도적 선호</small></h3>
+<div class="sizes">
+ <figure><div class="check"><img src="sprites/beacon_bottle-3x.png" class="" alt=""></div><figcaption>병 8×16 ×3</figcaption></figure>
+ <figure><div class="check"><img src="sprites/beacon_bottle.png" class="x1" alt=""></div><figcaption>원본 1배</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="pots/beacon-0-3x.png" class="" alt=""></div><figcaption>솥 0</figcaption></figure><figure><div class="check"><img src="pots/beacon-1-3x.png" class="" alt=""></div><figcaption>솥 1</figcaption></figure><figure><div class="check"><img src="pots/beacon-2-3x.png" class="" alt=""></div><figcaption>솥 2</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="sprites/beacon_icon-3x.png" class="" alt=""></div><figcaption>물약 아이콘 32×40</figcaption></figure>
+ <figure><div class="check"><img src="sprites/beacon_recipe-3x.png" class="" alt=""></div><figcaption>레시피 아이콘 32×40</figcaption></figure>
+</div>
+<p class="desc"><b>병</b> 4→6→8칸으로 넓어지는 등대 탑 모양 긴 병. 꼭대기 버터색 등불, 탑에 버터색 띠 2줄.<br><b>아이콘</b> 코르크색 뾰족 지붕(마개)·등불 방·버터색 띠 3줄의 등대 탑.<br><b>레시피</b> 호박색 인장 안에 작은 등대(등불·띠).</p>
+<div class="sw"><span><i style="--c:#E9B95F"></i>#E9B95F</span><span><i style="--c:#A56A3D"></i>#A56A3D</span><span>· 솥 액체 <b>#A56A3D</b> (gold 램프)</span></div>
+<p class="desc">가장 가까운 기존 액체: vigor #DE7356 (ΔE 22.5) ·
+솥 몸체 #86548E와 ΔE 59.9 · 같은 병 색 조합을 쓰는 기존 물약 1종 ·
+같은 실루엣 기존 병 0종 · 검사 <b class="ok">통과</b></p>
+</div>
+<div class="card"><h3>물보라 물약 <small>· 자연 계열 · 엘프 선호</small></h3>
+<div class="sizes">
+ <figure><div class="check"><img src="sprites/sea_spray_bottle-3x.png" class="" alt=""></div><figcaption>병 8×12 ×3</figcaption></figure>
+ <figure><div class="check"><img src="sprites/sea_spray_bottle.png" class="x1" alt=""></div><figcaption>원본 1배</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="pots/sea_spray-0-3x.png" class="" alt=""></div><figcaption>솥 0</figcaption></figure><figure><div class="check"><img src="pots/sea_spray-1-3x.png" class="" alt=""></div><figcaption>솥 1</figcaption></figure><figure><div class="check"><img src="pots/sea_spray-2-3x.png" class="" alt=""></div><figcaption>솥 2</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="sprites/sea_spray_icon-3x.png" class="" alt=""></div><figcaption>물약 아이콘 32×40</figcaption></figure>
+ <figure><div class="check"><img src="sprites/sea_spray_recipe-3x.png" class="" alt=""></div><figcaption>레시피 아이콘 32×40</figcaption></figure>
+</div>
+<p class="desc"><b>병</b> 어깨가 넓고 아래로 뾰족해지는 거꾸로 된 물방울. 윗줄 전체가 민트 물거품, 몸통은 깊은 청록.<br><b>아이콘</b> 같은 거꾸로 물방울 병, 위쪽 물거품 띠와 크림색 소용돌이 파도 문양.<br><b>레시피</b> 깊은 청록 인장 안에 민트 소용돌이 파도와 크림 물마루.</p>
+<div class="sw"><span><i style="--c:#9BE2CF"></i>#9BE2CF</span><span><i style="--c:#24566A"></i>#24566A</span><span>· 솥 액체 <b>#24566A</b> (teal 램프)</span></div>
+<p class="desc">가장 가까운 기존 액체: ward #827589 (ΔE 26.4) ·
+솥 몸체 #86548E와 ΔE 42.5 · 같은 병 색 조합을 쓰는 기존 물약 4종 ·
+같은 실루엣 기존 병 0종 · 검사 <b class="ok">통과</b></p>
+</div>
+<div class="card"><h3>일월의 물약 <small>· 비술 계열 · 여마법사 선호</small></h3>
+<div class="sizes">
+ <figure><div class="check"><img src="sprites/sun_moon_elixir_bottle-3x.png" class="" alt=""></div><figcaption>병 8×12 ×3</figcaption></figure>
+ <figure><div class="check"><img src="sprites/sun_moon_elixir_bottle.png" class="x1" alt=""></div><figcaption>원본 1배</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="pots/sun_moon_elixir-0-3x.png" class="" alt=""></div><figcaption>솥 0</figcaption></figure><figure><div class="check"><img src="pots/sun_moon_elixir-1-3x.png" class="" alt=""></div><figcaption>솥 1</figcaption></figure><figure><div class="check"><img src="pots/sun_moon_elixir-2-3x.png" class="" alt=""></div><figcaption>솥 2</figcaption></figure>
+ <div class="sep"></div>
+ <figure><div class="check"><img src="sprites/sun_moon_elixir_icon-3x.png" class="" alt=""></div><figcaption>물약 아이콘 32×40</figcaption></figure>
+ <figure><div class="check"><img src="sprites/sun_moon_elixir_recipe-3x.png" class="" alt=""></div><figcaption>레시피 아이콘 32×40</figcaption></figure>
+</div>
+<p class="desc"><b>병</b> 짧은 목·둥근 몸통·가는 대·받침이 있는 잔 모양 병. 진홍 액체 안 왼쪽 위 귤빛 해 2×2.<br><b>아이콘</b> 받침 달린 둥근 구슬 병. 진홍 액체 안에 귤빛 해와 크림색 초승달.<br><b>레시피</b> 진홍 인장 안에 귤빛 해와 크림 초승달.</p>
+<div class="sw"><span><i style="--c:#F4AC68"></i>#F4AC68</span><span><i style="--c:#9D4359"></i>#9D4359</span><span>· 솥 액체 <b>#9D4359</b> (fire 램프)</span></div>
+<p class="desc">가장 가까운 기존 액체: moon #C38EB5 (ΔE 33.0) ·
+솥 몸체 #86548E와 ΔE 30.9 · 같은 병 색 조합을 쓰는 기존 물약 0종 ·
+같은 실루엣 기존 병 0종 · 검사 <b class="ok">통과</b></p>
+</div></div>
+
+<h2>2. 기존 36종 진열 병과 나란히 (★ 새 병, 모두 ×3)</h2>
+<div class="grid"><figure class=""><div class="check bottle"><img src="compare/bottles/health-3x.png" class="" alt=""></div><figcaption>체력</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/mana-3x.png" class="" alt=""></div><figcaption>마나</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/moon-3x.png" class="" alt=""></div><figcaption>달빛</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/purify-3x.png" class="" alt=""></div><figcaption>정화</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/agility-3x.png" class="" alt=""></div><figcaption>민첩</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/vigor-3x.png" class="" alt=""></div><figcaption>활력</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/antidote-3x.png" class="" alt=""></div><figcaption>해독</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/fortune-3x.png" class="" alt=""></div><figcaption>행운</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/focus-3x.png" class="" alt=""></div><figcaption>집중</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/restoration-3x.png" class="" alt=""></div><figcaption>회복</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/growth-3x.png" class="" alt=""></div><figcaption>생장</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/clarity-3x.png" class="" alt=""></div><figcaption>선명</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/ward-3x.png" class="" alt=""></div><figcaption>수호</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/spirit-3x.png" class="" alt=""></div><figcaption>정령</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/arcane_amplification-3x.png" class="" alt=""></div><figcaption>마력 증폭 ·F25</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/iron_skin-3x.png" class="" alt=""></div><figcaption>강철 피부</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/stealth-3x.png" class="" alt=""></div><figcaption>은신 ·F25</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/poison_resistance-3x.png" class="" alt=""></div><figcaption>독 저항</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/illusion-3x.png" class="" alt=""></div><figcaption>환영</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/soul_purification-3x.png" class="" alt=""></div><figcaption>영혼 정화</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/wisdom-3x.png" class="" alt=""></div><figcaption>지혜</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/reflection-3x.png" class="" alt=""></div><figcaption>반사</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/haste-3x.png" class="" alt=""></div><figcaption>신속</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/nightwalk-3x.png" class="" alt=""></div><figcaption>야행 ·F25</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/moonradiance-3x.png" class="" alt=""></div><figcaption>월광</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/regeneration-3x.png" class="" alt=""></div><figcaption>재생</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/starlight-3x.png" class="" alt=""></div><figcaption>별빛</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/wish-3x.png" class="" alt=""></div><figcaption>소원</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/eternity-3x.png" class="" alt=""></div><figcaption>영원</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/sage_elixir-3x.png" class="" alt=""></div><figcaption>현자의 물약</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/worldtree_elixir-3x.png" class="" alt=""></div><figcaption>세계수의 물약</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/shadow_elixir-3x.png" class="" alt=""></div><figcaption>그림자의 물약 ·F25</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/rare_forest_breath-3x.png" class="" alt=""></div><figcaption>숲숨결 물약</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/rare_mist_veil-3x.png" class="" alt=""></div><figcaption>물안개 물약</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/rare_lunar_seal-3x.png" class="" alt=""></div><figcaption>월광봉인 물약</figcaption></figure><figure class=""><div class="check bottle"><img src="compare/bottles/rare_nebula_distillate-3x.png" class="" alt=""></div><figcaption>성운 증류액</figcaption></figure><figure class="new"><div class="check bottle"><img src="compare/bottles/sunrise-3x.png" class="" alt=""></div><figcaption>해돋이 ★</figcaption></figure><figure class="new"><div class="check bottle"><img src="compare/bottles/beacon-3x.png" class="" alt=""></div><figcaption>등대불 ★</figcaption></figure><figure class="new"><div class="check bottle"><img src="compare/bottles/sea_spray-3x.png" class="" alt=""></div><figcaption>물보라 ★</figcaption></figure><figure class="new"><div class="check bottle"><img src="compare/bottles/sun_moon_elixir-3x.png" class="" alt=""></div><figcaption>일월의 ★</figcaption></figure></div>
+
+<h2>3. 승인 선반(v4 48×48)에 올린 모습 ×3</h2>
+<div class="row">
+<figure><div class="check"><img src="compare/shelf-new4_with_tops-3x.png" class="" alt=""></div><figcaption>윗칸 새 4종 · 아랫칸 기존 최상위(영원·현자·세계수·성운)</figcaption></figure>
+<figure><div class="check"><img src="compare/shelf-mixed-3x.png" class="" alt=""></div><figcaption>섞어서 진열</figcaption></figure>
+</div>
+
+<h2>4. 재료·지역 아이콘</h2>
+<div class="cards"><div class="card"><h3>여명초 (재료)</h3><div class="sizes">
+<figure><div class="check"><img src="sprites/dawn_bloom_icon-3x.png" class="" alt=""></div><figcaption>32×40 ×3</figcaption></figure>
+<figure><div class="check"><img src="sprites/dawn_bloom_icon.png" class="x1" alt=""></div><figcaption>원본</figcaption></figure></div>
+<p class="desc">여섯 꽃잎의 귤빛 꽃(오른쪽 아래 꽃잎은 산호 그늘), 크림색 꽃심, 줄기와 세이지 잎 2장. 기존 재료 아이콘과 같은 32×40.</p><div class="sw"><span><i style="--c:#241C32"></i>#241C32</span><span><i style="--c:#F4AC68"></i>#F4AC68</span><span><i style="--c:#DE7356"></i>#DE7356</span><span><i style="--c:#FFF0BC"></i>#FFF0BC</span><span><i style="--c:#718C59"></i>#718C59</span></div>
+<p class="desc">검사 <b class="ok">통과</b></p></div><div class="card"><h3>새벽 등대 (지역)</h3><div class="sizes">
+<figure><div class="check"><img src="sprites/dawn_lighthouse_icon-3x.png" class="" alt=""></div><figcaption>32×40 ×3</figcaption></figure>
+<figure><div class="check"><img src="sprites/dawn_lighthouse_icon.png" class="x1" alt=""></div><figcaption>원본</figcaption></figure></div>
+<p class="desc">돌 절벽 위 흰 등대(산호 띠 2줄·지붕, 귤빛 등불)와 뒤로 떠오르는 해. 기존 지역 아이콘과 같은 32×40.</p><div class="sw"><span><i style="--c:#241C32"></i>#241C32</span><span><i style="--c:#F4AC68"></i>#F4AC68</span><span><i style="--c:#DE7356"></i>#DE7356</span><span><i style="--c:#FFF0BC"></i>#FFF0BC</span><span><i style="--c:#827589"></i>#827589</span></div>
+<p class="desc">검사 <b class="ok">통과</b></p></div></div>
+
+<h2>5. 32×40 아이콘 형식 비교</h2>
+<p class="desc">기존 32×40 아이콘(<code>assets/content_expansion_v1</code>, <code>assets/rare_recipes_v1</code>)은 승인 24색 규칙 이전의 생성 그림이라 수백 색을 쓴다.
+새 후보는 크기·투명 배경·용도는 같게 맞추되 현재 AGENTS 규칙(24색·5색)으로 그렸다. 관리 화면에서 섞였을 때의 질감 차이는 결정 필요 항목이다.</p>
+<div class="row"><figure><div class="check"><img src="compare/icons/eternity_icon-3x.png" class="" alt=""></div><figcaption>영원 (기존 물약 아이콘)<br>510색</figcaption></figure><figure><div class="check"><img src="compare/icons/sage_elixir_icon-3x.png" class="" alt=""></div><figcaption>현자의 물약 (기존 물약 아이콘)<br>549색</figcaption></figure><figure><div class="check"><img src="compare/icons/rare_nebula_distillate_icon-3x.png" class="" alt=""></div><figcaption>성운 증류액 (기존 특별 물약 아이콘)<br>396색</figcaption></figure><figure><div class="check"><img src="compare/icons/rare_nebula_distillate_recipe-3x.png" class="" alt=""></div><figcaption>성운 증류액 (기존 레시피 아이콘)<br>501색</figcaption></figure><figure><div class="check"><img src="compare/icons/star_seed_icon-3x.png" class="" alt=""></div><figcaption>별씨 (기존 재료 아이콘)<br>497색</figcaption></figure><figure><div class="check"><img src="compare/icons/star_garden_icon-3x.png" class="" alt=""></div><figcaption>별의 정원 (기존 지역 아이콘)<br>563색</figcaption></figure></div><div class="row" style="margin-top:10px"><figure><div class="check"><img src="sprites/sunrise_icon-3x.png" class="" alt=""></div><figcaption>해돋이 (새)</figcaption></figure><figure><div class="check"><img src="sprites/sun_moon_elixir_icon-3x.png" class="" alt=""></div><figcaption>일월 (새)</figcaption></figure><figure><div class="check"><img src="sprites/sea_spray_icon-3x.png" class="" alt=""></div><figcaption>물보라 (새)</figcaption></figure><figure><div class="check"><img src="sprites/sun_moon_elixir_recipe-3x.png" class="" alt=""></div><figcaption>일월 레시피 (새)</figcaption></figure><figure><div class="check"><img src="sprites/dawn_bloom_icon-3x.png" class="" alt=""></div><figcaption>여명초 (새)</figcaption></figure><figure><div class="check"><img src="sprites/dawn_lighthouse_icon-3x.png" class="" alt=""></div><figcaption>새벽 등대 (새)</figcaption></figure></div>
+
+<h2>6. 색 거리 (CIE76 ΔE)</h2>
+<div class="wrap"><table><tr><th>물약</th><th>솥 액체</th><th>솥 색과의 거리</th><th>가장 가까운 기존 액체</th><th>새 4종끼리</th></tr><tr><td>해돋이 물약</td><td><span><i style="--c:#F4AC68"></i>#F4AC68</span></td><td>#241C32 86.9, #827589 60.5, #86548E 77.1, #E9B95F 13.7</td><td>fortune (13.7)</td><td>beacon 27.7, sea_spray 80.0, sun_moon_elixir 56.3</td></tr><tr><td>등대불 물약</td><td><span><i style="--c:#A56A3D"></i>#A56A3D</span></td><td>#241C32 61.8, #827589 44.8, #86548E 59.9, #E9B95F 34.3</td><td>vigor (22.5)</td><td>sunrise 27.7, sea_spray 61.0, sun_moon_elixir 36.6</td></tr><tr><td>물보라 물약</td><td><span><i style="--c:#24566A"></i>#24566A</span></td><td>#241C32 29.7, #827589 26.4, #86548E 42.5, #E9B95F 82.6</td><td>ward (26.4)</td><td>sunrise 80.0, beacon 61.0, sun_moon_elixir 54.8</td></tr><tr><td>일월의 물약</td><td><span><i style="--c:#9D4359"></i>#9D4359</span></td><td>#241C32 45.7, #827589 35.5, #86548E 30.9, #E9B95F 66.9</td><td>moon (33.0)</td><td>sunrise 56.3, beacon 36.6, sea_spray 54.8</td></tr></table></div>
+<p class="desc muted">해돋이 #F4AC68는 행운 #E9B95F와 ΔE 13.7로 가장 가깝다(귤빛 대 버터 금빛). 병 모양(평평한 돔 대 둥근 병)으로 구분한다. 더 떨어뜨리려면 결정 필요 목록의 대안을 쓴다.</p>
+
+<h2>7. 결정 필요</h2>
+<ul>
+<li>이름: 지역 「새벽 등대」, 재료 「여명초」, 물약 해돋이·등대불·물보라·일월의 물약.</li>
+<li>병 모양 4종과 액체색 4종(특히 해돋이와 행운의 가까운 색).</li>
+<li>32×40 아이콘을 새 규칙(24색)으로 둘지, 기존 생성 아이콘 질감에 맞춘 별도 생성을 할지.</li>
+<li>재배 화분 성장 그림(64×80)과 원정 카드용 큰 그림은 이번 범위 밖(승인 후 제작).</li>
+</ul>
+<p class="muted">검사 결과: <code>validation.json</code> · 후처리 원본 보고: <code>pipeline/validation.json</code> · 승인 상태: <code>approval.json</code></p>
+</main></body></html>
