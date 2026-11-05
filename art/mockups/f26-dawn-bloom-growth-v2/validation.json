@@ -1,0 +1,1011 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "rule_exception": {
+    "kind": "기존 성장 그림과 같은 규칙 밖 예외",
+    "detail": "기존 재배 재료 성장 그림 10종은 승인 24색 규칙 이전의 생성 그림이다. v2는 그 옆에서 어울리도록 기존 시트에서 쓰인 색과 아이콘 색을 쓴다. 승인 24색·물체당 5색·#241C32 외곽선 규칙을 따르지 않으며 tools/process_pixel_art.py(팔레트 강제)를 거치지 않았다. 사용자 승인 대상.",
+    "colors": {
+      "v2": 212,
+      "existing_9_later_range": [
+        1346,
+        1746
+      ],
+      "existing_herb": 1959
+    },
+    "off_palette_colors_v2": 209,
+    "partial_alpha": {
+      "v2": 0,
+      "existing_9_later_range": [
+        1625,
+        2302
+      ],
+      "existing_herb": 2629
+    }
+  },
+  "v2": {
+    "size": [
+      64,
+      80
+    ],
+    "rgb_colors": 212,
+    "partial_alpha_pixels": 0,
+    "alpha_255_pixels": 1870,
+    "frames": [
+      {
+        "plant_top_row": 17,
+        "plant_x": [
+          9,
+          22
+        ],
+        "plant_pixels_above_row_24": 62,
+        "bottom_row": 38
+      },
+      {
+        "plant_top_row": 6,
+        "plant_x": [
+          4,
+          25
+        ],
+        "plant_pixels_above_row_24": 159,
+        "bottom_row": 38
+      },
+      {
+        "plant_top_row": 3,
+        "plant_x": [
+          2,
+          28
+        ],
+        "plant_pixels_above_row_24": 325,
+        "bottom_row": 38
+      },
+      {
+        "plant_top_row": 3,
+        "plant_x": [
+          2,
+          30
+        ],
+        "plant_pixels_above_row_24": 352,
+        "bottom_row": 38
+      }
+    ],
+    "frame3_minus_frame2_pixels": 27,
+    "colors": [
+      "#0C020B",
+      "#140214",
+      "#1A030E",
+      "#1B0119",
+      "#1C0217",
+      "#1F0614",
+      "#270A1B",
+      "#28061D",
+      "#28071C",
+      "#29091D",
+      "#2A041D",
+      "#2A051E",
+      "#2A061F",
+      "#2B051F",
+      "#2B061F",
+      "#2B091F",
+      "#2C041F",
+      "#2C0620",
+      "#2C071F",
+      "#2C091F",
+      "#2C0920",
+      "#2C0D1D",
+      "#2D0520",
+      "#2D0521",
+      "#2D081F",
+      "#2D0921",
+      "#2E0620",
+      "#2E091F",
+      "#2E0B23",
+      "#2F0621",
+      "#2F0722",
+      "#2F0A21",
+      "#2F0B1E",
+      "#2F0B23",
+      "#2F0C1F",
+      "#2F0C24",
+      "#300721",
+      "#300821",
+      "#300A24",
+      "#300B24",
+      "#300C21",
+      "#310B25",
+      "#310C25",
+      "#320724",
+      "#320B21",
+      "#320B25",
+      "#320C25",
+      "#330825",
+      "#330C25",
+      "#340D27",
+      "#340E27",
+      "#350828",
+      "#370C2A",
+      "#380C24",
+      "#38152E",
+      "#38171A",
+      "#38181B",
+      "#3A1620",
+      "#3A181C",
+      "#3A1A1B",
+      "#3B181A",
+      "#3B191C",
+      "#3C191B",
+      "#3C1931",
+      "#3C1932",
+      "#3C1A1E",
+      "#3D1932",
+      "#3D1A33",
+      "#3D1C1E",
+      "#3E1932",
+      "#3E1A1D",
+      "#3F1A33",
+      "#3F1A34",
+      "#3F4545",
+      "#401B34",
+      "#401B35",
+      "#401C36",
+      "#411A34",
+      "#411B35",
+      "#411D1C",
+      "#411E1B",
+      "#421C1E",
+      "#421D35",
+      "#421D37",
+      "#42201D",
+      "#431B37",
+      "#441C36",
+      "#441D37",
+      "#451E38",
+      "#461F39",
+      "#47241F",
+      "#49233C",
+      "#4A213D",
+      "#4B223D",
+      "#4B223E",
+      "#4B233E",
+      "#4B233F",
+      "#4C223E",
+      "#4C223F",
+      "#4C233E",
+      "#4C233F",
+      "#4C243F",
+      "#4C2540",
+      "#4D223F",
+      "#4D233F",
+      "#4D243E",
+      "#4D2440",
+      "#4E243F",
+      "#4E2440",
+      "#4E2441",
+      "#4E253D",
+      "#4E2540",
+      "#4F2440",
+      "#4F2441",
+      "#4F2541",
+      "#4F273F",
+      "#502540",
+      "#502642",
+      "#502742",
+      "#512442",
+      "#512641",
+      "#512841",
+      "#512844",
+      "#522441",
+      "#522543",
+      "#522843",
+      "#532643",
+      "#532644",
+      "#536550",
+      "#542643",
+      "#542921",
+      "#562745",
+      "#562944",
+      "#572B23",
+      "#576351",
+      "#592746",
+      "#592A45",
+      "#5C2A00",
+      "#63314C",
+      "#653522",
+      "#68785E",
+      "#693653",
+      "#6D3552",
+      "#6E3956",
+      "#6E3A58",
+      "#6F3705",
+      "#713D06",
+      "#713D59",
+      "#713E59",
+      "#733B58",
+      "#753D59",
+      "#753E58",
+      "#75440A",
+      "#75450B",
+      "#76460D",
+      "#7A4911",
+      "#7A4B13",
+      "#7B480B",
+      "#7B490E",
+      "#7C460D",
+      "#7D425C",
+      "#7D4A0E",
+      "#7E490E",
+      "#7F4809",
+      "#7F490B",
+      "#7F4A0C",
+      "#7F4C0D",
+      "#80916A",
+      "#95556E",
+      "#985521",
+      "#995671",
+      "#995D2D",
+      "#9C602A",
+      "#B8702C",
+      "#B96F2B",
+      "#C27F29",
+      "#C88A35",
+      "#CB9035",
+      "#CF903A",
+      "#DA9C40",
+      "#DE7356",
+      "#E6AB41",
+      "#E8AD53",
+      "#EFB74A",
+      "#F2B94C",
+      "#F2C157",
+      "#F4AC68",
+      "#F6C350",
+      "#F7BB55",
+      "#F7C961",
+      "#F8BE4F",
+      "#F8BE50",
+      "#F8C65E",
+      "#F9BE52",
+      "#F9BF51",
+      "#F9C54F",
+      "#FAC052",
+      "#FAC151",
+      "#FAC152",
+      "#FAC753",
+      "#FADDC3",
+      "#FCD685",
+      "#FCF3D4",
+      "#FDDB7B",
+      "#FDDE7E",
+      "#FDEAB4",
+      "#FDF1D0",
+      "#FEE181",
+      "#FEF0AE",
+      "#FEF3C6",
+      "#FFF0BC",
+      "#FFF5DD"
+    ],
+    "off_palette_colors": 209
+  },
+  "checks": {
+    "size_64x80": true,
+    "grid_2x2_32x40_cells_do_not_touch_edges": true,
+    "all_frames_bottom_row_38": true,
+    "pot_identical_in_all_frames_below_plant": true,
+    "plant_top_rows_within_existing_range": true,
+    "plant_pixels_within_existing_range": true,
+    "stage_growth_monotonic": true,
+    "frame3_is_frame2_plus_sparkles_only": true,
+    "partial_alpha_pixels": 0,
+    "bloom_uses_icon_colours": true
+  },
+  "provenance": {
+    "pot": {
+      "source": "assets/content_expansion_v1/materials/moonflower_growth.png 칸 0, 행 24~38",
+      "source_sha256": "ed77597d73af76612ed258f5e4c65337cc2e84ed28248c9e20fb4857461958d0",
+      "rgb_copied_unchanged": "문양 상자 밖 모든 픽셀의 RGB는 원본 그대로",
+      "alpha": {
+        "alpha_240_254_to_255": 230,
+        "faint_halo_below_128_dropped": 20
+      },
+      "crescent_pixels_replaced_with_row_body_median": 15,
+      "sun_emblem_pixels": 21,
+      "emblem_box_old": [
+        13,
+        31,
+        19,
+        37
+      ],
+      "emblem_box_new": [
+        12,
+        31,
+        19,
+        36
+      ]
+    },
+    "sparkles": {
+      "source": "assets/content_expansion_v1/materials/moonflower_growth.png 칸 3에서 칸 2에 없던 픽셀(반짝임 2개)",
+      "pixels": 27,
+      "shifts": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -6
+        ]
+      ],
+      "colors": [
+        "#330825",
+        "#340D27",
+        "#5C2A00",
+        "#6F3705",
+        "#713D06",
+        "#75440A",
+        "#75450B",
+        "#76460D",
+        "#7A4911",
+        "#7A4B13",
+        "#7B480B",
+        "#7B490E",
+        "#7C460D",
+        "#7D4A0E",
+        "#7E490E",
+        "#7F4809",
+        "#7F490B",
+        "#7F4A0C",
+        "#7F4C0D",
+        "#CB9035",
+        "#F8C65E",
+        "#FAC753",
+        "#FCD685",
+        "#FCF3D4",
+        "#FDEAB4",
+        "#FEF3C6",
+        "#FFF5DD"
+      ]
+    }
+  },
+  "plant_colours": {
+    "#": {
+      "color": "#340E27",
+      "from": "외곽선 · 달꽃/별씨 식물 외곽선 군집"
+    },
+    "a": {
+      "color": "#3F4545",
+      "from": "잎 그늘 · 달꽃 잎"
+    },
+    "b": {
+      "color": "#576351",
+      "from": "잎 · 달꽃 잎"
+    },
+    "c": {
+      "color": "#68785E",
+      "from": "잎 밝은 면 · 달꽃 잎"
+    },
+    "e": {
+      "color": "#80916A",
+      "from": "잎 하이라이트 · 달꽃 잎"
+    },
+    "t": {
+      "color": "#536550",
+      "from": "줄기 · 달꽃 줄기"
+    },
+    "H": {
+      "color": "#FADDC3",
+      "from": "꽃잎 하이라이트 · 달꽃 꽃"
+    },
+    "O": {
+      "color": "#F4AC68",
+      "from": "꽃잎 · 여명초 아이콘"
+    },
+    "C": {
+      "color": "#DE7356",
+      "from": "꽃잎 그늘 · 여명초 아이콘"
+    },
+    "D": {
+      "color": "#B96F2B",
+      "from": "꽃잎 깊은 그늘 · 별씨 꽃"
+    },
+    "h": {
+      "color": "#FFF0BC",
+      "from": "꽃심 · 여명초 아이콘"
+    },
+    "g": {
+      "color": "#F9C54F",
+      "from": "꽃심 금빛 · 달꽃 꽃심"
+    },
+    "G": {
+      "color": "#E8AD53",
+      "from": "꽃심 그늘 · 별씨 꽃"
+    }
+  },
+  "emblem_colours": {
+    "y": {
+      "color": "#FDDE7E",
+      "from": "해 빛살·밝은 면 · 달꽃 화분 금테 하이라이트"
+    },
+    "Y": {
+      "color": "#F8BE50",
+      "from": "수평선 · 달꽃 화분 금테"
+    },
+    "o": {
+      "color": "#F4AC68",
+      "from": "해 · 여명초 아이콘 꽃잎"
+    },
+    "r": {
+      "color": "#B8702C",
+      "from": "해 그늘 · 별씨 화분 문양 그늘"
+    }
+  },
+  "existing_growth_format": {
+    "sheets": {
+      "herb": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1959,
+        "partial_alpha_pixels": 2629,
+        "alpha_255_pixels": 9,
+        "frames": [
+          {
+            "plant_top_row": 12,
+            "plant_x": [
+              5,
+              26
+            ],
+            "plant_pixels_above_row_24": 165,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 8,
+            "plant_x": [
+              5,
+              26
+            ],
+            "plant_pixels_above_row_24": 219,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 2,
+            "plant_x": [
+              2,
+              28
+            ],
+            "plant_pixels_above_row_24": 407,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 2,
+            "plant_x": [
+              1,
+              29
+            ],
+            "plant_pixels_above_row_24": 425,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 913
+      },
+      "starleaf": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1445,
+        "partial_alpha_pixels": 1783,
+        "alpha_255_pixels": 8,
+        "frames": [
+          {
+            "plant_top_row": 20,
+            "plant_x": [
+              11,
+              20
+            ],
+            "plant_pixels_above_row_24": 28,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 14,
+            "plant_x": [
+              9,
+              21
+            ],
+            "plant_pixels_above_row_24": 78,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 1,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 316,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 1,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 329,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 650
+      },
+      "dewgrass": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1684,
+        "partial_alpha_pixels": 1888,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 15,
+            "plant_x": [
+              9,
+              22
+            ],
+            "plant_pixels_above_row_24": 54,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 8,
+            "plant_x": [
+              5,
+              25
+            ],
+            "plant_pixels_above_row_24": 145,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 7,
+            "plant_x": [
+              3,
+              27
+            ],
+            "plant_pixels_above_row_24": 218,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 7,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 245,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 955
+      },
+      "silver_moss": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1346,
+        "partial_alpha_pixels": 1805,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 18,
+            "plant_x": [
+              7,
+              24
+            ],
+            "plant_pixels_above_row_24": 60,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 12,
+            "plant_x": [
+              6,
+              25
+            ],
+            "plant_pixels_above_row_24": 144,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 11,
+            "plant_x": [
+              3,
+              27
+            ],
+            "plant_pixels_above_row_24": 237,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 9,
+            "plant_x": [
+              2,
+              30
+            ],
+            "plant_pixels_above_row_24": 270,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 898
+      },
+      "blue_reed": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1590,
+        "partial_alpha_pixels": 1851,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 17,
+            "plant_x": [
+              11,
+              20
+            ],
+            "plant_pixels_above_row_24": 37,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 6,
+            "plant_x": [
+              7,
+              24
+            ],
+            "plant_pixels_above_row_24": 133,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 3,
+            "plant_x": [
+              4,
+              27
+            ],
+            "plant_pixels_above_row_24": 256,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 3,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 269,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 1067
+      },
+      "crystal_herb": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1431,
+        "partial_alpha_pixels": 1625,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 19,
+            "plant_x": [
+              13,
+              17
+            ],
+            "plant_pixels_above_row_24": 19,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 13,
+            "plant_x": [
+              9,
+              22
+            ],
+            "plant_pixels_above_row_24": 82,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 8,
+            "plant_x": [
+              5,
+              25
+            ],
+            "plant_pixels_above_row_24": 205,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 8,
+            "plant_x": [
+              2,
+              30
+            ],
+            "plant_pixels_above_row_24": 220,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 930
+      },
+      "mist_mushroom": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1642,
+        "partial_alpha_pixels": 2302,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 16,
+            "plant_x": [
+              9,
+              20
+            ],
+            "plant_pixels_above_row_24": 58,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 9,
+            "plant_x": [
+              7,
+              25
+            ],
+            "plant_pixels_above_row_24": 195,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 5,
+            "plant_x": [
+              2,
+              29
+            ],
+            "plant_pixels_above_row_24": 352,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 5,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 381,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 1008
+      },
+      "ash_sage": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1746,
+        "partial_alpha_pixels": 2122,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 17,
+            "plant_x": [
+              8,
+              22
+            ],
+            "plant_pixels_above_row_24": 62,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 9,
+            "plant_x": [
+              4,
+              26
+            ],
+            "plant_pixels_above_row_24": 170,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 5,
+            "plant_x": [
+              2,
+              29
+            ],
+            "plant_pixels_above_row_24": 293,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 5,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 312,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 1008
+      },
+      "moonflower": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1701,
+        "partial_alpha_pixels": 2042,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 17,
+            "plant_x": [
+              9,
+              21
+            ],
+            "plant_pixels_above_row_24": 54,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 7,
+            "plant_x": [
+              4,
+              27
+            ],
+            "plant_pixels_above_row_24": 180,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 5,
+            "plant_x": [
+              3,
+              28
+            ],
+            "plant_pixels_above_row_24": 273,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 5,
+            "plant_x": [
+              1,
+              30
+            ],
+            "plant_pixels_above_row_24": 304,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 1018
+      },
+      "star_seed": {
+        "size": [
+          64,
+          80
+        ],
+        "rgb_colors": 1690,
+        "partial_alpha_pixels": 1860,
+        "alpha_255_pixels": 0,
+        "frames": [
+          {
+            "plant_top_row": 19,
+            "plant_x": [
+              10,
+              20
+            ],
+            "plant_pixels_above_row_24": 36,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 9,
+            "plant_x": [
+              6,
+              24
+            ],
+            "plant_pixels_above_row_24": 150,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 6,
+            "plant_x": [
+              3,
+              28
+            ],
+            "plant_pixels_above_row_24": 250,
+            "bottom_row": 38
+          },
+          {
+            "plant_top_row": 6,
+            "plant_x": [
+              2,
+              30
+            ],
+            "plant_pixels_above_row_24": 266,
+            "bottom_row": 38
+          }
+        ],
+        "frame3_minus_frame2_pixels": 983
+      }
+    },
+    "range_9_later": {
+      "rgb_colors": [
+        1346,
+        1746
+      ],
+      "partial_alpha_pixels": [
+        1625,
+        2302
+      ],
+      "plant_top_row": [
+        [
+          15,
+          20
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "plant_pixels_above_row_24": [
+        [
+          19,
+          62
+        ],
+        [
+          78,
+          195
+        ],
+        [
+          205,
+          352
+        ],
+        [
+          220,
+          381
+        ]
+      ]
+    },
+    "observations": {
+      "format": "64×80, 32×40 칸 2×2(0 새싹·1 자라는 중·2 다 자람·3 수확 반짝임). 모든 칸 바닥 행 38.",
+      "pot": "herb만 다리 달린 솥형. 나머지 9종은 어두운 자두색 몸통(가운데 #4C223E 안팎, 왼쪽 분홍빛 밝은 면 #95556E, 오른쪽 #3E1932)·금테(#F8BE50/#FDDE7E)·흙(#3C2428 안팎)·재료별 문양(행 31~36, x 13~18, 외곽선 없이 몸통 위에 직접)을 공유. 칸마다 따로 생성돼 같은 시트 안에서도 화분 픽셀이 300~450개 다르다.",
+      "outline": "식물 외곽선은 #241C32가 아니라 어두운 자두색(#340E27·#370E2B 군집), 1픽셀.",
+      "leaves": "끝이 뾰족한 렌즈형 잎. 새싹 2장(3×3~5×4), 자라는 중 2~4장(8~10픽셀 길이, 위로 비스듬히), 다 자람 4~6장(아래로 늘어져 화분 테를 덮기도 함). 명암 3~4단(달꽃 #3F4545→#576351→#68785E→#80916A) + 어두운 외곽선.",
+      "stem": "1픽셀 초록 줄기(달꽃 #536550 안팎)와 양옆 어두운 픽셀. 흙 속으로 이어진다.",
+      "bloom": "자라는 중 칸에 닫힌 꽃봉오리(5~7픽셀 폭, 꽃받침), 다 자람 칸에 큰 꽃 1개(14~16픽셀) 또는 작은 꽃 여러 개. 꽃은 3~4단 명암 + 하이라이트.",
+      "sparkle": "수확 칸에 5×5 십자 반짝임 2~4개(끝 갈색 #7D4A0E 계열, 팔 금빛, 가운데 크림).",
+      "alpha": "불투명해 보이는 픽셀도 알파 240~254로 저장돼 있고(255는 0개), 실루엣 둘레에 알파 1~127 픽셀이 시트당 약 280~350개 있다."
+    }
+  },
+  "boards": {
+    "compare_6x": "art/mockups/f26-dawn-bloom-growth-v2/compare/growth-compare-6x.png",
+    "compare_3x": "art/mockups/f26-dawn-bloom-growth-v2/compare/growth-compare-3x.png",
+    "compare_1x": "art/mockups/f26-dawn-bloom-growth-v2/compare/growth-compare-1x.png",
+    "v1_vs_v2_3x": "art/mockups/f26-dawn-bloom-growth-v2/compare/v1-vs-v2-3x.png",
+    "bloom_vs_icon_6x": "art/mockups/f26-dawn-bloom-growth-v2/compare/bloom-vs-icon-6x.png"
+  },
+  "management_rows": {
+    "rows_1x": "art/mockups/f26-dawn-bloom-growth-v2/compare/management-herbs-rows-1x.png",
+    "rows_2x": "art/mockups/f26-dawn-bloom-growth-v2/compare/management-herbs-rows-2x.png",
+    "layout": "v1과 같은 근사: 패널 폭 458, 48×48 아이콘(여백 자른 뒤 KEEP_ASPECT 최근접), 제목 18·상세 52×32, 상태 줄 16, 작업/보유 막대, 성장 미리보기 32×40 원본 1배. Python 근사이며 Godot 캡처가 아니다."
+  },
+  "self_review": [
+    "화분: 달꽃 화분 픽셀 그대로라 옆 그림들과 구분되지 않는다. 해돋이 문양은 달·별 문양과 같은 자리·크기(7×5)로 외곽선 없이 몸통 위에 직접 칠했다.",
+    "식물: 잎이 끝이 뾰족한 렌즈형이고 명암이 4단(+외곽선)이라 달꽃·별씨 잎과 같은 밀도로 읽힌다. 단계별 키와 픽셀 수는 기존 9종 범위 안이다(아래 표).",
+    "남은 차이: 기존 그림은 생성 그림이라 픽셀마다 색이 조금씩 흔들리는 잡음 질감(시트당 1,300~2,000색)이 있다. v2는 화분만 그 질감(복사한 약 200색)이고 식물은 손으로 칠한 13색 덩어리라 6배로 확대하면 잎·꽃이 화분보다 매끈하다. 1배(관리 화면 실제 크기)에서는 차이가 거의 보이지 않는다.",
+    "남은 차이: 잎이 달꽃 잎과 같은 회녹색 계열이라 이슬풀처럼 밝은 초록 시트와 나란히 두면 차분해 보인다. 꽃 쪽으로 시선이 가도록 일부러 고른 색이다.",
+    "남은 차이: 기존 시트는 칸마다 화분이 조금씩 다르게 생성돼 있는데 v2는 네 칸 모두 같은 화분이다(흔들림 없음)."
+  ],
+  "sources": [
+    "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_0.txt",
+    "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_1.txt",
+    "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_2.txt",
+    "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_plant_3.txt",
+    "art/mockups/f26-dawn-bloom-growth-v2/source/dawn_bloom_emblem.txt"
+  ],
+  "native_sha256": "6125c7de7f23f26016257f664796109aea649f2ec7a803edae36347c821d8bf3",
+  "scope_note": "후보 검사. assets/·scripts/·data/는 쓰지 않았다."
+}

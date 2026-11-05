@@ -1,0 +1,56 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>여명초 성장 그림 v2</title><style>
+@font-face{font-family:Pretendard;src:url('../../../assets/fonts/pretendard/Pretendard-Regular.otf')}
+:root{--bg:#241c32;--panel:#30263f;--text:#fff0bc;--muted:#c38eb5;--accent:#e9b95f;--ok:#b5c77d}
+*{box-sizing:border-box}html,body{background:var(--bg)}body{margin:0;color:var(--text);font:15px/1.55 Pretendard,system-ui,sans-serif}
+main{max-width:1210px;margin:auto;padding:18px 16px 48px}h1{font-size:23px;margin:0 0 6px}h2{font-size:17px;margin:28px 0 8px}
+p{margin:6px 0 10px}.muted{color:var(--muted)}.note{border-left:3px solid #718c59;padding:8px 12px;background:var(--panel);margin:10px 0}.warn{border-left-color:var(--accent)}
+.check{background-color:#4a3c52;background-image:linear-gradient(45deg,#3f3347 25%,transparent 25%),linear-gradient(-45deg,#3f3347 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#3f3347 75%),linear-gradient(-45deg,transparent 75%,#3f3347 75%);background-size:12px 12px;background-position:0 0,0 6px,6px -6px,-6px 0}
+img{image-rendering:pixelated;image-rendering:crisp-edges;max-width:none;display:block}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}.row figure{margin:0;text-align:center}.row .check{padding:4px}
+figcaption{font-size:11px;color:var(--muted);margin-top:3px}.desc{font-size:13px}.wide{overflow-x:auto;background:var(--panel);padding:8px;border-radius:6px}
+.sw{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:11px;color:var(--muted)}.sw span{display:flex;align-items:center;gap:4px}.sw i{width:12px;height:12px;display:inline-block;border:1px solid #000;background:var(--c)}
+table{border-collapse:collapse;font-size:13px;width:100%}td,th{border-bottom:1px solid #4a3c52;padding:5px 6px;text-align:left}tr.new td{color:var(--accent);font-weight:bold}
+</style></head><body><main>
+<h1>여명초(dawn_bloom) 화분 성장 그림 후보 v2</h1>
+<p class="muted">2026-11-05 · 상태 <b>후보(candidate)</b> · 게임 미연결 · 승인 전 · v1(<code>../f26-dawn-bloom-growth-v1/</code>)은 그대로 보존.
+승인되면 <code>catalog.json</code> 여명초 행에 <code>growth_path: res://assets/content_expansion_v1/materials/dawn_bloom_growth.png</code>만 더한다.</p>
+<div class="note">v1은 승인 24색 규칙대로 그려서 기존 성장 그림(규칙 이전의 생성 그림)과 그림체가 달랐다. v2는 <b>기존 그림에 맞춘다</b>:
+화분은 달꽃 시트 칸 0의 행 24~38을 RGB 그대로 복사하고 앞 문양만 해돋이로 바꿨다. 식물은 기존 10종을 확대해 잰 잎 수·잎 모양·명암 단계·줄기·키에 맞춰 손으로 다시 그렸고(<code>source/*.txt</code>),
+수확 칸 반짝임은 달꽃 칸 3의 반짝임 픽셀을 그대로 옮겼다.</div>
+<div class="note warn"><b>규칙 밖 예외:</b> 기존 성장 그림과 같은 예외다. 승인 24색·물체당 5색·#241C32 외곽선을 따르지 않는다(색 212개, 그중 팔레트 밖 209개).
+반투명은 0개로 두었다(기존 9종 1,625~2,302개). 기존 그림의 알파 240~254 픽셀은 255로, 알파 1~127의 흐린 테두리는 0으로 바꿨다(눈으로는 같음).</div>
+
+<h2>1. v2 시트와 단계별 6배</h2>
+<div class="row"><figure><div class="check"><img src="sheets/dawn_bloom_growth-3x.png" alt=""></div><figcaption>시트 64×80 ×3</figcaption></figure>
+<figure><div class="check"><img src="sheets/dawn_bloom_growth.png" alt=""></div><figcaption>원본 1배</figcaption></figure></div>
+<div class="row" style="margin-top:10px"><figure><div class="check"><img src="stages/frame_0-6x.png" alt=""></div><figcaption>0 새싹 (진행 0~33%)</figcaption></figure><figure><div class="check"><img src="stages/frame_1-6x.png" alt=""></div><figcaption>1 꽃봉오리 (33~66%)</figcaption></figure><figure><div class="check"><img src="stages/frame_2-6x.png" alt=""></div><figcaption>2 만개 (66~100%)</figcaption></figure><figure><div class="check"><img src="stages/frame_3-6x.png" alt=""></div><figcaption>3 수확 반짝임</figcaption></figure></div>
+<div class="sw" style="margin-top:8px"><span><i style="--c:#340E27"></i>#340E27 외곽선 · 달꽃/별씨 식물 외곽선 군집</span><span><i style="--c:#3F4545"></i>#3F4545 잎 그늘 · 달꽃 잎</span><span><i style="--c:#576351"></i>#576351 잎 · 달꽃 잎</span><span><i style="--c:#68785E"></i>#68785E 잎 밝은 면 · 달꽃 잎</span><span><i style="--c:#80916A"></i>#80916A 잎 하이라이트 · 달꽃 잎</span><span><i style="--c:#536550"></i>#536550 줄기 · 달꽃 줄기</span><span><i style="--c:#FADDC3"></i>#FADDC3 꽃잎 하이라이트 · 달꽃 꽃</span><span><i style="--c:#F4AC68"></i>#F4AC68 꽃잎 · 여명초 아이콘</span><span><i style="--c:#DE7356"></i>#DE7356 꽃잎 그늘 · 여명초 아이콘</span><span><i style="--c:#B96F2B"></i>#B96F2B 꽃잎 깊은 그늘 · 별씨 꽃</span><span><i style="--c:#FFF0BC"></i>#FFF0BC 꽃심 · 여명초 아이콘</span><span><i style="--c:#F9C54F"></i>#F9C54F 꽃심 금빛 · 달꽃 꽃심</span><span><i style="--c:#E8AD53"></i>#E8AD53 꽃심 그늘 · 별씨 꽃</span><span><i style="--c:#FDDE7E"></i>#FDDE7E 해 빛살·밝은 면 · 달꽃 화분 금테 하이라이트</span><span><i style="--c:#F8BE50"></i>#F8BE50 수평선 · 달꽃 화분 금테</span><span><i style="--c:#F4AC68"></i>#F4AC68 해 · 여명초 아이콘 꽃잎</span><span><i style="--c:#B8702C"></i>#B8702C 해 그늘 · 별씨 화분 문양 그늘</span></div>
+
+<h2>2. 기존 성장 그림 5종과 나란히 · 6배</h2>
+<div class="wide"><img src="compare/growth-compare-6x.png" alt=""></div>
+<h2>3. 같은 비교 · 3배 / 1배</h2>
+<div class="wide"><img src="compare/growth-compare-3x.png" alt=""></div>
+<div class="wide" style="margin-top:8px"><img src="compare/growth-compare-1x.png" alt=""></div>
+
+<h2>4. 다 자란 꽃 대 승인 아이콘 (6배)</h2>
+<div class="wide"><img src="compare/bloom-vs-icon-6x.png" alt=""></div>
+<p class="desc">아이콘의 여섯 꽃잎 실루엣·크림색 육각 꽃심·오른쪽 아래 산호색 그늘을 16×15로 줄이고, 기존 꽃처럼 꽃잎 이음선·왼쪽 위 하이라이트(#FADDC3)·아래쪽 깊은 그늘(#B96F2B)·금빛 꽃술(#F9C54F)을 더했다.</p>
+
+<h2>5. 관리 · 약초 탭 행 (원본 1배 · 근사)</h2>
+<p class="desc">v1과 같은 근사: 패널 폭 458, 48×48 아이콘(여백 자른 뒤 KEEP_ASPECT 최근접), 제목 18·상세 52×32, 상태 줄 16, 작업/보유 막대, 성장 미리보기 32×40 원본 1배. Python 근사이며 Godot 캡처가 아니다.</p>
+<div class="wide"><img src="compare/management-herbs-rows-1x.png" alt=""></div>
+
+<h2>6. v1 ↔ v2</h2>
+<div class="wide"><img src="compare/v1-vs-v2-3x.png" alt=""></div>
+
+<h2>7. 기존 10종 관찰과 수치</h2>
+<ul class="desc"><li><b>format</b> 64×80, 32×40 칸 2×2(0 새싹·1 자라는 중·2 다 자람·3 수확 반짝임). 모든 칸 바닥 행 38.</li><li><b>pot</b> herb만 다리 달린 솥형. 나머지 9종은 어두운 자두색 몸통(가운데 #4C223E 안팎, 왼쪽 분홍빛 밝은 면 #95556E, 오른쪽 #3E1932)·금테(#F8BE50/#FDDE7E)·흙(#3C2428 안팎)·재료별 문양(행 31~36, x 13~18, 외곽선 없이 몸통 위에 직접)을 공유. 칸마다 따로 생성돼 같은 시트 안에서도 화분 픽셀이 300~450개 다르다.</li><li><b>outline</b> 식물 외곽선은 #241C32가 아니라 어두운 자두색(#340E27·#370E2B 군집), 1픽셀.</li><li><b>leaves</b> 끝이 뾰족한 렌즈형 잎. 새싹 2장(3×3~5×4), 자라는 중 2~4장(8~10픽셀 길이, 위로 비스듬히), 다 자람 4~6장(아래로 늘어져 화분 테를 덮기도 함). 명암 3~4단(달꽃 #3F4545→#576351→#68785E→#80916A) + 어두운 외곽선.</li><li><b>stem</b> 1픽셀 초록 줄기(달꽃 #536550 안팎)와 양옆 어두운 픽셀. 흙 속으로 이어진다.</li><li><b>bloom</b> 자라는 중 칸에 닫힌 꽃봉오리(5~7픽셀 폭, 꽃받침), 다 자람 칸에 큰 꽃 1개(14~16픽셀) 또는 작은 꽃 여러 개. 꽃은 3~4단 명암 + 하이라이트.</li><li><b>sparkle</b> 수확 칸에 5×5 십자 반짝임 2~4개(끝 갈색 #7D4A0E 계열, 팔 금빛, 가운데 크림).</li><li><b>alpha</b> 불투명해 보이는 픽셀도 알파 240~254로 저장돼 있고(255는 0개), 실루엣 둘레에 알파 1~127 픽셀이 시트당 약 280~350개 있다.</li></ul>
+<div class="wide"><table><tr><th>시트</th><th>RGB 색 수</th><th>반투명 픽셀</th><th>알파 255 픽셀</th><th>칸 0/1/2/3 식물 꼭대기 행</th><th>칸 0/1/2/3 식물 픽셀(행 24 위)</th></tr><tr><td>herb</td><td>1959</td><td>2629</td><td>9</td><td>12 / 8 / 2 / 2</td><td>165 / 219 / 407 / 425</td></tr><tr><td>starleaf</td><td>1445</td><td>1783</td><td>8</td><td>20 / 14 / 1 / 1</td><td>28 / 78 / 316 / 329</td></tr><tr><td>dewgrass</td><td>1684</td><td>1888</td><td>0</td><td>15 / 8 / 7 / 7</td><td>54 / 145 / 218 / 245</td></tr><tr><td>silver_moss</td><td>1346</td><td>1805</td><td>0</td><td>18 / 12 / 11 / 9</td><td>60 / 144 / 237 / 270</td></tr><tr><td>blue_reed</td><td>1590</td><td>1851</td><td>0</td><td>17 / 6 / 3 / 3</td><td>37 / 133 / 256 / 269</td></tr><tr><td>crystal_herb</td><td>1431</td><td>1625</td><td>0</td><td>19 / 13 / 8 / 8</td><td>19 / 82 / 205 / 220</td></tr><tr><td>mist_mushroom</td><td>1642</td><td>2302</td><td>0</td><td>16 / 9 / 5 / 5</td><td>58 / 195 / 352 / 381</td></tr><tr><td>ash_sage</td><td>1746</td><td>2122</td><td>0</td><td>17 / 9 / 5 / 5</td><td>62 / 170 / 293 / 312</td></tr><tr><td>moonflower</td><td>1701</td><td>2042</td><td>0</td><td>17 / 7 / 5 / 5</td><td>54 / 180 / 273 / 304</td></tr><tr><td>star_seed</td><td>1690</td><td>1860</td><td>0</td><td>19 / 9 / 6 / 6</td><td>36 / 150 / 250 / 266</td></tr><tr class='new'><td>여명초 v2</td><td>212</td><td>0</td><td>1870</td><td>17 / 6 / 3 / 3</td><td>62 / 159 / 325 / 352</td></tr></table></div>
+<p class="desc">화분 출처: assets/content_expansion_v1/materials/moonflower_growth.png 칸 0, 행 24~38 · 문양 교체 15픽셀 지움 + 해돋이 21픽셀 ·
+반짝임: assets/content_expansion_v1/materials/moonflower_growth.png 칸 3에서 칸 2에 없던 픽셀(반짝임 2개) 27픽셀(오른쪽 반짝임은 잎과 겹쳐 6행 위로 옮김)</p>
+
+<h2>8. 스스로 본 판단</h2>
+<ul class="desc"><li>화분: 달꽃 화분 픽셀 그대로라 옆 그림들과 구분되지 않는다. 해돋이 문양은 달·별 문양과 같은 자리·크기(7×5)로 외곽선 없이 몸통 위에 직접 칠했다.</li><li>식물: 잎이 끝이 뾰족한 렌즈형이고 명암이 4단(+외곽선)이라 달꽃·별씨 잎과 같은 밀도로 읽힌다. 단계별 키와 픽셀 수는 기존 9종 범위 안이다(아래 표).</li><li>남은 차이: 기존 그림은 생성 그림이라 픽셀마다 색이 조금씩 흔들리는 잡음 질감(시트당 1,300~2,000색)이 있다. v2는 화분만 그 질감(복사한 약 200색)이고 식물은 손으로 칠한 13색 덩어리라 6배로 확대하면 잎·꽃이 화분보다 매끈하다. 1배(관리 화면 실제 크기)에서는 차이가 거의 보이지 않는다.</li><li>남은 차이: 잎이 달꽃 잎과 같은 회녹색 계열이라 이슬풀처럼 밝은 초록 시트와 나란히 두면 차분해 보인다. 꽃 쪽으로 시선이 가도록 일부러 고른 색이다.</li><li>남은 차이: 기존 시트는 칸마다 화분이 조금씩 다르게 생성돼 있는데 v2는 네 칸 모두 같은 화분이다(흔들림 없음).</li></ul>
+<p class="muted">검사 결과: <code>validation.json</code> · 승인 상태: <code>approval.json</code></p>
+</main></body></html>

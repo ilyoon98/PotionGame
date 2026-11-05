@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "approved_on": null,
+  "user_reply": null,
+  "date": "2026-11-05",
+  "review": "art/mockups/f26-dawn-bloom-growth-v2/review.html",
+  "supersedes_for_review": "art/mockups/f26-dawn-bloom-growth-v1 (보존, 사용자 피드백: 기존 그림과 너무 다름)",
+  "runtime_integrated": false,
+  "scope": {
+    "dawn_bloom_growth": "여명초 성장 그림 64×80 (32×40 칸 2×2) v2 · 기존 성장 그림과 같은 규칙 밖 예외 (후보)"
+  },
+  "pending_decisions": [
+    "v2 그림체·꽃 모양 승인",
+    "규칙 밖 예외(기존 성장 그림과 같은 색 처리) 승인"
+  ],
+  "publish_after_approval": {
+    "copy": "sheets/dawn_bloom_growth.png → assets/content_expansion_v1/materials/dawn_bloom_growth.png (바이트 그대로)",
+    "catalog": "assets/content_expansion_v1/catalog.json 여명초(materials) 행에 growth_path만 추가",
+    "growth_path": "res://assets/content_expansion_v1/materials/dawn_bloom_growth.png",
+    "tests_to_update": [
+      "tools/verify_f26_region_potions.gd: 'No growth sheet stand-in for dawn bloom' 검사",
+      "tools/verify_workshop_followup.gd: 재료별 성장 그림 검사의 여명초 예외"
+    ]
+  }
+}
