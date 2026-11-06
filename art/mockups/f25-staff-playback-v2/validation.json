@@ -1,0 +1,157 @@
+{
+  "status": "passed",
+  "engine": "Pixelbolt 0.11.0",
+  "loop_ms": 18000,
+  "art_status": "candidate",
+  "runtime_integrated": false,
+  "source_states_unchanged": true,
+  "gif_fps": 20,
+  "gif_frames": 360,
+  "references_runtime_function": "scripts/pixel_art_catalog.gd:40",
+  "assets": [
+    {
+      "id": "keeper",
+      "source": "assets/pixel_v1/characters/keeper/idle-fine.png",
+      "sha256": "1cda8c170f19c0f7257ccf3d0c8bf68adf767718767b0d032d471d9b4e8f8897",
+      "native_size": [
+        96,
+        144
+      ],
+      "display_scale": 1,
+      "source_frames": 64,
+      "timing_segments": 152,
+      "loop_ms": 18000
+    },
+    {
+      "id": "traveler",
+      "source": "assets/pixel_v1/characters/traveler/idle-fine.png",
+      "sha256": "f860e8e2fd28f169238ec7cdcf76de0aa632354ac9e431f799abf41c05aae546",
+      "native_size": [
+        96,
+        144
+      ],
+      "display_scale": 1,
+      "source_frames": 64,
+      "timing_segments": 152,
+      "loop_ms": 18000
+    },
+    {
+      "id": "mage",
+      "source": "assets/pixel_v1/characters/mage/idle-fine.png",
+      "sha256": "3a1902e2f9367c13dab0996d2284f10efb05b6030070cdaa8131bfdb35907da6",
+      "native_size": [
+        96,
+        144
+      ],
+      "display_scale": 1,
+      "source_frames": 64,
+      "timing_segments": 152,
+      "loop_ms": 18000
+    },
+    {
+      "id": "elf",
+      "source": "assets/pixel_v1/characters/elf/idle-fine.png",
+      "sha256": "1d47630f281139719ba0fd24bf88301ff1896d90076930245d9a19e8144c4487",
+      "native_size": [
+        96,
+        144
+      ],
+      "display_scale": 1,
+      "source_frames": 64,
+      "timing_segments": 152,
+      "loop_ms": 18000
+    },
+    {
+      "id": "rogue",
+      "source": "assets/pixel_v1/characters/rogue/idle-fine.png",
+      "sha256": "01a17a7f89e1539fc3ed27a5c14b2804ed9603ead0e9c3c664d8dfebde33846a",
+      "native_size": [
+        96,
+        144
+      ],
+      "display_scale": 1,
+      "source_frames": 64,
+      "timing_segments": 152,
+      "loop_ms": 18000
+    },
+    {
+      "id": "staff_sales_assistant",
+      "source": "art/mockups/f25-staff-alignment-v1/recipes/staff_sales_assistant.json",
+      "source_sha256": "4d648a487679dedbee2262a0a904e7b1be039aa0efa94f2cbe006f315fafc3fb",
+      "tuning": {
+        "breath_start": 1500,
+        "breath_hold": 1200,
+        "blink_ms": 200,
+        "blinks": [
+          3450,
+          8150,
+          12850,
+          16600
+        ]
+      },
+      "changed_pixels": 0,
+      "timing_segments": 21,
+      "loop_ms": 18000,
+      "loop_seam_state_unchanged": true
+    },
+    {
+      "id": "staff_cultivation_assistant",
+      "source": "art/mockups/f25-staff-alignment-v1/recipes/staff_cultivation_assistant.json",
+      "source_sha256": "3977db5aa0af52d22486f32b5bf0fc989a16243fdc193fa190c9797d24b9a069",
+      "tuning": {
+        "breath_start": 2050,
+        "breath_hold": 1100,
+        "blink_ms": 220,
+        "blinks": [
+          2200,
+          7200,
+          11200,
+          16100
+        ]
+      },
+      "changed_pixels": 0,
+      "timing_segments": 21,
+      "loop_ms": 18000,
+      "loop_seam_state_unchanged": true
+    },
+    {
+      "id": "staff_brewing_assistant",
+      "source": "art/mockups/f25-staff-alignment-v1/recipes/staff_brewing_assistant.json",
+      "source_sha256": "3ef3d4329c3c8a1052c668d763d82d0ff92de3aa8f0cbb9025420440554c5414",
+      "tuning": {
+        "breath_start": 2650,
+        "breath_hold": 1250,
+        "blink_ms": 200,
+        "blinks": [
+          4250,
+          9350,
+          13550
+        ]
+      },
+      "changed_pixels": 0,
+      "timing_segments": 19,
+      "loop_ms": 18000,
+      "loop_seam_state_unchanged": true
+    },
+    {
+      "id": "staff_expedition_guide",
+      "source": "art/mockups/f25-staff-alignment-v1/recipes/staff_expedition_guide.json",
+      "source_sha256": "c0ace6cd6d173647bbccac8e6e29e4cc5cac361b78bbd5272ea7e759f2883264",
+      "tuning": {
+        "breath_start": 850,
+        "breath_hold": 1150,
+        "blink_ms": 220,
+        "blinks": [
+          1150,
+          6250,
+          11850,
+          17050
+        ]
+      },
+      "changed_pixels": 0,
+      "timing_segments": 21,
+      "loop_ms": 18000,
+      "loop_seam_state_unchanged": true
+    }
+  ]
+}

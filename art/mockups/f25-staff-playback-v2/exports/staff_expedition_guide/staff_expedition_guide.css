@@ -1,0 +1,41 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-staff_expedition_guide {
+  display: inline-block;
+  width: 32px; height: 48px;
+  background-image: url("staff_expedition_guide.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-staff_expedition_guide-still { background-position: -0px -0px; animation: pf-staff_expedition_guide-still 1000ms steps(1, end) infinite; }
+@keyframes pf-staff_expedition_guide-still {
+  0% { background-position: -0px -0px; }
+  100% { background-position: -0px -0px; }
+}
+.pf-staff_expedition_guide-idle { background-position: -0px -48px; animation: pf-staff_expedition_guide-idle 18000ms steps(1, end) infinite; }
+@keyframes pf-staff_expedition_guide-idle {
+  0% { background-position: -0px -48px; }
+  4.72222222% { background-position: -32px -48px; }
+  6.38888889% { background-position: -64px -48px; }
+  7.61111111% { background-position: -96px -48px; }
+  11.11111111% { background-position: -0px -96px; }
+  21.38888889% { background-position: -32px -96px; }
+  27.77777778% { background-position: -64px -96px; }
+  34.72222222% { background-position: -96px -96px; }
+  35.94444444% { background-position: -0px -144px; }
+  38.05555556% { background-position: -32px -144px; }
+  44.44444444% { background-position: -64px -144px; }
+  54.72222222% { background-position: -96px -144px; }
+  61.11111111% { background-position: -0px -192px; }
+  65.83333333% { background-position: -32px -192px; }
+  67.05555556% { background-position: -64px -192px; }
+  71.38888889% { background-position: -96px -192px; }
+  77.77777778% { background-position: -0px -240px; }
+  88.05555556% { background-position: -32px -240px; }
+  94.44444444% { background-position: -64px -240px; }
+  94.72222222% { background-position: -96px -240px; }
+  95.94444444% { background-position: -0px -288px; }
+  100% { background-position: -0px -48px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-staff_expedition_guide-still { animation: none; }
+  .pf-staff_expedition_guide-idle { animation: none; }
+}

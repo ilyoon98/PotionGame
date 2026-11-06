@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "name": "staff_cultivation_assistant",
+  "animation": "idle",
+  "width": 96,
+  "height": 144,
+  "scale": 3,
+  "frames": 21,
+  "duration": 18000,
+  "loop": true,
+  "colors": 5,
+  "transparent": true,
+  "partialAlpha": 0,
+  "notes": [],
+  "file": ".\\art\\mockups\\f25-staff-playback-v2\\staff_cultivation_assistant.gif",
+  "warnings": []
+}

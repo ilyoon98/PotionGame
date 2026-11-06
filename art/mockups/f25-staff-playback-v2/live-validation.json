@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "engine": "4.6-stable (official)",
+  "mode": "live Godot native window, 1x",
+  "source_log": "live-observation.json",
+  "source_sha256": "9627aa54ae03e0c5983a898f6e39cc1c423246c97d684ac8a5ab4ab58679c983",
+  "observed_seconds": 60.0821486666645,
+  "animation_seconds": 60.0821486666645,
+  "speed": 1,
+  "sample_count": 117,
+  "display_observations": 1521,
+  "contact_errors": 0,
+  "noninteger_position_errors": 0,
+  "items": [
+    {
+      "id": "keeper",
+      "loop_ms": 18000,
+      "expected_segments": 152,
+      "observed_segments": 152,
+      "complete_loops": 3
+    },
+    {
+      "id": "traveler",
+      "loop_ms": 18000,
+      "expected_segments": 152,
+      "observed_segments": 152,
+      "complete_loops": 3
+    },
+    {
+      "id": "mage",
+      "loop_ms": 18000,
+      "expected_segments": 152,
+      "observed_segments": 152,
+      "complete_loops": 3
+    },
+    {
+      "id": "elf",
+      "loop_ms": 18000,
+      "expected_segments": 152,
+      "observed_segments": 152,
+      "complete_loops": 3
+    },
+    {
+      "id": "rogue",
+      "loop_ms": 18000,
+      "expected_segments": 152,
+      "observed_segments": 152,
+      "complete_loops": 3
+    },
+    {
+      "id": "before_staff_sales_assistant",
+      "loop_ms": 9000,
+      "expected_segments": 11,
+      "observed_segments": 11,
+      "complete_loops": 6
+    },
+    {
+      "id": "before_staff_cultivation_assistant",
+      "loop_ms": 9000,
+      "expected_segments": 11,
+      "observed_segments": 11,
+      "complete_loops": 6
+    },
+    {
+      "id": "before_staff_brewing_assistant",
+      "loop_ms": 9000,
+      "expected_segments": 11,
+      "observed_segments": 11,
+      "complete_loops": 6
+    },
+    {
+      "id": "before_staff_expedition_guide",
+      "loop_ms": 9000,
+      "expected_segments": 11,
+      "observed_segments": 11,
+      "complete_loops": 6
+    },
+    {
+      "id": "staff_sales_assistant",
+      "loop_ms": 18000,
+      "expected_segments": 21,
+      "observed_segments": 21,
+      "complete_loops": 3
+    },
+    {
+      "id": "staff_cultivation_assistant",
+      "loop_ms": 18000,
+      "expected_segments": 21,
+      "observed_segments": 21,
+      "complete_loops": 3
+    },
+    {
+      "id": "staff_brewing_assistant",
+      "loop_ms": 18000,
+      "expected_segments": 19,
+      "observed_segments": 19,
+      "complete_loops": 3
+    },
+    {
+      "id": "staff_expedition_guide",
+      "loop_ms": 18000,
+      "expected_segments": 21,
+      "observed_segments": 21,
+      "complete_loops": 3
+    }
+  ],
+  "visual_evidence": [
+    "baseline-live.png",
+    "revised-live.png"
+  ],
+  "visual_method": "Inspected native 1x playback window snapshots with Computer Use and the live frame/time log; no continuous video analysis claimed."
+}

@@ -1,0 +1,197 @@
+{
+  "ok": true,
+  "name": "staff_sales_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 25,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-playback-v2\\exports\\staff_sales_assistant",
+  "files": [
+    "staff_sales_assistant.png",
+    "staff_sales_assistant.atlas.json",
+    "staff_sales_assistant.tres",
+    "staff_sales_assistant.pixel.json",
+    "staff_sales_assistant.css",
+    "animations/still.png",
+    "animations/idle.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "delivered": {
+      "size": [
+        32,
+        48
+      ],
+      "animations": {
+        "idle": {
+          "frames": 21,
+          "loop": true
+        }
+      },
+      "colors": 5,
+      "transparent": true
+    },
+    "motion": {
+      "idle": {
+        "box": [
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ]
+        ],
+        "lowest": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ]
+      }
+    },
+    "hint": "Pass expect with what the user asked for (width, height, frames, colors, transparent, loop) to check every file against it."
+  }
+}

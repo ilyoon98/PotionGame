@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "name": "staff_sales_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 25,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": []
+}

@@ -1,0 +1,183 @@
+{
+  "ok": true,
+  "name": "staff_brewing_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 23,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-playback-v2\\exports\\staff_brewing_assistant",
+  "files": [
+    "staff_brewing_assistant.png",
+    "staff_brewing_assistant.atlas.json",
+    "staff_brewing_assistant.tres",
+    "staff_brewing_assistant.pixel.json",
+    "staff_brewing_assistant.css",
+    "animations/still.png",
+    "animations/idle.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "delivered": {
+      "size": [
+        32,
+        48
+      ],
+      "animations": {
+        "idle": {
+          "frames": 19,
+          "loop": true
+        }
+      },
+      "colors": 5,
+      "transparent": true
+    },
+    "motion": {
+      "idle": {
+        "box": [
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            10,
+            22,
+            37
+          ]
+        ],
+        "lowest": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ]
+      }
+    },
+    "hint": "Pass expect with what the user asked for (width, height, frames, colors, transparent, loop) to check every file against it."
+  }
+}

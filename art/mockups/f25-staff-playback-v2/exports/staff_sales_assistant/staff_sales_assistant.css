@@ -1,0 +1,41 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-staff_sales_assistant {
+  display: inline-block;
+  width: 32px; height: 48px;
+  background-image: url("staff_sales_assistant.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-staff_sales_assistant-still { background-position: -0px -0px; animation: pf-staff_sales_assistant-still 1000ms steps(1, end) infinite; }
+@keyframes pf-staff_sales_assistant-still {
+  0% { background-position: -0px -0px; }
+  100% { background-position: -0px -0px; }
+}
+.pf-staff_sales_assistant-idle { background-position: -0px -48px; animation: pf-staff_sales_assistant-idle 18000ms steps(1, end) infinite; }
+@keyframes pf-staff_sales_assistant-idle {
+  0% { background-position: -0px -48px; }
+  8.33333333% { background-position: -32px -48px; }
+  15% { background-position: -64px -48px; }
+  19.16666667% { background-position: -96px -48px; }
+  20.27777778% { background-position: -0px -96px; }
+  25% { background-position: -32px -96px; }
+  31.66666667% { background-position: -64px -96px; }
+  41.66666667% { background-position: -96px -96px; }
+  45.27777778% { background-position: -0px -144px; }
+  46.38888889% { background-position: -32px -144px; }
+  48.33333333% { background-position: -64px -144px; }
+  58.33333333% { background-position: -96px -144px; }
+  65% { background-position: -0px -192px; }
+  71.38888889% { background-position: -32px -192px; }
+  72.5% { background-position: -64px -192px; }
+  75% { background-position: -96px -192px; }
+  81.66666667% { background-position: -0px -240px; }
+  91.66666667% { background-position: -32px -240px; }
+  92.22222222% { background-position: -64px -240px; }
+  93.33333333% { background-position: -96px -240px; }
+  98.33333333% { background-position: -0px -288px; }
+  100% { background-position: -0px -48px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-staff_sales_assistant-still { animation: none; }
+  .pf-staff_sales_assistant-idle { animation: none; }
+}
