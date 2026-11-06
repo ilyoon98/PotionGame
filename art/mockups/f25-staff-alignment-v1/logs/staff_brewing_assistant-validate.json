@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "name": "staff_brewing_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 15,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": []
+}

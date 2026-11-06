@@ -1,0 +1,203 @@
+[
+  {
+    "command": "validate",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_sales_assistant.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "render",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/exports/staff_sales_assistant",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_sales_assistant.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "inspect",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_sales_assistant.json",
+      "--frames",
+      "still,inhale,blink,inhale_blink",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_sales_assistant.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "gif",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_sales_assistant.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "validate",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_cultivation_assistant.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "render",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/exports/staff_cultivation_assistant",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_cultivation_assistant.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "inspect",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_cultivation_assistant.json",
+      "--frames",
+      "still,inhale,blink,inhale_blink",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_cultivation_assistant.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "gif",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_cultivation_assistant.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "validate",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_brewing_assistant.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "render",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/exports/staff_brewing_assistant",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_brewing_assistant.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "inspect",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_brewing_assistant.json",
+      "--frames",
+      "still,inhale,blink,inhale_blink",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_brewing_assistant.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "gif",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_brewing_assistant.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "validate",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_expedition_guide.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "render",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/exports/staff_expedition_guide",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_expedition_guide.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "inspect",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_expedition_guide.json",
+      "--frames",
+      "still,inhale,blink,inhale_blink",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_expedition_guide.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "gif",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/staff_expedition_guide.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "command": "render",
+    "arguments": [
+      "art/mockups/f25-staff-alignment-v1/recipes/comparison.json",
+      "--out",
+      "art/mockups/f25-staff-alignment-v1/reviews/comparison"
+    ],
+    "exit": 0
+  }
+]

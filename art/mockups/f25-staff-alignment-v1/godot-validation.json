@@ -1,0 +1,92 @@
+{
+	"engine": "4.6-stable (official)",
+	"failures": [],
+	"isolated_project": true,
+	"passed": true,
+	"resources": [
+		{
+			"animations": [
+				{
+					"colors": 5,
+					"frames": 11,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "idle",
+					"seconds": 9.0
+				},
+				{
+					"colors": 5,
+					"frames": 1,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "still",
+					"seconds": 1.0
+				}
+			],
+			"resource": "res://exports/staff_brewing_assistant/staff_brewing_assistant.tres"
+		},
+		{
+			"animations": [
+				{
+					"colors": 5,
+					"frames": 11,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "idle",
+					"seconds": 9.0
+				},
+				{
+					"colors": 5,
+					"frames": 1,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "still",
+					"seconds": 1.0
+				}
+			],
+			"resource": "res://exports/staff_cultivation_assistant/staff_cultivation_assistant.tres"
+		},
+		{
+			"animations": [
+				{
+					"colors": 5,
+					"frames": 11,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "idle",
+					"seconds": 9.0
+				},
+				{
+					"colors": 5,
+					"frames": 1,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "still",
+					"seconds": 1.0
+				}
+			],
+			"resource": "res://exports/staff_expedition_guide/staff_expedition_guide.tres"
+		},
+		{
+			"animations": [
+				{
+					"colors": 5,
+					"frames": 11,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "idle",
+					"seconds": 9.0
+				},
+				{
+					"colors": 5,
+					"frames": 1,
+					"invalid_pixels": 0,
+					"loop": true,
+					"name": "still",
+					"seconds": 1.0
+				}
+			],
+			"resource": "res://exports/staff_sales_assistant/staff_sales_assistant.tres"
+		}
+	]
+}

@@ -1,0 +1,1504 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "runtime_integrated": false,
+  "size": [
+    32,
+    48
+  ],
+  "display_scale": 3,
+  "engine": "Pixelbolt 0.11.0",
+  "standard": {
+    "head_rows": [
+      11,
+      26
+    ],
+    "neck": [
+      14,
+      27
+    ],
+    "chest": [
+      14,
+      31
+    ],
+    "waist": [
+      14,
+      35
+    ],
+    "pelvis": [
+      14,
+      37
+    ],
+    "crotch": [
+      14,
+      39
+    ],
+    "knees": [
+      [
+        12,
+        40
+      ],
+      [
+        17,
+        40
+      ]
+    ],
+    "foot_contacts": [
+      [
+        11,
+        46
+      ],
+      [
+        17,
+        46
+      ]
+    ],
+    "eyes_y": [
+      22,
+      23
+    ],
+    "note": "목·체간 X14는 이번 정렬에서 추가한 공통 판단이며 이전 승인 기준으로 표현하지 않습니다."
+  },
+  "pipeline_changed_pixels": 0,
+  "references": [
+    {
+      "id": "keeper",
+      "image": "art/mockups/f25-staff-alignment-v1/references/keeper.png",
+      "source": "assets/pixel_v1/characters/keeper/idle-native.png",
+      "sha256": "c75de87b13dfd2e1d90ad2d4d69ab42f9d056c3f95b7df6a92064f33a3c65cd3"
+    },
+    {
+      "id": "traveler",
+      "image": "art/mockups/f25-staff-alignment-v1/references/traveler.png",
+      "source": "assets/pixel_v1/characters/traveler/idle-native.png",
+      "sha256": "5f716f2b4e3d12d0f74d5eefe08d80829a5af94a2b6ffbf033969f4b7db856c6"
+    },
+    {
+      "id": "mage",
+      "image": "art/mockups/f25-staff-alignment-v1/references/mage.png",
+      "source": "assets/pixel_v1/characters/mage/idle-native.png",
+      "sha256": "ac6abd9581c30c9ba5159587b2fe341215e0596a83fe47c0df22410fad7ef00e"
+    },
+    {
+      "id": "elf",
+      "image": "art/mockups/f25-staff-alignment-v1/references/elf.png",
+      "source": "assets/pixel_v1/characters/elf/idle-native.png",
+      "sha256": "994cd1b5b913a8e60d4dcf52d1720fbc67fc4918dcce4c2f5139ef5d26e8b4ea"
+    },
+    {
+      "id": "rogue",
+      "image": "art/mockups/f25-staff-alignment-v1/references/rogue.png",
+      "source": "assets/pixel_v1/characters/rogue/idle-native.png",
+      "sha256": "cbadc85c170e671de84ccb3b3c56bc0a1d7f7556c6738c6206dd5ce395ee4737"
+    }
+  ],
+  "assets": [
+    {
+      "id": "staff_sales_assistant",
+      "name": "판매 보조",
+      "before_sha256": "986c5a20ba6227bc9eb9017aeedcd0886d4ec5db9acc50459b7c55deae34155c",
+      "after_sha256": "1ce695d2493a245682e58e22f1258b2bff623a038536dcad08d908eb951cce29",
+      "changed_pixels": 331,
+      "eyes": {
+        "x": [
+          9,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "landmarks": {
+        "neck": {
+          "position": [
+            14,
+            27
+          ],
+          "pixel": "#F6D1AC"
+        },
+        "chest": {
+          "position": [
+            14,
+            31
+          ],
+          "pixel": "#A65D64"
+        },
+        "waist": {
+          "position": [
+            14,
+            35
+          ],
+          "pixel": "#FFF0BC"
+        },
+        "hip": {
+          "position": [
+            14,
+            37
+          ],
+          "pixel": "#FFF0BC"
+        },
+        "left_knee": {
+          "position": [
+            12,
+            40
+          ],
+          "pixel": "#F6D1AC"
+        },
+        "right_knee": {
+          "position": [
+            17,
+            40
+          ],
+          "pixel": "#F6D1AC"
+        },
+        "left_foot": {
+          "position": [
+            11,
+            46
+          ],
+          "pixel": "#241C32"
+        },
+        "right_foot": {
+          "position": [
+            17,
+            46
+          ],
+          "pixel": "#241C32"
+        }
+      },
+      "semantic_regions": {
+        "neck": {
+          "pixels": 3,
+          "material_check": true,
+          "bbox": [
+            13,
+            27,
+            16,
+            28
+          ]
+        },
+        "torso_core": {
+          "pixels": 35,
+          "material_check": true,
+          "bbox": [
+            11,
+            28,
+            17,
+            35
+          ]
+        },
+        "waist": {
+          "pixels": 6,
+          "material_check": true,
+          "bbox": [
+            11,
+            35,
+            17,
+            36
+          ]
+        },
+        "hip": {
+          "pixels": 30,
+          "material_check": true,
+          "bbox": [
+            10,
+            36,
+            18,
+            40
+          ]
+        },
+        "left_leg": {
+          "pixels": 24,
+          "material_check": true,
+          "bbox": [
+            10,
+            40,
+            14,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "right_leg": {
+          "pixels": 26,
+          "material_check": true,
+          "bbox": [
+            15,
+            40,
+            20,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "left_hand": {
+          "pixels": 2,
+          "material_check": true,
+          "bbox": [
+            9,
+            37,
+            10,
+            39
+          ]
+        },
+        "right_hand": {
+          "pixels": 2,
+          "material_check": true,
+          "bbox": [
+            18,
+            37,
+            19,
+            39
+          ]
+        },
+        "props": {
+          "pixels": 0,
+          "material_check": true,
+          "bbox": null
+        }
+      },
+      "frames": [
+        {
+          "name": "still",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale_blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_0",
+          "duration": 750,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_1",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_2",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_3",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_4",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_5",
+          "duration": 850,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_6",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_7",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_8",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_9",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_10",
+          "duration": 100,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        }
+      ],
+      "loop_ms": 9000,
+      "loop_seam_changed": 0
+    },
+    {
+      "id": "staff_cultivation_assistant",
+      "name": "재배 보조",
+      "before_sha256": "82471436d9422252ee34ea0f60813e9bc3528184281c6ca05b6511eb54934bc9",
+      "after_sha256": "d69bd80a1facc96edeae96523016000300245db919f1129d8e4641676eb216d6",
+      "changed_pixels": 32,
+      "eyes": {
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "landmarks": {
+        "neck": {
+          "position": [
+            14,
+            27
+          ],
+          "pixel": "#DE9B88"
+        },
+        "chest": {
+          "position": [
+            14,
+            31
+          ],
+          "pixel": "#3D544D"
+        },
+        "waist": {
+          "position": [
+            14,
+            35
+          ],
+          "pixel": "#3D544D"
+        },
+        "hip": {
+          "position": [
+            14,
+            37
+          ],
+          "pixel": "#3D544D"
+        },
+        "left_knee": {
+          "position": [
+            12,
+            40
+          ],
+          "pixel": "#DE9B88"
+        },
+        "right_knee": {
+          "position": [
+            17,
+            40
+          ],
+          "pixel": "#DE9B88"
+        },
+        "left_foot": {
+          "position": [
+            11,
+            46
+          ],
+          "pixel": "#241C32"
+        },
+        "right_foot": {
+          "position": [
+            17,
+            46
+          ],
+          "pixel": "#241C32"
+        }
+      },
+      "semantic_regions": {
+        "neck": {
+          "pixels": 5,
+          "material_check": true,
+          "bbox": [
+            12,
+            27,
+            17,
+            28
+          ]
+        },
+        "torso_core": {
+          "pixels": 42,
+          "material_check": true,
+          "bbox": [
+            10,
+            28,
+            17,
+            34
+          ]
+        },
+        "waist": {
+          "pixels": 16,
+          "material_check": true,
+          "bbox": [
+            10,
+            34,
+            18,
+            36
+          ]
+        },
+        "hip": {
+          "pixels": 36,
+          "material_check": true,
+          "bbox": [
+            10,
+            36,
+            19,
+            40
+          ]
+        },
+        "left_leg": {
+          "pixels": 35,
+          "material_check": true,
+          "bbox": [
+            8,
+            40,
+            14,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "right_leg": {
+          "pixels": 37,
+          "material_check": true,
+          "bbox": [
+            15,
+            40,
+            21,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "left_hand": {
+          "pixels": 4,
+          "material_check": true,
+          "bbox": [
+            8,
+            34,
+            10,
+            36
+          ]
+        },
+        "right_hand": {
+          "pixels": 6,
+          "material_check": true,
+          "bbox": [
+            18,
+            34,
+            21,
+            36
+          ]
+        },
+        "props": {
+          "pixels": 46,
+          "material_check": true,
+          "bbox": [
+            0,
+            34,
+            10,
+            41
+          ]
+        }
+      },
+      "frames": [
+        {
+          "name": "still",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale_blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_0",
+          "duration": 750,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_1",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_2",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_3",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_4",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_5",
+          "duration": 850,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_6",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_7",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_8",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_9",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_10",
+          "duration": 100,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        }
+      ],
+      "loop_ms": 9000,
+      "loop_seam_changed": 0
+    },
+    {
+      "id": "staff_brewing_assistant",
+      "name": "조제 보조",
+      "before_sha256": "f594ba09debe19490ed3fcc0dac58ee868287f35162d73f4ee48aac444fe52b2",
+      "after_sha256": "58eb9429928098d920b89725430700e1bdca4102692e6ccc9de2e2218deae6ab",
+      "changed_pixels": 90,
+      "eyes": {
+        "x": [
+          10,
+          14
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "landmarks": {
+        "neck": {
+          "position": [
+            14,
+            27
+          ],
+          "pixel": "#F6D1AC"
+        },
+        "chest": {
+          "position": [
+            14,
+            31
+          ],
+          "pixel": "#4A3C52"
+        },
+        "waist": {
+          "position": [
+            14,
+            35
+          ],
+          "pixel": "#827589"
+        },
+        "hip": {
+          "position": [
+            14,
+            37
+          ],
+          "pixel": "#827589"
+        },
+        "left_knee": {
+          "position": [
+            12,
+            40
+          ],
+          "pixel": "#4A3C52"
+        },
+        "right_knee": {
+          "position": [
+            17,
+            40
+          ],
+          "pixel": "#4A3C52"
+        },
+        "left_foot": {
+          "position": [
+            11,
+            46
+          ],
+          "pixel": "#241C32"
+        },
+        "right_foot": {
+          "position": [
+            17,
+            46
+          ],
+          "pixel": "#241C32"
+        }
+      },
+      "semantic_regions": {
+        "neck": {
+          "pixels": 3,
+          "material_check": true,
+          "bbox": [
+            13,
+            27,
+            16,
+            28
+          ]
+        },
+        "torso_core": {
+          "pixels": 49,
+          "material_check": true,
+          "bbox": [
+            11,
+            28,
+            18,
+            35
+          ]
+        },
+        "waist": {
+          "pixels": 7,
+          "material_check": true,
+          "bbox": [
+            10,
+            35,
+            17,
+            36
+          ]
+        },
+        "hip": {
+          "pixels": 31,
+          "material_check": true,
+          "bbox": [
+            10,
+            36,
+            18,
+            40
+          ]
+        },
+        "left_leg": {
+          "pixels": 33,
+          "material_check": true,
+          "bbox": [
+            8,
+            40,
+            14,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "right_leg": {
+          "pixels": 35,
+          "material_check": true,
+          "bbox": [
+            15,
+            40,
+            20,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "left_hand": {
+          "pixels": 4,
+          "material_check": true,
+          "bbox": [
+            6,
+            34,
+            8,
+            37
+          ]
+        },
+        "right_hand": {
+          "pixels": 4,
+          "material_check": true,
+          "bbox": [
+            17,
+            35,
+            19,
+            38
+          ]
+        },
+        "props": {
+          "pixels": 40,
+          "material_check": true,
+          "bbox": [
+            19,
+            31,
+            26,
+            39
+          ]
+        }
+      },
+      "frames": [
+        {
+          "name": "still",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale_blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_0",
+          "duration": 750,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_1",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_2",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_3",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_4",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_5",
+          "duration": 850,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_6",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_7",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_8",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_9",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_10",
+          "duration": 100,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        }
+      ],
+      "loop_ms": 9000,
+      "loop_seam_changed": 0
+    },
+    {
+      "id": "staff_expedition_guide",
+      "name": "원정 길잡이",
+      "before_sha256": "fca2882e0cd2f184023d1bb31549d7bdfe7876ea09b65dfa26065d6af22c210b",
+      "after_sha256": "6f641a2b0d658d386c39c1d7f58f907f2d63f75f9340ac39bcbd66cbc90880f8",
+      "changed_pixels": 339,
+      "eyes": {
+        "x": [
+          17,
+          19
+        ],
+        "y": [
+          22,
+          23
+        ]
+      },
+      "landmarks": {
+        "neck": {
+          "position": [
+            14,
+            27
+          ],
+          "pixel": "#F6D1AC"
+        },
+        "chest": {
+          "position": [
+            14,
+            31
+          ],
+          "pixel": "#C99463"
+        },
+        "waist": {
+          "position": [
+            14,
+            35
+          ],
+          "pixel": "#C99463"
+        },
+        "hip": {
+          "position": [
+            14,
+            37
+          ],
+          "pixel": "#C99463"
+        },
+        "left_knee": {
+          "position": [
+            12,
+            40
+          ],
+          "pixel": "#24566A"
+        },
+        "right_knee": {
+          "position": [
+            17,
+            40
+          ],
+          "pixel": "#24566A"
+        },
+        "left_foot": {
+          "position": [
+            11,
+            46
+          ],
+          "pixel": "#241C32"
+        },
+        "right_foot": {
+          "position": [
+            17,
+            46
+          ],
+          "pixel": "#241C32"
+        }
+      },
+      "semantic_regions": {
+        "neck": {
+          "pixels": 3,
+          "material_check": true,
+          "bbox": [
+            13,
+            27,
+            16,
+            28
+          ]
+        },
+        "torso_core": {
+          "pixels": 37,
+          "material_check": true,
+          "bbox": [
+            11,
+            28,
+            18,
+            35
+          ]
+        },
+        "waist": {
+          "pixels": 8,
+          "material_check": true,
+          "bbox": [
+            10,
+            35,
+            18,
+            36
+          ]
+        },
+        "hip": {
+          "pixels": 40,
+          "material_check": true,
+          "bbox": [
+            10,
+            36,
+            20,
+            40
+          ]
+        },
+        "left_leg": {
+          "pixels": 32,
+          "material_check": true,
+          "bbox": [
+            9,
+            40,
+            14,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "right_leg": {
+          "pixels": 37,
+          "material_check": true,
+          "bbox": [
+            15,
+            40,
+            22,
+            47
+          ],
+          "connected_knee_to_ground": true
+        },
+        "left_hand": {
+          "pixels": 10,
+          "material_check": true,
+          "bbox": [
+            7,
+            33,
+            11,
+            36
+          ]
+        },
+        "right_hand": {
+          "pixels": 7,
+          "material_check": true,
+          "bbox": [
+            19,
+            33,
+            22,
+            36
+          ]
+        },
+        "props": {
+          "pixels": 145,
+          "material_check": true,
+          "bbox": [
+            4,
+            1,
+            9,
+            47
+          ]
+        }
+      },
+      "frames": [
+        {
+          "name": "still",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "inhale_blink",
+          "duration": 1000,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_0",
+          "duration": 750,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_1",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_2",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_3",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_4",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_5",
+          "duration": 850,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_6",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_7",
+          "duration": 1500,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_8",
+          "duration": 530,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_9",
+          "duration": 120,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        },
+        {
+          "name": "idle_10",
+          "duration": 100,
+          "colors": 5,
+          "boundary_errors": 0,
+          "partial_alpha": 0,
+          "foot_row": 46,
+          "lower_body_changed": 0,
+          "eye_skin_margin": true,
+          "legs_separated": true,
+          "prop_fixed": true
+        }
+      ],
+      "loop_ms": 9000,
+      "loop_seam_changed": 0
+    }
+  ]
+}

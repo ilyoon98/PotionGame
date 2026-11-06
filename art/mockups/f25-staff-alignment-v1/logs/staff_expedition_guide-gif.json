@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "name": "staff_expedition_guide",
+  "animation": "idle",
+  "width": 96,
+  "height": 144,
+  "scale": 3,
+  "frames": 11,
+  "duration": 9000,
+  "loop": true,
+  "colors": 5,
+  "transparent": true,
+  "partialAlpha": 0,
+  "notes": [],
+  "file": ".\\art\\mockups\\f25-staff-alignment-v1\\reviews\\staff_expedition_guide.gif",
+  "warnings": []
+}

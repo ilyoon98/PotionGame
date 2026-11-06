@@ -1,0 +1,19 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="staff_alignment_comparison.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_comparison"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 624, 342)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_comparison")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

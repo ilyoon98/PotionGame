@@ -1,0 +1,490 @@
+{
+  "frames": {
+    "still": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1000,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "inhale": {
+      "frame": {
+        "x": 32,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1000,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "blink": {
+      "frame": {
+        "x": 64,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1000,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "inhale_blink": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1000,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_0": {
+      "frame": {
+        "x": 0,
+        "y": 48,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 750,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_1": {
+      "frame": {
+        "x": 32,
+        "y": 48,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1500,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_2": {
+      "frame": {
+        "x": 64,
+        "y": 48,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1500,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_3": {
+      "frame": {
+        "x": 96,
+        "y": 48,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 530,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_4": {
+      "frame": {
+        "x": 0,
+        "y": 96,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 120,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_5": {
+      "frame": {
+        "x": 32,
+        "y": 96,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 850,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_6": {
+      "frame": {
+        "x": 64,
+        "y": 96,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1500,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_7": {
+      "frame": {
+        "x": 96,
+        "y": 96,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 1500,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_8": {
+      "frame": {
+        "x": 0,
+        "y": 144,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 530,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_9": {
+      "frame": {
+        "x": 32,
+        "y": 144,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 120,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    },
+    "idle_10": {
+      "frame": {
+        "x": 64,
+        "y": 144,
+        "w": 32,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 48
+      },
+      "duration": 100,
+      "pivot": {
+        "x": 0.4375,
+        "y": 0.958333
+      },
+      "anchor": {
+        "x": 14,
+        "y": 46
+      }
+    }
+  },
+  "animations": {
+    "still": {
+      "frames": [
+        "still"
+      ],
+      "loop": true,
+      "duration": 1000
+    },
+    "idle": {
+      "frames": [
+        "idle_0",
+        "idle_1",
+        "idle_2",
+        "idle_3",
+        "idle_4",
+        "idle_5",
+        "idle_6",
+        "idle_7",
+        "idle_8",
+        "idle_9",
+        "idle_10"
+      ],
+      "loop": true,
+      "duration": 9000
+    }
+  },
+  "meta": {
+    "app": "Pixelbolt",
+    "version": "1",
+    "image": "staff_brewing_assistant.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 128,
+      "h": 192
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "still",
+        "from": 0,
+        "to": 0,
+        "direction": "forward"
+      },
+      {
+        "name": "idle",
+        "from": 4,
+        "to": 14,
+        "direction": "forward"
+      }
+    ]
+  }
+}

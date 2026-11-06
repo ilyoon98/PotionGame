@@ -1,0 +1,1351 @@
+{
+  "status": "candidate_reviewed",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "source_root": "art/mockups/f25-staff-motion-v1/source",
+  "scope": "Existing concepts retained; integer landmark alignment with local joint and contour edits only",
+  "alignment_decision": "The shared X14 neck/trunk axis is a new alignment judgment for this task, not a previously approved art rule.",
+  "assets": {
+    "staff_sales_assistant": {
+      "id": "staff_sales_assistant",
+      "source_sha256": "46b2dc55b66721fabccc853a738bdf8cce4d8cb1de82d07fb18b9d4ae2c01f6c",
+      "result_sha256": "c99048dd1d0a7d33bc83978af3ea9e6dcdabf77a6a3be852c1266d3e45aff79b",
+      "edits": [
+        "Head and torso rows0..39 moved left2 to put the original neck at14,27; updo remains an accessory above row11.",
+        "Skirt hem old40 ->39; exposed knees start40 by extending the original shin row41.",
+        "Left lower-leg columns moved left2; right lower-leg columns moved left1. Original shoe interior colors retained; one edge pixel closes the new leg gap."
+      ],
+      "explicit_outline_repairs": [
+        [13, 43]
+      ],
+      "eyes_x": [9, 14],
+      "eyes_y": [22, 23],
+      "size": [32, 48],
+      "visible_colors": [
+        "#",
+        "w",
+        "c",
+        "s",
+        "r"
+      ],
+      "boundary_violations": [],
+      "landmark_grid_values": {
+        "neck": {
+          "x": 14,
+          "y": 27,
+          "character": "s"
+        },
+        "chest": {
+          "x": 14,
+          "y": 31,
+          "character": "r"
+        },
+        "waist": {
+          "x": 14,
+          "y": 35,
+          "character": "c"
+        },
+        "pelvis": {
+          "x": 14,
+          "y": 37,
+          "character": "c"
+        },
+        "crotch": {
+          "x": 14,
+          "y": 39,
+          "character": "#"
+        },
+        "left_knee": {
+          "x": 12,
+          "y": 40,
+          "character": "s"
+        },
+        "right_knee": {
+          "x": 17,
+          "y": 40,
+          "character": "s"
+        },
+        "left_contact": {
+          "x": 11,
+          "y": 46,
+          "character": "#"
+        },
+        "right_contact": {
+          "x": 17,
+          "y": 46,
+          "character": "#"
+        }
+      },
+      "changed_pixels": 331,
+      "eyes": {
+        "x": [9, 14],
+        "y": [22, 23]
+      },
+      "summary": "머리·몸통을 왼쪽 2픽셀 옮겨 목축을 맞추고 치마 밑선을 39행으로 올렸습니다. 다리는 40행부터 보이며 좌우 다리를 골반 아래로 정렬했습니다.",
+      "semantic_masks": {
+        "neck": {
+          "runs": [
+            [27, 13, 15]
+          ],
+          "allowed_chars": [
+            "#",
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "#": 2,
+            "s": 1
+          }
+        },
+        "torso_core": {
+          "runs": [
+            [28, 12, 14],
+            [28, 16, 16],
+            [29, 12, 16],
+            [30, 11, 16],
+            [31, 11, 16],
+            [32, 11, 16],
+            [33, 12, 15],
+            [34, 12, 15]
+          ],
+          "allowed_chars": [
+            "#",
+            "r",
+            "c"
+          ],
+          "interior_chars": [
+            "r",
+            "c"
+          ],
+          "expected_counts": {
+            "#": 6,
+            "c": 6,
+            "r": 23
+          }
+        },
+        "waist": {
+          "runs": [
+            [35, 11, 16]
+          ],
+          "allowed_chars": [
+            "#",
+            "r",
+            "c"
+          ],
+          "interior_chars": [
+            "r",
+            "c"
+          ],
+          "expected_counts": {
+            "r": 2,
+            "c": 4
+          }
+        },
+        "hip": {
+          "runs": [
+            [36, 11, 16],
+            [37, 10, 17],
+            [38, 10, 17],
+            [39, 10, 17]
+          ],
+          "allowed_chars": [
+            "#",
+            "r",
+            "c"
+          ],
+          "interior_chars": [
+            "r",
+            "c"
+          ],
+          "expected_counts": {
+            "r": 10,
+            "c": 12,
+            "#": 8
+          }
+        },
+        "left_leg": {
+          "runs": [
+            [40, 11, 13],
+            [41, 11, 13],
+            [42, 11, 13],
+            [43, 10, 13],
+            [44, 10, 13],
+            [45, 11, 13],
+            [46, 10, 13]
+          ],
+          "allowed_chars": [
+            "#",
+            "s",
+            "w"
+          ],
+          "interior_chars": [
+            "s",
+            "w"
+          ],
+          "expected_counts": {
+            "#": 19,
+            "s": 3,
+            "w": 2
+          }
+        },
+        "right_leg": {
+          "runs": [
+            [40, 15, 18],
+            [41, 15, 18],
+            [42, 15, 18],
+            [43, 15, 18],
+            [44, 16, 18],
+            [45, 16, 18],
+            [46, 16, 19]
+          ],
+          "allowed_chars": [
+            "#",
+            "s",
+            "w"
+          ],
+          "interior_chars": [
+            "s",
+            "w"
+          ],
+          "expected_counts": {
+            "#": 18,
+            "s": 6,
+            "w": 2
+          }
+        },
+        "left_hand": {
+          "runs": [
+            [37, 9, 9],
+            [38, 9, 9]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 2
+          }
+        },
+        "right_hand": {
+          "runs": [
+            [37, 18, 18],
+            [38, 18, 18]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 2
+          }
+        },
+        "props": {
+          "runs": [],
+          "allowed_chars": [
+            "#"
+          ],
+          "interior_chars": [],
+          "expected_counts": {}
+        }
+      },
+      "semantic_notes": [
+        "torso_core is the bounded anatomical chest/tunic region; garment_extent includes the wider gown/cape/skirt and sleeves. Do not infer the body width from garment_extent.",
+        "Region coordinates and the listed expected interior material colors must both match. Head hair and held props are excluded from core regions.",
+        "Hand masks are exact visible skin runs, not rectangles around both hands. Props include visible silhouette pixels but exclude occluding skin.",
+        "Leg masks start at40 and include boots/outline. Centroids describe visible pixel mass; asymmetric boot toes are retained, so the two masses are not forced to exact mirror images."
+      ],
+      "leg_metrics": {
+        "left": {
+          "bbox": [10, 40, 14, 47],
+          "centroid": [11.75, 43.166666666666664],
+          "pixels": 24
+        },
+        "right": {
+          "bbox": [15, 40, 20, 47],
+          "centroid": [16.76923076923077, 42.88461538461539],
+          "pixels": 26
+        }
+      },
+      "garment_extent": {
+        "bbox": [7, 28, 21, 40],
+        "centroid": [13.651785714285714, 34.24107142857143],
+        "pixel_count": 112,
+        "interior_chars": [
+          "r",
+          "c",
+          "w"
+        ],
+        "note": "Wider garment envelope; not the anatomical torso core."
+      }
+    },
+    "staff_cultivation_assistant": {
+      "id": "staff_cultivation_assistant",
+      "source_sha256": "2721e29648e0d34b3f93a783985ffc0175edb100dcd2fdc64563fec80698dd39",
+      "result_sha256": "1fa57cc6d10a412f7829545172f5d7929198762801a0e37285674bf3c7a8abc2",
+      "edits": [
+        "Keep hat and eyes; remove one redundant lower-face row by old26 ->25 and jaw outline old27 ->26.",
+        "Create neck at row27, x12..16 (#SSS#), aligning visible skin toX14.",
+        "Torso/hips/legs/watering can already match the target grid and remain in place.",
+        "Separate the two boots: clear(14,44),(14,45),(14,46); close the right boot inner edge(15,44),(15,45) with outline. This also removes diagonal contact."
+      ],
+      "explicit_outline_repairs": [
+        [7, 24],
+        [11, 28],
+        [18, 28],
+        [15, 44],
+        [15, 45]
+      ],
+      "eyes_x": [10, 14],
+      "eyes_y": [22, 23],
+      "size": [32, 48],
+      "visible_colors": [
+        "#",
+        "L",
+        "g",
+        "a",
+        "S"
+      ],
+      "boundary_violations": [],
+      "landmark_grid_values": {
+        "neck": {
+          "x": 14,
+          "y": 27,
+          "character": "S"
+        },
+        "chest": {
+          "x": 14,
+          "y": 31,
+          "character": "L"
+        },
+        "waist": {
+          "x": 14,
+          "y": 35,
+          "character": "L"
+        },
+        "pelvis": {
+          "x": 14,
+          "y": 37,
+          "character": "L"
+        },
+        "crotch": {
+          "x": 14,
+          "y": 39,
+          "character": "#"
+        },
+        "left_knee": {
+          "x": 12,
+          "y": 40,
+          "character": "S"
+        },
+        "right_knee": {
+          "x": 17,
+          "y": 40,
+          "character": "S"
+        },
+        "left_contact": {
+          "x": 11,
+          "y": 46,
+          "character": "#"
+        },
+        "right_contact": {
+          "x": 17,
+          "y": 46,
+          "character": "#"
+        }
+      },
+      "changed_pixels": 32,
+      "eyes": {
+        "x": [10, 14],
+        "y": [22, 23]
+      },
+      "summary": "눈과 모자는 유지하고 아래 얼굴 한 행을 줄여 턱을 26행에 닫았습니다. 27행에 목을 연결했으며 이미 맞는 몸통·다리·물뿌리개는 유지했습니다. 장화 사이 14열의 접촉도 분리했습니다.",
+      "semantic_masks": {
+        "neck": {
+          "runs": [
+            [27, 12, 16]
+          ],
+          "allowed_chars": [
+            "#",
+            "S"
+          ],
+          "interior_chars": [
+            "S"
+          ],
+          "expected_counts": {
+            "#": 2,
+            "S": 3
+          }
+        },
+        "torso_core": {
+          "runs": [
+            [28, 10, 16],
+            [29, 10, 16],
+            [30, 10, 16],
+            [31, 10, 16],
+            [32, 10, 16],
+            [33, 10, 16]
+          ],
+          "allowed_chars": [
+            "#",
+            "L",
+            "g"
+          ],
+          "interior_chars": [
+            "L",
+            "g"
+          ],
+          "expected_counts": {
+            "#": 12,
+            "g": 7,
+            "L": 23
+          }
+        },
+        "waist": {
+          "runs": [
+            [34, 10, 17],
+            [35, 10, 17]
+          ],
+          "allowed_chars": [
+            "#",
+            "L"
+          ],
+          "interior_chars": [
+            "L"
+          ],
+          "expected_counts": {
+            "#": 10,
+            "L": 6
+          }
+        },
+        "hip": {
+          "runs": [
+            [36, 10, 18],
+            [37, 10, 18],
+            [38, 10, 18],
+            [39, 10, 18]
+          ],
+          "allowed_chars": [
+            "#",
+            "L"
+          ],
+          "interior_chars": [
+            "L"
+          ],
+          "expected_counts": {
+            "L": 28,
+            "#": 8
+          }
+        },
+        "left_leg": {
+          "runs": [
+            [40, 10, 13],
+            [41, 10, 13],
+            [42, 9, 13],
+            [43, 8, 13],
+            [44, 8, 13],
+            [45, 8, 13],
+            [46, 9, 12]
+          ],
+          "allowed_chars": [
+            "#",
+            "S",
+            "a"
+          ],
+          "interior_chars": [
+            "S",
+            "a"
+          ],
+          "expected_counts": {
+            "#": 19,
+            "S": 3,
+            "a": 13
+          }
+        },
+        "right_leg": {
+          "runs": [
+            [40, 15, 19],
+            [41, 15, 19],
+            [42, 15, 19],
+            [43, 15, 19],
+            [44, 15, 20],
+            [45, 15, 20],
+            [46, 15, 19]
+          ],
+          "allowed_chars": [
+            "#",
+            "S",
+            "a"
+          ],
+          "interior_chars": [
+            "S",
+            "a"
+          ],
+          "expected_counts": {
+            "#": 23,
+            "S": 3,
+            "a": 11
+          }
+        },
+        "left_hand": {
+          "runs": [
+            [34, 8, 9],
+            [35, 8, 9]
+          ],
+          "allowed_chars": [
+            "S"
+          ],
+          "interior_chars": [
+            "S"
+          ],
+          "expected_counts": {
+            "S": 4
+          }
+        },
+        "right_hand": {
+          "runs": [
+            [34, 18, 20],
+            [35, 18, 20]
+          ],
+          "allowed_chars": [
+            "S"
+          ],
+          "interior_chars": [
+            "S"
+          ],
+          "expected_counts": {
+            "S": 6
+          }
+        },
+        "props": {
+          "runs": [
+            [34, 0, 1],
+            [35, 0, 2],
+            [36, 1, 9],
+            [37, 1, 9],
+            [38, 2, 9],
+            [39, 2, 9],
+            [40, 2, 8]
+          ],
+          "allowed_chars": [
+            "#",
+            "a",
+            "g"
+          ],
+          "interior_chars": [
+            "a",
+            "g"
+          ],
+          "expected_counts": {
+            "#": 28,
+            "a": 15,
+            "g": 3
+          }
+        }
+      },
+      "semantic_notes": [
+        "torso_core is the bounded anatomical chest/tunic region; garment_extent includes the wider gown/cape/skirt and sleeves. Do not infer the body width from garment_extent.",
+        "Region coordinates and the listed expected interior material colors must both match. Head hair and held props are excluded from core regions.",
+        "Hand masks are exact visible skin runs, not rectangles around both hands. Props include visible silhouette pixels but exclude occluding skin.",
+        "Leg masks start at40 and include boots/outline. Centroids describe visible pixel mass; asymmetric boot toes are retained, so the two masses are not forced to exact mirror images."
+      ],
+      "leg_metrics": {
+        "left": {
+          "bbox": [8, 40, 14, 47],
+          "centroid": [10.8, 43.142857142857146],
+          "pixels": 35
+        },
+        "right": {
+          "bbox": [15, 40, 21, 47],
+          "centroid": [17.16216216216216, 43.08108108108108],
+          "pixels": 37
+        }
+      },
+      "garment_extent": {
+        "bbox": [6, 28, 24, 40],
+        "centroid": [14.375838926174497, 33.348993288590606],
+        "pixel_count": 149,
+        "interior_chars": [
+          "L",
+          "g"
+        ],
+        "note": "Wider garment envelope; not the anatomical torso core."
+      },
+      "explicit_transparent_repairs": [
+        [14, 44],
+        [14, 45],
+        [14, 46]
+      ]
+    },
+    "staff_brewing_assistant": {
+      "id": "staff_brewing_assistant",
+      "source_sha256": "b91574199f25f80fae115271ded413e2c07ce7dbfd1d90850d13844ca3b925ed",
+      "result_sha256": "aa205977cd2d7779bb733acbb1c62cc931856b19a035a54f06428f00c4befdad",
+      "edits": [
+        "Remove the gown pixels intruding into head row26 and close the existing jaw/hair at26.",
+        "Neck skin at14,27 with one-pixel side outline; retain the small left hair lock.",
+        "Existing gown starts28; exposed top-edge pixels explicitly outlined. Flask untouched.",
+        "Legs/boots move right1 from row40 down to put knees and contacts under the common pelvis.",
+        "Close the new enclosed neck-left gap at(10..12,27) using existing dark gown color k; no change to face or eyes."
+      ],
+      "explicit_outline_repairs": [
+        [10, 28],
+        [11, 28],
+        [12, 28],
+        [16, 28],
+        [17, 28],
+        [18, 28],
+        [19, 28],
+        [20, 28],
+        [21, 28],
+        [22, 28]
+      ],
+      "eyes_x": [10, 14],
+      "eyes_y": [22, 23],
+      "size": [32, 48],
+      "visible_colors": [
+        "#",
+        "R",
+        "m",
+        "s",
+        "k"
+      ],
+      "boundary_violations": [],
+      "landmark_grid_values": {
+        "neck": {
+          "x": 14,
+          "y": 27,
+          "character": "s"
+        },
+        "chest": {
+          "x": 14,
+          "y": 31,
+          "character": "k"
+        },
+        "waist": {
+          "x": 14,
+          "y": 35,
+          "character": "m"
+        },
+        "pelvis": {
+          "x": 14,
+          "y": 37,
+          "character": "m"
+        },
+        "crotch": {
+          "x": 14,
+          "y": 39,
+          "character": "#"
+        },
+        "left_knee": {
+          "x": 12,
+          "y": 40,
+          "character": "k"
+        },
+        "right_knee": {
+          "x": 17,
+          "y": 40,
+          "character": "k"
+        },
+        "left_contact": {
+          "x": 11,
+          "y": 46,
+          "character": "#"
+        },
+        "right_contact": {
+          "x": 17,
+          "y": 46,
+          "character": "#"
+        }
+      },
+      "changed_pixels": 90,
+      "eyes": {
+        "x": [10, 14],
+        "y": [22, 23]
+      },
+      "summary": "머리 영역 26행에 올라와 있던 가운을 걷어내 턱과 머리카락 끝을 닫고 목을 27행에 연결했습니다. 가슴은 28행부터 시작하며 다리와 장화를 오른쪽 1픽셀 옮겼습니다. 목 왼쪽 접합의 배경 구멍 3픽셀은 기존 가운 그림자색으로 연결했습니다.",
+      "semantic_masks": {
+        "neck": {
+          "runs": [
+            [27, 13, 15]
+          ],
+          "allowed_chars": [
+            "#",
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "#": 2,
+            "s": 1
+          }
+        },
+        "torso_core": {
+          "runs": [
+            [28, 11, 17],
+            [29, 11, 17],
+            [30, 11, 17],
+            [31, 11, 17],
+            [32, 11, 17],
+            [33, 11, 17],
+            [34, 11, 17]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "k"
+          ],
+          "interior_chars": [
+            "m",
+            "k"
+          ],
+          "expected_counts": {
+            "#": 4,
+            "k": 18,
+            "m": 27
+          }
+        },
+        "waist": {
+          "runs": [
+            [35, 10, 16]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "k"
+          ],
+          "interior_chars": [
+            "m",
+            "k"
+          ],
+          "expected_counts": {
+            "m": 5,
+            "k": 2
+          }
+        },
+        "hip": {
+          "runs": [
+            [36, 10, 16],
+            [37, 10, 17],
+            [38, 10, 17],
+            [39, 10, 17]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "k"
+          ],
+          "interior_chars": [
+            "m",
+            "k"
+          ],
+          "expected_counts": {
+            "m": 18,
+            "k": 5,
+            "#": 8
+          }
+        },
+        "left_leg": {
+          "runs": [
+            [40, 10, 13],
+            [41, 10, 13],
+            [42, 10, 13],
+            [43, 10, 13],
+            [44, 9, 13],
+            [45, 8, 13],
+            [46, 8, 13]
+          ],
+          "allowed_chars": [
+            "#",
+            "k",
+            "R"
+          ],
+          "interior_chars": [
+            "k",
+            "R"
+          ],
+          "expected_counts": {
+            "#": 19,
+            "k": 6,
+            "R": 8
+          }
+        },
+        "right_leg": {
+          "runs": [
+            [40, 15, 19],
+            [41, 15, 19],
+            [42, 15, 19],
+            [43, 15, 19],
+            [44, 15, 19],
+            [45, 15, 19],
+            [46, 15, 19]
+          ],
+          "allowed_chars": [
+            "#",
+            "k",
+            "R"
+          ],
+          "interior_chars": [
+            "k",
+            "R"
+          ],
+          "expected_counts": {
+            "#": 17,
+            "k": 9,
+            "R": 9
+          }
+        },
+        "left_hand": {
+          "runs": [
+            [34, 6, 6],
+            [35, 6, 7],
+            [36, 7, 7]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 4
+          }
+        },
+        "right_hand": {
+          "runs": [
+            [35, 18, 18],
+            [36, 17, 18],
+            [37, 18, 18]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 4
+          }
+        },
+        "props": {
+          "runs": [
+            [31, 21, 23],
+            [32, 21, 23],
+            [33, 20, 24],
+            [34, 19, 25],
+            [35, 19, 25],
+            [36, 19, 25],
+            [37, 20, 24],
+            [38, 21, 23]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "R"
+          ],
+          "interior_chars": [
+            "m",
+            "R"
+          ],
+          "expected_counts": {
+            "#": 20,
+            "m": 7,
+            "R": 13
+          }
+        }
+      },
+      "semantic_notes": [
+        "torso_core is the bounded anatomical chest/tunic region; garment_extent includes the wider gown/cape/skirt and sleeves. Do not infer the body width from garment_extent.",
+        "Region coordinates and the listed expected interior material colors must both match. Head hair and held props are excluded from core regions.",
+        "Hand masks are exact visible skin runs, not rectangles around both hands. Props include visible silhouette pixels but exclude occluding skin.",
+        "Leg masks start at40 and include boots/outline. Centroids describe visible pixel mass; asymmetric boot toes are retained, so the two masses are not forced to exact mirror images."
+      ],
+      "leg_metrics": {
+        "left": {
+          "bbox": [8, 40, 14, 47],
+          "centroid": [11.06060606060606, 43.333333333333336],
+          "pixels": 33
+        },
+        "right": {
+          "bbox": [15, 40, 20, 47],
+          "centroid": [17, 43],
+          "pixels": 35
+        }
+      },
+      "garment_extent": {
+        "bbox": [5, 28, 24, 40],
+        "centroid": [13.388235294117647, 33.03529411764706],
+        "pixel_count": 170,
+        "interior_chars": [
+          "m",
+          "k"
+        ],
+        "note": "Wider garment envelope; not the anatomical torso core."
+      },
+      "explicit_joint_fills": [
+        {
+          "x": 10,
+          "y": 27,
+          "char": "k"
+        },
+        {
+          "x": 11,
+          "y": 27,
+          "char": "k"
+        },
+        {
+          "x": 12,
+          "y": 27,
+          "char": "k"
+        }
+      ]
+    },
+    "staff_expedition_guide": {
+      "id": "staff_expedition_guide",
+      "source_sha256": "de7e0c9fdd1cf710df3157dc4929ebcb9211b644bc57874c098768f7bd8d9fbb",
+      "result_sha256": "6d9e82d77aa29e1219516a98271d0f6394fa24203801ea39d74a032a252e88de",
+      "edits": [
+        "Keep lantern and staff; clear old head rows8..10 atx>=8. New11..24=old8..21, placing eyes22..23.",
+        "New25=old22 and26=old24: remove one lower-beard row to fit the former17-row head into16 rows. Explicit jaw closure; do not call simple translation alone sufficient.",
+        "Visible neck at14,27; scarf28; chest rows29/30/31 use old27/28/30. Hands33..35 retained.",
+        "Cloak closes at39. Expose existing teal trousers at40..42 with two outlined legs10..13 and15..18.",
+        "Original left boot core8..12 shifts right1; original right boot17..23 shifts left2. Toe extension retained."
+      ],
+      "explicit_outline_repairs": [
+        [14, 26],
+        [15, 26],
+        [16, 26],
+        [11, 28],
+        [12, 28],
+        [16, 28],
+        [17, 28],
+        [18, 28],
+        [9, 45]
+      ],
+      "eyes_x": [17, 19],
+      "eyes_y": [22, 23],
+      "size": [32, 48],
+      "visible_colors": [
+        "#",
+        "g",
+        "o",
+        "T",
+        "s"
+      ],
+      "boundary_violations": [],
+      "landmark_grid_values": {
+        "neck": {
+          "x": 14,
+          "y": 27,
+          "character": "s"
+        },
+        "chest": {
+          "x": 14,
+          "y": 31,
+          "character": "o"
+        },
+        "waist": {
+          "x": 14,
+          "y": 35,
+          "character": "o"
+        },
+        "pelvis": {
+          "x": 14,
+          "y": 37,
+          "character": "o"
+        },
+        "crotch": {
+          "x": 14,
+          "y": 39,
+          "character": "#"
+        },
+        "left_knee": {
+          "x": 12,
+          "y": 40,
+          "character": "T"
+        },
+        "right_knee": {
+          "x": 17,
+          "y": 40,
+          "character": "T"
+        },
+        "left_contact": {
+          "x": 11,
+          "y": 46,
+          "character": "#"
+        },
+        "right_contact": {
+          "x": 17,
+          "y": 46,
+          "character": "#"
+        }
+      },
+      "changed_pixels": 339,
+      "eyes": {
+        "x": [17, 19],
+        "y": [22, 23]
+      },
+      "summary": "눈을 22~23행으로 내리고 아래 수염 한 행을 줄여 머리를 11~26행에 맞췄습니다. 목·스카프·가슴을 이어 붙이고 망토를 39행에 닫아 40행부터 양다리가 보이게 했습니다. 지팡이·등불·양손은 유지했습니다.",
+      "semantic_masks": {
+        "neck": {
+          "runs": [
+            [27, 13, 15]
+          ],
+          "allowed_chars": [
+            "#",
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "#": 2,
+            "s": 1
+          }
+        },
+        "torso_core": {
+          "runs": [
+            [28, 13, 15],
+            [29, 13, 16],
+            [30, 12, 16],
+            [31, 12, 17],
+            [32, 13, 17],
+            [33, 11, 17],
+            [34, 11, 17]
+          ],
+          "allowed_chars": [
+            "#",
+            "g",
+            "o"
+          ],
+          "interior_chars": [
+            "g",
+            "o"
+          ],
+          "expected_counts": {
+            "g": 3,
+            "#": 7,
+            "o": 27
+          }
+        },
+        "waist": {
+          "runs": [
+            [35, 10, 17]
+          ],
+          "allowed_chars": [
+            "#",
+            "o"
+          ],
+          "interior_chars": [
+            "o"
+          ],
+          "expected_counts": {
+            "#": 1,
+            "o": 7
+          }
+        },
+        "hip": {
+          "runs": [
+            [36, 10, 19],
+            [37, 10, 19],
+            [38, 10, 19],
+            [39, 10, 19]
+          ],
+          "allowed_chars": [
+            "#",
+            "o",
+            "T"
+          ],
+          "interior_chars": [
+            "o",
+            "T"
+          ],
+          "expected_counts": {
+            "#": 17,
+            "o": 22,
+            "T": 1
+          }
+        },
+        "left_leg": {
+          "runs": [
+            [40, 10, 13],
+            [41, 10, 13],
+            [42, 10, 13],
+            [43, 9, 13],
+            [44, 9, 13],
+            [45, 9, 13],
+            [46, 9, 13]
+          ],
+          "allowed_chars": [
+            "#",
+            "T",
+            "o"
+          ],
+          "interior_chars": [
+            "T",
+            "o"
+          ],
+          "expected_counts": {
+            "#": 17,
+            "T": 6,
+            "o": 9
+          }
+        },
+        "right_leg": {
+          "runs": [
+            [40, 15, 18],
+            [41, 15, 18],
+            [42, 15, 18],
+            [43, 15, 20],
+            [44, 15, 19],
+            [45, 15, 21],
+            [46, 15, 21]
+          ],
+          "allowed_chars": [
+            "#",
+            "T",
+            "o"
+          ],
+          "interior_chars": [
+            "T",
+            "o"
+          ],
+          "expected_counts": {
+            "#": 22,
+            "T": 6,
+            "o": 9
+          }
+        },
+        "left_hand": {
+          "runs": [
+            [33, 7, 10],
+            [34, 7, 9],
+            [35, 7, 9]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 10
+          }
+        },
+        "right_hand": {
+          "runs": [
+            [33, 19, 20],
+            [34, 19, 21],
+            [35, 20, 21]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 7
+          }
+        },
+        "props": {
+          "runs": [
+            [1, 5, 7],
+            [2, 4, 8],
+            [3, 4, 8],
+            [4, 4, 8],
+            [5, 4, 8],
+            [6, 4, 8],
+            [7, 5, 7],
+            [8, 5, 7],
+            [9, 5, 7],
+            [10, 5, 7],
+            [11, 5, 7],
+            [12, 5, 7],
+            [13, 5, 7],
+            [14, 5, 7],
+            [15, 5, 7],
+            [16, 5, 7],
+            [17, 5, 7],
+            [18, 5, 7],
+            [19, 5, 7],
+            [20, 5, 7],
+            [21, 5, 7],
+            [22, 5, 7],
+            [23, 5, 7],
+            [24, 5, 7],
+            [25, 5, 7],
+            [26, 5, 7],
+            [27, 5, 7],
+            [28, 5, 7],
+            [29, 5, 7],
+            [30, 5, 7],
+            [31, 5, 7],
+            [32, 5, 7],
+            [33, 5, 6],
+            [34, 5, 6],
+            [35, 5, 6],
+            [36, 5, 7],
+            [37, 5, 7],
+            [38, 5, 7],
+            [39, 5, 7],
+            [40, 5, 7],
+            [41, 5, 7],
+            [42, 5, 7],
+            [43, 5, 7],
+            [44, 5, 7],
+            [45, 5, 7],
+            [46, 5, 7]
+          ],
+          "allowed_chars": [
+            "#",
+            "o",
+            "g"
+          ],
+          "interior_chars": [
+            "o",
+            "g"
+          ],
+          "expected_counts": {
+            "#": 100,
+            "g": 9,
+            "o": 36
+          }
+        }
+      },
+      "semantic_notes": [
+        "torso_core is the bounded anatomical chest/tunic region; garment_extent includes the wider gown/cape/skirt and sleeves. Do not infer the body width from garment_extent.",
+        "Region coordinates and the listed expected interior material colors must both match. Head hair and held props are excluded from core regions.",
+        "Hand masks are exact visible skin runs, not rectangles around both hands. Props include visible silhouette pixels but exclude occluding skin.",
+        "Leg masks start at40 and include boots/outline. Centroids describe visible pixel mass; asymmetric boot toes are retained, so the two masses are not forced to exact mirror images."
+      ],
+      "leg_metrics": {
+        "left": {
+          "bbox": [9, 40, 14, 47],
+          "centroid": [11.1875, 43.1875],
+          "pixels": 32
+        },
+        "right": {
+          "bbox": [15, 40, 22, 47],
+          "centroid": [17.2972972972973, 43.432432432432435],
+          "pixels": 37
+        }
+      },
+      "garment_extent": {
+        "bbox": [4, 28, 26, 40],
+        "centroid": [15.304093567251462, 34.0233918128655],
+        "pixel_count": 171,
+        "interior_chars": [
+          "T",
+          "o",
+          "g"
+        ],
+        "note": "Wider garment envelope; not the anatomical torso core."
+      }
+    }
+  },
+  "standard": {
+    "head_rows": [11, 26],
+    "neck": [14, 27],
+    "chest": [14, 31],
+    "waist": [14, 35],
+    "pelvis": [14, 37],
+    "crotch": [14, 39],
+    "knees": [
+      [12, 40],
+      [17, 40]
+    ],
+    "foot_contacts": [
+      [11, 46],
+      [17, 46]
+    ],
+    "eyes_y": [22, 23],
+    "note": "목·체간 X14는 이번 정렬에서 추가한 공통 판단이며 이전 승인 기준으로 표현하지 않습니다."
+  },
+  "mask_schema": {
+    "version": 1,
+    "meaning": "Explicit actual-pixel semantic masks for this static candidate, not whole-canvas landmark checks.",
+    "legend_source": "art/mockups/f25-staff-motion-v1/source/generation.json",
+    "interior_excludes_outline": true,
+    "regions": [
+      "neck",
+      "torso_core",
+      "waist",
+      "hip",
+      "left_leg",
+      "right_leg",
+      "left_hand",
+      "right_hand",
+      "props"
+    ],
+    "coordinate_convention": "runs=[y,x0,x1] with inclusive x1; bbox=[x0,y0,x1,y1] with exclusive end",
+    "legend": {
+      "#": {
+        "color": "#241C32",
+        "ramp": "outline"
+      },
+      "s": {
+        "color": "#F6D1AC",
+        "ramp": "skin"
+      },
+      "S": {
+        "color": "#DE9B88",
+        "ramp": "skin"
+      },
+      "r": {
+        "color": "#A65D64",
+        "ramp": "skin"
+      },
+      "c": {
+        "color": "#FFF0BC",
+        "ramp": "gold"
+      },
+      "g": {
+        "color": "#E9B95F",
+        "ramp": "gold"
+      },
+      "a": {
+        "color": "#A56A3D",
+        "ramp": "gold"
+      },
+      "w": {
+        "color": "#50333B",
+        "ramp": "wood"
+      },
+      "o": {
+        "color": "#C99463",
+        "ramp": "wood"
+      },
+      "L": {
+        "color": "#3D544D",
+        "ramp": "leaf"
+      },
+      "m": {
+        "color": "#827589",
+        "ramp": "stone"
+      },
+      "R": {
+        "color": "#9D4359",
+        "ramp": "fire"
+      },
+      "t": {
+        "color": "#9BE2CF",
+        "ramp": "teal"
+      },
+      "T": {
+        "color": "#24566A",
+        "ramp": "teal"
+      },
+      "k": {
+        "color": "#4A3C52",
+        "ramp": "stone"
+      }
+    }
+  }
+}

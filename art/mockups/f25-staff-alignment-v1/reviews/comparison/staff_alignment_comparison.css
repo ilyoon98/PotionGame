@@ -1,0 +1,15 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-staff_alignment_comparison {
+  display: inline-block;
+  width: 624px; height: 342px;
+  background-image: url("staff_alignment_comparison.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-staff_alignment_comparison-default { background-position: -0px -0px; animation: pf-staff_alignment_comparison-default 100ms steps(1, end) infinite; }
+@keyframes pf-staff_alignment_comparison-default {
+  0% { background-position: -0px -0px; }
+  100% { background-position: -0px -0px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-staff_alignment_comparison-default { animation: none; }
+}

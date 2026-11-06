@@ -1,0 +1,53 @@
+{
+  "frames": {
+    "comparison": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 624,
+        "h": 342
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 624,
+        "h": 342
+      },
+      "sourceSize": {
+        "w": 624,
+        "h": 342
+      },
+      "duration": 100
+    }
+  },
+  "animations": {
+    "default": {
+      "frames": [
+        "comparison"
+      ],
+      "loop": true,
+      "duration": 100
+    }
+  },
+  "meta": {
+    "app": "Pixelbolt",
+    "version": "1",
+    "image": "staff_alignment_comparison.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 624,
+      "h": 342
+    },
+    "scale": "3",
+    "frameTags": [
+      {
+        "name": "default",
+        "from": 0,
+        "to": 0,
+        "direction": "forward"
+      }
+    ]
+  }
+}

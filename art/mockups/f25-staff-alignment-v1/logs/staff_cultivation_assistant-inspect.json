@@ -1,0 +1,252 @@
+{
+  "ok": true,
+  "name": "staff_cultivation_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 15,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "still",
+      "duration": 1000
+    },
+    {
+      "frame": "inhale",
+      "duration": 1000
+    },
+    {
+      "frame": "blink",
+      "duration": 1000
+    },
+    {
+      "frame": "inhale_blink",
+      "duration": 1000
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 4,
+    "rows": 1,
+    "scale": 3,
+    "gap": 3,
+    "width": 399,
+    "height": 150
+  },
+  "nativeSheet": {
+    "columns": 4,
+    "rows": 1,
+    "scale": 1,
+    "gap": 2,
+    "width": 138,
+    "height": 52
+  },
+  "diagnostics": {
+    "advisory": true,
+    "frames": [
+      {
+        "frame": "still",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "inhale",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "blink",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 2
+      },
+      {
+        "frame": "inhale_blink",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 2
+      },
+      {
+        "frame": "idle_0",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_1",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_2",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_3",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_4",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 2
+      },
+      {
+        "frame": "idle_5",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_6",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_7",
+        "visible": 652,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_8",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      },
+      {
+        "frame": "idle_9",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 2
+      },
+      {
+        "frame": "idle_10",
+        "visible": 638,
+        "colors": 5,
+        "corners": 11,
+        "strays": 0
+      }
+    ],
+    "animations": [
+      {
+        "animation": "still",
+        "duration": 1000,
+        "entries": 1,
+        "repeatedAdjacent": 0,
+        "boundary": {
+          "pixels": 0
+        }
+      },
+      {
+        "animation": "idle",
+        "duration": 9000,
+        "entries": 11,
+        "repeatedAdjacent": 0,
+        "boundary": {
+          "pixels": 0
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "duplicate",
+        "frame": "idle_0",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_1",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_2",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_3",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_4",
+        "sameAs": "inhale_blink",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_5",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_6",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_7",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_8",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_9",
+        "sameAs": "blink",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle_10",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      }
+    ]
+  },
+  "image": ".\\art\\mockups\\f25-staff-alignment-v1\\reviews\\staff_cultivation_assistant.png",
+  "nativeImage": ".\\art\\mockups\\f25-staff-alignment-v1\\reviews\\staff_cultivation_assistant.native.png"
+}

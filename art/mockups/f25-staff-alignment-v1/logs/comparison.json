@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "name": "staff_alignment_comparison",
+  "width": 208,
+  "height": 114,
+  "frames": 1,
+  "animations": [
+    "default"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-alignment-v1\\reviews\\comparison",
+  "files": [
+    "staff_alignment_comparison.png",
+    "staff_alignment_comparison.atlas.json",
+    "staff_alignment_comparison.tres",
+    "staff_alignment_comparison.pixel.json",
+    "staff_alignment_comparison.css",
+    "animations/default.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "delivered": {
+      "size": [
+        624,
+        342
+      ],
+      "canvas": [
+        208,
+        114
+      ],
+      "scale": 3,
+      "animations": {
+        "default": {
+          "frames": 1,
+          "loop": true
+        }
+      },
+      "colors": 20,
+      "transparent": false
+    },
+    "hint": "Pass expect with what the user asked for (width, height, frames, colors, transparent, loop) to check every file against it."
+  }
+}

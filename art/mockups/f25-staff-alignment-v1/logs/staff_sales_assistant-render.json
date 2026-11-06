@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "name": "staff_sales_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 15,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-alignment-v1\\exports\\staff_sales_assistant",
+  "files": [
+    "staff_sales_assistant.png",
+    "staff_sales_assistant.atlas.json",
+    "staff_sales_assistant.tres",
+    "staff_sales_assistant.pixel.json",
+    "staff_sales_assistant.css",
+    "animations/still.png",
+    "animations/idle.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "ok": true,
+    "delivered": {
+      "size": [
+        32,
+        48
+      ],
+      "animations": {
+        "idle": {
+          "frames": 11,
+          "loop": true
+        }
+      },
+      "colors": 5,
+      "transparent": true
+    },
+    "motion": {
+      "idle": {
+        "box": [
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            8,
+            20,
+            39
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ],
+          [
+            3,
+            9,
+            20,
+            38
+          ]
+        ],
+        "lowest": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ]
+      }
+    }
+  }
+}
