@@ -1,0 +1,79 @@
+{
+  "ok": true,
+  "name": "watering_fx",
+  "width": 88,
+  "height": 72,
+  "frames": 5,
+  "animations": [
+    "flow"
+  ],
+  "animationFps": {
+    "flow": 10
+  },
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-watering-v1\\exports\\water",
+  "files": [
+    "watering_fx.png",
+    "watering_fx.atlas.json",
+    "watering_fx.tres",
+    "watering_fx.pixel.json",
+    "watering_fx.css",
+    "animations/flow.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "delivered": {
+      "size": [
+        88,
+        72
+      ],
+      "animations": {
+        "flow": {
+          "frames": 4,
+          "loop": true
+        }
+      },
+      "colors": 2,
+      "transparent": true
+    },
+    "motion": {
+      "flow": {
+        "box": [
+          [
+            39,
+            38,
+            3,
+            3
+          ],
+          [
+            36,
+            40,
+            3,
+            3
+          ],
+          [
+            33,
+            42,
+            3,
+            3
+          ],
+          [
+            30,
+            44,
+            3,
+            3
+          ]
+        ],
+        "lowest": [
+          40,
+          42,
+          44,
+          46
+        ]
+      }
+    },
+    "hint": "Pass expect with what the user asked for (width, height, frames, colors, transparent, loop) to check every file against it."
+  }
+}

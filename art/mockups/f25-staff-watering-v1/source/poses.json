@@ -1,0 +1,1257 @@
+{
+  "schema_version": 1,
+  "status": "authored_action_candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "source": "art/mockups/f25-staff-alignment-v1/source/staff_cultivation_assistant.txt",
+  "source_sha256": "1fa57cc6d10a412f7829545172f5d7929198762801a0e37285674bf3c7a8abc2",
+  "palette": {
+    "#": "#241C32",
+    "S": "#DE9B88",
+    "g": "#E9B95F",
+    "a": "#A56A3D",
+    "L": "#3D544D"
+  },
+  "size": [
+    32,
+    48
+  ],
+  "display_scale": 3,
+  "source_method": "Existing aligned pixel grid. Local arm and can translation plus authored tilt silhouettes; Pixelbolt rendering. No image generation or rotational resampling.",
+  "invariants": {
+    "head_rows_unchanged": [
+      0,
+      26
+    ],
+    "body_columns_unchanged": [
+      10,
+      31
+    ],
+    "foot_row": 46,
+    "left_leg_runs": [
+      [
+        40,
+        10,
+        13
+      ],
+      [
+        41,
+        10,
+        13
+      ],
+      [
+        42,
+        9,
+        13
+      ],
+      [
+        43,
+        8,
+        13
+      ],
+      [
+        44,
+        8,
+        13
+      ],
+      [
+        45,
+        8,
+        13
+      ],
+      [
+        46,
+        9,
+        12
+      ]
+    ],
+    "right_leg_runs": [
+      [
+        40,
+        15,
+        19
+      ],
+      [
+        41,
+        15,
+        19
+      ],
+      [
+        42,
+        15,
+        19
+      ],
+      [
+        43,
+        15,
+        19
+      ],
+      [
+        44,
+        15,
+        20
+      ],
+      [
+        45,
+        15,
+        20
+      ],
+      [
+        46,
+        15,
+        19
+      ]
+    ],
+    "right_hand_runs": [
+      [
+        34,
+        18,
+        20
+      ],
+      [
+        35,
+        18,
+        20
+      ]
+    ]
+  },
+  "allowed_edit_runs": [
+    [
+      27,
+      0,
+      9
+    ],
+    [
+      28,
+      0,
+      9
+    ],
+    [
+      29,
+      0,
+      9
+    ],
+    [
+      30,
+      0,
+      9
+    ],
+    [
+      31,
+      0,
+      9
+    ],
+    [
+      32,
+      0,
+      9
+    ],
+    [
+      33,
+      0,
+      9
+    ],
+    [
+      34,
+      0,
+      9
+    ],
+    [
+      35,
+      0,
+      9
+    ],
+    [
+      36,
+      0,
+      9
+    ],
+    [
+      37,
+      0,
+      9
+    ],
+    [
+      38,
+      0,
+      9
+    ],
+    [
+      39,
+      0,
+      9
+    ],
+    [
+      40,
+      0,
+      9
+    ]
+  ],
+  "states": [
+    {
+      "id": "rest",
+      "file": "rest.txt",
+      "hand_skin_runs": [
+        [
+          34,
+          8,
+          9
+        ],
+        [
+          35,
+          8,
+          9
+        ]
+      ],
+      "grip": [
+        8,
+        35
+      ],
+      "nozzle": [
+        0,
+        34
+      ],
+      "pour_direction": [
+        -1,
+        -0.5
+      ],
+      "boundary_violations": [],
+      "changed_pixels": 0,
+      "can_mask_runs": [
+        [
+          34,
+          0,
+          1
+        ],
+        [
+          35,
+          0,
+          2
+        ],
+        [
+          36,
+          1,
+          8
+        ],
+        [
+          37,
+          1,
+          8
+        ],
+        [
+          38,
+          2,
+          8
+        ],
+        [
+          39,
+          2,
+          8
+        ],
+        [
+          40,
+          2,
+          8
+        ]
+      ],
+      "arm_mask_runs": [
+        [
+          31,
+          8,
+          9
+        ],
+        [
+          32,
+          7,
+          9
+        ],
+        [
+          33,
+          6,
+          9
+        ],
+        [
+          34,
+          6,
+          9
+        ],
+        [
+          35,
+          6,
+          9
+        ]
+      ],
+      "changed_mask_runs": [],
+      "nozzle_direction": [
+        -1,
+        -0.5
+      ],
+      "emit_water": false,
+      "nozzle_material": "#",
+      "sha256": "1fa57cc6d10a412f7829545172f5d7929198762801a0e37285674bf3c7a8abc2",
+      "validation": {
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#",
+          "L",
+          "S",
+          "a",
+          "g"
+        ],
+        "boundary_violations": [],
+        "head_changed_pixels": 0,
+        "body_changed_pixels": 0,
+        "leg_changed_pixels": 0,
+        "grip_connected_to_can": true
+      }
+    },
+    {
+      "id": "lift",
+      "file": "lift.txt",
+      "hand_skin_runs": [
+        [
+          29,
+          8,
+          9
+        ],
+        [
+          30,
+          8,
+          9
+        ]
+      ],
+      "grip": [
+        8,
+        30
+      ],
+      "nozzle": [
+        0,
+        29
+      ],
+      "pour_direction": [
+        -1,
+        -0.5
+      ],
+      "boundary_violations": [],
+      "changed_pixels": 89,
+      "can_mask_runs": [
+        [
+          29,
+          0,
+          1
+        ],
+        [
+          30,
+          0,
+          2
+        ],
+        [
+          31,
+          1,
+          8
+        ],
+        [
+          32,
+          1,
+          8
+        ],
+        [
+          33,
+          2,
+          8
+        ],
+        [
+          34,
+          2,
+          8
+        ],
+        [
+          35,
+          2,
+          8
+        ]
+      ],
+      "arm_mask_runs": [
+        [
+          28,
+          7,
+          9
+        ],
+        [
+          29,
+          7,
+          9
+        ],
+        [
+          30,
+          7,
+          9
+        ],
+        [
+          31,
+          7,
+          9
+        ],
+        [
+          32,
+          8,
+          9
+        ],
+        [
+          33,
+          8,
+          9
+        ],
+        [
+          34,
+          8,
+          9
+        ]
+      ],
+      "changed_mask_runs": [
+        [
+          28,
+          7,
+          9
+        ],
+        [
+          29,
+          0,
+          1
+        ],
+        [
+          29,
+          7,
+          9
+        ],
+        [
+          30,
+          0,
+          2
+        ],
+        [
+          30,
+          7,
+          9
+        ],
+        [
+          31,
+          1,
+          7
+        ],
+        [
+          32,
+          1,
+          7
+        ],
+        [
+          33,
+          2,
+          8
+        ],
+        [
+          34,
+          0,
+          9
+        ],
+        [
+          35,
+          0,
+          1
+        ],
+        [
+          35,
+          3,
+          5
+        ],
+        [
+          35,
+          8,
+          9
+        ],
+        [
+          36,
+          1,
+          8
+        ],
+        [
+          37,
+          1,
+          8
+        ],
+        [
+          38,
+          2,
+          8
+        ],
+        [
+          39,
+          2,
+          8
+        ],
+        [
+          40,
+          2,
+          8
+        ]
+      ],
+      "nozzle_direction": [
+        -1,
+        -0.5
+      ],
+      "emit_water": false,
+      "nozzle_material": "#",
+      "sha256": "9748b8d016e495b525192366a15fa3ec56b850608ea57dfa846c08858ca44817",
+      "validation": {
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#",
+          "L",
+          "S",
+          "a",
+          "g"
+        ],
+        "boundary_violations": [],
+        "head_changed_pixels": 0,
+        "body_changed_pixels": 0,
+        "leg_changed_pixels": 0,
+        "grip_connected_to_can": true
+      }
+    },
+    {
+      "id": "tilt",
+      "file": "tilt.txt",
+      "hand_skin_runs": [
+        [
+          28,
+          8,
+          9
+        ],
+        [
+          29,
+          8,
+          9
+        ]
+      ],
+      "grip": [
+        8,
+        29
+      ],
+      "nozzle": [
+        0,
+        30
+      ],
+      "pour_direction": [
+        -1,
+        0.6
+      ],
+      "boundary_violations": [],
+      "changed_pixels": 93,
+      "can_mask_runs": [
+        [
+          28,
+          5,
+          7
+        ],
+        [
+          29,
+          4,
+          7
+        ],
+        [
+          30,
+          0,
+          1
+        ],
+        [
+          30,
+          3,
+          8
+        ],
+        [
+          31,
+          0,
+          8
+        ],
+        [
+          32,
+          1,
+          8
+        ],
+        [
+          33,
+          2,
+          7
+        ],
+        [
+          34,
+          3,
+          6
+        ]
+      ],
+      "arm_mask_runs": [
+        [
+          27,
+          7,
+          9
+        ],
+        [
+          28,
+          7,
+          9
+        ],
+        [
+          29,
+          8,
+          9
+        ],
+        [
+          30,
+          8,
+          9
+        ],
+        [
+          31,
+          8,
+          9
+        ],
+        [
+          32,
+          7,
+          9
+        ],
+        [
+          33,
+          7,
+          9
+        ],
+        [
+          34,
+          8,
+          9
+        ]
+      ],
+      "changed_mask_runs": [
+        [
+          27,
+          7,
+          9
+        ],
+        [
+          28,
+          5,
+          9
+        ],
+        [
+          29,
+          4,
+          9
+        ],
+        [
+          30,
+          0,
+          1
+        ],
+        [
+          30,
+          3,
+          7
+        ],
+        [
+          30,
+          9,
+          9
+        ],
+        [
+          31,
+          0,
+          7
+        ],
+        [
+          32,
+          1,
+          6
+        ],
+        [
+          33,
+          2,
+          5
+        ],
+        [
+          33,
+          8,
+          8
+        ],
+        [
+          34,
+          0,
+          1
+        ],
+        [
+          34,
+          3,
+          5
+        ],
+        [
+          34,
+          7,
+          9
+        ],
+        [
+          35,
+          0,
+          2
+        ],
+        [
+          35,
+          6,
+          9
+        ],
+        [
+          36,
+          1,
+          8
+        ],
+        [
+          37,
+          1,
+          8
+        ],
+        [
+          38,
+          2,
+          8
+        ],
+        [
+          39,
+          2,
+          8
+        ],
+        [
+          40,
+          2,
+          8
+        ]
+      ],
+      "nozzle_direction": [
+        -1,
+        0.6
+      ],
+      "emit_water": false,
+      "nozzle_material": "#",
+      "sha256": "655f244ef4eda813e7def162394d907adc8d5dcfa0c8bb7569e6f0a4112fe3b8",
+      "validation": {
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#",
+          "L",
+          "S",
+          "a",
+          "g"
+        ],
+        "boundary_violations": [],
+        "head_changed_pixels": 0,
+        "body_changed_pixels": 0,
+        "leg_changed_pixels": 0,
+        "grip_connected_to_can": true
+      }
+    },
+    {
+      "id": "pour",
+      "file": "pour.txt",
+      "hand_skin_runs": [
+        [
+          28,
+          8,
+          9
+        ],
+        [
+          29,
+          8,
+          9
+        ]
+      ],
+      "grip": [
+        8,
+        29
+      ],
+      "nozzle": [
+        0,
+        31
+      ],
+      "pour_direction": [
+        -1,
+        1
+      ],
+      "boundary_violations": [],
+      "changed_pixels": 98,
+      "can_mask_runs": [
+        [
+          28,
+          5,
+          7
+        ],
+        [
+          29,
+          4,
+          7
+        ],
+        [
+          30,
+          3,
+          8
+        ],
+        [
+          31,
+          0,
+          1
+        ],
+        [
+          31,
+          3,
+          8
+        ],
+        [
+          32,
+          0,
+          8
+        ],
+        [
+          33,
+          1,
+          8
+        ],
+        [
+          34,
+          2,
+          8
+        ],
+        [
+          35,
+          3,
+          6
+        ]
+      ],
+      "arm_mask_runs": [
+        [
+          27,
+          7,
+          9
+        ],
+        [
+          28,
+          7,
+          9
+        ],
+        [
+          29,
+          8,
+          9
+        ],
+        [
+          30,
+          8,
+          9
+        ],
+        [
+          31,
+          8,
+          9
+        ],
+        [
+          32,
+          8,
+          9
+        ],
+        [
+          33,
+          8,
+          9
+        ],
+        [
+          34,
+          7,
+          9
+        ]
+      ],
+      "changed_mask_runs": [
+        [
+          27,
+          7,
+          9
+        ],
+        [
+          28,
+          5,
+          9
+        ],
+        [
+          29,
+          4,
+          9
+        ],
+        [
+          30,
+          3,
+          7
+        ],
+        [
+          30,
+          9,
+          9
+        ],
+        [
+          31,
+          0,
+          1
+        ],
+        [
+          31,
+          3,
+          7
+        ],
+        [
+          32,
+          0,
+          7
+        ],
+        [
+          33,
+          1,
+          8
+        ],
+        [
+          34,
+          0,
+          6
+        ],
+        [
+          34,
+          8,
+          9
+        ],
+        [
+          35,
+          0,
+          5
+        ],
+        [
+          35,
+          7,
+          9
+        ],
+        [
+          36,
+          1,
+          8
+        ],
+        [
+          37,
+          1,
+          8
+        ],
+        [
+          38,
+          2,
+          8
+        ],
+        [
+          39,
+          2,
+          8
+        ],
+        [
+          40,
+          2,
+          8
+        ]
+      ],
+      "nozzle_direction": [
+        -1,
+        1
+      ],
+      "emit_water": true,
+      "nozzle_material": "#",
+      "sha256": "8149ad5000c96e732a5d57623c65e7457e25d6a2a2ba219062265ed95f2c454c",
+      "validation": {
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#",
+          "L",
+          "S",
+          "a",
+          "g"
+        ],
+        "boundary_violations": [],
+        "head_changed_pixels": 0,
+        "body_changed_pixels": 0,
+        "leg_changed_pixels": 0,
+        "grip_connected_to_can": true
+      }
+    },
+    {
+      "id": "recover",
+      "file": "recover.txt",
+      "hand_skin_runs": [
+        [
+          31,
+          8,
+          9
+        ],
+        [
+          32,
+          8,
+          9
+        ]
+      ],
+      "grip": [
+        8,
+        32
+      ],
+      "nozzle": [
+        0,
+        31
+      ],
+      "pour_direction": [
+        -1,
+        -0.5
+      ],
+      "boundary_violations": [],
+      "changed_pixels": 70,
+      "can_mask_runs": [
+        [
+          31,
+          0,
+          1
+        ],
+        [
+          32,
+          0,
+          2
+        ],
+        [
+          33,
+          1,
+          8
+        ],
+        [
+          34,
+          1,
+          8
+        ],
+        [
+          35,
+          2,
+          8
+        ],
+        [
+          36,
+          2,
+          8
+        ],
+        [
+          37,
+          2,
+          8
+        ]
+      ],
+      "arm_mask_runs": [
+        [
+          30,
+          7,
+          9
+        ],
+        [
+          31,
+          7,
+          9
+        ],
+        [
+          32,
+          7,
+          9
+        ],
+        [
+          33,
+          7,
+          9
+        ],
+        [
+          34,
+          8,
+          9
+        ]
+      ],
+      "changed_mask_runs": [
+        [
+          30,
+          7,
+          7
+        ],
+        [
+          31,
+          0,
+          1
+        ],
+        [
+          31,
+          7,
+          9
+        ],
+        [
+          32,
+          0,
+          2
+        ],
+        [
+          32,
+          8,
+          9
+        ],
+        [
+          33,
+          1,
+          5
+        ],
+        [
+          33,
+          8,
+          8
+        ],
+        [
+          34,
+          0,
+          0
+        ],
+        [
+          34,
+          2,
+          9
+        ],
+        [
+          35,
+          0,
+          1
+        ],
+        [
+          35,
+          3,
+          9
+        ],
+        [
+          36,
+          1,
+          7
+        ],
+        [
+          37,
+          1,
+          7
+        ],
+        [
+          38,
+          2,
+          8
+        ],
+        [
+          39,
+          2,
+          8
+        ],
+        [
+          40,
+          2,
+          8
+        ]
+      ],
+      "nozzle_direction": [
+        -1,
+        -0.5
+      ],
+      "emit_water": false,
+      "nozzle_material": "#",
+      "sha256": "b9637aeb801936b927227cb40de1fa35713c3f61497867d93f777d48546c6f6a",
+      "validation": {
+        "size": [
+          32,
+          48
+        ],
+        "colors": [
+          "#",
+          "L",
+          "S",
+          "a",
+          "g"
+        ],
+        "boundary_violations": [],
+        "head_changed_pixels": 0,
+        "body_changed_pixels": 0,
+        "leg_changed_pixels": 0,
+        "grip_connected_to_can": true
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "id": "rest",
+      "duration_ms": 1000
+    },
+    {
+      "id": "recover",
+      "duration_ms": 180
+    },
+    {
+      "id": "lift",
+      "duration_ms": 220
+    },
+    {
+      "id": "tilt",
+      "duration_ms": 220
+    },
+    {
+      "id": "pour",
+      "duration_ms": 1600
+    },
+    {
+      "id": "tilt",
+      "duration_ms": 180
+    },
+    {
+      "id": "lift",
+      "duration_ms": 180
+    },
+    {
+      "id": "recover",
+      "duration_ms": 220
+    },
+    {
+      "id": "rest",
+      "duration_ms": 1400
+    }
+  ],
+  "total_ms": 5200,
+  "water_fx_included": false,
+  "notes": [
+    "Place the plant to the left; pouring stream is a separate FX layer and introduces no character colors.",
+    "The existing nozzle touches left canvas x0; the action never translates it further left.",
+    "The raised grip goes from34..35 to28..29. Body, face and feet do not rotate or stretch."
+  ],
+  "loop": false,
+  "pour_nozzle": [
+    0,
+    31
+  ],
+  "mask_convention": "Runs are [y,x0,x1], x1 inclusive. Arm/can masks may share an outline pixel at the grip."
+}

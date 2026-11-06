@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "name": "watering_fx",
+  "width": 88,
+  "height": 72,
+  "frames": 5,
+  "animations": [
+    "flow"
+  ],
+  "animationFps": {
+    "flow": 10
+  },
+  "warnings": []
+}

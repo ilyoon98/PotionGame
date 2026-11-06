@@ -1,0 +1,140 @@
+{
+  "frames": {
+    "off": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 88,
+        "h": 72
+      },
+      "duration": 100
+    },
+    "flow_0": {
+      "frame": {
+        "x": 88,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 88,
+        "h": 72
+      },
+      "duration": 100
+    },
+    "flow_1": {
+      "frame": {
+        "x": 176,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 88,
+        "h": 72
+      },
+      "duration": 100
+    },
+    "flow_2": {
+      "frame": {
+        "x": 264,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 88,
+        "h": 72
+      },
+      "duration": 100
+    },
+    "flow_3": {
+      "frame": {
+        "x": 352,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 88,
+        "h": 72
+      },
+      "sourceSize": {
+        "w": 88,
+        "h": 72
+      },
+      "duration": 100
+    }
+  },
+  "animations": {
+    "flow": {
+      "frames": [
+        "flow_0",
+        "flow_1",
+        "flow_2",
+        "flow_3"
+      ],
+      "loop": true,
+      "duration": 400
+    }
+  },
+  "meta": {
+    "app": "Pixelbolt",
+    "version": "1",
+    "image": "watering_fx.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 440,
+      "h": 72
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "flow",
+        "from": 1,
+        "to": 4,
+        "direction": "forward"
+      }
+    ]
+  }
+}

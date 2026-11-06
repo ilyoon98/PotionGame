@@ -1,0 +1,1227 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f25-staff-watering-v1/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "feature": "F25 staff watering candidate",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "rest",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/rest.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "recover",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/recover.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "lift",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/lift.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "tilt",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/tilt.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "pour",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/pour.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_0",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_0.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_1",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_1.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_2",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_2.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_3",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_3.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_4",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_4.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_5",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_5.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_6",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_6.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_7",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_7.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    },
+    {
+      "id": "action_8",
+      "source": "art/mockups/f25-staff-watering-v1/exports/staff/frames/action_8.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin_tan": [
+          "#DE9B88"
+        ],
+        "straw_hat_shirt_hair_light": [
+          "#E9B95F"
+        ],
+        "hair_band_can_boots": [
+          "#A56A3D"
+        ],
+        "overalls_sprout": [
+          "#3D544D"
+        ]
+      },
+      "material_ramps": {
+        "skin_tan": "skin",
+        "straw_hat_shirt_hair_light": "gold",
+        "hair_band_can_boots": "gold",
+        "overalls_sprout": "leaf"
+      },
+      "rules": [
+        {
+          "material": "skin_tan",
+          "hue": [
+            0.0328,
+            0.0408
+          ],
+          "saturation_min": 0.3774,
+          "saturation_max": 0.3974,
+          "value_min": 0.8606,
+          "value_max": 0.8806
+        },
+        {
+          "material": "straw_hat_shirt_hair_light",
+          "hue": [
+            0.1047,
+            0.1127
+          ],
+          "saturation_min": 0.5823,
+          "saturation_max": 0.6023,
+          "value_min": 0.9037,
+          "value_max": 0.9237
+        },
+        {
+          "material": "hair_band_can_boots",
+          "hue": [
+            0.0681,
+            0.0761
+          ],
+          "saturation_min": 0.6203,
+          "saturation_max": 0.6403,
+          "value_min": 0.6371,
+          "value_max": 0.6571
+        },
+        {
+          "material": "overalls_sprout",
+          "hue": [
+            0.4453,
+            0.4533
+          ],
+          "saturation_min": 0.2638,
+          "saturation_max": 0.2838,
+          "value_min": 0.3194,
+          "value_max": 0.3394
+        }
+      ],
+      "fallback_material": "skin_tan",
+      "name_ko": "재배 보조"
+    }
+  ]
+}

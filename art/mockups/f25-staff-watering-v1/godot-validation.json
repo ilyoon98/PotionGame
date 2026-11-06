@@ -1,0 +1,40 @@
+{
+	"engine": "4.6-stable (official)",
+	"errors": [],
+	"passed": true,
+	"resources": [
+		{
+			"animation": "watering",
+			"frame_size": [
+				32.0,
+				48.0
+			],
+			"frames": 9,
+			"loop": false,
+			"resource": "staff/staff_cultivation_watering.tres",
+			"seconds": 5.2
+		},
+		{
+			"animation": "flow",
+			"frame_size": [
+				88.0,
+				72.0
+			],
+			"frames": 4,
+			"loop": true,
+			"resource": "water/watering_fx.tres",
+			"seconds": 0.4
+		},
+		{
+			"animation": "watering",
+			"frame_size": [
+				88.0,
+				72.0
+			],
+			"frames": 24,
+			"loop": false,
+			"resource": "scene/watering_scene.tres",
+			"seconds": 5.2
+		}
+	]
+}

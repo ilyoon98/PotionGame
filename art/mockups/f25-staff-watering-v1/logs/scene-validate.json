@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "name": "watering_scene",
+  "width": 88,
+  "height": 72,
+  "frames": 24,
+  "animations": [
+    "watering"
+  ],
+  "warnings": []
+}

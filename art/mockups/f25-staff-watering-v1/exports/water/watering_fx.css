@@ -1,0 +1,18 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-watering_fx {
+  display: inline-block;
+  width: 88px; height: 72px;
+  background-image: url("watering_fx.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-watering_fx-flow { background-position: -88px -0px; animation: pf-watering_fx-flow 400ms steps(1, end) infinite; }
+@keyframes pf-watering_fx-flow {
+  0% { background-position: -88px -0px; }
+  25% { background-position: -176px -0px; }
+  50% { background-position: -264px -0px; }
+  75% { background-position: -352px -0px; }
+  100% { background-position: -88px -0px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-watering_fx-flow { animation: none; }
+}

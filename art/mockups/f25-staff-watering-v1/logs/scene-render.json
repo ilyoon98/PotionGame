@@ -1,0 +1,216 @@
+{
+  "ok": true,
+  "name": "watering_scene",
+  "width": 88,
+  "height": 72,
+  "frames": 24,
+  "animations": [
+    "watering"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-watering-v1\\exports\\scene",
+  "files": [
+    "watering_scene.png",
+    "watering_scene.atlas.json",
+    "watering_scene.tres",
+    "watering_scene.pixel.json",
+    "watering_scene.css",
+    "animations/watering.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "delivered": {
+      "size": [
+        88,
+        72
+      ],
+      "animations": {
+        "watering": {
+          "frames": 24,
+          "loop": false
+        }
+      },
+      "colors": 13,
+      "transparent": false
+    },
+    "motion": {
+      "watering": {
+        "box": [
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ],
+          [
+            0,
+            0,
+            88,
+            72
+          ]
+        ],
+        "lowest": [
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71,
+          71
+        ]
+      }
+    },
+    "hint": "Pass expect with what the user asked for (width, height, frames, colors, transparent, loop) to check every file against it."
+  }
+}

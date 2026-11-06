@@ -1,0 +1,29 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-staff_cultivation_watering {
+  display: inline-block;
+  width: 32px; height: 48px;
+  background-image: url("staff_cultivation_watering.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-staff_cultivation_watering-still { background-position: -0px -0px; animation: pf-staff_cultivation_watering-still 1000ms steps(1, end) infinite; }
+@keyframes pf-staff_cultivation_watering-still {
+  0% { background-position: -0px -0px; }
+  100% { background-position: -0px -0px; }
+}
+.pf-staff_cultivation_watering-watering { background-position: -0px -48px; animation: pf-staff_cultivation_watering-watering 5200ms steps(1, end) 1 forwards; }
+@keyframes pf-staff_cultivation_watering-watering {
+  0% { background-position: -0px -48px; }
+  19.23076923% { background-position: -32px -48px; }
+  22.69230769% { background-position: -64px -48px; }
+  26.92307692% { background-position: -96px -48px; }
+  31.15384615% { background-position: -128px -48px; }
+  61.92307692% { background-position: -0px -96px; }
+  65.38461538% { background-position: -32px -96px; }
+  68.84615385% { background-position: -64px -96px; }
+  73.07692308% { background-position: -96px -96px; }
+  100% { background-position: -96px -96px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-staff_cultivation_watering-still { animation: none; }
+  .pf-staff_cultivation_watering-watering { animation: none; }
+}

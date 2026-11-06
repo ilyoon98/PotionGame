@@ -1,0 +1,38 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-watering_scene {
+  display: inline-block;
+  width: 88px; height: 72px;
+  background-image: url("watering_scene.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-watering_scene-watering { background-position: -0px -0px; animation: pf-watering_scene-watering 5200ms steps(1, end) 1 forwards; }
+@keyframes pf-watering_scene-watering {
+  0% { background-position: -0px -0px; }
+  19.23076923% { background-position: -88px -0px; }
+  22.69230769% { background-position: -176px -0px; }
+  26.92307692% { background-position: -264px -0px; }
+  31.15384615% { background-position: -352px -0px; }
+  33.07692308% { background-position: -440px -0px; }
+  35% { background-position: -0px -72px; }
+  36.92307692% { background-position: -88px -72px; }
+  38.84615385% { background-position: -176px -72px; }
+  40.76923077% { background-position: -264px -72px; }
+  42.69230769% { background-position: -352px -72px; }
+  44.61538462% { background-position: -440px -72px; }
+  46.53846154% { background-position: -0px -144px; }
+  48.46153846% { background-position: -88px -144px; }
+  50.38461538% { background-position: -176px -144px; }
+  52.30769231% { background-position: -264px -144px; }
+  54.23076923% { background-position: -352px -144px; }
+  56.15384615% { background-position: -440px -144px; }
+  58.07692308% { background-position: -0px -216px; }
+  60% { background-position: -88px -216px; }
+  61.92307692% { background-position: -176px -216px; }
+  65.38461538% { background-position: -264px -216px; }
+  68.84615385% { background-position: -352px -216px; }
+  73.07692308% { background-position: -440px -216px; }
+  100% { background-position: -440px -216px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-watering_scene-watering { animation: none; }
+}

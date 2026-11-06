@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "name": "staff_cultivation_watering",
+  "width": 32,
+  "height": 48,
+  "frames": 14,
+  "animations": [
+    "still",
+    "watering"
+  ],
+  "warnings": []
+}

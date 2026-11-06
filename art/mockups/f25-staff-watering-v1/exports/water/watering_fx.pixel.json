@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "name": "watering_fx",
+  "width": 88,
+  "height": 72,
+  "palette": {
+    "#": "#241C32",
+    "d": "#24566A",
+    "t": "#9BE2CF"
+  },
+  "frames": [
+    {
+      "name": "off",
+      "duration": 100,
+      "ops": []
+    },
+    {
+      "name": "flow_0",
+      "duration": 100,
+      "ops": [
+        {
+          "op": "grid",
+          "x": 39,
+          "y": 38,
+          "rows": [
+            ".#.",
+            "#t#",
+            ".#."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flow_1",
+      "duration": 100,
+      "ops": [
+        {
+          "op": "grid",
+          "x": 36,
+          "y": 40,
+          "rows": [
+            ".#.",
+            "#t#",
+            ".#."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flow_2",
+      "duration": 100,
+      "ops": [
+        {
+          "op": "grid",
+          "x": 33,
+          "y": 42,
+          "rows": [
+            ".#.",
+            "#t#",
+            ".#."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flow_3",
+      "duration": 100,
+      "ops": [
+        {
+          "op": "grid",
+          "x": 30,
+          "y": 44,
+          "rows": [
+            ".#.",
+            "#t#",
+            ".#."
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": {
+    "flow": {
+      "frames": [
+        "flow_0",
+        "flow_1",
+        "flow_2",
+        "flow_3"
+      ],
+      "loop": true
+    }
+  },
+  "sheet": {
+    "columns": 5,
+    "scale": 1
+  }
+}

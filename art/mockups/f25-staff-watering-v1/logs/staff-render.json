@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "name": "staff_cultivation_watering",
+  "width": 32,
+  "height": 48,
+  "frames": 14,
+  "animations": [
+    "still",
+    "watering"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-watering-v1\\exports\\staff",
+  "files": [
+    "staff_cultivation_watering.png",
+    "staff_cultivation_watering.atlas.json",
+    "staff_cultivation_watering.tres",
+    "staff_cultivation_watering.pixel.json",
+    "staff_cultivation_watering.css",
+    "animations/still.png",
+    "animations/watering.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "delivered": {
+      "size": [
+        32,
+        48
+      ],
+      "animations": {
+        "watering": {
+          "frames": 9,
+          "loop": false
+        }
+      },
+      "colors": 5,
+      "transparent": true
+    },
+    "motion": {
+      "watering": {
+        "box": [
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ],
+          [
+            0,
+            3,
+            27,
+            44
+          ]
+        ],
+        "lowest": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ]
+      }
+    },
+    "hint": "Pass expect with what the user asked for (width, height, frames, colors, transparent, loop) to check every file against it."
+  }
+}
