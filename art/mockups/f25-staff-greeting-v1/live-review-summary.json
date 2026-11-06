@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "date": "2026-11-06",
+  "engine": "4.6-stable (official)",
+  "method": "Isolated Godot render loop at 1x, timed-segment telemetry, one valid Computer Use window observation, and an engine-produced viewport capture. Point-in-time observations do not claim continuous video inspection.",
+  "wall_seconds": 36.2154140000012,
+  "animation_seconds": 36.2154140000012,
+  "speed": 1,
+  "finished": "timed_finish",
+  "samples": 72,
+  "item_samples": 504,
+  "contact_errors": 0,
+  "pixel_alignment_errors": 0,
+  "items": [
+    {
+      "id": "keeper",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 2,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "traveler",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 2,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "mage",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 2,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "elf",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 2,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "rogue",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 2,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "sales_idle",
+      "frames": 21,
+      "observed_frames": 21,
+      "completed_loops": 2,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "sales_greet",
+      "frames": 14,
+      "observed_frames": 14,
+      "completed_loops": 6,
+      "display_size": [
+        96,
+        144
+      ]
+    }
+  ],
+  "capture": {
+    "path": "live-review.png",
+    "animation_seconds": 2.7,
+    "inspected": true,
+    "notes": "Bent elbow and upright four-pixel palm remain separate from the fixed head; both feet match the idle reference."
+  },
+  "ui_observation": {
+    "status": "observed_after_activation",
+    "animation_seconds": 27.58,
+    "phase": "prepare / lowering hand",
+    "notes": "The target window was verified once at 1x. Other captures were occluded and excluded. The preview closed automatically at the requested duration."
+  },
+  "source_sha256": "ad87c30a0319f55d7092175d3296bf015c484e0482f0aad749288ace2cf44e40",
+  "recipe_sha256": "56529075db8378d4527fa3141dd0c896d767fa909aa9786f783fb570e7c8e207",
+  "player_sha256": "8122179b4cc9423d998ef45d0cbbdb30c1f18cc262e593f462a97baf29e1659c",
+  "runtime_integrated": false,
+  "approved_by_user": false
+}

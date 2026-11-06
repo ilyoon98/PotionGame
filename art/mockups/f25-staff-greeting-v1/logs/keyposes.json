@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "name": "staff_sales_greeting",
+  "width": 32,
+  "height": 48,
+  "frames": 19,
+  "animations": [
+    "still",
+    "greet"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "rest",
+      "duration": 1000
+    },
+    {
+      "frame": "prepare",
+      "duration": 1000
+    },
+    {
+      "frame": "lift",
+      "duration": 1000
+    },
+    {
+      "frame": "wave_in",
+      "duration": 1000
+    },
+    {
+      "frame": "wave_out",
+      "duration": 1000
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 5,
+    "rows": 1,
+    "scale": 3,
+    "gap": 3,
+    "width": 498,
+    "height": 150
+  },
+  "nativeSheet": {
+    "columns": 5,
+    "rows": 1,
+    "scale": 1,
+    "gap": 2,
+    "width": 172,
+    "height": 52
+  },
+  "image": ".\\art\\mockups\\f25-staff-greeting-v1\\reviews\\keyposes.png",
+  "nativeImage": ".\\art\\mockups\\f25-staff-greeting-v1\\reviews\\keyposes.native.png"
+}

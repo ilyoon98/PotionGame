@@ -1,0 +1,1657 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f25-staff-greeting-v1/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "feature": "F25 staff greeting action",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "rest",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/rest.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "prepare",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/prepare.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "lift",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/lift.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "wave_in",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/wave_in.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "wave_out",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/wave_out.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_0",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_0.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_1",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_1.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_2",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_2.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_3",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_3.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_4",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_4.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_5",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_5.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_6",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_6.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_7",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_7.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_8",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_8.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_9",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_9.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_10",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_10.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_11",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_11.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_12",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_12.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    },
+    {
+      "id": "action_13",
+      "source": "art/mockups/f25-staff-greeting-v1/exports/staff/frames/action_13.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "dress": [
+          "#A65D64"
+        ],
+        "apron_headband_ribbon_collar": [
+          "#FFF0BC"
+        ],
+        "hair_cuffs_shoes": [
+          "#50333B"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "dress": "skin",
+        "apron_headband_ribbon_collar": "gold",
+        "hair_cuffs_shoes": "wood"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "dress",
+          "hue": [
+            0.98,
+            0.988
+          ],
+          "saturation_min": 0.4298,
+          "saturation_max": 0.4498,
+          "value_min": 0.641,
+          "value_max": 0.661
+        },
+        {
+          "material": "apron_headband_ribbon_collar",
+          "hue": [
+            0.1254,
+            0.1334
+          ],
+          "saturation_min": 0.2527,
+          "saturation_max": 0.2727,
+          "value_min": 0.99,
+          "value_max": 1.01
+        },
+        {
+          "material": "hair_cuffs_shoes",
+          "hue": [
+            0.95,
+            0.958
+          ],
+          "saturation_min": 0.3525,
+          "saturation_max": 0.3725,
+          "value_min": 0.3037,
+          "value_max": 0.3237
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "판매 보조"
+    }
+  ]
+}

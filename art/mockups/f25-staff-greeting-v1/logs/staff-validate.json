@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "name": "staff_sales_greeting",
+  "width": 32,
+  "height": 48,
+  "frames": 19,
+  "animations": [
+    "still",
+    "greet"
+  ],
+  "warnings": []
+}

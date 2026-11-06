@@ -1,0 +1,280 @@
+{
+  "animation": "greet",
+  "colors": 5,
+  "distinct_rendered_poses": 5,
+  "durations_ms": [
+    900.0,
+    280.0,
+    320.0,
+    220.0,
+    140.0,
+    220.0,
+    140.0,
+    220.0,
+    140.0,
+    220.0,
+    140.0,
+    500.0,
+    420.0,
+    2140.0
+  ],
+  "engine": "4.6-stable (official)",
+  "failures": [],
+  "frame_checks": [
+    {
+      "colors": 5,
+      "duration_ms": 900.0,
+      "ground_row": 46,
+      "index": 0,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 280.0,
+      "ground_row": 46,
+      "index": 1,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 320.0,
+      "ground_row": 46,
+      "index": 2,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 220.0,
+      "ground_row": 46,
+      "index": 3,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 140.0,
+      "ground_row": 46,
+      "index": 4,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 220.0,
+      "ground_row": 46,
+      "index": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 140.0,
+      "ground_row": 46,
+      "index": 6,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 220.0,
+      "ground_row": 46,
+      "index": 7,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 140.0,
+      "ground_row": 46,
+      "index": 8,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 220.0,
+      "ground_row": 46,
+      "index": 9,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 140.0,
+      "ground_row": 46,
+      "index": 10,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 500.0,
+      "ground_row": 46,
+      "index": 11,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 420.0,
+      "ground_row": 46,
+      "index": 12,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    },
+    {
+      "colors": 5,
+      "duration_ms": 2140.0,
+      "ground_row": 46,
+      "index": 13,
+      "outline_errors": 0,
+      "partial_alpha": 0
+    }
+  ],
+  "frames": 14,
+  "loop": false,
+  "passed": true,
+  "seconds": 6.0,
+  "speed": 50.0,
+  "stage": "complete",
+  "independent_art": {
+    "passed": true,
+    "method": "Independent Pillow RGBA/atlas/GIF decoding and source/timing comparison",
+    "action": {
+      "timing_segments": 14,
+      "duration_ms": 6000,
+      "loop": false,
+      "poses": [
+        {
+          "pose": "rest",
+          "changed_pixels": 0,
+          "hand_pixels": 2,
+          "arm_pixels": 20,
+          "wrist_to_shoulder_connected": true,
+          "fixed_skin_preserved_and_new_skin_confined_to_arm": true
+        },
+        {
+          "pose": "prepare",
+          "changed_pixels": 30,
+          "hand_pixels": 4,
+          "arm_pixels": 29,
+          "wrist_to_shoulder_connected": true,
+          "fixed_skin_preserved_and_new_skin_confined_to_arm": true
+        },
+        {
+          "pose": "lift",
+          "changed_pixels": 33,
+          "hand_pixels": 4,
+          "arm_pixels": 32,
+          "wrist_to_shoulder_connected": true,
+          "fixed_skin_preserved_and_new_skin_confined_to_arm": true
+        },
+        {
+          "pose": "wave_in",
+          "changed_pixels": 33,
+          "hand_pixels": 4,
+          "arm_pixels": 32,
+          "wrist_to_shoulder_connected": true,
+          "fixed_skin_preserved_and_new_skin_confined_to_arm": true
+        },
+        {
+          "pose": "wave_out",
+          "changed_pixels": 36,
+          "hand_pixels": 4,
+          "arm_pixels": 35,
+          "wrist_to_shoulder_connected": true,
+          "fixed_skin_preserved_and_new_skin_confined_to_arm": true
+        }
+      ]
+    },
+    "references": {
+      "exact_fine_copies": 5,
+      "exact_imported_frames": 320,
+      "timing_segments": 152,
+      "duration_ms": 18000
+    },
+    "comparison_gifs": [
+      {
+        "file": "comparison-1x.gif",
+        "frames": 360,
+        "duration_ms": 18000,
+        "frame_duration_ms": [
+          50
+        ],
+        "unique_board_frames": 13,
+        "unique_actor_frames": {
+          "idle": 4,
+          "action": 5
+        },
+        "sprite_pixel_mismatches": 0
+      },
+      {
+        "file": "together-1x.gif",
+        "frames": 360,
+        "duration_ms": 18000,
+        "frame_duration_ms": [
+          50
+        ],
+        "unique_board_frames": 55,
+        "unique_actor_frames": {
+          "keeper": 24,
+          "traveler": 24,
+          "mage": 24,
+          "elf": 24,
+          "rogue": 32,
+          "idle": 4,
+          "action": 5
+        },
+        "sprite_pixel_mismatches": 0
+      }
+    ],
+    "solo_gif": {
+      "frames": 14,
+      "duration_ms": 6000,
+      "durations_ms": [
+        900,
+        280,
+        320,
+        220,
+        140,
+        220,
+        140,
+        220,
+        140,
+        220,
+        140,
+        500,
+        420,
+        2140
+      ],
+      "preview_loop": 0
+    },
+    "failures": []
+  },
+  "runtime_integrated": false,
+  "verification_scope": "Isolated Godot 4.6 SpriteFrames load plus independent source pixels, arm connectivity, atlas, timing, and decoded GIF comparison. Live visual review is reported separately.",
+  "isolated_fixture": ".verification/f25-greeting-export-check",
+  "environment_isolation": [
+    "APPDATA",
+    "LOCALAPPDATA",
+    "TEMP",
+    "TMP"
+  ],
+  "checked_file_sha256": {
+    "source/poses.json": "ed22c083535de1d99ad140d0a3c32ee64ad96b44265e51bce3b4db0427b0802f",
+    "source/rest.txt": "c99048dd1d0a7d33bc83978af3ea9e6dcdabf77a6a3be852c1266d3e45aff79b",
+    "source/prepare.txt": "4150a4a4b6fe7674b4cc0c7f52a2f97cd86498d9f9bff20f92bed3c749e3d6be",
+    "source/lift.txt": "eab9ad00b20cc90d6c36ac8b9d463edde0ac86b24d9ec3b24aae8ff93224c2b2",
+    "source/wave_in.txt": "e9480817cfd4dd3b76fd44d596e5672d059616f2c6c5c9a2337752fffa0496e3",
+    "source/wave_out.txt": "539d1a17e0ab492abec14ff006fc13bd7e4ad02788d96db694c709cca4a42a74",
+    "recipes/staff.json": "56529075db8378d4527fa3141dd0c896d767fa909aa9786f783fb570e7c8e207",
+    "exports/staff/staff_sales_greeting.tres": "5883aa0646d3ba715681580ef4f9fe530dd9aba48351bf7660cb8ace9b4bb1f7",
+    "exports/staff/staff_sales_greeting.png": "19c926d00bf76dc285535db6c382bcd65369e74291e12ed865cb6bcd17fe4213",
+    "comparison-1x.gif": "610cef2661af7a883bf1aa588ad0b102fc95fc6c2df4d8dfbcea82d8b5a6f9bf",
+    "together-1x.gif": "5112ec68c4061bd69ac51314cc2853d947098bef1c09dbd130a314046949440d",
+    "greeting-3x.gif": "55483af35e7e4ebebd90b9b32639735accd189f4827560301730f0c5b1c41b65"
+  }
+}

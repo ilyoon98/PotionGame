@@ -32,6 +32,7 @@ var _capture_after := -1.0
 var _capture_path := "res://live-review.png"
 var _capture_pending := false
 var _captured := false
+var _quit_after := -1.0
 
 
 func _initialize() -> void:
@@ -46,6 +47,8 @@ func _parse_arguments() -> void:
 			_capture_after = float(arguments[index + 1])
 		if arguments[index] == "--capture-path" and index + 1 < arguments.size():
 			_capture_path = arguments[index + 1]
+		if arguments[index] == "--quit-after" and index + 1 < arguments.size():
+			_quit_after = float(arguments[index + 1])
 
 
 func _build_review() -> void:
@@ -298,6 +301,11 @@ func _process(delta: float) -> bool:
 	if _capture_after >= 0.0 and _wall_seconds >= _capture_after and not _captured and not _capture_pending:
 		_capture_pending = true
 		call_deferred("_capture_frame")
+	if _quit_after > 0.0 and _wall_seconds >= _quit_after:
+		_take_sample()
+		_save_observation("timed_finish")
+		_ready = false
+		quit()
 	return false
 
 

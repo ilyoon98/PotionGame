@@ -1,0 +1,205 @@
+{
+  "ok": true,
+  "name": "staff_sales_greeting",
+  "width": 32,
+  "height": 48,
+  "frames": 19,
+  "animations": [
+    "still",
+    "greet"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "action_0",
+      "duration": 900
+    },
+    {
+      "frame": "action_1",
+      "duration": 280
+    },
+    {
+      "frame": "action_2",
+      "duration": 320
+    },
+    {
+      "frame": "action_3",
+      "duration": 220
+    },
+    {
+      "frame": "action_4",
+      "duration": 140
+    },
+    {
+      "frame": "action_5",
+      "duration": 220
+    },
+    {
+      "frame": "action_6",
+      "duration": 140
+    },
+    {
+      "frame": "action_7",
+      "duration": 220
+    },
+    {
+      "frame": "action_8",
+      "duration": 140
+    },
+    {
+      "frame": "action_9",
+      "duration": 220
+    },
+    {
+      "frame": "action_10",
+      "duration": 140
+    },
+    {
+      "frame": "action_11",
+      "duration": 500
+    },
+    {
+      "frame": "action_12",
+      "duration": 420
+    },
+    {
+      "frame": "action_13",
+      "duration": 2140
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 7,
+    "rows": 2,
+    "scale": 3,
+    "gap": 3,
+    "width": 696,
+    "height": 297
+  },
+  "mode": "onion",
+  "timing": {
+    "animation": "greet",
+    "duration": 6000,
+    "loop": false,
+    "entries": [
+      {
+        "position": 0,
+        "frame": "action_0",
+        "start": 0,
+        "duration": 900,
+        "previous": null,
+        "next": 1
+      },
+      {
+        "position": 1,
+        "frame": "action_1",
+        "start": 900,
+        "duration": 280,
+        "previous": 0,
+        "next": 2
+      },
+      {
+        "position": 2,
+        "frame": "action_2",
+        "start": 1180,
+        "duration": 320,
+        "previous": 1,
+        "next": 3
+      },
+      {
+        "position": 3,
+        "frame": "action_3",
+        "start": 1500,
+        "duration": 220,
+        "previous": 2,
+        "next": 4
+      },
+      {
+        "position": 4,
+        "frame": "action_4",
+        "start": 1720,
+        "duration": 140,
+        "previous": 3,
+        "next": 5
+      },
+      {
+        "position": 5,
+        "frame": "action_5",
+        "start": 1860,
+        "duration": 220,
+        "previous": 4,
+        "next": 6
+      },
+      {
+        "position": 6,
+        "frame": "action_6",
+        "start": 2080,
+        "duration": 140,
+        "previous": 5,
+        "next": 7
+      },
+      {
+        "position": 7,
+        "frame": "action_7",
+        "start": 2220,
+        "duration": 220,
+        "previous": 6,
+        "next": 8
+      },
+      {
+        "position": 8,
+        "frame": "action_8",
+        "start": 2440,
+        "duration": 140,
+        "previous": 7,
+        "next": 9
+      },
+      {
+        "position": 9,
+        "frame": "action_9",
+        "start": 2580,
+        "duration": 220,
+        "previous": 8,
+        "next": 10
+      },
+      {
+        "position": 10,
+        "frame": "action_10",
+        "start": 2800,
+        "duration": 140,
+        "previous": 9,
+        "next": 11
+      },
+      {
+        "position": 11,
+        "frame": "action_11",
+        "start": 2940,
+        "duration": 500,
+        "previous": 10,
+        "next": 12
+      },
+      {
+        "position": 12,
+        "frame": "action_12",
+        "start": 3440,
+        "duration": 420,
+        "previous": 11,
+        "next": 13
+      },
+      {
+        "position": 13,
+        "frame": "action_13",
+        "start": 3860,
+        "duration": 2140,
+        "previous": 12,
+        "next": null
+      }
+    ]
+  },
+  "image": ".\\art\\mockups\\f25-staff-greeting-v1\\reviews\\onion.png"
+}

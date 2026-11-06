@@ -1,0 +1,1313 @@
+{
+  "schema_version": 1,
+  "status": "authored_action_candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "source": "art/mockups/f25-staff-alignment-v1/source/staff_sales_assistant.txt",
+  "source_sha256": "c99048dd1d0a7d33bc83978af3ea9e6dcdabf77a6a3be852c1266d3e45aff79b",
+  "palette": {
+    "#": "#241C32",
+    "s": "#F6D1AC",
+    "r": "#A65D64",
+    "c": "#FFF0BC",
+    "w": "#50333B"
+  },
+  "size": [
+    32,
+    48
+  ],
+  "display_scale": 3,
+  "source_method": "Original pixel grid plus authored native arm and palm points; Pixelbolt rendering only. No image generation, rotation interpolation, or whole-body movement.",
+  "brief": {
+    "action": "Raise screen-right open hand, wave twice, lower slowly; opposite hand remains fixed.",
+    "landmarks": [
+      "fixed hair silhouette and eyes",
+      "short bent bare arm with original brown bracelet",
+      "unchanged skirt and feet on y46"
+    ],
+    "projection": "original three-quarter front view",
+    "light": "original upper-left palette assignments",
+    "outline": "#241C32 continuous 4-neighbor alpha boundary"
+  },
+  "invariants": {
+    "head_opaque_unchanged": true,
+    "foot_row": 46,
+    "lower_rows_unchanged": [
+      39,
+      47
+    ],
+    "semantic_masks": {
+      "neck": {
+        "runs": [
+          [
+            27,
+            13,
+            15
+          ]
+        ],
+        "allowed_chars": [
+          "#",
+          "s"
+        ],
+        "interior_chars": [
+          "s"
+        ],
+        "expected_counts": {
+          "#": 2,
+          "s": 1
+        }
+      },
+      "torso_core": {
+        "runs": [
+          [
+            28,
+            12,
+            14
+          ],
+          [
+            28,
+            16,
+            16
+          ],
+          [
+            29,
+            12,
+            16
+          ],
+          [
+            30,
+            11,
+            16
+          ],
+          [
+            31,
+            11,
+            16
+          ],
+          [
+            32,
+            11,
+            16
+          ],
+          [
+            33,
+            12,
+            15
+          ],
+          [
+            34,
+            12,
+            15
+          ]
+        ],
+        "allowed_chars": [
+          "#",
+          "r",
+          "c"
+        ],
+        "interior_chars": [
+          "r",
+          "c"
+        ],
+        "expected_counts": {
+          "#": 6,
+          "c": 6,
+          "r": 23
+        }
+      },
+      "waist": {
+        "runs": [
+          [
+            35,
+            11,
+            16
+          ]
+        ],
+        "allowed_chars": [
+          "#",
+          "r",
+          "c"
+        ],
+        "interior_chars": [
+          "r",
+          "c"
+        ],
+        "expected_counts": {
+          "r": 2,
+          "c": 4
+        }
+      },
+      "hip": {
+        "runs": [
+          [
+            36,
+            11,
+            16
+          ],
+          [
+            37,
+            10,
+            17
+          ],
+          [
+            38,
+            10,
+            17
+          ],
+          [
+            39,
+            10,
+            17
+          ]
+        ],
+        "allowed_chars": [
+          "#",
+          "r",
+          "c"
+        ],
+        "interior_chars": [
+          "r",
+          "c"
+        ],
+        "expected_counts": {
+          "r": 10,
+          "c": 12,
+          "#": 8
+        }
+      },
+      "left_leg": {
+        "runs": [
+          [
+            40,
+            11,
+            13
+          ],
+          [
+            41,
+            11,
+            13
+          ],
+          [
+            42,
+            11,
+            13
+          ],
+          [
+            43,
+            10,
+            13
+          ],
+          [
+            44,
+            10,
+            13
+          ],
+          [
+            45,
+            11,
+            13
+          ],
+          [
+            46,
+            10,
+            13
+          ]
+        ],
+        "allowed_chars": [
+          "#",
+          "s",
+          "w"
+        ],
+        "interior_chars": [
+          "s",
+          "w"
+        ],
+        "expected_counts": {
+          "#": 19,
+          "s": 3,
+          "w": 2
+        }
+      },
+      "right_leg": {
+        "runs": [
+          [
+            40,
+            15,
+            18
+          ],
+          [
+            41,
+            15,
+            18
+          ],
+          [
+            42,
+            15,
+            18
+          ],
+          [
+            43,
+            15,
+            18
+          ],
+          [
+            44,
+            16,
+            18
+          ],
+          [
+            45,
+            16,
+            18
+          ],
+          [
+            46,
+            16,
+            19
+          ]
+        ],
+        "allowed_chars": [
+          "#",
+          "s",
+          "w"
+        ],
+        "interior_chars": [
+          "s",
+          "w"
+        ],
+        "expected_counts": {
+          "#": 18,
+          "s": 6,
+          "w": 2
+        }
+      },
+      "left_hand": {
+        "runs": [
+          [
+            37,
+            9,
+            9
+          ],
+          [
+            38,
+            9,
+            9
+          ]
+        ],
+        "allowed_chars": [
+          "s"
+        ],
+        "interior_chars": [
+          "s"
+        ],
+        "expected_counts": {
+          "s": 2
+        }
+      }
+    },
+    "old_right_hand_runs": [
+      [
+        37,
+        18,
+        18
+      ],
+      [
+        38,
+        18,
+        18
+      ]
+    ],
+    "shoulder": [
+      17,
+      31
+    ],
+    "head_clearance": "No arm-mask pixel at y<=27 may be within 8-neighbor distance of any original head-opaque pixel y<=26.",
+    "original_colors": [
+      "#",
+      "c",
+      "r",
+      "s",
+      "w"
+    ]
+  },
+  "states": [
+    {
+      "id": "rest",
+      "hand_skin_runs": [
+        [
+          37,
+          18,
+          18
+        ],
+        [
+          38,
+          18,
+          18
+        ]
+      ],
+      "wrist": [
+        18,
+        37
+      ],
+      "elbow": [
+        17,
+        34
+      ],
+      "shoulder": [
+        17,
+        31
+      ],
+      "arm_mask_runs": [
+        [
+          31,
+          17,
+          18
+        ],
+        [
+          32,
+          16,
+          18
+        ],
+        [
+          33,
+          16,
+          18
+        ],
+        [
+          34,
+          16,
+          18
+        ],
+        [
+          35,
+          17,
+          18
+        ],
+        [
+          36,
+          17,
+          19
+        ],
+        [
+          37,
+          18,
+          19
+        ],
+        [
+          38,
+          18,
+          19
+        ]
+      ],
+      "changed_runs": [],
+      "changed_pixels": 0,
+      "validation": {
+        "boundary_violations": [],
+        "protected_changes": [],
+        "head_contact_violations": [],
+        "arm_mask_components": 1,
+        "wrist_is_skin": true,
+        "shoulder_is_original_skin": true,
+        "old_hand_removed": true,
+        "colors": [
+          "#",
+          "c",
+          "r",
+          "s",
+          "w"
+        ]
+      },
+      "sha256": "c99048dd1d0a7d33bc83978af3ea9e6dcdabf77a6a3be852c1266d3e45aff79b",
+      "file": "rest.txt",
+      "arm_chain": {
+        "shoulder": [
+          17,
+          31
+        ],
+        "elbow": [
+          17,
+          34
+        ],
+        "wrist": [
+          18,
+          37
+        ],
+        "upper_length_px": 3,
+        "forearm_length_px": 3.162,
+        "note": "Landmark distance on a small authored integer grid, not an anatomical scale."
+      },
+      "hand_skin_pixel_count": 2
+    },
+    {
+      "id": "prepare",
+      "hand_skin_runs": [
+        [
+          31,
+          22,
+          22
+        ],
+        [
+          32,
+          22,
+          23
+        ],
+        [
+          33,
+          23,
+          23
+        ]
+      ],
+      "wrist": [
+        22,
+        33
+      ],
+      "elbow": [
+        18,
+        33
+      ],
+      "shoulder": [
+        17,
+        31
+      ],
+      "arm_mask_runs": [
+        [
+          30,
+          22,
+          22
+        ],
+        [
+          31,
+          17,
+          18
+        ],
+        [
+          31,
+          21,
+          23
+        ],
+        [
+          32,
+          16,
+          24
+        ],
+        [
+          33,
+          17,
+          24
+        ],
+        [
+          34,
+          18,
+          23
+        ]
+      ],
+      "changed_runs": [
+        [
+          30,
+          22,
+          22
+        ],
+        [
+          31,
+          21,
+          23
+        ],
+        [
+          32,
+          18,
+          24
+        ],
+        [
+          33,
+          17,
+          24
+        ],
+        [
+          34,
+          17,
+          17
+        ],
+        [
+          34,
+          19,
+          23
+        ],
+        [
+          35,
+          18,
+          18
+        ],
+        [
+          36,
+          18,
+          19
+        ],
+        [
+          37,
+          18,
+          18
+        ],
+        [
+          38,
+          18,
+          18
+        ]
+      ],
+      "changed_pixels": 30,
+      "validation": {
+        "boundary_violations": [],
+        "protected_changes": [],
+        "head_contact_violations": [],
+        "arm_mask_components": 1,
+        "wrist_is_skin": true,
+        "shoulder_is_original_skin": true,
+        "old_hand_removed": true,
+        "colors": [
+          "#",
+          "c",
+          "r",
+          "s",
+          "w"
+        ]
+      },
+      "sha256": "4150a4a4b6fe7674b4cc0c7f52a2f97cd86498d9f9bff20f92bed3c749e3d6be",
+      "file": "prepare.txt",
+      "arm_chain": {
+        "shoulder": [
+          17,
+          31
+        ],
+        "elbow": [
+          18,
+          33
+        ],
+        "wrist": [
+          22,
+          33
+        ],
+        "upper_length_px": 2.236,
+        "forearm_length_px": 4,
+        "note": "Landmark distance on a small authored integer grid, not an anatomical scale."
+      },
+      "hand_skin_pixel_count": 4
+    },
+    {
+      "id": "lift",
+      "hand_skin_runs": [
+        [
+          28,
+          22,
+          22
+        ],
+        [
+          29,
+          22,
+          23
+        ],
+        [
+          30,
+          22,
+          22
+        ]
+      ],
+      "wrist": [
+        22,
+        31
+      ],
+      "elbow": [
+        19,
+        33
+      ],
+      "shoulder": [
+        17,
+        31
+      ],
+      "arm_mask_runs": [
+        [
+          27,
+          22,
+          22
+        ],
+        [
+          28,
+          21,
+          23
+        ],
+        [
+          29,
+          21,
+          24
+        ],
+        [
+          30,
+          21,
+          23
+        ],
+        [
+          31,
+          17,
+          18
+        ],
+        [
+          31,
+          20,
+          23
+        ],
+        [
+          32,
+          16,
+          22
+        ],
+        [
+          33,
+          17,
+          21
+        ],
+        [
+          34,
+          18,
+          20
+        ]
+      ],
+      "changed_runs": [
+        [
+          27,
+          22,
+          22
+        ],
+        [
+          28,
+          21,
+          23
+        ],
+        [
+          29,
+          21,
+          24
+        ],
+        [
+          30,
+          21,
+          23
+        ],
+        [
+          31,
+          20,
+          23
+        ],
+        [
+          32,
+          18,
+          22
+        ],
+        [
+          33,
+          17,
+          21
+        ],
+        [
+          34,
+          17,
+          17
+        ],
+        [
+          34,
+          19,
+          20
+        ],
+        [
+          35,
+          18,
+          18
+        ],
+        [
+          36,
+          18,
+          19
+        ],
+        [
+          37,
+          18,
+          18
+        ],
+        [
+          38,
+          18,
+          18
+        ]
+      ],
+      "changed_pixels": 33,
+      "validation": {
+        "boundary_violations": [],
+        "protected_changes": [],
+        "head_contact_violations": [],
+        "arm_mask_components": 1,
+        "wrist_is_skin": true,
+        "shoulder_is_original_skin": true,
+        "old_hand_removed": true,
+        "colors": [
+          "#",
+          "c",
+          "r",
+          "s",
+          "w"
+        ]
+      },
+      "sha256": "eab9ad00b20cc90d6c36ac8b9d463edde0ac86b24d9ec3b24aae8ff93224c2b2",
+      "file": "lift.txt",
+      "arm_chain": {
+        "shoulder": [
+          17,
+          31
+        ],
+        "elbow": [
+          19,
+          33
+        ],
+        "wrist": [
+          22,
+          31
+        ],
+        "upper_length_px": 2.828,
+        "forearm_length_px": 3.606,
+        "note": "Landmark distance on a small authored integer grid, not an anatomical scale."
+      },
+      "hand_skin_pixel_count": 4
+    },
+    {
+      "id": "wave_in",
+      "hand_skin_runs": [
+        [
+          28,
+          22,
+          22
+        ],
+        [
+          29,
+          21,
+          22
+        ],
+        [
+          30,
+          22,
+          22
+        ]
+      ],
+      "wrist": [
+        22,
+        31
+      ],
+      "elbow": [
+        19,
+        33
+      ],
+      "shoulder": [
+        17,
+        31
+      ],
+      "arm_mask_runs": [
+        [
+          27,
+          22,
+          22
+        ],
+        [
+          28,
+          21,
+          23
+        ],
+        [
+          29,
+          20,
+          23
+        ],
+        [
+          30,
+          21,
+          23
+        ],
+        [
+          31,
+          17,
+          18
+        ],
+        [
+          31,
+          20,
+          23
+        ],
+        [
+          32,
+          16,
+          22
+        ],
+        [
+          33,
+          17,
+          21
+        ],
+        [
+          34,
+          18,
+          20
+        ]
+      ],
+      "changed_runs": [
+        [
+          27,
+          22,
+          22
+        ],
+        [
+          28,
+          21,
+          23
+        ],
+        [
+          29,
+          20,
+          23
+        ],
+        [
+          30,
+          21,
+          23
+        ],
+        [
+          31,
+          20,
+          23
+        ],
+        [
+          32,
+          18,
+          22
+        ],
+        [
+          33,
+          17,
+          21
+        ],
+        [
+          34,
+          17,
+          17
+        ],
+        [
+          34,
+          19,
+          20
+        ],
+        [
+          35,
+          18,
+          18
+        ],
+        [
+          36,
+          18,
+          19
+        ],
+        [
+          37,
+          18,
+          18
+        ],
+        [
+          38,
+          18,
+          18
+        ]
+      ],
+      "changed_pixels": 33,
+      "validation": {
+        "boundary_violations": [],
+        "protected_changes": [],
+        "head_contact_violations": [],
+        "arm_mask_components": 1,
+        "wrist_is_skin": true,
+        "shoulder_is_original_skin": true,
+        "old_hand_removed": true,
+        "colors": [
+          "#",
+          "c",
+          "r",
+          "s",
+          "w"
+        ]
+      },
+      "sha256": "e9480817cfd4dd3b76fd44d596e5672d059616f2c6c5c9a2337752fffa0496e3",
+      "file": "wave_in.txt",
+      "arm_chain": {
+        "shoulder": [
+          17,
+          31
+        ],
+        "elbow": [
+          19,
+          33
+        ],
+        "wrist": [
+          22,
+          31
+        ],
+        "upper_length_px": 2.828,
+        "forearm_length_px": 3.606,
+        "note": "Landmark distance on a small authored integer grid, not an anatomical scale."
+      },
+      "hand_skin_pixel_count": 4
+    },
+    {
+      "id": "wave_out",
+      "hand_skin_runs": [
+        [
+          28,
+          23,
+          23
+        ],
+        [
+          29,
+          23,
+          24
+        ],
+        [
+          30,
+          23,
+          23
+        ]
+      ],
+      "wrist": [
+        23,
+        31
+      ],
+      "elbow": [
+        19,
+        33
+      ],
+      "shoulder": [
+        17,
+        31
+      ],
+      "arm_mask_runs": [
+        [
+          27,
+          23,
+          23
+        ],
+        [
+          28,
+          22,
+          24
+        ],
+        [
+          29,
+          22,
+          25
+        ],
+        [
+          30,
+          21,
+          24
+        ],
+        [
+          31,
+          17,
+          18
+        ],
+        [
+          31,
+          20,
+          24
+        ],
+        [
+          32,
+          16,
+          23
+        ],
+        [
+          33,
+          17,
+          21
+        ],
+        [
+          34,
+          18,
+          20
+        ]
+      ],
+      "changed_runs": [
+        [
+          27,
+          23,
+          23
+        ],
+        [
+          28,
+          22,
+          24
+        ],
+        [
+          29,
+          22,
+          25
+        ],
+        [
+          30,
+          21,
+          24
+        ],
+        [
+          31,
+          20,
+          24
+        ],
+        [
+          32,
+          18,
+          23
+        ],
+        [
+          33,
+          17,
+          21
+        ],
+        [
+          34,
+          17,
+          17
+        ],
+        [
+          34,
+          19,
+          20
+        ],
+        [
+          35,
+          18,
+          18
+        ],
+        [
+          36,
+          18,
+          19
+        ],
+        [
+          37,
+          18,
+          18
+        ],
+        [
+          38,
+          18,
+          18
+        ]
+      ],
+      "changed_pixels": 36,
+      "validation": {
+        "boundary_violations": [],
+        "protected_changes": [],
+        "head_contact_violations": [],
+        "arm_mask_components": 1,
+        "wrist_is_skin": true,
+        "shoulder_is_original_skin": true,
+        "old_hand_removed": true,
+        "colors": [
+          "#",
+          "c",
+          "r",
+          "s",
+          "w"
+        ]
+      },
+      "sha256": "539d1a17e0ab492abec14ff006fc13bd7e4ad02788d96db694c709cca4a42a74",
+      "file": "wave_out.txt",
+      "arm_chain": {
+        "shoulder": [
+          17,
+          31
+        ],
+        "elbow": [
+          19,
+          33
+        ],
+        "wrist": [
+          23,
+          31
+        ],
+        "upper_length_px": 2.828,
+        "forearm_length_px": 4.472,
+        "note": "Landmark distance on a small authored integer grid, not an anatomical scale."
+      },
+      "hand_skin_pixel_count": 4
+    }
+  ],
+  "allowed_edit_runs": [
+    [
+      27,
+      22,
+      23
+    ],
+    [
+      28,
+      21,
+      24
+    ],
+    [
+      29,
+      20,
+      25
+    ],
+    [
+      30,
+      21,
+      24
+    ],
+    [
+      31,
+      20,
+      24
+    ],
+    [
+      32,
+      18,
+      24
+    ],
+    [
+      33,
+      17,
+      24
+    ],
+    [
+      34,
+      17,
+      17
+    ],
+    [
+      34,
+      19,
+      23
+    ],
+    [
+      35,
+      18,
+      18
+    ],
+    [
+      36,
+      18,
+      19
+    ],
+    [
+      37,
+      18,
+      18
+    ],
+    [
+      38,
+      18,
+      18
+    ]
+  ],
+  "timeline": [
+    {
+      "id": "rest",
+      "duration_ms": 900
+    },
+    {
+      "id": "prepare",
+      "duration_ms": 280
+    },
+    {
+      "id": "lift",
+      "duration_ms": 320
+    },
+    {
+      "id": "wave_in",
+      "duration_ms": 220
+    },
+    {
+      "id": "lift",
+      "duration_ms": 140
+    },
+    {
+      "id": "wave_out",
+      "duration_ms": 220
+    },
+    {
+      "id": "lift",
+      "duration_ms": 140
+    },
+    {
+      "id": "wave_in",
+      "duration_ms": 220
+    },
+    {
+      "id": "lift",
+      "duration_ms": 140
+    },
+    {
+      "id": "wave_out",
+      "duration_ms": 220
+    },
+    {
+      "id": "lift",
+      "duration_ms": 140
+    },
+    {
+      "id": "lift",
+      "duration_ms": 500
+    },
+    {
+      "id": "prepare",
+      "duration_ms": 420
+    },
+    {
+      "id": "rest",
+      "duration_ms": 2140
+    }
+  ],
+  "total_ms": 6000,
+  "loop": false,
+  "fx_included": false,
+  "mask_convention": "Inclusive runs [y,x0,x1]. Arm mask includes the hand and shoulder, with a connected opaque path. Hand skin excludes wrist and bracelet.",
+  "pixelbolt_validation": {
+    "ok": true,
+    "name": "greeting_keyposes",
+    "width": 32,
+    "height": 48,
+    "frames": 5,
+    "animations": [
+      "keyposes"
+    ],
+    "animationFps": {
+      "keyposes": 3.33
+    },
+    "warnings": []
+  },
+  "review": {
+    "key_pose_reviewed": true,
+    "viewed_scales": [
+      1,
+      3
+    ],
+    "views": [
+      "color",
+      "silhouette",
+      "grayscale"
+    ],
+    "live_motion_reviewed": false,
+    "notes": [
+      "Rejected first horizontal-arm silhouette because it read as offering an object.",
+      "Bent elbow at (19,33) keeps upper arm down while the forearm brings the palm upright.",
+      "Open hand is four skin pixels in all non-rest poses; this keeps its size proportionate to the existing two-pixel resting hand.",
+      "Native and 3x views separate the hand from unchanged head. Left/right wrist and palm shifts remain deliberately small.",
+      "Timing still requires the parent full-speed preview; static contact sheets do not verify perceived speed."
+    ]
+  },
+  "notes": [
+    "Original aligned source remains untouched and rest.txt is byte-identical.",
+    "Existing brown cuff is preserved as a one-pixel bracelet near the moving wrist.",
+    "The head/face is not redrawn; only previously transparent space next to it may hold the new hand.",
+    "This is an unapproved animation candidate, not a new character-design approval or runtime integration."
+  ]
+}
