@@ -1,0 +1,9 @@
+{
+	"colors": 5,
+	"engine": "4.6-stable (official)",
+	"failures": [],
+	"frames": 18,
+	"loop": false,
+	"passed": true,
+	"seconds": 6.0
+}

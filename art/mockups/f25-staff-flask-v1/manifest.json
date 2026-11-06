@@ -1,0 +1,2001 @@
+{
+  "schema_version": 1,
+  "status": "candidate",
+  "approved_by_user": false,
+  "compose": false,
+  "scale": 3,
+  "alpha_threshold": 224,
+  "max_colors": 5,
+  "palette": "art/palette.hex",
+  "ramps": "art/ramps.json",
+  "output": "art/mockups/f25-staff-flask-v1/pipeline",
+  "scene": {
+    "size": [
+      32,
+      48
+    ],
+    "background": "#4A3C52"
+  },
+  "feature": "F25 staff flask action",
+  "runtime_integrated": false,
+  "assets": [
+    {
+      "id": "rest",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/rest.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "prepare",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/prepare.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "lift",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/lift.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "shake_left",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/shake_left.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "shake_right",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/shake_right.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_0",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_0.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_1",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_1.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_2",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_2.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_3",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_3.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_4",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_4.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_5",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_5.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_6",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_6.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_7",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_7.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_8",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_8.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_9",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_9.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_10",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_10.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_11",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_11.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_12",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_12.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_13",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_13.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_14",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_14.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_15",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_15.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_16",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_16.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    },
+    {
+      "id": "action_17",
+      "source": "art/mockups/f25-staff-flask-v1/exports/staff/frames/action_17.png",
+      "size": [
+        32,
+        48
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "margin": 0,
+      "dark_value": 0.24,
+      "preserve_native_frame": true,
+      "materials": {
+        "outline": [
+          "#241C32"
+        ],
+        "skin": [
+          "#F6D1AC"
+        ],
+        "smock_lens_glass": [
+          "#827589"
+        ],
+        "smock_shadow_stockings": [
+          "#4A3C52"
+        ],
+        "hair_boots_potion": [
+          "#9D4359"
+        ]
+      },
+      "material_ramps": {
+        "skin": "skin",
+        "smock_lens_glass": "stone",
+        "smock_shadow_stockings": "stone",
+        "hair_boots_potion": "fire"
+      },
+      "rules": [
+        {
+          "material": "skin",
+          "hue": [
+            0.0793,
+            0.0873
+          ],
+          "saturation_min": 0.2908,
+          "saturation_max": 0.3108,
+          "value_min": 0.9547,
+          "value_max": 0.9747
+        },
+        {
+          "material": "smock_lens_glass",
+          "hue": [
+            0.771,
+            0.779
+          ],
+          "saturation_min": 0.136,
+          "saturation_max": 0.156,
+          "value_min": 0.5273,
+          "value_max": 0.5473
+        },
+        {
+          "material": "smock_shadow_stockings",
+          "hue": [
+            0.7687,
+            0.7767
+          ],
+          "saturation_min": 0.2583,
+          "saturation_max": 0.2783,
+          "value_min": 0.3116,
+          "value_max": 0.3316
+        },
+        {
+          "material": "hair_boots_potion",
+          "hue": [
+            0.9553,
+            0.9633
+          ],
+          "saturation_min": 0.5632,
+          "saturation_max": 0.5832,
+          "value_min": 0.6057,
+          "value_max": 0.6257
+        }
+      ],
+      "fallback_material": "skin",
+      "name_ko": "조제 보조"
+    }
+  ]
+}

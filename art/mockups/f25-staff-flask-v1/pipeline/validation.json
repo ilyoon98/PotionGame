@@ -1,0 +1,661 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "rest": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 565,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "58eb9429928098d920b89725430700e1bdca4102692e6ccc9de2e2218deae6ab",
+      "native_pixel_sha256": "6739b8090048e509bfc26bd8de623a33d74d0aabb37b3a18c48e78468895d9e7"
+    },
+    "prepare": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 566,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "847294104e4dc1aa6b85478f7f00125367c9e6d6a4f51a0b687335b350835f73",
+      "native_pixel_sha256": "222e00d91d0f5ca1b4774e33e832c9bb8a2ee17ce9c8ae69d83350836c22688f"
+    },
+    "lift": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "shake_left": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 562,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "c8c35633d05581837b8adfa0139dee0c0427e05f61f9f93d6d6f8f96fd0369c8",
+      "native_pixel_sha256": "30f3c30b0db747814b8dd8f7c8b36c050f18ad2e6cd0897661a918ed3238034e"
+    },
+    "shake_right": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 569,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "f8e21a9d1d7def258ce80ec6897891ffdb6633025fab28c9c08391ad1b7f5ac0",
+      "native_pixel_sha256": "8e5f6ce5773a57acc277633f5ca64b3074d7ef1e4109903ff2678ac0963a12c2"
+    },
+    "action_0": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 565,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "58eb9429928098d920b89725430700e1bdca4102692e6ccc9de2e2218deae6ab",
+      "native_pixel_sha256": "6739b8090048e509bfc26bd8de623a33d74d0aabb37b3a18c48e78468895d9e7"
+    },
+    "action_1": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 566,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "847294104e4dc1aa6b85478f7f00125367c9e6d6a4f51a0b687335b350835f73",
+      "native_pixel_sha256": "222e00d91d0f5ca1b4774e33e832c9bb8a2ee17ce9c8ae69d83350836c22688f"
+    },
+    "action_2": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_3": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 562,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "c8c35633d05581837b8adfa0139dee0c0427e05f61f9f93d6d6f8f96fd0369c8",
+      "native_pixel_sha256": "30f3c30b0db747814b8dd8f7c8b36c050f18ad2e6cd0897661a918ed3238034e"
+    },
+    "action_4": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_5": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 569,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "f8e21a9d1d7def258ce80ec6897891ffdb6633025fab28c9c08391ad1b7f5ac0",
+      "native_pixel_sha256": "8e5f6ce5773a57acc277633f5ca64b3074d7ef1e4109903ff2678ac0963a12c2"
+    },
+    "action_6": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_7": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 562,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "c8c35633d05581837b8adfa0139dee0c0427e05f61f9f93d6d6f8f96fd0369c8",
+      "native_pixel_sha256": "30f3c30b0db747814b8dd8f7c8b36c050f18ad2e6cd0897661a918ed3238034e"
+    },
+    "action_8": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_9": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 569,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "f8e21a9d1d7def258ce80ec6897891ffdb6633025fab28c9c08391ad1b7f5ac0",
+      "native_pixel_sha256": "8e5f6ce5773a57acc277633f5ca64b3074d7ef1e4109903ff2678ac0963a12c2"
+    },
+    "action_10": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_11": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 562,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "c8c35633d05581837b8adfa0139dee0c0427e05f61f9f93d6d6f8f96fd0369c8",
+      "native_pixel_sha256": "30f3c30b0db747814b8dd8f7c8b36c050f18ad2e6cd0897661a918ed3238034e"
+    },
+    "action_12": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_13": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 569,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "f8e21a9d1d7def258ce80ec6897891ffdb6633025fab28c9c08391ad1b7f5ac0",
+      "native_pixel_sha256": "8e5f6ce5773a57acc277633f5ca64b3074d7ef1e4109903ff2678ac0963a12c2"
+    },
+    "action_14": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_15": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 561,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "3b045a08f59303a43dc28a19d92cf0c4f13492d2d582d7dc20e56cd272fc46a1",
+      "native_pixel_sha256": "4c63df3c11badbadc24a7a63fd3d69c17e1467a9cbc93cc0a28b4d7981115dfb"
+    },
+    "action_16": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 566,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "847294104e4dc1aa6b85478f7f00125367c9e6d6a4f51a0b687335b350835f73",
+      "native_pixel_sha256": "222e00d91d0f5ca1b4774e33e832c9bb8a2ee17ce9c8ae69d83350836c22688f"
+    },
+    "action_17": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 565,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "58eb9429928098d920b89725430700e1bdca4102692e6ccc9de2e2218deae6ab",
+      "native_pixel_sha256": "6739b8090048e509bfc26bd8de623a33d74d0aabb37b3a18c48e78468895d9e7"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

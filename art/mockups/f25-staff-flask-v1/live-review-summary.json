@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "date": "2026-11-06",
+  "engine": "4.6-stable (official)",
+  "method": "Isolated visible Godot 4.6 render loop at 1x, delta-based telemetry and a rendered viewport capture; no claim of continuous visual observation.",
+  "wall_seconds": 60.0771693333312,
+  "animation_seconds": 60.0771693333312,
+  "speed": 1,
+  "samples": 117,
+  "item_samples": 819,
+  "contact_errors": 0,
+  "pixel_alignment_errors": 0,
+  "items": [
+    {
+      "id": "keeper",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 3,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "traveler",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 3,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "mage",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 3,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "elf",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 3,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "rogue",
+      "frames": 152,
+      "observed_frames": 152,
+      "completed_loops": 3,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "brewer_idle",
+      "frames": 19,
+      "observed_frames": 19,
+      "completed_loops": 3,
+      "display_size": [
+        96,
+        144
+      ]
+    },
+    {
+      "id": "brewer_shake",
+      "frames": 18,
+      "observed_frames": 18,
+      "completed_loops": 10,
+      "display_size": [
+        96,
+        144
+      ]
+    }
+  ],
+  "capture": {
+    "path": "live-review.png",
+    "animation_seconds": 13.5,
+    "inspected": true,
+    "notes": "Raised left shake keeps flask separate from hair and feet level with the reference ground."
+  },
+  "ui_observation": {
+    "status": "activation_failed",
+    "attempts": 2,
+    "error": "failed to activate captured window",
+    "fallback": "Inspected the engine-produced viewport capture and timing/position telemetry. Stopped Computer Use after retry."
+  },
+  "source_sha256": "2f443255dbb31d8fdb481c29e00436226e30ce729065d52ba33ec890bc97d46b",
+  "runtime_integrated": false,
+  "approved_by_user": false
+}

@@ -1,0 +1,1724 @@
+{
+  "status": "passed",
+  "engine": "Pixelbolt 0.11.0",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "runtime_integrated": false,
+  "size": [
+    32,
+    48
+  ],
+  "display_size": [
+    96,
+    144
+  ],
+  "source": "art/mockups/f25-staff-alignment-v1/source/staff_brewing_assistant.txt",
+  "source_sha256": "aa205977cd2d7779bb733acbb1c62cc931856b19a035a54f06428f00c4befdad",
+  "duration_ms": 6000,
+  "action_loop": false,
+  "timeline": [
+    {
+      "pose": "rest",
+      "duration": 900,
+      "start": 0
+    },
+    {
+      "pose": "prepare",
+      "duration": 220,
+      "start": 900
+    },
+    {
+      "pose": "lift",
+      "duration": 280,
+      "start": 1120
+    },
+    {
+      "pose": "shake_left",
+      "duration": 160,
+      "start": 1400
+    },
+    {
+      "pose": "lift",
+      "duration": 100,
+      "start": 1560
+    },
+    {
+      "pose": "shake_right",
+      "duration": 160,
+      "start": 1660
+    },
+    {
+      "pose": "lift",
+      "duration": 100,
+      "start": 1820
+    },
+    {
+      "pose": "shake_left",
+      "duration": 160,
+      "start": 1920
+    },
+    {
+      "pose": "lift",
+      "duration": 100,
+      "start": 2080
+    },
+    {
+      "pose": "shake_right",
+      "duration": 160,
+      "start": 2180
+    },
+    {
+      "pose": "lift",
+      "duration": 100,
+      "start": 2340
+    },
+    {
+      "pose": "shake_left",
+      "duration": 160,
+      "start": 2440
+    },
+    {
+      "pose": "lift",
+      "duration": 100,
+      "start": 2600
+    },
+    {
+      "pose": "shake_right",
+      "duration": 160,
+      "start": 2700
+    },
+    {
+      "pose": "lift",
+      "duration": 100,
+      "start": 2860
+    },
+    {
+      "pose": "lift",
+      "duration": 340,
+      "start": 2960
+    },
+    {
+      "pose": "prepare",
+      "duration": 260,
+      "start": 3300
+    },
+    {
+      "pose": "rest",
+      "duration": 2440,
+      "start": 3560
+    }
+  ],
+  "source_pose_notes": {
+    "schema_version": 1,
+    "status": "authored_action_candidate",
+    "approved_by_user": false,
+    "runtime_integrated": false,
+    "source": "art/mockups/f25-staff-alignment-v1/source/staff_brewing_assistant.txt",
+    "source_sha256": "aa205977cd2d7779bb733acbb1c62cc931856b19a035a54f06428f00c4befdad",
+    "palette": {
+      "#": "#241C32",
+      "s": "#F6D1AC",
+      "k": "#4A3C52",
+      "m": "#827589",
+      "R": "#9D4359"
+    },
+    "size": [
+      32,
+      48
+    ],
+    "display_scale": 3,
+    "source_method": "Original aligned pixel grid; selected hand/flask pixel translation and authored native tilt silhouettes. No interpolation, rotation resampling, or image generation.",
+    "brief": {
+      "landmarks": [
+        "fixed goggles and tied hair",
+        "rounded closed flask with 13 red liquid pixels",
+        "fixed boots grounded at y46"
+      ],
+      "projection": "original three-quarter front view",
+      "lighting": "preserved original upper-left material accents",
+      "contact": "screen-right hand supports left side of flask body; does not grasp the neck",
+      "action": "Raise 2px then 3px, gently shake the closed flask left/right three times, lower to identical rest",
+      "depth": "hand in front of coat and immediately left of flask",
+      "outline": "#241C32 at all alpha boundaries"
+    },
+    "invariants": {
+      "head_rows_unchanged": [
+        0,
+        26
+      ],
+      "bottom_rows_unchanged": [
+        39,
+        47
+      ],
+      "left_columns_unchanged": [
+        0,
+        16
+      ],
+      "foot_row": 46,
+      "semantic_masks": {
+        "neck": {
+          "runs": [
+            [
+              27,
+              13,
+              15
+            ]
+          ],
+          "allowed_chars": [
+            "#",
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "#": 2,
+            "s": 1
+          }
+        },
+        "torso_core": {
+          "runs": [
+            [
+              28,
+              11,
+              17
+            ],
+            [
+              29,
+              11,
+              17
+            ],
+            [
+              30,
+              11,
+              17
+            ],
+            [
+              31,
+              11,
+              17
+            ],
+            [
+              32,
+              11,
+              17
+            ],
+            [
+              33,
+              11,
+              17
+            ],
+            [
+              34,
+              11,
+              17
+            ]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "k"
+          ],
+          "interior_chars": [
+            "m",
+            "k"
+          ],
+          "expected_counts": {
+            "#": 4,
+            "k": 18,
+            "m": 27
+          }
+        },
+        "waist": {
+          "runs": [
+            [
+              35,
+              10,
+              16
+            ]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "k"
+          ],
+          "interior_chars": [
+            "m",
+            "k"
+          ],
+          "expected_counts": {
+            "m": 5,
+            "k": 2
+          }
+        },
+        "hip": {
+          "runs": [
+            [
+              36,
+              10,
+              16
+            ],
+            [
+              37,
+              10,
+              17
+            ],
+            [
+              38,
+              10,
+              17
+            ],
+            [
+              39,
+              10,
+              17
+            ]
+          ],
+          "allowed_chars": [
+            "#",
+            "m",
+            "k"
+          ],
+          "interior_chars": [
+            "m",
+            "k"
+          ],
+          "expected_counts": {
+            "m": 18,
+            "k": 5,
+            "#": 8
+          }
+        },
+        "left_leg": {
+          "runs": [
+            [
+              40,
+              10,
+              13
+            ],
+            [
+              41,
+              10,
+              13
+            ],
+            [
+              42,
+              10,
+              13
+            ],
+            [
+              43,
+              10,
+              13
+            ],
+            [
+              44,
+              9,
+              13
+            ],
+            [
+              45,
+              8,
+              13
+            ],
+            [
+              46,
+              8,
+              13
+            ]
+          ],
+          "allowed_chars": [
+            "#",
+            "k",
+            "R"
+          ],
+          "interior_chars": [
+            "k",
+            "R"
+          ],
+          "expected_counts": {
+            "#": 19,
+            "k": 6,
+            "R": 8
+          }
+        },
+        "right_leg": {
+          "runs": [
+            [
+              40,
+              15,
+              19
+            ],
+            [
+              41,
+              15,
+              19
+            ],
+            [
+              42,
+              15,
+              19
+            ],
+            [
+              43,
+              15,
+              19
+            ],
+            [
+              44,
+              15,
+              19
+            ],
+            [
+              45,
+              15,
+              19
+            ],
+            [
+              46,
+              15,
+              19
+            ]
+          ],
+          "allowed_chars": [
+            "#",
+            "k",
+            "R"
+          ],
+          "interior_chars": [
+            "k",
+            "R"
+          ],
+          "expected_counts": {
+            "#": 17,
+            "k": 9,
+            "R": 9
+          }
+        },
+        "left_hand": {
+          "runs": [
+            [
+              34,
+              6,
+              6
+            ],
+            [
+              35,
+              6,
+              7
+            ],
+            [
+              36,
+              7,
+              7
+            ]
+          ],
+          "allowed_chars": [
+            "s"
+          ],
+          "interior_chars": [
+            "s"
+          ],
+          "expected_counts": {
+            "s": 4
+          }
+        }
+      }
+    },
+    "states": [
+      {
+        "id": "rest",
+        "hand_skin_runs": [
+          [
+            35,
+            18,
+            18
+          ],
+          [
+            36,
+            17,
+            18
+          ],
+          [
+            37,
+            18,
+            18
+          ]
+        ],
+        "grip": [
+          18,
+          36
+        ],
+        "flask_neck": [
+          22,
+          32
+        ],
+        "flask_mask_runs": [
+          [
+            31,
+            21,
+            23
+          ],
+          [
+            32,
+            21,
+            23
+          ],
+          [
+            33,
+            20,
+            24
+          ],
+          [
+            34,
+            19,
+            25
+          ],
+          [
+            35,
+            19,
+            25
+          ],
+          [
+            36,
+            19,
+            25
+          ],
+          [
+            37,
+            20,
+            24
+          ],
+          [
+            38,
+            21,
+            23
+          ]
+        ],
+        "cap_center": [
+          22,
+          31
+        ],
+        "changed_runs": [],
+        "changed_pixels": 0,
+        "validation": {
+          "boundary_violations": [],
+          "protected_changes": [],
+          "flask_red_pixels": 13,
+          "hand_skin_errors": [],
+          "grip_connected_to_flask": true,
+          "head_flask_gap_clear": true,
+          "colors": [
+            "#",
+            "R",
+            "k",
+            "m",
+            "s"
+          ]
+        },
+        "sha256": "aa205977cd2d7779bb733acbb1c62cc931856b19a035a54f06428f00c4befdad",
+        "file": "rest.txt"
+      },
+      {
+        "id": "prepare",
+        "hand_skin_runs": [
+          [
+            33,
+            19,
+            19
+          ],
+          [
+            34,
+            18,
+            19
+          ],
+          [
+            35,
+            19,
+            19
+          ]
+        ],
+        "grip": [
+          19,
+          34
+        ],
+        "flask_neck": [
+          23,
+          30
+        ],
+        "flask_mask_runs": [
+          [
+            29,
+            22,
+            24
+          ],
+          [
+            30,
+            22,
+            24
+          ],
+          [
+            31,
+            21,
+            25
+          ],
+          [
+            32,
+            20,
+            26
+          ],
+          [
+            33,
+            20,
+            26
+          ],
+          [
+            34,
+            20,
+            26
+          ],
+          [
+            35,
+            21,
+            25
+          ],
+          [
+            36,
+            22,
+            24
+          ]
+        ],
+        "cap_center": [
+          23,
+          29
+        ],
+        "changed_runs": [
+          [
+            29,
+            22,
+            22
+          ],
+          [
+            29,
+            24,
+            24
+          ],
+          [
+            30,
+            22,
+            24
+          ],
+          [
+            31,
+            23,
+            25
+          ],
+          [
+            32,
+            20,
+            21
+          ],
+          [
+            32,
+            23,
+            26
+          ],
+          [
+            33,
+            19,
+            19
+          ],
+          [
+            33,
+            21,
+            26
+          ],
+          [
+            34,
+            18,
+            26
+          ],
+          [
+            35,
+            18,
+            21
+          ],
+          [
+            36,
+            17,
+            18
+          ],
+          [
+            36,
+            20,
+            25
+          ],
+          [
+            37,
+            18,
+            19
+          ],
+          [
+            37,
+            21,
+            24
+          ],
+          [
+            38,
+            22,
+            23
+          ]
+        ],
+        "changed_pixels": 50,
+        "validation": {
+          "boundary_violations": [],
+          "protected_changes": [],
+          "flask_red_pixels": 13,
+          "hand_skin_errors": [],
+          "grip_connected_to_flask": true,
+          "head_flask_gap_clear": true,
+          "colors": [
+            "#",
+            "R",
+            "k",
+            "m",
+            "s"
+          ]
+        },
+        "sha256": "10c27f0c42e892b36be7652a85218991f3df1c806842fe96e51e582930ef3612",
+        "file": "prepare.txt"
+      },
+      {
+        "id": "lift",
+        "hand_skin_runs": [
+          [
+            32,
+            19,
+            19
+          ],
+          [
+            33,
+            18,
+            19
+          ],
+          [
+            34,
+            19,
+            19
+          ]
+        ],
+        "grip": [
+          19,
+          33
+        ],
+        "flask_neck": [
+          23,
+          29
+        ],
+        "flask_mask_runs": [
+          [
+            28,
+            22,
+            24
+          ],
+          [
+            29,
+            22,
+            24
+          ],
+          [
+            30,
+            21,
+            25
+          ],
+          [
+            31,
+            20,
+            26
+          ],
+          [
+            32,
+            20,
+            26
+          ],
+          [
+            33,
+            20,
+            26
+          ],
+          [
+            34,
+            21,
+            25
+          ],
+          [
+            35,
+            22,
+            24
+          ]
+        ],
+        "cap_center": [
+          23,
+          28
+        ],
+        "changed_runs": [
+          [
+            28,
+            24,
+            24
+          ],
+          [
+            29,
+            22,
+            24
+          ],
+          [
+            30,
+            21,
+            25
+          ],
+          [
+            31,
+            20,
+            26
+          ],
+          [
+            32,
+            19,
+            26
+          ],
+          [
+            33,
+            18,
+            19
+          ],
+          [
+            33,
+            21,
+            26
+          ],
+          [
+            34,
+            19,
+            24
+          ],
+          [
+            35,
+            18,
+            18
+          ],
+          [
+            35,
+            20,
+            25
+          ],
+          [
+            36,
+            17,
+            25
+          ],
+          [
+            37,
+            18,
+            19
+          ],
+          [
+            37,
+            21,
+            24
+          ],
+          [
+            38,
+            22,
+            23
+          ]
+        ],
+        "changed_pixels": 62,
+        "validation": {
+          "boundary_violations": [],
+          "protected_changes": [],
+          "flask_red_pixels": 13,
+          "hand_skin_errors": [],
+          "grip_connected_to_flask": true,
+          "head_flask_gap_clear": true,
+          "colors": [
+            "#",
+            "R",
+            "k",
+            "m",
+            "s"
+          ]
+        },
+        "sha256": "405372da850f3d934e63ecc04b934e69bcf8b116522a9782b77a2d9011913f0b",
+        "file": "lift.txt"
+      },
+      {
+        "id": "shake_left",
+        "hand_skin_runs": [
+          [
+            32,
+            19,
+            19
+          ],
+          [
+            33,
+            18,
+            19
+          ],
+          [
+            34,
+            19,
+            19
+          ]
+        ],
+        "grip": [
+          19,
+          33
+        ],
+        "flask_neck": [
+          22,
+          29
+        ],
+        "flask_mask_runs": [
+          [
+            28,
+            21,
+            23
+          ],
+          [
+            29,
+            21,
+            24
+          ],
+          [
+            30,
+            21,
+            25
+          ],
+          [
+            31,
+            20,
+            26
+          ],
+          [
+            32,
+            20,
+            26
+          ],
+          [
+            33,
+            20,
+            26
+          ],
+          [
+            34,
+            21,
+            26
+          ],
+          [
+            35,
+            22,
+            25
+          ]
+        ],
+        "cap_center": [
+          22,
+          28
+        ],
+        "changed_runs": [
+          [
+            29,
+            21,
+            22
+          ],
+          [
+            29,
+            24,
+            24
+          ],
+          [
+            30,
+            21,
+            25
+          ],
+          [
+            31,
+            20,
+            26
+          ],
+          [
+            32,
+            19,
+            26
+          ],
+          [
+            33,
+            18,
+            19
+          ],
+          [
+            33,
+            21,
+            26
+          ],
+          [
+            34,
+            19,
+            26
+          ],
+          [
+            35,
+            18,
+            18
+          ],
+          [
+            35,
+            20,
+            24
+          ],
+          [
+            36,
+            17,
+            25
+          ],
+          [
+            37,
+            18,
+            19
+          ],
+          [
+            37,
+            21,
+            24
+          ],
+          [
+            38,
+            22,
+            23
+          ]
+        ],
+        "changed_pixels": 62,
+        "validation": {
+          "boundary_violations": [],
+          "protected_changes": [],
+          "flask_red_pixels": 13,
+          "hand_skin_errors": [],
+          "grip_connected_to_flask": true,
+          "head_flask_gap_clear": true,
+          "colors": [
+            "#",
+            "R",
+            "k",
+            "m",
+            "s"
+          ]
+        },
+        "sha256": "6696eec01412d26687a3600ac69ea9deb994aa51f87e59a3db742bf686bddffe",
+        "file": "shake_left.txt"
+      },
+      {
+        "id": "shake_right",
+        "hand_skin_runs": [
+          [
+            32,
+            20,
+            20
+          ],
+          [
+            33,
+            19,
+            20
+          ],
+          [
+            34,
+            20,
+            20
+          ]
+        ],
+        "grip": [
+          20,
+          33
+        ],
+        "flask_neck": [
+          24,
+          29
+        ],
+        "flask_mask_runs": [
+          [
+            28,
+            23,
+            25
+          ],
+          [
+            29,
+            23,
+            25
+          ],
+          [
+            30,
+            22,
+            26
+          ],
+          [
+            31,
+            21,
+            27
+          ],
+          [
+            32,
+            21,
+            27
+          ],
+          [
+            33,
+            21,
+            27
+          ],
+          [
+            34,
+            21,
+            26
+          ],
+          [
+            35,
+            22,
+            25
+          ]
+        ],
+        "cap_center": [
+          24,
+          28
+        ],
+        "changed_runs": [
+          [
+            28,
+            24,
+            25
+          ],
+          [
+            29,
+            24,
+            25
+          ],
+          [
+            30,
+            22,
+            26
+          ],
+          [
+            31,
+            22,
+            27
+          ],
+          [
+            32,
+            20,
+            20
+          ],
+          [
+            32,
+            22,
+            27
+          ],
+          [
+            33,
+            19,
+            20
+          ],
+          [
+            33,
+            22,
+            27
+          ],
+          [
+            34,
+            20,
+            24
+          ],
+          [
+            34,
+            26,
+            26
+          ],
+          [
+            35,
+            18,
+            24
+          ],
+          [
+            36,
+            17,
+            25
+          ],
+          [
+            37,
+            18,
+            19
+          ],
+          [
+            37,
+            21,
+            24
+          ],
+          [
+            38,
+            22,
+            23
+          ]
+        ],
+        "changed_pixels": 60,
+        "validation": {
+          "boundary_violations": [],
+          "protected_changes": [],
+          "flask_red_pixels": 13,
+          "hand_skin_errors": [],
+          "grip_connected_to_flask": true,
+          "head_flask_gap_clear": true,
+          "colors": [
+            "#",
+            "R",
+            "k",
+            "m",
+            "s"
+          ]
+        },
+        "sha256": "8be1b1f7c45c8d2265d308b6ab181f787f2b37646d5e5ad8ac63ecf2e8ffa4db",
+        "file": "shake_right.txt"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "rest",
+        "duration_ms": 900
+      },
+      {
+        "id": "prepare",
+        "duration_ms": 220
+      },
+      {
+        "id": "lift",
+        "duration_ms": 280
+      },
+      {
+        "id": "shake_left",
+        "duration_ms": 160
+      },
+      {
+        "id": "lift",
+        "duration_ms": 100
+      },
+      {
+        "id": "shake_right",
+        "duration_ms": 160
+      },
+      {
+        "id": "lift",
+        "duration_ms": 100
+      },
+      {
+        "id": "shake_left",
+        "duration_ms": 160
+      },
+      {
+        "id": "lift",
+        "duration_ms": 100
+      },
+      {
+        "id": "shake_right",
+        "duration_ms": 160
+      },
+      {
+        "id": "lift",
+        "duration_ms": 100
+      },
+      {
+        "id": "shake_left",
+        "duration_ms": 160
+      },
+      {
+        "id": "lift",
+        "duration_ms": 100
+      },
+      {
+        "id": "shake_right",
+        "duration_ms": 160
+      },
+      {
+        "id": "lift",
+        "duration_ms": 100
+      },
+      {
+        "id": "lift",
+        "duration_ms": 340
+      },
+      {
+        "id": "prepare",
+        "duration_ms": 260
+      },
+      {
+        "id": "rest",
+        "duration_ms": 2440
+      }
+    ],
+    "total_ms": 6000,
+    "loop": false,
+    "fx_included": false,
+    "mask_convention": "Runs are [y,x0,x1], inclusive. Flask masks include its outline and cap; hand is separate.",
+    "notes": [
+      "Only screen-right sleeve, hand, and flask change. The torso core, head, opposite hand and legs stay unchanged.",
+      "Liquid uses exactly 13 pixels of the existing R color in every state.",
+      "Lifted right hand moves 1px outward so its palm does not cover the fixed torso core."
+    ],
+    "allowed_edit_runs": [
+      [
+        28,
+        24,
+        25
+      ],
+      [
+        29,
+        21,
+        25
+      ],
+      [
+        30,
+        21,
+        26
+      ],
+      [
+        31,
+        20,
+        27
+      ],
+      [
+        32,
+        19,
+        27
+      ],
+      [
+        33,
+        18,
+        27
+      ],
+      [
+        34,
+        18,
+        26
+      ],
+      [
+        35,
+        18,
+        25
+      ],
+      [
+        36,
+        17,
+        25
+      ],
+      [
+        37,
+        18,
+        19
+      ],
+      [
+        37,
+        21,
+        24
+      ],
+      [
+        38,
+        22,
+        23
+      ]
+    ],
+    "review": {
+      "key_pose_photo_pending": false,
+      "live_motion_review_pending": true,
+      "tool": "Pixelbolt 0.11.0 renderProject + inspectProject",
+      "viewed_scales": [
+        1,
+        6
+      ],
+      "remarks": [
+        "Final five key poses were inspected at native 1x and enlarged 6x.",
+        "Maximum lift is 3px; the closed cap stays at y28 with a transparent y27 row between cap and unchanged hair.",
+        "Supporting hand remains against the rounded flask body. Left/right lean reads through the neck and base silhouette without changing the 13 red liquid pixels.",
+        "Full-speed temporal judgment belongs to the parent live preview; static sheets do not establish timing quality."
+      ]
+    },
+    "pixelbolt_validation": {
+      "ok": true,
+      "name": "staff_brewing_flask_keyposes",
+      "width": 32,
+      "height": 48,
+      "frames": 5,
+      "animations": [
+        "keyposes"
+      ],
+      "animationFps": {
+        "keyposes": 3.33
+      },
+      "warnings": []
+    }
+  },
+  "protected_regions": [
+    "neck",
+    "torso_core",
+    "waist",
+    "hip",
+    "left_leg",
+    "right_leg",
+    "left_hand"
+  ],
+  "frames": [
+    {
+      "frame": "rest",
+      "changed_pixels": 0,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "prepare",
+      "changed_pixels": 50,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "lift",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "shake_left",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "shake_right",
+      "changed_pixels": 60,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_0",
+      "changed_pixels": 0,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_1",
+      "changed_pixels": 50,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_2",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_3",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_4",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_5",
+      "changed_pixels": 60,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_6",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_7",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_8",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_9",
+      "changed_pixels": 60,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_10",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_11",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_12",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_13",
+      "changed_pixels": 60,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_14",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_15",
+      "changed_pixels": 62,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_16",
+      "changed_pixels": 50,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    },
+    {
+      "frame": "action_17",
+      "changed_pixels": 0,
+      "colors": 5,
+      "outline_errors": 0,
+      "partial_alpha": 0,
+      "protected_body_unchanged": true
+    }
+  ],
+  "contacts": [
+    {
+      "pose": "rest",
+      "grip": [
+        18,
+        36
+      ],
+      "neck": [
+        22,
+        32
+      ],
+      "cap": [
+        22,
+        31
+      ],
+      "hand_pixels": 4,
+      "liquid_pixels": 13,
+      "flask_connected": true,
+      "wrist_connected_without_flask": true,
+      "head_clearance": true
+    },
+    {
+      "pose": "prepare",
+      "grip": [
+        19,
+        34
+      ],
+      "neck": [
+        23,
+        30
+      ],
+      "cap": [
+        23,
+        29
+      ],
+      "hand_pixels": 4,
+      "liquid_pixels": 13,
+      "flask_connected": true,
+      "wrist_connected_without_flask": true,
+      "head_clearance": true
+    },
+    {
+      "pose": "lift",
+      "grip": [
+        19,
+        33
+      ],
+      "neck": [
+        23,
+        29
+      ],
+      "cap": [
+        23,
+        28
+      ],
+      "hand_pixels": 4,
+      "liquid_pixels": 13,
+      "flask_connected": true,
+      "wrist_connected_without_flask": true,
+      "head_clearance": true
+    },
+    {
+      "pose": "shake_left",
+      "grip": [
+        19,
+        33
+      ],
+      "neck": [
+        22,
+        29
+      ],
+      "cap": [
+        22,
+        28
+      ],
+      "hand_pixels": 4,
+      "liquid_pixels": 13,
+      "flask_connected": true,
+      "wrist_connected_without_flask": true,
+      "head_clearance": true
+    },
+    {
+      "pose": "shake_right",
+      "grip": [
+        20,
+        33
+      ],
+      "neck": [
+        24,
+        29
+      ],
+      "cap": [
+        24,
+        28
+      ],
+      "hand_pixels": 4,
+      "liquid_pixels": 13,
+      "flask_connected": true,
+      "wrist_connected_without_flask": true,
+      "head_clearance": true
+    }
+  ],
+  "material_pipeline_changed_pixels": 0,
+  "action_returns_to_rest": true,
+  "references": [
+    {
+      "id": "keeper",
+      "name": "상점 주인",
+      "source": "assets/pixel_v1/characters/keeper/idle-fine.png",
+      "sha256": "1cda8c170f19c0f7257ccf3d0c8bf68adf767718767b0d032d471d9b4e8f8897",
+      "source_size": [
+        96,
+        144
+      ],
+      "display_scale": 1
+    },
+    {
+      "id": "traveler",
+      "name": "여행자",
+      "source": "assets/pixel_v1/characters/traveler/idle-fine.png",
+      "sha256": "f860e8e2fd28f169238ec7cdcf76de0aa632354ac9e431f799abf41c05aae546",
+      "source_size": [
+        96,
+        144
+      ],
+      "display_scale": 1
+    },
+    {
+      "id": "mage",
+      "name": "여마법사",
+      "source": "assets/pixel_v1/characters/mage/idle-fine.png",
+      "sha256": "3a1902e2f9367c13dab0996d2284f10efb05b6030070cdaa8131bfdb35907da6",
+      "source_size": [
+        96,
+        144
+      ],
+      "display_scale": 1
+    },
+    {
+      "id": "elf",
+      "name": "엘프",
+      "source": "assets/pixel_v1/characters/elf/idle-fine.png",
+      "sha256": "1d47630f281139719ba0fd24bf88301ff1896d90076930245d9a19e8144c4487",
+      "source_size": [
+        96,
+        144
+      ],
+      "display_scale": 1
+    },
+    {
+      "id": "rogue",
+      "name": "고양이 도적",
+      "source": "assets/pixel_v1/characters/rogue/idle-fine.png",
+      "sha256": "01a17a7f89e1539fc3ed27a5c14b2804ed9603ead0e9c3c664d8dfebde33846a",
+      "source_size": [
+        96,
+        144
+      ],
+      "display_scale": 1
+    }
+  ],
+  "comparison_runtime_function": "scripts/pixel_art_catalog.gd:40",
+  "comparison_duration_ms": 18000,
+  "comparison_fps": 20,
+  "gif_notes": []
+}

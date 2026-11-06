@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "name": "staff_brewing_flask",
+  "width": 32,
+  "height": 48,
+  "frames": 23,
+  "animations": [
+    "still",
+    "shake"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "rest",
+      "duration": 1000
+    },
+    {
+      "frame": "prepare",
+      "duration": 1000
+    },
+    {
+      "frame": "lift",
+      "duration": 1000
+    },
+    {
+      "frame": "shake_left",
+      "duration": 1000
+    },
+    {
+      "frame": "shake_right",
+      "duration": 1000
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 5,
+    "rows": 1,
+    "scale": 3,
+    "gap": 3,
+    "width": 498,
+    "height": 150
+  },
+  "mode": "silhouette",
+  "image": ".\\art\\mockups\\f25-staff-flask-v1\\reviews\\silhouette.png"
+}

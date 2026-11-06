@@ -1,0 +1,176 @@
+{
+  "ok": true,
+  "name": "staff_brewing_flask",
+  "width": 32,
+  "height": 48,
+  "frames": 23,
+  "animations": [
+    "still",
+    "shake"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-flask-v1\\exports\\staff",
+  "files": [
+    "staff_brewing_flask.png",
+    "staff_brewing_flask.atlas.json",
+    "staff_brewing_flask.tres",
+    "staff_brewing_flask.pixel.json",
+    "staff_brewing_flask.css",
+    "animations/still.png",
+    "animations/shake.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "ok": true,
+    "delivered": {
+      "size": [
+        32,
+        48
+      ],
+      "animations": {
+        "shake": {
+          "frames": 18,
+          "loop": false
+        }
+      },
+      "colors": 5,
+      "transparent": true
+    },
+    "motion": {
+      "shake": {
+        "box": [
+          [
+            4,
+            11,
+            22,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            24,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            24,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            24,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            23,
+            36
+          ],
+          [
+            4,
+            11,
+            22,
+            36
+          ]
+        ],
+        "lowest": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ]
+      }
+    }
+  }
+}

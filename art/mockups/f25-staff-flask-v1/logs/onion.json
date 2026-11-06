@@ -1,0 +1,253 @@
+{
+  "ok": true,
+  "name": "staff_brewing_flask",
+  "width": 32,
+  "height": 48,
+  "frames": 23,
+  "animations": [
+    "still",
+    "shake"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "action_0",
+      "duration": 900
+    },
+    {
+      "frame": "action_1",
+      "duration": 220
+    },
+    {
+      "frame": "action_2",
+      "duration": 280
+    },
+    {
+      "frame": "action_3",
+      "duration": 160
+    },
+    {
+      "frame": "action_4",
+      "duration": 100
+    },
+    {
+      "frame": "action_5",
+      "duration": 160
+    },
+    {
+      "frame": "action_6",
+      "duration": 100
+    },
+    {
+      "frame": "action_7",
+      "duration": 160
+    },
+    {
+      "frame": "action_8",
+      "duration": 100
+    },
+    {
+      "frame": "action_9",
+      "duration": 160
+    },
+    {
+      "frame": "action_10",
+      "duration": 100
+    },
+    {
+      "frame": "action_11",
+      "duration": 160
+    },
+    {
+      "frame": "action_12",
+      "duration": 100
+    },
+    {
+      "frame": "action_13",
+      "duration": 160
+    },
+    {
+      "frame": "action_14",
+      "duration": 100
+    },
+    {
+      "frame": "action_15",
+      "duration": 340
+    },
+    {
+      "frame": "action_16",
+      "duration": 260
+    },
+    {
+      "frame": "action_17",
+      "duration": 2440
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 9,
+    "rows": 2,
+    "scale": 3,
+    "gap": 3,
+    "width": 894,
+    "height": 297
+  },
+  "mode": "onion",
+  "timing": {
+    "animation": "shake",
+    "duration": 6000,
+    "loop": false,
+    "entries": [
+      {
+        "position": 0,
+        "frame": "action_0",
+        "start": 0,
+        "duration": 900,
+        "previous": null,
+        "next": 1
+      },
+      {
+        "position": 1,
+        "frame": "action_1",
+        "start": 900,
+        "duration": 220,
+        "previous": 0,
+        "next": 2
+      },
+      {
+        "position": 2,
+        "frame": "action_2",
+        "start": 1120,
+        "duration": 280,
+        "previous": 1,
+        "next": 3
+      },
+      {
+        "position": 3,
+        "frame": "action_3",
+        "start": 1400,
+        "duration": 160,
+        "previous": 2,
+        "next": 4
+      },
+      {
+        "position": 4,
+        "frame": "action_4",
+        "start": 1560,
+        "duration": 100,
+        "previous": 3,
+        "next": 5
+      },
+      {
+        "position": 5,
+        "frame": "action_5",
+        "start": 1660,
+        "duration": 160,
+        "previous": 4,
+        "next": 6
+      },
+      {
+        "position": 6,
+        "frame": "action_6",
+        "start": 1820,
+        "duration": 100,
+        "previous": 5,
+        "next": 7
+      },
+      {
+        "position": 7,
+        "frame": "action_7",
+        "start": 1920,
+        "duration": 160,
+        "previous": 6,
+        "next": 8
+      },
+      {
+        "position": 8,
+        "frame": "action_8",
+        "start": 2080,
+        "duration": 100,
+        "previous": 7,
+        "next": 9
+      },
+      {
+        "position": 9,
+        "frame": "action_9",
+        "start": 2180,
+        "duration": 160,
+        "previous": 8,
+        "next": 10
+      },
+      {
+        "position": 10,
+        "frame": "action_10",
+        "start": 2340,
+        "duration": 100,
+        "previous": 9,
+        "next": 11
+      },
+      {
+        "position": 11,
+        "frame": "action_11",
+        "start": 2440,
+        "duration": 160,
+        "previous": 10,
+        "next": 12
+      },
+      {
+        "position": 12,
+        "frame": "action_12",
+        "start": 2600,
+        "duration": 100,
+        "previous": 11,
+        "next": 13
+      },
+      {
+        "position": 13,
+        "frame": "action_13",
+        "start": 2700,
+        "duration": 160,
+        "previous": 12,
+        "next": 14
+      },
+      {
+        "position": 14,
+        "frame": "action_14",
+        "start": 2860,
+        "duration": 100,
+        "previous": 13,
+        "next": 15
+      },
+      {
+        "position": 15,
+        "frame": "action_15",
+        "start": 2960,
+        "duration": 340,
+        "previous": 14,
+        "next": 16
+      },
+      {
+        "position": 16,
+        "frame": "action_16",
+        "start": 3300,
+        "duration": 260,
+        "previous": 15,
+        "next": 17
+      },
+      {
+        "position": 17,
+        "frame": "action_17",
+        "start": 3560,
+        "duration": 2440,
+        "previous": 16,
+        "next": null
+      }
+    ]
+  },
+  "image": ".\\art\\mockups\\f25-staff-flask-v1\\reviews\\onion.png"
+}
