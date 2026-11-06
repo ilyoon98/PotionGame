@@ -1,0 +1,296 @@
+{
+  "ok": true,
+  "name": "staff_brewing_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 15,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "still",
+      "duration": 1000
+    },
+    {
+      "frame": "inhale",
+      "duration": 1000
+    },
+    {
+      "frame": "blink",
+      "duration": 120
+    },
+    {
+      "frame": "inhale-blink",
+      "duration": 120
+    },
+    {
+      "frame": "idle-00",
+      "duration": 750
+    },
+    {
+      "frame": "idle-01",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-02",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-03",
+      "duration": 530
+    },
+    {
+      "frame": "idle-04",
+      "duration": 120
+    },
+    {
+      "frame": "idle-05",
+      "duration": 850
+    },
+    {
+      "frame": "idle-06",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-07",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-08",
+      "duration": 530
+    },
+    {
+      "frame": "idle-09",
+      "duration": 120
+    },
+    {
+      "frame": "idle-10",
+      "duration": 100
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 8,
+    "rows": 2,
+    "scale": 3,
+    "gap": 3,
+    "width": 795,
+    "height": 297
+  },
+  "nativeSheet": {
+    "columns": 15,
+    "rows": 1,
+    "scale": 1,
+    "gap": 2,
+    "width": 512,
+    "height": 52
+  },
+  "diagnostics": {
+    "advisory": true,
+    "frames": [
+      {
+        "frame": "still",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "inhale",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "blink",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 3
+      },
+      {
+        "frame": "inhale-blink",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 3
+      },
+      {
+        "frame": "idle-00",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-01",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-02",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-03",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-04",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 3
+      },
+      {
+        "frame": "idle-05",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-06",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-07",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-08",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-09",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 3
+      },
+      {
+        "frame": "idle-10",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      }
+    ],
+    "animations": [
+      {
+        "animation": "still",
+        "duration": 1000,
+        "entries": 1,
+        "repeatedAdjacent": 0,
+        "boundary": {
+          "pixels": 0
+        }
+      },
+      {
+        "animation": "idle",
+        "duration": 9000,
+        "entries": 11,
+        "repeatedAdjacent": 0,
+        "boundary": {
+          "pixels": 0
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "duplicate",
+        "frame": "idle-00",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-01",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-02",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-03",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-04",
+        "sameAs": "inhale-blink",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-05",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-06",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-07",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-08",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-09",
+        "sameAs": "blink",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-10",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      }
+    ]
+  },
+  "image": ".\\art\\mockups\\f25-staff-motion-v1\\reviews\\staff_brewing_assistant-color.png",
+  "nativeImage": ".\\art\\mockups\\f25-staff-motion-v1\\reviews\\staff_brewing_assistant-color.native.png"
+}

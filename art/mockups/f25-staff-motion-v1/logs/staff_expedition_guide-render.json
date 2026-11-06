@@ -1,0 +1,127 @@
+{
+  "ok": true,
+  "name": "staff_expedition_guide",
+  "width": 32,
+  "height": 48,
+  "frames": 15,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "directory": ".\\art\\mockups\\f25-staff-motion-v1\\exports\\staff_expedition_guide",
+  "files": [
+    "staff_expedition_guide.png",
+    "staff_expedition_guide.atlas.json",
+    "staff_expedition_guide.tres",
+    "staff_expedition_guide.pixel.json",
+    "staff_expedition_guide.css",
+    "animations/still.png",
+    "animations/idle.png",
+    "player.js",
+    "preview.html",
+    "README.txt"
+  ],
+  "check": {
+    "ok": true,
+    "delivered": {
+      "size": [
+        32,
+        48
+      ],
+      "animations": {
+        "idle": {
+          "frames": 11,
+          "loop": true
+        }
+      },
+      "colors": 5,
+      "transparent": true
+    },
+    "motion": {
+      "idle": {
+        "box": [
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ],
+          [
+            2,
+            1,
+            26,
+            46
+          ]
+        ],
+        "lowest": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46,
+          46
+        ]
+      }
+    }
+  }
+}

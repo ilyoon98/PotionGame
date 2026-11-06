@@ -1,0 +1,28 @@
+{
+  "checker": "Pillow independent PNG decode",
+  "frames": 60,
+  "source_files": [
+    {
+      "id": "staff_brewing_assistant",
+      "original_branch_bytes_equal": true,
+      "export_still_rgba_equal": true
+    },
+    {
+      "id": "staff_cultivation_assistant",
+      "original_branch_bytes_equal": true,
+      "export_still_rgba_equal": true
+    },
+    {
+      "id": "staff_expedition_guide",
+      "original_branch_bytes_equal": true,
+      "export_still_rgba_equal": true
+    },
+    {
+      "id": "staff_sales_assistant",
+      "original_branch_bytes_equal": true,
+      "export_still_rgba_equal": true
+    }
+  ],
+  "failures": [],
+  "passed": true
+}

@@ -1,0 +1,31 @@
+/* Pixelbolt: atlas coordinates are pixels at the exported scale. */
+.pf-staff_expedition_guide {
+  display: inline-block;
+  width: 32px; height: 48px;
+  background-image: url("staff_expedition_guide.png");
+  background-repeat: no-repeat; image-rendering: pixelated;
+}
+.pf-staff_expedition_guide-still { background-position: -0px -0px; animation: pf-staff_expedition_guide-still 1000ms steps(1, end) infinite; }
+@keyframes pf-staff_expedition_guide-still {
+  0% { background-position: -0px -0px; }
+  100% { background-position: -0px -0px; }
+}
+.pf-staff_expedition_guide-idle { background-position: -0px -48px; animation: pf-staff_expedition_guide-idle 9000ms steps(1, end) infinite; }
+@keyframes pf-staff_expedition_guide-idle {
+  0% { background-position: -0px -48px; }
+  8.33333333% { background-position: -32px -48px; }
+  25% { background-position: -64px -48px; }
+  41.66666667% { background-position: -96px -48px; }
+  47.55555556% { background-position: -0px -96px; }
+  48.88888889% { background-position: -32px -96px; }
+  58.33333333% { background-position: -64px -96px; }
+  75% { background-position: -96px -96px; }
+  91.66666667% { background-position: -0px -144px; }
+  97.55555556% { background-position: -32px -144px; }
+  98.88888889% { background-position: -64px -144px; }
+  100% { background-position: -0px -48px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pf-staff_expedition_guide-still { animation: none; }
+  .pf-staff_expedition_guide-idle { animation: none; }
+}

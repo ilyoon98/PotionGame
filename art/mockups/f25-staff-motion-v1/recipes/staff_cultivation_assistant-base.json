@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "name": "staff_cultivation_assistant",
+  "width": 32,
+  "height": 48,
+  "palette": { "a": "#241c32ff", "b": "#3d544dff", "c": "#e9b95fff", "d": "#a56a3dff", "e": "#de9b88ff" },
+  "frames": [
+    {
+      "name": "still",
+      "duration": 1000,
+      "ops": [
+        {
+          "op": "grid",
+          "rows": [
+            "................................",
+            "................................",
+            "................................",
+            "...............aa...............",
+            "..............abba..............",
+            ".............abaaa..............",
+            "..........aaaaaaaaa.............",
+            ".........accccccccca............",
+            ".........accccccccca............",
+            ".........acccccccdda............",
+            ".........addddddddda............",
+            "....aaaaaacccccccccaaaaaa.......",
+            "...accccccccccccccccddddda......",
+            "..acccccccccccccccccdddddda.....",
+            "..aaaaaaaaaaaaaaaaaaaaaaaaa.....",
+            "......adddddddddddddda..........",
+            ".....aaddddddddddddddda.........",
+            ".....addddddddccdddddda.........",
+            ".....adddccdddddddddddda........",
+            "....acdddaadccdddcddddaa........",
+            "....aaacceecceccddcdda..........",
+            "......aaaeeeceeecdddda..........",
+            "......aaaeaeeeaeecdcda..........",
+            ".....accaeaeeeaeecceca..........",
+            ".....aacaeeeeeeeeeeeaa..........",
+            ".......aaeeeeeeeeeaaaa..........",
+            ".........aaeeeeeaaadaa..........",
+            "..........aaaaaaaaaa............",
+            "..........abcccbaaca............",
+            ".........abbcccbaccca...........",
+            "........aaaabbbbacccca..........",
+            "........acabbbbbaaccca..........",
+            ".......aacabbbbbaaccca..........",
+            "......aaccabbbbbcaacca..........",
+            "aa....aaeeaaaaaaaaeeea..........",
+            "ada...aaeeabbbbbbaeeea..........",
+            ".adaaaaaaabbbbbbbaaaaa..........",
+            ".adccdddaabbbbbbbbaaaaaa........",
+            "..acddddaabbbabbbbaa............",
+            "..adddddaabbbaabbbaa............",
+            "..aaaaaaa.aeea.aeeaa............",
+            "..........adea.adeaa............",
+            ".........aadda.adaaa............",
+            "........aaadda.addda............",
+            "........addddaaddddaa...........",
+            "........addddaaddddaa...........",
+            ".........aaaa.aaaaaa............",
+            "................................"
+          ]
+        }
+      ]
+    }
+  ],
+  "animations": { "still": { "frames": ["still"], "loop": true } },
+  "sheet": { "columns": 4, "padding": 0, "scale": 1 }
+}

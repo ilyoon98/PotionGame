@@ -1,0 +1,497 @@
+[
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "import",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/source/staff_sales_assistant.png",
+      "--name",
+      "staff_sales_assistant",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant-imported.json",
+      "--metadata",
+      "art/mockups/f25-staff-motion-v1/source/staff_sales_assistant.import.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "patch",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant-base.json",
+      "--changes",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant-motion.patch.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json",
+      "--image",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_sales_assistant-changes.png"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "validate",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "render",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/exports/staff_sales_assistant",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_sales_assistant-color.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_sales_assistant-silhouette.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "silhouette"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_sales_assistant-onion.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "onion",
+      "--animation",
+      "idle"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "gif",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_sales_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_sales_assistant-idle-3x.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "import",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/source/staff_cultivation_assistant.png",
+      "--name",
+      "staff_cultivation_assistant",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant-imported.json",
+      "--metadata",
+      "art/mockups/f25-staff-motion-v1/source/staff_cultivation_assistant.import.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "patch",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant-base.json",
+      "--changes",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant-motion.patch.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json",
+      "--image",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_cultivation_assistant-changes.png"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "validate",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "render",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/exports/staff_cultivation_assistant",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_cultivation_assistant-color.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_cultivation_assistant-silhouette.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "silhouette"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_cultivation_assistant-onion.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "onion",
+      "--animation",
+      "idle"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "gif",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_cultivation_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_cultivation_assistant-idle-3x.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "import",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/source/staff_brewing_assistant.png",
+      "--name",
+      "staff_brewing_assistant",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant-imported.json",
+      "--metadata",
+      "art/mockups/f25-staff-motion-v1/source/staff_brewing_assistant.import.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "patch",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant-base.json",
+      "--changes",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant-motion.patch.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json",
+      "--image",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_brewing_assistant-changes.png"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "validate",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "render",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/exports/staff_brewing_assistant",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_brewing_assistant-color.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_brewing_assistant-silhouette.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "silhouette"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_brewing_assistant-onion.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "onion",
+      "--animation",
+      "idle"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "gif",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_brewing_assistant.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_brewing_assistant-idle-3x.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "import",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/source/staff_expedition_guide.png",
+      "--name",
+      "staff_expedition_guide",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide-imported.json",
+      "--metadata",
+      "art/mockups/f25-staff-motion-v1/source/staff_expedition_guide.import.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "patch",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide-base.json",
+      "--changes",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide-motion.patch.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json",
+      "--image",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_expedition_guide-changes.png"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "validate",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "render",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/exports/staff_expedition_guide",
+      "--animation",
+      "idle",
+      "--expect",
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.expect.json"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_expedition_guide-color.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_expedition_guide-silhouette.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "silhouette"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_expedition_guide-onion.png",
+      "--native",
+      "--scale",
+      "3",
+      "--diagnostics",
+      "--view",
+      "onion",
+      "--animation",
+      "idle"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "gif",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/recipes/staff_expedition_guide.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/reviews/staff_expedition_guide-idle-3x.gif",
+      "--animation",
+      "idle",
+      "--scale",
+      "3"
+    ],
+    "exit": 0
+  },
+  {
+    "tool": "Pixelbolt",
+    "version": "0.11.0",
+    "command": "inspect",
+    "args": [
+      "art/mockups/f25-staff-motion-v1/reviews/contact-sheet.json",
+      "--out",
+      "art/mockups/f25-staff-motion-v1/contact-sheet.png",
+      "--scale",
+      "3",
+      "--background",
+      "#dbe5d8"
+    ],
+    "exit": 0
+  }
+]

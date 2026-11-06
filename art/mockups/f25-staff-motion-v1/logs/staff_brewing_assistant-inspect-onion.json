@@ -1,0 +1,376 @@
+{
+  "ok": true,
+  "name": "staff_brewing_assistant",
+  "width": 32,
+  "height": 48,
+  "frames": 15,
+  "animations": [
+    "still",
+    "idle"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "idle-00",
+      "duration": 750
+    },
+    {
+      "frame": "idle-01",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-02",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-03",
+      "duration": 530
+    },
+    {
+      "frame": "idle-04",
+      "duration": 120
+    },
+    {
+      "frame": "idle-05",
+      "duration": 850
+    },
+    {
+      "frame": "idle-06",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-07",
+      "duration": 1500
+    },
+    {
+      "frame": "idle-08",
+      "duration": 530
+    },
+    {
+      "frame": "idle-09",
+      "duration": 120
+    },
+    {
+      "frame": "idle-10",
+      "duration": 100
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 48
+  },
+  "sheet": {
+    "columns": 6,
+    "rows": 2,
+    "scale": 3,
+    "gap": 3,
+    "width": 597,
+    "height": 297
+  },
+  "mode": "onion",
+  "nativeSheet": {
+    "columns": 11,
+    "rows": 1,
+    "scale": 1,
+    "gap": 2,
+    "width": 376,
+    "height": 52
+  },
+  "diagnostics": {
+    "advisory": true,
+    "frames": [
+      {
+        "frame": "still",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "inhale",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "blink",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 3
+      },
+      {
+        "frame": "inhale-blink",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 3
+      },
+      {
+        "frame": "idle-00",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-01",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-02",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-03",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-04",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 3
+      },
+      {
+        "frame": "idle-05",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-06",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-07",
+        "visible": 591,
+        "colors": 5,
+        "corners": 8,
+        "strays": 1
+      },
+      {
+        "frame": "idle-08",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      },
+      {
+        "frame": "idle-09",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 3
+      },
+      {
+        "frame": "idle-10",
+        "visible": 574,
+        "colors": 5,
+        "corners": 9,
+        "strays": 1
+      }
+    ],
+    "animations": [
+      {
+        "animation": "still",
+        "duration": 1000,
+        "entries": 1,
+        "repeatedAdjacent": 0,
+        "boundary": {
+          "pixels": 0
+        }
+      },
+      {
+        "animation": "idle",
+        "duration": 9000,
+        "entries": 11,
+        "repeatedAdjacent": 0,
+        "boundary": {
+          "pixels": 0
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "duplicate",
+        "frame": "idle-00",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-01",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-02",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-03",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-04",
+        "sameAs": "inhale-blink",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-05",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-06",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-07",
+        "sameAs": "inhale",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-08",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-09",
+        "sameAs": "blink",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      },
+      {
+        "code": "duplicate",
+        "frame": "idle-10",
+        "sameAs": "still",
+        "note": "Repeated poses and holds are valid; compare action intent."
+      }
+    ]
+  },
+  "timing": {
+    "animation": "idle",
+    "duration": 9000,
+    "loop": true,
+    "entries": [
+      {
+        "position": 0,
+        "frame": "idle-00",
+        "start": 0,
+        "duration": 750,
+        "previous": 10,
+        "next": 1
+      },
+      {
+        "position": 1,
+        "frame": "idle-01",
+        "start": 750,
+        "duration": 1500,
+        "previous": 0,
+        "next": 2
+      },
+      {
+        "position": 2,
+        "frame": "idle-02",
+        "start": 2250,
+        "duration": 1500,
+        "previous": 1,
+        "next": 3
+      },
+      {
+        "position": 3,
+        "frame": "idle-03",
+        "start": 3750,
+        "duration": 530,
+        "previous": 2,
+        "next": 4
+      },
+      {
+        "position": 4,
+        "frame": "idle-04",
+        "start": 4280,
+        "duration": 120,
+        "previous": 3,
+        "next": 5
+      },
+      {
+        "position": 5,
+        "frame": "idle-05",
+        "start": 4400,
+        "duration": 850,
+        "previous": 4,
+        "next": 6
+      },
+      {
+        "position": 6,
+        "frame": "idle-06",
+        "start": 5250,
+        "duration": 1500,
+        "previous": 5,
+        "next": 7
+      },
+      {
+        "position": 7,
+        "frame": "idle-07",
+        "start": 6750,
+        "duration": 1500,
+        "previous": 6,
+        "next": 8
+      },
+      {
+        "position": 8,
+        "frame": "idle-08",
+        "start": 8250,
+        "duration": 530,
+        "previous": 7,
+        "next": 9
+      },
+      {
+        "position": 9,
+        "frame": "idle-09",
+        "start": 8780,
+        "duration": 120,
+        "previous": 8,
+        "next": 10
+      },
+      {
+        "position": 10,
+        "frame": "idle-10",
+        "start": 8900,
+        "duration": 100,
+        "previous": 9,
+        "next": 0
+      }
+    ]
+  },
+  "image": ".\\art\\mockups\\f25-staff-motion-v1\\reviews\\staff_brewing_assistant-onion.png",
+  "nativeImage": ".\\art\\mockups\\f25-staff-motion-v1\\reviews\\staff_brewing_assistant-onion.native.png"
+}

@@ -1,0 +1,1697 @@
+{
+  "status": "passed",
+  "art_status": "candidate",
+  "approved_by_user": false,
+  "stage_order": [
+    "background_cleanup",
+    "native_grid",
+    "material_ramp_remap",
+    "validation"
+  ],
+  "scale": 3,
+  "assets": {
+    "staff_sales_assistant-still": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "a7a5961e1ab4f4478d052a753dddb405da11af571cb88a494cb55cbc147f7296",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_sales_assistant-inhale": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "33ede8c3d3231667c765ce4bd0397e2b893f22f5bfcd57ada4d101364fb120dd",
+      "native_pixel_sha256": "bb5b5b0fc31a10a9d83b79fc7b26a8d20a2ee33d2b5b0cb90bc01bf171082860"
+    },
+    "staff_sales_assistant-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "d9cdd63bbe2c89dbe98ea812534a73427491bc9478a66e6dc489fb56beaffe45",
+      "native_pixel_sha256": "76639a86ca42881a3f9359965ae3931885784710d39badae4eb2216895fc817d"
+    },
+    "staff_sales_assistant-inhale-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "1771bdd0d0fcf29721c81bd61f2c4bd2bcf34cd9b3bb575f3dcb6497ac9e81e6",
+      "native_pixel_sha256": "e9a21d8bf128361da304aa12b5d4a964e8454add479d91a6b4c16b4ccf848633"
+    },
+    "staff_sales_assistant-idle-00": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "a7a5961e1ab4f4478d052a753dddb405da11af571cb88a494cb55cbc147f7296",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_sales_assistant-idle-01": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "33ede8c3d3231667c765ce4bd0397e2b893f22f5bfcd57ada4d101364fb120dd",
+      "native_pixel_sha256": "bb5b5b0fc31a10a9d83b79fc7b26a8d20a2ee33d2b5b0cb90bc01bf171082860"
+    },
+    "staff_sales_assistant-idle-02": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "a7a5961e1ab4f4478d052a753dddb405da11af571cb88a494cb55cbc147f7296",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_sales_assistant-idle-03": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "33ede8c3d3231667c765ce4bd0397e2b893f22f5bfcd57ada4d101364fb120dd",
+      "native_pixel_sha256": "bb5b5b0fc31a10a9d83b79fc7b26a8d20a2ee33d2b5b0cb90bc01bf171082860"
+    },
+    "staff_sales_assistant-idle-04": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "1771bdd0d0fcf29721c81bd61f2c4bd2bcf34cd9b3bb575f3dcb6497ac9e81e6",
+      "native_pixel_sha256": "e9a21d8bf128361da304aa12b5d4a964e8454add479d91a6b4c16b4ccf848633"
+    },
+    "staff_sales_assistant-idle-05": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "33ede8c3d3231667c765ce4bd0397e2b893f22f5bfcd57ada4d101364fb120dd",
+      "native_pixel_sha256": "bb5b5b0fc31a10a9d83b79fc7b26a8d20a2ee33d2b5b0cb90bc01bf171082860"
+    },
+    "staff_sales_assistant-idle-06": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "a7a5961e1ab4f4478d052a753dddb405da11af571cb88a494cb55cbc147f7296",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_sales_assistant-idle-07": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 456,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "33ede8c3d3231667c765ce4bd0397e2b893f22f5bfcd57ada4d101364fb120dd",
+      "native_pixel_sha256": "bb5b5b0fc31a10a9d83b79fc7b26a8d20a2ee33d2b5b0cb90bc01bf171082860"
+    },
+    "staff_sales_assistant-idle-08": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "a7a5961e1ab4f4478d052a753dddb405da11af571cb88a494cb55cbc147f7296",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_sales_assistant-idle-09": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "d9cdd63bbe2c89dbe98ea812534a73427491bc9478a66e6dc489fb56beaffe45",
+      "native_pixel_sha256": "76639a86ca42881a3f9359965ae3931885784710d39badae4eb2216895fc817d"
+    },
+    "staff_sales_assistant-idle-10": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 447,
+      "colors": [
+        "#241C32",
+        "#50333B",
+        "#A65D64",
+        "#F6D1AC",
+        "#FFF0BC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "dress": 3,
+        "apron_headband_ribbon_collar": 4,
+        "hair_cuffs_shoes": 5
+      },
+      "source_sha256": "a7a5961e1ab4f4478d052a753dddb405da11af571cb88a494cb55cbc147f7296",
+      "native_pixel_sha256": "f30c1132936331b22e05117e18ef6d394afddef8cc6737f80c94798ed95f7e72"
+    },
+    "staff_cultivation_assistant-still": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "90a9420b38831586062cd2fdd5d41d9375e1fe03bb5867eb93c15edf0a550d6a",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_cultivation_assistant-inhale": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "34f191e9732e31844361cebdd243120849d6ab6568733611df8788ef03eaff10",
+      "native_pixel_sha256": "27641c1f8880aa099e2f357953f8953395fdd2996f2707150899274fc783587f"
+    },
+    "staff_cultivation_assistant-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "bf88964b7ad86eeda88c236acf5b582be6599f86d92b973f9fc2a4c32e7bfe23",
+      "native_pixel_sha256": "d746a1af6d8d4f8390ff54f7df00c00fec3c1a540c085f82204a6c37722c9f0f"
+    },
+    "staff_cultivation_assistant-inhale-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "016a7f4de2e10af80758ed57a88d2b840d6e4893b69e2b5f30ba90a760ac3c16",
+      "native_pixel_sha256": "af32dfc42c86b1f363d528077bd432b02f3ef607daa65211590486a38cab5e89"
+    },
+    "staff_cultivation_assistant-idle-00": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "90a9420b38831586062cd2fdd5d41d9375e1fe03bb5867eb93c15edf0a550d6a",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_cultivation_assistant-idle-01": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "34f191e9732e31844361cebdd243120849d6ab6568733611df8788ef03eaff10",
+      "native_pixel_sha256": "27641c1f8880aa099e2f357953f8953395fdd2996f2707150899274fc783587f"
+    },
+    "staff_cultivation_assistant-idle-02": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "90a9420b38831586062cd2fdd5d41d9375e1fe03bb5867eb93c15edf0a550d6a",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_cultivation_assistant-idle-03": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "34f191e9732e31844361cebdd243120849d6ab6568733611df8788ef03eaff10",
+      "native_pixel_sha256": "27641c1f8880aa099e2f357953f8953395fdd2996f2707150899274fc783587f"
+    },
+    "staff_cultivation_assistant-idle-04": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "016a7f4de2e10af80758ed57a88d2b840d6e4893b69e2b5f30ba90a760ac3c16",
+      "native_pixel_sha256": "af32dfc42c86b1f363d528077bd432b02f3ef607daa65211590486a38cab5e89"
+    },
+    "staff_cultivation_assistant-idle-05": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "34f191e9732e31844361cebdd243120849d6ab6568733611df8788ef03eaff10",
+      "native_pixel_sha256": "27641c1f8880aa099e2f357953f8953395fdd2996f2707150899274fc783587f"
+    },
+    "staff_cultivation_assistant-idle-06": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "90a9420b38831586062cd2fdd5d41d9375e1fe03bb5867eb93c15edf0a550d6a",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_cultivation_assistant-idle-07": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 666,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "34f191e9732e31844361cebdd243120849d6ab6568733611df8788ef03eaff10",
+      "native_pixel_sha256": "27641c1f8880aa099e2f357953f8953395fdd2996f2707150899274fc783587f"
+    },
+    "staff_cultivation_assistant-idle-08": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "90a9420b38831586062cd2fdd5d41d9375e1fe03bb5867eb93c15edf0a550d6a",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_cultivation_assistant-idle-09": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "bf88964b7ad86eeda88c236acf5b582be6599f86d92b973f9fc2a4c32e7bfe23",
+      "native_pixel_sha256": "d746a1af6d8d4f8390ff54f7df00c00fec3c1a540c085f82204a6c37722c9f0f"
+    },
+    "staff_cultivation_assistant-idle-10": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 651,
+      "colors": [
+        "#241C32",
+        "#3D544D",
+        "#A56A3D",
+        "#DE9B88",
+        "#E9B95F"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin_tan": 2,
+        "straw_hat_shirt_hair_light": 3,
+        "hair_band_can_boots": 4,
+        "overalls_sprout": 5
+      },
+      "source_sha256": "90a9420b38831586062cd2fdd5d41d9375e1fe03bb5867eb93c15edf0a550d6a",
+      "native_pixel_sha256": "8c1b42f0d0af7eba731471593e6ecac62ccf17f7c4778a79ad05c05689bdc351"
+    },
+    "staff_brewing_assistant-still": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "514bb1841875c51a3141aa059d2e0d3785773807c46e298610d6a8bd139709f4",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_brewing_assistant-inhale": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "d408fd392c904a41ff1dd6adde0e547a3648243f12818b7ffc99e4ebaddb171e",
+      "native_pixel_sha256": "06acf80eceaed93d19b483d1ae95c237a57f4d52c1a6de8cd572ca535cb1d832"
+    },
+    "staff_brewing_assistant-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "4d397587c11e9fa91ce95f22c06e1cb21a83761d16732d22f367017dc59553d0",
+      "native_pixel_sha256": "215c2b55d1e932acb6b91fadbc4a93ba678023771d616bb99613b6cf0a153029"
+    },
+    "staff_brewing_assistant-inhale-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "480e30b56c60b038fc3d2c0d2a8fc5174aa73103ef6f4261b937bde0f9bc2f8c",
+      "native_pixel_sha256": "3a5275c74422162a1507f2641cac096d6326111d02eba1a364a7e01c96b69fb3"
+    },
+    "staff_brewing_assistant-idle-00": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "514bb1841875c51a3141aa059d2e0d3785773807c46e298610d6a8bd139709f4",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_brewing_assistant-idle-01": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "d408fd392c904a41ff1dd6adde0e547a3648243f12818b7ffc99e4ebaddb171e",
+      "native_pixel_sha256": "06acf80eceaed93d19b483d1ae95c237a57f4d52c1a6de8cd572ca535cb1d832"
+    },
+    "staff_brewing_assistant-idle-02": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "514bb1841875c51a3141aa059d2e0d3785773807c46e298610d6a8bd139709f4",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_brewing_assistant-idle-03": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "d408fd392c904a41ff1dd6adde0e547a3648243f12818b7ffc99e4ebaddb171e",
+      "native_pixel_sha256": "06acf80eceaed93d19b483d1ae95c237a57f4d52c1a6de8cd572ca535cb1d832"
+    },
+    "staff_brewing_assistant-idle-04": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "480e30b56c60b038fc3d2c0d2a8fc5174aa73103ef6f4261b937bde0f9bc2f8c",
+      "native_pixel_sha256": "3a5275c74422162a1507f2641cac096d6326111d02eba1a364a7e01c96b69fb3"
+    },
+    "staff_brewing_assistant-idle-05": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "d408fd392c904a41ff1dd6adde0e547a3648243f12818b7ffc99e4ebaddb171e",
+      "native_pixel_sha256": "06acf80eceaed93d19b483d1ae95c237a57f4d52c1a6de8cd572ca535cb1d832"
+    },
+    "staff_brewing_assistant-idle-06": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "514bb1841875c51a3141aa059d2e0d3785773807c46e298610d6a8bd139709f4",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_brewing_assistant-idle-07": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 591,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "d408fd392c904a41ff1dd6adde0e547a3648243f12818b7ffc99e4ebaddb171e",
+      "native_pixel_sha256": "06acf80eceaed93d19b483d1ae95c237a57f4d52c1a6de8cd572ca535cb1d832"
+    },
+    "staff_brewing_assistant-idle-08": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "514bb1841875c51a3141aa059d2e0d3785773807c46e298610d6a8bd139709f4",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_brewing_assistant-idle-09": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "4d397587c11e9fa91ce95f22c06e1cb21a83761d16732d22f367017dc59553d0",
+      "native_pixel_sha256": "215c2b55d1e932acb6b91fadbc4a93ba678023771d616bb99613b6cf0a153029"
+    },
+    "staff_brewing_assistant-idle-10": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 574,
+      "colors": [
+        "#241C32",
+        "#4A3C52",
+        "#827589",
+        "#9D4359",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "smock_lens_glass": 3,
+        "smock_shadow_stockings": 4,
+        "hair_boots_potion": 5
+      },
+      "source_sha256": "514bb1841875c51a3141aa059d2e0d3785773807c46e298610d6a8bd139709f4",
+      "native_pixel_sha256": "3675ed077aa745940e259b7de96f14b794cecea05af3accd081b3bb8db303886"
+    },
+    "staff_expedition_guide-still": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "ab378d151846936f4d43c4b3b115bc7e7c9aeb1d7415a4b532f7de07fd061fc3",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    },
+    "staff_expedition_guide-inhale": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "909587844e99cdfac75fa6e09165db070ccafa24b2c2b48ae578fc50a5b024f2",
+      "native_pixel_sha256": "3597a4effdbb5e2f8823231cc2774bf6b4997a6b7bf0de391915d75da58e8b40"
+    },
+    "staff_expedition_guide-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "89dac3ba169ed466c1d608bcb8029e9e8e03b2eca64f5875c46ecf33801723d7",
+      "native_pixel_sha256": "b157227e1d82a61ab079c20ef8ff4494af44fc3684fc4deaa626066e98584e7e"
+    },
+    "staff_expedition_guide-inhale-blink": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "c63abcbde59910406985ec8d902fb00fa757180eb18135dd5898e36fa738817d",
+      "native_pixel_sha256": "06ab1324c1cc787378e1b622c091d89001f70849a3dedaae880e9ba8649fd8d5"
+    },
+    "staff_expedition_guide-idle-00": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "ab378d151846936f4d43c4b3b115bc7e7c9aeb1d7415a4b532f7de07fd061fc3",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    },
+    "staff_expedition_guide-idle-01": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "909587844e99cdfac75fa6e09165db070ccafa24b2c2b48ae578fc50a5b024f2",
+      "native_pixel_sha256": "3597a4effdbb5e2f8823231cc2774bf6b4997a6b7bf0de391915d75da58e8b40"
+    },
+    "staff_expedition_guide-idle-02": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "ab378d151846936f4d43c4b3b115bc7e7c9aeb1d7415a4b532f7de07fd061fc3",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    },
+    "staff_expedition_guide-idle-03": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "909587844e99cdfac75fa6e09165db070ccafa24b2c2b48ae578fc50a5b024f2",
+      "native_pixel_sha256": "3597a4effdbb5e2f8823231cc2774bf6b4997a6b7bf0de391915d75da58e8b40"
+    },
+    "staff_expedition_guide-idle-04": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "c63abcbde59910406985ec8d902fb00fa757180eb18135dd5898e36fa738817d",
+      "native_pixel_sha256": "06ab1324c1cc787378e1b622c091d89001f70849a3dedaae880e9ba8649fd8d5"
+    },
+    "staff_expedition_guide-idle-05": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "909587844e99cdfac75fa6e09165db070ccafa24b2c2b48ae578fc50a5b024f2",
+      "native_pixel_sha256": "3597a4effdbb5e2f8823231cc2774bf6b4997a6b7bf0de391915d75da58e8b40"
+    },
+    "staff_expedition_guide-idle-06": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "ab378d151846936f4d43c4b3b115bc7e7c9aeb1d7415a4b532f7de07fd061fc3",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    },
+    "staff_expedition_guide-idle-07": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 738,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "909587844e99cdfac75fa6e09165db070ccafa24b2c2b48ae578fc50a5b024f2",
+      "native_pixel_sha256": "3597a4effdbb5e2f8823231cc2774bf6b4997a6b7bf0de391915d75da58e8b40"
+    },
+    "staff_expedition_guide-idle-08": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "ab378d151846936f4d43c4b3b115bc7e7c9aeb1d7415a4b532f7de07fd061fc3",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    },
+    "staff_expedition_guide-idle-09": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "89dac3ba169ed466c1d608bcb8029e9e8e03b2eca64f5875c46ecf33801723d7",
+      "native_pixel_sha256": "b157227e1d82a61ab079c20ef8ff4494af44fc3684fc4deaa626066e98584e7e"
+    },
+    "staff_expedition_guide-idle-10": {
+      "passed": true,
+      "size": [
+        32,
+        48
+      ],
+      "opaque_pixels": 723,
+      "colors": [
+        "#241C32",
+        "#24566A",
+        "#C99463",
+        "#E9B95F",
+        "#F6D1AC"
+      ],
+      "color_count": 5,
+      "off_palette_colors": 0,
+      "partial_alpha_pixels": 0,
+      "problems": [],
+      "material_mask_ids": {
+        "outline": 1,
+        "skin": 2,
+        "hood_cloak_trousers": 3,
+        "hair_beard_tunic_staff_boots": 4,
+        "lantern_scarf": 5
+      },
+      "source_sha256": "ab378d151846936f4d43c4b3b115bc7e7c9aeb1d7415a4b532f7de07fd061fc3",
+      "native_pixel_sha256": "2feb2d53e5b41deb0cc3b127c26d9899bfc69f4955ddffe2658e2351be6b6ca7"
+    }
+  },
+  "palette_color_count": 24,
+  "integer_scale_verified": true,
+  "visual_review": "Required: material identity, outlines, feet, crescent and bottle count. Numeric validation does not approve design."
+}

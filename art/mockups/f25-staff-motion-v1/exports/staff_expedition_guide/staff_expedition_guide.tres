@@ -1,0 +1,112 @@
+[gd_resource type="SpriteFrames" format=3]
+
+[ext_resource type="Texture2D" path="staff_expedition_guide.png" id="1_sheet"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_still"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 0, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_00"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 48, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_01"]
+atlas = ExtResource("1_sheet")
+region = Rect2(32, 48, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_02"]
+atlas = ExtResource("1_sheet")
+region = Rect2(64, 48, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_03"]
+atlas = ExtResource("1_sheet")
+region = Rect2(96, 48, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_04"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 96, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_05"]
+atlas = ExtResource("1_sheet")
+region = Rect2(32, 96, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_06"]
+atlas = ExtResource("1_sheet")
+region = Rect2(64, 96, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_07"]
+atlas = ExtResource("1_sheet")
+region = Rect2(96, 96, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_08"]
+atlas = ExtResource("1_sheet")
+region = Rect2(0, 144, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_09"]
+atlas = ExtResource("1_sheet")
+region = Rect2(32, 144, 32, 48)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idle_10"]
+atlas = ExtResource("1_sheet")
+region = Rect2(64, 144, 32, 48)
+filter_clip = true
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_still")
+}],
+"loop": true,
+"name": &"still",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 75.0,
+"texture": SubResource("AtlasTexture_idle_00")
+}, {
+"duration": 150.0,
+"texture": SubResource("AtlasTexture_idle_01")
+}, {
+"duration": 150.0,
+"texture": SubResource("AtlasTexture_idle_02")
+}, {
+"duration": 53.0,
+"texture": SubResource("AtlasTexture_idle_03")
+}, {
+"duration": 12.0,
+"texture": SubResource("AtlasTexture_idle_04")
+}, {
+"duration": 85.0,
+"texture": SubResource("AtlasTexture_idle_05")
+}, {
+"duration": 150.0,
+"texture": SubResource("AtlasTexture_idle_06")
+}, {
+"duration": 150.0,
+"texture": SubResource("AtlasTexture_idle_07")
+}, {
+"duration": 53.0,
+"texture": SubResource("AtlasTexture_idle_08")
+}, {
+"duration": 12.0,
+"texture": SubResource("AtlasTexture_idle_09")
+}, {
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_idle_10")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 100.0
+}]

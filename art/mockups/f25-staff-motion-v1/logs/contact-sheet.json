@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "name": "staff-motion-contact",
+  "width": 192,
+  "height": 212,
+  "frames": 1,
+  "animations": [
+    "default"
+  ],
+  "warnings": [],
+  "cells": [
+    {
+      "frame": "comparison",
+      "duration": 100
+    }
+  ],
+  "region": {
+    "x": 0,
+    "y": 0,
+    "w": 192,
+    "h": 212
+  },
+  "sheet": {
+    "columns": 1,
+    "rows": 1,
+    "scale": 3,
+    "gap": 3,
+    "width": 582,
+    "height": 642
+  },
+  "image": ".\\art\\mockups\\f25-staff-motion-v1\\contact-sheet.png"
+}

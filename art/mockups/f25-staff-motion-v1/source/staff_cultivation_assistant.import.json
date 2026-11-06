@@ -1,0 +1,15 @@
+{
+  "format": "pixelforge-raster-import",
+  "version": 1,
+  "sha256": "82471436d9422252ee34ea0f60813e9bc3528184281c6ca05b6511eb54934bc9",
+  "width": 32,
+  "height": 48,
+  "encoding": {
+    "colorType": "RGBA",
+    "bitDepth": 8,
+    "tRNS": false
+  },
+  "lossless": true,
+  "representation": "palette grids with hidden-RGB corrections",
+  "authoritative": "The imported recipe. Original drawing operations cannot be reconstructed; rebuild generators must explicitly incorporate it."
+}

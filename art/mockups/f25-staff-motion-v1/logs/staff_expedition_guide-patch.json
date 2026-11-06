@@ -1,0 +1,163 @@
+{
+  "ok": true,
+  "name": "staff_expedition_guide",
+  "edits": [
+    {
+      "insert": "frames[-]",
+      "at": "frames[1]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[2]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[3]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[4]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[5]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[6]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[7]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[8]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[9]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[10]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[11]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[12]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[13]"
+    },
+    {
+      "insert": "frames[-]",
+      "at": "frames[14]"
+    },
+    {
+      "set": "animations.idle",
+      "created": true
+    }
+  ],
+  "frames": {
+    "changed": [],
+    "unchanged": [
+      "still"
+    ],
+    "added": [
+      "inhale",
+      "blink",
+      "inhale-blink",
+      "idle-00",
+      "idle-01",
+      "idle-02",
+      "idle-03",
+      "idle-04",
+      "idle-05",
+      "idle-06",
+      "idle-07",
+      "idle-08",
+      "idle-09",
+      "idle-10"
+    ]
+  },
+  "animations": {
+    "added": [
+      "idle"
+    ]
+  },
+  "image": {
+    "region": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 48
+    },
+    "frames": [
+      {
+        "frame": "inhale",
+        "status": "added"
+      },
+      {
+        "frame": "blink",
+        "status": "added"
+      },
+      {
+        "frame": "inhale-blink",
+        "status": "added"
+      },
+      {
+        "frame": "idle-00",
+        "status": "added"
+      },
+      {
+        "frame": "idle-01",
+        "status": "added"
+      },
+      {
+        "frame": "idle-02",
+        "status": "added"
+      },
+      {
+        "frame": "idle-03",
+        "status": "added"
+      },
+      {
+        "frame": "idle-04",
+        "status": "added"
+      },
+      {
+        "frame": "idle-05",
+        "status": "added"
+      },
+      {
+        "frame": "idle-06",
+        "status": "added"
+      },
+      {
+        "frame": "idle-07",
+        "status": "added"
+      },
+      {
+        "frame": "idle-08",
+        "status": "added"
+      },
+      {
+        "frame": "idle-09",
+        "status": "added"
+      },
+      {
+        "frame": "idle-10",
+        "status": "added"
+      }
+    ],
+    "scale": 1,
+    "file": ".\\art\\mockups\\f25-staff-motion-v1\\reviews\\staff_expedition_guide-changes.png"
+  },
+  "recipe": ".\\art\\mockups\\f25-staff-motion-v1\\recipes\\staff_expedition_guide.json",
+  "warnings": []
+}

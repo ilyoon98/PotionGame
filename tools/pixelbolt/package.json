@@ -1,0 +1,8 @@
+{
+  "name": "potion-game-art-tools",
+  "private": true,
+  "description": "Pinned local authoring tool; not a game runtime dependency.",
+  "devDependencies": {
+    "pixelbolt": "0.11.0"
+  }
+}

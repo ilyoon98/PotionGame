@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "name": "staff_expedition_guide",
+  "width": 32,
+  "height": 48,
+  "palette": { "a": "#241c32ff", "b": "#e9b95fff", "c": "#c99463ff", "d": "#24566aff", "e": "#f6d1acff" },
+  "frames": [
+    {
+      "name": "idle",
+      "duration": 100,
+      "ops": [
+        {
+          "op": "grid",
+          "rows": [
+            "................................",
+            ".....aaa........................",
+            "....aaaaa.......................",
+            "....abbba.......................",
+            "....abbba.......................",
+            "....abbba.......................",
+            "....aaaaa.......................",
+            ".....aca........................",
+            ".....aca...aaaaaaa..............",
+            ".....aca.aadddddddaa............",
+            ".....acaaddddddddddda...........",
+            ".....acadddddddaddddda..........",
+            ".....acadddddaddddddda..........",
+            ".....acaddddaddddddddda.........",
+            ".....acaddddaaaaaaaaada.........",
+            ".....acaddddacccccccccda........",
+            ".....acaddddacccacccccda........",
+            ".....acaddddaccccccccccda.......",
+            ".....acaddddacaceeeeeada........",
+            ".....acaddddacceeaeaeaa.........",
+            ".....acaddddacceeaeaeea.........",
+            ".....acaddddaaeeeeeeeea.........",
+            ".....acaddddaeecccccaa..........",
+            ".....acaddddaeccccca............",
+            ".....acaaaaaaaabcaa.............",
+            ".....aca...abbabbba.............",
+            ".....aca..addbbbbbdaa...........",
+            ".....aca.addaacccadda...........",
+            ".....acaadddaccccaddaa..........",
+            ".....acaaddaaccccaddda..........",
+            ".....acadddacccccadddaa.........",
+            ".....acadddaccccccaddda.........",
+            ".....acaddaaaacccaaadda.........",
+            ".....aaeeeeaccccccaeeaa.........",
+            ".....aaeeeaaccccccaeeea.........",
+            ".....aaeeeacccccccaaeea.........",
+            ".....acaaaaccccacccaaaaa........",
+            "....aacadacccccaccccaddaaa......",
+            "....aacadacccaadacccadddda......",
+            "...adacadacccaddacccaddddda.....",
+            "..addacaaddddadddddddaddddda....",
+            "..addacaadddadddaadddaddddda....",
+            "...aaacaaaaaadaaaaaaaaaaaaa.....",
+            ".....acaacccaaa.aaccaaa.........",
+            ".....acaaccca....accca..........",
+            ".....acacccca....accccaa........",
+            ".....aaaaaaaa....aaaaaaa........",
+            "................................"
+          ]
+        }
+      ]
+    }
+  ]
+}
